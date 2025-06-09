@@ -183,7 +183,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = wuw_HUN_strengthen_horthys_reign
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -206,16 +206,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-
+			add_political_power = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_manpower = 16000
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = HUN_rongyos_garda_militia_recruitment
-			
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = HUN_rongyos_garda_leaders_become_generals
 
 		}
 	}
@@ -395,6 +388,7 @@ focus_tree = {
 				popularity = -0.1
 			}
 
+			
 		}
 	}
 
@@ -519,16 +513,13 @@ focus_tree = {
 		}
 
 		available = {
-
+			GER = {
+				has_completed_focus = GER_anschluss
+			}
 		}
 
 		bypass = {
-			AND = {
-				wuw_HUN_does_not_have_trianon = yes
-				NOT = {
-					has_idea = HUN_bled_agreement_wuw
-				}
-			}
+			
 		}
 
 		cancel_if_invalid = no
@@ -538,8 +529,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-
+			remove_ideas = HUN_treaty_of_triannon
 			add_threat = 1
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = war_economy
 
 		}
 	}
@@ -769,14 +762,11 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = {
-				has_government = fascism
-			}
-			is_subject = no
+			
 		}
 
 		bypass = {
-			has_government = fascism
+			
 		}
 
 		cancel_if_invalid = no
@@ -786,7 +776,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER }
 
 		completion_reward = {
-
+			
+			set_politics = {
+					ruling_party = fascism
+			}
 			#country_event = {
 			#	id = WW_hungary.102
 			#	hours = 0
@@ -825,25 +818,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER }
 
 		completion_reward = {
-
-			IF = {
-				limit = {
-					NOT = {
-						has_government = fascism
-					}
-				}
-
-				country_event = {
-					id = WW_hungary.103
-					hours = 0
-				}
-
-			}
-			ELSE_IF = {
-				limit = {
-					has_government = fascism
-				}
-
+				retire_country_leader = yes	
+				
+				
 				add_trait = {
 				    character = HUN_ferenc_szalasi
 				    ideology = nazism
@@ -861,13 +838,13 @@ focus_tree = {
 
 				custom_effect_tooltip = generic_skip_one_line_tt
 
-				HUN_remove_trianon_effect = yes
+				#HUN_remove_trianon_effect = yes
 
-				hidden_effect = {
-					news_event = { id = news.298 days = 1 }
-				}
+				 #hidden_effect = {
+				#	news_event = { id = news.298 days = 1 }
+				#}
 
-			}
+				remove_ideas = HUN_treaty_of_triannon
 
 		}
 	}
@@ -890,10 +867,7 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				has_government = neutrality
-				has_government = fascism
-			}
+			
 		}
 
 		bypass = {
@@ -929,11 +903,7 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				has_government = fascism
-				has_government = neutrality
-			}
-			is_subject = no
+			
 		}
 
 		bypass = {
@@ -967,7 +937,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_government = fascism
+			
 		}
 
 		bypass = {
@@ -1049,7 +1019,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_government = fascism
+			
 		}
 
 		bypass = {
@@ -1083,7 +1053,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_government = fascism
+			
 		}
 
 		bypass = {
@@ -1123,7 +1093,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_government = fascism
+			
 		}
 
 		bypass = {
@@ -1240,7 +1210,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_government = fascism
+			
 		}
 
 		bypass = {
@@ -1264,6 +1234,8 @@ focus_tree = {
 				long_name = HUN_arrow_cross_party_long 
 				name = HUN_arrow_cross_party 
 			}
+
+			
 		}
 	}
 
@@ -1305,7 +1277,7 @@ focus_tree = {
 				popularity = 0.15
 			}
 
-			custom_effect_tooltip = POR_the_communist_threat_tt
+			#custom_effect_tooltip = POR_the_communist_threat_tt
 			
 
 		}
@@ -1327,10 +1299,7 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				has_government = fascism
-				has_government = neutrality
-			}
+			
 		}
 
 		bypass = {
@@ -1509,7 +1478,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_war_support > 0.7
+			
 		}
 
 		bypass = {
@@ -1589,7 +1558,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = wuw_HUN_act_of_defense
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 15
@@ -1612,13 +1581,23 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-
-			custom_effect_tooltip = wuw_HUN_seek_german_contracts_tt
-			
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-
+			random_state = {
+				limit = {
+					is_owned_and_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1734,7 +1713,24 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			
+			random_state = {
+				limit = {
+					is_owned_and_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			mio:HUN_fiat_tankettes_organization = {
 					add_mio_size = 1
 			}
@@ -1751,174 +1747,6 @@ focus_tree = {
 		x = 15
 		y = 0
 		relative_position_id = wuw_HUN_end_the_regency
-
-		offset = {
-			x = -25
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_end_the_regency
-			}
-		}
-
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_reinstate_the_pragmatic_sanction
-			}
-		}
-
-		offset = {
-			x = -3
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_invite_otto_to_the_throne
-			}
-		}
-
-		offset = {
-			x = -3
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_the_old_habsburg_king
-			}
-		}
-
-		offset = {
-			x = -8
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_abide_by_the_little_ententes_stipulations
-			}
-		}
-
-		offset = {
-			x = -6
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_establishing_a_new_dynasty
-			}
-		}
-
-		offset = {
-			x = -6
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_elect_a_democratic_king
-			}
-		}
-
-		offset = {
-			x = -4
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_elect_a_fascist_king
-			}
-		}
-
-		offset = {
-			x = -40
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_continue_the_regency
-			}
-		}
-
-		offset = {
-			x = -6
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_strengthen_horthys_reign
-			}
-		}
-
-		offset = {
-			x = -38
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_end_the_white_terror
-			}
-		}
-
-		offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_establish_the_second_republic
-			}
-		}
-
-		offset = {
-			x = -12
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_join_the_comintern
-			}
-		}
-
-		offset = {
-			x = -6
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_restore_the_socialist_federative_republic
-			}
-		}
 
 		cost = 10
 
@@ -1939,7 +1767,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = HUN_wuw_interventionism
+			add_ideas = HUN_interventionism
 		}
 	}
 
@@ -1954,7 +1782,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL }
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -2034,7 +1862,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
+				army_experience = 50
 		}
 	}
 
@@ -2072,7 +1900,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = HUN_danuvia_submachine_guns
-				bonus = 0.75
+				bonus = 1
 				uses = 1
 				category = infantry_weapons
 			}
@@ -2214,12 +2042,7 @@ focus_tree = {
 				days = 365
 			}
 
-			add_tech_bonus = {
-				name = HUN_industrial_revitalization
-				bonus = 0.75
-				uses = 1
-				category = industry
-			}
+			
 		}
 	}
 
@@ -2360,9 +2183,7 @@ focus_tree = {
 		}
 
 		available = {
-			43 = {
-				is_owned_and_controlled_by = ROOT
-			}
+			
 		}
 
 		bypass = {
@@ -2386,7 +2207,7 @@ focus_tree = {
 					}
 				}
 				43 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
 						level = 1
@@ -2397,10 +2218,10 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			43 = {
+			#43 = {
 				#add_manpower = 150000
-				increase_state_category = yes
-			}
+			#	increase_state_category = yes
+			#}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -2609,10 +2430,18 @@ focus_tree = {
 			add_political_power = 50
 
 			add_tech_bonus = {
-				name = HUN_announce_the_gyor_program
-				bonus = 0.5
+				name = HUN_industrial_revitalization
+				bonus = 1.0
 				uses = 2
-				category = cat_production
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = streamlined_line
+				technology = assembly_line_production
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = construction4
+				technology = construction5			
 			}
 
 		}
@@ -2711,39 +2540,18 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL FOCUS_FILTER_WAR_SUPPORT }
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
 		}
 
 		available = {
-			NOT = {
-				has_idea = HUN_promises_of_peace
-			}
-			has_war = no
+			
 		}
 
 		bypass = {
-			OR = {
-				wuw_HUN_does_not_have_trianon = yes
-				has_idea = HUN_bled_agreement_wuw
-				AND = {
-					ROM = {
-						OR = {
-							exists = no
-							is_puppet = yes
-						}
-					}
-					FRA = {
-						OR = {
-							exists = no
-							is_puppet = yes
-							NOT = { has_completed_focus = FRA_strengthen_the_little_entente }
-						}
-					}
-				}
-			}
+			
 		}
 
 		cancel_if_invalid = yes
@@ -2755,20 +2563,7 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			IF = {
-				limit = {
-					FRA = { has_completed_focus = FRA_strengthen_the_little_entente }
-				}
-				FRA = { country_event = DOD_hungary.140 }
-			}
-			IF = {
-				limit = {
-					NOT = { FRA = { has_completed_focus = FRA_strengthen_the_little_entente } }
-				}
-				ROM = { country_event = DOD_hungary.140 }
-			}
-
-			custom_effect_tooltip = HUN_bled_agreement_custom_effect_tooltip
+			
 
 		}
 	}
@@ -2795,10 +2590,7 @@ focus_tree = {
 				is_controlled_by = ROOT
 				is_coastal = yes
 			}
-			wuw_HUN_does_not_have_trianon = yes
-			NOT = {
-				has_idea = HUN_promises_of_peace
-			}
+			
 		}
 
 		bypass = {
@@ -2814,11 +2606,6 @@ focus_tree = {
 			navy_experience = 15
 			add_ideas = HUN_naval_warfare
 
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-
 				custom_effect_tooltip = available_mio_tt
 				show_mio_tooltip = HUN_obudai_hajogyar_organization
 
@@ -2826,11 +2613,8 @@ focus_tree = {
 					add_mio_size = 3
 				}
 
-			}
-			ELSE = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = HUN_obudai_hajogyar
-			}
+			
+			
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -2926,13 +2710,6 @@ focus_tree = {
 
 		completion_reward = {
 
-			add_doctrine_cost_reduction = {
-				name = wuw_HUN_make_the_magyar_legiero_known
-				cost_reduction = 0.35
-				uses = 1
-				category = air_doctrine
-			}
-
 			air_experience = 15
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -2987,10 +2764,7 @@ focus_tree = {
 		}
 
 		available = {
-			wuw_HUN_does_not_have_trianon = yes
-			NOT = {
-				has_idea = HUN_promises_of_peace
-			}
+			
 		}
 
 		bypass = {
@@ -3002,28 +2776,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
-			every_army_leader = {
-				add_planning = 1
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = available_chief_of_army
-			show_ideas_tooltip = HUN_ferenc_szombathelyi
-			show_ideas_tooltip = HUN_vilmos_roder
-			IF = {
-				limit = {
-					NOT = {
-						OR = {
-							has_government = communism
-							has_government = democratic
-						}
-					}
-				}
-				show_ideas_tooltip = HUN_karoly_beregfy
-			}
-
+			army_experience = 100
 		}
 	}
 
@@ -3165,7 +2918,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 10
+					amount = 29
 				}
 			}
 
@@ -3225,17 +2978,11 @@ focus_tree = {
 		}
 
 		available = {
-			155 = {
-				is_owned_and_controlled_by = ROOT
-			}
+			
 		}
 
 		bypass = {
-			NOT = {
-				155 = {
-					is_owned_and_controlled_by = ROOT
-				}
-			}
+			
 		}
 
 		cancel_if_invalid = no
@@ -3463,9 +3210,7 @@ focus_tree = {
 		}
 
 		available = {
-			43 = {
-				is_owned_and_controlled_by = ROOT
-			}
+			
 		}
 
 		bypass = {
@@ -3535,19 +3280,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
-			custom_effect_tooltip = wuw_HUN_construct_the_szeretfalva_deda_railway_line_tt
-
-			76 = {
-				add_building_construction = {
-					type = supply_node
-					level = 1
-					instant_build = yes
-					province =  9670
-				}
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
 
 			IF = {
 				limit = {
@@ -3725,7 +3457,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 3
@@ -3837,7 +3569,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -3871,7 +3603,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 15
@@ -4008,7 +3740,7 @@ focus_tree = {
 					set_technology = { bicycle_infantry = 1 popup = no }
 				}
 			}
-
+			add_ideas = HUN_rapid_army_groups_idea
 		}
 	}
 
@@ -4050,7 +3782,7 @@ focus_tree = {
 
 	focus = {
 		id = wuw_HUN_the_botond
-		icon = GFX_goal_generic_army_motorized
+		icon = GFX_focus_generic_truck
 		prerequisite = { focus = wuw_HUN_form_the_gyorshadtest }
 		
 		x = -2
@@ -4106,6 +3838,43 @@ focus_tree = {
 	}
 
 	focus = {
+		id = HUN_motorized_logistics
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = wuw_HUN_the_botond }
+		x = -1
+		y = 1
+		relative_position_id = wuw_HUN_the_botond
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = HUN_motorized_logistics
+				bonus = 1.0
+				uses = 2
+				#category = hospital_tech
+				category = logistics_tech
+			}
+		}
+	}
+
+	focus = {
 		id = wuw_HUN_establish_the_mavag_army_division
 		icon = GFX_focus_HUN_establish_the_mavag_army_division
 		prerequisite = { focus = wuw_HUN_form_the_gyorshadtest }
@@ -4151,23 +3920,17 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
+			
 
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = HUN_mavag_assault_guns_organization
+				#custom_effect_tooltip = available_mio_tt
+				#show_mio_tooltip = HUN_mavag_assault_guns_organization
 
 				mio:HUN_mavag_assault_guns_organization = {
-					add_mio_size = 3
+					add_mio_size = 1
 				}
 
-			}
-			ELSE = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = HUN_mavag_assault_guns
-			}
+			
+			
 
 		}
 	}
@@ -4190,7 +3953,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_war_support > 0.84
+			
 		}
 
 		bypass = {
@@ -4222,7 +3985,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_war = yes
+			
 		}
 
 		bypass = {
@@ -4275,69 +4038,13 @@ focus_tree = {
 		completion_reward = {
 
 			custom_effect_tooltip = HUN_light_infantry_divisions_doctrine_tech_tt
-			custom_effect_tooltip = HUN_light_infantry_divisions_doctrine_unit_tt
-			hidden_effect = {
-				IF = {
-					limit = { has_tech = tech_engineers }
-					division_template = {
-						name = "Light Division"
-						division_names_group = HUN_INF_01
-						role = infantry
-						priority = 2
-
-						regiments = {
-							infantry = { x = 0 y = 0 }
-							infantry = { x = 0 y = 1 }
-							infantry = { x = 0 y = 2 }
-
-		    	   		 	infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-							infantry = { x = 1 y = 2 }
-						}
-						support = {
-							engineer = { x = 0 y = 0 }
-							recon = { x = 0 y = 1 }
-							artillery = { x = 0 y = 2 }
-						}
-					}
-					ELSE = {
-						division_template = {
-							name = "Light Division"
-							division_names_group = HUN_INF_01
-							role = infantry
-							priority = 2
-
-							regiments = {
-								infantry = { x = 0 y = 0 }
-								infantry = { x = 0 y = 1 }
-								infantry = { x = 0 y = 2 }
-
-			    	   		 	infantry = { x = 1 y = 0 }
-								infantry = { x = 1 y = 1 }
-								infantry = { x = 1 y = 2 }
-							}
-							support = {
-								recon = { x = 0 y = 0 }
-								artillery = { x = 0 y = 1 }
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					prioritize = { 43 }
-					limit = { ROOT = { has_full_control_of_state = PREV } }
-					create_unit = {
-						division = "name = \"1. Light Division\" division_template = \"Light Division\" start_experience_factor = 1.0"
-						owner = HUN
-					}
-				}
-			}
+			
+			
 			hidden_effect = { set_technology = { HUN_light_infantry_tech = 1 } }
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = HUN_jeno_ratz
+			
 		}
 	}
 
@@ -4359,7 +4066,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_war = yes
+			
 		}
 
 		bypass = {
@@ -4386,56 +4093,7 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			custom_effect_tooltip = wuw_HUN_szent_laszlo_infantry_division_tt
-
-			hidden_effect = {
-				delete_unit_template_and_units = {
-					division_template = "Szent László Hadosztály"
-					disband = yes #if yes, will refund equipment/manpower.
-				}
-
-				division_template = {
-					name = "Szent László Hadosztály"
-					division_names_group = HUN_INF_01
-					role = infantry
-					is_locked = no
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-						artillery_brigade = { x = 2 y = 0 }
-					}
-					support = {
-						recon = { x = 0 y = 0 }
-						engineer = { x = 0 y = 1 }
-						artillery = { x = 0 y = 2 }
-					}
-				}
-
-				random_state = {
-					limit = {
-						is_fully_controlled_by = ROOT
-						is_owned_by = ROOT
-						is_core_of = ROOT
-					}
-					create_unit = {
-					    division = "name = \"Szent László Hadosztály\" division_template = \"Szent László Hadosztály\" start_experience_factor = 0.6 start_equipment_factor = 1"
-					    owner = ROOT
-					    officer = {
-					    	name = HUN_zoltan_zsugyi
-					    	portraits = {
-					    		army = {
-					    			large = GFX_portrait_HUN_zoltan_szugyi
-					    			small = GFX_portrait_HUN_zoltan_szugyi_small
-					    		}
-					    	}
-					    }
-					}
-				}
-			}
+			
 
 		}
 	}
@@ -4451,7 +4109,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 15
@@ -4473,16 +4131,9 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = wuw_HUN_quantity_over_quality
-				bonus = 0.25
+				bonus = 0.5
 				uses = 2
 				category = armor
-			}
-
-			add_tech_bonus = {
-				name = wuw_HUN_quantity_over_quality
-				bonus = 0.25
-				uses = 2
-				category = artillery
 			}
 
 		}
@@ -4499,14 +4150,14 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
 		}
 
 		available = {
-			has_war_support > 0.84
+			
 		}
 
 		bypass = {
@@ -4573,131 +4224,6 @@ focus_tree = {
 				category = cat_medium_armor
 			}
 
-			IF = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
-				IF = {
-					limit = {
-						has_tech = improved_medium_tank_chassis
-					}
-					#40M Turán
-					create_equipment_variant = {
-						name = "40M Turán"
-						type = medium_tank_chassis_2
-						parent_version = 0
-						modules = {
-							main_armament_slot = tank_medium_cannon_2
-							turret_type_slot = tank_medium_two_man_tank_turret
-							suspension_type_slot = tank_bogie_suspension
-							armor_type_slot = tank_welded_armor
-							engine_type_slot = tank_gasoline_engine
-							special_type_slot_1 = additional_machine_guns
-							special_type_slot_2 = additional_machine_guns
-						}
-						upgrades = {
-							tank_nsb_engine_upgrade = 3
-							tank_nsb_armor_upgrade = 3
-						}
-						#icon = "GFX_ITA_basic_medium_tank_medium"
-					}
-				}
-				ELSE = {
-					custom_effect_tooltip = wuw_HUN_the_turan_40_tt
-					effect_tooltip = {
-						#40M Turán
-						create_equipment_variant = {
-							name = "40M Turán"
-							type = medium_tank_chassis_2
-							parent_version = 0
-							modules = {
-								main_armament_slot = tank_medium_cannon_2
-								turret_type_slot = tank_medium_two_man_tank_turret
-								suspension_type_slot = tank_bogie_suspension
-								armor_type_slot = tank_welded_armor
-								engine_type_slot = tank_gasoline_engine
-								special_type_slot_1 = additional_machine_guns
-								special_type_slot_2 = additional_machine_guns
-							}
-							upgrades = {
-								tank_nsb_engine_upgrade = 3
-								tank_nsb_armor_upgrade = 3
-							}
-							#icon = "GFX_ITA_basic_medium_tank_medium"
-						}
-					}
-				}
-				IF = {
-					limit = {
-						has_tech = advanced_medium_tank_chassis
-					}
-					#43M Turán III
-					create_equipment_variant = {
-						name = "43M Turán III"
-						type = medium_tank_chassis_3
-						parent_version = 0
-						modules = {
-							main_armament_slot = tank_medium_cannon_2
-							turret_type_slot = tank_medium_three_man_tank_turret
-							suspension_type_slot = tank_bogie_suspension
-							armor_type_slot = tank_welded_armor
-							engine_type_slot = tank_gasoline_engine
-							special_type_slot_1 = secondary_turret_hmg
-							special_type_slot_2 = additional_machine_guns
-						}
-						upgrades = {
-							tank_nsb_engine_upgrade = 3
-							tank_nsb_armor_upgrade = 7
-						}
-						#icon = "GFX_ITA_basic_medium_tank_medium"
-					}
-				}
-				ELSE = {
-					custom_effect_tooltip = wuw_HUN_the_turan_43_tt
-					effect_tooltip = {
-						#43M Turán III
-						create_equipment_variant = {
-							name = "43M Turán III"
-							type = medium_tank_chassis_3
-							parent_version = 0
-							modules = {
-								main_armament_slot = tank_medium_cannon_2
-								turret_type_slot = tank_medium_three_man_tank_turret
-								suspension_type_slot = tank_bogie_suspension
-								armor_type_slot = tank_welded_armor
-								engine_type_slot = tank_gasoline_engine
-								special_type_slot_1 = secondary_turret_hmg
-								special_type_slot_2 = additional_machine_guns
-							}
-							upgrades = {
-								tank_nsb_engine_upgrade = 3
-								tank_nsb_armor_upgrade = 7
-							}
-							#icon = "GFX_ITA_basic_medium_tank_medium"
-						}
-					}
-				}
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = HUN_hti_turan_organization
-
-				mio:HUN_hti_turan_organization = {
-					add_mio_size = 3
-				}
-
-			}
-			ELSE = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = HUN_hti_turan
-			}
 
 		}
 	}
@@ -4733,121 +4259,19 @@ focus_tree = {
 
 		completion_reward = {
 
-			add_tech_bonus = {
-				name = HUN_develop_assault_guns
-				bonus = 0.5
-				uses = 2
-				category = cat_anti_air
-				category = mio_cat_artillery
-			}
+			#add_tech_bonus = {
+			#	name = HUN_develop_assault_guns
+			#	bonus = 0.5
+			#	uses = 2
+			#	category = cat_anti_air
+			#	category = mio_cat_artillery
+			#}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_ideas = wuw_HUN_assault_gun_focus_idea
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-
-			IF = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
-				IF = {
-					limit = {
-						has_tech = advanced_medium_tank_chassis
-					}
-					# 43M Zrínyi
-					create_equipment_variant = {
-						name = "43M Zrínyi"
-						type = medium_tank_artillery_chassis_3
-						parent_version = 0
-						modules = {
-							main_armament_slot = tank_medium_howitzer_2
-							turret_type_slot = tank_medium_one_man_tank_turret
-							suspension_type_slot = tank_torsion_bar_suspension
-							armor_type_slot = tank_riveted_armor
-							engine_type_slot = tank_gasoline_engine
-						}
-						upgrades = {
-							tank_nsb_engine_upgrade = 3
-							tank_nsb_armor_upgrade = 3
-						}
-						#icon = "GFX_ITA_advanced_medium_art_medium"
-					}
-				}
-				ELSE = {
-					custom_effect_tooltip = wuw_HUN_zrinyi_arty_tt
-					effect_tooltip = {
-						# 43M Zrínyi
-						create_equipment_variant = {
-							name = "43M Zrínyi"
-							type = medium_tank_artillery_chassis_3
-							parent_version = 0
-							modules = {
-								main_armament_slot = tank_medium_howitzer_2
-								turret_type_slot = tank_medium_one_man_tank_turret
-								suspension_type_slot = tank_torsion_bar_suspension
-								armor_type_slot = tank_riveted_armor
-								engine_type_slot = tank_gasoline_engine
-							}
-							upgrades = {
-								tank_nsb_engine_upgrade = 3
-								tank_nsb_armor_upgrade = 3
-							}
-							#icon = "GFX_ITA_advanced_medium_art_medium"
-						}
-					}
-				}
-				IF = {
-					limit = {
-						has_tech = improved_medium_tank_chassis
-					}
-					# 40M Nimród
-					create_equipment_variant = {
-						name = "40M Nimród"
-						type = medium_tank_aa_chassis_2
-						parent_version = 0
-						modules = {
-							main_armament_slot = tank_anti_air_cannon_2
-							turret_type_slot = tank_medium_two_man_tank_turret
-							suspension_type_slot = tank_torsion_bar_suspension
-							armor_type_slot = tank_riveted_armor
-							engine_type_slot = tank_gasoline_engine
-							special_type_slot_1 = auto_loader
-							special_type_slot_2 = secondary_turret_small_cannon
-						}
-						upgrades = {
-							tank_nsb_engine_upgrade = 6
-							tank_nsb_armor_upgrade = 2
-						}
-						#icon = "GFX_ITA_advanced_medium_spaa_medium"
-					}
-				}
-				ELSE = {
-					custom_effect_tooltip = wuw_HUN_nimrod_aa_tt
-					effect_tooltip = {
-						# 40M Nimród
-						create_equipment_variant = {
-							name = "40M Nimród"
-							type = medium_tank_aa_chassis_2
-							parent_version = 0
-							modules = {
-								main_armament_slot = tank_anti_air_cannon_2
-								turret_type_slot = tank_medium_two_man_tank_turret
-								suspension_type_slot = tank_torsion_bar_suspension
-								armor_type_slot = tank_riveted_armor
-								engine_type_slot = tank_gasoline_engine
-								special_type_slot_1 = auto_loader
-								special_type_slot_2 = secondary_turret_small_cannon
-							}
-							upgrades = {
-								tank_nsb_engine_upgrade = 6
-								tank_nsb_armor_upgrade = 2
-							}
-							#icon = "GFX_ITA_advanced_medium_spaa_medium"
-						}
-					}
-				}
-			}
 
 		}
 	}
@@ -4893,63 +4317,7 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			add_ideas = HUN_rapid_army_groups_idea
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			IF = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
-				IF = {
-					limit = {
-						has_tech = improved_light_tank_chassis
-					}
-					#38M Toldi
-					create_equipment_variant = {
-						name = "38M Toldi"
-						type = light_tank_chassis_2
-						parent_version = 0
-						modules = {
-							main_armament_slot = tank_small_cannon_2
-							turret_type_slot = tank_light_fixed_superstructure_turret
-							suspension_type_slot = tank_torsion_bar_suspension
-							armor_type_slot = tank_riveted_armor
-							engine_type_slot = tank_gasoline_engine
-							special_type_slot_2 = tank_radio_1
-						}
-						upgrades = {
-							tank_nsb_engine_upgrade = 3
-							tank_nsb_armor_upgrade = 2
-						}
-						#icon = "GFX_ITA_improved_light_tank_medium"
-					}
-				}
-				ELSE = {
-					custom_effect_tooltip = wuw_HUN_the_toldi_tt
-					effect_tooltip = {
-						#38M Toldi
-						create_equipment_variant = {
-							name = "38M Toldi"
-							type = light_tank_chassis_2
-							parent_version = 0
-							modules = {
-								main_armament_slot = tank_small_cannon_2
-								turret_type_slot = tank_light_fixed_superstructure_turret
-								suspension_type_slot = tank_torsion_bar_suspension
-								armor_type_slot = tank_riveted_armor
-								engine_type_slot = tank_gasoline_engine
-								special_type_slot_2 = tank_radio_1
-							}
-							upgrades = {
-								tank_nsb_engine_upgrade = 3
-								tank_nsb_armor_upgrade = 2
-							}
-							#icon = "GFX_ITA_improved_light_tank_medium"
-						}
-					}
-				}
-			}
+			
 
 		}
 	}
@@ -5034,14 +4402,12 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
+			
 				76 = {
 					is_controlled_by = ROOT
 				}
-				84 = {
-					is_controlled_by = ROOT
-				}
-			}
+				
+			
 		}
 
 		bypass = {
@@ -5094,10 +4460,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_war = yes
-			76 = {
-				is_controlled_by = ROOT
-			}
+			
 		}
 
 		bypass = {
@@ -5110,50 +4473,9 @@ focus_tree = {
 
 		completion_reward = {
 
-			custom_effect_tooltip = wuw_HUN_the_szekel_command_division_tt
+			
 
-			hidden_effect = {
-				delete_unit_template_and_units = {
-					division_template = "Székel Command"
-					disband = yes #if yes, will refund equipment/manpower.
-				}
-
-				division_template = {
-					name = "Székel Command Group"
-					division_names_group = HUN_MTN_01
-					role = mountaineers
-					is_locked = no
-					regiments = {
-						mountaineers = { x = 0 y = 0 }
-						mountaineers = { x = 0 y = 1 }
-						mountaineers = { x = 1 y = 0 }
-						mountaineers = { x = 1 y = 1 }
-						artillery_brigade = { x = 2 y = 0 }
-					}
-					support = {
-						recon = { x = 0 y = 0 }
-						engineer = { x = 0 y = 1 }
-						artillery = { x = 0 y = 2 }
-					}
-				}
-
-				76 = {
-					create_unit = {
-					    division = "name = \"First Székel Command\" division_template = \"Székel Command Group\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
-					    owner = ROOT
-					    officer = {
-					    	name = HUN_istvan_kozma
-					    }
-					}
-					create_unit = {
-					    division = "name = \"Second Székel Command\" division_template = \"Székel Command Group\" start_experience_factor = 0.6 start_equipment_factor = 0.6"
-					    owner = ROOT
-					    officer = {
-					    	name = HUN_ferenc_horvath
-					    }
-					}
-				}
-			}
+			
 
 		}
 	}
@@ -5169,7 +4491,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP }
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 10
@@ -5265,7 +4587,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP }
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -5308,7 +4630,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_NAVY_XP }
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -5349,7 +4671,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP }
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -5392,7 +4714,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP }
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -5436,7 +4758,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP }
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -5479,7 +4801,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP }
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -5522,7 +4844,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP }
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -5643,7 +4965,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -5662,36 +4984,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				if = {
-					limit = {
-						has_tech = degaussing
-					}
-					add_tech_bonus = {
-						name = CAN_degauss_ship_hulls
-						bonus = 0.5
-						uses = 1
-						category = naval_mines
-					}
-					else = {
-						set_technology = {
-						    degaussing = 1
-						}
-					}
-					}
-				}
-			
-			if = {
-				limit = {
-						NOT = {
-							has_dlc = "Man the Guns"
-						}
-					}
-				add_ideas = CAN_degauss_ship_hulls
-			}
+			add_ideas = CAN_degauss_ship_hulls
 		}
 	}
 

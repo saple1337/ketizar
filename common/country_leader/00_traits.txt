@@ -8267,5 +8267,22 @@ tank_refurbishment_plant = { #NSB
 			factor = 1
 		}
 	}
+	
+	fortress_architecht = {
+		random = no
+		sprite = 13
+
+		production_speed_bunker_factor = 0.15
+		production_speed_coastal_bunker_factor = 0.15
+		production_speed_arms_factory_factor = 0.05
+		industrial_capacity_factory = 0.05
+	}
+	
+	nazi_sympathizer = {
+		random = no
+		sprite = 13
+		fascism_drift = 0.1
+		opinion_gain_monthly_same_ideology_factor = 0.75
+	}
 
 }

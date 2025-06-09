@@ -258,8 +258,8 @@ ideas = {
 			picture = HUN_revaluing_the_pengo
 
 			modifier = {
-				consumer_goods_factor = -0.15
-				stability_factor = -0.1
+				consumer_goods_expected_value = -0.08
+				stability_factor = -0.15
 			}
 		}
 
