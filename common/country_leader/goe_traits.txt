@@ -188,7 +188,7 @@ leader_traits = {
 
 	all_india_muslim_league_leader = {
 		sprite = 13
-		democratic_drift = 0.05
+		democratic_drift = 0.1
 		stability_factor = 0.15
 		political_advisor_cost_factor  = -0.2
 		ai_will_do = {
