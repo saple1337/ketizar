@@ -2581,7 +2581,7 @@ ideas = {
 		ig_faben = {
 			
 			allowed = {
-				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
+				OR = { original_tag = GER original_tag = SPR  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
 			}
 			
 			research_bonus = {

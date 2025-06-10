@@ -3,6 +3,17 @@ ideas = {
 	country = {
 		
 		
+		HUN_the_szekel_command_idea = {
+			allowed = {
+				original_tag = HUN
+			}
+			picture = FRA_army_of_aggression_focus
+			
+			modifier = {
+				modifier_army_sub_unit_mountaineers_max_org_factor = 0.1
+			}
+		}
+		
 		
 		HUN_the_volksbund_idea = {
 			allowed = {
@@ -273,9 +284,9 @@ ideas = {
 			picture = generic_improved_industries
 
 			modifier = {
-				consumer_goods_factor = -0.15
-				stability_factor = -0.05
+				#consumer_goods_factor = -0.15
 				war_support_factor = 0.05
+					
 			}
 		}
 
@@ -289,7 +300,7 @@ ideas = {
 			picture = HUN_agrarian_tradition
 
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.03
 				supply_consumption_factor = -0.1
 				winter_attrition = -0.1
 				conscription_factor = -0.05
@@ -321,8 +332,8 @@ ideas = {
 
 			modifier = {
 				mobilization_speed = 0.15
-				training_time_factor = -0.1
-				conscription = 0.015
+				#training_time_factor = -0.1
+				conscription = 0.03
 			}
 		}
 
@@ -400,8 +411,9 @@ ideas = {
 			picture = ITA_bandits_war
 
 			modifier = {
-				army_attack_speed_factor = 0.05
-				army_armor_speed_factor = 0.02
+				army_attack_speed_factor = 0.075
+				army_speed_factor = 0.075
+				#army_armor_speed_factor = 0.02
 			}
 		}
 
@@ -643,10 +655,8 @@ ideas = {
 			picture = HUN_arrow_cross_idea
 
 			modifier = {
-				war_support_factor = 0.05
-				justify_war_goal_time = -0.4
-				mobilization_speed = 0.1
-				training_time_factor = -0.1
+				
+				offensive_war_stability_factor = 0.15
 			}
 		}
 
@@ -784,13 +794,36 @@ ideas = {
 
 			modifier = {
 				political_power_factor = -0.15
-				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.02
 				production_speed_buildings_factor = 0.05
 				fascism_drift = 0.01
 				custom_modifier_tooltip = HUN_gombos_trade_treaty_arms_market_tt
 			}
 		}
 
+		HUN_gombos_trade_treaty_improved = {
+			allowed = {
+				original_tag = HUN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = HUN_wuw_HUN_gombos_trade_treaty
+
+			cancel = {
+				has_war_with = GER
+			}
+
+			modifier = {
+				political_power_factor = -0.1
+				consumer_goods_expected_value = -0.05
+				production_speed_buildings_factor = 0.05
+				fascism_drift = 0.01
+				custom_modifier_tooltip = HUN_gombos_trade_treaty_arms_market_tt
+			}
+		}
+		
 		HUN_hungarian_national_defense_association = {
 			allowed = {
 				original_tag = HUN

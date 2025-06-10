@@ -100,7 +100,10 @@ NOT = {tag = MON}
 						original_tag = HUN
 						has_dlc = "Death or Dishonor"
 					}
-					NOT = { has_idea = HUN_treaty_of_triannon }
+					OR = {
+						has_completed_focus = wuw_HUN_secret_rearmament
+						NOT = { has_idea = HUN_treaty_of_triannon }
+					}
 				}	
 			}
 			allowed = {
@@ -161,7 +164,7 @@ NOT = {tag = MON}
 						has_dlc = "Death or Dishonor"
 					}
 					OR = {
-						has_completed_focus = HUN_secret_rearmament
+						has_completed_focus = wuw_HUN_secret_rearmament
 						NOT = { has_idea = HUN_treaty_of_triannon }
 					}
 				}

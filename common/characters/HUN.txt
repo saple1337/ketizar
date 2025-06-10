@@ -429,7 +429,7 @@ characters={
 			}
 
 			available = {
-				has_completed_focus = wuw_HUN_construct_the_arpad_line
+				#has_completed_focus = wuw_HUN_construct_the_arpad_line
 			}
 
 			traits = {
