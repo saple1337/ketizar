@@ -2834,7 +2834,7 @@ technologies = {
 		mechanized = {
 			max_organisation = 5
 			default_morale = 0.1
-			defense = 0.1
+			defense = 0.05
 		}	
 		amphibious_mechanized = {
 			max_organisation = 5
