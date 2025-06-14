@@ -623,7 +623,7 @@ focus = {
                 value = 0.05 
             }
             custom_effect_tooltip = idea_RAJ_independence_movement_tt
-            add_to_variable = { RAJ_independence_movement_infra = 0.2 tooltip = production_speed_infrastructure_factor_tt }
+            add_to_variable = { RAJ_independence_movement_infra = 0.3 tooltip = production_speed_infrastructure_factor_tt }
             custom_effect_tooltip = generic_skip_one_line_tt
             439 = {
 				add_building_construction = {
@@ -1199,7 +1199,7 @@ focus = {
 
         completion_reward = {
             435 = {
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 4
                 add_building_construction = {
                     type = dam
                     level = 1
@@ -1211,7 +1211,7 @@ focus = {
             }
 
             431 = {
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 4
                 add_building_construction = {
                     type = dam
                     level = 1
@@ -1223,7 +1223,7 @@ focus = {
             }
 
             438 = {
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 4
                 add_building_construction = {
                     type = dam
                     level = 1
@@ -2286,7 +2286,9 @@ focus = {
         search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY}
 
         completion_reward = {
-            
+            custom_effect_tooltip = available_political_advisor
+            show_ideas_tooltip = RAJ_puran_chand_joshi
+			custom_effect_tooltip = generic_skip_one_line_tt
             add_autonomy_score = { 
                 value = 50
                 localization = RAJ_haripura_session_of_the_indian_national_congress
@@ -2544,12 +2546,12 @@ focus = {
             is_subject = no
         }
 
-        bypass_effect = {
-            if  = {
-                limit = { has_idea = RAJ_princely_states }
-                remove_ideas = RAJ_princely_states
-            }
-        }
+        #bypass_effect = {
+        #   if  = {
+        #       limit = { has_idea = RAJ_princely_states }
+        #        remove_ideas = RAJ_princely_states
+        #    }
+        #}
 
         cancel_if_invalid = yes
         continue_if_invalid = no
@@ -2564,6 +2566,7 @@ focus = {
         completion_reward = {
             custom_effect_tooltip = idea_RAJ_independence_movement_tt
             add_to_variable = { RAJ_autonomy_gain_independence_movement = 0.05 tooltip = autonomy_gain_tt }
+			add_to_variable = { RAJ_independence_movement_surrender_limit = 0.3 tooltip = surrender_limit_tt }
 
         }
     }

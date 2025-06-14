@@ -329,7 +329,7 @@ recruit_character = RAJ_mahatma_mohandas_gandhi
 recruit_character = RAJ_GOE_montagu_stopford
 #recruit_character = RAJ_GOE_francis_tuker
 recruit_character = RAJ_GOE_parkash_singh
-#recruit_character = RAJ_puran_chand_joshi
+recruit_character = RAJ_puran_chand_joshi
 
 
 
@@ -424,6 +424,7 @@ add_ideas = {
 	set_variable = { RAJ_independence_movement_factory_efficiency = 0 }
 	set_variable = { RAJ_independence_movement_stability_weekly = 0 }
 	set_variable = { RAJ_independence_movement_factory_efficiency_gain_factor = 0 }
+	set_variable = { RAJ_independence_movement_surrender_limit = 0 }
 	
 	
 	set_variable = { RAJ_royal_indian_navy_navy_anti_air_attack_factor = 0 }
