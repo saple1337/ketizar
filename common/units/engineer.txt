@@ -370,7 +370,7 @@ sub_units = {
 		}
 
 		forest = {
-			defence = 0.075
+			defence = 0.75
 			movement = 0.05 
 		}
 
