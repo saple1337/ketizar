@@ -5442,7 +5442,7 @@ focus = {
         cost = 5
 
         available = {
-            
+            is_in_faction_with = ENG
         }
 
         mutually_exclusive = { focus = RAJ_found_scindia_shipyard_dlc }

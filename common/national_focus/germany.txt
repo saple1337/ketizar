@@ -4565,22 +4565,10 @@ focus_tree = {
 					#has_ideas = speer
 				}
 				completion_reward = {
-					#every_country = {
-					#	limit = { the_axis = yes }
-					#	add_ideas = GER_armaments_miracle
-					#}
-					if = {
-							limit = {
-								is_ally_with = GER
-								
-							}
-							GER = {
-								every_allied_country = {
-									add_ideas = GER_armaments_miracle
-								}
-							}	
+					every_country = {
+						limit = { the_axis = yes }
+						add_ideas = GER_armaments_miracle
 					}
-					
 					# add_ideas = GER_armaments_miracle
 					custom_effect_tooltip = "   "
 					add_ideas = tot_economic_mobilisation
@@ -5218,23 +5206,12 @@ focus_tree = {
 						custom_effect_tooltip = "   "
 						custom_effect_tooltip = "Will form an Integrated Axis High Command"
 						custom_effect_tooltip = "   "
-						#every_country = {
-						#	limit = { OR = { original_tag = HUN original_tag = ROM original_tag = SPR
-						#					 original_tag = BUL original_tag = YUG original_tag = ITA } }
-						#	add_ideas = general_staff
-						#}
-
-						if = {
-							limit = {
-								is_ally_with = GER
-								
-							}
-							GER = {
-								every_allied_country = {
-									add_ideas = general_staff
-								}
-							}	
+						every_country = {
+							limit = { OR = { original_tag = HUN original_tag = ROM original_tag = SPR
+											 original_tag = BUL original_tag = YUG original_tag = ITA } }
+							add_ideas = general_staff
 						}
+
 						hidden_effect = {
 							news_event = { hours = 6 id = news.810 }
 						}
