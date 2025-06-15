@@ -1,28 +1,6 @@
 characters={
 	
-	RAJ_puran_chand_joshi = {
-		name = RAJ_puran_chand_joshi
-		portraits = {
-			civilian = {
-				large = GFX_Portrait_PLACEHOLDER_large
-				small = "GFX_portrait_RAJ_puran_chand_joshi_small"
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = RAJ_puran_chand_joshi
-			allowed = {
-				original_tag = RAJ
-			}
-			visible = {
-				has_completed_focus = RAJ_haripura_session_of_the_indian_national_congress
-			}
-			traits = {
-				RAJ_freedom_fighter
-			}
-		}
-	}
+	
 	
 	RAJ_claude_auchinleck={
 		name="Claude Auchinleck"
