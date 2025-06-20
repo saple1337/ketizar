@@ -3851,13 +3851,13 @@ focus = {
 					
 						add_building_construction = {
 							type = bunker
-							level = 10
+							level = 7
 							province = 4435
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
-							level = 10
+							level = 7
 							province = 12338
 							instant_build = yes
 						}
@@ -3871,13 +3871,13 @@ focus = {
 					
 						add_building_construction = {
 							type = bunker
-							level = 10
+							level = 7
 							province = 5310
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
-							level = 10
+							level = 7
 							province = 4987
 							instant_build = yes
 						}
