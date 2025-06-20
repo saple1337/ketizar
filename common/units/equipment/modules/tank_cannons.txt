@@ -472,7 +472,6 @@ equipment_modules = {
 			flame
 			amphibious
 		}
-		allow_equipment_type = artillery
 
 		add_stats = {
 			soft_attack = 78
