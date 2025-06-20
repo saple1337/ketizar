@@ -304,7 +304,6 @@ focus = {
         }
 
         available = {
-            659 = { is_fully_controlled_by = ROOT }
             
         }
         
@@ -319,7 +318,7 @@ focus = {
         search_filters = {FOCUS_FILTER_INDUSTRY}
 
         completion_reward = {
-            992 ={
+            659 ={
                 add_building_construction = {
                     type = bunker
                     level = 5
