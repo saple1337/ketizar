@@ -526,10 +526,6 @@ ideas = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
-				CAS_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
 			}
 
 			modifier = {
@@ -550,13 +546,9 @@ ideas = {
 			removal_cost = -1
 			
 			equipment_bonus = {
-				tac_bomber_equipment = {
 					air_ground_attack = 0.15
 					instant = yes
 				}
-				CAS_equipment = {
-					air_ground_attack = 0.15
-					instant = yes
 				}
 			}
 
@@ -739,44 +731,13 @@ ideas = {
 			removal_cost = -1
 			
 			equipment_bonus = {
-				tac_bomber_equipment = {
-					build_cost_ic = 0.25
-					instant = yes
-				}
-				strat_bomber_equipment = {
-					build_cost_ic = 0.25
-					instant = yes
-				}
-				nav_bomber_equipment = {
-					build_cost_ic = 0.25
-					instant = yes
-				}
-				CAS_equipment = {
-					build_cost_ic = 0.25
-					instant = yes
-				}
 				small_plane_airframe = {
 					build_cost_ic = 0.25
 					instant = yes
 				}
-				heavy_small_plane_airframe = {
-					build_cost_ic = 0.25
-					instant = yes
-				}
-				cv_nav_bomber_equipment = {
-					build_cost_ic = 0.25
-					instant = yes
-				}
-				cv_CAS_equipment = {
-					build_cost_ic = 0.25
-					instant = yes
-				}
-				cv_small_plane_airframe = {
-					build_cost_ic = 0.25
-					instant = yes
-				}
-			}
 		}
+		}
+	
 		VIC_aircraft_parts = {
 			picture = generic_bomber_production_diverted
 			allowed = {
@@ -793,35 +754,7 @@ ideas = {
 			removal_cost = -1
 			
 			equipment_bonus = {
-				tac_bomber_equipment = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				strat_bomber_equipment = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				nav_bomber_equipment = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				CAS_equipment = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
 				small_plane_airframe = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				heavy_small_plane_airframe = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				cv_nav_bomber_equipment = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				cv_CAS_equipment = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
@@ -2554,4 +2487,3 @@ ideas = {
 		# 	traits = { nuclear_scientist }
 		# }
 	}	
-}
