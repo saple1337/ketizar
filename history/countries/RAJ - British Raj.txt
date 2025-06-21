@@ -423,6 +423,7 @@ add_ideas = {
 	set_variable = { RAJ_independence_movement_factory_efficiency = 0 }
 	set_variable = { RAJ_independence_movement_stability_weekly = 0 }
 	set_variable = { RAJ_independence_movement_factory_efficiency_gain_factor = 0 }
+	set_variable = { RAJ_independence_movement_surrender_limit = 0 }
 	
 	
 	set_variable = { RAJ_royal_indian_navy_navy_anti_air_attack_factor = 0 }
