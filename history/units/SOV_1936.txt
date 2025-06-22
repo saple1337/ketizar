@@ -389,18 +389,6 @@ units = {
 }					
 
 ### Air Wings
-air_wings = {
-	# LVO Aviatsya Komandovaniya -- Leningrad
-	206 = { 
-		basic_air_fraiment = {
-			version_name = "I16-R"
-			owner = "SOV" 
-			amount = 1600
-		}
-       
-	#########################
-	## STARTING PRODUCTION ##
-	#########################
 instant_effect = {
 	
 
