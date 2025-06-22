@@ -2065,7 +2065,7 @@ focus = {
         430 = {
 			add_building_construction = {
 				type = bunker
-				level = 10
+				level = 5
 				province = 9991
 				instant_build = yes
 			}						
@@ -2073,43 +2073,43 @@ focus = {
         432 = {
 			add_building_construction = {
 				type = bunker
-				level = 10
+				level = 5
 				province = 997
 				instant_build = yes
 			}
             add_building_construction = {
 				type = bunker
-				level = 10
+				level = 5
 				province = 10090
 				instant_build = yes
 			}
             add_building_construction = {
 				type = bunker
-				level = 10
+				level = 5
 				province = 2013
 				instant_build = yes
 			}
             add_building_construction = {
 				type = bunker
-				level = 10
+				level = 5
 				province = 1119
 				instant_build = yes
 			}		
             add_building_construction = {
 				type = bunker
-				level = 10
+				level = 5
 				province = 3907
 				instant_build = yes
 			}	
             add_building_construction = {
 				type = bunker
-				level = 10
+				level = 5
 				province = 1553
 				instant_build = yes
 			}	
             add_building_construction = {
 				type = bunker
-				level = 10
+				level = 5
 				province = 1525
 				instant_build = yes
 			}		
@@ -2117,13 +2117,13 @@ focus = {
         434 = {
             add_building_construction = {
 				type = bunker
-				level = 10
+				level = 5
 				province = 12322
 				instant_build = yes
 			}
             add_building_construction = {
 				type = bunker
-				level = 10
+				level = 5
 				province = 1996
 				instant_build = yes
 			}
@@ -3844,13 +3844,13 @@ focus = {
 					
 						add_building_construction = {
 							type = bunker
-							level = 10
+							level = 5
 							province = 4435
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
-							level = 10
+							level = 5
 							province = 12338
 							instant_build = yes
 						}
@@ -3864,13 +3864,13 @@ focus = {
 					
 						add_building_construction = {
 							type = bunker
-							level = 10
+							level = 5
 							province = 5310
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
-							level = 10
+							level = 5
 							province = 4987
 							instant_build = yes
 						}
