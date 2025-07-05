@@ -24,6 +24,20 @@ War_economy = {
 	}
 }
 
+Einheitspakt_economy = {
+	icon = GFX_decision_category_GER_weltpolitik
+	name = "Einheitspakt Economy"
+	priority = 100
+	picture = GFX_decision_cat_picture_greater_german_reich
+
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_completed_focus = GER_establish_the_Einheitspakt
+	}
+}
+
 GER_Issue_Mefobills_category = {
 	icon = ger_mefo_bills
 

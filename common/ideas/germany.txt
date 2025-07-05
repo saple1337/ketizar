@@ -21,6 +21,41 @@ ideas = {
 				#naval_torpedo_screen_penetration_factor = 1.00
 			}
 	}
+	GER_Economic_Investment = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GER_airforce
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+			}
+	}
+	
+	GER_Naval_Investment = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GER_kriegsmarinewerft_wilhelmshaven
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.2
+			}
+	}
 	GER_karl_raiding_quotas = {
 		name = "Raiding Quotas"
 		picture = generic_fascism_drift_2

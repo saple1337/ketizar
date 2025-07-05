@@ -38,6 +38,9 @@
  GER_Bolster_Military_Production:0 "Bolster Military Production"
  GER_Flexibile_Military_Industry:0 "A Flexible Military Industry"
  GER_Goring4:0 "A Nation Designed to Conquer"
+ Einheitspakt_economy:0 "Einheitspakt Economy"
+ GER_Economic_Investment:0 "German Economic Investment"
+ GER_Naval_Investment:0 "German Naval Investment"
  
  nor_fleischers_plan_desc:0 "A small, highly trained and elite force is what Norway needs to free our fatherland."
  nor_ruges_plan:0 "Ruge's Plan"
