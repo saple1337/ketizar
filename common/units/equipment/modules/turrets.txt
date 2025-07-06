@@ -15,6 +15,7 @@ equipment_modules = {
 			tank_super_heavy_main_armament = armor
 		}
 		forbid_equipment_type = artillery
+		forbid_equipment_type = anti_tank
 		add_stats = {
 			build_cost_ic = 0.75
 			breakthrough = 6
