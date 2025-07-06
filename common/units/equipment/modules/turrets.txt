@@ -14,6 +14,7 @@ equipment_modules = {
 			tank_heavy_main_armament = armor
 			tank_super_heavy_main_armament = armor
 		}
+		forbid_equipment_type = artillery
 		add_stats = {
 			build_cost_ic = 0.75
 			breakthrough = 6
@@ -44,6 +45,7 @@ equipment_modules = {
 			air_attack = -0.25
 		}
 		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
 	}
 
 	tank_light_three_man_tank_turret = {
@@ -70,6 +72,7 @@ equipment_modules = {
 			air_attack = -0.25
 		}
 		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
 	}
 
 	tank_light_fixed_superstructure_turret = {
@@ -163,6 +166,7 @@ equipment_modules = {
 		}
 		
 		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
 
 		add_stats = {
 			build_cost_ic = 5.75
@@ -198,6 +202,7 @@ equipment_modules = {
 
 		}
 		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
 	}
 
 	tank_heavy_fixed_superstructure_turret = {
@@ -259,6 +264,7 @@ equipment_modules = {
 			hard_attack = -0.1
 		}
 		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
 	}
 
 	tank_medium_one_man_tank_turret = {
@@ -282,6 +288,7 @@ equipment_modules = {
 
 		}
 		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
 	}
 
 	tank_medium_two_man_tank_turret = {
@@ -304,6 +311,7 @@ equipment_modules = {
 
 		}
 		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
 	}
 
 	tank_medium_three_man_tank_turret = {
@@ -327,6 +335,7 @@ equipment_modules = {
 
 		}
 		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
 	}
 
 
@@ -352,6 +361,7 @@ equipment_modules = {
 
 		}
 		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
 	}
 
 	tank_super_heavy_four_man_tank_turret = {
@@ -378,6 +388,7 @@ equipment_modules = {
 			
 		}
 		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
 	}
 
 	tank_modern_tank_turret = {
@@ -401,5 +412,6 @@ equipment_modules = {
 
 		}
 		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
 	}
 }

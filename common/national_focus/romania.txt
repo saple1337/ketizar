@@ -1933,7 +1933,9 @@ focus_tree = {
 	
 		completion_reward = {
 			341 = { set_demilitarized_zone = no }
-			797 = { set_demilitarized_zone = no }
+			797 = { set_demilitarized_zone = no 
+					add_core_of = ROM
+			}
 			ROM = {
 					transfer_state = 797
 			}
