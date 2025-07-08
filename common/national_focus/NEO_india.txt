@@ -1515,71 +1515,7 @@ focus = {
 			#add_ideas = ENG_colonial_elite
 		}
 	}
-  
-    focus = {
-        id = RAJ_punjab_autonomy
-        icon = GFX_focus_RAJ_punjab_autonomy
-        prerequisite = { focus = RAJ_indian_institute_of_science }
-        x = 0
-        y = 1
-        relative_position_id = RAJ_indian_institute_of_science
-        
-        cost = 5
 
-        ai_will_do = {
-            factor = 1
-        }
-
-        available = {
-
-        }
-        
-        bypass = {
-        }
-
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        available_if_capitulated = no
-
-        search_filters = {FOCUS_FILTER_POLITICAL}
-        search_filters = {FOCUS_FILTER_INDUSTRY}
-
-        completion_reward = {
-
-            if = {
-                limit = {
-                    440 = {
-                        is_controlled_by_ROOT = yes
-                    }
-                }
-
-                440 = {
-                    add_extra_state_shared_building_slots = 2
-                    add_dynamic_modifier = {
-                        modifier = idea_RAJ_sikh_approval
-                    }
-                }
-            }
-
-            custom_effect_tooltip = generic_skip_one_line_tt
-
-            if = {
-                limit = {
-                    433 = {
-                        is_controlled_by_ROOT = yes
-                    }
-                }
-
-                433 = {
-                    add_extra_state_shared_building_slots = 2
-                    add_dynamic_modifier = {
-                        modifier = idea_RAJ_sikh_approval
-                    }
-                }
-            }
-            
-        }
-    }
 
     ########### BOTTOM TEXT CEL ##################
 
@@ -2628,7 +2564,7 @@ focus = {
         y = 0
         #relative_position_id = RAJ_bombay_baroda_and_central_india_railway
         
-        cost = 5
+        cost = 10
 
         ai_will_do = {
             factor = 1
