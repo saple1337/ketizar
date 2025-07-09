@@ -107,7 +107,11 @@ add_equipment_to_stockpile = {
 	amount = 1500
 	producer = RAJ
 }  
-
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 1800
+	producer = RAJ
+} 
 set_cosmetic_tag = RAJ_UK # British Raj
 
 set_politics = {

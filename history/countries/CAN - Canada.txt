@@ -106,7 +106,7 @@ add_equipment_to_stockpile = {
 } 
 add_equipment_to_stockpile = {
 	type = motorized_equipment_1
-	amount = 1200
+	amount = 1800
 	producer = CAN
 }
 # add_equipment_to_stockpile = {

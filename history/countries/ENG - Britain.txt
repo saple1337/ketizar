@@ -150,7 +150,7 @@ add_ideas = {
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 20500
+	amount = 15000
 	producer = ENG
 }  
 add_equipment_to_stockpile = {
@@ -170,7 +170,7 @@ add_equipment_to_stockpile = {
 } 
 add_equipment_to_stockpile = {
 	type = motorized_equipment_1
-	amount = 5750
+	amount = 19150
 	producer = ENG
 } 
 
