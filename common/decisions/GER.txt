@@ -512,7 +512,7 @@ War_economy = {
 		}
 		
 		complete_effect = {
-			CRO = {
+			YUG = {
 					add_ideas = GER_Economic_Investment
 				}
 		}

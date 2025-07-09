@@ -1222,6 +1222,7 @@ focus_tree = {
 		icon = GFX_focus_NORDIC_com_army
 		prerequisite = { focus = GER_align_hungary }
 		mutually_exclusive = {focus =GER_establish_the_Einheitspakt}
+		available = { has_completed_focus = GER_four_year_plan }
 		x = 1
 		y = 1
 		relative_position_id = GER_align_hungary
@@ -5526,6 +5527,7 @@ focus_tree = {
 			prerequisite = { focus = GER_align_hungary }
 			relative_position_id = GER_align_hungary
 			mutually_exclusive = {focus =GER_integrate_war_economies}
+			available = { has_completed_focus = GER_Schact_Plan }
 			x = -1
 			y = 1
 			cost = 5
