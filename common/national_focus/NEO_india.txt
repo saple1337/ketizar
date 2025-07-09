@@ -74,7 +74,7 @@ focus_tree = {
 		completion_reward = {
 				add_dynamic_modifier = { modifier = RAJ_a_loyal_government }
 		
-					add_political_power = 70
+					#add_political_power = 70
 
 		}
 	}
@@ -276,12 +276,12 @@ focus = {
                 add_extra_state_shared_building_slots = 4
                 add_building_construction = {
                     type = industrial_complex
-                    level = 2
+                    level = 1
                     instant_build = yes
                 }
                 add_building_construction = {
                     type = infrastructure
-                    level = 2
+                    level = 1
                     instant_build = yes
                 }
                 #set_compliance = 100
@@ -351,11 +351,7 @@ focus = {
                     level = 1
                     instant_build = yes
                 }
-                add_building_construction = {
-                    type = infrastructure
-                    level = 1
-                    instant_build = yes
-                }
+                
                 add_core_of = ROOT
             }
         }
@@ -685,10 +681,10 @@ focus = {
             add_to_variable = { RAJ_autonomy_gain_independence_movement = 0.03 tooltip = autonomy_gain_tt }
             custom_effect_tooltip = generic_skip_one_line_tt
             438 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -892,19 +888,19 @@ focus = {
             }
 
             436 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 
             428 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -953,10 +949,10 @@ focus = {
                 # technology  = technology_id # optional
             #}
             437 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1198,7 +1194,7 @@ focus = {
 
         completion_reward = {
             435 = {
-                add_extra_state_shared_building_slots = 4
+                add_extra_state_shared_building_slots = 2
                 add_building_construction = {
                     type = dam
                     level = 1
@@ -1210,7 +1206,7 @@ focus = {
             }
 
             431 = {
-                add_extra_state_shared_building_slots = 4
+                add_extra_state_shared_building_slots = 2
                 add_building_construction = {
                     type = dam
                     level = 1
@@ -1222,7 +1218,7 @@ focus = {
             }
 
             438 = {
-                add_extra_state_shared_building_slots = 4
+                add_extra_state_shared_building_slots = 2
                 add_building_construction = {
                     type = dam
                     level = 1
@@ -1453,27 +1449,27 @@ focus = {
             427 = {
                 add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 1
                 
             }
             425 = {
                add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 1
             }
             428 = {
                   add_building_construction = {
 					type = dockyard
-					level = 4
+					level = 2
 					instant_build = yes
 				}  
-                 add_extra_state_shared_building_slots = 4
+                 add_extra_state_shared_building_slots = 2
             }
 		}
 	}
@@ -1924,8 +1920,8 @@ focus = {
 
 		completion_reward = {
 			custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
-            add_to_variable = { RAJ_infantry_attack = 0.05 tooltip = army_infantry_attack_factor_tt }
-            add_to_variable = { RAJ_infantry_defence = 0.05 tooltip = army_infantry_defence_factor_tt }
+            add_to_variable = { RAJ_infantry_attack = 0.03 tooltip = army_infantry_attack_factor_tt }
+            add_to_variable = { RAJ_infantry_defence = 0.03 tooltip = army_infantry_defence_factor_tt }
 		}
 	}
 
@@ -2086,8 +2082,8 @@ focus = {
 
 	completion_reward = {
 		custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
-        add_to_variable = { RAJ_core_attack_factor = 0.1 tooltip = army_core_attack_factor_tt }
-		add_to_variable = { RAJ_army_core_defence_factor = 0.1 tooltip = army_core_defence_factor_tt }
+        add_to_variable = { RAJ_core_attack_factor = 0.05 tooltip = army_core_attack_factor_tt }
+		add_to_variable = { RAJ_army_core_defence_factor = 0.05 tooltip = army_core_defence_factor_tt }
 	}
 }
 
@@ -2453,7 +2449,7 @@ focus = {
 
         completion_reward = {
             custom_effect_tooltip = idea_RAJ_independence_movement_tt
-            add_to_variable = { RAJ_independence_movement_industrial_capacity_factory = 0.25 tooltip = industrial_capacity_factory_tt }
+            add_to_variable = { RAJ_independence_movement_industrial_capacity_factory = 0.15 tooltip = industrial_capacity_factory_tt }
         }
     }
 
@@ -2533,8 +2529,8 @@ focus = {
 
         completion_reward = {
             custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
-            add_to_variable = { RAJ_core_attack_factor = 0.3 tooltip = army_core_attack_factor_tt }
-			add_to_variable = { RAJ_army_core_defence_factor = 0.3 tooltip = army_core_defence_factor_tt }
+            add_to_variable = { RAJ_core_attack_factor = 0.1 tooltip = army_core_attack_factor_tt }
+			add_to_variable = { RAJ_army_core_defence_factor = 0.1 tooltip = army_core_defence_factor_tt }
             custom_effect_tooltip = generic_skip_one_line_tt
             if = {
 			        limit = {
@@ -2564,7 +2560,7 @@ focus = {
         y = 0
         #relative_position_id = RAJ_bombay_baroda_and_central_india_railway
         
-        cost = 10
+        cost = 5
 
         ai_will_do = {
             factor = 1
@@ -5007,8 +5003,8 @@ focus = {
 
         completion_reward = {
             custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
-            add_to_variable = { RAJ_cav_attack = 0.15 tooltip = cavalry_attack_factor_tt }
-            add_to_variable = { RAJ_cav_defence = 0.15 tooltip = cavalry_defence_factor_tt }
+            add_to_variable = { RAJ_cav_attack = 0.05 tooltip = cavalry_attack_factor_tt }
+            add_to_variable = { RAJ_cav_defence = 0.05 tooltip = cavalry_defence_factor_tt }
             add_to_variable = { RAJ_modifier_army_sub_unit_cavalry_speed_factor = 0.15 tooltip = modifier_army_sub_unit_cavalry_speed_factor_tt }
         }
     }

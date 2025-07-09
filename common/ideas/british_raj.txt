@@ -57,25 +57,25 @@ ideas = {
 			picture = generic_license_production
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 					#reliability = -0.3
 					instant = yes
 				}
 
 				artillery_equipment = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 					#reliability = -0.3
 					instant = yes
 				}
 
 				support_equipment = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 					#reliability = -0.25
 					instant = yes
 				}
 
 				anti_air_equipment = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 					
 					#reliability = -0.25
 					instant = yes
@@ -259,7 +259,7 @@ ideas = {
 			modifier = {
 				experience_gain_army = 0.2
 				war_support_weekly = 0.002
-				army_core_attack_factor = 0.06
+				army_core_attack_factor = 0.03
 			}
 		}
 
@@ -883,7 +883,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_core_defence_factor = 0.12
+				army_core_defence_factor = 0.05
 				conscription_factor = -0.05
 				autonomy_gain = 0.6
 
@@ -1022,7 +1022,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_expected_value = -0.03
 			}
 		}
 
@@ -1046,7 +1046,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = -0.1
+				consumer_goods_expected_value = -0.05
 				conscription_factor = 0.05
 			}
 		}
