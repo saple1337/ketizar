@@ -135,6 +135,7 @@ on_actions = {
 				FRA = { country_event = { id = france.10 }}
 				GER = {  country_event = { id = france.14 }
                 GER = { transfer_state = 806 }
+                GER = { transfer_state = 991 }
                 EFR = { transfer_state = 851 }
                 ITA = {
                     transfer_state = 956 
