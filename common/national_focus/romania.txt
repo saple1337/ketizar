@@ -1761,8 +1761,253 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ALLIANCE }
     }			
 	
-	#####
-	HERE LIE RIGHT SIDE
+	#######
+	
+	focus = {
+		id = ROM_codreanus_iron_guard
+		icon = ROM_legionary_proclaim_codreanu_a_saint
+		prerequisite = { focus = ROM_the_election }
+		mutually_exclusive = { focus = ROM_antonescu_takes_control }
+		mutually_exclusive = { focus = ROM_simas_ascendancy }
+		relative_position_id = ROM_the_election
+		x = 4
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#NOT = {
+			#	has_country_flag = ROM_iron_guard_codreanu_died
+			#}
+		}
+		
+        completion_reward = {
+			custom_effect_tooltip = "We will not give up a single bit of land!(Except for bessarabia...)"
+			retire_country_leader = yes
+			add_country_leader_role = {
+				character = ROM_corneliu_codreanu
+				promote_leader = yes
+				country_leader = {
+					ideology = fascism_ideology
+					expire = "1965.1.1.1"
+					traits = {  }
+				}
+			}		
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.25
+				
+			}
+			#promote_character = ROM_corneliu_codreanu
+			#ROM_corneliu_codreanu = {
+			#	add_country_leader_trait = r56_rom_outspoken_populist
+			#}
+			remove_ideas = ROM_king_carol_ii_hedonist
+			remove_ideas = ROM_iron_guard_violence2
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+    }
+
+	focus = {
+		id = ROM_the_seat_of_balkan_orthodoxy
+		icon = ROM_legionary_in_name_of_god
+		prerequisite = { focus = ROM_codreanus_iron_guard }
+		relative_position_id = ROM_codreanus_iron_guard
+		x = -1
+		y = 1
+		
+	
+		cost = 5
+	
+		ai_will_do = {
+
+		}
+		
+		completion_reward = {
+			
+			add_ideas = r56_ROM_seat_of_balkan_orthodoxy
+			
+		}
+	}
+	
+	focus = {
+		id = ROM_christian_education_centers
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = ROM_codreanus_iron_guard }
+		relative_position_id = ROM_codreanus_iron_guard
+		x = 1
+		y = 1
+		cost = 10
+	
+		completion_reward = {
+			add_ideas = r56_ROM_christian_education_centers
+		}
+		search_filters = { FOCUS_FILTER_MANPOWER }
+	}
+	
+	#focus = {
+	#	id = ROM_seize_assests
+	#	icon = GFX_goal_generic_orthodoxy_two
+	#	prerequisite = { focus = ROM_codreanus_iron_guard }
+	#	relative_position_id = ROM_codreanus_iron_guard
+	#	x = 1
+	#	y = 1
+		
+	
+	#	cost = 5
+	
+	#	ai_will_do = {
+
+	#	}
+		
+	#	completion_reward = {
+	#		46 = {
+	#			add_extra_state_shared_building_slots = 2
+	#			add_building_construction = {
+	#				type = industrial_complex
+	#				level = 2
+	#				instant_build = yes
+	#			}
+	#		}
+	#		81 = {
+	#			add_extra_state_shared_building_slots = 2
+	#			add_building_construction = {
+	#				type = industrial_complex
+	#				level = 2
+	#				instant_build = yes
+	#			}						
+	#		}
+	#	}
+	#}
+	
+	focus = {
+		id = ROM_establish_the_legion
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		prerequisite = { focus = ROM_the_seat_of_balkan_orthodoxy }
+		prerequisite = { focus = ROM_christian_education_centers }
+		relative_position_id = ROM_the_seat_of_balkan_orthodoxy
+		x = 1
+		y = 1
+		
+		cost = 10
+	
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+		
+		}
+	
+		completion_reward = {
+			add_ideas = ROM_legion_mihail
+			#ROM = { set_rule = { can_join_factions = no }}
+		}
+		
+	}
+	
+	focus = {
+		id = ROM_reclaim_the_mother_church
+		icon = GFX_focus_TUR_the_montreux_convention
+		prerequisite = { focus = ROM_establish_the_legion }
+		relative_position_id = ROM_establish_the_legion
+		x = 0
+		y = 1
+		
+	
+		cost = 5
+	
+		ai_will_do = {
+			factor = 20
+		}
+	
+		available = {
+			has_war = yes
+		}
+	
+		bypass = {
+			
+		}
+	
+		completion_reward = {
+			341 = { set_demilitarized_zone = no 
+					add_core_of = ROM
+			}
+			ROM = {
+					transfer_state = 341
+			}
+			hidden_effect = {
+				SWE = {
+					transfer_state = 49
+					transfer_state = 347
+					transfer_state = 356
+					transfer_state = 355
+					transfer_state = 354
+					transfer_state = 350
+					transfer_state = 352
+					transfer_state = 344
+					transfer_state = 800
+				}
+				every_country = {
+					limit = {
+						controls_state = 48
+					}
+					transfer_state = 341
+				}
+				news_event = { id = news.1007 days = 1 }
+				set_global_flag = fall_of_istanb
+			}
+		}
+	}
+	
+	focus = {
+		id = ROM_total_holy_war
+		icon = ROM_antonescu_continue_the_legionary_goverment
+		prerequisite = { focus = ROM_reclaim_the_mother_church }
+		relative_position_id = ROM_reclaim_the_mother_church
+		x = 1
+		y = 1
+		
+		cost = 5
+	
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+			
+		}
+	
+		completion_reward = {
+			add_ideas = tot_economic_mobilisation
+		}
+		
+	}
+	
+	focus = {
+		id = ROM_the_holy_land
+		icon = GFX_focus_ETH_the_one_true_heir_of_solomon
+		prerequisite = { focus = ROM_reclaim_the_mother_church }
+		relative_position_id = ROM_reclaim_the_mother_church
+		x = -1
+		y = 1
+		
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+            454 = { add_core_of = ROM }
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}					
+	
 	##### 
 
 	focus = {

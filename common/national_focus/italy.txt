@@ -7384,12 +7384,22 @@ completion_reward = {
 				}
 				transfer_state = 764
 			}
-			every_country = {
+			if = {
 				limit = {
-					owns_state = 211
+					ROM = {
+						NOT = {
+							has_completed_focus = ROM_codreanus_iron_guard
+						}
+					}
 				}
-				transfer_state = 77
+				every_country = {
+					limit = {
+						owns_state = 211
+					}
+					transfer_state = 77
+				}
 			}
+			
 			# Adding factories and resetting state level
 			############################################
 
