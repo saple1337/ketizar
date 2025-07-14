@@ -1574,7 +1574,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ROM_codreanus_iron_guard }
 		mutually_exclusive = { focus = ROM_antonescu_takes_control }
 		relative_position_id = ROM_the_election
-		x = -3
+		x = -4
 		y = 1
 		cost = 10
 
@@ -2017,7 +2017,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ROM_simas_ascendancy }
 		mutually_exclusive = { focus = ROM_codreanus_iron_guard }
 		relative_position_id = ROM_the_election
-		x = 3 
+		x = 0
 		y = 1
 		cost = 10
 
@@ -2152,7 +2152,7 @@ focus_tree = {
 		icon = GFX_focus_rom_coup
 		prerequisite = { focus = ROM_prep_for_anti_soviet  focus = ROM_protect_our_eastern_front }
 		
-		x = -3		
+		x = -2		
 		y = 1
 		relative_position_id = ROM_prep_for_anti_soviet
 
