@@ -595,9 +595,8 @@ focus_tree = {
 		}
 
 		available = {
-			SWI = { has_capitulated = yes }
-		}
-		
+						has_full_control_of_state = 3
+					}
 		bypass = {
 
 		}
@@ -1277,6 +1276,14 @@ focus_tree = {
 					add_extra_state_shared_building_slots = 4
 					add_building_construction = { type = arms_factory level = 4 instant_build = yes }	
 				}
+				109 = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = { type = arms_factory level = 4 instant_build = yes }	
+				}
+				2 = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = { type = arms_factory level = 4 instant_build = yes }	
+				}
 
 			
 				hidden_effect = {
@@ -1462,6 +1469,11 @@ focus_tree = {
 				bonus = 0.75
 				uses = 1
 				technology = improved_small_airframe
+			}
+			add_tech_bonus = {
+			technology = aa_cannon_1
+			uses = 1
+			bonus = 0.35
 			}
 	42 = {
 		set_building_level = {
@@ -1689,6 +1701,11 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = radar_tech
+			}
+			add_tech_bonus = {
+			technology = aa_cannon_2
+			uses = 1
+			bonus = 0.5
 			}
 			if = {
 				limit = {
@@ -2517,7 +2534,7 @@ focus_tree = {
 				category = tp_tech
 			}
 			hidden_effect = {
-				news_event = { hours = 6 id = news.233 }
+				
 				37 = { set_compliance = 90 }
 				99 = { set_compliance = 90 }
 				ENG = { transfer_state = 337 }

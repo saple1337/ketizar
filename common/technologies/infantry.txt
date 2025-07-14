@@ -19,7 +19,7 @@ technologies = {
 		}
 		enable_building = {
 			building = bunker
-			level = 5
+			level = 10
 		}
 		enable_building = {
 			building =air_base

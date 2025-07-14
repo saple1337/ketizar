@@ -200,10 +200,6 @@ on_actions = {
 				limit = {
 					original_tag = NOR
 				}
-				transfer_state = 110
-				transfer_state = 142
-				transfer_state = 143
-				transfer_state = 144
 
 			}
 			if = {

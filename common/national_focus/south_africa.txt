@@ -50,7 +50,10 @@ focus_tree = {
 		cost = 10
 
 		available = {
-				threat > 0.2
+				OR = { 
+			date > 1938.2.1
+			GER = { has_completed_focus = GER_demand_sudetenland }
+		}
 		}
 
 		cancel_if_invalid = yes
@@ -114,7 +117,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = SAF_war_measures_act
 
-		cost = 10
+		cost = 5
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -441,7 +444,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 5
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
