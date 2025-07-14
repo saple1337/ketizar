@@ -1,6 +1,7 @@
 
 state={
 	id=411
+	impassable = yes
 	name="STATE_411" # Isfahan
 	manpower = 885272
 	resources={
