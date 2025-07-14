@@ -127,7 +127,11 @@ focus_tree = {
 		icon = GFX_focus_GER_ally_chiang_kai_shek
 		prerequisite = { focus = GER_Schact_Plan }
 		relative_position_id = GER_Schact_Plan
-		x = -2
+		mutually_exclusive = {focus = ITA_befriend_japan}
+		available = {
+			OR ={ NOT = {JAP = {has_completed_focus = JAP_intervene_in_china} }
+			date<1937.7.1}}
+		x = 0
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -137,13 +141,21 @@ focus_tree = {
 		available = { }
 		
 		completion_reward = {
-			add_offsite_building = { type = industrial_complex level = 4 }			
-			add_political_power = -50
+			add_offsite_building = { type = industrial_complex level = 8 }
+			606 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = arms_factory
+					level = 6
+					instant_build = yes
+				}
+			}			
+			add_political_power = 50
 			CHI = {
 				add_equipment_to_stockpile = {
 					producer = GER
 					type = infantry_equipment_0
-					amount = 20000
+					amount = 40000
                 }	
 			}
 			hidden_effect = {
@@ -216,19 +228,81 @@ focus_tree = {
 							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
 							owner = CHI
 						}
+						create_unit = {
+							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
+							owner = CHI
+						}
+						create_unit = {
+							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
+							owner = CHI
+						}
+						create_unit = {
+							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
+							owner = CHI
+						}
+						create_unit = {
+							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
+							owner = CHI
+						}
+						create_unit = {
+							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
+							owner = CHI
+						}
+						create_unit = {
+							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
+							owner = CHI
+						}
 					}
 				}
 			}
 		
 		}
 	}
+	focus = {
+		id = ITA_befriend_japan
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		prerequisite = { focus = GER_Schact_Plan }
+		mutually_exclusive = {focus = GER_hh_kung}
+		
+		x = -2
+		y = 1
+		relative_position_id = GER_Schact_Plan
+		cost = 5
+
+		available = {
+			OR = {JAP = {has_completed_focus = JAP_intervene_in_china} 
+			date>1937.7.1}
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			add_offsite_building = { type = industrial_complex level = 4 }
+			282 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}			
+			add_political_power = -50
+			JAP = {
+				add_equipment_to_stockpile = {
+					producer = GER
+					type = infantry_equipment_0
+					amount = 10000
+                }	
+			}
+		}
+	}
 	
 	focus = {
 		id = GER_bilateral_trade
 		icon = GFX_focus_GER_the_proud_eagle_and_the_rising_dragon
-		prerequisite = { focus = GER_hh_kung }
+		prerequisite = { focus = GER_hh_kung focus = ITA_befriend_japan }
 		relative_position_id = GER_hh_kung
-		x = 0
+		x = -1
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -279,7 +353,7 @@ focus_tree = {
 		text = "Fight Corruption"
 		prerequisite = { focus = GER_Schact_Plan }
 		relative_position_id = GER_Schact_Plan
-		x = 2
+		x = 4
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -299,7 +373,7 @@ focus_tree = {
 		icon = GFX_focus_GER_wirtschaftswunder
 		prerequisite = { focus = GER_civilian_industry2 focus = GER_civilian_industry3 focus = GER_civilian_industry4}
 		relative_position_id = GER_Schact_Plan
-		x = 0
+		x = 1
 		y = 4
 		cost = 5
 		ai_will_do = {
@@ -676,7 +750,7 @@ focus_tree = {
 		icon = GFX_focus_GER_vereinigte_stahlwerke
 		text = "Schacht's Plan"
 		prerequisite = { focus = GER_Schact_Plan }
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = GER_Schact_Plan
 		cost = 5
@@ -725,7 +799,7 @@ focus_tree = {
 		text = "Expansion of Civilian Industry"
 		dynamic = yes
 		prerequisite = { focus = GER_economic_integration }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GER_economic_integration
 		cost = 10
@@ -1028,10 +1102,10 @@ focus_tree = {
 		id = GER_synthetic_rubber_schacht
 		icon = GFX_focus_ITA_italian_irredentism
 		text = "Investments In Italian Rubber Production"
-		prerequisite = { focus = GER_economic_integration }
-		x = 2
+		prerequisite = { focus = GER_establish_the_Einheitspakt }
+		x = 0
 		y = 1
-		relative_position_id = GER_economic_integration
+		relative_position_id = GER_establish_the_Einheitspakt
 		cost = 10
 		ai_will_do = {
 			factor = 4
@@ -1079,7 +1153,7 @@ focus_tree = {
 	focus = {
 		id = GER_autobahn
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = GER_autarky focus = GER_economic_integration}
+		prerequisite = { focus = GER_autarky }
 		x = -2
 		y = 1
 		relative_position_id = GER_autarky
@@ -1096,7 +1170,7 @@ focus_tree = {
 			#custom_effect_tooltip = GER_autobahn_tt
 			every_state = { 
 			limit = { OR = {is_core_of = GER is_core_of = AUS } }
-			add_state_modifier = { modifier = { local_building_slots_factor = 0.20  } }
+			add_state_modifier = { modifier = { local_building_slots_factor = 0.30  } }
 			}
 			
 				64 = {
@@ -1160,6 +1234,26 @@ focus_tree = {
 						}
 					}
 				}
+				55 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
+					}
+				}
+				57 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
+					}
+				}
 					
 		}
 	}
@@ -1167,7 +1261,7 @@ focus_tree = {
 	focus = {
 		id = GER_grosraumwirtschaft
 		icon = GFX_focus_GER_the_four_year_plan
-		prerequisite = { focus = GER_autarky focus = GER_economic_integration}
+		prerequisite = { focus = GER_economic_integration}
 		x = -6
 		y = 2
 		relative_position_id = GER_four_year_plan
@@ -1180,14 +1274,14 @@ focus_tree = {
 			add_ideas = GER_grosraumwirtschaft
 				every_state = { 
 			limit = { OR = {is_core_of = GER is_core_of = AUS } }
-			add_state_modifier = { modifier = { local_building_slots_factor = 0.20  } }
+			add_state_modifier = { modifier = { local_building_slots_factor = 0.50  } }
 			}
 		}
 	}
 
 	focus = {
 		id = GER_align_hungary
-		text = "Align Romania"
+		text = "Align The Axis"
 		icon = GFX_focus_GER_subjugate_romanian_economy
 		prerequisite = { focus = GER_grosraumwirtschaft focus = GER_autobahn}
 		x = 1
@@ -1220,8 +1314,8 @@ focus_tree = {
 		id = GER_integrate_war_economies
 		icon = GFX_focus_NORDIC_com_army
 		prerequisite = { focus = GER_align_hungary }
-		mutually_exclusive = {focus =GER_establish_the_Einheitspakt}
-		available = { has_completed_focus = GER_four_year_plan }
+		prerequisite = {focus = GER_autobahn}
+		available = { }
 		x = 1
 		y = 1
 		relative_position_id = GER_align_hungary
@@ -4648,7 +4742,7 @@ focus_tree = {
 				}
 				completion_reward = {
 					every_country = {
-						limit = { OR = { the_axis = yes original_tag = CZE original_tag = YUG } }
+						limit = { OR = { the_axis = yes original_tag = CZE original_tag = YUG original_tag = HUN } }
 						add_ideas = GER_armaments_miracle
 					}
 					# add_ideas = GER_armaments_miracle
@@ -5541,10 +5635,10 @@ focus_tree = {
 		focus = {
 			id = GER_establish_the_Einheitspakt
 			icon = GFX_focus_NORDIC_com_capstone_civilian
-			prerequisite = { focus = GER_align_hungary }
+			prerequisite = { focus = GER_align_hungary  }
+			prerequisite = { focus = GER_grosraumwirtschaft}
 			relative_position_id = GER_align_hungary
-			mutually_exclusive = {focus =GER_integrate_war_economies}
-			available = { has_completed_focus = GER_Schact_Plan }
+			available = {}
 			x = -1
 			y = 1
 			cost = 5
@@ -5565,6 +5659,34 @@ focus_tree = {
 						}
 				CZE = {
 					add_ideas = GER_Einheitspakt_Member
+				}
+				41 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }	
+				}
+				43	 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }	
+				}
+				46 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }	
+				}
+				48 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }	
+				}
+				70 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }	
+				}
+				109 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }	
+				}
+				2 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }	
 				}
 				
 			}

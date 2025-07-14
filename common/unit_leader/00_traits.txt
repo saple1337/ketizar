@@ -2248,7 +2248,7 @@ leader_traits = {
 	lone_wolf = { 
 		type = navy
 		modifier = {
-			naval_enemy_fleet_size_ratio_penalty_factor = 0.1
+			positioning = 0.05
 		}
 				
 		ai_will_do = {
@@ -2265,7 +2265,7 @@ leader_traits = {
 	concealment_expert = { 
 		type = navy
 		modifier = {
-			navy_visibility = -0.2
+			navy_visibility = -0.15 
 		}
 				
 		ai_will_do = {
@@ -2330,7 +2330,7 @@ leader_traits = {
 	smoke_screen_expert = { 
 		type = navy
 		modifier = {
-			naval_retreat_chance = 0.25
+			naval_speed_factor = 0.03
 		}
 		
 		ai_will_do = {

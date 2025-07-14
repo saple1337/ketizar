@@ -661,6 +661,7 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
+			political_power_gain = 0.15
 			political_advisor_cost_factor = -0.3
 			trade_laws_cost_factor = -0.3
 			mobilization_laws_cost_factor = -0.3
@@ -1251,6 +1252,7 @@ ideas = {
 
 			modifier = {
 				production_speed_infrastructure_factor = 0.1
+				production_cost_infrastructure_factor = -0.15
 				production_speed_rail_way_factor = 0.3
 				production_speed_supply_node_factor = 0.3
 			}

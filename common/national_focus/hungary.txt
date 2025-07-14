@@ -1,7 +1,17 @@
 
+	focus_tree = {
+	id = hungarian_focus
 	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = HUN
+		}
+	}
 	default = no
-	#shared_focus = AXIS_cum
+	shared_focus = AXIS_cum
 	continuous_focus_position = { x = 50 y = 1600 }
 
 	############################
@@ -2470,3 +2480,4 @@
 			}
 		}
 	}
+}
