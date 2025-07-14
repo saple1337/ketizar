@@ -380,6 +380,30 @@ add_equipment_production = {
 			requested_factories = 1 
 			progress = 0.95 
 			amount = 1 
+		}
+
+		add_equipment_production = { 
+			equipment = { 
+				type = ship_hull_cruiser_2 
+				creator = "ITA" 
+				version_name = ""Duca degli Abruzzi Class"" 
+			} 
+			name = "RI Eugenio di Savoia"
+			requested_factories = 1 
+			progress = 0.95 
+			amount = 1 
+		} 
+		
+		add_equipment_production = { 
+			equipment = { 
+				type = ship_hull_cruiser_2 
+				creator = "ITA" 
+				version_name = ""Duca degli Abruzzi Class"" 
+			} 
+			name = "RI Eugenio di Savoia"
+			requested_factories = 1 
+			progress = 0.95 
+			amount = 1 
 		} 
 
 		# SS: "RSmg Enrico Tazzoli"

@@ -148,22 +148,6 @@ focus = {
 		custom_effect_tooltip = RAJ_a_loyal_government_tt
         add_to_variable = { RAJ_loyal_government_autonomy_gain = 0.02 tooltip = autonomy_gain_tt }
         custom_effect_tooltip = generic_skip_one_line_tt
-		random_core_state = {
-			limit = {
-				is_fully_controlled_by = ROOT
-				free_building_slots = {
-					building = industrial_complex
-					size > 0
-					include_locked = yes
-				}
-			}
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-			}
-		}
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 		if = {
@@ -4962,17 +4946,8 @@ focus = {
         search_filters = {FOCUS_FILTER_ARMY_XP}
 
         completion_reward = {
-            custom_effect_tooltip = RAJ_defenders_of_the_revolution_idea_tt
-            custom_effect_tooltip = tech_effect|revolutionary_mass_assault
-            hidden_effect = {
-                set_technology = {
-                    revolutionary_mass_assault = 1
-                    popup = no
-                }
-            }
-            custom_effect_tooltip = generic_skip_one_line_tt
             custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
-            add_to_variable = { RAJ_infantry_attack = 0.03 tooltip = army_infantry_attack_factor_tt }
+            add_to_variable = { RAJ_infantry_attack = 0.05 tooltip = army_infantry_attack_factor_tt }
         }
     }
 	

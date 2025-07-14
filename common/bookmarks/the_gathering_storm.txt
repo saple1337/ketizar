@@ -233,20 +233,6 @@ bookmarks = {
 				ROM_swamp_greater_romania
 			}
 		}
-		"MAN"={
-			minor = yes
-			history = "MAN_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				MAN_banditry
-				MAN_kwantung_veto
-				MAN_low_legitimacy_5
-			}
-			focuses = {
-				MAN_obedience
-				#MAN_develop_aluminum_sources
-				MAN_the_two_emperors		}
-		}
 
 		"SPR"={			
 			minor = yes			

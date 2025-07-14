@@ -19,7 +19,7 @@ technologies = {
 		}
 		enable_building = {
 			building = bunker
-			level = 5
+			level = 10
 		}
 		enable_building = {
 			building =air_base
@@ -216,6 +216,11 @@ technologies = {
 			# ap_attack = 1
 		}
 		
+		category_cavalry = {
+			hard_attack = 0.75
+			# ap_attack = 1
+		}
+		
 		path = {
 			leads_to_tech = infantry_at2
 			research_cost_coeff = 1
@@ -241,6 +246,11 @@ technologies = {
 	infantry_at2 = {
 		special_project_specialization = { specialization_land }
 		category_all_infantry = {
+			hard_attack = 0.75
+			# ap_attack = 1
+		}
+		
+		category_cavalry = {
 			hard_attack = 0.75
 			# ap_attack = 1
 		}
@@ -1728,6 +1738,20 @@ technologies = {
 			defense = 0.05
 		}
 		
+		motorized = {
+			soft_attack = 0.05
+			defense = 0.05
+		}
+		
+		mechanized = {
+			soft_attack = 0.02
+			defense = 0.02
+		}
+		
+		category_cavalry = {
+			soft_attack = 0.03
+			defense = 0.03
+		}
 		
 		# path = {
 		# 	leads_to_tech = sniper_rifle_2
@@ -1762,6 +1786,21 @@ technologies = {
 			defense = 0.05
 		}
 		
+		motorized = {
+			soft_attack = 0.05
+			defense = 0.05
+		}
+		
+		mechanized = {
+			soft_attack = 0.02
+			defense = 0.02
+		}
+		
+		category_cavalry = {
+			soft_attack = 0.03
+			defense = 0.03
+		}
+		
 		# path = {
 		# 	leads_to_tech = sniper_rifle_3
 		# 	research_cost_coeff = 1
@@ -1790,6 +1829,18 @@ technologies = {
 			breakthrough = 0.10
 		}
 		
+		motorized = {
+			breakthrough = 0.10
+		}
+		
+		mechanized = {
+			breakthrough = 0.10
+		}
+		
+		category_cavalry = {
+			breakthrough = 0.10
+			
+		}
 		
 		engineer = {
 			entrenchment = 0.5
@@ -1819,7 +1870,18 @@ technologies = {
 			breakthrough = 0.10
 		}
 		
-
+		motorized = {
+			breakthrough = 0.10
+		}
+		
+		mechanized = {
+			breakthrough = 0.10
+		}
+		
+		category_cavalry = {
+			breakthrough = 0.10
+			
+		}
 		
 		engineer = {
 			entrenchment = 0.5

@@ -42,7 +42,8 @@ sub_units = {
 		suppression = 2
 	
 		need = {
-			infantry_equipment = 200
+			infantry_equipment = 100
+			support_equipment = 20
 		}
 
 		forest = {

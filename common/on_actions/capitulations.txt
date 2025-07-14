@@ -135,6 +135,7 @@ on_actions = {
 				FRA = { country_event = { id = france.10 }}
 				GER = {  country_event = { id = france.14 }
                 GER = { transfer_state = 806 }
+                GER = { transfer_state = 991 }
                 EFR = { transfer_state = 851 }
                 ITA = {
                     transfer_state = 956 
@@ -199,10 +200,6 @@ on_actions = {
 				limit = {
 					original_tag = NOR
 				}
-				transfer_state = 110
-				transfer_state = 142
-				transfer_state = 143
-				transfer_state = 144
 
 			}
 			if = {
