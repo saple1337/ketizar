@@ -1270,7 +1270,7 @@ ideas = {
 
 			modifier = {
 				production_speed_infrastructure_factor = 0.1
-				production_cost_infrastructure_factor = -0.15
+				production_cost_infrastructure_factor = -0.25
 				production_speed_rail_way_factor = 0.3
 				production_speed_supply_node_factor = 0.3
 			}
