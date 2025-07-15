@@ -2347,6 +2347,7 @@ focus_tree = {
 							has_completed_focus = ROM_codreanus_iron_guard
 						}
 					}
+					}
 						every_country = {
 							limit = {
 								controls_state = 43
@@ -2359,7 +2360,6 @@ focus_tree = {
 						46 = {
 							add_manpower = 1523069
 						}
-				}
 			}
 			
 			GER = { 
