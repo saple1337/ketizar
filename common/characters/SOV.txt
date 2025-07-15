@@ -1493,7 +1493,7 @@ SOV_arseniy_golovko={
 	}
 
 	SOV_lev_dovator = {
-		name = SOV_lev_dovator
+		name = "General Grievous"
 		portraits = {
 			army = {
 				large = "GFX_portrait_SOV_lev_dovator"
