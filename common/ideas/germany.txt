@@ -750,6 +750,24 @@ ideas = {
 				production_speed_arms_factory_factor = 0.15
 		}	
 	}
+	GER_france_conquered = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.025
+				production_speed_arms_factory_factor = 0.10
+		}	
+	}
 	GER_africa_conquered = {
 			allowed = {
 				always = no
@@ -765,7 +783,7 @@ ideas = {
 
 			modifier = {
 				production_factory_max_efficiency_factor = 0.025
-				production_speed_arms_factory_factor = 0.20
+				production_speed_arms_factory_factor = 0.10
 		}	
 	}
 	
