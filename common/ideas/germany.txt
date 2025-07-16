@@ -1792,7 +1792,7 @@ ideas = {
 				always = yes
 			}
 
-			available = { ROOT = { has_government = fascism } }
+			available = {}
 
 			removal_cost = -1
 
