@@ -6237,21 +6237,7 @@ completion_reward = {
 			every_country = { limit = { is_in_faction_with = GER } add_ideas = axis_victory_in_egypt }
 			custom_effect_tooltip = "
 			This idea will be cancelled if the Allies retake Egypt!"
-
-			ITA = {
-					create_field_marshal = {
-									name = "Erwin Rommel"
-									picture = "Portrait_Germany_Erwin_Rommel.dds"
-									traits = { desert_fox commando trickster expert_improviser inflexible_strategist panzer_expert trait_reckless war_hero media_personality infantry_officer trait_engineer panzer_leader }
-									skill = 6
-									attack_skill = 7
-									defense_skill = 5
-									planning_skill = 3
-									logistics_skill = 4
-					}
-				}
-
-
+			show_unit_leaders_tooltip = ITA_erwin_rommel
 			159 = {
 				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
