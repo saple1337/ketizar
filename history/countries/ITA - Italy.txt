@@ -776,6 +776,7 @@ recruit_character = ITA_giovanni_marinelli
 recruit_character = ITA_serafino_mazzolini
 #recruit_character = ITA_junio_valerio_borghese
 #recruit_character = ITA_luigi_einaudi
+recruit_character = ITA_erwin_rommel
 recruit_character = ITA_arturo_riccardi
 recruit_character = ITA_rodolfo_graziani_hc
 recruit_character = ITA_ettore_muti
