@@ -23,25 +23,7 @@ characters={
 				large="gfx/leaders/GER/Portrait_Germany_Erwin_Rommel.dds"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = erwin_rommel
-			ledger = army
-			allowed = {
-				original_tag = ITA
-			}
-			available = {
-				has_completed_focus = ITA_german_military_cooperation
-			}
-			traits = {
-				rommel_hc
-			}
-			cost = 200
-			ai_will_do = {
-				factor = 8.000
-			}
-		}
-		corps_commander={
+		field_marshal={
 			traits = { desert_fox commando trickster expert_improviser inflexible_strategist panzer_expert trait_reckless war_hero media_personality infantry_officer trait_engineer panzer_leader }
 			skill = 6
 			attack_skill = 8
