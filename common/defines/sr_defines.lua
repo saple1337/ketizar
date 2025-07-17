@@ -254,7 +254,7 @@ NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.1-- (0.1)
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 0.05
 
 NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
-NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.2 -- -0.12 vanilla, per level AA state 
+NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.12 -- -0.12 vanilla, per level AA state 
 --NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.68 -- .75 Maximum damage reduction factor applied to incoming air attacks against units with AA.
 
 NDefines.NAir.AIR_WING_XP_LOSS_WHEN_KILLED = 0.4
@@ -501,14 +501,14 @@ NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1.0				-- initially 
 NDefines.NNavy.SUPPLY_NEED_FACTOR = 0										-- Changed from vanilla becausee of a weird bug where using too much supply while docked leads to the fleet having no range or fuel
 NDefines.NNavy.LEADER_EXPERIENCE_SCALE = 0.0 								-- Horst has pre-made admirals because admiral grinding is pretty exploity, gamey, and not fun                                
 NDefines.NNavy.GUN_HIT_PROFILES = {
-	215.0, -- heavy attack 80
-	420.0, -- torpedos 145
-	250.0 -- light attack 45
+	250.0, -- heavy attack 80
+	450.0, -- torpedos 145
+	220.0 -- light attack 45
 	}
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
-		4,	-- heavy attack
-		6,	-- torpedos
-		2.0	--  light attack	
+		2,	-- heavy attack
+		3,	-- torpedos
+		1	--  light attack	
 	}
 
 	NDefines.NNavy.CARRIER_ONLY_COMBAT_ACTIVATE_TIME = 0                     -- this is done due to constantly retreating with carrier fleets essentially making all other ships useless, delete-revert if you see it is unnecesary, 
