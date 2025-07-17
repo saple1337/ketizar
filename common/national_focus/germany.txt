@@ -4512,6 +4512,7 @@ focus_tree = {
 						if = { limit = {country_exists = BUL } BUL = { add_timed_idea = { idea = GER_barbarossa_minor days = 160 } } }
 						if = { limit = {country_exists = YUG } YUG = { add_timed_idea = { idea = GER_barbarossa_minor days = 160 } } }
 						if = { limit = {country_exists = CZE } CZE = { add_timed_idea = { idea = GER_barbarossa_minor days = 160 } } }
+						HUN = { add_timed_idea = { idea = GER_barbarossa_minor days = 160 } }
 					}	
 				}
 			}
@@ -5462,6 +5463,7 @@ focus_tree = {
 							ITA = {add_timed_idea = { idea = GER_fall_blau days = 60 }}
 							if = {limit = {country_exists = SPR } SPR = {add_timed_idea = { idea = GER_fall_blau days = 60 }}}
 							if = {limit = {country_exists = YUG } YUG = {add_timed_idea = { idea = GER_fall_blau days = 60 }}}
+							HUN = {add_timed_idea = { idea = GER_fall_blau days = 60 }}
 						}
 
 						custom_effect_tooltip = "   "
@@ -5512,6 +5514,7 @@ focus_tree = {
 							ITA = {add_timed_idea = { idea = GER_operation_citadel days = 55 }}
 							if = {limit = {country_exists = SPR } SPR = {add_timed_idea = { idea = GER_operation_citadel days = 55 }}}
 							if = {limit = {country_exists = YUG } YUG = {add_timed_idea = { idea = GER_operation_citadel days = 55 }}}
+							HUN = {add_timed_idea = { idea = GER_operation_citadel days = 55 }}
 						}
 						hidden_effect = {
 							news_event = { hours = 6 id = news.811 }

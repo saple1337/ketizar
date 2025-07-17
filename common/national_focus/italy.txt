@@ -6234,6 +6234,9 @@ completion_reward = {
 			GER = {
 				GER_economy_up = yes
 			}
+			HUN = {
+				add_ideas = axis_victory_in_egypt
+			}
 			every_country = { limit = { is_in_faction_with = GER } add_ideas = axis_victory_in_egypt }
 			custom_effect_tooltip = "
 			This idea will be cancelled if the Allies retake Egypt!"

@@ -238,18 +238,20 @@ buildings = {
 	
 	anti_air_building = {
 		show_on_map = 3
-		base_cost = 2500
+		per_level_extra_cost = 5
+		base_cost = 2000
 		icon_frame = 9
 		anti_air = yes
-		disabled_in_dmz = yes
+		disabled_in_dmz = no
 		air_defence = 1
-		damage_factor = 0.1
-		value = 1
-		infrastructure_construction_effect = yes
 		level_cap = {
 			state_max = 5
 		}
-	}
+		value = 10
+		allied_build = yes
+		infrastructure_construction_effect = yes
+		damage_factor = 0.05
+		}
 
 	synthetic_refinery = {
 		show_on_map = 1
