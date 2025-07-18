@@ -762,8 +762,6 @@ technologies = {
 		super_heavy_sp_anti_air_brigade = { air_attack = 0.08 }
 		modern_sp_anti_air_brigade = { air_attack = 0.08 }
 
-		industry_air_damage_factor = -0.15
-		tech_air_damage_factor = -0.015
 		
 		path = {
 			leads_to_tech = antiair2
@@ -850,9 +848,6 @@ technologies = {
 		super_heavy_sp_anti_air_brigade = { air_attack = 0.08 }
 		modern_sp_anti_air_brigade = { air_attack = 0.08 }
 		
-		industry_air_damage_factor = -0.15
-		tech_air_damage_factor = -0.015
-
 		path = {
 			leads_to_tech = antiair3_5
 			research_cost_coeff = 1
