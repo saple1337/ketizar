@@ -3,7 +3,7 @@ soundeffect = {
    sounds = {
         sound = "barbarossa"
     }
-    volume = 1
+    volume = 0.8
 }
 soundeffect = {
   name = "super_eastern_front"
