@@ -2320,7 +2320,7 @@ ideas = {
 			cost = 75
 			
 			allowed = {
-				OR = {original_tag = GER original_tag = SPR original_tag = HUN original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG  }
+				OR = {original_tag = GER original_tag = SPR original_tag = HUN tag = HUN_greater original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG  }
 			}
 			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 			
@@ -2392,7 +2392,7 @@ ideas = {
 
 			cost = 75
 			allowed = {
-				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
+				OR = { original_tag = GER original_tag = SPR original_tag = HUN tag = HUN_greater original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
 			}
 			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 			
@@ -2425,7 +2425,7 @@ ideas = {
 			picture = GER_MAN
 			cost = 75
 			allowed = {
-				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
+				OR = { original_tag = GER original_tag = SPR original_tag = HUN tag = HUN_greater original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
 			}
 			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 			
@@ -2484,7 +2484,7 @@ ideas = {
 
 			cost = 75
 			allowed = {
-				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
+				OR = { original_tag = GER original_tag = SPR original_tag = HUN tag = HUN_greater original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
 			}
 			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 			
@@ -2509,7 +2509,7 @@ ideas = {
 		cost = 75
 			
 			allowed = {
-				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
+				OR = { original_tag = GER original_tag = SPR original_tag = HUN tag = HUN_greater original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
 			}
 			modifier = {
 			aircraft_manufacturer_cost_factor = -1
@@ -2543,7 +2543,7 @@ ideas = {
 		junkers = { 
 		cost = 75
 			allowed = {
-				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
+				OR = { original_tag = GER original_tag = SPR original_tag = HUN tag = HUN_greater original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
 			}
 			modifier = {
 			aircraft_manufacturer_cost_factor = -1
@@ -2570,7 +2570,7 @@ ideas = {
 			cost = 75
 			
 			allowed = {
-				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
+				OR = { original_tag = GER original_tag = SPR original_tag = HUN tag = HUN_greater original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
 			}
 			
 						
@@ -2591,7 +2591,7 @@ ideas = {
 			cost = 75
 			
 			allowed = {
-				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
+				OR = { original_tag = GER original_tag = SPR original_tag = HUN tag = HUN_greater original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
 			}
 			
 			modifier = {
@@ -2611,7 +2611,7 @@ ideas = {
 		dornier = {
 			cost = 75
 			allowed = {
-				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
+				OR = { original_tag = GER original_tag = SPR original_tag = HUN tag = HUN_greater original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
 			}
 			
 				modifier = {

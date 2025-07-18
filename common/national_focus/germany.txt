@@ -155,7 +155,7 @@ focus_tree = {
 				add_equipment_to_stockpile = {
 					producer = GER
 					type = infantry_equipment_0
-					amount = 50000
+					amount = 60000
                 }	
 			}
 			hidden_effect = {
@@ -196,6 +196,10 @@ focus_tree = {
 						
 					random_owned_controlled_state = {
 						prioritize = { 613 }
+						create_unit = {
+							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
+							owner = CHI
+						}
 						create_unit = {
 							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
 							owner = CHI
@@ -1836,7 +1840,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_air_innovation
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1999,7 +2003,7 @@ focus_tree = {
 		}
 		
 		available = {
-						date > 1940.3.1					
+										
 					}
 
 		available_if_capitulated = yes
@@ -2010,6 +2014,13 @@ focus_tree = {
 				specialization = specialization_nuclear
 				value = 1
 			}
+			 add_tech_bonus = {
+                name = RAJ_thunder_elephants
+                ahead_reduction = 1 # was 2
+                bonus = 1
+                uses = 1
+                technology = super_heavy_tank_chassis
+            }
 		}
 	}
 
@@ -2104,7 +2115,7 @@ focus_tree = {
 		icon = GFX_focus_GER_anschluss2
 		prerequisite = { focus = GER_rhineland }
 
-		available = { date > 1936.9.1 }
+		available = {  }
 
 		cancel_if_invalid = no
 		x = 0
@@ -2796,7 +2807,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		x = 15
 		y = 1
-		cost = 5
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
