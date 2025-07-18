@@ -13,7 +13,7 @@ foreign_politics = {
         	            EFR = {
         	            	is_ai = yes
         	            }
-        	            date > 1941.6.6}
+        	            date > 1941.1.1}
         }				
         
         visible = { 

@@ -3654,7 +3654,7 @@ SOV_arseniy_golovko={
 		}
 	}
 	SOV_daemon_vodanov = {
-		name = GER_daemon_vodanov
+		name = SOV_daemon_vodanov
 		portraits = {
 			army = {
 				large = GFX_portrait_GER_eduard_grote
