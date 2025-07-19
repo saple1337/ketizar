@@ -174,7 +174,7 @@ buildings = {
 		value = 1
 		infrastructure_construction_effect = yes
 		level_cap = {
-			province_max = 10
+			province_max = 5
 		}		
 	}
 
@@ -190,7 +190,7 @@ buildings = {
 		value = 1
 		infrastructure_construction_effect = yes
 		level_cap = {
-			province_max = 10
+			province_max = 5
 		}
 	}
 
@@ -250,7 +250,7 @@ buildings = {
 		value = 10
 		allied_build = yes
 		infrastructure_construction_effect = yes
-		damage_factor = 0.15
+		damage_factor = 0.05
 		}
 
 	synthetic_refinery = {
@@ -659,5 +659,4 @@ spawn_points = {
 		max = 1
 		disable_auto_nudging = yes
 	}
-}
 }
