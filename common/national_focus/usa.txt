@@ -140,7 +140,7 @@ focus = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -159,7 +159,7 @@ focus = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -177,7 +177,7 @@ focus = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -195,7 +195,7 @@ focus = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -208,7 +208,7 @@ focus = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -233,7 +233,7 @@ focus = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -251,7 +251,7 @@ focus = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -269,7 +269,7 @@ focus = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -287,7 +287,7 @@ focus = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -300,7 +300,7 @@ focus = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -452,6 +452,7 @@ focus = {
 			USA_great_depression_level_down = yes
 			every_owned_state = { limit = { is_core_of = USA } add_extra_state_shared_building_slots = 3	}
 			USA_congress_medium_oppositiona = yes
+			add_ideas = isolation
 		}
 	}
 focus = {
