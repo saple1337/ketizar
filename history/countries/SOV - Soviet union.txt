@@ -208,6 +208,7 @@ recruit_character = SOV_abram_ioffe
 recruit_character = SOV_boris_stechkin
 recruit_character = SOV_arkady_nazarov
 recruit_character = SOV_vladimir_kotelnikov
+recruit_character = SOV_daemon_vodanov
 
 
 if = {

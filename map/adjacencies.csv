@@ -268,4 +268,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 2800;2776;;-1;-1;-1;-1;-1;YEMEN_STRAIT;YEMEN
 8941;5605;;-1;-1;-1;-1;-1;MED_STRAIT;MED
 5656;5579;;-1;-1;-1;-1;-1;MED_STRAIT2;MED
+9998;949;sea;;-1;-1;-1;-1;Axis Minor-Japan
+9998;9617;sea;;-1;-1;-1;-1;Axis Minor-Japan
+9998;9660;sea;;-1;-1;-1;-1;Axis Minor-Japan
+9998;9692;sea;;-1;-1;-1;-1;Axis Minor-Japan
 -1;-1;;-1;-1;-1;-1;-1;-1

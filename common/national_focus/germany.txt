@@ -127,7 +127,11 @@ focus_tree = {
 		icon = GFX_focus_GER_ally_chiang_kai_shek
 		prerequisite = { focus = GER_Schact_Plan }
 		relative_position_id = GER_Schact_Plan
-		x = -2
+		mutually_exclusive = {focus = ITA_befriend_japan}
+		available = {
+			OR ={ NOT = {JAP = {has_completed_focus = JAP_intervene_in_china} }
+			date<1937.7.1}}
+		x = 0
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -137,13 +141,21 @@ focus_tree = {
 		available = { }
 		
 		completion_reward = {
-			add_offsite_building = { type = industrial_complex level = 4 }			
-			add_political_power = -50
+			add_offsite_building = { type = industrial_complex level = 8 }
+			606 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = arms_factory
+					level = 6
+					instant_build = yes
+				}
+			}			
+			add_political_power = 50
 			CHI = {
 				add_equipment_to_stockpile = {
 					producer = GER
 					type = infantry_equipment_0
-					amount = 20000
+					amount = 60000
                 }	
 			}
 			hidden_effect = {
@@ -216,19 +228,85 @@ focus_tree = {
 							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
 							owner = CHI
 						}
+						create_unit = {
+							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
+							owner = CHI
+						}
+						create_unit = {
+							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
+							owner = CHI
+						}
+						create_unit = {
+							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
+							owner = CHI
+						}
+						create_unit = {
+							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
+							owner = CHI
+						}
+						create_unit = {
+							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
+							owner = CHI
+						}
+						create_unit = {
+							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
+							owner = CHI
+						}
+						create_unit = {
+							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
+							owner = CHI
+						}
 					}
 				}
 			}
 		
 		}
 	}
+	focus = {
+		id = ITA_befriend_japan
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		prerequisite = { focus = GER_Schact_Plan }
+		mutually_exclusive = {focus = GER_hh_kung}
+		
+		x = -2
+		y = 1
+		relative_position_id = GER_Schact_Plan
+		cost = 5
+
+		available = {
+			OR = {JAP = {has_completed_focus = JAP_intervene_in_china} 
+			date>1937.7.1}
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			add_offsite_building = { type = industrial_complex level = 4 }
+			282 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}			
+			add_political_power = -50
+			JAP = {
+				add_equipment_to_stockpile = {
+					producer = GER
+					type = infantry_equipment_0
+					amount = 20000
+                }	
+			}
+		}
+	}
 	
 	focus = {
 		id = GER_bilateral_trade
 		icon = GFX_focus_GER_the_proud_eagle_and_the_rising_dragon
-		prerequisite = { focus = GER_hh_kung }
+		prerequisite = { focus = GER_hh_kung focus = ITA_befriend_japan }
 		relative_position_id = GER_hh_kung
-		x = 0
+		x = -1
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -279,7 +357,7 @@ focus_tree = {
 		text = "Fight Corruption"
 		prerequisite = { focus = GER_Schact_Plan }
 		relative_position_id = GER_Schact_Plan
-		x = 2
+		x = 4
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -299,7 +377,7 @@ focus_tree = {
 		icon = GFX_focus_GER_wirtschaftswunder
 		prerequisite = { focus = GER_civilian_industry2 focus = GER_civilian_industry3 focus = GER_civilian_industry4}
 		relative_position_id = GER_Schact_Plan
-		x = 0
+		x = 1
 		y = 4
 		cost = 5
 		ai_will_do = {
@@ -380,6 +458,65 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
+			}
+			4 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			69 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GER_africa_taken
+		text = "Africa Taken"
+		icon = GFX_focus_ITA_mare_nostrum
+		prerequisite = { focus = GER_A_Stable_Economy }
+		x = 0
+		y = 1
+		relative_position_id = GER_A_Stable_Economy
+		cost = 10
+		available = {
+			679 = {is_controlled_by_ROOT_or_ally = yes}
+			447 = {is_controlled_by_ROOT_or_ally = yes}
+		}
+	
+
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			add_ideas = GER_africa_conquered
+			899 = {
+                add_extra_state_shared_building_slots = 4
+                add_building_construction = {
+                    type = dam
+                    level = 1
+                    instant_build = yes
+                    province = {
+                        id = 6469
+                    }
+                }
+			}
+			51 = {
+                add_extra_state_shared_building_slots = 4
+                add_building_construction = {
+                    type = dam
+                    level = 1
+                    instant_build = yes
+                    province = {
+                        id = 6488
+                    }
+                }
 			}
 		}
 	}
@@ -477,7 +614,6 @@ focus_tree = {
 		prerequisite = { focus = GER_fall_gelb }
 		relative_position_id = GER_fall_gelb
 		available = {
-			has_completed_focus = GER_four_year_plan
 			date>1941.10.1
 		}
 		x = 2
@@ -595,9 +731,8 @@ focus_tree = {
 		}
 
 		available = {
-			SWI = { has_capitulated = yes }
-		}
-		
+						has_full_control_of_state = 3
+					}
 		bypass = {
 
 		}
@@ -677,7 +812,7 @@ focus_tree = {
 		icon = GFX_focus_GER_vereinigte_stahlwerke
 		text = "Schacht's Plan"
 		prerequisite = { focus = GER_Schact_Plan }
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = GER_Schact_Plan
 		cost = 5
@@ -726,7 +861,7 @@ focus_tree = {
 		text = "Expansion of Civilian Industry"
 		dynamic = yes
 		prerequisite = { focus = GER_economic_integration }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GER_economic_integration
 		cost = 10
@@ -772,10 +907,10 @@ focus_tree = {
 
 		completion_reward = {
 			53 = {
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = industrial_complex
-					level = 6
+					level = 8
 					instant_build = yes
 				}
 			}
@@ -787,10 +922,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 6
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = arms_factory
-						level = 6
+						level = 4
 						instant_build = yes
 					}
 				}
@@ -814,10 +949,10 @@ focus_tree = {
 
 		completion_reward = {
 			53 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 8
 					instant_build = yes
 				}
 			}
@@ -848,10 +983,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 4
+					add_extra_state_shared_building_slots = 8
 					add_building_construction = {
 						type = arms_factory
-						level = 4
+						level = 8
 						instant_build = yes
 					}
 					set_state_flag = GER_german_war_economy
@@ -1029,10 +1164,10 @@ focus_tree = {
 		id = GER_synthetic_rubber_schacht
 		icon = GFX_focus_ITA_italian_irredentism
 		text = "Investments In Italian Rubber Production"
-		prerequisite = { focus = GER_economic_integration }
-		x = 2
+		prerequisite = { focus = GER_establish_the_Einheitspakt }
+		x = 0
 		y = 1
-		relative_position_id = GER_economic_integration
+		relative_position_id = GER_establish_the_Einheitspakt
 		cost = 10
 		ai_will_do = {
 			factor = 4
@@ -1080,7 +1215,7 @@ focus_tree = {
 	focus = {
 		id = GER_autobahn
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = GER_autarky focus = GER_economic_integration}
+		prerequisite = { focus = GER_autarky }
 		x = -2
 		y = 1
 		relative_position_id = GER_autarky
@@ -1097,7 +1232,7 @@ focus_tree = {
 			#custom_effect_tooltip = GER_autobahn_tt
 			every_state = { 
 			limit = { OR = {is_core_of = GER is_core_of = AUS } }
-			add_state_modifier = { modifier = { local_building_slots_factor = 0.20  } }
+			add_state_modifier = { modifier = { local_building_slots_factor = 0.30  } }
 			}
 			
 				64 = {
@@ -1161,6 +1296,26 @@ focus_tree = {
 						}
 					}
 				}
+				55 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
+					}
+				}
+				57 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
+					}
+				}
 					
 		}
 	}
@@ -1168,7 +1323,7 @@ focus_tree = {
 	focus = {
 		id = GER_grosraumwirtschaft
 		icon = GFX_focus_GER_the_four_year_plan
-		prerequisite = { focus = GER_autarky focus = GER_economic_integration}
+		prerequisite = { focus = GER_economic_integration}
 		x = -6
 		y = 2
 		relative_position_id = GER_four_year_plan
@@ -1181,14 +1336,14 @@ focus_tree = {
 			add_ideas = GER_grosraumwirtschaft
 				every_state = { 
 			limit = { OR = {is_core_of = GER is_core_of = AUS } }
-			add_state_modifier = { modifier = { local_building_slots_factor = 0.20  } }
+			add_state_modifier = { modifier = { local_building_slots_factor = 0.50  } }
 			}
 		}
 	}
 
 	focus = {
 		id = GER_align_hungary
-		text = "Align Romania"
+		text = "Align The Axis"
 		icon = GFX_focus_GER_subjugate_romanian_economy
 		prerequisite = { focus = GER_grosraumwirtschaft focus = GER_autobahn}
 		x = 1
@@ -1221,8 +1376,8 @@ focus_tree = {
 		id = GER_integrate_war_economies
 		icon = GFX_focus_NORDIC_com_army
 		prerequisite = { focus = GER_align_hungary }
-		mutually_exclusive = {focus =GER_establish_the_Einheitspakt}
-		available = { has_completed_focus = GER_four_year_plan }
+		prerequisite = {focus = GER_autobahn}
+		available = { }
 		x = 1
 		y = 1
 		relative_position_id = GER_align_hungary
@@ -1274,6 +1429,14 @@ focus_tree = {
 					add_building_construction = { type = arms_factory level = 4 instant_build = yes }	
 				}
 				70 = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = { type = arms_factory level = 4 instant_build = yes }	
+				}
+				109 = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = { type = arms_factory level = 4 instant_build = yes }	
+				}
+				2 = {
 					add_extra_state_shared_building_slots = 4
 					add_building_construction = { type = arms_factory level = 4 instant_build = yes }	
 				}
@@ -1462,6 +1625,11 @@ focus_tree = {
 				bonus = 0.75
 				uses = 1
 				technology = improved_small_airframe
+			}
+			add_tech_bonus = {
+			technology = aa_cannon_1
+			uses = 1
+			bonus = 0.35
 			}
 	42 = {
 		set_building_level = {
@@ -1672,7 +1840,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_air_innovation
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1689,6 +1857,11 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = radar_tech
+			}
+			add_tech_bonus = {
+			technology = aa_cannon_2
+			uses = 1
+			bonus = 0.5
 			}
 			if = {
 				limit = {
@@ -1830,7 +2003,7 @@ focus_tree = {
 		}
 		
 		available = {
-						date > 1940.3.1					
+										
 					}
 
 		available_if_capitulated = yes
@@ -1841,6 +2014,13 @@ focus_tree = {
 				specialization = specialization_nuclear
 				value = 1
 			}
+			 add_tech_bonus = {
+                name = RAJ_thunder_elephants
+                ahead_reduction = 1 # was 2
+                bonus = 1
+                uses = 1
+                technology = super_heavy_tank_chassis
+            }
 		}
 	}
 
@@ -1935,7 +2115,7 @@ focus_tree = {
 		icon = GFX_focus_GER_anschluss2
 		prerequisite = { focus = GER_rhineland }
 
-		available = { date > 1936.9.1 }
+		available = {  }
 
 		cancel_if_invalid = no
 		x = 0
@@ -2141,19 +2321,28 @@ focus_tree = {
 			}
 			set_global_flag = end_of_czechoslovakia
 			
-
-			every_country = {
+			if = {
 				limit = {
-					controls_state = 43
-				}
-				transfer_state = 76
+					ROM = {
+						NOT = {
+							has_completed_focus = ROM_codreanus_iron_guard
+						}
+					}
+					}
+						every_country = {
+							limit = {
+								controls_state = 43
+							}
+							transfer_state = 76
+						}
+						76 = {
+							add_manpower = -1500000
+						}
+						46 = {
+							add_manpower = 1523069
+						}
 			}
-			76 = {
-				add_manpower = -1500000
-			}
-			46 = {
-				add_manpower = 1523069
-			}
+			
 			GER = { 
 				transfer_state = 9
 				transfer_state = 75
@@ -2517,7 +2706,7 @@ focus_tree = {
 				category = tp_tech
 			}
 			hidden_effect = {
-				news_event = { hours = 6 id = news.233 }
+				
 				37 = { set_compliance = 90 }
 				99 = { set_compliance = 90 }
 				ENG = { transfer_state = 337 }
@@ -2618,7 +2807,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		x = 15
 		y = 1
-		cost = 5
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
@@ -3394,21 +3583,23 @@ focus_tree = {
 			
 			
 						99 = {
+						add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 8
+						level = 10
 						province = {
 							all_provinces = yes
-		limit_to_coastal = yes
+			limit_to_coastal = yes
 							level < 3
 						}
 					}
 			}
 			
 						58 = {
+							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 8
+						level = 10
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3418,9 +3609,10 @@ focus_tree = {
 			}
 			
 						59 = {
+							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 8
+						level = 10
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3430,9 +3622,10 @@ focus_tree = {
 			}
 			
 						56 = {
+							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 8
+						level = 10
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3442,9 +3635,10 @@ focus_tree = {
 			}
 			
 						36 = {
+							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 8
+						level = 10
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3454,9 +3648,10 @@ focus_tree = {
 			}
 			
 						7 = {
+							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 8
+						level = 10
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3466,9 +3661,10 @@ focus_tree = {
 			}
 			
 						35 = {
+							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 8
+						level = 10
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3478,9 +3674,10 @@ focus_tree = {
 			}
 			
 						6 = {
+							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 8
+						level = 10
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3490,9 +3687,10 @@ focus_tree = {
 			}
 			
 						29 = {
+							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 8
+						level = 10
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3502,9 +3700,10 @@ focus_tree = {
 			}
 			
 						785 = {
+							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 8
+						level = 10
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3514,9 +3713,10 @@ focus_tree = {
 			}
 			
 						15 = {
+							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 8
+						level = 10
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3526,9 +3726,10 @@ focus_tree = {
 			}
 			
 						14 = {
+							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 8
+						level = 10
 						province = {
 							all_provinces = yes
 								limit_to_coastal = yes
@@ -3538,9 +3739,10 @@ focus_tree = {
 			}
 			
 						30 = {
+							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 8
+						level = 10
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3550,9 +3752,10 @@ focus_tree = {
 			}
 			
 								23 = {
+									add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 8
+						level = 10
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3563,9 +3766,10 @@ focus_tree = {
 			
 			
 								19 = {
+									add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 8
+						level = 10
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3586,9 +3790,10 @@ focus_tree = {
 					}
 			
 								142 = {
+									add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 8
+						level = 10
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3610,9 +3815,10 @@ focus_tree = {
 					}
 			
 								143 = {
+									add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 8
+						level = 10
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3634,9 +3840,10 @@ focus_tree = {
 					}
 			
 								144 = {
+									add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 8
+						level = 10
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -4316,6 +4523,7 @@ focus_tree = {
 						if = { limit = {country_exists = BUL } BUL = { add_timed_idea = { idea = GER_barbarossa_minor days = 160 } } }
 						if = { limit = {country_exists = YUG } YUG = { add_timed_idea = { idea = GER_barbarossa_minor days = 160 } } }
 						if = { limit = {country_exists = CZE } CZE = { add_timed_idea = { idea = GER_barbarossa_minor days = 160 } } }
+						HUN = { add_timed_idea = { idea = GER_barbarossa_minor days = 160 } }
 					}	
 				}
 			}
@@ -4631,7 +4839,7 @@ focus_tree = {
 				}
 				completion_reward = {
 					every_country = {
-						limit = { OR = { the_axis = yes original_tag = CZE original_tag = YUG } }
+						limit = { OR = { the_axis = yes original_tag = CZE original_tag = YUG original_tag = HUN } }
 						add_ideas = GER_armaments_miracle
 					}
 					# add_ideas = GER_armaments_miracle
@@ -5266,6 +5474,7 @@ focus_tree = {
 							ITA = {add_timed_idea = { idea = GER_fall_blau days = 60 }}
 							if = {limit = {country_exists = SPR } SPR = {add_timed_idea = { idea = GER_fall_blau days = 60 }}}
 							if = {limit = {country_exists = YUG } YUG = {add_timed_idea = { idea = GER_fall_blau days = 60 }}}
+							HUN = {add_timed_idea = { idea = GER_fall_blau days = 60 }}
 						}
 
 						custom_effect_tooltip = "   "
@@ -5316,6 +5525,7 @@ focus_tree = {
 							ITA = {add_timed_idea = { idea = GER_operation_citadel days = 55 }}
 							if = {limit = {country_exists = SPR } SPR = {add_timed_idea = { idea = GER_operation_citadel days = 55 }}}
 							if = {limit = {country_exists = YUG } YUG = {add_timed_idea = { idea = GER_operation_citadel days = 55 }}}
+							HUN = {add_timed_idea = { idea = GER_operation_citadel days = 55 }}
 						}
 						hidden_effect = {
 							news_event = { hours = 6 id = news.811 }
@@ -5524,10 +5734,10 @@ focus_tree = {
 		focus = {
 			id = GER_establish_the_Einheitspakt
 			icon = GFX_focus_NORDIC_com_capstone_civilian
-			prerequisite = { focus = GER_align_hungary }
+			prerequisite = { focus = GER_align_hungary  }
+			prerequisite = { focus = GER_grosraumwirtschaft}
 			relative_position_id = GER_align_hungary
-			mutually_exclusive = {focus =GER_integrate_war_economies}
-			available = { has_completed_focus = GER_Schact_Plan }
+			available = {}
 			x = -1
 			y = 1
 			cost = 5
@@ -5549,6 +5759,50 @@ focus_tree = {
 				CZE = {
 					add_ideas = GER_Einheitspakt_Member
 				}
+				41 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }	
+				}
+				43	 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }	
+				}
+				46 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }	
+				}
+				48 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }	
+				}
+				70 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }	
+				}
+				109 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }	
+				}
+				2 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }	
+				}
+				4 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			69 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 				
 			}
 		}

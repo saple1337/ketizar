@@ -7676,11 +7676,13 @@ generic_motorized_mechanized_organization = {
 		motorized_equipment
 		mechanized_equipment
 		motorized_rocket_equipment
+		amphibious_mechanized_equipment
 	}
 	
 	research_categories = {
 		motorized_equipment
 		mot_rockets
+		amphibious_mechanized_equipment
 	}
 
 	
@@ -7712,7 +7714,7 @@ generic_motorized_mechanized_organization = {
 		
 		mutually_exclusive = { generic_mio_trait_steel_cargo_bed }
 
-		limit_to_equipment_type = { motorized_equipment motorized_rocket_equipment }
+		limit_to_equipment_type = { motorized_equipment motorized_rocket_equipment amphibious_mechanized_equipment }
 
 		equipment_bonus = {
 			reliability = -0.07
@@ -7730,7 +7732,7 @@ generic_motorized_mechanized_organization = {
 		
 		mutually_exclusive = { generic_mio_trait_composite_cargo_bed }
 
-		limit_to_equipment_type = { motorized_equipment motorized_rocket_equipment }
+		limit_to_equipment_type = { motorized_equipment motorized_rocket_equipment amphibious_mechanized_equipment }
 
 		equipment_bonus = {
 			reliability = 0.05
@@ -7750,7 +7752,7 @@ generic_motorized_mechanized_organization = {
 		
 		any_parent = { generic_mio_trait_composite_cargo_bed generic_mio_trait_steel_cargo_bed }
 
-		limit_to_equipment_type = { motorized_equipment motorized_rocket_equipment }
+		limit_to_equipment_type = { motorized_equipment motorized_rocket_equipment amphibious_mechanized_equipment }
 		
 		equipment_bonus = {
 			breakthrough = 0.035
@@ -7769,7 +7771,7 @@ generic_motorized_mechanized_organization = {
 		
 		mutually_exclusive = { generic_mio_trait_high_powered_engine }
 
-		limit_to_equipment_type = { motorized_equipment motorized_rocket_equipment }
+		limit_to_equipment_type = { motorized_equipment motorized_rocket_equipment amphibious_mechanized_equipment }
 
 		equipment_bonus = {
 			fuel_consumption = -0.05
@@ -7788,7 +7790,7 @@ generic_motorized_mechanized_organization = {
 		
 		mutually_exclusive = { generic_mio_trait_attached_wood_gas_generator }
 
-		limit_to_equipment_type = { motorized_equipment motorized_rocket_equipment }
+		limit_to_equipment_type = { motorized_equipment motorized_rocket_equipment amphibious_mechanized_equipment }
 
 		equipment_bonus = {
 			fuel_consumption = 0.05
@@ -7856,7 +7858,7 @@ generic_motorized_mechanized_organization = {
 		
 		mutually_exclusive = { generic_mio_trait_advanced_artillery_racks generic_mio_trait_mounted_light_anti_tank_gun }
 		
-		limit_to_equipment_type = { mechanized_equipment motorized_equipment }
+		limit_to_equipment_type = { mechanized_equipment motorized_equipment amphibious_mechanized_equipment }
 		
 		equipment_bonus = {
 			breakthrough = 0.04
@@ -7876,7 +7878,7 @@ generic_motorized_mechanized_organization = {
 		
 		all_parents = { generic_mio_trait_bulletproof_panels }
 		
-		limit_to_equipment_type = { mechanized_equipment }
+		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
 
 		equipment_bonus = {
 			ap_attack = 0.1
@@ -7892,7 +7894,7 @@ generic_motorized_mechanized_organization = {
 		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_medium_machinegun_mounts
 		
-		limit_to_equipment_type = { mechanized_equipment }
+		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
 		
 		mutually_exclusive = { generic_mio_trait_closed_chassi }
 
@@ -7910,7 +7912,7 @@ generic_motorized_mechanized_organization = {
 		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_open_chassi
 		
-		limit_to_equipment_type = { mechanized_equipment }
+		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
 		
 		mutually_exclusive = { generic_mio_trait_open_chassi }
 
@@ -7928,7 +7930,7 @@ generic_motorized_mechanized_organization = {
 		position = { x=-1 y=2 }
 		relative_position_id = generic_mio_trait_closed_chassi
 		
-		limit_to_equipment_type = { mechanized_equipment }
+		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
 		
 		any_parent = { generic_mio_trait_closed_chassi generic_mio_trait_open_chassi }
 
@@ -7945,7 +7947,7 @@ generic_motorized_mechanized_organization = {
 		position = { x=0 y=2 }
 		relative_position_id = generic_mio_trait_bulletproof_panels
 		
-		limit_to_equipment_type = { mechanized_equipment }
+		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
 		
 		all_parents = { generic_mio_trait_bulletproof_panels }
 
@@ -7962,7 +7964,7 @@ generic_motorized_mechanized_organization = {
 		position = { x=1 y=0 }
 		relative_position_id = generic_mio_trait_light_flame_projectors
 		
-		limit_to_equipment_type = { mechanized_equipment }
+		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
 		
 		all_parents = { generic_mio_trait_bulletproof_panels }
 

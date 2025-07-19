@@ -10,6 +10,7 @@ state={
 		steel=48 # was: 8
 		chromium=53 # was: 80
 		tungsten=62
+		oil = 30
 	}
 
 	history={

@@ -326,6 +326,14 @@ technologies = {
 		category_tanks = {
 			max_organisation = 5
 		}
+		mot_artillery_brigade = {
+			breakthrough =0.2
+			soft_attack = 0.15
+			combat_width = -1.0
+		}
+		mot_anti_tank_brigade = {
+			hard_attack = 0.1
+		}
 		mech_arty = {
 			breakthrough =0.2
 			soft_attack = 0.15
@@ -351,6 +359,7 @@ technologies = {
 		mech_at = {
 			hard_attack = 0.1
 		}
+		
 		light_tank_destroyer_brigade = {
 			hard_attack = 0.15
 			breakthrough =0.15

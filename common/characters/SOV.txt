@@ -1493,7 +1493,7 @@ SOV_arseniy_golovko={
 	}
 
 	SOV_lev_dovator = {
-		name = SOV_lev_dovator
+		name = "General Grievous"
 		portraits = {
 			army = {
 				large = "GFX_portrait_SOV_lev_dovator"
@@ -3650,6 +3650,21 @@ SOV_arseniy_golovko={
 			traits = { scientist_trait_electronics_specialist }
 			skills = {
 				specialization_air = 2
+			}
+		}
+	}
+	SOV_daemon_vodanov = {
+		name = SOV_daemon_vodanov
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_eduard_grote
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_armored_specialist }
+			skills = {
+				specialization_land = 2
 			}
 		}
 	}

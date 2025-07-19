@@ -13,7 +13,7 @@ foreign_politics = {
         	            EFR = {
         	            	is_ai = yes
         	            }
-        	            date > 1938.1.1}
+        	            date > 1941.1.1}
         }				
         
         visible = { 
@@ -115,6 +115,8 @@ foreign_politics = {
 					set_state_controller = 836
 					set_state_controller = 559
 					set_state_controller = 844
+					set_state_controller = 841
+					set_state_controller = 838
 				}
 				# GER = { 
 				# 	remove_relation_modifier = {

@@ -2134,7 +2134,7 @@
 2133;10;27;215;land;false;desert;4
 2134;10;28;236;sea;false;ocean;0
 2135;10;29;244;sea;true;ocean;0
-2136;10;30;180;land;false;urban;3
+2136;10;30;180;land;false;mountain;3
 2137;10;31;232;sea;false;ocean;0
 2138;10;32;240;sea;false;ocean;0
 2139;10;33;145;land;false;plains;4
@@ -2156,7 +2156,7 @@
 2155;10;54;155;land;false;plains;4
 2156;10;57;15;land;true;desert;3
 2157;10;57;220;land;false;forest;4
-2158;10;60;185;land;false;urban;3
+2158;10;60;185;land;false;mountain;3
 2159;10;63;150;land;false;forest;5
 2160;10;66;215;land;false;forest;3
 2161;10;69;30;land;true;mountain;3
@@ -4178,7 +4178,7 @@
 4177;47;177;168;land;false;mountain;6
 4178;47;177;213;land;true;mountain;1
 4179;47;180;28;land;true;hills;6
-4180;47;180;133;land;true;hills;6
+4180;47;180;133;land;true;urban;6
 4181;47;183;93;land;false;hills;6
 4182;47;183;143;land;false;hills;1
 4183;47;183;198;land;false;hills;6
@@ -5150,7 +5150,7 @@
 5149;52;39;248;sea;false;ocean;0
 5150;52;40;236;sea;true;ocean;0
 5151;52;42;48;land;false;desert;3
-5152;52;42;153;land;false;hills;3
+5152;52;42;153;land;false;mountain;3
 5153;52;45;13;land;false;hills;3
 5154;52;45;218;land;true;mountain;5
 5155;52;48;183;land;false;plains;5
@@ -11930,7 +11930,7 @@
 11929;173;21;142;land;true;urban;6
 11930;173;21;187;land;true;hills;6
 11931;173;24;2;land;false;forest;6
-11932;173;24;207;land;true;plains;6
+11932;173;24;207;land;true;hills;6
 11933;173;27;67;land;false;plains;6
 11934;173;27;172;land;false;jungle;5
 11935;173;30;32;land;false;hills;5
@@ -12019,7 +12019,7 @@
 12018;173;120;47;land;false;mountain;5
 12019;173;120;152;land;false;mountain;6
 12020;173;123;12;land;false;hills;5
-12021;173;123;67;land;true;hills;6
+12021;173;123;67;land;true;mountain;6
 12022;173;123;217;land;false;desert;5
 12023;173;126;32;land;false;mountain;6
 12024;173;126;77;land;false;plains;2
@@ -13023,7 +13023,7 @@
 13022;255;13;40;land;true;plains;6
 13023;255;14;120;land;true;plains;6
 13024;255;15;160;land;true;plains;6
-13025;255;16;40;land;true;plains;6
+13025;255;16;40;land;true;urban;6
 13026;255;17;120;land;true;plains;6
 13027;255;18;160;land;true;plains;6
 13028;255;19;40;land;true;plains;6

@@ -436,6 +436,8 @@ SMALL_GAME_DESC:0 "A smaller game setup that excludes the following nations:\n§
  ENG_iran_focus_desc:0 "Partition Iran"
  ENG_tank_focus:0 "Royal Tank Regiment"
  ENG_tank_focus_desc:0 "Royal Tank Regiment"
+ ENG_build_civs:0 "Dam Dam Dam!"
+ ENG_build_civs_desc:0 "One more Civ"
  GER_flak_36:0 "Flaktürme"
  GER_flak_36_desc:0 "After the RAF's raid on Berlin in 1940, Adolf Hitler ordered the construction of three massive flak towers to defend the capital from air attack. Each tower is to have a radar installation with a radar dish which could be retracted behind a thick concrete and steel dome for protection, and several anti-air guns."
  uk_levant_focus:0 "Fortify the Levant"

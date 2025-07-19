@@ -1203,5 +1203,6 @@
  mio_cat_tech_all_cruiser_and_modules: "All Cruiser Technologies" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_all_destroyer_and_modules: "All Destroyer Technologies" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_all_motorized_mechanized: "All Motorized and Mechanized Technologies"
+ mio_policy_air_thrust: "Stronger Engines"
  militia_tech: "Militias"
 
