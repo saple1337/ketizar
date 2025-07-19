@@ -3586,7 +3586,7 @@ focus_tree = {
 						add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 			limit_to_coastal = yes
@@ -3599,7 +3599,7 @@ focus_tree = {
 							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3612,7 +3612,7 @@ focus_tree = {
 							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3625,7 +3625,7 @@ focus_tree = {
 							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3638,7 +3638,7 @@ focus_tree = {
 							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3651,7 +3651,7 @@ focus_tree = {
 							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3664,7 +3664,7 @@ focus_tree = {
 							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3677,7 +3677,7 @@ focus_tree = {
 							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3690,7 +3690,7 @@ focus_tree = {
 							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3703,7 +3703,7 @@ focus_tree = {
 							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3716,7 +3716,7 @@ focus_tree = {
 							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3729,7 +3729,7 @@ focus_tree = {
 							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 								limit_to_coastal = yes
@@ -3742,7 +3742,7 @@ focus_tree = {
 							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3755,7 +3755,7 @@ focus_tree = {
 									add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3769,7 +3769,7 @@ focus_tree = {
 									add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3793,7 +3793,7 @@ focus_tree = {
 									add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3818,7 +3818,7 @@ focus_tree = {
 									add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3843,7 +3843,7 @@ focus_tree = {
 									add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes

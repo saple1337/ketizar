@@ -30,6 +30,7 @@ NDefines.NMilitary.DAMAGE_SPLIT_ON_FIRST_TARGET = 0.90			--% of damage dealt to 
 NDefines.NMilitary.COMBAT_STACKING_START = 4						-- vanilla is 8 -- at what nr of divisions stacking penalty starts
 NDefines.NMilitary.COMBAT_STACKING_EXTRA = 1                      -- vanilla is 4 -- extra stacking from directions
 NDefines.NMilitary.COMBAT_STACKING_PENALTY = -0.20                -- vanilla is -0.02 -- how much stacking penalty per division
+NDefines.NMilitary.BASE_FORT_PENALTY = -0.075
 
 
 --//////////////// Block of possibly useful future defines
