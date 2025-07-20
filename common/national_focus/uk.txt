@@ -139,7 +139,7 @@ focus_tree = {
         completion_reward = {
             add_timed_idea = {
 				idea = ENG_civ_boost
-				days = 650
+				days = 665
 			}
 			add_ideas = ENG_ernest_bevin
 			126 = {
@@ -161,6 +161,17 @@ focus_tree = {
                     instant_build = yes
                     province = {
                         id = 6318
+                    }
+                }
+			}
+			121 = {
+                add_extra_state_shared_building_slots = 4
+                add_building_construction = {
+                    type = dam
+                    level = 1
+                    instant_build = yes
+                    province = {
+                        id = 9392
                     }
                 }
 			}
@@ -217,6 +228,7 @@ focus_tree = {
 		id = ENG_tank_focus
 		prerequisite = { focus = limited_rearmament_focus focus = ENG_build_civs }
 			available = {
+			GER = { has_completed_focus = GER_anschluss }
 		}
 		icon = GFX_goal_generic_army_tanks
 		x = 0

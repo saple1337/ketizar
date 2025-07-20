@@ -71,6 +71,15 @@ technologies = {
 			soft_attack = 0.1
 			breakthrough = 0.1
 		}
+		light_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		medium_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		heavy_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
 		enable_equipment_modules = {
 			# tank_medium_howitzer
 			# tank_small_cannon_2
@@ -190,7 +199,15 @@ technologies = {
 			soft_attack = 0.1
 			breakthrough = 0.1
 		}
-		
+		light_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		medium_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		heavy_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
 		path = {
 			leads_to_tech = artillery3
 			research_cost_coeff = 1
@@ -252,7 +269,15 @@ technologies = {
 			soft_attack = 0.1
 			breakthrough = 0.1
 		}
-		
+		light_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		medium_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		heavy_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
 		enable_equipment_modules = {
 			# tank_medium_cannon_2
 		}
@@ -374,6 +399,15 @@ technologies = {
 		mot_artillery_brigade = {
 			soft_attack = 0.1
 			breakthrough = 0.1
+		}
+		light_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		medium_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		heavy_sp_artillery_brigade = {
+			soft_attack = 0.05
 		}
 		enable_equipment_modules = {
 			# auto_loader
