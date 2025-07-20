@@ -141,6 +141,17 @@ on_actions = {
 			}
 		}
 	}
+	
+	on_startup = {
+		effect = {
+			every_country = {
+					add_timed_idea = { 
+						idea = ENG_civ_boost
+						days = 650
+					}
+			}
+		}
+	}
 	on_startup = {
 		effect = {
 
