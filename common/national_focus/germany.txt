@@ -2806,7 +2806,7 @@ focus_tree = {
 			NOT = { has_war_with = ENG }
 		}
 		cancel_if_invalid = yes
-		x = 15
+		x = 10
 		y = 1
 		cost = 1
 		ai_will_do = {
@@ -2828,7 +2828,7 @@ focus_tree = {
 			NOT = { has_war_with = ENG }
 		}
 		cancel_if_invalid = yes
-		x = -1
+		x = -2
 		y = 1
 		cost = 1
 		ai_will_do = {
@@ -2888,7 +2888,7 @@ focus_tree = {
 		prerequisite = { focus = GER_rhineland }
 		mutually_exclusive = { focus = GER_accept_british_naval_dominance }
 		relative_position_id = GER_rhineland
-		x = 13
+		x = 14
 		y = 1
 		cost = 1
 		ai_will_do = {
@@ -3124,7 +3124,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = GER_naval_rearmament }
 		mutually_exclusive = { focus = GER_challenge_british_naval_dominance }
-		x = 4
+		x = 2
 		y = 1
 		relative_position_id = GER_naval_rearmament
 		cost = 1

@@ -48,9 +48,9 @@ on_actions = {
 							main_armament_slot = tank_high_velocity_cannon_2
 							turret_type_slot = tank_medium_two_man_tank_turret
 							suspension_type_slot = tank_interleaved_suspension
-							armor_type_slot = tank_welded_armor
+							armor_type_slot = tank_cast_armor
 							engine_type_slot = tank_diesel_engine
-							special_type_slot_1 = tank_radio_1
+							special_type_slot_1 = tank_radio_2
 							special_type_slot_2 = wet_ammo_storage
 							special_type_slot_3 = extra_ammo_storage
 							special_type_slot_4 = secondary_turret_small_cannon
@@ -137,6 +137,7 @@ on_actions = {
                 GER = { transfer_state = 806 }
                 GER = { transfer_state = 991 }
                 EFR = { transfer_state = 851 }
+                EFR = { transfer_state = 913}
                 ITA = {
                     transfer_state = 956 
                     transfer_state = 515
