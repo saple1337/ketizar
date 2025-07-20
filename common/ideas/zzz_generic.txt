@@ -104,7 +104,7 @@ ideas = {
 			picture = generic_air_research
 
 			modifier = {
-				production_speed_synthetic_refinery_factor = -0.50
+				production_speed_synthetic_refinery_factor = -1.5
 			}
 			
 			equipment_bonus = {
