@@ -31,7 +31,7 @@
 }
 ##### Division Templates #####
 division_template = {
-	name = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"		
+	name = "Infantry Division"		
 	division_names_group = FRA_INF_01
 	# Represents: Division d'Infanterie (Series A and B), Div. d'Inf. de Forteresse
 	# Difference is their equipment
@@ -52,6 +52,7 @@ division_template = {
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
 		anti_air_brigade = { x = 3 y = 3 }
+anti_air_brigade = { x = 3 y = 4 }
 		anti_tank_brigade = { x = 4 y = 0 }
 		anti_tank_brigade = { x = 4 y = 1 }
 		artillery_brigade = { x = 4 y = 2 }
@@ -79,8 +80,9 @@ division_template = {
 		mountaineers = { x = 1 y = 3 }
 		mountaineers = { x = 1 y = 4 }
 		mountaineers = {x = 2 y = 0 }
-		anti_air_brigade = { x = 2 y = 1 }
-		anti_tank_brigade = { x = 2 y = 2 }
+		anti_air_brigade = { x = 2 y = 2 }
+		anti_tank_brigade = { x = 2 y = 1 }
+		anti_air_brigade = { x = 2 y = 3 }
 		artillery_brigade = { x = 3 y = 0 }
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }

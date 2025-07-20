@@ -685,6 +685,7 @@ ideas = {
 				consumer_goods_expected_value = 1.05
 				conscription_factor	= -1.0
 				min_export = 0.3
+				command_power_gain_mult = -1.0
 			}
 		}
 		
