@@ -6,7 +6,7 @@ state={
 		chromium=150.000
 		tungsten=180.000
 	}
-
+	impassable = yes
 	history={
 		victory_points = {
 			10329 1 
