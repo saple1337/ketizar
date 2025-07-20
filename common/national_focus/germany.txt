@@ -2556,6 +2556,7 @@ focus_tree = {
 			hidden_effect ={
 				FRA = {
 				activate_mission = FRA_TZAR_RELOCATION_CIV
+				activate_mission = FRA_held
 				activate_mission = FRA_TZAR_RELOCATION_MIL
 				}
 			}
