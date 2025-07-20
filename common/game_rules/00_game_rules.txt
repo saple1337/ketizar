@@ -7,12 +7,6 @@ maximum_fort_level = {
 		text = "RULE_OPTION_NORMAL"
 		desc = "RULE_MAXIMUM_FORT_LEVEL_NORMAL_DESC"
 	}
-	
-	option = {
-		name = level_5
-		text = "RULE_OPTION_5"
-		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
-	}
 }
 
 mini_sr = {
