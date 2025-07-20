@@ -721,7 +721,6 @@ tank_refurbishment_plant = { #NSB
 		stability_factor = -0.20
 		economy_cost_factor = 0.5
 		consumer_goods_factor = -0.1
-		production_speed_buildings_factor = 0.25
 	}
 	defeatism = {
 		random = no
