@@ -2,6 +2,7 @@
 state={
 	id=581
 	name="STATE_581"
+	impassable = yes
 	resources={
 		chromium=40.000
 		aluminium=27.000
