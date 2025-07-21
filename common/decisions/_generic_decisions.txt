@@ -184,11 +184,11 @@ operations = {
 		
 		available = {
 			controls_state = 446
-			controls_state = 453
+			controls_state = 679
 			OR = {
 				NOT = {
 					owns_state = 446
-					owns_state = 453
+					owns_state = 679
 				}
 				any_country = {
 					has_war_with = ROOT
@@ -232,13 +232,13 @@ operations = {
 					limit = {
 						NOT = {
 							owns_state = 446
-							owns_state = 453
+							owns_state = 679
 						}
 					}
 					random_country = {
 						limit = {
 							owns_state = 446
-							owns_state = 453
+							owns_state = 679
 						}
 						country_event = { id = generic.12 days = 1 }
 					}
@@ -251,7 +251,7 @@ operations = {
 				limit = {
 					OR = {
 						has_full_control_of_state = 446
-						has_full_control_of_state = 453
+						has_full_control_of_state = 679
 					}
 				}
 				set_country_flag = blew_up_suez
@@ -263,7 +263,7 @@ operations = {
 					limit = {
 						ENG = {
 							owns_state = 446
-							owns_state = 453
+							owns_state = 679
 						}
 					}
 					add_war_support = -0.05
@@ -458,7 +458,7 @@ special_projects = {
 		
 		available = {
 			has_full_control_of_state = 446
-			has_full_control_of_state = 453
+			has_full_control_of_state = 679
 			num_of_civilian_factories > 15
 		}
 	
@@ -480,7 +480,7 @@ special_projects = {
 			if = {
 				limit = {
 					has_full_control_of_state = 446
-					has_full_control_of_state = 453
+					has_full_control_of_state = 679
 				}
 				set_country_flag = rebuilt_suez
 				clr_global_flag = SUEZ_CANAL_BLOCKED
