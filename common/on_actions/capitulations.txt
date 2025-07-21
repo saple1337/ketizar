@@ -283,10 +283,10 @@ on_actions = {
 	 					}
 			  		}
 			  	}
-				if = { limit = { country_exists = MAN } 
+				if = { limit = { country_exists = MIN } 
  					USA = { 
 						annex_country = {
-						target = MAN
+						target = MIN
 						transfer_troops = no
  						}
 					}

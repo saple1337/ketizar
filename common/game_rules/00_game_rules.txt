@@ -221,7 +221,7 @@ sr_equipment_lock = {
 		desc = "Clicking this option will give Japan access to the Horst Tools (please test this in SP before enabling in MP)"
 	}
 	option = {
-		name = MAN
+		name = MIN
 		text = "Manchukuo"
 		desc = "Clicking this option will give Manchukuo access to the Horst Tools (please test this in SP before enabling in MP)"
 	}

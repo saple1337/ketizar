@@ -2,14 +2,14 @@ DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = { always = no }
 DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	if = { limit = {ROOT = { tag = EFR   } }  		NOT = {  FROM = { tag = GER }  } } 
 	if = { limit = {ROOT = { tag = EFR   } }  		NOT = {  FROM = { tag = JAP }  } } 
-	if = { limit = {ROOT = { tag = EFR   } }  		NOT = {  FROM = { tag = MAN }  } } 
+	if = { limit = {ROOT = { tag = EFR   } }  		NOT = {  FROM = { tag = MIN }  } } 
 	if = { limit = {ROOT = { tag = EFR   } }  		NOT = {  FROM = { tag = SPR }  } } 
 	if = { limit = {ROOT = { tag = EFR   } }  		NOT = {  FROM = { tag = ITA }  } } 
 	if = { limit = {ROOT = { tag = EFR   } }  		NOT = {  FROM = { tag = ROM }  } } 
 	if = { limit = {ROOT = { tag = EFR   } }  		NOT = {  FROM = { tag = HUN }  } } 
 	if = { limit = {ROOT = { tag = FIN   } }  		NOT = {  FROM = { tag = GER }  } } 
 	if = { limit = {ROOT = { tag = FIN   } }  		NOT = {  FROM = { tag = JAP }  } } 
-	if = { limit = {ROOT = { tag = FIN   } }  		NOT = {  FROM = { tag = MAN }  } } 
+	if = { limit = {ROOT = { tag = FIN   } }  		NOT = {  FROM = { tag = MIN }  } } 
 	if = { limit = {ROOT = { tag = FIN   } }  		NOT = {  FROM = { tag = SPR }  } } 
 	if = { limit = {ROOT = { tag = FIN   } }  		NOT = {  FROM = { tag = ITA }  } } 
 	if = { limit = {ROOT = { tag = FIN   } }  		NOT = {  FROM = { tag = ROM }  } } 
@@ -43,7 +43,7 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 	if = { limit = {ROOT = { tag = ETH   } }  		ETH = {  always = no  } } 
 	# if = { limit = {ROOT = { tag = FRA   } }  			FRA = { has_country_flag = france_is_kill }  } 
 	if = { limit = {FROM = { the_geacps = yes  } } 			NOT = { ROOT = { OR = { the_axis = yes tag = SOV }  } } }
-	#if = { limit = {FROM = { tag = MAN  } } 			NOT = { ROOT = { OR = { the_axis = yes tag = SOV }  } } }
+	#if = { limit = {FROM = { tag = MIN  } } 			NOT = { ROOT = { OR = { the_axis = yes tag = SOV }  } } }
 
 	if = { limit = {FROM = { the_axis = yes} } 		NOT = { ROOT = { the_geacps = yes  } } }
 	if = { limit = {FROM = { tag = EFR   } }  		EFR = {  always = no  } } 

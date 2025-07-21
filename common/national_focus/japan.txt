@@ -156,7 +156,7 @@ focus_tree = {
 			
 		#	add_named_threat = { threat = 10 name = JAP_CHIONE }
 			#add_ideas = JAP_war_with_chi1
-			MAN = {
+			MIN = {
 				declare_war_on = {
 							target = CHI
 							type = annex_everything
@@ -235,14 +235,14 @@ focus_tree = {
 				MON = {	army_experience = 150 }
 				RAJ = {	army_experience = 150 }
 				AST = {	army_experience = 150 }
-				MAN = {	army_experience = 350 }
+				MIN = {	army_experience = 350 }
 				NZL = { army_experience = 150 }	
 				ROM = { army_experience = 100 }		
 				HUN = { army_experience = 100 }	
 				BUL = { army_experience = 100 }
 				IF = { limit = { country_exists = YUG } YUG = { army_experience = 100 } }
 				IF = { limit = { country_exists = SIA } SIA = { army_experience = 300 air_experience  = 1000 } }
-				IF = { limit = { country_exists = MAN } MAN = { army_experience = 300 air_experience  = 1000 } }
+				IF = { limit = { country_exists = MIN } MIN = { army_experience = 300 air_experience  = 1000 } }
 			}
 		}
 	}
@@ -600,13 +600,13 @@ focus_tree = {
 			add_ideas = AST_papua
 		}
 		add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 210 }
-		MAN = { add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 210 } }
+		MIN = { add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 210 } }
 		RAJ = { add_timed_idea = { idea = Raj_ToraToraTora days = 150 } }
-		if = { limit = { OR = { country_exists = MAN country_exists = SIA } }
+		if = { limit = { OR = { country_exists = MIN country_exists = SIA } }
 			JAP = { add_ideas = game_impact_japan   }
 		}
 		# add_ideas = game_impact_japan
-		if = { limit = { country_exists = MAN } MAN = { add_ideas = game_impact_japan_puppet   } }
+		if = { limit = { country_exists = MIN } MIN = { add_ideas = game_impact_japan_puppet   } }
 		if = { limit = { country_exists = SIA } SIA = { add_ideas = game_impact_japan_puppet   } }
 		# activate_mission = JAP_DEI_transfer
 	}
@@ -891,7 +891,7 @@ focus_tree = {
 		relative_position_id = JAP_expand_the_showa_steel_works
 
 		# allow_branch = {
-		# 	MAN = { has_focus_tree = generic_focus }
+		# 	MIN = { has_focus_tree = generic_focus }
 		# }
 
 		cost = 3
@@ -1099,7 +1099,7 @@ focus_tree = {
 				# technology = construction4
 				# technology = construction5
 			}
-			if = { limit = { country_exists = MAN } add_research_slot = 1 }
+			if = { limit = { country_exists = MIN } add_research_slot = 1 }
 			715 = { add_extra_state_shared_building_slots = 3 }
 			610 = { add_extra_state_shared_building_slots = 3 }
 			328 = { add_extra_state_shared_building_slots = 3 }
@@ -1195,7 +1195,7 @@ focus_tree = {
 			else = {
 				add_ideas = war_economy
 			}
-			if = { limit = { country_exists = MAN } MAN = { add_ideas = war_economy } }
+			if = { limit = { country_exists = MIN } MIN = { add_ideas = war_economy } }
 			if = { limit = { country_exists = SIA } SIA = { add_ideas = war_economy } }
 		}
 	}
@@ -1275,7 +1275,7 @@ focus_tree = {
 			else = {
 				add_ideas = tot_economic_mobilisation
 			}
-			if = { limit = { country_exists = MAN } MAN = { add_ideas = tot_economic_mobilisation } }
+			if = { limit = { country_exists = MIN } MIN = { add_ideas = tot_economic_mobilisation } }
 			if = { limit = { country_exists = SIA } SIA = { add_ideas = tot_economic_mobilisation } }
 		}
 	}

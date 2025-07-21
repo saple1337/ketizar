@@ -456,7 +456,7 @@ focus_tree = {
 		available = {
 	OR = {
 	JAP = { controls_state = 608 }
-		MAN = { controls_state = 608 }
+		MIN = { controls_state = 608 }
 	}
 		}
 
@@ -497,7 +497,7 @@ focus_tree = {
 		available = {
 		OR = { 
 		JAP = { owns_state = 608 }
-		MAN = { owns_state = 608 }
+		MIN = { owns_state = 608 }
 
 }
 		}
@@ -1132,7 +1132,7 @@ focus_tree = {
 		add_equipment_production = {
 							equipment = {
 								type = ship_hull_light_1
-								creator = "MAN"
+								creator = "MIN"
 								version_name = "Momi Class"
 							}
 							requested_factories = 1
@@ -1347,7 +1347,7 @@ focus_tree = {
 			add_equipment_to_stockpile = {
 				type = convoy_1
 				amount = 100
-				producer = MAN
+				producer = MIN
 			}
 	716 = { 
 add_building_construction = {
@@ -1689,7 +1689,7 @@ add_building_construction = {
 		available = {
 		OR = {
 		JAP = { has_full_control_of_state = 621 }
-		MAN = { has_full_control_of_state = 621 }
+		MIN = { has_full_control_of_state = 621 }
 		}
 		}
 

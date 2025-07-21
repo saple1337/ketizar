@@ -1638,7 +1638,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_tank_designer_MAN
-		text = "MAN Panther Initiative"
+		text = "MIN Panther Initiative"
 		mutually_exclusive = {focus = GER_tank_designer_HEN}
 		icon = GFX_focus_generic_tank_assault
 		prerequisite = { focus = GER_tank_designer }
@@ -2088,7 +2088,7 @@ focus_tree = {
 				BUL = { army_experience = 150 }
 				IF = { limit = { country_exists = YUG } YUG = { army_experience = 100 } }
 				IF = { limit = { country_exists = YUG } SIA = { army_experience = 1000 air_experience  = 1000 } }
-				IF = { limit = { country_exists = YUG } MAN = { army_experience = 1000 air_experience  = 1000 } }
+				IF = { limit = { country_exists = YUG } MIN = { army_experience = 1000 air_experience  = 1000 } }
 			}
 			if = {
 				limit = {

@@ -350,7 +350,7 @@ generic_tank_organization = {
 			AND = {
 				OR = {
 					is_literally_china = yes
-					tag = MAN
+					tag = MIN
 				}
 				has_dlc = "Waking the Tiger"
 			}
@@ -2417,7 +2417,7 @@ generic_escort_ship_organization = {
 		}
 		NOT = {
 			AND = {
-				OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+				OR = { tag = CHI tag = PRC tag = MIN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
 				has_dlc = "Waking the Tiger"
 			}
 		}
@@ -3877,7 +3877,7 @@ generic_general_aircraft_organization = {
 	icon = GFX_idea_generic_air_manufacturer_1
 
 	allowed = {
-		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = YUG tag = ROM tag = CZE tag = HUN tag = CHI tag = MAN tag = HOL tag = BUL tag = GRE tag = TUR tag = LAT tag = LIT } }
+		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = YUG tag = ROM tag = CZE tag = HUN tag = CHI tag = MIN tag = HOL tag = BUL tag = GRE tag = TUR tag = LAT tag = LIT } }
 		NOT = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD }
 		NOT = {
 			AND = {
@@ -6654,7 +6654,7 @@ generic_artillery_organization = {
 			AND = {
 				OR = {
 					is_literally_china = yes
-					tag = MAN
+					tag = MIN
 				}
 				has_dlc = "Waking the Tiger"
 			}
@@ -7023,7 +7023,7 @@ generic_infantry_equipment_organization = {
 			AND = {
 				OR = {
 					is_literally_china = yes
-					tag = MAN
+					tag = MIN
 				}
 				has_dlc = "Waking the Tiger"
 			}
@@ -7630,7 +7630,7 @@ generic_motorized_mechanized_organization = {
 		}
 		NOT = {
 			AND = {
-				OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+				OR = { tag = CHI tag = PRC tag = MIN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
 				has_dlc = "Waking the Tiger"
 			}
 		}
