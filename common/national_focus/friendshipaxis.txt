@@ -30,7 +30,7 @@ joint_focus = {
 		
 		offset = {
 			x = 3
-			y = 1
+			y = 3
 			trigger = {
 				has_focus_tree = hungarian_focus
 			}

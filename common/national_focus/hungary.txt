@@ -5,10 +5,10 @@
 	country = {
 		factor = 0
 		
-		modifier = {
-			add = 10
-			tag = HUN
-		}
+		#modifier = {
+		#	add = 10
+		#	tag = HUN
+		#}
 	}
 	default = no
 	shared_focus = AXIS_cum
