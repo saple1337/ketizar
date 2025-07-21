@@ -634,27 +634,6 @@ ideas = {
 			removal_cost = -1
 		}
 
-		ENG_civ_boost = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			picture = generic_air_bonus
-
-			removal_cost = -1
-
-			modifier = {
-				production_speed_industrial_complex_factor = 0.5
-				production_speed_arms_factory_factor = -1
-				production_speed_dockyard_factor = -0.3
-				economy_cost_factor = 3
-			}
-		}
 
 		
 		ENG_service_overseas_idea = {

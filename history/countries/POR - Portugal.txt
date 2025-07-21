@@ -12,16 +12,6 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	basic_train = 1
-	superior_firepower
-	sup_delay
-	mobile_defence
-	dispersed_support
-	overwhelming_firepower
-	sup_mechanized_offensive
-	centralized_fire_control
-	forward_observers
-	advanced_firebases
-	shock_and_awe
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

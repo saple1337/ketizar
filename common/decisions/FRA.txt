@@ -819,7 +819,7 @@ Battle_for_France = {
 		}
 	
 	FRA_held = {
-		name = "We are still standing"
+		name = "Battle for France"
 		icon = generic_construction
 		available = {
 		always = no

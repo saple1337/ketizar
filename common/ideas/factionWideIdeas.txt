@@ -234,10 +234,13 @@ ideas = {
 
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.10 instant = yes
+					build_cost_ic = -0.05 instant = yes
 				}
-				CAS_equipment = {
-					build_cost_ic = -0.2 instant = yes
+				medium_plane_airframe = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				large_plane_airframe = {
+					build_cost_ic = -0.05 instant = yes
 				}
 
 				#light_tank_chassis = {
@@ -378,6 +381,12 @@ ideas = {
 			
 			removal_cost = -1
 
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.03
+				defense_bonus_against = 0.03
+			}
+
 			modifier = {
 				production_factory_max_efficiency_factor = 0.05
 				industrial_capacity_factory = 0.1
@@ -451,7 +460,7 @@ ideas = {
 				# anti_air_brigade = { max_strength = 6 }
 				land_reinforce_rate = 0.10
 				supply_node_range = 0.05
-				army_strength_factor = 0.275
+				army_strength_factor = 0.225
 				supply_consumption_factor = -0.05
 			}
 			
@@ -482,7 +491,7 @@ ideas = {
 				# anti_tank_brigade = { max_strength = 3 }
 				# anti_air_brigade = { max_strength = 6 }
 				land_reinforce_rate = 0.06
-				army_strength_factor = 0.25
+				army_strength_factor = 0.2
 				army_org_factor = 0.05
 				dig_in_speed = 0.2
 			}

@@ -847,7 +847,6 @@ equipment_modules = {
 		add_equipment_type = { naval_bomber maritime_patrol_plane }
 
 		add_stats = {
-		maximum_speed = -0.35
 			build_cost_ic = 4
 			weight = 8
 		}

@@ -643,7 +643,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = 0.15
-				consumer_goods_expected_value = -0.05
+				consumer_goods_expected_value = -0.02
 		}
 	}
 	
@@ -748,24 +748,6 @@ ideas = {
 			modifier = {
 				production_factory_max_efficiency_factor = 0.025
 				production_speed_arms_factory_factor = 0.15
-		}	
-	}
-	GER_africa_conquered = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = generic_production_bonus
-
-			modifier = {
-				production_factory_max_efficiency_factor = 0.025
-				production_speed_arms_factory_factor = 0.20
 		}	
 	}
 	
@@ -1270,7 +1252,7 @@ ideas = {
 
 			modifier = {
 				production_speed_infrastructure_factor = 0.1
-				production_cost_infrastructure_factor = -0.25
+				production_cost_infrastructure_factor = -0.15
 				production_speed_rail_way_factor = 0.3
 				production_speed_supply_node_factor = 0.3
 			}
@@ -1459,7 +1441,7 @@ ideas = {
 				always = no
 			}
 
-			available = {  }
+			available = { ROOT = { has_government = fascism } }
 
 			allowed_civil_war = {
 				has_government = fascism
@@ -1494,7 +1476,7 @@ ideas = {
 				always = no
 			}
 
-			available = {  }
+			available = { ROOT = { has_government = fascism } }
 
 			allowed_civil_war = {
 				has_government = fascism
@@ -1535,7 +1517,7 @@ ideas = {
 				has_government = fascism
 			}
 
-			available = {  }
+			available = { ROOT = { has_government = fascism } }
 
 			removal_cost = -1
 
@@ -1567,7 +1549,7 @@ ideas = {
 				always = no
 			}
 
-			available = {  }
+			available = { ROOT = { has_government = fascism } }
 
 			allowed_civil_war = {
 				has_government = fascism
@@ -1594,7 +1576,7 @@ ideas = {
 
 			allowed_civil_war = { has_government = fascism }
 
-			available = {  }
+			available = { ROOT = { has_government = fascism } }
 
 			removal_cost = -1
 
@@ -1626,7 +1608,7 @@ ideas = {
 
 			allowed_civil_war = { has_government = fascism }
 
-			available = {  }
+			available = { ROOT = { has_government = fascism } }
 
 			removal_cost = -1
 
@@ -1654,7 +1636,7 @@ ideas = {
 
 			allowed_civil_war = { has_government = fascism }
 
-			available = {  }
+			available = { ROOT = { has_government = fascism } }
 
 			removal_cost = -1
 
@@ -1774,7 +1756,7 @@ ideas = {
 				always = yes
 			}
 
-			available = {}
+			available = { ROOT = { has_government = fascism } }
 
 			removal_cost = -1
 
@@ -2320,7 +2302,7 @@ ideas = {
 			cost = 75
 			
 			allowed = {
-				OR = {original_tag = GER original_tag = SPR original_tag = HUN tag = HUN_greater original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG  }
+				OR = {original_tag = GER original_tag = SPR original_tag = HUN original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG  }
 			}
 			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 			
@@ -2392,7 +2374,7 @@ ideas = {
 
 			cost = 75
 			allowed = {
-				OR = { original_tag = GER original_tag = SPR original_tag = HUN tag = HUN_greater original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
+				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
 			}
 			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 			
@@ -2425,7 +2407,7 @@ ideas = {
 			picture = GER_MAN
 			cost = 75
 			allowed = {
-				OR = { original_tag = GER original_tag = SPR original_tag = HUN tag = HUN_greater original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
+				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
 			}
 			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 			
@@ -2484,7 +2466,7 @@ ideas = {
 
 			cost = 75
 			allowed = {
-				OR = { original_tag = GER original_tag = SPR original_tag = HUN tag = HUN_greater original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
+				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
 			}
 			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 			
@@ -2509,7 +2491,7 @@ ideas = {
 		cost = 75
 			
 			allowed = {
-				OR = { original_tag = GER original_tag = SPR original_tag = HUN tag = HUN_greater original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
+				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
 			}
 			modifier = {
 			aircraft_manufacturer_cost_factor = -1
@@ -2543,7 +2525,7 @@ ideas = {
 		junkers = { 
 		cost = 75
 			allowed = {
-				OR = { original_tag = GER original_tag = SPR original_tag = HUN tag = HUN_greater original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
+				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
 			}
 			modifier = {
 			aircraft_manufacturer_cost_factor = -1
@@ -2570,7 +2552,7 @@ ideas = {
 			cost = 75
 			
 			allowed = {
-				OR = { original_tag = GER original_tag = SPR original_tag = HUN tag = HUN_greater original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
+				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
 			}
 			
 						
@@ -2591,7 +2573,7 @@ ideas = {
 			cost = 75
 			
 			allowed = {
-				OR = { original_tag = GER original_tag = SPR original_tag = HUN tag = HUN_greater original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
+				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
 			}
 			
 			modifier = {
@@ -2611,7 +2593,7 @@ ideas = {
 		dornier = {
 			cost = 75
 			allowed = {
-				OR = { original_tag = GER original_tag = SPR original_tag = HUN tag = HUN_greater original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
+				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
 			}
 			
 				modifier = {
