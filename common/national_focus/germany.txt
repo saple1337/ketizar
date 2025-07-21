@@ -561,7 +561,7 @@ focus_tree = {
 			factor = 12
 		}
 		
-		available = { FRA = { has_capitulated = yes } }
+		available = { has_global_flag = France_capitulated }
 		
 		completion_reward = {
 			SWI = {
@@ -3154,7 +3154,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			FRA = { has_capitulated = yes }
+			has_global_flag = France_capitulated
 			
 		}	
 		available_if_capitulated = yes
@@ -3270,7 +3270,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		available = {
-			FRA = { has_capitulated = yes }
+			has_global_flag = France_capitulated
 			
 		}
 		
@@ -3506,7 +3506,7 @@ focus_tree = {
 		}	
 		
 				available = { 				
-			FRA = { has_capitulated = yes }
+			has_global_flag = France_capitulated
 			}
 			
 			completion_reward = {
@@ -4042,7 +4042,7 @@ focus_tree = {
 					available = {
 						has_war_with = ENG
 						has_full_control_of_state = 16	
-						FRA = { has_capitulated = yes }
+						has_global_flag = France_capitulated
 					}
 			
 					available_if_capitulated = yes
@@ -4062,7 +4062,7 @@ focus_tree = {
 					available = {
 						has_full_control_of_state = 8
 						has_full_control_of_state = 28
-						FRA = { has_capitulated = yes }
+						has_global_flag = France_capitulated
 					}
 					bypass = {
 					}
@@ -5487,11 +5487,9 @@ focus_tree = {
 				focus = {
 					id = GER_endsieg_focus1
 					icon = GFX_focus_GER_flag_shield
-					available = { date > 1941.1.1 
-					OR = {
+					available = {
+						date > 1941.1.1 
 						surrender_progress > 0.1
-						has_global_flag = GDU_dday_started
-						}
 					}
 					x = 25
 					y = 8

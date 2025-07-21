@@ -65,6 +65,7 @@ leader_traits = {
 		trade_opinion_factor = 0.25
 		democratic_acceptance = 150
 		communism_acceptance = 150
+		ai_focus_defense_factor = 1
 	}
 	
 	################################

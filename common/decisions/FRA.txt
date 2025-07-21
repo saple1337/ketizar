@@ -842,12 +842,13 @@ Battle_for_France = {
         timeout_effect = {
 			if = {
 				limit = {
-					surrender_progress > 0.95
+					surrender_progress > 0.98
 				}
 				FRF = {
 					change_tag_from = FRA
 				}
 			}
+			set_global_flag = France_capitulated
 			activate_mission = FRA_held
 			add_to_variable = { FRA_battle_weeks_held = 1}
 		}
