@@ -1241,7 +1241,7 @@ equipments = {
 		interface_category = interface_category_armor
 		priority = 2000
 
-		module_slots = {		module_slots = {
+		module_slots = {	
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {

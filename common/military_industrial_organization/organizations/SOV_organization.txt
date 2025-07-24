@@ -80,6 +80,7 @@ SOV_morozov_design_bureau_organization = {
 	allowed = {	
 		OR = {
 			tag = SOV 
+			tag = MON
 		}
 	}
 
@@ -317,7 +318,7 @@ SOV_morozov_design_bureau_organization = {
 		}
 		limit_to_equipment_type = { armor }
 		available = { #Two FROM blocs to provide two different check marks in the UI
-			date>1942.3.1
+			date>1942.1.1
 		}
 
 		on_complete = {

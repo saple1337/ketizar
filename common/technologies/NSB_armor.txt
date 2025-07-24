@@ -605,45 +605,6 @@ technologies = {
 		}
 	}
 
-	main_battle_tank_chassis = { #E-50
-		special_project_specialization = { specialization_land }
-		enable_equipments = {
-			modern_tank_chassis_1
-			modern_tank_destroyer_chassis_1
-			modern_tank_artillery_chassis_1
-			modern_tank_aa_chassis_1
-		}
-		enable_subunits = {
-			modern_armor
-		}
-
-		research_cost = 2.5
-		start_year = 1945
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				date > "1946.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1947.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1948.1.1"
-			}
-		}
-
-		categories = {
-			armor
-			cat_medium_armor
-		}
-	}
 
 
 	basic_heavy_tank_chassis = { #Grosstraktor
@@ -1883,7 +1844,7 @@ mio_cat_tech_light_armor_and_modules
 			armor
 		}
 	}
-
+		
 
 
 		main_battle_tank_chassis = { #E-50
