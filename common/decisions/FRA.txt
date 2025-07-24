@@ -825,7 +825,7 @@ Battle_for_France = {
 		is_good = yes
 
 		allowed = {
-			always = yes
+			always = no
 			tag = FRA
 		}
 

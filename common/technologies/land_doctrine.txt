@@ -527,7 +527,6 @@ technologies = {
 			default_morale = 0.1
 		}
 
-		enable_tactic = tactic_breakthrough
 		
 		motorized = {
 			max_organisation = 7
@@ -613,7 +612,7 @@ technologies = {
 			max_strength = 10
 		}
 		enable_tactic = tactic_overwhelming_fire
-		
+		enable_tactic = tactic_breakthrough
 		path = {
 			leads_to_tech = firebrigades 
 			research_cost_coeff = 1
