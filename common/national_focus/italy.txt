@@ -5803,7 +5803,7 @@ completion_reward = {
 
 		completion_reward = {
 			add_stability = 0.02
-			add_timed_idea = { idea = ITA_devaluated_lira days = 195 }
+			add_timed_idea = { idea = ITA_devaluated_lira days = 365 }
 		}
 	}
 	focus = {
@@ -6336,6 +6336,28 @@ completion_reward = {
 
 			custom_effect_tooltip = ITA_all_roads_lead_to_rome_re_tt
 			add_to_variable = { ITA_re_supply_node_range = 0.1 }
+		}
+	}
+	focus = {
+		id = ITA_prepare_defense
+		icon = GFX_focus_generic_spread_fascism
+		prerequisite = { focus = ITA_all_roads_lead_to_rome }
+		text = "Prepare Defenses in Egypt"
+		x = 0
+		y = 2
+		relative_position_id = ITA_the_italian_legions
+		cost = 2
+		available = {
+			has_full_control_of_state = 2
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			857 = {
+				add_building_construction = { type = bunker level = 8 province = 10947 instant_build = yes }
+				add_building_construction = { type = bunker level = 6 province = 7143 instant_build = yes }
+			}
 		}
 	}
 

@@ -36,12 +36,9 @@ add_intel = { target = SPR civilian_intel = 200 army_intel = 200 navy_intel = 20
 
 add_timed_idea = { idea = france_production_regrowth days = 30 }
 
-set_autonomy = {	target = MIN	autonomous_state = autonomy_wtt_imperial_associate }
-
 create_faction = "Greater East-Asian Co-Prosperity Sphere"
 add_to_faction = JAP
 add_to_faction = MIN
-add_to_faction = SIA
 
 set_faction_spymaster = yes	
 

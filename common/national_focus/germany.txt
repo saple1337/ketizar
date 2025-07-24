@@ -561,7 +561,9 @@ focus_tree = {
 			factor = 12
 		}
 		
-		available = { has_global_flag = France_capitulated }
+		available = { has_full_control_of_state = 19
+			has_full_control_of_state = 14
+			has_full_control_of_state = 16 }
 		
 		completion_reward = {
 			SWI = {
@@ -3154,7 +3156,9 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			has_global_flag = France_capitulated
+			has_full_control_of_state = 19
+			has_full_control_of_state = 14
+			has_full_control_of_state = 16
 			
 		}	
 		available_if_capitulated = yes
@@ -3270,7 +3274,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		available = {
-			has_global_flag = France_capitulated
+			has_full_control_of_state = 19
+			has_full_control_of_state = 14
+			has_full_control_of_state = 16
 			
 		}
 		
@@ -3506,7 +3512,9 @@ focus_tree = {
 		}	
 		
 				available = { 				
-			has_global_flag = France_capitulated
+			has_full_control_of_state = 19
+			has_full_control_of_state = 14
+			has_full_control_of_state = 16
 			}
 			
 			completion_reward = {
@@ -4042,7 +4050,9 @@ focus_tree = {
 					available = {
 						has_war_with = ENG
 						has_full_control_of_state = 16	
-						has_global_flag = France_capitulated
+						has_full_control_of_state = 19
+			has_full_control_of_state = 14
+			has_full_control_of_state = 16
 					}
 			
 					available_if_capitulated = yes
@@ -4062,7 +4072,9 @@ focus_tree = {
 					available = {
 						has_full_control_of_state = 8
 						has_full_control_of_state = 28
-						has_global_flag = France_capitulated
+						has_full_control_of_state = 19
+			has_full_control_of_state = 14
+			has_full_control_of_state = 16
 					}
 					bypass = {
 					}

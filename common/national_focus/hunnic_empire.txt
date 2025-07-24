@@ -131,7 +131,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = wuw_HUN_continue_the_regency
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -761,7 +761,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = wuw_HUN_empower_the_greenshirts
 
-		cost = 5
+		cost = 15
 
 		ai_will_do = {
 			factor = 15
@@ -805,7 +805,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = wuw_HUN_the_march_on_budapest
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -840,8 +840,8 @@ focus_tree = {
 				add_threat = 1
 				set_party_name = {
 					ideology = fascism
-					long_name = HUN_arrow_cross_party_hungarist_movement_long
-					name = HUN_arrow_cross_party_hungarist_movement
+					long_name = "Arrow Cross Movement"
+					name = "Arrow Cross"
 				}	
 
 				custom_effect_tooltip = generic_skip_one_line_tt

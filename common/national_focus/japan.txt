@@ -371,6 +371,117 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = JAP_grant_some
+		icon = GFX_focus_chi_one_china_policy
+		prerequisite = { focus = JAP_ensure_compliance }
+		mutually_exclusive = {
+			focus = Grant_everything
+		}
+		x = -2
+		y = 1
+		text = "Grant Northen Holdings in China"
+		relative_position_id = JAP_ensure_compliance
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				threat < 0.9
+			}
+		}
+
+		available = {
+		owns_state = 608
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			MIN = {
+				transfer_state = 608
+				transfer_state = 621
+				transfer_state = 746
+				transfer_state = 615
+				transfer_state = 614
+				transfer_state = 622
+				transfer_state = 597
+				
+			}
+		}
+	}
+	focus = {
+		id = Grant_everything
+		icon = GFX_focus_chi_one_china_policy
+		prerequisite = { focus = JAP_ensure_compliance }
+		mutually_exclusive = {
+			focus = JAP_grant_some
+		}
+		x = 0
+		y = 1
+		text = "Create a full Collaboration Goverment"
+		relative_position_id = JAP_ensure_compliance
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				threat < 0.9
+			}
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					AND = {
+					impassable = no
+					is_core_of = CHI
+					NOT = {
+						state = 729
+						state = 728
+						state = 326
+						state = 613
+						state = 743
+						state = 591
+						state = 594
+						state = 592
+						state = 593
+						state = 595
+						state = 596
+					}}
+				}
+				transfer_state_to = MIN
+			}
+		}
+	}
 
 	focus = {
 		id = JAP_develop_chinese_resources
