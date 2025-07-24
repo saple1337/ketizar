@@ -731,7 +731,6 @@ Battle_for_France = {
 				 		}
 					}
 			}
-			hidden_effect = {
 							if = {
 								limit = {
 								and = {
@@ -745,7 +744,6 @@ Battle_for_France = {
 																}}
 								activate_mission = FRA_TZAR_RELOCATION_CIV
 							}
-			}
 			#custom_effect_tooltip = GER_relocate_industry_mil
 		}
 	}
@@ -814,32 +812,33 @@ Battle_for_France = {
 					activate_mission = FRA_TZAR_RELOCATION_MIL
 				}
 			}
-			}
-			#custom_effect_tooltip = GER_relocate_industry_mil
 		}
-	
+			#custom_effect_tooltip = GER_relocate_industry_mil
+	}
 	FRA_held = {
-		name = "Battle for France"
+		name = "Battle for france"
 		icon = generic_construction
 		available = {
-		always = no
+			always = no
 		}
 
 		is_good = yes
 
 		allowed = {
-			always = no
+			always = yes
 			tag = FRA
 		}
 
 		fire_only_once = no
 		days_mission_timeout = 1
 
-		visible = {
-			date<1941.12.1
-		}
-
         timeout_effect = {
+			if = {
+				limit = {
+					casualties > 1000000
+				}
+				set_technology = { french_anti_battleplan = 1 popup = yes } 
+			}
 			if = {
 				limit = {
 					surrender_progress > 0.98
@@ -847,10 +846,11 @@ Battle_for_France = {
 				FRF = {
 					change_tag_from = FRA
 				}
+				set_global_flag = France_capitulated
 			}
-			set_global_flag = France_capitulated
-			activate_mission = FRA_held
 			add_to_variable = { FRA_battle_weeks_held = 1}
+			activate_mission = FRA_held
 		}
+			#custom_effect_tooltip = GER_relocate_industry_mil
 	}
 }

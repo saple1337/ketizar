@@ -155,7 +155,7 @@ Prepare_Overlord:0 "Prepare Operation Overlord"
 
  #Battle of France Localization
  Battle_for_France:0 "Battle of France"
- Battle_for_France_desc:0 "We evacuate 1 military and 1 civilian a day. We must hold for as long as possible!\n"
+Battle_for_France_desc:0 "We are evacuating §G1 military§! and §O1 civilian§! every day.\nEvery moment counts as we struggle to hold the line.\n\nCAUTION if our casualties exceed §R1.0 million§!,\nour morale will break, and our defenses will collapse."
  FRA_battle_start:0 "A Phoney War..."
  FRA_battle_start_desc:0 "The Battle for France will begin with any invasion of French Core Territory, or a declaration of war by the Germans on Belgium"
  FRA_battle_1:0 "§GYou have held for [?FRA_battle_weeks_held] weeks§!"
