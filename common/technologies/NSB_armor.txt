@@ -1571,6 +1571,8 @@ mio_cat_tech_light_armor_and_modules
 		enable_equipment_modules = {
 			tank_medium_cannon_3
 			tank_anti_air_cannon_3		
+			tank_rocket_launcher
+			tank_auto_cannon_3
 		}
 
 		research_cost = 0.5
@@ -1623,8 +1625,7 @@ mio_cat_tech_light_armor_and_modules
 		enable_equipment_modules = {	
 			dozer_blade
 			auto_loader
-			secondary_turret_small_cannon
-			tank_auto_cannon_3 
+			secondary_turret_small_cannon 
 			hvap_ammo
 			wet_ammo_storage
 		}
@@ -1774,6 +1775,7 @@ mio_cat_tech_light_armor_and_modules
 			tank_high_velocity_cannon_3		
 			tank_anti_air_cannon_3
 			tank_small_cannon_3
+			tank_auto_cannon_3
 		}
 
 		research_cost = 0.5
