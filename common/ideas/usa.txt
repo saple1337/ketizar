@@ -2,6 +2,30 @@ ideas = {
 
 	country = {
 	
+	
+	USA_navy_catchup = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+
+			picture = generic_army_problems
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.5
+
+				
+			}
+		}
+	
 	USA_island_hopping1 = {
 			allowed = {
 				always = no
@@ -1459,7 +1483,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.1
 				min_export = 0.05	
-				production_factory_efficiency_gain_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.25
 			}
 		}
 		allocate_more_resources_to_the_manhattan_project = {
@@ -1564,7 +1588,7 @@ ideas = {
 			
 			modifier = {
 			line_change_production_efficiency_factor = -0.10
-			production_factory_max_efficiency_factor = 0.15
+			production_factory_max_efficiency_factor = 0.10
 			}
 		}
 		
@@ -1726,7 +1750,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_the_london_naval_treaty
 			modifier = {
-				production_speed_dockyard_factor = 0.1
+				production_speed_dockyard_factor = 0.20
 			}
 		}
 		NIRA = {

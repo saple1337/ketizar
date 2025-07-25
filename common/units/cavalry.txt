@@ -25,16 +25,19 @@ sub_units = {
 		
 		combat_width = 2
 		
-		#Size Definitions
+		
+		maximum_speed = 0.6
+		max_strength = 20
 		max_organisation = 40
-		max_strength = 22
-		default_morale = 0.3
-		manpower = 1500
+		default_morale = 0.4
+		manpower = 1000
 
 		#Misc Abilities
-		maximum_speed = 0.6
-		training_time = 120		
+		training_time = 120
+		suppression = 1
 		weight = 0.5
+		supply_consumption = 0.05
+		breakthrough = 0.3
 		
 		supply_consumption = 0.09
 
@@ -42,7 +45,8 @@ sub_units = {
 		suppression = 2
 	
 		need = {
-			infantry_equipment = 200
+			infantry_equipment = 150
+			support_equipment = 20
 		}
 
 		forest = {
@@ -103,9 +107,9 @@ sub_units = {
 		#Misc Abilities
 		maximum_speed = 0.4
 		training_time = 160		
-		weight = 0.6
+		weight = 0.3
 		
-		supply_consumption = 0.1
+		supply_consumption = 0.03
 
 		#Offensive Abilities
 		suppression = 2
@@ -175,16 +179,16 @@ sub_units = {
 			category_army
 		}
 		
-		combat_width = 2
+		combat_width = 2.5
 		
 		#Size Definitions
-		max_organisation = 40
-		max_strength = 9.5
+		max_organisation = 45
+		max_strength = 35
 		default_morale = 0.25
 		manpower = 1200
 
 		#Misc Abilities
-		maximum_speed = 0.5
+		maximum_speed = 0.1
 		training_time = 210		
 		weight = 1.2
 		
@@ -193,48 +197,39 @@ sub_units = {
 		#Offensive Abilities
 		suppression = 2.3
 
-		soft_attack = -0.25
-		hard_attack = -0.15
+		soft_attack = -0.15
+		hard_attack = -0.25
 
 		breakthrough = 0.3
 	
 		need = {
-			infantry_equipment = 260
-			artillery_equipment = 50
+			infantry_equipment = 800
+			artillery_equipment = 15
 		}
 
 		forest = {
-			attack = 0.05
-			movement = 0.05
+			attack = -0.05
 		}
 
 		hills = {
-			movement = 0.15
-			attack = 0.05
+			attack = -0.05
 		}
 
 		mountain = {
-			attack = 0.05
-			movement = 0.15
+			attack = -0.2
+			movement = -0.05
 		}
 
 		jungle = {
-			attack = 0.1 
-			movement = 0.15 
-		}
-
-		marsh = {
-			movement = -0.1
 			attack = -0.1
 		}
 
 		urban = {
-			attack = -0.15
-			movement = -0.25
+			attack = -0.05
 		}
 
 		amphibious = {
-			attack = -0.7
+			attack = -0.4
 		}
 	}
 }

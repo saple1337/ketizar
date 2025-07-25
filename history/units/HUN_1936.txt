@@ -75,15 +75,15 @@ division_template = {
 	division_names_group = HUN_CAV_01					
 	name = "Mediums"
 	regiments = {
-		mechanized x = 0 y = 0 }
-	    mechanized x = 0 y = 1 }
-		mechanized x = 0 y = 2 }
-		mechanized x = 0 y = 3 }
+		mechanized = {x = 0 y = 0 }
+	    mechanized = {x = 0 y = 1 }
+		mechanized = {x = 0 y = 2 }
+		mechanized = {x = 0 y = 3 }
 
-		mechanized x = 1 y = 0 }
-		mechanized x = 1 y = 1 }
-		mechanized x = 1 y = 2 }
-		mechanized x = 1 y = 3 }
+		mechanized = {x = 1 y = 0 }
+		mechanized = {x = 1 y = 1 }
+		mechanized = {x = 1 y = 2 }
+		mechanized = {x = 1 y = 3 }
 		medium_sp_anti_air_brigade = { x = 4 y = 3 }
 
 		medium_armor = { x = 2 y = 0 }
@@ -148,25 +148,6 @@ units = {
 	}
 }
 
-### Magyar Légiero ###
-air_wings = {
-	43 = {
-		fighter_equipment_0 = {
-			owner = "HUN" 
-			creator = "ITA"
-				amount = 72
-		}
-	CAS_equipment_1 = {
-			owner = "HUN" 
-			amount = 12
-		}
-				tac_bomber_equipment_0 = {
-			owner = "HUN" 
-			creator = "ITA"
-			amount = 12
-		}
-	}
-}
 
 
 ### Starting Production ###

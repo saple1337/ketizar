@@ -9,8 +9,8 @@ state={
 	history={
 		owner = SAF
 		1936.1.1.13 = {
-			owner = ENG
-			add_core_of = ENG 
+			owner = CAN
+			add_core_of = CAN 
 		}
 		1936.1.1.15 = {
 			owner = SAF
@@ -26,11 +26,9 @@ state={
 			industrial_complex = 4
 			arms_factory = 2
 			air_base = 1
+			
 			12589 = {
-				naval_base = 20
-			}
-			12589 = {
-				naval_base = 4
+				naval_base = 15
 			    # Woodhead Dam
 				dam = 1
 			}

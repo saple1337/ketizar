@@ -1,3 +1,5 @@
+-- If you're reading this, don't say anything about this, this is a secret between us (๑>؂•̀๑) (decreased from 4.5 vanilla value to 4.0).
+BASE_FACTORY_SPEED_MIL = 4
 NDefines.NOperatives.AGENCY_CREATION_DAYS = 9999			
 NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 9999
 NDefines.NDiplomacy.EMBARGO_COST = 9999
@@ -254,7 +256,7 @@ NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.1-- (0.1)
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 0.05
 
 NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
-NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.2 -- -0.12 vanilla, per level AA state 
+NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.12 -- -0.12 vanilla, per level AA state 
 --NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.68 -- .75 Maximum damage reduction factor applied to incoming air attacks against units with AA.
 
 NDefines.NAir.AIR_WING_XP_LOSS_WHEN_KILLED = 0.4

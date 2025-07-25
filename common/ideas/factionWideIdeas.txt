@@ -27,7 +27,7 @@ ideas = {
 		
 		COOM_volunteers_minors = {
 
-			picture = volunteer_only
+			picture = chi_warlord_integration5
 
 			removal_cost = -1
 			
@@ -46,7 +46,7 @@ ideas = {
 		
 		COOM_volunteers_majors = {
 
-			picture = volunteer_only
+			picture = chi_warlord_integration5
 
 			removal_cost = -1
 			
@@ -303,7 +303,7 @@ ideas = {
 				}
 			}
 		}
-		No_tradeback = {
+		no_tradeback = {
 			picture = HUN_treaty_of_triannon
 			allowed = {
 				always = no
@@ -389,7 +389,7 @@ ideas = {
 
 			modifier = {
 				production_factory_max_efficiency_factor = 0.05
-				industrial_capacity_factory = 0.04
+				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.05
 				stability_factor = 0.15
 				consumer_goods_expected_value = -0.02
@@ -460,7 +460,7 @@ ideas = {
 				# anti_air_brigade = { max_strength = 6 }
 				land_reinforce_rate = 0.10
 				supply_node_range = 0.05
-				army_strength_factor = 0.2
+				army_strength_factor = 0.225
 				supply_consumption_factor = -0.05
 			}
 			

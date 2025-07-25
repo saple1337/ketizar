@@ -50,6 +50,7 @@ division_template = {
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		anti_air_brigade = { x = 2 y = 2 }
+anti_air_brigade = { x = 2 y = 3 }
 		artillery_brigade = { x = 3 y = 0 }
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
@@ -152,6 +153,7 @@ division_template = {
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
 		anti_air_brigade = { x = 3 y = 3 }
+anti_air_brigade = { x = 3 y = 4 }
 		anti_tank_brigade = { x = 4 y = 0 }
 		anti_tank_brigade = { x = 4 y = 1 }
 		anti_tank_brigade = { x = 4 y = 2 }
@@ -171,10 +173,10 @@ division_template = {
 division_template = {
 	name = "Mediums"
 	regiments = {
-		mechanized x = 0 y = 0 }
-	    mechanized x = 0 y = 1 }
-		mechanized x = 0 y = 2 }
-		mechanized x = 0 y = 3 }
+		mechanized = { x = 0 y = 0 }
+	    mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
 
 		mechanized x = 1 y = 0 }
 		mechanized x = 1 y = 1 }
@@ -522,39 +524,6 @@ units = {
 }
 
 
-
-##### AIR WINGS #####
-air_wings = { 
-	### ITALY ###
-	# 1a Squadra Aerea - SQA1 (Milan)
-	158 = { 
-		# 2a Divisione Aerea 'Borea'
-		fighter_equipment_0 = { 
-			amount = 250	
-			owner = "ITA" 
-		} 
-		# 4a Divisione Aerea 'Drago'
-		# 6a Divisione Aerea 'Falco'
-		tac_bomber_equipment_0 = { 
-			amount = 180
-			owner = "ITA" 
-		} 
-	
-		# 9a Divisione Aerea 'Leone'
-		nav_bomber_equipment_1 = { 
-			amount = 50
-			owner = "ITA" 
-		} 
-	 
-
-		CAS_equipment_1 = { 
-			amount = 48 
-			owner = "ITA" 
-		} 
-	}
-} 
-
-
 ####### Starting Production Queue #######
 instant_effect = { 
 	if = { 
@@ -639,36 +608,6 @@ instant_effect = {
 			} 
 			requested_factories = 1
 			progress = 0.4 
-			efficiency = 50 
-		} 
-		add_equipment_production = {
-			equipment = {
-				type = fighter_equipment_1
-				creator = "ITA" 
-			}
-			requested_factories = 1
-			progress = 0.15
-			efficiency = 50
-		}
-		
-		add_equipment_production = { 
-			equipment = { 
-				type = CAS_equipment_1 
-				creator = "ITA" 
-			} 
-
-			requested_factories = 1 
-			progress = 0.2 
-			efficiency = 50 
-		} 
-		add_equipment_production = { 
-			equipment = { 
-				type = nav_bomber_equipment_1 
-				creator = "ITA" 
-			} 
-
-			requested_factories = 1 
-			progress = 0.2 
 			efficiency = 50 
 		} 
 		add_equipment_production = {

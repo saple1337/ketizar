@@ -372,6 +372,436 @@ War_economy = {
 		}
 
 		}
+	Einheitspakt_economy = {
+	
+	GER_Invest_in_Spanish_Military_Production = {
+		icon = GFX_decision_faction_gre_fascist
+		name = "Invest in Spanish Military Production"	
+		allowed = { tag = GER }
+
+		cost = 0	
+		visible = {
+				GER = {
+					has_completed_focus = GER_establish_the_Einheitspakt 
+				}
+		}
+		days_remove = -1
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		complete_effect = {
+			SPR = {
+					add_ideas = GER_Economic_Investment
+				}
+		}
+	}
+	GER_Invest_in_Spanish_Military_Production_cancel = {
+	name = "Cancel Spanish Military Production"
+		icon = GFX_decision_faction_gre_fascist
+		available = {
+		}
+		visible = {
+			has_decision = GER_Invest_in_Spanish_Military_Production
+		}
+		fire_only_once = no
+		modifier = {
+		}
+		cost = 0
+		complete_effect = {
+			remove_decision = GER_Invest_in_Spanish_Military_Production
+			SPR = {
+					remove_ideas =  GER_Economic_Investment
+				}
+		}
+	}
+	
+	GER_Invest_in_Bulgarian_Military_Production = {
+		icon = GFX_decision_faction_gre_fascist
+		name = "Invest in Bulgarian Military Production"	
+		allowed = { tag = GER }
+
+		cost = 0	
+		visible = {
+				GER = {
+					has_completed_focus = GER_establish_the_Einheitspakt 
+				}
+		}
+		days_remove = -1
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		complete_effect = {
+			BUL = {
+					add_ideas = GER_Economic_Investment
+				}
+		}
+	}
+	GER_Invest_in_Bulgarian_Military_Production_cancel = {
+	name = "Cancel Bulgarian Military Production"
+		icon = GFX_decision_faction_gre_fascist
+		available = {
+		}
+		visible = {
+			has_decision = GER_Invest_in_Bulgarian_Military_Production
+		}
+		fire_only_once = no
+		modifier = {
+		}
+		cost = 0
+		complete_effect = {
+			remove_decision = GER_Invest_in_Bulgarian_Military_Production
+			BUL = {
+					remove_ideas =  GER_Economic_Investment
+				}
+		}
+	}
+	
+	GER_Invest_in_Hungarian_Military_Production = {
+		icon = GFX_decision_faction_gre_fascist
+		name = "Invest in Hungarian Military Production"	
+		allowed = { tag = GER }
+
+		cost = 0	
+		visible = {
+				GER = {
+					has_completed_focus = GER_establish_the_Einheitspakt 
+				}
+		}
+		days_remove = -1
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		complete_effect = {
+			HUN = {
+					add_ideas = GER_Economic_Investment
+				}
+		}
+	}
+	GER_Invest_in_Hungarian_Military_Production_cancel = {
+	name = "Cancel Hungarian Military Production"
+		icon = GFX_decision_faction_gre_fascist
+		available = {
+		}
+		visible = {
+			has_decision = GER_Invest_in_Hungarian_Military_Production
+		}
+		fire_only_once = no
+		modifier = {
+		}
+		cost = 0
+		complete_effect = {
+			remove_decision = GER_Invest_in_Hungarian_Military_Production
+			HUN = {
+					remove_ideas =  GER_Economic_Investment
+				}
+		}
+	}
+	
+	GER_Invest_in_Romanian_Military_Production = {
+		icon = GFX_decision_faction_gre_fascist
+		name = "Invest in Romanian Military Production"	
+		allowed = { tag = GER }
+
+		cost = 0	
+		visible = {
+				GER = {
+					has_completed_focus = GER_establish_the_Einheitspakt 
+				}
+		}
+		days_remove = -1
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		complete_effect = {
+			ROM = {
+					add_ideas = GER_Economic_Investment
+				}
+		}
+	}
+	GER_Invest_in_Romanian_Military_Production_cancel = {
+	name = "Cancel Romanian Military Production"
+		icon = GFX_decision_faction_gre_fascist
+		available = {
+		}
+		visible = {
+			has_decision = GER_Invest_in_Romanian_Military_Production
+		}
+		fire_only_once = no
+		modifier = {
+		}
+		cost = 0
+		complete_effect = {
+			remove_decision = GER_Invest_in_Romanian_Military_Production
+			ROM = {
+					remove_ideas =  GER_Economic_Investment
+				}
+		}
+	}
+	
+	GER_Invest_in_Slovakian_Military_Production = {
+		icon = GFX_decision_faction_gre_fascist
+		name = "Invest in Slovakian Military Production"	
+		allowed = { tag = GER }
+
+		cost = 0	
+		visible = {
+				GER = {
+					has_completed_focus = GER_establish_the_Einheitspakt 
+				}
+		}
+		days_remove = -1
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		complete_effect = {
+			CZE = {
+					add_ideas = GER_Economic_Investment
+				}
+		}
+	}
+	GER_Invest_in_Slovakian_Military_Production_cancel = {
+	name = "Cancel Slovakian Military Production"
+		icon = GFX_decision_faction_gre_fascist
+		available = {
+		}
+		visible = {
+			has_decision = GER_Invest_in_Slovakian_Military_Production
+		}
+		fire_only_once = no
+		modifier = {
+		}
+		cost = 0
+		complete_effect = {
+			remove_decision = GER_Invest_in_Slovakian_Military_Production
+			CZE = {
+					remove_ideas =  GER_Economic_Investment
+				}
+		}
+	}
+	
+	GER_Invest_in_Croatian_Military_Production = {
+		icon = GFX_decision_faction_gre_fascist
+		name = "Invest in Croatian Military Production"	
+		allowed = { tag = GER }
+
+		cost = 0	
+		visible = {
+				GER = {
+					has_completed_focus = GER_establish_the_Einheitspakt 
+				}
+		}
+		days_remove = -1
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		complete_effect = {
+			YUG = {
+					add_ideas = GER_Economic_Investment
+				}
+		}
+	}
+	GER_Invest_in_Croatian_Military_Production_cancel = {
+	name = "Cancel Croatian Military Production"
+		icon = GFX_decision_faction_gre_fascist
+		available = {
+		}
+		visible = {
+			has_decision = GER_Invest_in_Croatian_Military_Production
+		}
+		fire_only_once = no
+		modifier = {
+		}
+		cost = 0
+		complete_effect = {
+			remove_decision = GER_Invest_in_Croatian_Military_Production
+			YUG = {
+					remove_ideas =  GER_Economic_Investment
+				}
+		}
+	}
+	
+	GER_Invest_in_Italian_Military_Production = {
+		icon = GFX_decision_faction_gre_fascist
+		name = "Invest in Italian Military Production"	
+		allowed = { tag = GER }
+
+		cost = 0	
+		visible = {
+				GER = {
+					has_completed_focus = GER_establish_the_Einheitspakt 
+				}
+		}
+		days_remove = -1
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		complete_effect = {
+			ITA = {
+					add_ideas = GER_Economic_Investment
+				}
+		}
+	}
+	GER_Invest_in_Italian_Military_Production_cancel = {
+	name = "Cancel Italian Military Production"
+		icon = GFX_decision_faction_gre_fascist
+		available = {
+		}
+		visible = {
+			has_decision = GER_Invest_in_Italian_Military_Production
+		}
+		fire_only_once = no
+		modifier = {
+		}
+		cost = 0
+		complete_effect = {
+			remove_decision = GER_Invest_in_Italian_Military_Production
+			ITA = {
+					remove_ideas =  GER_Economic_Investment
+				}
+		}
+	}
+	
+	GER_Invest_in_Italian_Naval_Production = {
+		icon = GFX_decision_generic_merge_plant_ship
+		name = "Invest in Italian Naval Production"	
+		allowed = { tag = GER }
+
+		cost = 0	
+		visible = {
+				GER = {
+					has_completed_focus = GER_establish_the_Einheitspakt 
+				}
+		}
+		days_remove = -1
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		complete_effect = {
+			ITA = {
+					add_ideas = GER_Naval_Investment
+				}
+		}
+	}
+	GER_Invest_in_Italian_Naval_Production_cancel = {
+	name = "Cancel Italian Naval Production"
+		icon = GFX_decision_generic_merge_plant_ship
+		available = {
+		}
+		visible = {
+			has_decision = GER_Invest_in_Italian_Naval_Production
+		}
+		fire_only_once = no
+		modifier = {
+		}
+		cost = 0
+		complete_effect = {
+			remove_decision = GER_Invest_in_Italian_Naval_Production
+			ITA = {
+					remove_ideas = GER_Naval_Investment
+				}
+		}
+	}
+	
+	GER_Build_Danube_Dam = {
+		icon = GFX_decision_NOR_prepare_state_dem_3
+		name = "Build Danube Dams"	
+		allowed = { tag = GER }
+
+		cost = 25		
+		visible = {
+				GER = {
+					has_completed_focus = GER_establish_the_Einheitspakt 
+				}
+		}
+		days_remove = 60
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 5
+		}
+		
+		complete_effect = {
+			46 = {
+                add_extra_state_shared_building_slots = 4
+                add_building_construction = {
+                    type = dam
+                    level = 1
+                    instant_build = yes
+                    province = {
+                        id = 6658
+                    }
+                }
+			}
+			
+			48 = {
+                add_extra_state_shared_building_slots = 4
+                add_building_construction = {
+                    type = dam
+                    level = 1
+                    instant_build = yes
+                    province = {
+                        id = 9771
+                    }
+                }
+			}
+			
+			43 = {
+                add_extra_state_shared_building_slots = 4
+                add_building_construction = {
+                    type = dam
+                    level = 1
+                    instant_build = yes
+                    province = {
+                        id = 9660
+                    }
+                }
+			}
+		}
+		
+	}
+
+	GER_Build_Rubber_Plantations = {
+		icon = GFX_decision_rubber
+		name = "Build Rubber Plantations"	
+		allowed = { tag = GER }
+
+		cost = 25	
+		visible = {
+				GER = {
+					has_completed_focus = GER_establish_the_Einheitspakt 
+				}
+		}
+		days_remove = 60
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 5
+		}
+		
+		complete_effect = {
+			448 = {
+				add_resource = {
+					type = Rubber
+					amount = 20
+				}
+			}
+		}
+	}	
+}
 	
 
 
@@ -600,8 +1030,8 @@ operations = {
 
 	GER_invade_iran = {
 
-			icon = GFX_decision_GER_claim_yugo_4
-			
+			targets = { PER }
+		
 			allowed = { tag = GER }
 
 			fire_only_once = yes
@@ -1716,7 +2146,7 @@ GER_case_anton = {
 	}
 	    GER_annex_vichy = {
 
-		icon = generic_operation
+		targets = { EFR }
 
 		allowed = {
 			original_tag = GER
@@ -1749,7 +2179,7 @@ GER_case_anton = {
 	
     GER_annex_hungary = {
 
-		icon = generic_operation
+		targets = { HUN }
 
 		allowed = {
 			original_tag = GER
@@ -1780,35 +2210,6 @@ GER_case_anton = {
 	
 		complete_effect = {
  			GER = { 
-				if = {
-					limit = { HUN = { has_tech = CAS2 } }
-					set_technology = { CAS2 = 1 }
-				}
-				#############################################################################################
-				if = {
-					limit = { HUN = { has_tech = CAS3 } }
-					set_technology = { CAS3 = 1 }
-				}
-				#############################################################################################
-				if = {
-					limit = { HUN = { has_tech = tactical_bomber2 } }
-					set_technology = { tactical_bomber2 = 1 }
-				}
-				#############################################################################################
-				if = {
-					limit = { HUN = { has_tech = tactical_bomber3 } }
-					set_technology = { tactical_bomber3 = 1 }
-				}
-				#############################################################################################
-				if = {
-					limit = { HUN = { has_tech = naval_bomber2 } }
-					set_technology = { naval_bomber2 = 1 }
-				}
-				#############################################################################################
-				if = {
-					limit = { HUN = { has_tech = naval_bomber3 } }
-					set_technology = { naval_bomber3 = 1 }
-				}
 				#############################################################################################
 			}
 			GER = { 
@@ -2588,7 +2989,7 @@ special_projects = {
 			}
 				ROM = {
 			add_opinion_modifier = {
-    target = MAN
+    target = MIN
     modifier = anti_cross_faction_trade
 }
 			}
@@ -2664,7 +3065,7 @@ special_projects = {
 			}
 			ROM = {
 			remove_opinion_modifier = {
-    target = MAN
+    target = MIN
     modifier = anti_cross_faction_trade
 }
 			}
@@ -2681,7 +3082,7 @@ special_projects = {
 
 	GER_add_chromium = { 
 		
-	    icon = GFX_decision_spa_garrison_control_total
+		targets = { SPR }
 		
 		cost = 0
 		
@@ -2714,8 +3115,8 @@ special_projects = {
 
 	GER_remove_chromium = { 
 		
-	    icon = GFX_decision_spa_garrison_control_total
-		
+		targets = { SPR }
+
 		cost = 0
 		
 		allowed = { original_tag = GER }

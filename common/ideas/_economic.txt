@@ -16,7 +16,6 @@ ideas = {
 				conversion_cost_mil_to_civ_factor = 0.5
 				max_fuel_factor = -0.50
 				fuel_gain_factor = -0.
-				industrial_capacity_factory = -0.4
 				military_industrial_organization_funds_gain = -0.5
 			}
 			
@@ -40,12 +39,10 @@ ideas = {
 				consumer_goods_expected_value = 0.50
 				min_export = -0.4
 				production_speed_arms_factory_factor = -0.4
-				production_speed_dockyard_factor = -0.2
 				conversion_cost_civ_to_mil_factor= 0.4
 				conversion_cost_mil_to_civ_factor = 0.4
 				max_fuel_factor = -0.40
 				fuel_gain_factor = -0.40
-				industrial_capacity_factory = -0.2
 				military_industrial_organization_funds_gain = -0.2
 			}
 			allowed_to_remove = {
@@ -100,7 +97,10 @@ NOT = {tag = MON}
 						original_tag = HUN
 						has_dlc = "Death or Dishonor"
 					}
-					NOT = { has_idea = HUN_treaty_of_triannon }
+					OR = {
+						has_completed_focus = wuw_HUN_secret_rearmament
+						NOT = { has_idea = HUN_treaty_of_triannon }
+					}
 				}	
 			}
 			allowed = {
@@ -161,7 +161,7 @@ NOT = {tag = MON}
 						has_dlc = "Death or Dishonor"
 					}
 					OR = {
-						has_completed_focus = HUN_secret_rearmament
+						has_completed_focus = wuw_HUN_secret_rearmament
 						NOT = { has_idea = HUN_treaty_of_triannon }
 					}
 				}

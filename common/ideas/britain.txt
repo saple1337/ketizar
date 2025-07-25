@@ -354,6 +354,26 @@ ideas = {
 			}
 		}
 		
+		
+		ENG_burma_road_volunteers = {
+
+			picture = volunteer_only
+
+			removal_cost = -1
+			
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			modifier = {				
+				send_volunteer_size = 2
+			}
+		}
+		
 		british_fighter_discount = {
 			
 			allowed = {
@@ -582,7 +602,7 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
+				production_speed_arms_factory_factor = 0.05
 				industrial_capacity_factory = 0.05
 			}
 

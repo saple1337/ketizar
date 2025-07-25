@@ -25,7 +25,6 @@ ideas = {
 		MAN_licensezero = {
 	
 		available = {
-		JAP = { has_tech = cv_fighter2 }
 			}
 			
 			allowed = {
@@ -62,8 +61,8 @@ ideas = {
 			
 			
 		modifier = { 	consumer_goods_expected_value = -0.03 
-		industrial_capacity_factory	= 0.1
-						industrial_capacity_dockyard = 0.1
+		industrial_capacity_factory	= 0.2
+						industrial_capacity_dockyard = 0.2
 
 		}
 			
@@ -197,7 +196,7 @@ ideas = {
 			
 			
 				targeted_modifier = {
-				tag = MAN
+				tag = MIN
 		trade_cost_for_target_factor = -0.2
 	}
 	
@@ -220,7 +219,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			
 			removal_cost = -1
@@ -240,7 +239,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			
 			removal_cost = -1
@@ -327,7 +326,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			
 			removal_cost = -1
@@ -349,7 +348,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			
 			removal_cost = -1
@@ -370,7 +369,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			
 			removal_cost = -1
@@ -391,7 +390,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			
 			removal_cost = -1
@@ -412,7 +411,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			
 			removal_cost = -1
@@ -432,7 +431,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			
 			removal_cost = -1
@@ -451,7 +450,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			
 			removal_cost = -1
@@ -472,7 +471,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			
 			removal_cost = -1
@@ -492,7 +491,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			
 			removal_cost = -1
@@ -513,7 +512,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			
 			removal_cost = -1
@@ -536,7 +535,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			
 			removal_cost = -1
@@ -558,7 +557,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			
 			removal_cost = -1
@@ -581,7 +580,7 @@ ideas = {
 			picture = generic_political_advisor_asia_2
 			
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			
 			traits = { armaments_organizer }
@@ -592,7 +591,7 @@ ideas = {
 			picture = generic_political_advisor_asia_3
 				
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			
 			traits = { fortification_engineer }
@@ -603,7 +602,7 @@ ideas = {
 			picture = generic_political_advisor_asia_1
 			
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 
 			available = {
@@ -621,7 +620,7 @@ ideas = {
 	army_chief = {	
 		MAN_orggg = {			
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			picture = generic_army_europe_4
 			traits = { army_chief_organizational_2 }			
@@ -629,7 +628,7 @@ ideas = {
 		
 		MAN_defff = {		
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			picture = generic_air_close_air_sup_eastern_european_2d
 			traits = { army_chief_defensive_2 }
@@ -639,7 +638,7 @@ ideas = {
 		
 		
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 		
 		picture =	generic_air_europe_3
@@ -658,7 +657,7 @@ ideas = {
 			picture = generic_air_asia_3
 			
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			
 			traits = { air_chief_ground_support_2 }
@@ -673,7 +672,7 @@ ideas = {
 			picture = generic_navy_asia_3
 			
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			
 			traits = { navy_chief_decisive_battle_3 }
@@ -689,7 +688,7 @@ ideas = {
 		ledger = army
 			
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			picture = generic_naval_theorist_eastern_european_2d
 			traits = { army_chief_planning_1 }			
@@ -699,7 +698,7 @@ ideas = {
 		ledger = army
 			
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			picture = generic_air_warfare_theorist_south_american_2d
 			traits = { army_chief_maneuver_1 }			
@@ -709,7 +708,7 @@ ideas = {
 		ledger = army
 			
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			picture = generic_army_asia_4
 			traits = { army_entrenchment_1 }			
@@ -719,7 +718,7 @@ ideas = {
 		ledger = army
 			
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			picture = MEX_pablo_macias
 			traits = { army_infantry_1 }			
@@ -729,7 +728,7 @@ ideas = {
 		ledger = army
 			
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			picture = generic_air_warfare_theorist_south_american_2d
 			traits = { army_concealment_1 }			
@@ -739,7 +738,7 @@ ideas = {
 		ledger = army
 				
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			picture = generic_fascist_demagogue_african_2d
 			traits = { army_logistics_1 }			
@@ -749,7 +748,7 @@ ideas = {
 		ledger = air
 			
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			picture = generic_air_warfare_theorist_african_2d
 			traits = { air_tactical_bombing_1 }			
@@ -762,14 +761,14 @@ ideas = {
 		designer = yes
 		jiangnan_shipyard_group = {
 			picture = generic_naval_manufacturer_3
-			allowed = {	tag = MAN	has_dlc = "Waking the Tiger" }			
+			allowed = {	tag = MIN	has_dlc = "Waking the Tiger" }			
 			research_bonus = { naval_equipment = 0.15 }						
 			traits = { coastal_defence_naval_manufacturer }
 			cost = 50			
 		}
 		dagu_shipyard = {
 			picture = generic_naval_manufacturer_3
-			allowed = { tag = MAN has_dlc = "Waking the Tiger" }
+			allowed = { tag = MIN has_dlc = "Waking the Tiger" }
 			research_bonus = {	naval_equipment = 0.15	}						
 			traits = { raiding_fleet_naval_manufacturer }
 			cost = 50
@@ -780,19 +779,19 @@ ideas = {
 		designer = yes
 		CHI_taiyuan_arsenal = {
 			picture = generic_artillery_manufacturer_1
-			allowed = {	tag = MAN has_dlc = "Waking the Tiger"	}
+			allowed = {	tag = MIN has_dlc = "Waking the Tiger"	}
 			research_bonus = {	artillery = 0.15	}
 			traits = { artillery_manufacturer }
 		}
 		CHI_liaoning_arsenal = {
 			picture = generic_motorized_equipment_manufacturer_1
-			allowed = {	tag = MAN has_dlc = "Waking the Tiger"	}
+			allowed = {	tag = MIN has_dlc = "Waking the Tiger"	}
 			research_bonus = {	motorized_equipment = 0.15 }
 			traits = { motorized_equipment_manufacturer }
 		}
 		CHI_mukden_arsenal = {
 			picture = generic_infantry_equipment_manufacturer_2			
-			allowed = {	tag = MAN	has_dlc = "Waking the Tiger"	}
+			allowed = {	tag = MIN	has_dlc = "Waking the Tiger"	}
 			research_bonus = {	infantry_weapons = 0.15	}
 			traits = { infantry_equipment_manufacturer }
 		}
@@ -814,7 +813,7 @@ MAN_mamc = {
 
 			allowed = {
 				has_DLC = "Waking the Tiger"
-					tag = MAN
+					tag = MIN
 			}
 
 			equipment_bonus = {
@@ -847,7 +846,7 @@ MAN_mamc = {
 			picture = generic_air_manufacturer_1
 
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 				NOT = { has_dlc = "Waking the Tiger" }
 			}
 			
@@ -871,7 +870,7 @@ MAN_mamc = {
 			}
 
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 				has_dlc = "Waking the Tiger"
 			}
 
@@ -894,7 +893,7 @@ MAN_mamc = {
 				}			}
 
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 				has_dlc = "Waking the Tiger"
 			}
 
@@ -911,14 +910,14 @@ MAN_mamc = {
 	industrial_concern = {
 			MAN_showa_steel_works = {
 			picture = generic_industrial_concern_1			
-			allowed = { has_dlc = "Waking the Tiger" original_tag = MAN	}
+			allowed = { has_dlc = "Waking the Tiger" original_tag = MIN	}
 			research_bonus = {	industry = 0.15	}
 			traits = { industrial_concern }
 		}
 
 		MAN_western_refinery = {
 			picture = generic_refining_concern_1
-			allowed = { has_DLC = "Waking the Tiger"	original_tag = MAN }
+			allowed = { has_DLC = "Waking the Tiger"	original_tag = MIN }
 			research_bonus = {
 				industry = 0.1
 				synth_resources = 0.15
@@ -929,7 +928,7 @@ MAN_mamc = {
 
 		shanghai_electronics = {
 			picture = generic_electronics_concern_1
-			allowed = { has_DLC = "Waking the Tiger"	original_tag = MAN	}
+			allowed = { has_DLC = "Waking the Tiger"	original_tag = MIN	}
 			research_bonus = {	electronics = 0.15 }
 			traits = { electronics_concern }
 		}
@@ -942,7 +941,7 @@ MAN_mamc = {
 			}
 
 			allowed = {
-				OR = { original_tag = MAN original_tag = JAP }
+				OR = { original_tag = MIN original_tag = JAP }
 			}
 
 			traits = {
@@ -961,7 +960,7 @@ MAN_mamc = {
 	# 		picture = generic_army_asia_3
 			
 	# 		allowed = {
-	# 			original_tag = MAN
+	# 			original_tag = MIN
 	# 		}
 			
 	# 		traits = { army_regrouping_2 }
@@ -977,7 +976,7 @@ MAN_mamc = {
 	# 		picture = generic_air_asia_2
 			
 	# 		allowed = {
-	# 			original_tag = MAN
+	# 			original_tag = MIN
 	# 		}
 			
 	# 		traits = { army_infantry_2 }
@@ -992,7 +991,7 @@ MAN_mamc = {
 	# 		picture = generic_army_asia_2 
 			
 	# 		allowed = { 
-	# 			original_tag = MAN
+	# 			original_tag = MIN
 	# 		}
 			
 	# 		traits = { army_armored_2 } 
@@ -1008,7 +1007,7 @@ MAN_mamc = {
 	# 		picture = generic_army_asia_1
 			
 	# 		allowed = {
-	# 			original_tag = MAN
+	# 			original_tag = MIN
 	# 		}
 			
 	# 		traits = { army_logistics_2 }
@@ -1028,7 +1027,7 @@ MAN_mamc = {
 	# 		picture = generic_army_asia_1
 			
 	# 		allowed = {
-	# 			original_tag = MAN
+	# 			original_tag = MIN
 	# 		}
 			
 	# 		research_bonus = {
@@ -1044,7 +1043,7 @@ MAN_mamc = {
 	# 		picture = generic_navy_asia_1
 			
 	# 		allowed = {
-	# 			original_tag = MAN
+	# 			original_tag = MIN
 	# 		}
 			
 	# 		research_bonus = {
@@ -1060,7 +1059,7 @@ MAN_mamc = {
 	# 		picture = generic_air_asia_2
 			
 	# 		allowed = {
-	# 			original_tag = MAN
+	# 			original_tag = MIN
 	# 		}
 			
 	# 		research_bonus = {
@@ -1079,7 +1078,7 @@ MAN_mamc = {
 			picture = porsche
 			
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 				has_completed_focus = MAN_tankplant_p
 			}
 			on_add = { hidden_effect = { make_tank_designers_free = yes } }
@@ -1101,7 +1100,7 @@ MAN_mamc = {
 			picture = henschel
 			
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 					has_completed_focus = MAN_tankplant_h
 			}
 			on_add = { hidden_effect = { make_tank_designers_free = yes } }

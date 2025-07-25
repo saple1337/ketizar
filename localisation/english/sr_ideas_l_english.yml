@@ -1,4 +1,5 @@
 ﻿l_english:
+ no_tradeback:0 "No Tradebacks"
  SOV_barb_debuff:0 "Officer Corp Purged"
  Atlantic_Wall_Garrison:0 "Atlantik Wall Garrison"
  soviet_hero_city:0 "Hero City"
@@ -166,6 +167,7 @@
  GER_Military_Research_Grants:0 "Military Research Grants"
  GER_A_Flexible_Military_Inudstry:0 "Flexible Military Industry"
  GER_A_Nation_Designed_To_Conquer:0 "A Nation Designed to Conquer"
+ GER_africa_conquered:0 "Nile River Hydrodynamics"
  
  Victory_in_the_Philippines:0 "Victory in the Phillipines"
  

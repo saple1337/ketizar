@@ -1,4 +1,430 @@
 characters={
+	
+	
+	
+	RAJ_claude_auchinleck={
+		name="Claude Auchinleck"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_ENG_claude_auchinleck.dds"
+			}
+			army={
+				large="gfx/leaders/ENG/Portrait_Britain_Claude_Auchinleck.dds"
+			}
+		}
+		field_marshal={
+			traits={ brilliant_strategist career_officer infantry_officer organizer trickster  expert_improviser panzer_leader }
+			skill=5
+			attack_skill=6
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+		advisor={
+			slot = high_command
+			idea_token = claude_auchinleck
+			ledger = army
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	
+	RAJ_GOE_parkash_singh = {
+		name=RAJ_GOE_parkash_singh
+		portraits={
+			army={
+				large= GFX_portrait_RAJ_parkash_singh
+			}
+		}
+		corps_commander={
+			traits={ expert_improviser trickster cavalry_officer brave cavalry_leader cavalry_expert ascari_officer }
+			skill=3
+			attack_skill=8
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+
+			visible = {
+				
+			}
+		}
+	}
+	
+	RAJ_GOE_francis_tuker = {
+		name = RAJ_GOE_francis_tuker
+		portraits = {
+			army = {
+				large = GFX_portrait_RAJ_francis_tuker
+				small = GFX_portrait_RAJ_francis_tuker_small
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=3
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+			visible = {
+				
+			}
+		}
+	}
+	RAJ_noel_beresfordpeirse={
+		name=RAJ_noel_beresfordpeirse
+		portraits={
+			army={
+				large="GFX_RAJ_noel_beresford_peirse"
+				small=GFX_portrait_RAJ_noel_beresfordpeirse_small
+			}
+		}
+		corps_commander={
+			traits={ bearer_of_artillery infantry_expert infantry_leader desert_fox }
+			skill=3
+			attack_skill=6
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+			visible = {
+				
+			}
+		}
+	}
+	
+	RAJ_douglas_gracey={
+		name=RAJ_douglas_gracey
+		portraits={
+			army={
+				large = GFX_portrait_RAJ_douglas_gracey
+				small = GFX_portrait_RAJ_douglas_gracey_small
+			}
+		}
+		corps_commander={
+			traits={ war_hero skilled_staffer trait_engineer trait_mountaineer infantry_leader }
+			skill=3
+			attack_skill=7
+			defense_skill=2
+			planning_skill=6
+			logistics_skill=2
+			legacy_id=-1
+			visible = {
+				
+			}
+		}
+	}
+	
+	RAJ_orde_wingate = {
+		name=RAJ_orde_wingate
+		portraits={
+			army={
+				large="GFX_RAJ_orde_wingate"
+				small=GFX_portrait_RAJ_orde_wingate_small
+			}
+		}
+
+		advisor={
+			slot = high_command
+			ledger = army
+			idea_token = RAJ_orde_wingate
+			allowed = {
+				original_tag = RAJ
+			}
+			available = { }
+			traits = {
+				army_commando_1
+			}
+
+			visible = {
+				
+			}
+
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+		corps_commander={
+			traits = { jungle_rat ranger commando infantry_leader infantry_expert trickster guerilla_fighter irregulars_officer camouflage_expert skirmisher }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 7
+			planning_skill = 1
+			logistics_skill = 9
+			legacy_id=-1
+		}
+	}
+	RAJ_GOE_montagu_stopford={
+		name = RAJ_GOE_montagu_stopford
+		portraits = {
+			army = {
+				large = GFX_portrait_RAJ_montagu_stopford
+				small = GFX_portrait_RAJ_montagu_stopford_small
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader infantry_expert naval_invader trait_engineer naval_liason invader_ii }
+			skill=3
+			attack_skill=7
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+			visible = {
+				
+			}
+		}
+	}
+
+	RAJ_GOE_jawaharlal_nehru = {
+
+		name=RAJ_GOE_jawaharlal_nehru
+		portraits={
+			civilian={
+				large = GFX_portrait_RAJ_jawaharlal_nehru
+				small = GFX_portrait_RAJ_jawaharlal_nehru_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RAJ_GOE_jawaharlal_nehru
+			allowed = {
+				original_tag = RAJ
+				
+			}
+			visible = {
+				has_completed_focus = RAJ_mahatma
+			}
+			available = {
+				has_completed_focus = RAJ_mahatma
+			}
+			traits = {
+				anti_colonial_humanist 
+			}
+		}
+	}
+	
+	RAJ_mahatma_mohandas_gandhi={
+
+			name=RAJ_mahatma_mohandas_gandhi
+			portraits={
+				civilian = {
+					small = GFX_portrait_RAJ_mohandas_gandi_nuclear_small
+					large = GFX_portrait_RAJ_mohandas_gandi_nuclear
+					# Also GFX_portrait_RAJ_mohandas_gandi_nuclear_small
+					# Also GFX_portrait_RAJ_mohandas_gandi_nuclear
+				}
+			}
+
+			country_leader={
+				ideology=liberalism
+				expire="1965.1.1.1"
+				id=-1
+			}
+			
+	}
+
+RAJ_GOE_g_d_birla= { 
+		name=RAJ_GOE_g_d_birla
+		portraits={
+			civilian={
+				small="GFX_portrait_RAJ_g_d_birla_small"  
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RAJ_GOE_g_d_birla
+			allowed = {
+				original_tag = RAJ
+				
+			}
+			visible = {
+				has_country_flag = RAJ_industrialists_joined_eic 
+			}
+			traits = {
+				motor_tycoon
+			}
+		}
+	}
+
+RAJ_GOE_j_r_d_tata= { 
+		name=RAJ_GOE_j_r_d_tata
+		portraits={
+			civilian={
+				small="GFX_portrait_RAJ_j_r_d_tata_small"  
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RAJ_GOE_j_r_d_tata
+			allowed = {
+				original_tag = RAJ
+				
+			}
+			visible = {
+				has_country_flag = RAJ_industrialists_joined_eic 
+			}
+			traits = {
+				tata_chairman
+			}
+		}
+	}
+
+	RAJ_GOE_prescott_bush= { 
+		name=RAJ_GOE_prescott_bush
+		portraits={
+			civilian={
+				small="GFX_portrait_RAJ_prescott_bush_small"  
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RAJ_GOE_prescott_bush
+			allowed = {
+				original_tag = RAJ
+				
+			}
+			visible = {
+				has_country_flag = RAJ_industrialists_joined_eic 
+			}
+			traits = {
+				banking_mogul
+			}
+		}
+	}
+
+	RAJ_GOE_muhammad_ali_jinnah = {
+
+ 		name=RAJ_GOE_muhammad_ali_jinnah
+		portraits={
+			civilian={
+				small = GFX_portrait_RAJ_muhammad_ali_jinnah_small
+				large = GFX_portrait_RAJ_muhammad_ali_jinnah
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RAJ_GOE_muhammad_ali_jinnah
+			allowed = {
+				
+			}
+			visible = {
+				has_completed_focus = RAJ_all_india_muslim_league
+			}
+			available = {
+			}
+			traits = {
+				all_india_muslim_league_leader 
+			}
+		}
+	}
+	
+	RAJ_mir_osman_ali_khan = {
+			name = RAJ_mir_osman_ali_khan
+
+			portraits = {
+				civilian = {
+					large = GFX_portrait_RAJ_mir_osman_ali_khan
+					small = GFX_portrait_RAJ_mir_osman_ali_khan_small
+				}
+				army = {
+					large = GFX_portrait_RAJ_mir_osman_ali_khan
+					small = GFX_portrait_RAJ_mir_osman_ali_khan_small
+				}
+			}
+
+			#country_leader = {
+			#	ideology = despotism
+			#	traits = { RAJ_GOE_patron_of_education }
+			#	expire = "1965.1.1.1"
+			#	id = -1
+			#}
+
+			# Basically only available if country leader
+			
+			advisor={
+				slot = political_advisor
+				idea_token = RAJ_mir_osman_ali_khan
+				allowed = {
+					original_tag = RAJ
+				}
+				visible = {
+					has_completed_focus = RAJ_all_princes_of_india
+				}
+				traits = {
+					RAJ_GOE_wealthy_philantrophist
+				}
+			}
+	}
+
+	RAJ_shripad_amrit_dange = {
+		name = RAJ_shripad_amrit_dange
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_RAJ_shripad_amrit_dange_small"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = RAJ_shripad_amrit_dange
+			allowed = {
+				original_tag = RAJ
+			}
+			visible = {
+				has_completed_focus = RAJ_all_india_communist_party
+			}
+			
+			traits = {
+				RAJ_union_leader
+			}
+		}
+	}
+	
+	RAJ_GOE_tara_singh = {
+
+		name = RAJ_GOE_tara_singh
+		portraits = {
+			civilian = {
+				small = GFX_portrait_RAJ_tara_singh_small
+				large = GFX_portrait_RAJ_tara_singh
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RAJ_GOE_tara_singh
+			allowed = {
+				original_tag = RAJ
+				has_dlc = "Graveyard of Empires"
+			}
+			visible = {
+			
+					
+					has_completed_focus = RAJ_sikh_religious_guarantees
+				
+			}
+			available = {
+				
+					has_completed_focus = RAJ_sikh_religious_guarantees
+				
+			}
+			traits = {
+				sikh_activist 
+			}
+		}
+	}
+
+	
+	########### old shit below ################
 	RAJ_lord_linlithgow={
 		name="Lord Linlithgow"
 		portraits={
@@ -14,17 +440,39 @@ characters={
 		}
 	}
 	RAJ_v._d._savarkar={
-		name="V. D. Savarkar"
+		name = "V.D Savarkar"
 		portraits={
 			civilian={
 				large="GFX_RAJ_veer_savarkar"
 			}
+			army={
+				small="GFX_portrait_RAJ_sarat_bose_small"
+			}
+			
 		}
 		country_leader={
 			desc="POLITICS_VD_SAVARKAR_DESC"
 			ideology=falangism
 			expire="1965.1.1.1"
 			id=-1
+		}
+		
+		advisor={
+				slot = political_advisor
+				idea_token = RAJ_v._d._savarkar
+				allowed = {
+				original_tag = RAJ
+				
+				}
+				visible = {
+					has_completed_focus = RAJ_all_india_hindu
+				}
+				available = {
+					has_completed_focus = RAJ_all_india_hindu
+				}
+				traits = {
+					president_of_the_hindu_mahasabha
+				}
 		}
 	}
 	RAJ_p._krishna_pillai={
@@ -42,22 +490,6 @@ characters={
 		}
 	}
 
-	RAJ_jawaharlal_nehru={
-		name="Jawaharlal Nehru"
-		portraits={
-			civilian={
-				large="gfx/leaders/RAJ/r56_idea_RAJ_Jawaharlal_Nehru.dds"
-			}
-		}
-		country_leader={
-			desc="POLITICS_B_P_SITARAMAYYA_DESC"
-			ideology=socialism
-			traits={  }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-	
 	RAJ_b._p._sitaramayya={
 		name="B. P. Sitaramayya"
 		portraits={
@@ -72,6 +504,7 @@ characters={
 			id=-1
 		}
 	}
+	
 	RAJ_george_giffard={
 		name="George Giffard"
 		portraits={
@@ -100,6 +533,15 @@ characters={
 				
 			}
 		}
+		field_marshal={
+			traits={ old_guard career_officer war_hero infantry_leader commando defensive_doctrine inspirational_leader infantry_expert ranger trait_mountaineer }
+			skill=5
+			attack_skill=6
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
 	}
 	RAJ_archibald_wavell={
 		name="Archibald Wavell"
@@ -115,11 +557,11 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ trait_reckless harsh_leader politically_connected organizer infantry_leader skilled_staffer trait_engineer logistics_wizard defensive_doctrine thorough_planner expert_delegator }
-			skill=4
+			traits={ organizer career_officer infantry_leader skilled_staffer trait_engineer logistics_wizard defensive_doctrine thorough_planner expert_delegator }
+			skill=6
 			attack_skill=4
-			defense_skill=4
-			planning_skill=3
+			defense_skill=5
+			planning_skill=2
 			logistics_skill=9
 			legacy_id=998
 		}
@@ -139,26 +581,7 @@ characters={
 			}
 		}
 	}
-	RAJ_noel_beresfordpeirse={
-		name="Noel Beresford-Peirse"
-		portraits={
-			army={
-				small="GFX_RAJ_noel_beresford_peirse_small"
-			}
-			army={
-				large="GFX_RAJ_noel_beresford_peirse"
-			}
-		}
-		corps_commander={
-			traits={ old_guard inflexible_strategist career_officer infantry_officer trickster desert_fox }
-			skill=5
-			attack_skill=4
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
+	
 	RAJ_frank_messervy={
 		name="Frank Messervy"
 		portraits={
@@ -279,26 +702,7 @@ characters={
 			legacy_id=-1
 		}
 	}
-	RAJ_douglas_gracey={
-		name="Douglas Gracey"
-		portraits={
-			army={
-				small="GFX_RAJ_douglas_gracey_small"
-			}
-			army={
-				large="GFX_RAJ_douglas_gracey"
-			}
-		}
-		field_marshal={
-			traits={ brilliant_strategist trait_cautious media_personality infantry_officer war_hero panzer_leader jungle_rat desert_fox }
-			skill=5
-			attack_skill=6
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=2
-			legacy_id=-1
-		}
-	}
+	
 	RAJ_herbert_fitzherbert={
 		name="Herbert Fitzherbert"
 		portraits={
@@ -421,30 +825,7 @@ characters={
 			}
 		}
 	}
-	RAJ_mahatma_mohandas_gandhi={
-		advisor={
-			slot = political_advisor
-			idea_token = RAJ_mahatma_mohandas_gandhi
-			removal_cost = -1
-			allowed  = {
-					original_tag  = RAJ
-				}
-				traits  = {
-					independence_agitator 
-				}
-				available = {
-					not =  { has_completed_focus = RAJ_arrest_gandhi 
-					}
-				}
-		}
-			
-		name="RAJ_mahatma_mohandas_gandhi"
-		portraits={
-			army={
-				small="GFX_idea_raj_quit_india_movement"
-			}
-		}
-	}
+
 	RAJ_subroto_mukherjee={
 		advisor={
 			slot = air_chief
@@ -647,10 +1028,8 @@ characters={
 		name="RAJ_louis_mountbatten"
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_europe_2"
-			}
-			civilian={
-				large="gfx/leaders/RAJ/r56_portrait_RAJ_Luis_Mountbatten.dds"
+				large = GFX_portrait_RAJ_louis_mountbatten
+				small = GFX_portrait_RAJ_louis_mountbatten_small #small="GFX_idea_generic_navy_europe_2"
 			}
 		}
 	}
@@ -676,41 +1055,7 @@ characters={
 			}
 		}
 	}
-	RAJ_claude_auchinleck={
-		name="Claude Auchinleck"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_ENG_claude_auchinleck.dds"
-			}
-			army={
-				large="gfx/leaders/ENG/Portrait_Britain_Claude_Auchinleck.dds"
-			}
-		}
-		#corps_commander={
-		#	traits={ brilliant_strategist career_officer infantry_officer organizer infantry_leader trickster jungle_rat infantry_expert expert_improviser }
-		#	skill=5
-		#	attack_skill=6
-		#	defense_skill=2
-		#	planning_skill=5
-		#	logistics_skill=3
-		#	legacy_id=-1
-		#}
-		advisor={
-			slot = high_command
-			idea_token = claude_auchinleck
-			ledger = army
-			allowed = {
-				original_tag = RAJ
-			}
-			traits = {
-				army_regrouping_2
-			}
-			cost = 150
-			ai_will_do = {
-				factor = 2.000
-			}
-		}
-	}
+	
 	RAJ_agha_khan_iii={
 		name=RAJ_agha_khan_iii
 		portraits={
@@ -725,7 +1070,7 @@ characters={
 				original_tag = RAJ
 			}
 			traits = {
-				ideological_crusader 
+				well_mannered_iman
 			}
 		}
 	}
@@ -957,81 +1302,26 @@ characters={
 	
 	################################
 	
-	RAJ_orde_wingate={
-		name="Orde Wingate"
-		portraits={
-			army={
-				small=""
-			}
-			army={
-				large="GFX_RAJ_orde_wingate"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = RAJ_orde_wingate
-			ledger  = army 
-				allowed  = {
-					original_tag  = RAJ
-				}
-				traits  = {
-					army_commando_0 
-				}
-				cost = 150.000
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		# corps_commander={
-		# 	traits = { jungle_rat commando }
-		# 	skill = 4
-		# 	attack_skill = 3
-		# 	defense_skill = 7
-		# 	planning_skill = 1
-		# 	logistics_skill = 5
-		# 	legacy_id=-1
-		# }
-	}
+	
 	RAJ_kodandera_madappa_cariappa={
 		name="Kodandera Madappa Cariappa"
 		portraits={
 			army={
-				small=""
-			}
-			army={
-				large="GFX_RAJ_kodandera_madappa_cariappa"
+				large= GFX_portrait_RAJ_kodandera_cariappa
+				small = GFX_portrait_RAJ_kodandera_cariappa_small
 			}
 		}
-		# corps_commander={
-		# 	traits = { infantry_leader organizer skilled_staffer career_officer  trait_reckless harsh_leader hill_fighter trait_engineer}
-		# 	skill = 5
-		# 	attack_skill = 5
-		# 	defense_skill = 4
-		# 	planning_skill = 4
-		# 	logistics_skill = 3
-		# 	legacy_id=-1
-		# }
+		corps_commander={
+		 	traits = { infantry_leader infantry_expert organizer skilled_staffer career_officer  trait_reckless harsh_leader hill_fighter trait_engineer}
+		 	skill = 5
+		 	attack_skill = 4
+		 	defense_skill = 4
+		 	planning_skill = 4
+		 	logistics_skill = 4
+		 	legacy_id=-1
+		 }
 	}
-	RAJ_kodendera_subayya_thimayya={
-		name="Kodendera Subayya Thimayya"
-		portraits={
-			army={
-				small=""
-			}
-			army={
-				large="GFX_RAJ_kodendera_subayya_thimayya"
-			}
-		}
-		# corps_commander={
-		# 	traits = { jungle_rat infantry_leader commando inflexible_strategist trait_cautious infantry_officer politically_connected }
-		# 	skill = 5
-		# 	attack_skill = 4
-		# 	defense_skill = 4
-		# 	planning_skill = 1
-		# 	logistics_skill = 7
-		# 	legacy_id=-1
-		# }
-	}
+	
 	RAJ_jayanto_nath_chaudhuri={
 		name="Jayanto Nath Chaudhuri"
 		portraits={
@@ -1057,15 +1347,15 @@ characters={
 					factor  = 1.000
 				}
 		}
-		# corps_commander={
-		# 	traits = { desert_fox cavalry_leader  trickster panzer_leader career_officer trait_reckless armor_officer}
-		# 	skill = 5
-		# 	attack_skill = 6
-		# 	defense_skill = 2
-		# 	planning_skill = 4
-		# 	logistics_skill = 4
-		# 	legacy_id=-1
-		# }
+		 corps_commander={
+		 	traits = { desert_fox cavalry_leader  trickster panzer_leader career_officer trait_reckless armor_officer}
+		 	skill = 5
+		 	attack_skill = 7
+		 	defense_skill = 2
+		 	planning_skill = 4
+		 	logistics_skill = 4
+		 	legacy_id=-1
+		}
 	}
 
 	RAJ_homi_j_bhabha={

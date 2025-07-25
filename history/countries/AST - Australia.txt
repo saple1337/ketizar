@@ -80,7 +80,11 @@ amount = 900
 producer = AST
 }
 
-
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 1800
+	producer = AST
+} 
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }

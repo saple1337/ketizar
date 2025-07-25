@@ -705,15 +705,15 @@ focus = {
 			add_to_variable = { ITA_iri_production_speed_arms_factory_factor = 0.025 }
 			custom_effect_tooltip = ITA_steel_industry_in_terni_ricostruzione_industriale_tt
 			2 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				add_resource = {
 					type = steel
-					amount = 8
+					amount = 12
 				}
 			}
 		}
@@ -738,10 +738,10 @@ focus = {
 			custom_effect_tooltip = ITA_power_plants_in_terni_ricostruzione_industriale_tt
 
 			2 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -3262,10 +3262,10 @@ completion_reward = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -3812,12 +3812,32 @@ completion_reward = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_expand_naval_facilities
-		cost = 5
+		cost = 3
 		
 
 		search_filters = {FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
+		
+	
+		random_core_state = {
+					limit = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = yes
+						}
+					}
+					prioritize = { 157 161 160 } #ABRUZZO as main fallback
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+		
 			add_to_variable = { ITA_rm_naval_doctrine_cost_factor = -0.1 }
 			add_to_variable = { ITA_rm_naval_morale_factor = 0.1 }
 			add_to_variable = { ITA_rm_strike_force_movement_org_loss = -0.05 }
@@ -4257,8 +4277,6 @@ completion_reward = {
 			hidden_effect = {
 				add_ideas = ITA_hidden_light_cruisers_production_ns
 			}
-
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 
 			navy_experience = 25
@@ -4302,7 +4320,6 @@ completion_reward = {
 				add_ideas = ITA_hidden_heavy_cruisers_production_ns
 			}			
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 
 			navy_experience = 25
@@ -4506,7 +4523,7 @@ completion_reward = {
 			else = {
 				has_tech = improved_destroyer
 			}
-			has_tech = decimetric_radar
+			has_tech = cavity_magnatron 
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
@@ -5551,10 +5568,10 @@ completion_reward = {
 					has_full_control_of_state = 448
 				}
 				448 = {
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
-						level = 3
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -5786,7 +5803,7 @@ completion_reward = {
 
 		completion_reward = {
 			add_stability = 0.02
-			add_timed_idea = { idea = ITA_devaluated_lira days = 195 }
+			add_timed_idea = { idea = ITA_devaluated_lira days = 365 }
 		}
 	}
 	focus = {
@@ -6085,8 +6102,16 @@ completion_reward = {
 
 		completion_reward = {
 			custom_effect_tooltip = "Gives cores on all occupied French states"
-			every_owned_state = {
-				limit = { is_core_of = FRA }
+			735 = {
+				add_core_of = ITA
+			}
+			1 = {
+				add_core_of = ITA
+			}
+			85 = {
+				add_core_of = ITA
+			}
+			913 = {
 				add_core_of = ITA
 			}
 		}
@@ -6209,29 +6234,26 @@ completion_reward = {
 			GER = {
 				GER_economy_up = yes
 			}
+			HUN = {
+				add_ideas = axis_victory_in_egypt
+			}
 			every_country = { limit = { is_in_faction_with = GER } add_ideas = axis_victory_in_egypt }
 			custom_effect_tooltip = "
 			This idea will be cancelled if the Allies retake Egypt!"
-
-			ITA = {
-					create_field_marshal = {
-									name = "Erwin Rommel"
-									picture = "Portrait_Germany_Erwin_Rommel.dds"
-									traits = { desert_fox commando trickster expert_improviser inflexible_strategist panzer_expert trait_reckless war_hero media_personality infantry_officer trait_engineer panzer_leader }
-									skill = 6
-									attack_skill = 7
-									defense_skill = 5
-									planning_skill = 3
-									logistics_skill = 4
-					}
-				}
-
-
+			show_unit_leaders_tooltip = ITA_erwin_rommel
 			159 = {
 				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = arms_factory
 					level = 8
+					instant_build = yes
+				}
+			}
+			160 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -6314,6 +6336,28 @@ completion_reward = {
 
 			custom_effect_tooltip = ITA_all_roads_lead_to_rome_re_tt
 			add_to_variable = { ITA_re_supply_node_range = 0.1 }
+		}
+	}
+	focus = {
+		id = ITA_prepare_defense
+		icon = GFX_focus_generic_spread_fascism
+		prerequisite = { focus = ITA_all_roads_lead_to_rome }
+		text = "Prepare Defenses in Egypt"
+		x = 0
+		y = 2
+		relative_position_id = ITA_the_italian_legions
+		cost = 2
+		available = {
+			has_full_control_of_state = 2
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			857 = {
+				add_building_construction = { type = bunker level = 8 province = 10947 instant_build = yes }
+				add_building_construction = { type = bunker level = 6 province = 7143 instant_build = yes }
+			}
 		}
 	}
 
@@ -7133,7 +7177,7 @@ completion_reward = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = ITA_pact_of_steel
-				days = 100
+				days = 365
 			}
 
 		}
@@ -7265,41 +7309,7 @@ completion_reward = {
 
 
 
-	focus = {
-		id = ITA_befriend_japan
-		icon = GFX_focus_chi_collaboration_with_the_japanese
-		prerequisite = { focus = ITA_pact_of_steel }
-
-		x = 2
-		y = 1
-		relative_position_id = ITA_pact_of_steel
-		cost = 5
-
-		available = {
-			country_exists = JAP
-			JAP = { 
-				is_in_faction = no
-				has_government = ROOT
-			}
-		}
-
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-
-		completion_reward = {
-			add_relation_modifier = {
-				target = JAP
-				modifier = ITA_military_agreements
-			}
-			JAP = {
-				add_relation_modifier = {
-					target = ROOT
-					modifier = ITA_military_agreements
-				}
-
-				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
-			}
-		}
-	}
+	
 
 	focus = {
 		id = ITA_war_with_greece
@@ -7385,12 +7395,22 @@ completion_reward = {
 				}
 				transfer_state = 764
 			}
-			every_country = {
+			if = {
 				limit = {
-					owns_state = 211
+					ROM = {
+						NOT = {
+							has_completed_focus = ROM_codreanus_iron_guard
+						}
+					}
 				}
-				transfer_state = 77
+				every_country = {
+					limit = {
+						owns_state = 211
+					}
+					transfer_state = 77
+				}
 			}
+			
 			# Adding factories and resetting state level
 			############################################
 

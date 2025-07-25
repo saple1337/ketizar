@@ -21,6 +21,41 @@ ideas = {
 				#naval_torpedo_screen_penetration_factor = 1.00
 			}
 	}
+	GER_Economic_Investment = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GER_airforce
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+			}
+	}
+	
+	GER_Naval_Investment = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GER_kriegsmarinewerft_wilhelmshaven
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.2
+			}
+	}
 	GER_karl_raiding_quotas = {
 		name = "Raiding Quotas"
 		picture = generic_fascism_drift_2
@@ -390,8 +425,8 @@ ideas = {
 			modifier = {
 			conscription = 0.01
 			army_org_Factor = 0.05
-			army_core_attack_factor = 0.25
-			army_core_defence_factor = 0.25
+			army_core_attack_factor = 0.1
+			army_core_defence_factor = 0.1
 		}
 	}
 	
@@ -586,9 +621,9 @@ ideas = {
 		picture = generic_production_bonus
 
 		modifier = {
-			production_speed_industrial_complex_factor = 0.35
+			production_speed_industrial_complex_factor = 0.45
 			production_speed_infrastructure_factor = 0.1
-			production_speed_arms_factory_factor = -0.25
+			production_speed_arms_factory_factor = -0.15
 		}
 	}
 	
@@ -626,6 +661,7 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
+			political_power_gain = 0.15
 			political_advisor_cost_factor = -0.3
 			trade_laws_cost_factor = -0.3
 			mobilization_laws_cost_factor = -0.3
@@ -1171,7 +1207,7 @@ ideas = {
 
 			modifier = {
 				min_export = -0.3 
-				production_speed_arms_factory_factor = 0.1
+				production_speed_arms_factory_factor = 0.15
 				production_speed_dockyard_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_synthetic_refinery_factor = 0.30
@@ -1216,6 +1252,7 @@ ideas = {
 
 			modifier = {
 				production_speed_infrastructure_factor = 0.1
+				production_cost_infrastructure_factor = -0.15
 				production_speed_rail_way_factor = 0.3
 				production_speed_supply_node_factor = 0.3
 			}
@@ -2581,7 +2618,7 @@ ideas = {
 		ig_faben = {
 			
 			allowed = {
-				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
+				OR = { original_tag = GER original_tag = SPR  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
 			}
 			
 			research_bonus = {

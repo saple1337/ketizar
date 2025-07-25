@@ -34,8 +34,7 @@ set_war_support = 0.11
 # Starting tech
 set_technology = { 
 	basic_train = 1
-	heavy_fighter1 = 1
-	infantry_weapons = 1
+		infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1
 	paratroopers = 1	
@@ -63,7 +62,7 @@ set_technology = {
 		iw_medium_airframe = 1
 		basic_medium_airframe = 1
 					aa_lmg = 1`
-	tactical_bomber1 = 1
+	
 
 	tech_field_hospital = 1
 	tech_mountaineers = 1
@@ -136,7 +135,6 @@ if = {
 		mtg_transport = 1
 		improved_airplane_launcher = 1
 		improved_secondary_battery = 1
-		basic_fire_control_system = 1
 		cruiser_submarines = 1
 	}
 }
@@ -152,17 +150,17 @@ add_ideas = {
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 20500
+	amount = 15000
 	producer = ENG
 }  
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 3500
+	amount = 5500
 	producer = ENG
 } 
 add_equipment_to_stockpile = {
 	type = anti_tank_equipment_1
-	amount = 3750
+	amount = 7750
 	producer = ENG
 } 
 add_equipment_to_stockpile = {
@@ -172,7 +170,7 @@ add_equipment_to_stockpile = {
 } 
 add_equipment_to_stockpile = {
 	type = motorized_equipment_1
-	amount = 1750
+	amount = 19150
 	producer = ENG
 } 
 
@@ -238,54 +236,6 @@ create_equipment_variant = {
 add_equipment_to_stockpile = { type = medium_plane_airframe_1 variant_name = "Bristol Blenheim" amount = 180 }
 add_equipment_to_stockpile = { type = cv_small_plane_naval_bomber_airframe_1 variant_name = "Fairey Barracuda" amount = 138 }
 
-add_equipment_to_stockpile = {
-type = cv_nav_bomber_equipment_1
-amount = 250
-producer = ENG
-}
-add_equipment_to_stockpile = {
-type = cv_fighter_equipment_1
-amount = 100
-producer = ENG
-}
-
-
-
-add_equipment_to_stockpile = {
-	type = fighter_equipment_1
-	amount = 800
-	producer = ENG
-}
-add_equipment_to_stockpile = {
-	type = fighter_equipment_0
-	amount = 600
-	producer = ENG
-}
-add_equipment_to_stockpile = {
-	type = CAS_equipment_1
-	amount = 400
-	producer = ENG
-}
-add_equipment_to_stockpile = {
-	type = tac_bomber_equipment_0
-	amount = 200
-	producer = ENG
-}
-add_equipment_to_stockpile = {
-	type = tac_bomber_equipment_1
-	amount = 200
-	producer = ENG
-}
-add_equipment_to_stockpile = {
-	type = heavy_fighter_equipment_1
-	amount = 100
-	producer = ENG
-}
-add_equipment_to_stockpile = {
-	type = nav_bomber_equipment_1
-	amount = 100
-	producer = ENG
-}
 set_convoys = 1300
 
 # DIPLOMACY

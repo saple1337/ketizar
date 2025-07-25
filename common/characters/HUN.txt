@@ -1,42 +1,615 @@
 characters={
-	HUN_miklos_horthy={
-		name="Miklós Horthy"
-		portraits={
-			navy={
-				large="GFX_Portrait_hungary_miklos_horthy_admiral"
-				small="GFX_idea_HUN_miklos_horthy_admiral"
+	
+	HUN_kalman_hardy = {
+
+		name = HUN_kalman_hardy
+
+		portraits = {
+			army = {
+				small = "GFX_portrait_HUN_kalman_hardy_small"
 			}
-			civilian={
-				large="GFX_Portrait_hungary_miklos_horthy"
+		}
+
+		advisor = {
+
+			slot = navy_chief
+
+			idea_token = HUN_kalman_hardy
+
+			allowed = {
+				original_tag = HUN
+			}
+
+			available = {
+				has_completed_focus = wuw_HUN_sailing_the_danube
+			}
+
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+
+			cost = 100
+
+			ai_will_do = {
+				base = 1
+			}
+
+		}
+
+	}
+	
+	HUN_ferenc_szalasi = {
+
+		name = HUN_ferenc_szalasi
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_HUN_ferenc_szalasi
+			}
+			army = {
+				small = GFX_portrait_HUN_ferenc_szalasi_small
 			}
 		}
-		country_leader={
-			ideology=fascism_ideology
-			expire="1965.1.1.1"
-			id=5000
+
+		country_leader = {
+			ideology = nazism
+			traits = { HUN_national_socialist_irredentist }
+			expire = "1965.1.1.1"
+			id = -1
 		}
-		country_leader={
-			ideology=oligarchism
-			expire="1965.1.1.1"
-			id=500
-		}
+
+		
+	}
+	
+	HUN_miklos_horthy = {
+
+			name = HUN_miklos_horthy
+			portraits = {
+				navy = { #Can become Navy leader and therefore navy advisor
+					large = "GFX_Portrait_hungary_miklos_horthy_admiral"
+					small = "GFX_idea_HUN_miklos_horthy_admiral"
+				}
+				civilian = {
+					large = "GFX_Portrait_hungary_miklos_horthy"
+				}
+			}
+			country_leader = {
+				ideology = oligarchism
+				traits = { fascist_sympathies anti_communist }
+				expire = "1965.1.1.1"
+				id = 500
+			}
+			country_leader = {
+				ideology = fascism_ideology
+				traits = { anti_communist }
+				expire = "1965.1.1.1"
+				id = 503
+			}
+		
+		
+		
+
+			name = HUN_miklos_horthy
+
+			portraits = {
+				navy = { #Can become Navy leader and therefore navy advisor
+					large = "GFX_Portrait_hungary_miklos_horthy_admiral"
+					small = "GFX_idea_HUN_miklos_horthy_admiral"
+				}
+				civilian = {
+					large = GFX_portrait_HUN_miklos_horthy
+					small = GFX_portrait_HUN_miklos_horthy_small
+				}
+			}
+
+			country_leader = {
+				ideology = oligarchism
+				traits = { fascist_sympathies anti_communist HUN_the_regent }
+				expire = "1965.1.1.1"
+				id = 500
+			}
+
+			#field_marshal = {
+			#	traits = { politically_connected inflexible_strategist media_personality }
+			#	skill = 2
+			#	attack_skill = 1
+			#	defense_skill = 1
+			#	planning_skill = 2
+			#	logistics_skill = 2
+			#	legacy_id = -1 
+			#	visible = {
+			#		#has_country_leader = {
+			#		#	ruling_only = yes
+			#		#	character = HUN_miklos_horthy
+			#		#}
+			#		has_completed_focus = wuw_HUN_pass_statute_xix
+			#	}
+			#}
+
+			navy_leader = {
+				traits = { gunnery_expert navy_media_personality superior_tactician }
+				skill = 3
+				legacy_id = 556 #Navy Miklos
+				attack_skill = 2
+				defense_skill = 2
+				maneuvering_skill = 2
+				coordination_skill = 4		
+				visible = {
+					OR = {
+						has_completed_focus = wuw_HUN_strengthen_horthys_reign
+						has_completed_focus = wuw_HUN_end_the_regency
+					}
+				}		
+			}
+
+			advisor = {
+
+				slot = navy_chief
+
+				idea_token = HUN_miklos_horthy
+
+				allowed = {
+					original_tag = HUN
+				}
+
+				available = {
+					has_completed_focus = wuw_HUN_reinstate_the_navy
+					
+				}
+
+				traits = {
+					navy_chief_reform_2
+				}
+
+				cost = 100
+
+				ai_will_do = {
+					factor = 2
+				}
+
+			}
+
+		
 	}
 
-	HUN_albert_aulich={
-		name="Albert Aulich"
-		portraits={
-			civilian={
-				large="GFX_portrait_europe_generic_8"
+	HUN_istvan_horthy = {
+
+		name = HUN_istvan_horthy
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_HUN_istvan_horthy
+				small = GFX_portrait_HUN_istvan_horthy_small
 			}
 		}
-		country_leader={
-			ideology=socialism
-			traits={ reluctant_interventionist hawk }
-			expire="1943.1.1.12"
-			id=-1
-		}
-	}
 
+		#country_leader = {
+		#	ideology = despotism
+		#	traits = { dislikes_germany HUN_popular_aviator }
+		#	expire = "1965.1.1.1"
+		#	id = -1
+		#}
+
+		advisor = {
+
+			slot = political_advisor
+
+			idea_token = HUN_istvan_horthy
+
+			allowed = {
+				original_tag = HUN
+			}
+
+			visible = {
+				NOT = {
+					OR = {
+						has_completed_focus = wuw_HUN_end_the_regency
+						has_completed_focus = wuw_HUN_end_the_white_terror
+						has_completed_focus = wuw_HUN_undermine_the_admiral
+					}
+				}
+			}
+
+			available = {	
+				AND = {
+					has_completed_focus = wuw_HUN_act_of_defense
+					has_country_leader = {
+						ruling_only = yes
+						character = HUN_miklos_horthy
+					}
+				}	
+			}
+
+			traits = {
+				war_industrialist 
+			}
+
+			ai_will_do = {
+				base = 1
+			}
+			
+		}
+		
+	}
+	
+	HUN_kalman_daranyi = {
+		
+			name = HUN_kalman_daranyi
+
+			portraits = {
+				army = {
+					small = "GFX_idea_HUN_kalman_daranyi"
+				}
+			}
+
+			advisor = {
+
+				slot = political_advisor
+
+				idea_token = HUN_kalman_daranyi
+
+				allowed = {
+					original_tag = HUN
+				}
+
+				visible = {
+					NOT = {
+						OR = {
+							has_completed_focus = wuw_HUN_end_the_regency
+							has_completed_focus = wuw_HUN_end_the_white_terror
+							has_completed_focus = wuw_HUN_undermine_the_admiral
+						}
+					}
+				}
+
+				available = {
+					NOT = {
+						OR = {
+							has_government = communism
+							has_government = democratic
+						}
+					}
+					has_completed_focus = wuw_HUN_strengthen_horthys_reign
+				}
+
+				traits = {
+					HUN_moderate_authoritarian 
+				}
+
+				ai_will_do = {
+					base = 1
+				}
+				
+			}
+
+		
+	}
+	
+	HUN_istvan_friedrich = {
+
+		name = HUN_istvan_friedrich
+
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_HUN_istvan_friedrich_small"
+			}
+		}
+
+		advisor = {
+
+			slot = political_advisor
+
+			idea_token = HUN_istvan_friedrich
+
+			allowed = {
+				original_tag = HUN
+			}
+
+			available = {
+				
+			}
+
+			traits = {
+				captain_of_industry
+			}
+
+			ai_will_do = {
+				base = 1
+			}
+
+		}
+
+	}
+	
+	HUN_fidel_palffy = {
+
+		name = HUN_fidel_palffy
+
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_HUN_fidel_palffy_small"
+			}
+		}
+
+		advisor = {
+
+			slot = political_advisor
+
+			idea_token = HUN_fidel_palffy
+
+			allowed = {
+				original_tag = HUN
+			}
+
+			visible = {
+				
+			}
+
+			available = {
+				
+			}
+
+			# He should get a better trait through the focus wuw_HUN_sway_the_count
+			traits = {
+				nazi_sympathizer
+			}
+
+			ai_will_do = {
+				base = 1
+			}
+
+		}
+
+	}
+	
+	HUN_magdolna_purgly = {
+
+		name = HUN_magdolna_purgly
+
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_HUN_magdolna_purgly_small"
+			}
+		}
+
+		advisor = {
+
+			slot = political_advisor
+
+			idea_token = HUN_magdolna_purgly
+
+			allowed = {
+				original_tag = HUN
+			}
+
+			visible = {
+				NOT = {
+					OR = {
+						has_completed_focus = wuw_HUN_undermine_the_admiral
+					}
+				}
+			}
+
+			available = {
+				
+				has_completed_focus = wuw_HUN_pass_statute_xix
+			}
+
+			traits = {
+				HUN_her_serene_highness
+			}
+
+			ai_will_do = {
+				base = 1
+			}
+
+		}
+
+	}
+	
+	
+	HUN_dezso_magos = {
+
+		name = HUN_dezso_magos
+
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_HUN_dezso_magos_small"
+			}
+		}
+
+		advisor = {
+
+			slot = political_advisor
+
+			idea_token = HUN_dezso_magos
+
+			allowed = {
+				original_tag = HUN
+			}
+
+			available = {
+				#has_completed_focus = wuw_HUN_construct_the_arpad_line
+			}
+
+			traits = {
+				fortress_architecht 
+			}
+
+			ai_will_do = {
+				base = 3
+			}
+
+		}
+
+	}
+	
+	HUN_pal_kiraly = {
+
+		name = HUN_pal_kiraly
+
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_HUN_pal_kiraly_small"
+			}
+		}
+
+		advisor = {
+
+			slot = political_advisor
+
+			idea_token = HUN_pal_kiraly
+
+			allowed = {
+				original_tag = HUN
+			}
+
+			available = {
+				has_completed_focus = wuw_HUN_danuvia_submachine_guns
+			}
+
+			traits = {
+				HUN_innovative_weapons_designer
+			}
+
+			ai_will_do = {
+				base = 1
+			}
+
+		}
+
+	}
+	
+	HUN_jusztinian_seredi = {
+
+		name = HUN_jusztinian_seredi
+
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_HUN_jusztinian_seredi_small"
+			}
+		}
+
+		advisor = {
+
+			slot = political_advisor
+
+			idea_token = HUN_jusztinian_seredi
+
+			allowed = {
+				original_tag = HUN
+			}
+
+			
+
+			available = {
+			
+					
+					has_completed_focus = wuw_HUN_continue_the_regency
+				
+			}
+
+			traits = {
+				HUN_archbishop_of_esztergom
+			}
+
+			ai_will_do = {
+				base = 1
+			}
+
+		}
+
+	}
+	
+	HUN_bela_imredy = {
+
+		name = HUN_bela_imredy
+
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_HUN_bela_imredy_small"
+			}
+		}
+
+		advisor = {
+
+			slot = political_advisor
+
+			idea_token = HUN_bela_imredy
+
+			allowed = {
+				original_tag = HUN
+			}
+
+			available = {
+				
+				has_completed_focus = wuw_HUN_devalue_the_pengo
+			}
+
+			traits = {
+				HUN_magyar_nemzeti_bank_president 
+			}
+
+			ai_will_do = {
+				base = 2
+			}
+
+		}
+
+	}
+	
+	HUN_vilmos_nagy = {
+
+		name = HUN_vilmos_nagy
+
+		portraits = {
+			army = {
+				large = GFX_portrait_HUN_vilmos_nagy
+				small = GFX_portrait_HUN_vilmos_nagy_small
+			}
+		}
+		
+		field_marshal={
+			traits={ brilliant_strategist career_officer harsh_leader cavalry_leader trickster offensive_doctrine panzer_leader organizer }
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+		
+
+		advisor = {
+
+			slot = high_command
+
+			idea_token = HUN_vilmos_nagy
+
+			allowed = {
+				original_tag = HUN
+			}
+
+			available = {
+				has_completed_focus = wuw_HUN_form_the_gyorshadtest
+			}
+
+			traits = {
+				army_cavalry_2
+			}
+
+			cost = 100
+
+			ai_will_do = {
+				base = 1
+			}
+
+		}
+		
+	}
+	
+	######## AUGHHHH
+	
 	HUN_ferenc_szombathelyi={
 		name=HUN_ferenc_szombathelyi
 		portraits={
@@ -174,32 +747,11 @@ characters={
 				original_tag = HUN
 			}
 			traits = {
-				captain_of_industry 
+				financial_expert 
 			}
 		}
 	}
 	
-	
-	HUN_kalman_daranyi={
-		name=HUN_kalman_daranyi
-		portraits={
-			army={
-				small="GFX_idea_HUN_kalman_daranyi"
-				large="GFX_Portrait_hungary_kalman_daranyi"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = HUN_kalman_daranyi
-			allowed = {
-				original_tag = HUN
-			}
-			traits = {
-				smooth_talking_charmer 
-			}
-		}
-	}
-
 	HUN_zoltan_tildy={
 		name=HUN_zoltan_tildy
 		portraits={
@@ -559,22 +1111,5 @@ characters={
 			legacy_id=-1
 		}
 	}
-	HUN_vilmos_nagy_de_nagybaczon={
-		name="Vilmos Nagy de Nagybaczon"
-		portraits={
-			army={
-				small="GFX_Portrait_hungary_vilmos_nagy_de_nagybaczon_small"
-				large="GFX_Portrait_hungary_vilmos_nagy_de_nagybaczon"
-			}
-		}
-		field_marshal={
-			traits={ brilliant_strategist career_officer harsh_leader infantry_leader trickster offensive_doctrine panzer_leader organizer }
-			skill=5
-			attack_skill=5
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=-1
-		}
-	}
+	
 }

@@ -1,20 +1,14 @@
 nigger = {
 	annex_nzl = {
 
-		icon = generic_operation
+
+		targets = { NZL }
 
 		allowed = {
 			original_tag = AST
 		}
 			
 		available = {
-			OR = {
-				date > 1940.7.1
-				has_game_rule = {
-					rule = mini_sr
-					option = ENABLE_MINI_SR
-				}
-			}
 			AST = { is_ai = no }
 			NZL = { is_ai = yes }
 		}

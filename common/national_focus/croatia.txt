@@ -48,9 +48,9 @@
 			800 = { add_core_of = YUG }
 			103 = { add_core_of = YUG }	104 = { add_core_of = YUG }	109 = { add_core_of = YUG }
 			103 = {
-				add_extra_state_shared_building_slots = 13
-				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
-				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				add_extra_state_shared_building_slots = 16
+				add_building_construction = { type = arms_factory level = 3 instant_build = yes }
+				add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
 				add_building_construction = { type = dockyard level = 10 instant_build = yes }
 			}
 			109 = {

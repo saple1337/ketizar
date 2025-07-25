@@ -252,40 +252,6 @@ ETH_international_red_cross_dynamic_modifier = { #NATIONAL SPIRIT
 
 }
 
-#### STATE MODIDIFERS
-ETH_state_development_dynamic_modifier = { #STATE MODIFIER
-	enable = { always = yes }
-	icon = GFX_modifiers_ETH_state_development
-	state_production_speed_buildings_factor = ETH_state_development_production_speed # $MODIFIER_STATE_PRODUCTION_SPEED_BUILDINGS_FACTOR$
-	local_building_slots_factor = ETH_state_development_local_building_slots_factor # $MODIFIER_LOCAL_BUILDING_SLOTS$
-
-
-	# Later
-	local_factories = ETH_state_development_local_factories
-	state_resources_factor = ETH_state_development_state_resources_factor
-
-}
-
-ETH_state_decentralization_dynamic_modifier = {
-	enable = { always = yes  }
-	remove_trigger = {
-		ROOT = { 
-			NOT = {
-				OWNER = {
-					original_tag = ETH
-				}
-			} # ROOT refers to the state on which the modifier is added
-		}
-	}
-	icon = GFX_modifiers_ETH_state_decentralization
-	local_building_slots_factor = ETH_state_decentralization_building_slots
-	production_speed_infrastructure_factor = ETH.ETH_state_decentralization_infrastructure
-	local_resources_factor = ETH.ETH_state_decentralization_resources
-	army_defence_factor = ETH.ETH_state_decentralization_defence
-	army_attack_factor = ETH.ETH_state_decentralization_attack
-	recruitable_population_factor = ETH.ETH_state_decentralization_recruitable_population
-	army_speed_factor = ETH.ETH_state_decentralization_army_speed
-}
 
 ETH_state_local_offensive_dynamic_modifier = {
 	enable = { always = yes  }
@@ -446,10 +412,6 @@ ITA_regio_esercito_dynamic_modifier = { #NATIONAL SPIRIT
 	modifier_army_sub_unit_mountaineers_defence_factor = ITA_re_modifier_army_sub_unit_mountaineers_defence_factor #0.05
 	modifier_army_sub_unit_mountaineers_max_org_factor = ITA_re_modifier_army_sub_unit_mountaineers_max_org_factor #0.05
 	modifier_army_sub_unit_paratrooper_max_org_factor = ITA_re_modifier_army_sub_unit_paratrooper_max_org_factor #0.05
-	modifier_army_sub_unit_militia_max_org_factor = ITA_re_modifier_army_sub_unit_militia_max_org_factor #0.05
-	modifier_army_sub_unit_militia_defence_factor = ITA_re_modifier_army_sub_unit_militia_defence_factor #0.05
-	modifier_army_sub_unit_militia_attack_factor = ITA_re_modifier_army_sub_unit_militia_attack_factor #0.05
-	modifier_army_sub_unit_militia_speed_factor = ITA_re_modifier_army_sub_unit_militia_speed_factor #0.05
 	special_forces_out_of_supply_factor = ITA_re_special_forces_out_of_supply_factor # 0.1
 	conscription_factor = ITA_re_conscription_factor #0.1
 	promote_cost_factor = ITA_re_promote_cost_factor #-0.2

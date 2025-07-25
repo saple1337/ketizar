@@ -2,16 +2,10 @@ maximum_fort_level = {
 	name = "RULE_MAXIMUM_FORT_LEVEL"
 	group = "RULE_GROUP_GAMEPLAY"
 	icon = "GFX_maximum_fort_level"
-	option = {
+	default = {
 		name = normal
 		text = "RULE_OPTION_NORMAL"
 		desc = "RULE_MAXIMUM_FORT_LEVEL_NORMAL_DESC"
-	}
-	
-	default = {
-		name = level_5
-		text = "RULE_OPTION_5"
-		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
 	}
 }
 
@@ -227,7 +221,7 @@ sr_equipment_lock = {
 		desc = "Clicking this option will give Japan access to the Horst Tools (please test this in SP before enabling in MP)"
 	}
 	option = {
-		name = MAN
+		name = MIN
 		text = "Manchukuo"
 		desc = "Clicking this option will give Manchukuo access to the Horst Tools (please test this in SP before enabling in MP)"
 	}
