@@ -249,7 +249,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_secure_china
-		icon = GFX_focus_chi_one_china_policy
+		icon = GFX_focus_BRA_end_the_state_of_emergency
 		prerequisite = { focus = JAP_intervene_in_china }
 		x = 0
 		y = 1
@@ -326,11 +326,11 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_ensure_compliance
-		icon = GFX_focus_chi_one_china_policy
+		icon = GFX_SOV_intervention_in_china_ccp_2d_sov_compatibility
 		prerequisite = { focus = JAP_intervene_in_china }
 		x = -2
 		y = 1
-		text = "The thing"
+		text = "Stabilising Newly Conquered Land"
 		relative_position_id = JAP_intervene_in_china
 
 		cost = 3
@@ -3607,7 +3607,7 @@ focus_tree = {
 
 			focus = {
 				id = Victory_in_Papua
-				icon = GFX_focus_jap_strike_south
+				icon = GFX_focus_ETH_an_empire_in_the_shade_of_the_sun
 				prerequisite = { focus = JAP_strike_on_the_southern_resource_area }	
 				x = 1
 				y = 1
@@ -3672,7 +3672,7 @@ focus_tree = {
 			
 			focus = {
 				id = Victory_in_the_Pacific
-				icon = GFX_focus_jap_strike_south
+				icon = GFX_focus_ARG_anti_american_propaganda
 				x = 0
 				y = 3
 				prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
@@ -3742,7 +3742,7 @@ focus_tree = {
 			
 			focus = {
 				id = Victory_in_the_Philippines 
-				icon = GFX_focus_jap_strike_south
+				icon = GFX_focus_ETH_an_ethiopian_navy_in_exile
 				x = -1
 				y = 1
 				prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
@@ -3858,7 +3858,7 @@ focus_tree = {
 
 			focus = {
 				id = Victory_in_Raj
-				icon = GFX_focus_jap_strike_south	
+				icon = GFX_focus_RAJ_the_other_solution	
 				x = -2
 				y = 2
 				relative_position_id = JAP_strike_on_the_southern_resource_area
