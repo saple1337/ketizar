@@ -1212,7 +1212,7 @@ economy_decisions = {
 		fire_only_once = no
 
 		modifier = {
-			production_factory_efficiency_gain_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.3
 			consumer_goods_expected_value = 0.02
 			political_power_gain = -0.1
 		}
