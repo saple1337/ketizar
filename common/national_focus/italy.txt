@@ -6111,9 +6111,6 @@ completion_reward = {
 			85 = {
 				add_core_of = ITA
 			}
-			913 = {
-				add_core_of = ITA
-			}
 		}
 	}
 
