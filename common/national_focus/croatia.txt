@@ -828,14 +828,14 @@
 		x = 25
 		y = 0
 
-		cost = 5
+		cost = 0
 
 		ai_will_do = {
 			factor = 80
 		}
 
 		available = {
-			
+			always = false
 		}
 
 		bypass = {
@@ -846,20 +846,18 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 		}
 	}
+	####### SERBIAN CHUDS
 	focus = {
 		id = YUG_serbian_supremacy
 		text  = "The Greater Serbian Kingdom"
 		icon = GFX_focus_YUG_dissolve_serbia
 		mutually_exclusive = {
 			focus = YUG_croatian_supremacy
-			focus = YUG_greater_nation
+			focus = YUG_montenegro_supremacy
 		}
 		relative_position_id = YUG_Political_1
 		x = 6
@@ -886,18 +884,86 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
+			set_cosmetic_tag = YUG_SERBIA
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			transfer_state = 107
+			transfer_state = 914
+			transfer_state = 916
+			transfer_state = 108
+			GER = {
+				puppet = {
+					target = YUG
+				}
+			}
+			ITA = {
+				transfer_state = 804
+			}
 		}
 	}
+
+####### MONTENEGRO THADS
+focus = {
+		id = YUG_montenegro_supremacy
+		icon = GFX_focus_YUG_dissolve_serbia
+		mutually_exclusive = {
+			focus = YUG_croatian_supremacy
+			focus = YUG_serbian_supremacy
+		}
+		relative_position_id = YUG_Political_1
+		x = -6
+		prerequisite = {
+			focus = YUG_Political_1
+		}
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_cosmetic_tag = YUG_MONTENEGRO
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			transfer_state = 105
+			transfer_state = 108
+			transfer_state = 345
+			transfer_state = 902
+			ITA = {
+				puppet = {
+					target = YUG
+				}
+			}
+		}
+}
 #### Croatian path
 	focus = {
 		id = YUG_croatian_supremacy
 		text = "Croatian National State"
 		icon = GFX_focus_ICE_break_with_the_crown
+		mutually_exclusive = {
+			focus = YUG_montenegro_supremacy
+			focus = YUG_serbian_supremacy
+		}
 		relative_position_id = YUG_Political_1
 		x = 0
 		y = 1
@@ -922,11 +988,24 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
+			set_cosmetic_tag = YUG_CRO
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 1.0
+			}
+			transfer_state = 109
+			transfer_state = 104
+			transfer_state = 345
+			transfer_state = 103
+			transfer_state = 901
+			transfer_state = 902	
 		}
 	}
 
@@ -1048,7 +1127,7 @@
 		y = 1
 		prerequisite = {
 			focus = YUG_croatian_supremacy
-			focus = YUG_greater_nation
+			
 		}
 		cost = 5
 
@@ -1085,7 +1164,7 @@
 		y = 1
 		prerequisite = {
 			focus = YUG_croatian_supremacy
-			focus = YUG_greater_nation
+			
 		}
 		cost = 5
 
@@ -2514,17 +2593,17 @@
 	focus = {
 		id = YUG_greater_nation
 		text = "Aim For a Greater Union"
-		mutually_exclusive = {
-			focus = YUG_croatian_supremacy
-			focus = YUG_serbian_supremacy
-		}
+		#mutually_exclusive = {
+			#focus = YUG_croatian_supremacy
+			#focus = YUG_serbian_supremacy
+		#}
 		icon = GFX_focus_generic_attack_yugoslavia
 		relative_position_id = YUG_Political_1
-		x = -9
-		y = 1
-		prerequisite = {
-			focus = YUG_Political_1
-		}
+		x = 10
+		y = 10
+		#prerequisite = {
+		#	#focus = YUG_Political_1
+		#}
 		cost = 5
 
 		ai_will_do = {

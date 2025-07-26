@@ -2,6 +2,14 @@ YUG_CRO = {
 	color = rgb { 80  40  150 } 
 	color_ui = rgb { 126  76  120 }
 }
+YUG_SERBIA = {
+	color = rgb { 50 50 50 }
+	color_ui = rgb { 122 145 93 }
+}
+YUG_MONTENEGRO = {
+	color = { 171  107  109 }
+	color_ui = rgb { 126  76  120 }
+}
 CZE_SLO = {
 	color = rgb { 175  175  175 }
 	color_ui = rgb { 175  175  175 }

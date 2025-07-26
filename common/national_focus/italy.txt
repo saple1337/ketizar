@@ -7334,18 +7334,23 @@ completion_reward = {
 	transfer_state = 916
 	transfer_state = 914
 	transfer_state = 915
+	transfer_state = 104
+	transfer_state = 103
+	transfer_state = 902
+	transfer_state = 901
+	transfer_state = 109
 			YUG = {
-				complete_national_focus = CRO_emergency_powers_to_pavlec
-					set_cosmetic_tag = YUG_CRO	
-					set_politics = {
-						ruling_party = fascism
-						elections_allowed = no
-					}
-				add_popularity = {
-					ideology = fascism
-					popularity = 1.0
+				complete_national_focus = YUG_Political_1
+					#set_cosmetic_tag = YUG_CRO	
+					#set_politics = {
+					#	ruling_party = fascism
+					#	elections_allowed = no
+					#}
+				#add_popularity = {
+				#	ideology = fascism
+				#	popularity = 1.0
 				
-				}
+				#}
 			}
 			if = {
 				limit = {
@@ -7424,8 +7429,8 @@ completion_reward = {
 			}
 			GER = {
 				transfer_state = 102
-				puppet = {
-					target = YUG}
+				#puppet = {
+				#	target = YUG}
 			}
 			# handles When germany has annexed hungary, so they get vojvodina
 			every_country = {
