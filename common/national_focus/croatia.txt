@@ -17,15 +17,13 @@
 	focus = {
 		id = CRO_emergency_powers_to_pavlec
 		prerequisite = {
-			focus = YUG_attract_foreign_capital
+			focus = YUG_croatian_supremacy
 		}
-		prerequisite = {
-			focus = YUG_invite_german_military_mission
-		}
+		
 		icon = GFX_focus_YUG_banovina_of_croatia
-		relative_position_id = YUG_attract_foreign_capital
-		x = 1
-		y = 1
+		relative_position_id = YUG_croatian_supremacy
+		x = 0
+		y = 2
 		prerequisite = {}
 		mutually_exclusive = { }
 		
@@ -57,7 +55,6 @@
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
 			}
-			YUG = { add_ideas = yugoslav_partisans }
 			YUG = { set_capital = { state = 109 } }
 			custom_effect_tooltip = YUG_internal_divide_reduction_small
 			custom_effect_tooltip = YUG_political_divide_reduction_small
@@ -69,7 +66,7 @@
 		id = CRO_the_national_revolution
 		icon = GFX_focus_generic_strike_at_democracy1
 		x = 0
-		y = 1
+		y = 3
 		offset = {
 			x = 0
 			y = 0
@@ -659,165 +656,6 @@
 		}
 	}
 
-	
-	
-	
-	focus = {
-		id = CRO_the_national_bureau_of_statistics
-		icon = GFX_focus_generic_treaty
-		x = -2
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { 
-			focus = CRO_emergency_powers_to_pavlec
-		}
-		relative_position_id = CRO_emergency_powers_to_pavlec
-		
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-			add_tech_bonus = {
-				name = CRO_the_national_bureau_of_statistics
-				category = industry
-				uses = 1
-				bonus = 0.5
-			}
-		}
-	}
-	focus = {
-		id = CRO_rebuild_the_military
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 4
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { 
-			focus = CRO_emergency_powers_to_pavlec
-		}
-		relative_position_id = CRO_emergency_powers_to_pavlec
-		
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-			add_ideas = { FRA_rebuild_the_military }
-			109 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-			custom_effect_tooltip = YUG_army_improvement_large
-			add_to_variable = {YUG_army value = -0.2 }
-		}
-	}
-	focus = {
-		id = CRO_hidden_materials
-		
-		icon = GFX_focus_secret_rearmament
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { 
-			focus = CRO_rebuild_the_military
-		}
-		relative_position_id = CRO_rebuild_the_military
-		
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		
-		completion_reward = {
-			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = YUG }
-		    add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1000 producer = YUG }
-			add_equipment_to_stockpile = { type = support_equipment_1 amount = 750 producer = YUG }
-			add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 500 producer = YUG }
-			add_equipment_to_stockpile = { type = anti_tank_equipment_1  amount = 500 producer = YUG }
-			add_equipment_to_stockpile = { type = motorized_equipment amount = 1000 producer = YUG }
-			
-		}
-		
-	}
-	focus = {
-		id = CRO_analyze_our_defeat
-		icon = GFX_goal_generic_army_doctrines
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { 
-			focus = CRO_hidden_materials
-		}
-		relative_position_id = CRO_hidden_materials
-		
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-			army_experience = 50
-			# add_tech_bonus = {
-			# 	name = CRO_analyze_our_defeat
-			# 	category = land_doctrine
-			# 	uses = 2
-			# 	bonus = 1
-			# }
-		}
-	}
-
 	###############################
 	##### MAIN POLITICAL ######
 	###############################
@@ -825,7 +663,7 @@
 		id = YUG_Political_1
 		text = "Securing the State's Future"
 		icon = GFX_focus_invite_yugoslavia
-		x = 25
+		x = 20
 		y = 0
 
 		cost = 0
@@ -848,6 +686,7 @@
 
 
 		completion_reward = {
+			add_ideas = yugoslav_partisans
 		}
 	}
 	####### SERBIAN CHUDS
@@ -902,6 +741,7 @@
 			ITA = {
 				transfer_state = 804
 			}
+			YUG = { set_capital = { state = 107 } }
 		}
 	}
 
@@ -953,6 +793,7 @@ focus = {
 					target = YUG
 				}
 			}
+			YUG = { set_capital = { state = 105 } }
 		}
 }
 #### Croatian path
@@ -1010,43 +851,6 @@ focus = {
 	}
 
 	focus = {
-		id = YUG_Orthodox
-		text = "Orthodox-Catholic Cold Peace"
-		icon = GFX_goal_generic_improve_relations
-		relative_position_id = YUG_croatian_supremacy
-		x = 3
-		y = 1
-		prerequisite = {
-			focus = YUG_croatian_supremacy
-			focus = YUG_serbian_supremacy
-		}
-		cost = 5
-
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-			custom_effect_tooltip = YUG_internal_divide_reduction_medium
-			add_to_variable = {YUG_internal_divide value = -0.15 }
-		}
-
-		completion_reward = {
-		}
-	}
-	focus = {
 		id = YUG_Orthodoxy
 		text = "Empowerment of Orthodox Church"
 		icon = GFX_focus_GRE_an_orthodox_state
@@ -1087,7 +891,7 @@ focus = {
 		id = YUG_Axis_council
 		icon = GFX_focus_GER_the_supreme_leader
 		relative_position_id = YUG_croatian_supremacy
-		x = 1
+		x = 4
 		y = 1
 		prerequisite = {
 			focus = YUG_croatian_supremacy
@@ -1119,79 +923,7 @@ focus = {
 		completion_reward = {
 		}
 	}
-	focus = {
-		id = YUG_partisan_suppresion
-		icon = GFX_focus_AUS_legitimistische_jugend
-		relative_position_id = YUG_croatian_supremacy
-		x = -1
-		y = 1
-		prerequisite = {
-			focus = YUG_croatian_supremacy
-			
-		}
-		cost = 5
 
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-			custom_effect_tooltip = YUG_internal_divide_reduction_large
-			add_to_variable = {YUG_internal_divide value = -0.25 }
-		}
-
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = YUG_Croatian_empoverment
-		text = "Croatian Military Empowerment"
-		icon = GFX_focus_YUG_devolved_croatia
-		relative_position_id = YUG_croatian_supremacy
-		x = -3
-		y = 1
-		prerequisite = {
-			focus = YUG_croatian_supremacy
-			
-		}
-		cost = 5
-
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-			custom_effect_tooltip = YUG_army_improvement_large
-			add_to_variable = {YUG_army value = -0.2 }
-		}
-
-		completion_reward = {
-		}
-	}
 	focus = {
 		id = YUG_greater_autonomy
 		text = "Promise Greater Autonomy"
@@ -2635,13 +2367,12 @@ focus = {
 		icon = GFX_goal_generic_improve_relations
 		relative_position_id = YUG_croatian_supremacy
 		prerequisite = {
-			focus = YUG_partisan_suppresion
+			focus = YUG_croatian_supremacy
+			focus = YUG_montenegro_supremacy
 		}
-		prerequisite = {
-			focus = YUG_Axis_council
-		}
-		x = 0
-		y = 2
+		
+		x = -4
+		y = 1
 
 		cost = 10
 
@@ -2680,10 +2411,10 @@ focus = {
 	focus = {
 		id = YUG_attract_foreign_capital
 		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = YUG_friendship_treaty_with_italy }
-		x = -1
+		prerequisite = { focus = YUG_croatian_supremacy focus = YUG_serbian_supremacy focus = YUG_montenegro_supremacy }
+		x = -2
 		y = 1
-		relative_position_id = YUG_friendship_treaty_with_italy
+		relative_position_id = YUG_croatian_supremacy
 
 		cost = 10
 
@@ -2717,10 +2448,10 @@ focus = {
 	focus = {
 		id = YUG_invite_german_military_mission
 		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = YUG_friendship_treaty_with_italy  }
-		x = 1
+		prerequisite = { focus = YUG_croatian_supremacy focus = YUG_serbian_supremacy }
+		x = 2
 		y = 1
-		relative_position_id = YUG_friendship_treaty_with_italy
+		relative_position_id = YUG_croatian_supremacy
 
 		cost = 5
 
@@ -2832,14 +2563,15 @@ focus = {
 		}
 
 		completion_reward = {
-			109 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			#109 = {
+			#	add_extra_state_shared_building_slots = 1
+			#	add_building_construction = {
+			#		type = industrial_complex
+			#		level = 1
+			#		instant_build = yes
+			#	}
+			#}
 			add_tech_bonus = {
 				name = SAF_expand_the_mining_industry
 				bonus = 1.0
@@ -2930,14 +2662,15 @@ focus = {
 		}
 
 		completion_reward = {
-			103 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-			}
+			add_offsite_building = { type = industrial_complex level = 3 }
+			#103 = {
+			#	add_extra_state_shared_building_slots = 3
+			#	add_building_construction = {
+			#		type = industrial_complex
+			#		level = 3
+			#		instant_build = yes
+			#	}
+			#}
 		}
 	}
 
@@ -3038,7 +2771,7 @@ focus = {
 			every_owned_state = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
-					is_core_of = ROOT
+					#is_core_of = ROOT
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -3081,14 +2814,15 @@ focus = {
 		}
 
 		completion_reward = {
-			104 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
+			add_offsite_building = { type = industrial_complex level = 2 }
+			#104 = {
+			#	add_extra_state_shared_building_slots = 2
+			#	add_building_construction = {
+			#		type = industrial_complex
+			#		level = 2
+			#		instant_build = yes
+			#	}
+			#}
 		}
 	}
 
@@ -3123,23 +2857,25 @@ focus = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 102 }
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = arms_factory level = 2 }
+			#random_owned_controlled_state = {
+			#	prioritize = { 102 }
+			#	limit = {
+			#		ROOT = { has_full_control_of_state = PREV }
+			#	}
+			#	add_extra_state_shared_building_slots = 3
+			#	add_building_construction = {
+			#		type = industrial_complex
+			#		level = 1
+			#		instant_build = yes
+			#	}
+			#	add_building_construction = {
+			#		type = arms_factory
+			#		level = 2
+			#		instant_build = yes
+			#	}
+			#}
 		}
 	}
 
@@ -3174,14 +2910,15 @@ focus = {
 		}
 
 		completion_reward = {
-			109 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
+			add_offsite_building = { type = arms_factory level = 3 }
+			#109 = {
+			#	add_extra_state_shared_building_slots = 3
+			#	add_building_construction = {
+			#		type = arms_factory
+			#		level = 3
+			#		instant_build = yes
+			#	}
+			#}
 		}
 	}
 
@@ -3328,14 +3065,15 @@ focus = {
 		}
 
 		completion_reward = {
-			104 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
+			add_offsite_building = { type = arms_factory level = 2 }
+			#104 = {
+			#	add_extra_state_shared_building_slots = 2
+			#	add_building_construction = {
+			#		type = arms_factory
+			#		level = 2
+			#		instant_build = yes
+			#	}
+			#}
 		}
 	}
 
@@ -3347,8 +3085,8 @@ focus = {
 	focus = {
 		id = YUG_army_modernization
 		icon = GFX_goal_generic_army_doctrines
-		x = 60
-		y = 10
+		x = 40
+		y = 0
 
 		cost = 10
 
@@ -3987,14 +3725,7 @@ focus = {
 		}
 
 		completion_reward = {
-			103 = {
-				add_extra_state_shared_building_slots = 10
-				add_building_construction = {
-					type = dockyard
-					level = 10
-					instant_build = yes
-				}
-			}
+			add_offsite_building = { type = dockyard level = 10 }
 		}
 	}
 
