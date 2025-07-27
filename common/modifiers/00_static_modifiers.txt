@@ -400,8 +400,8 @@ water_modifier_shark_infested = {
 
 screening_bonus = { 
 	naval_retreat_speed = 0.1
-  	naval_hit_chance = 0.75 #0.825
-  	naval_defense_factor = 0.75 #1.000
+  	naval_hit_chance = 0.25 #0.825
+  	naval_defense_factor = 0.25 #1.000
 }
 
 capital_screening_bonus = { 
