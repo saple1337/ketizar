@@ -2760,22 +2760,22 @@ technologies = {
 			default_morale = 0.07
 		}
 		artillery_brigade = { 
-			max_strength = 7.5
+			max_strength = 5.5
 			default_morale = 0.15
 			defense = 0.1
 		}
 		mot_artillery_brigade = {
-			max_strength = 7.5
+			max_strength = 5.5
 		}
 		rocket_artillery_brigade = {
-			max_strength = 7.5
+			max_strength = 5.5
 		}
 		motorized_rocket_brigade = {
 			max_strength = 10.0
 			max_organisation = 2.5
 		}		
 		anti_air_brigade = { 
-			max_strength = 7.5
+			max_strength = 5.5
 			max_organisation = 2.5
 			default_morale = 0.15
 			defense = 0.1
@@ -2852,7 +2852,7 @@ technologies = {
 			default_morale = 0.25
 		}
 		infantry = {
-			max_strength = 7.0
+			max_strength = 6.0
 		}
 		# category_light_infantry = { 
 			
