@@ -11,37 +11,29 @@ if = {
 	}
 }
 add_dynamic_modifier = { modifier = YUG_internal_divide }
-add_dynamic_modifier = { modifier = YUG_political_divide }
+add_dynamic_modifier = { modifer = YUG_navy }
 add_dynamic_modifier = { modifier = YUG_army }
 # xyz chatgpt modding lol
-set_variable = { YUG_pp_internal_divide value = -0.3 }
-set_variable = { YUG_stab_internal_divide value = -0.4 }
-set_variable = { YUG_cg_internal_divide value = 0.25 }
-set_variable = { YUG_resist_internal_divide value = 0.3 }
-set_variable = { YUG_resources_internal_divide value = -0.5 }
-set_variable = { YUG_recruit_internal_divide value = -0.5 }
+# never use chatgpt to make dynamic modifers again :SKULL:
+set_variable = { YUG_pp_internal_divide = 0 }
+set_variable = { YUG_stab_internal_divide = -0.1 }
+set_variable = { YUG_cg_internal_divide = 0 }
+set_variable = { YUG_resist_internal_divide = 0 }
+set_variable = { YUG_resources_internal_divide = 0 }
+set_variable = { YUG_eff_gain = 0 }
+set_variable = { YUG_cap = 0 }
+set_variable = { YUG_civ_speed = 0 }
+set_variable = { YUG_output = 0 }
+set_variable = { YUG_communism_drift = 0 }
 
-set_variable = { YUG_org_army value = -0.45 }
-set_variable = { YUG_morale_army value = -0.17 }
-set_variable = { YUG_xp_gain_army value = -0.25 }
-set_variable = { YUG_doctrine_cost_army value = 0.59 }
-set_variable = { YUG_mil_speed_army value = -0.35 }
-set_variable = { YUG_training_time_army value = 0.3 }
-set_variable = { YUG_casualty_army value = -0.05 }
-set_variable = { YUG_conscription_army value = -0.02 }
+set_variable = { YUG_org_army = 0 }
+set_variable = { YUG_conscription_army = -0.5 }
+set_variable = { YUG_army_attack = 0 }
 
-set_variable = { YUG_pp_political_divide value = -0.2 }
-set_variable = { YUG_stab_political_divide value = -0.1 }
-set_variable = { YUG_advisor_cost_political_divide value = 0.15 }
-set_variable = { YUG_ideology_defense_political_divide value = -0.1 }
-set_variable = { YUG_trade_political_divide value = -0.1 }
-set_variable = { YUG_license_political_divide value = -0.1 }
-set_variable = { YUG_autonomy_political_divide value = -0.1 }
-set_variable = { YUG_civil_war_political_divide value = 0.3 }
-
+set_variable = { YUG_navy_industrial_capacity_dockyard = -0.25 }
 set_research_slots = 3
 add_timed_idea = { idea = GER_mefo_bills_1 days = 1330 }
-add_ideas = COOM_volunteers_minors
+add_ideas = { COOM_volunteers_minors YUG_naval_treaty_idea }
 
 add_to_tech_sharing_group = axis_research 
 
@@ -224,14 +216,19 @@ recruit_character = CRO_ante_vokic
 recruit_character = CRO_peter_williams
 recruit_character = CRO_john_wilson
 recruit_character = CRO_peter_walker
-recruit_character = CRO_vladimir_pavlec
-recruit_character = CRO_ivan_subasic
-recruit_character = CRO_alojzije_stepinac
+#recruit_character = CRO_vladimir_pavlec
+#recruit_character = CRO_ivan_subasic
+#recruit_character = CRO_alojzije_stepinac
 recruit_character = CRO_gaspar_njegovan
 recruit_character = CRO_vladimir_kren
 recruit_character = CRO_djuro_jakcin
 recruit_character = CRO_sismundo_pejacevic
-
+recruit_character = YUG_military_occuption
+recruit_character = MNT_blazo_dukanovic
+recruit_character = YUG_milan_nedic
+recruit_character = YUG_draza_mihailovic
+recruit_character = YUG_dimitrije_ljotic
+recruit_character = YUG_germogen_maximov
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #

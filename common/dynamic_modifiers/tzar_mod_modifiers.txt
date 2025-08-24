@@ -46,8 +46,8 @@ FRA_Army = { #NATIONAL SPIRIT - Civilian
  }
 YUG_internal_divide = { #NATIONAL SPIRIT - Civilian
 	enable = { always = yes }
-	name = "Internal Politics"
-	icon = GFX_idea_generic_political_crisis
+	
+	icon = GFX_idea_ARG_maintain_neutrality
 
 	political_power_gain = YUG_pp_internal_divide
 	stability_factor = YUG_stab_internal_divide
@@ -57,14 +57,19 @@ YUG_internal_divide = { #NATIONAL SPIRIT - Civilian
 	recruitable_population_factor = YUG_recruit_internal_divide
 	justify_war_goal_time = YUG_justify_internal_divide
 	enemy_operative_capture_chance = YUG_operative_internal_divide
+	production_factory_efficiency_gain_factor = YUG_eff_gain #-0.1
+ 	production_factory_max_efficiency_factor = YUG_cap #0.05
+ 	production_speed_industrial_complex_factor = YUG_civ_speed #0.1
+	industrial_capacity_factory = YUG_output
+	communism_drift = YUG_communism_drift
 }
 
 YUG_army = { #NATIONAL SPIRIT - Military
 	enable = { always = yes }
-	name = "Yugoslavian Army"
-	icon = GFX_idea_generic_army
+	
+	icon = GFX_idea_YUG_all_yugoslavian_regiments
 
-	army_org = YUG_org_army
+	army_org_factor = YUG_org_army
 	army_morale = YUG_morale_army
 	experience_gain_army = YUG_xp_gain_army
 	land_doctrine_cost_factor = YUG_doctrine_cost_army
@@ -73,19 +78,13 @@ YUG_army = { #NATIONAL SPIRIT - Military
 	casualty_trickleback = YUG_casualty_army
 	conscription_factor = YUG_conscription_army
 	army_leader_cost_factor = YUG_leader_cost_army
+	army_attack_factor = YUG_army_attack
+	
 }
 
-YUG_political_divide = { #NATIONAL SPIRIT - Civilian
+YUG_navy = {	# NAVY
 	enable = { always = yes }
-	name = "Political Landscape"
-	icon = GFX_idea_generic_constitutional_monarchy
-
-	political_power_gain = YUG_pp_political_divide
-	stability_factor = YUG_stab_political_divide
-	advisor_cost_factor = YUG_advisor_cost_political_divide
-	ideology_drift_defense = YUG_ideology_defense_political_divide
-	trade_opinion_factor = YUG_trade_political_divide
-	licence_production_speed = YUG_license_political_divide
-	autonomy_gain = YUG_autonomy_political_divide
-	civil_war_damage_factor = YUG_civil_war_political_divide
-}	
+	icon = GFX_idea_generic_navy
+	
+	industrial_capacity_dockyard = YUG_navy_industrial_capacity_dockyard
+}
