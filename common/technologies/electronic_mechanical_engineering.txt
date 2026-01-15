@@ -647,7 +647,7 @@ technologies = {
 		}
 		
 		start_year = 1939
-		research_cost = 3.5
+		research_cost = 4.5
 		
 		folder = {
 			name = electronics_folder

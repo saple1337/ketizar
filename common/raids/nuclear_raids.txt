@@ -1,7 +1,7 @@
 types = {
 
 	nuclear_strike = {
-		days_to_prepare = 30
+		days_to_prepare = 1
 
 		category = nuclear_raids
 
@@ -71,7 +71,7 @@ types = {
 		unit_requirements = {
 			equipment = {
 				type = { strategic_bomber }
-				amount = { min = 10 }
+				amount = { min = 50 }
 			}
 		}
 		essential_equipment = {
@@ -91,7 +91,7 @@ types = {
 
 		success_factors = {
 			success = {
-				base = 0.5
+				base = 0.30
 				experience = {
 					weight = 0.1
 					start_weight = -0.1

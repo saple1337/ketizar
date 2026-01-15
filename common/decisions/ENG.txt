@@ -9,7 +9,7 @@ procure_guns = {
 			factor = 15
 			modifier = {
 				has_equipment = {
-					infantry_equipment < 1000
+					infantry_equipment < 1001
 				}
 				factor = 50
 			}
