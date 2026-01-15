@@ -14,14 +14,6 @@ joint_focus = {
 		
 		offset = {
 			x = -5
-			y = 15
-			trigger = {
-				has_focus_tree = croatia_focus
-			}
-		}
-		
-		offset = {
-			x = -5
 			y = -2
 			trigger = {
 				has_focus_tree = bulgarian_focus

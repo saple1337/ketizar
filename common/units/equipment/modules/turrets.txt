@@ -103,9 +103,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			breakthrough = -0.8
-			soft_attack = 0.15
-			hard_attack = 0.3
+			breakthrough = -0.9
 		}
 
 	}
@@ -116,6 +114,7 @@ equipment_modules = {
 		category = tank_medium_turret_type
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type = anti_air
+		allow_equipment_type = anti_tank
 
 		allowed_module_categories = {
 			main_armament_slot = {
@@ -137,9 +136,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			breakthrough = -0.75
-			soft_attack = 0.15
-			hard_attack = 0.3
+			breakthrough = -0.9
 		}
 
 		can_convert_from = {
@@ -231,9 +228,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			breakthrough = -0.60
-			soft_attack = 0.15
-			hard_attack = 0.3
+			breakthrough = -0.9
 		}
 
 		can_convert_from = {

@@ -219,7 +219,7 @@ add_ideas = {
 	sour_loser
 	general_staff
 	limited_conscription
-	partial_economic_mobilisation
+	low_economic_mobilisation
 	GER_mefo_bills_1
 	GER_autarky_idea
 	COOM_volunteers_majors

@@ -63,7 +63,7 @@ focus_tree = {
 		available = { }
 		
 		completion_reward = {
-			add_ideas = GER_war_economy4
+			add_ideas = GER_war_economy3
 			#add_ideas = SWE_ball_bearing_idea
 			# custom_effect_tooltip = available_political_advisor
 			# show_ideas_tooltip = hjalmar_schacht
@@ -533,7 +533,7 @@ focus_tree = {
 		relative_position_id = GER_four_year_plan
 		x = 2
 		y = 4
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 12
 		}
@@ -1075,10 +1075,10 @@ focus_tree = {
 	focus = {
 		id = GER_synthetic_rubber
 		icon = GFX_focus_GER_subsidize_hoesch_benzin
-		prerequisite = { focus = GER_coal_liquidization }
+		prerequisite = { focus = GER_integrate_war_economies }
 		x = 0
 		y = 1
-		relative_position_id = GER_coal_liquidization
+		relative_position_id = GER_integrate_war_economies
 		cost = 10
 		ai_will_do = {
 			factor = 4
@@ -1433,10 +1433,10 @@ focus_tree = {
 			available = {
 			}
 			completion_reward = {
-				custom_effect_tooltip = "Doing the focus before 1938 will create imbalance and will greatly impact our economy."
+				custom_effect_tooltip = "Doing the focus before war with the allies will create imbalance and will greatly impact our economy."
 				if = {
 					limit = {
-						date<1938.1.1
+						NOT = {has_war_with = ENG}
 					}
 					GER_economy_down = yes
 				}
@@ -2048,7 +2048,7 @@ focus_tree = {
 		icon = GFX_focus_GER_anschluss2
 		prerequisite = { focus = GER_rhineland }
 
-		available = { date > 1936.9.1 }
+		available = { date > 1936.8.1 }
 
 		cancel_if_invalid = no
 		x = 0
@@ -2377,6 +2377,22 @@ focus_tree = {
 			factor = 10
 		}	
 		completion_reward = {
+			586 = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = industrial_complex
+					level = 10
+					instant_build = yes
+				}
+			}
+			881 = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = arms_factory
+					level = 10
+					instant_build = yes
+				}
+			}
 		
 			hidden_effect = {
 							USA = { set_rule = { can_join_factions = yes }}
@@ -2412,7 +2428,7 @@ focus_tree = {
 				#transfer_state = 80
 				army_experience = 50
 				air_experience = 300
-			
+
 			}
 		
 			if = {

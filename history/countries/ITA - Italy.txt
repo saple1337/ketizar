@@ -11,7 +11,7 @@ add_ideas = {
 	victor_emmanuel
 	vittoria_mutilata
 	limited_conscription
-	partial_economic_mobilisation
+	low_economic_mobilisation 
 	ITA_libya_stands
 	COOM_volunteers_majors
 }
@@ -340,7 +340,6 @@ set_technology = { basic_train = 1
 		tech_recon = 1
 	#basic_heavy_tank_chassis = 1  # PLACEHOLDER
 	#basic_medium_tank = 1 # PLACEHOLDER
-	iw_small_airframe = 1
 	fighter1= 1
 		basic_medium_airframe = 1
 					aa_lmg = 1

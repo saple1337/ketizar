@@ -439,7 +439,7 @@ SOV_morozov_design_bureau_organization = {
 		visible = {
 			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
-		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+		limit_to_equipment_type = { armor }
 		available = {
 			FROM = {
 				has_full_control_of_state = 252 #GORKY
@@ -551,7 +551,7 @@ SOV_astrov_design_bureau_organization = {
 		visible = {
 			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
-
+		limit_to_equipment_type = { armor }
 		available = {
 			FROM = {
 				has_full_control_of_state = 252 #GORKY
@@ -692,7 +692,7 @@ SOV_okmo_organization = {
 		visible = {
 			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
-
+		limit_to_equipment_type = { armor }
 		available = {
 			FROM = {
 				has_full_control_of_state = 252 #GORKY
@@ -827,7 +827,7 @@ SOV_mytishchy_machine_building_plant_organization = {
 		visible = {
 			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
-
+		limit_to_equipment_type = { armor }
 		available = {
 			FROM = {
 				has_full_control_of_state = 252 #GORKY
@@ -945,7 +945,7 @@ SOV_kirov_organization = {
 		visible = {
 			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
-
+		limit_to_equipment_type = { armor }
 		available = {
 			FROM = {
 				has_full_control_of_state = 252 #GORKY
