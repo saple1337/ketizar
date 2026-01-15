@@ -2073,6 +2073,7 @@ focus_tree = {
 					army_experience = 100
 					air_experience  = 100
 				}
+				RAJ = { add_ideas = the_price_of_no_asia }
 				SOV = { army_experience = 200 air_experience  = 300 }
 				GER = { air_experience  = 300 }
 				ITA = { air_experience  = 300 }
