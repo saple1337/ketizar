@@ -551,7 +551,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_reckless infantry_officer politically_connected infantry_leader commando naval_invader infantry_expert camouflage_expert }
+			traits={ trait_reckless infantry_officer politically_connected infantry_leader commando naval_invader invader_ii infantry_expert camouflage_expert }
 			skill=4
 			attack_skill=4
 			defense_skill=1
