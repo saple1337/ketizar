@@ -125,7 +125,7 @@ focus_tree = {
 		}
 
         available = {
-            date > 1938.2.1
+            date > 1937.12.1
         }
 		available_if_capitulated = no
 
@@ -158,7 +158,7 @@ focus_tree = {
 		}
 
         available = {
-            date > 1938.6.1
+            date > 1938.4.1
         }
 		available_if_capitulated = no
 

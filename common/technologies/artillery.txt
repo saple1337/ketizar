@@ -1152,6 +1152,7 @@ technologies = {
 		# }
 		enable_equipments = {
 			anti_tank_equipment_2
+			heavy_anti_tank_equipment_1
 		}
 		enable_equipment_modules = {
 			# tank_high_velocity_cannon_2
@@ -1250,6 +1251,7 @@ technologies = {
 			mio_cat_all_artillery_equipment
 		}
 	}
+	
 
 	antitank3_5 = {
 			special_project_specialization = { specialization_land }
@@ -1370,6 +1372,7 @@ technologies = {
 				special_project_specialization = { specialization_land }
 		enable_equipments = {
 			anti_tank_equipment_3
+			heavy_anti_tank_equipment_2
 		}	
 		enable_equipment_modules = {
 			# tank_high_velocity_cannon_3

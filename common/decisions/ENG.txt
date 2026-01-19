@@ -747,7 +747,7 @@ foreign_politics = {
 			every_country = { limit = { AND = { is_in_faction_with = ENG has_war = yes }  }
 			EFR = { declare_war_on = { target = PREV type = annex_everything }	} }
 			GER = { add_to_faction = EFR }
-			ENG = { transfer_state = 461 transfer_state = 462 transfer_state = 513 transfer_state = 459 transfer_state = 460 }
+			ITA = { transfer_state = 461 transfer_state = 462 transfer_state = 513 transfer_state = 459 transfer_state = 460 }
 			461 = { 
 				add_building_construction = {
 				type = infrastructure

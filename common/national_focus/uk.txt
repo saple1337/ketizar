@@ -79,6 +79,7 @@ focus_tree = {
 			factor = 1
 		}
 
+		mutually_exclusive = { focus = ENG_build_civs}
 		bypass = {
 
 		}
@@ -120,10 +121,66 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+        id = ENG_build_civs
+		icon = GFX_focus_generic_hydroelectric_energy
+        x = 2
+        y = 0
+        cost = 10
+		prerequisite = {
+		}
+		relative_position_id = limited_rearmament_focus
+		mutually_exclusive = { focus = limited_rearmament_focus} 
+        available = {
+            
+        }
+        completion_reward = {
+            add_timed_idea = {
+				idea = ENG_civ_boost
+				days = 665
+			}
+			add_ideas = ENG_ernest_bevin
+			126 = {
+                add_extra_state_shared_building_slots = 4
+                add_building_construction = {
+                    type = dam
+                    level = 1
+                    instant_build = yes
+                    province = {
+                        id = 11374
+                    }
+                }
+			}
+			132 = {
+                add_extra_state_shared_building_slots = 4
+                add_building_construction = {
+                    type = dam
+                    level = 1
+                    instant_build = yes
+                    province = {
+                        id = 6318
+                    }
+                }
+			}
+			121 = {
+                add_extra_state_shared_building_slots = 4
+                add_building_construction = {
+                    type = dam
+                    level = 1
+                    instant_build = yes
+                    province = {
+                        id = 9392
+                    }
+                }
+			}
+        }
+    }
+
 	
 	focus = {
 		id = ENG_royal_artillery
-		prerequisite = { focus = limited_rearmament_focus }
+		prerequisite = { focus = limited_rearmament_focus focus = ENG_build_civs }
 
 		icon = GFX_goal_generic_army_artillery2
 		x = 2
@@ -169,7 +226,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_tank_focus
-		prerequisite = { focus = limited_rearmament_focus }
+		prerequisite = { focus = limited_rearmament_focus focus = ENG_build_civs }
 			available = {
 		OR = { 
 			date > 1937.2.1
@@ -264,7 +321,7 @@ focus_tree = {
 		id = uk_extra_tech_slot
 		text = extra_tech_slot
 		icon = GFX_focus_research
-		prerequisite = { focus = limited_rearmament_focus }
+		prerequisite = { focus = limited_rearmament_focus focus = ENG_build_civs }
 		x = -2
 		y = 1
 		relative_position_id = limited_rearmament_focus
@@ -316,7 +373,7 @@ focus_tree = {
 	
 	focus = {
 		id = general_rearmament_focus
-		prerequisite = { focus = limited_rearmament_focus }
+		prerequisite = { focus = limited_rearmament_focus focus = ENG_build_civs }
 		available = {
 			OR = { 
 				date > 1938.2.1
@@ -474,7 +531,7 @@ focus_tree = {
 
 	focus = {
 		id = air_rearmament_focus
-		prerequisite = { focus = general_rearmament_focus }
+		prerequisite = { focus = general_rearmament_focus focus = ENG_build_civs }
 		icon = GFX_goal_generic_air_doctrine
 		x = 0
 		y = 1
@@ -689,7 +746,7 @@ focus_tree = {
 	}
 	focus = {
 		id = naval_rearmament_focus
-		prerequisite = { focus = limited_rearmament_focus }
+		prerequisite = { focus = limited_rearmament_focus focus = ENG_build_civs}
 		icon = GFX_goal_generic_construct_naval_dockyard 
 		x = 6
 		y = 1
@@ -2493,7 +2550,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_british_commonwealth_air_training_plan
-		prerequisite = { focus = limited_rearmament_focus }
+		prerequisite = { focus = limited_rearmament_focus focus = ENG_build_civs }
 		icon = GFX_goal_generic_air_fighter2
 		x = 4
 		y = 1
@@ -2955,7 +3012,7 @@ technology = improved_medium_airframe
 
 	focus = {
 		id = uk_small_arms_focus
-		prerequisite = { focus = limited_rearmament_focus }
+		prerequisite = { focus = limited_rearmament_focus focus = ENG_build_civs }
 		icon = GFX_goal_generic_production2
 		x = 3
 		y = 2

@@ -24,12 +24,14 @@ foreign_politics = {
         }
         
         complete_effect = {
+			ENG = { transfer_state = 461 transfer_state = 462 transfer_state = 513 transfer_state = 459 transfer_state = 460 }
         	ITA = {
         		annex_country = {
 					target = EFR
 					transfer_troops = yes 
 				}
         	}
+			
         }
     }
 

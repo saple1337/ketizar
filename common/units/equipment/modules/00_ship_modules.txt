@@ -641,14 +641,13 @@ equipment_modules = {
 			add_equipment_type = anti_air
 			
 			add_stats = {
-				anti_air_attack = 2.5
+				anti_air_attack = 2
 				build_cost_ic = 120
 			}
 			
 			multiply_stats = {
 				naval_speed = -0.005
 				build_cost_ic = 0.025
-				anti_air_attack = 0.1
 			}
 	
 			can_convert_from = {
@@ -667,14 +666,13 @@ equipment_modules = {
 			sfx = sfx_ui_sd_module_turret
 			add_equipment_type = anti_air
 			add_stats = {
-				anti_air_attack = 4
+				anti_air_attack = 3
 				build_cost_ic = 150
 			}
 			
 			multiply_stats = {
 				naval_speed = -0.005
 				build_cost_ic = 0.025
-				anti_air_attack = 0.125
 			}
 	
 			can_convert_from = {
@@ -694,14 +692,13 @@ equipment_modules = {
 	
 			add_equipment_type = anti_air
 			add_stats = {
-				anti_air_attack = 5.5
+				anti_air_attack = 5
 				build_cost_ic = 190
 			}
 			
 			multiply_stats = {
 				naval_speed = -0.005
 				build_cost_ic = 0.025
-				anti_air_attack = 0.15
 			}
 	
 			can_convert_from = {
