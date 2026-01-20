@@ -1098,6 +1098,7 @@ icon = generic_political_discourse
 		available = {
 			has_equipment = { infantry_equipment > 5000 }
 			has_army_experience > 10
+			has_completed_focus = ENG_Gib_Fell
 			}
 
 		cost = 0
@@ -1121,7 +1122,7 @@ icon = generic_political_discourse
 		available = {
 			has_equipment = { infantry_equipment_1 > 30000 }
 			has_army_experience > 100
-			
+			has_completed_focus = ENG_Gib_Fell
 			}
 			
 			visible = { has_country_flag = ENG_ldv_created  } 
@@ -1144,7 +1145,7 @@ icon = generic_political_discourse
 		}
 
 		available = {
-			
+			has_completed_focus = ENG_Gib_Fell
 			}
 
 		cost = 250
@@ -1163,7 +1164,7 @@ icon = generic_political_discourse
 		}
 
 		available = {
-
+			has_completed_focus = ENG_Gib_Fell
 		}
 
 		cost = 0

@@ -78,7 +78,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+			available = {
+			GER = { has_completed_focus = GER_rhineland }
+		}
 		mutually_exclusive = { focus = ENG_build_civs}
 		bypass = {
 
@@ -91,7 +93,7 @@ focus_tree = {
 				limit = { has_state_flag = ENG_limited_rearmament_focus_2IC }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
@@ -100,21 +102,21 @@ focus_tree = {
 
 		completion_reward = {
 					add_ideas = low_economic_mobilisation
-					add_ideas = ENG_ernest_bevin
+					add_ideas = ENG_maxwell_aitken
 			128 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
-					type = industrial_complex
-					level = 2
+					type = arms_factory
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = ENG_limited_rearmament_focus_2IC
 			}
 			130 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
-					type = industrial_complex
-					level = 2
+					type = dockyard
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = ENG_limited_rearmament_focus_2IC
@@ -136,13 +138,14 @@ focus_tree = {
             
         }
         completion_reward = {
+			add_ideas = civilian_economy
             add_timed_idea = {
 				idea = ENG_civ_boost
 				days = 665
 			}
 			add_ideas = ENG_ernest_bevin
 			126 = {
-                add_extra_state_shared_building_slots = 4
+                add_extra_state_shared_building_slots = 6
                 add_building_construction = {
                     type = dam
                     level = 1
@@ -151,9 +154,10 @@ focus_tree = {
                         id = 11374
                     }
                 }
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
 			}
 			132 = {
-                add_extra_state_shared_building_slots = 4
+                add_extra_state_shared_building_slots = 6
                 add_building_construction = {
                     type = dam
                     level = 1
@@ -162,9 +166,10 @@ focus_tree = {
                         id = 6318
                     }
                 }
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
 			}
 			121 = {
-                add_extra_state_shared_building_slots = 4
+                add_extra_state_shared_building_slots = 6
                 add_building_construction = {
                     type = dam
                     level = 1
@@ -173,6 +178,7 @@ focus_tree = {
                         id = 9392
                     }
                 }
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
 			}
         }
     }
@@ -378,6 +384,10 @@ focus_tree = {
 			OR = { 
 				date > 1938.2.1
 				GER = { has_completed_focus = GER_anschluss }
+				AND = {
+					date > 1937.4.1
+					has_completed_focus = limited_rearmament_focus
+				}
 			}
  		}
 
@@ -531,7 +541,7 @@ focus_tree = {
 
 	focus = {
 		id = air_rearmament_focus
-		prerequisite = { focus = general_rearmament_focus focus = ENG_build_civs }
+		prerequisite = { focus = general_rearmament_focus  }
 		icon = GFX_goal_generic_air_doctrine
 		x = 0
 		y = 1
@@ -760,14 +770,6 @@ focus_tree = {
 
 
 		completion_reward = {
-		add_tech_bonus = {
-					ahead_reduction = 0.75
-					bonus = 1.25
-					uses = 1
-					category = bb_tech
-					category = bc_tech
-					category = cat_ship_heavy_battery
-				}
 		
 			navy_experience = 50
 			136 = {
@@ -1078,11 +1080,13 @@ focus_tree = {
 		completion_reward = {
 			navy_experience = 25
 			add_tech_bonus = {
-				name = uk_battleship_focus
-				bonus = 1.5
-				uses = 2
-				category = bb_tech
-			}
+					ahead_reduction = 0.75
+					bonus = 1.25
+					uses = 2
+					category = bb_tech
+					category = bc_tech
+					category = cat_ship_heavy_battery
+				}
 			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
@@ -1960,7 +1964,12 @@ focus_tree = {
 		cost = 5
 
 		available_if_capitulated = yes
-
+		available = {
+			OR = {
+				has_completed_focus = ENG_build_civs
+				has_completed_focus = limited_rearmament_focus
+			}
+		}
 		completion_reward = {
 			add_ideas = { ENG_colonial_elite }
 		}
@@ -2617,39 +2626,58 @@ technology = improved_medium_airframe
 		}
 
 		completion_reward = {
-			429 = {
+			if = {
+				limit = {
+					has_completed_focus = ENG_build_civs
+				}
+				439 = {
 				add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = industrial_complex
-						level = 4
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-			}
-			ENG = {
-				random_owned_controlled_state = {
-					limit = {
-						AND = { 
-							is_core_of = ENG
-							free_building_slots = {
-								building = industrial_complex
-								size > 0
-								include_locked = yes
-							}
-						 }
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
+						level = 5
 						instant_build = yes
 					}
 				}
-			}
+				}
+				if = {
+				limit = {
+					has_completed_focus = limited_rearmament_focus
+				}
+				439 = {
+				add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = arms_factory
+						level = 5
+						instant_build = yes
+					}
+				}
+				}
+			if = {
+				limit = {
+					has_completed_focus = ENG_build_civs
+				}
+				126 = {
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				}
+				if = {
+				limit = {
+					has_completed_focus = limited_rearmament_focus
+				}
+				126 = {
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				}
 		}
 	}
 			
@@ -2671,57 +2699,57 @@ technology = improved_medium_airframe
 		available_if_capitulated = yes
 
 		completion_reward = {
-			519 = {
+			if = {
+				limit = {
+					has_completed_focus = ENG_build_civs
+				}
+				285 = {
 				add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = industrial_complex
-						level = 3
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-			}
-			ENG = {
-				random_owned_controlled_state = {
-					limit = {
-						AND = { 
-							is_core_of = ENG
-							free_building_slots = {
-								building = industrial_complex
-								size > 0
-								include_locked = yes
-							}
-						 }
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
+						level = 5
 						instant_build = yes
 					}
 				}
-			}
-					set_state_flag = ENG_uk_australia_focus_1IC
-				
-				
-					set_state_flag = ENG_uk_australia_focus_2dockyards
-				
-				
-					set_state_flag = ENG_uk_australia_focus_1dockyard
-				
-
-
-				add_autonomy_ratio = {
-					value = -0.05
-					localization = uk_australia_focus
+				}
+				if = {
+				limit = {
+					has_completed_focus = limited_rearmament_focus
+				}
+				285 = {
+				add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = arms_factory
+						level = 5
+						instant_build = yes
+					}
+				}
+				}
+			if = {
+				limit = {
+					has_completed_focus = ENG_build_civs
+				}
+				126 = {
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				}
+				if = {
+				limit = {
+					has_completed_focus = limited_rearmament_focus
+				}
+				126 = {
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
 				}
 		}
 	}
@@ -2811,54 +2839,59 @@ technology = improved_medium_airframe
 		available_if_capitulated = yes
 
 		completion_reward = {
-			464 = {
+			
+				if = {
+				limit = {
+					has_completed_focus = ENG_build_civs
+				}
+				464 = {
 				add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = industrial_complex
-						level = 3
+						level = 5
 						instant_build = yes
 					}
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
+				}
+				}
+				if = {
+				limit = {
+					has_completed_focus = limited_rearmament_focus
+				}
+				464 = {
+				add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 5
 						instant_build = yes
 					}
-			}
-			
-				set_state_flag = ENG_uk_canada_focus_1dockyard
-				
-
-
-				add_autonomy_ratio = {
-					value = -0.05
-					localization = uk_canada_focus
 				}
-
-			ENG = {
-				random_owned_controlled_state = {
-					limit = {
-						AND = { 
-							is_core_of = ENG
-							free_building_slots = {
-								building = industrial_complex
-								size > 0
-								include_locked = yes
-							}
-						 }
-					}
-					add_extra_state_shared_building_slots = 1
+				}
+			if = {
+				limit = {
+					has_completed_focus = ENG_build_civs
+				}
+				126 = {
+				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
-			}	
+				}
+				if = {
+				limit = {
+					has_completed_focus = limited_rearmament_focus
+				}
+				126 = {
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				}
 		}
 	}
 
@@ -2879,53 +2912,58 @@ technology = improved_medium_airframe
 
 		completion_reward = {
 			
+				if = {
+				limit = {
+					has_completed_focus = ENG_build_civs
+				}
 				893 = {
-					add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = industrial_complex
-						level = 3
+						level = 5
 						instant_build = yes
 					}
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
+				}
+				}
+				if = {
+				limit = {
+					has_completed_focus = limited_rearmament_focus
+				}
+				893 = {
+				add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 5
 						instant_build = yes
 					}
 				}
-				set_state_flag = ENG_uk_south_africa_focus_1dockyard
-				
-
-
-				add_autonomy_ratio = {
-					value = -0.05
-					localization = uk_south_africa_focus
 				}
-			
-			ENG = {
-				random_owned_controlled_state = {
-					limit = {
-						AND = { 
-							is_core_of = ENG
-							free_building_slots = {
-								building = industrial_complex
-								size > 0
-								include_locked = yes
-							}
-						 }
-					}
-					add_extra_state_shared_building_slots = 1
+			if = {
+				limit = {
+					has_completed_focus = ENG_build_civs
+				}
+				126 = {
+				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
-			}
+				}
+				if = {
+				limit = {
+					has_completed_focus = limited_rearmament_focus
+				}
+				126 = {
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				}
 		}
 	}
 
@@ -3177,19 +3215,29 @@ technology = improved_medium_airframe
 		icon = GFX_focus_attack_italy
 		x = 0
 		y = 5
-		cost = 1
+		cost = 0
 		relative_position_id = ENG_chiefs_of_staff_committee
+		bypass = {
+					}
+
 		available = {
 			118 = { 
 						NOT = { is_controlled_by = ENG }
-					}
 		}
 		ai_will_do = {
 			factor = 9
 		}
 		
 		completion_reward = {
+
+			custom_effect_tooltip = "This focus will Auto Complete upon the Fall of Gibraltar."
+							
 			add_ideas = tot_economic_mobilisation
+			 swap_ideas = {
+				add_idea = stiff_upper_lip2
+				remove_idea = stiff_upper_lip
+				
+			}
 			
 			every_country = {
 				limit = {

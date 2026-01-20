@@ -2109,8 +2109,8 @@ ideas = {
 			picture = home_of_the_free 
 
 			modifier = {
-				army_core_defence_factor = 0.25
-				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.35
+				army_core_attack_factor = 0.35
 				global_building_slots_factor = 0.25
 				}
 		}

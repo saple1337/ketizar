@@ -199,8 +199,8 @@ ideas = {
 			}
 			
 			modifier = {
-				army_core_attack_factor	= 1.2
-				army_core_defence_factor = 1.2
+				army_core_attack_factor	= 0.15
+				army_core_defence_factor = 0.15
 				surrender_limit = 0.15
 			}	
 		}
@@ -220,8 +220,8 @@ ideas = {
 			
 			modifier = {
 				surrender_limit = 0.15
-			army_core_attack_factor	= 0.1
-			army_core_defence_factor = 0.1
+			army_core_attack_factor	= 1.2
+			army_core_defence_factor = 1.2
 			resistance_target_on_our_occupied_states = 0.1
 			}		
 		}
@@ -242,8 +242,8 @@ ideas = {
 			
 			modifier = {
 				surrender_limit = 0.15
-			army_core_attack_factor	= 0.15
-			army_core_defence_factor = 0.15
+			army_core_attack_factor	= 1.2
+			army_core_defence_factor = 1.2
 			resistance_target_on_our_occupied_states = 0.2
 			}		
 		}
@@ -264,8 +264,8 @@ ideas = {
 			
 			modifier = {
 				surrender_limit = 0.15
-				army_core_attack_factor	= 0.2
-				army_core_defence_factor = 0.2
+				army_core_attack_factor	= 1.2
+				army_core_defence_factor = 1.2
 				resistance_target_on_our_occupied_states = 0.3
 			}		
 		}
@@ -286,8 +286,8 @@ ideas = {
 			
 			modifier = {
 				surrender_limit = 0.15
-				army_core_attack_factor	= 0.25
-				army_core_defence_factor = 0.25
+				army_core_attack_factor	= 1.2
+				army_core_defence_factor = 1.2
 				resistance_target_on_our_occupied_states = 0.4
 			}		
 		}
@@ -649,7 +649,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				production_speed_industrial_complex_factor = 0.5
+				production_speed_industrial_complex_factor = 0.75
 				production_speed_arms_factory_factor = -1
 				production_speed_dockyard_factor = -0.3
 				economy_cost_factor = 3

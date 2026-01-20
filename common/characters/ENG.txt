@@ -881,6 +881,7 @@ characters={
 			idea_token = ENG_maxwell_aitken
 			allowed  = {
 				original_tag  = ENG
+				has_completed_focus = limited_rearmament_focus
 			}
 			traits  = {
 				war_industrialist 
@@ -903,6 +904,7 @@ characters={
 			idea_token = ENG_ernest_bevin
 			allowed  = {
 				original_tag  = ENG
+				has_completed_focus = { ENG_build_civs }
 			}
 			traits  = {
 				captain_of_industry 

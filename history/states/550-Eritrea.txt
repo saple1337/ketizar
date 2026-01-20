@@ -12,14 +12,8 @@ state=
 	history={
 		owner = ITA
 		add_core_of = SWE
-		victory_points = { #Massaua
-			12766 1
-		}
 		victory_points = { #Asmara
 			13250 3
-		}
-		victory_points = { #Biscia
-			12723 1
 		}
 		buildings = {
 			infrastructure = 2

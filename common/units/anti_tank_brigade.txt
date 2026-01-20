@@ -182,6 +182,7 @@ sub_units = {
 			category_line_artillery
 		}		
 		
+		manpower = 300
 		combat_width = 1
 		need = {
 			heavy_anti_tank_equipment = 45

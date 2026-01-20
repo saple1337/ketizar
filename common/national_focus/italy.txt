@@ -4832,8 +4832,10 @@ completion_reward = {
 			add_tech_bonus = {
 				name = ITA_navi_da_battaglia
 				bonus = 1.5
-				uses = 1
-				category = bb_tech
+				uses = 2
+					category = bb_tech
+					category = bc_tech
+					category = cat_ship_heavy_battery
 			}
 
 			###########
