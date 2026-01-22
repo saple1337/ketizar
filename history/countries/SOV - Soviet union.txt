@@ -641,6 +641,7 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 	radio = 1
 	interwar_antitank = 1
 	iw_small_airframe = 1
+	rubber_on_tech = 1
 	basic_small_airframe = 1
 	basic_medium_airframe = 1
 	aa_lmg = 1

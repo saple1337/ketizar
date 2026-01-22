@@ -18,12 +18,12 @@ state = {
 			13242 2 
 		}
 		
-		owner = ITA
+		owner = ENG
 		add_core_of = SWE
 
 		1936.6.1 = {
-			owner = ITA
-			controller = ITA
+			owner = ENG
+			controller = ENG
 		}
 	}
 

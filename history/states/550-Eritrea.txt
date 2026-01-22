@@ -10,7 +10,7 @@ state=
 	state_category = rural
 	
 	history={
-		owner = ITA
+		owner = ENG
 		add_core_of = SWE
 		victory_points = { #Asmara
 			13250 3
