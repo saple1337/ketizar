@@ -889,6 +889,34 @@ ideas = {
 			}
 		}
 
+		trade_japan_min = {
+		name = "Integrated Economies"
+		available = {
+		}
+		
+
+		allowed = {
+			always = yse
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = generic_exploit_mines
+
+		targeted_modifier = {
+			tag = MIN
+			trade_cost_for_target_factor = -0.8
+		}
+		targeted_modifier = {
+		tag = JAP
+		trade_cost_for_target_factor = -0.6
+		}
+		}
+
 		JAP_liaison_conference = {
 			allowed = {
 				always = no

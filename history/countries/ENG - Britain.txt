@@ -56,6 +56,7 @@ set_technology = {
 	basic_heavy_tank_chassis = 1  # PLACEHOLDER
 	#basic_medium_tank = 1 # PLACEHOLDER
 	iw_small_airframe = 1
+	camelry = 1 
 	basic_small_airframe = 1
 
 	

@@ -406,6 +406,22 @@
 			add_to_variable = {
 				FRA_ww_army = 0.005
 			}
+			add_tech_bonus = {
+				name = FRA_light_medium_armor
+				bonus = 2.25
+				uses = 1
+				technology = improved_medium_tank_chassis				
+			}
+			add_tech_bonus = {
+					name = GER_soviet_treaty
+					bonus = 1.5
+					uses = 2
+					technology = shit_guns
+					technology = medium_guns2
+					technology = medium_guns3
+					technology = heavy_guns3
+					technology = heavy_guns2
+					}
 			custom_effect_tooltip = FRA_army_reform1	
 			hidden_effect = {
 				        461 = {
@@ -647,12 +663,6 @@
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = maurice_gamelin
 			add_tech_bonus = {
-				name = FRA_light_medium_armor
-				bonus = 2.25
-				uses = 1
-				technology = improved_medium_tank_chassis				
-			}
-			add_tech_bonus = {
 				name = FRA_air_ground_cooperation
 				category = air_doctrine
 				uses = 5
@@ -666,16 +676,6 @@
 					instant_build = yes
 				}
 			}
-			add_tech_bonus = {
-					name = GER_soviet_treaty
-					bonus = 1.5
-					uses = 2
-					technology = shit_guns
-					technology = medium_guns2
-					technology = medium_guns3
-					technology = heavy_guns3
-					technology = heavy_guns2
-					}
 		}
 	}
 	focus = {

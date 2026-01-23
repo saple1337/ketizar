@@ -277,9 +277,9 @@ focus_tree = {
 	focus = { 
 		ai_will_do = { factor = 1 }
 		id = SPA_Declare_war_PORT
-		mutually_exclusive = {focus= SPA_Declare_war_SOV}
 		available = {
-			has_global_flag = spr_caninvadeport
+			GER = { has_completed_focus = GER_danzig_or_war}
+			NOT = { has_completed_focus = SPA_Declare_war_SOV }
 		}
 		text = "Dreams of United Iberia"
 		prerequisite = { focus = SPA_fuse_the_parties }
@@ -306,8 +306,13 @@ focus_tree = {
 	focus = { 
 		ai_will_do = { factor = 1 }
 		id = SPA_Declare_war_SOV
-		mutually_exclusive = {focus= SPA_Declare_war_PORT}
 		available = {
+			if = {
+				limit = {
+					has_completed_focus = SPA_Declare_war_PORT
+				}
+				GER = { has_completed_focus = GER_fall_blau}
+				}
 		}
 		text = "Join the cause"
 		prerequisite = { focus = SPA_fuse_the_parties }
@@ -318,11 +323,23 @@ focus_tree = {
 		relative_position_id = SPA_fuse_the_parties
 		cost = 0.2
 
+		
+
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
 			remove_ideas = no_war_against_sov
 			remove_ideas = no_war_against_allies
+			custom_effect_tooltip = 
+			"If we have declared war exclusively on the allies, we will be able to join the war against the Soviet Union after Germany does Fall Blau, for a heavily reduced attack modifier, but our industry will suffer"
+		
+			if = {
+				limit = {
+					has_completed_focus = SPA_Declare_war_PORT
+				}
+				add_ideas = 
+					SPA_joined_sov_42
+				}
 		}
 	}
 

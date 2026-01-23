@@ -19,6 +19,7 @@ add_ideas = {
 	war_economy
 	JAP_interservice_rivalry_balanced
 	JAP_zaibatsus
+	trade_japan_min
 	JAP_duplicate_research_efforts
 	JAP_militarism
 	JAP_island_hopping8
