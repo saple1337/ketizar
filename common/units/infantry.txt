@@ -9,7 +9,6 @@ marine_commando  = {
 		map_icon_category = infantry
 		special_forces = yes
 		marines = yes
-		can_exfiltrate_from_coast = yes
 		
 		priority = 601
 		ai_priority = 200

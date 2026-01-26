@@ -9,7 +9,6 @@ nigger = {
 		}
 			
 		available = {
-			AST = { is_ai = no }
 			NZL = { is_ai = yes }
 		}
 

@@ -371,8 +371,7 @@ HOL_prepare_the_inundation_lines = {
 		}
 
 		available = {
-			has_war = yes
-			7 = { is_fully_controlled_by = ROOT }
+			always = no 
 		}
 
 		cost = 25
@@ -402,76 +401,8 @@ HOL_prepare_the_inundation_lines = {
 		}
 
 		remove_effect = {
-			if = {
-				limit = {
-					7 = { is_fully_controlled_by = ROOT }
-				}
-				7 = {
-					add_province_modifier = {
-						static_modifiers = { flooded }
-						province = {
-							id = 9498
-							id = 391
-						}
-					}
-					damage_building = {
-					    type = infrastructure
-					    damage = 2
-					}
-					damage_building = {
-					    type = industrial_complex
-					    damage = 0.5
-					}
-					damage_building = {
-					    type = arms_factory
-					    damage = 0.5
-					}
-				}
-				35 = {
-					add_province_modifier = {
-						static_modifiers = { flooded }
-						province = {
-							id = 11456
-						}
-					}
-					damage_building = {
-					    type = infrastructure
-					    damage = 3
-					}
-					damage_building = {
-					    type = industrial_complex
-					    damage = 1.5
-					}
-					damage_building = {
-					    type = arms_factory
-					    damage = 1.5
-					}
-				}
-				36 = {
-					add_province_modifier = {
-						static_modifiers = { flooded }
-						province = {
-							id = 6241
-						}
-					}
-					damage_building = {
-					    type = infrastructure
-					    damage = 3
-					}
-					damage_building = {
-					    type = industrial_complex
-					    damage = 1.5
-					}
-					damage_building = {
-					    type = arms_factory
-					    damage = 1.5
-					}
-				}
-			}
-			set_global_flag = HOL_inundation_lines_flooded
-			set_global_flag = { flag = HOL_inundation_lines_flooded_unhappiness_timer value = 1 days = 180 }
+			
 		}
-
 		complete_effect = {
 		}
 
@@ -486,7 +417,7 @@ HOL_prepare_the_inundation_lines = {
 		}
 
 		available = {
-			7 = { is_fully_controlled_by = ROOT }
+			always = no
 		}
 
 		cost = 25

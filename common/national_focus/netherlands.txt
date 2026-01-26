@@ -718,6 +718,8 @@ focus_tree = {
 			695 = { add_core_of = HOL }
 			309 = { add_core_of = HOL }
 			set_capital = { state = 335 }
+
+			remove_ideas = HOL_no_defend_homeland
 			
 		}
 	}

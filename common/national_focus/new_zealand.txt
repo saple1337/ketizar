@@ -1132,15 +1132,6 @@ focus_tree = {
 
 		}
 
-		completion_reward = {
-			set_technology = { atomic_research = 1 } 
-			add_tech_bonus = {
-				name = NZL_project_seal
-				bonus = 1.5
-				uses = 2
-				category = nuclear
-			}
-		}
 	}
 
 	focus = {
