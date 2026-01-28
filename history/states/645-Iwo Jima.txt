@@ -18,8 +18,11 @@ state={
 			infrastructure = 2
 			air_base = 1
 			13025 = {
-				naval_base = 1
+				naval_base = 5
 
+			}
+			12970 = {
+				naval_base = 1
 			}
 
 		}

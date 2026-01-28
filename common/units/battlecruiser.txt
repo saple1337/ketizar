@@ -5,18 +5,17 @@ sub_units = {
 		priority = 8
 		active = yes
 		type = { capital_ship }
-		need_equipment = { ship_hull_heavy = 1 }
+		need_equipment = { ship_hull_cruiser_panzerschiff = 1 }
 		need_equipment_modules = {
-			any = {
-				ship_armor_bc_1 = 1
-				ship_armor_bc_2 = 1
-				ship_armor_bc_3 = 1
+			any = { 
+				ship_283_battery = 1
+				ship_305_battery = 1
 			}
 		}
+		max_organisation = 50
+		max_strength = 0.05
 
-		max_organisation = 40
-
-		supply_consumption = 0.12
+		supply_consumption = 0.48
 		
 		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire }
 		critical_part_damage_chance_mult = 1

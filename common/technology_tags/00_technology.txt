@@ -171,15 +171,12 @@ technology_folders = {
 		}
 	}
 	naval_folder = {
-		available = {
-			always = no
-		}
 		ledger = navy
 	}
 	mtgnavalfolder = {
-		available = {
-			always = yes
-		}
+		ledger = navy
+	}
+	mtgnavalsupportfolder = {
 		ledger = navy
 	}
 	industry_folder = {

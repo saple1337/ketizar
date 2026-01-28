@@ -319,7 +319,7 @@ original_tag = SAF
 
 	available = {
 		original_tag = SAF
-		has_completed_focus = SAF_secure_interests_in_africa
+		has_completed_focus = SAF_wartime_measures
 		545 = { is_fully_controlled_by = ENG }
 		542 = { is_fully_controlled_by = ENG }
 		}

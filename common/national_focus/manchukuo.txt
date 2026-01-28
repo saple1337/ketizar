@@ -2061,7 +2061,6 @@ add_building_construction = {
 		}
 
 		completion_reward = {
-		add_ideas = porsche
 	761 = { 
 		add_extra_state_shared_building_slots = 1
 		add_building_construction = {
@@ -2106,7 +2105,6 @@ add_building_construction = {
 		}
 
 		completion_reward = {
-		add_ideas = osaka_army_arsenal
 		761 = { 
 		add_extra_state_shared_building_slots = 1
 		add_building_construction = {
