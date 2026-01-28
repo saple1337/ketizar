@@ -3,6 +3,7 @@
 
 ##### OOB #####
 units = {
+}
 ### IJN ###
 	#Yokosuka (Tokyo)
 	fleet = {

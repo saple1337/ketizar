@@ -829,6 +829,68 @@ spriteTypes = {
 		name = "GFX_idea_generic_convoys"
 		texturefile = "gfx/interface/ideas/idea_generic_convoys.dds"
 	}
+
+	spriteType = {
+		name = "GFX_decision_cat_picture_JAP_state_shinto"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_JAP_state_shinto.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_form_greater_mongolia"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_form_greater_mongolia.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_JAP_workers_celebrating"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_JAP_workers_celebrating.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_form_united_hui_state"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_form_united_hui_state.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_JAP_kokutai"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_JAP_kokutai.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_JAP_trial"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_JAP_trial.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_JAP_greater_east_asia_co_prosperity_sphere"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_JAP_greater_east_asia_co_prosperity_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_imperial_influence_texticon"
+		texturefile = "gfx/texticons/imperial_influence_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_FOCUS_FILTER_IMPERIAL_INFLUENCE"
+		textureFile = "gfx/interface/focusview/filter/JAP_imperial_influence_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_FOCUS_FILTER_COMPLETED_BY_EVENT"
+		textureFile = "gfx/interface/focusview/filter/completed_by_event_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_FOCUS_FILTER_CONSOLIDATION"
+		textureFile = "gfx/interface/focusview/filter/consolidation_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_JAP_government_censors"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_JAP_government_censors.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_JAP_imperial_soldiers"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_JAP_imperial_soldiers.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_JAP_imperial_influence_diet"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_JAP_imperial_influence_diet.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_JAP_imperial_influence_hirohito"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_JAP_imperial_influence_hirohito.dds"
+	}
 	spriteType = {
 		name = "GFX_idea_JAP_red_dawn_over_asia"
 		texturefile = "gfx/interface/ideas/idea_JAP_advance_one_hundred_million_fireballs.dds"
