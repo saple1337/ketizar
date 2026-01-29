@@ -327,6 +327,7 @@ JAP_island_hopping_level_down = {
 			add_idea = JAP_island_hopping14
 		}
 	}
+}
 
 	JAP_interservice_rivalry_towards_army = {
 	
