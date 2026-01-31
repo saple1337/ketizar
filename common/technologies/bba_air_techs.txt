@@ -739,6 +739,7 @@ naval_bomber generic
 			cannon_defense_turret
 			cannon_defense_turret_2x
 			tank_buster_2
+			torpedo_mounting_2
 		}
 		
 		research_cost = 0.8
