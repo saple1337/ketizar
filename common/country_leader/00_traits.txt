@@ -3902,6 +3902,7 @@ tank_refurbishment_plant = { #NSB
 		land_doctrine_cost_factor = -0.10
 		army_core_defence_factor = 0.05
 		stability_factor = -0.05
+		army_attack_factor = 0.1
 
 	}
 
@@ -3913,6 +3914,7 @@ tank_refurbishment_plant = { #NSB
 		naval_doctrine_cost_factor = -0.15
 		new_base_strike_mastery_gain_factor = 0.15
 		war_support_factor = 0.05
+		industrial_capacity_dockyard = 0.30
 
 	}
 

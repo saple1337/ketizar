@@ -772,7 +772,7 @@ JAP_setup_faction_wide_aoe_effects_from = {
 	IF = {
 		limit = {
 			NOT = {
-				has_dlc = "No Compromise, No Surrender"
+				 
 			}
 			FROM = {
 				original_tag = JAP
@@ -849,7 +849,7 @@ JAP_setup_faction_wide_aoe_effects_root = {
 		limit = {
 			ROOT = {
 				NOT = {
-					has_dlc = "No Compromise, No Surrender"
+					 
 				}
 				original_tag = JAP
 				has_completed_focus = JAP_the_flying_geese
@@ -932,7 +932,7 @@ JAP_setup_faction_wide_aoe_effects_JAP = {
 	IF = {
 		limit = {
 			NOT = {
-				has_dlc = "No Compromise, No Surrender"
+				 
 			}
 			JAP = {
 				has_completed_focus = JAP_the_flying_geese
@@ -1012,7 +1012,7 @@ JAP_setup_faction_wide_aoe_effects_root_this = {
 	IF = {
 		limit = {
 			NOT = {
-				has_dlc = "No Compromise, No Surrender"
+				 
 			}
 			ROOT = {
 				has_completed_focus = JAP_the_flying_geese

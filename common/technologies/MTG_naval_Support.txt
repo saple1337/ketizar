@@ -2411,7 +2411,7 @@ technologies = {
 
 	sp_improved_support_ship = {
 		allow_branch = {
-			has_dlc = "No Compromise, No Surrender"
+			 
 		}
 
 		allow = {
@@ -2445,7 +2445,7 @@ technologies = {
 
 	sp_improved_repair_ship = {
 		allow_branch = {
-			has_dlc = "No Compromise, No Surrender"
+			 
 		}
 
 		allow = {

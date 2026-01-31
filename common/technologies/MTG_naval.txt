@@ -1364,7 +1364,7 @@ early_ship_hull_carrier = {
 		}
 		on_research_complete = {
 			if = {
-				limit = {has_dlc = "No Compromise, No Surrender"}
+				limit = { }
 				custom_effect_tooltip = {
 					localization_key = SP_UNLOCK_PROJECT
 					PROJECT = sp_naval_escort_carrier	

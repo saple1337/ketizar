@@ -182,7 +182,7 @@ JAP_the_peoples_state_decisions = {
 
 	allowed = {
 		original_tag = JAP
-		has_dlc = "No Compromise, No Surrender"
+		 
 	}
 
 	visible = {
@@ -275,7 +275,7 @@ JAP_anti_colonialism_category = {
 	priority = 45
 
 	visible = {
-		has_dlc = "No Compromise, No Surrender"
+		 
 		has_completed_focus = JAP_fund_resistance_groups_in_asia 
 	}
 
@@ -312,7 +312,7 @@ JAP_the_red_sun_over_asia_decisions = {
 
 	allowed = {
 		original_tag = JAP
-		has_dlc = "No Compromise, No Surrender"
+		 
 	}
 
 	visible = {

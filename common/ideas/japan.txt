@@ -369,28 +369,6 @@ ideas = {
 			navy_max_range_factor = 0.2
 		}
 	}
-		state_shintoism = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-			
-			
-			removal_cost = -1
-	
-
-			modifier = {
-
-				industry_air_damage_factor = -0.1
-				army_morale_factor = 0.1
-				production_factory_max_efficiency_factor = 0.1
-			}
-		}
 	
 	
 		JAP_public_awareness_of_war_ns = {
@@ -2016,28 +1994,6 @@ ideas = {
 			}
 		}
 
-		JAP_expel_the_barbarians = {
-			removal_cost = -1
-			
-			allowed = {
-				original_tag = JAP
-			}
-
-			allowed_civil_war = {
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
-			}
-			
-			picture = JAP_expel_the_barbarians
-			
-			modifier = {
-				army_claim_attack_factor = 0.15
-				army_claim_defence_factor = 0.1
-			}
-		}
-
 		JAP_utilizing_ainu_expertize = {
 
 			picture = JAP_ainu_expertise
@@ -2969,14 +2925,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_attack_factor = -0.05
-				army_org_regain = -0.05
-				army_morale_factor = -0.05
-				planning_speed = -0.1
-				max_planning_factor = -0.1
-				recon_factor = -0.05
-				mobilization_speed = -0.05
-				land_mastery_gain_factor = -0.1
+				army_attack_factor = 0.125
+				army_org_regain = 0.125
+				army_morale_factor = 0.125
+				planning_speed = 0.3
+				max_planning_factor = 0.2
+				recon_factor = 0.05
+				mobilization_speed = 0.05
 			}
 
 		}
@@ -3103,8 +3058,7 @@ ideas = {
 			picture = ARG_resource_extration_focus
 
 			modifier = {
-				resources_to_overlord_factor = 0.15 
-				political_power_factor = 0.05
+				political_power_factor = 0.15
 			}
 		}
 
@@ -4542,7 +4496,7 @@ ideas = {
 			picture = ARG_resource_extration_focus
 
 			modifier = {
-				resources_to_overlord_factor = 0.15 
+
 				political_power_factor = 0.05
 				master_ideology_drift = 0.05
 			}
@@ -4739,12 +4693,6 @@ ideas = {
 				repair_speed_factor = -0.05
 				navy_anti_air_attack_factor = -0.1
 			}
-
-			targeted_modifier = {
-				tag = JAP
-				spotting_chance_against = -0.1
-				navy_capital_ship_attack_factor_against = -0.1	
-			}
 		}
 
 		JAP_day_of_infamy_2 = {
@@ -4768,12 +4716,6 @@ ideas = {
 				repair_speed_factor = -0.1
 				navy_anti_air_attack_factor = -0.2
 			}
-
-			targeted_modifier = {
-				tag = JAP
-				spotting_chance_against = -0.25
-				navy_capital_ship_attack_factor_against = -0.25		
-			}
 		}
 
 		JAP_day_of_infamy_3 = {
@@ -4796,12 +4738,6 @@ ideas = {
 			modifier = {
 				repair_speed_factor = -0.15
 				navy_anti_air_attack_factor = -0.25
-			}
-
-			targeted_modifier = {
-				tag = JAP
-				spotting_chance_against = -0.4
-				navy_capital_ship_attack_factor_against = -0.4		
 			}
 		}
 
@@ -5196,12 +5132,6 @@ ideas = {
 			on_remove = {
 				clear_variable = JAP_kantai_kessen_target_1
 			}
-
-			targeted_modifier = {
-				tag = JAP.JAP_kantai_kessen_target_1
-				spotting_chance_against = 0.1
-				navy_capital_ship_attack_factor_against = 0.1				
-			}
 		}
 
 		JAP_kantai_kessen_2 = {
@@ -5219,12 +5149,6 @@ ideas = {
 			on_remove = {
 				clear_variable = JAP_kantai_kessen_target_2
 			}
-			
-			targeted_modifier = {
-				tag = JAP.JAP_kantai_kessen_target_2
-				spotting_chance_against = 0.1
-				navy_capital_ship_attack_factor_against = 0.1				
-			}
 		}
 
 		JAP_kantai_kessen_3 = {
@@ -5241,12 +5165,6 @@ ideas = {
 
 			on_remove = {
 				clear_variable = JAP_kantai_kessen_target_3
-			}
-			
-			targeted_modifier = {
-				tag = JAP.JAP_kantai_kessen_target_3
-				spotting_chance_against = 0.1
-				navy_capital_ship_attack_factor_against = 0.1				
 			}
 		}
 	}
@@ -6640,10 +6558,7 @@ ideas = {
 		sasebo_naval_arsenal = {
 			
 			allowed = {
-				OR = {
-					original_tag = JAP
-					PHI_SEA = yes
-				}
+				original_tag = JAP
 			}
 
 			available = {
@@ -6710,10 +6625,7 @@ ideas = {
 			picture = JAP_mitsubishi_airplanes
 						
 			allowed = {
-				OR = {
-					original_tag = JAP
-					PHI_SEA = yes
-				}
+				original_tag = JAP
 			}
 			
 			available = {
@@ -7248,10 +7160,7 @@ ideas = {
 			picture = tokyo_arsenal
 			
 			allowed = {
-				OR = {
-					original_tag = JAP
-					PHI_SEA = yes
-				}
+				original_tag = JAP
 			}
 
 			available = {
@@ -7281,10 +7190,7 @@ ideas = {
 		nissan = {
 						
 			allowed = {
-				OR = {
-					original_tag = JAP
-					PHI_SEA = yes
-				}
+				original_tag = JAP
 			}
 
 			available = {
@@ -7316,10 +7222,7 @@ ideas = {
 			picture = JAP_nagoya_arsenal
 			
 			allowed = {
-				OR = {
-					original_tag = JAP
-					PHI_SEA = yes
-				}
+				original_tag = JAP
 			}
 
 			available = {
@@ -7427,10 +7330,7 @@ ideas = {
 			picture = JAP_mitsubishi_tanks
 
 			allowed = {
-				OR = {
-					original_tag = JAP
-					PHI_SEA = yes
-				}
+				original_tag = JAP
 			}
 
 			available = {

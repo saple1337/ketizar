@@ -26,7 +26,6 @@
 		}
 		manpower = 500
 		hard_attack = -0.25
-		soft_attack = 0.10
 		breakthrough = -2
 		max_organisation = 0
 		default_morale = 0.1
@@ -73,9 +72,9 @@
 			attack = -0.8
 		}
 		deep_desert = {
-			attack = -0.1
-			defence = -0.15
-			movement = -0.1
+			attack = -0.75
+			movement = -0.75
+			defence = -0.75
 		}
 	}
 	
@@ -104,7 +103,6 @@
 		}
 		manpower = 500
 		hard_attack = -0.25
-		soft_attack = 0.10
 		max_organisation = 0
 		breakthrough = -2
 		default_morale = 0.1
@@ -151,9 +149,9 @@
 			attack = -0.8
 		}
 		deep_desert = {
-			attack = -0.1
-			defence = -0.15
-			movement = -0.1
+			attack = -0.75
+			movement = -0.75
+			defence = -0.75
 		}
 	}
 	
@@ -184,7 +182,6 @@
 		}
 		manpower = 500
 		hard_attack = -0.25
-		soft_attack = 0.10
 		breakthrough = -2
 		max_organisation = 0
 		default_morale = 0.1
@@ -230,9 +227,9 @@
 			attack = -0.8
 		}
 		deep_desert = {
-			attack = -0.1
-			defence = -0.15
-			movement = -0.1
+			attack = -0.75
+			movement = -0.75
+			defence = -0.75
 		}
 	}
 
@@ -312,9 +309,9 @@
 			attack = 0.1
 		}
 		deep_desert = {
-			attack = -0.15
-			defence = -0.175
-			movement = -0.15
+			attack = -0.75
+			movement = -0.75
+			defence = -0.75
 		}
 	}
 	
@@ -385,8 +382,9 @@
 			attack = -0.7
 		}
 		deep_desert = {
-			attack = -0.1
-			movement = -0.1
+			attack = -0.75
+			movement = -0.75
+			defence = -0.75
 		}
 	}
 }

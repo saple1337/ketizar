@@ -861,7 +861,7 @@ equipment_modules = {
 		}
 
 		add_stats = {
-			build_cost_ic = 7
+			build_cost_ic = 2
 			reliability = -0.15
 		}
 		

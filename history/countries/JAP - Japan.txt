@@ -213,8 +213,7 @@ set_variable = { JAP_showa_statism_industry_repair_factor = 0 }
 set_variable = { JAP_showa_statism_operative_slot = 0 } 
 
 # DAI TOA KYOUEIKEN
-set_variable = { JAP_east_asia_co_prosperity_sphere_autonomy_manpower_share_from_subjects = 0 } 
-set_variable = { JAP_east_asia_co_prosperity_sphere_resources_to_overlord_factor = 0 } 
+set_variable = { JAP_east_asia_co_prosperity_sphere_autonomy_manpower_share_from_subjects = 0 }  
 set_variable = { JAP_east_asia_co_prosperity_sphere_production_speed_rail_way_factor = 0 } 
 set_variable = { JAP_east_asia_co_prosperity_sphere_production_speed_supply_node_factor = 0 } 
 set_variable = { JAP_east_asia_co_prosperity_sphere_research_speed_factor = 0 } 
@@ -301,7 +300,6 @@ clamp_variable = {
 	max = JAP_economic_redistribtuion_max
 }
 add_ideas = {
-	state_shintoism
 	autarky_generic
 	limited_conscription
 	war_economy
@@ -312,16 +310,6 @@ add_ideas = {
 	JAP_island_hopping8
 	Jap_temp_chi
 	COOM_volunteers_majors
-	takuo_godo
-	JAP_chikuhei_nakajima
-	JAP_heisuke_yanagawa
-	minoru_genda
-	korechika_anami
-	hajime_sugiyama
-	soemu_toyoda
-	fushimi_hiroyasu
-	yasuji_okamura
-	hitoshi_imamura
 	tetsudou_shou
 	JAP_army_faction_tier_2_equal_navy
 	JAP_naval_faction_tier_2_equal_army
@@ -1059,7 +1047,6 @@ recruit_character = JAP_nishizo_tsukahara
 recruit_character = JAP_hajime_sugiyama
 recruit_character = JAP_chuichi_nagumo
 recruit_character = JAP_hino_kumazo
-recruit_character = JAP_mitsumasa_yonai
 recruit_character = JAP_takuo_godo
 recruit_character = JAP_chiune_sugihara
 recruit_character = JAP_kingoro_hashimoto

@@ -4,7 +4,7 @@ characters = {
 	JAP_emperor_hirohito = {
 		instance = {
 			allowed = {
-				has_dlc = "No Compromise, No Surrender"
+				
 			}
 
 			name = JAP_emperor_hirohito
@@ -1128,7 +1128,7 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { old_guard trait_reckless cavalry_officer }
+			traits = { old_guard trait_reckless cavalry_officer panzer_leader trait_engineer }
 			skill = 4
 			attack_skill = 3
 			defense_skill = 2
@@ -1224,12 +1224,12 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { trait_reckless infantry_officer JAP_samurai_lineage trickster }
-			skill = 2
-			attack_skill = 1
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 2
+			traits = { trait_reckless infantry_officer JAP_samurai_lineage infantry_leader trait_engineer trickster naval_invader }
+			skill = 6
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 7
+			logistics_skill = 5
 			legacy_id = 0
 		}
 
@@ -1844,11 +1844,11 @@ characters = {
 		
 		navy_leader = {
 			traits = { bold aviation_enthusiast superior_tactician spotter air_controller flight_deck_manager }
-			skill = 5
-			attack_skill = 5
-			defense_skill = 2
-			maneuvering_skill = 3
-			coordination_skill = 6
+			skill = 8
+			attack_skill = 8
+			defense_skill = 8
+			maneuvering_skill = 8
+			coordination_skill = 8
 			legacy_id = 0
 			visible = {
 				NOT = {
@@ -1930,7 +1930,7 @@ characters = {
 		}
 		
 		navy_leader = {
-			traits = { navy_career_officer naval_lineage }
+			traits = { navy_career_officer naval_lineage superior_tactician}
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -2167,10 +2167,10 @@ characters = {
 		}
 		
 		navy_leader = {
-			traits = { old_guard_navy bold ironside }
-			skill = 3
+			traits = { old_guard_navy bold ironside superior_tactician }
+			skill = 5
 			attack_skill = 5
-			defense_skill = 1
+			defense_skill = 3
 			maneuvering_skill = 2
 			coordination_skill = 2
 			legacy_id = 0
@@ -2952,7 +2952,7 @@ characters = {
 		}
 		instance = {
 			allowed = {
-				has_dlc = "No Compromise, No Surrender"
+				 
 			}
 
 			name = JAP_sanzo_nosaka
@@ -3028,7 +3028,7 @@ characters = {
 		}
 		instance = {
 			allowed = {
-				has_dlc = "No Compromise, No Surrender"
+				 
 			}
 			name = JAP_kijuro_shidehara
 
@@ -3123,7 +3123,7 @@ characters = {
 		}
 		instance = {
 			allowed = {
-				has_dlc = "No Compromise, No Surrender"
+				 
 			}
 			name = JAP_kingoro_hashimoto
 
@@ -3187,142 +3187,7 @@ characters = {
 
 	}
 
-	# Mitsumasa Yonai
-	JAP_mitsumasa_yonai = {
-
-		instance = {
-			
-			name = JAP_mitsumasa_yonai
-
-			portraits = {
-				army = {
-					large = GFX_portrait_JAP_mitsumasa_yonai
-					small = GFX_portrait_JAP_mitsumasa_yonai_military_small
-				}
-				civilian = {
-					small = GFX_portrait_JAP_mitsumasa_yonai_civilian_small
-					# GFX_portrait_JAP_mitsumasa_yonai_civilian_imprisoned
-				}
-			}
-
-			navy_leader = {
-				traits = { gentlemanly naval_lineage }
-				skill = 2
-				attack_skill = 2
-				defense_skill = 1
-				maneuvering_skill = 2
-				coordination_skill = 2
-				legacy_id = -1 
-				visible = {
-					has_completed_focus = JAP_end_the_interservice_rivalry
-					NOT = {
-						has_global_flag = JAP_yonai_replaced_by_kenzo
-					}
-				}
-			}
-
-			advisor = {
-				slot = political_advisor
-				idea_token = JAP_mitsumasa_yonai
-				allowed = {
-					original_tag = JAP
-				}
-				visible = {
-					NOT = {
-						has_completed_focus = JAP_okadas_military_purge_speech
-						has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					}
-				}
-				available = {
-					has_completed_focus = JAP_konoes_first_cabinet
-				}
-				traits = {
-					silent_workhorse 
-				}
-				ai_will_do = {
-					base = 3
-				}
-			}
-
-		}
-		instance = {
-			allowed = {
-				has_dlc = "No Compromise, No Surrender"
-			}
-			name = JAP_mitsumasa_yonai
-
-			portraits = {
-				army = {
-					large = GFX_portrait_JAP_mitsumasa_yonai
-					small = GFX_portrait_JAP_mitsumasa_yonai_military_small
-				}
-				civilian = {
-					small = GFX_portrait_JAP_mitsumasa_yonai_civilian_small
-				}
-			}
-
-			navy_leader = {
-				traits = { gentlemanly naval_lineage }
-				skill = 2
-				attack_skill = 2
-				defense_skill = 1
-				maneuvering_skill = 2
-				coordination_skill = 2
-				legacy_id = -1 
-				visible = {
-					OR = {
-						has_completed_focus = JAP_sway_the_navy_moderates
-						has_completed_focus = JAP_end_the_interservice_rivalry
-					}
-				}
-			}
-
-			advisor = {
-				slot = political_advisor
-				idea_token = JAP_mitsumasa_yonai
-				allowed = {
-					original_tag = JAP
-				}
-				visible = {
-					NOT = {
-						#has_completed_focus = JAP_sea_purge_the_kodoha_faction
-						has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					}
-				}
-				available = {
-					NOT = {
-						has_country_leader = {
-							ruling_only = yes
-							character = JAP_mitsumasa_yonai
-						}	
-					}
-					OR = {
-						has_completed_focus = JAP_sway_the_navy_moderates
-						has_completed_focus = JAP_konoes_first_cabinet
-					}
-					NOT = {
-						has_country_flag = JAP_IJA_arrested_advisors_flag
-					}
-				}
-				traits = {
-					silent_workhorse 
-				}
-				ai_will_do = {
-					base = 1
-				}
-			}
-
-			# Potential Democratic Country Leader
-			#country_leader = {
-			#	ideology = conservatism
-			#	expire = "1989.1.1.1"
-			#	id = -1
-			#}
-
-		}
-		
-
-	}
+	
 
 	# Hiroshi Ōshima
 	JAP_hiroshi_oshima = {
@@ -3361,7 +3226,7 @@ characters = {
 		}
 		instance = {
 			allowed = {
-				has_dlc = "No Compromise, No Surrender"
+				 
 			}
 			name = JAP_hiroshi_oshima
 
@@ -4986,7 +4851,6 @@ characters = {
 			}
 
 			available = {
-				has_completed_focus = JAP_kikues_new_model
 			}
 
 			traits = {

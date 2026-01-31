@@ -164,7 +164,7 @@ foreign_politics = {
 		}
 	}
 
-JAP_annex_siam = {
+		JAP_annex_siam = {
 
 			targets = { SIA }
 
@@ -303,7 +303,274 @@ JAP_annex_siam = {
              }
          }
 
-}
+		 army_faction_stamp_of_disapproval = { 
+			icon = generic_army 
+			cost = 75
+			visible = {
+				original_tag = JAP
+			}
+	 		available = {
+	 			has_political_power > 74
+	 			JAP_army_faction_is_not_subdued = yes
+	 			IF = {
+	 				limit = {
+	 					NOT = {	has_country_flag = JAP_interfered_in_imperial_influence_flag }
+	 				}
+	 				NOT = {	has_country_flag = JAP_interfered_in_imperial_influence_flag }
+	 			}
+	 			ELSE_IF = {
+	 				limit = {
+	 					has_country_flag = JAP_interfered_in_imperial_influence_flag
+	 				}
+	 				custom_trigger_tooltip = {
+	 					tooltip = JAP_imperial_influence_interference_reset_days_tt
+	 					NOT = {	has_country_flag = JAP_interfered_in_imperial_influence_flag }
+	 				}
+	 			}
+
+	 		}
+	 		complete_effect = {
+
+	 			JAP_big_army_faction_loss = yes
+	 			set_country_flag = {
+	 				flag = JAP_interfered_in_imperial_influence_flag
+	 				value = 1
+	 				days = 180
+	 			}
+	 		}
+ 		}
+ 		naval_faction_stamp_of_approval = { 
+			icon = generic_naval
+			visible = {
+				original_tag = JAP
+			}
+			cost = 75
+	 		available = {
+	 			has_political_power > 74
+	 			JAP_naval_faction_is_not_dominant = yes
+	 			IF = {
+	 				limit = {
+	 					NOT = {	has_country_flag = JAP_interfered_in_imperial_influence_flag }
+	 				}
+	 				NOT = {	has_country_flag = JAP_interfered_in_imperial_influence_flag }
+	 			}
+	 			ELSE_IF = {
+	 				limit = {
+	 					has_country_flag = JAP_interfered_in_imperial_influence_flag
+	 				}
+	 				custom_trigger_tooltip = {
+	 					tooltip = JAP_imperial_influence_interference_reset_days_tt
+	 					NOT = {	has_country_flag = JAP_interfered_in_imperial_influence_flag }
+	 				}
+	 			}
+	 			NOT = {
+	 				has_country_flag = JAP_blocked_from_favoring_the_navy_flag 
+	 			}
+	 		}
+	 		complete_effect = {
+
+
+	 			JAP_big_naval_faction_gain = yes
+	 			set_country_flag = {
+	 				flag = JAP_interfered_in_imperial_influence_flag
+	 				value = 1
+	 				days = 180
+	 			}
+	 		}
+ 		}
+ 		naval_faction_stamp_of_disapproval = { 
+			icon = generic_naval
+			visible = {
+				original_tag = JAP
+			}
+			cost = 75
+	 		available = {
+	 			has_political_power > 74
+	 			JAP_naval_faction_is_not_subdued = yes
+	 			IF = {
+	 				limit = {
+	 					NOT = {	has_country_flag = JAP_interfered_in_imperial_influence_flag }
+	 				}
+	 				NOT = {	has_country_flag = JAP_interfered_in_imperial_influence_flag }
+	 			}
+	 			ELSE_IF = {
+	 				limit = {
+	 					has_country_flag = JAP_interfered_in_imperial_influence_flag
+	 				}
+	 				custom_trigger_tooltip = {
+	 					tooltip = JAP_imperial_influence_interference_reset_days_tt
+	 					NOT = {	has_country_flag = JAP_interfered_in_imperial_influence_flag }
+	 				}
+	 			}
+
+	 		}
+	 		complete_effect = {
+
+
+	 			JAP_big_naval_faction_loss = yes
+	 			set_country_flag = {
+	 				flag = JAP_interfered_in_imperial_influence_flag
+	 				value = 1
+	 				days = 180
+	 			}
+	 		}
+ 		}
+ 		zaibatsu_faction_stamp_of_approval = { 
+			icon = generic_factory
+			cost = 75 
+			visible = {
+				original_tag = JAP
+			}
+	 		available = {
+	 			has_political_power > 74
+	 			NOT = {
+	 				has_idea = JAP_zaibatsu_faction_tier_4
+	 			}
+	 			IF = {
+	 				limit = {
+	 					NOT = {	has_country_flag = JAP_interfered_in_imperial_influence_flag }
+	 				}
+	 				NOT = {	has_country_flag = JAP_interfered_in_imperial_influence_flag }
+	 			}
+	 			ELSE_IF = {
+	 				limit = {
+	 					has_country_flag = JAP_interfered_in_imperial_influence_flag
+	 				}
+	 				custom_trigger_tooltip = {
+	 					tooltip = JAP_imperial_influence_interference_reset_days_tt
+	 					NOT = {	has_country_flag = JAP_interfered_in_imperial_influence_flag }
+	 				}
+	 			}
+	 			NOT = {
+	 				has_country_flag = JAP_blocked_from_favoring_the_zaibatsus_flag 
+	 			}
+	 		}
+	 		complete_effect = {
+
+
+	 			JAP_big_zaibatsu_faction_gain = yes
+	 			set_country_flag = {
+	 				flag = JAP_interfered_in_imperial_influence_flag
+	 				value = 1
+	 				days = 180
+	 			}
+	 		}
+ 		}
+ 		zaibatsu_faction_stamp_of_disapproval = { 
+			icon = generic_factory
+			visible = {
+				original_tag = JAP
+			}
+			cost = 75
+	 		available = {
+	 			has_political_power > 74
+	 			NOT = {
+	 				has_idea = JAP_zaibatsu_faction_tier_1
+	 			}
+	 			IF = {
+	 				limit = {
+	 					NOT = {	has_country_flag = JAP_interfered_in_imperial_influence_flag }
+	 				}
+	 				NOT = {	has_country_flag = JAP_interfered_in_imperial_influence_flag }
+	 			}
+	 			ELSE_IF = {
+	 				limit = {
+	 					has_country_flag = JAP_interfered_in_imperial_influence_flag
+	 				}
+	 				custom_trigger_tooltip = {
+	 					tooltip = JAP_imperial_influence_interference_reset_days_tt
+	 					NOT = {	has_country_flag = JAP_interfered_in_imperial_influence_flag }
+	 				}
+	 			}
+
+	 		}
+	 		complete_effect = {
+	 			JAP_big_zaibatsu_faction_loss = yes
+	 			set_country_flag = {
+	 				flag = JAP_interfered_in_imperial_influence_flag
+	 				value = 1
+	 				days = 180
+	 			}
+	 		}
+ 		}
+ 		government_faction_stamp_of_approval = {
+			icon = generic_political_address 
+			visible = {
+				original_tag = JAP
+			}
+			cost = 75
+	 		available = {
+	 			has_political_power > 74
+	 			NOT = {
+	 				has_idea = JAP_government_faction_tier_4
+	 			}
+	 			IF = {
+	 				limit = {
+	 					NOT = {	has_country_flag = JAP_interfered_in_imperial_influence_flag }
+	 				}
+	 				NOT = {	has_country_flag = JAP_interfered_in_imperial_influence_flag }
+	 			}
+	 			ELSE_IF = {
+	 				limit = {
+	 					has_country_flag = JAP_interfered_in_imperial_influence_flag
+	 				}
+	 				custom_trigger_tooltip = {
+	 					tooltip = JAP_imperial_influence_interference_reset_days_tt
+	 					NOT = {	has_country_flag = JAP_interfered_in_imperial_influence_flag }
+	 				}
+	 			}
+	 			NOT = {
+	 				has_country_flag = JAP_blocked_from_favoring_the_government_flag 
+	 			}
+	 		}
+	 		complete_effect = {
+	 			JAP_big_government_faction_gain = yes
+	 			set_country_flag = {
+	 				flag = JAP_interfered_in_imperial_influence_flag
+	 				value = 1
+	 				days = 180
+	 			}
+	 		}
+ 		}
+ 		government_faction_stamp_of_disapproval = { 
+			icon = generic_political_address 
+			cost = 75
+			visible = {
+				original_tag = JAP
+			}
+	 		available = {
+	 			has_political_power > 74
+	 			NOT = {
+	 				has_idea = JAP_government_faction_tier_1
+	 			}
+	 			IF = {
+	 				limit = {
+	 					NOT = {	has_country_flag = JAP_interfered_in_imperial_influence_flag }
+	 				}
+	 				NOT = {	has_country_flag = JAP_interfered_in_imperial_influence_flag }
+	 			}
+	 			ELSE_IF = {
+	 				limit = {
+	 					has_country_flag = JAP_interfered_in_imperial_influence_flag
+	 				}
+	 				custom_trigger_tooltip = {
+	 					tooltip = JAP_imperial_influence_interference_reset_days_tt
+	 					NOT = {	has_country_flag = JAP_interfered_in_imperial_influence_flag }
+	 				}
+	 			}
+
+	 		}
+	 		complete_effect = {
+
+	 			JAP_big_government_faction_loss = yes
+	 			set_country_flag = {
+	 				flag = JAP_interfered_in_imperial_influence_flag
+	 				value = 1
+	 				days = 180
+	 			}
+	 		}
+ 		}
+ 	}
 debug_decisions = {
 JAP_Danne_debugging = {
 		priority = 999
@@ -1086,220 +1353,7 @@ JAP_Danne_debugging = {
 foreign_politics = {
 
 	# Offer Surrender Terms to China
-	JAP_sue_for_peace_CHI = {
-
-		allowed = {
-			original_tag = JAP
-		}
-
-		priority = 10
-
-		available = {
-			FROM = { 
-				surrender_progress < 0.2 # if they are losing, lets not allow it
-			}
-			custom_trigger_tooltip = {
-				tooltip = JAP_sue_for_peace_TT
-				# South Korea
-				525 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				1029 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				1031 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				1030 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				# North Korea
-				527 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				1028 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				NOT = {
-					any_of = {
-						array = CHI.core_states
-						var:v = {
-							NOT = {
-								state = 524
-							}
-							controller = {
-								OR = {
-									tag = JAP
-									AND = {
-										is_subject_of = JAP
-										OR = {
-											tag = MEN
-											tag = MAN
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-				MAN = {
-					OR = {
-						exists = no
-						NOT = {
-							is_subject_of = JAP
-						}
-						has_capitulated = yes
-					}
-				}
-			}
-		}
-
-		target_array = enemies
-
-		target_root_trigger = {
-			NOT = { has_country_flag = JAP_offered_china_white_peace_flag }
-			is_subject = no
-			any_enemy_country = {
-				is_literally_china = yes
-			}
-		}
-		
-		target_trigger = {
-			#Target is FROM
-			FROM = {
-				tag = event_target:WTT_current_china_leader
-				has_war_with = ROOT
-			}
-		}
-
-		visible = {
-			FROM = { 
-				exists = yes 
-				is_subject = no
-			}
-		}
-
-		cost = 0
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			base = 500
-		}
-
-		complete_effect = {
-			set_country_flag = JAP_offered_china_white_peace_flag
-			event_target:WTT_current_china_leader = {
-				country_event = { 
-					id = wtt_japan.126 
-					days = 1 
-				}
-			}
-		}
-	}
-
-	JAP_sue_for_peace_MAN = {
-
-		allowed = {
-			original_tag = JAP
-		}
-
-		priority = 15
-
-		available = {
-			FROM = { 
-				surrender_progress < 0.2 # if they are losing, lets not allow it
-			}
-			custom_trigger_tooltip = {
-				tooltip = JAP_sue_for_peace_TT
-				# South Korea
-				525 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				1029 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				1031 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				1030 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				# North Korea
-				527 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				1028 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				NOT = {
-					any_of = {
-						array = CHI.core_states
-						var:v = {
-							NOT = {
-								state = 524
-							}
-							controller = {
-								OR = {
-									tag = JAP
-									AND = {
-										is_subject_of = JAP
-										tag = MEN
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-
-
-		target_trigger = {
-			#Target is FROM
-			FROM = {
-				tag = MAN
-				has_war_with = ROOT
-			}
-		}
-
-		visible = {
-			FROM = { 
-				exists = yes 
-				is_subject = no
-			}
-			is_subject = no
-			has_war_with = FROM
-		}
-
-		cost = 0
-
-		fire_only_once = yes
-
-		ai_will_do = {
-		
-			base = 500
-
-			modifier = {
-				factor = 0
-				casualties_inflicted_by = {
-					opponent = MAN
-					thousands < 10
-				}
-			}
-
-			modifier = {
-				factor = 0
-				has_country_flag = JAP_dont_surrender_instantly_lock 
-			}
-		}
-
-		complete_effect = {
-			MAN = {
-				country_event = { id = wtt_japan.129 days = 1 }
-			}
-		}
-	}
+	
 
 	# Sueing for peace from being nuked, only available for a non-hist Japan 
 	JAP_sue_for_peace_nuke = {
@@ -1323,14 +1377,6 @@ foreign_politics = {
 		visible = {
 			has_war = yes
 			has_global_flag = JAP_nuke_1
-			JAP = {
-				OR = {
-					has_completed_focus = JAP_the_crysanthemum_throne
-					NOT = {
-						has_completed_focus = JAP_sea_purge_the_kodoha_faction
-					}
-				}
-			}
 		}
 
 		cost = 0
@@ -4286,7 +4332,7 @@ prospect_for_resources = {
 		remove_effect = {
 			566 = {
 				add_resource = {
-					type = coal
+					type = tungsten
 					amount = 20
 				}
 				set_state_flag = irkutsk_coal_developed
@@ -8977,10 +9023,6 @@ JAP_the_propaganda_department_decisions = {
 					}	
 					add_ideas = JAP_supported_pro_japanese_sentiments_idea
 				}
-				add_opinion_modifier = {
-					target = FROM
-					modifier = JAP_growing_pro_japanese_sentiment_opm
-				}
 			}
 		}
 
@@ -11981,7 +12023,7 @@ economy_decisions = {
 	
 		allowed = {
 			original_tag = JAP
-			has_dlc = "No Compromise, No Surrender"
+			 
 		}
 		
 		visible = {
@@ -12053,7 +12095,7 @@ economy_decisions = {
 	
 		allowed = {
 			original_tag = JAP
-			has_dlc = "No Compromise, No Surrender"
+			 
 		}
 		
 		visible = {
@@ -12111,7 +12153,7 @@ economy_decisions = {
 	
 		allowed = {
 			original_tag = JAP
-			has_dlc = "No Compromise, No Surrender"
+			 
 		}
 		
 		visible = {
@@ -13594,7 +13636,6 @@ JAP_the_peoples_state_decisions = {
 			custom_effect_tooltip = JAP_tokko_arresting_anti_army_disidents_mission_tt
 			show_ideas_tooltip = JAP_kozo_sasaki
 			show_ideas_tooltip = JAP_komakichi_matsuoka
-			show_ideas_tooltip = JAP_mitsumasa_yonai
 			show_ideas_tooltip = JAP_noboru_yamaguchi
 
 			hidden_effect = {
@@ -13610,13 +13651,6 @@ JAP_the_peoples_state_decisions = {
 					set_portraits = {
 						civilian = {
 							small = GFX_portrait_JAP_komakichi_matsuoka_imprisoned
-						}
-					}
-				}
-				JAP_mitsumasa_yonai = {
-					set_portraits = {
-						civilian = {
-							small = GFX_portrait_JAP_mitsumasa_yonai_civilian_imprisoned
 						}
 					}
 				}

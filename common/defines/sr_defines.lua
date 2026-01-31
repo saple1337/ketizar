@@ -248,7 +248,7 @@ NDefines.NMilitary.PLANNING_MAX = 0.15                          	-- can get more
 NDefines.NMilitary.REINFORCE_CHANCE = 0.08 -- To make larger divisions more attractive
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 8 -- Number of support companies allowed per division
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.5 -- (4.5)
-NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 5
+NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 3.5
 
 NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.0013 -- (0.005)
 NDefines.NMilitary.LAND_COMBAT_FORT_DAMAGE_CHANCE = 15		-- (5) chance to get a hit to damage on forts. (out of 100)
@@ -554,7 +554,7 @@ NDefines.NNavy.UNIT_TRANSFER_SPOTTING_SPEED_MULT = 1.0
 NDefines.NNavy.NAVAL_INVASION_SPOTTING_SPEED_MULT = 10.0	-- spotting speed mult against naval invasion armies
 NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_UNIT_TRANSFER_SPOTTING = 2		-- same as BASE_SPOTTING_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval transfer convoys
 NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_NAVAL_INVASION_SPOTTING = 2	-- same as BASE_SPOTTING_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval invasion convoys
-NDefines.NNavy.NAVAL_INVASION_PREPARE_HOURS = 72								-- base days needed to prepare a naval invasion
+NDefines.NNavy.NAVAL_INVASION_PREPARE_HOURS = 48								-- base days needed to prepare a naval invasion
 NDefines.NNavy.NAVAL_INVASION_PLAN_CAP = 100									-- base cap of naval invasions can be planned at the same time
 NDefines.NNavy.BASE_NAVAL_INVASION_DIVISION_CAP = 100							-- base cap of divisions that can be assigned in a naval invasion
 NDefines.NNavy.DOMINANCE_CONTROLLED_THRESHOLD_RATIO = 0.55 -- Percentage of needed dominance control over enemies for you and friendlies to control a strategic sea region
