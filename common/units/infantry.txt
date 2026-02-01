@@ -647,7 +647,6 @@ marine_commando  = {
 		weight = 0.5
 		supply_consumption = 0.09
 		breakthrough = 0.20
-		h
 	
 		need = {
 			infantry_equipment = 275
