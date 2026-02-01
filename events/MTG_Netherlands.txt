@@ -55,7 +55,7 @@ country_event = {
 	# Let's not get involved
 	option = {
 		name = mtg_netherlands.4.b
-		HOL = { country_event = { id = mtg_netherlands.6 days = 1 random_days = 3 } }
+		# HOL = { country_event = { id = mtg_netherlands.6 days = 1 random_days = 3 } }
 	}
 }
 

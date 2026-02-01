@@ -130,42 +130,42 @@ defined_text = { # Country
 	}
 }
 
-defined_text = { # Country
-	name = GetPlaneGameRuleText
-	text = {
-		trigger = {
-			has_game_rule = {
-				rule = horst_allow_plane3
-				option = HORST_ENABLE_PLANE3
-			}
-		}
-		localization_key = PLANE_3_FREE
-	}
-	text = {
-		trigger = {
-			has_game_rule = {
-				rule = horst_allow_plane3
-				option = HORST_DISABLE_PLANE3
-			}
-		}
-		localization_key = PLANE_3_DISABLED
-	}
-	text = {
-		trigger = {
-			has_game_rule = {
-				rule = horst_allow_plane3
-				option = HORST_DISABLE_FIGHTER3
-			}
-		}
-		localization_key = FIGHTER_3_DISABLED
-	}
-	text = {
-		trigger = {
-			has_game_rule = {
-				rule = horst_allow_plane3
-				option = SR_1941_PLANE3
-				}
-		}
-		localization_key = PLANE_3_LOCK_1941
-	}
-}
+# defined_text = { # Country
+# 	name = GetPlaneGameRuleText
+# 	text = {
+# 		trigger = {
+# 			has_game_rule = {
+# 				rule = horst_allow_plane3
+# 				option = HORST_ENABLE_PLANE3
+# 			}
+# 		}
+# 		localization_key = PLANE_3_FREE
+# 	}
+# 	text = {
+# 		trigger = {
+# 			has_game_rule = {
+# 				rule = horst_allow_plane3
+# 				option = HORST_DISABLE_PLANE3
+# 			}
+# 		}
+# 		localization_key = PLANE_3_DISABLED
+# 	}
+# 	text = {
+# 		trigger = {
+# 			has_game_rule = {
+# 				rule = horst_allow_plane3
+# 				option = HORST_DISABLE_FIGHTER3
+# 			}
+# 		}
+# 		localization_key = FIGHTER_3_DISABLED
+# 	}
+# 	text = {
+# 		trigger = {
+# 			has_game_rule = {
+# 				rule = horst_allow_plane3
+# 				option = SR_1941_PLANE3
+# 				}
+# 		}
+# 		localization_key = PLANE_3_LOCK_1941
+# 	}
+# }
