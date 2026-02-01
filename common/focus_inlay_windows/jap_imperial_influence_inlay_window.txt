@@ -42,16 +42,16 @@ jap_imperial_influence_inlay_window = {
                     character = JAP_empress_nagako
                 }
             }
-            GFX_imperial_influence_ruler_kanson_arahata = {
-                has_government = communism
-                has_completed_focus = JAP_the_labor_farmer_faction_ascendant
-            }
-            GFX_imperial_influence_ruler_kyuichi_tokuda = {
-                has_government = communism
-                NOT = {
-                	has_completed_focus = JAP_the_labor_farmer_faction_ascendant
-                }
-            }
+            # GFX_imperial_influence_ruler_kanson_arahata = {
+            #     has_government = communism
+            #     has_completed_focus = JAP_the_labor_farmer_faction_ascendant
+            # }
+            # GFX_imperial_influence_ruler_kyuichi_tokuda = {
+            #     has_government = communism
+            #     NOT = {
+            #     	has_completed_focus = JAP_the_labor_farmer_faction_ascendant
+            #     }
+            # }
             GFX_imperial_influence_ruler_hirohito = yes #Default
         }
 

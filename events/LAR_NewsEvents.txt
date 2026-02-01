@@ -26,10 +26,10 @@ news_event = {
 
 	immediate = {
 		hidden_effect = {
-				delete_unit_template_and_units = {
-					division_template = "Brigado Legionario"
-					disband = yes
-				}
+				# delete_unit_template_and_units = {
+				# 	division_template = "Brigado Legionario"
+				# 	disband = yes
+				# }
 				remove_ideas = SPA_death_before_surrender
 				add_ideas = SPA_recovering_from_civil_war }
 			}

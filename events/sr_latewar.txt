@@ -69,9 +69,9 @@ country_event = {
 				MEX = {
 					add_ideas = sr1942_latewar
 				}
-				BRA = {
-					add_ideas = sr1942_latewar
-				}
+				# BRA = {
+				# 	add_ideas = sr1942_latewar
+				# }
 				CRO = {
 					add_ideas = sr1942_latewar
 				}						
@@ -188,12 +188,12 @@ country_event = {
 						add_idea = sr1943_latewar
 					}
 				}
-				BRA = {
-					swap_ideas = { 
-						remove_idea = sr1942_latewar
-						add_idea = sr1943_latewar
-					}
-				}
+				# BRA = {
+				# 	swap_ideas = { 
+				# 		remove_idea = sr1942_latewar
+				# 		add_idea = sr1943_latewar
+				# 	}
+				# }
 				MEX = {
 					swap_ideas = { 
 						remove_idea = sr1942_latewar
@@ -322,12 +322,12 @@ country_event = {
 						add_idea = sr1944_latewar
 					}
 				}
-				BRA = {
-					swap_ideas = { 
-						remove_idea = sr1943_latewar
-						add_idea = sr1944_latewar
-					}
-				}
+				# BRA = {
+				# 	swap_ideas = { 
+				# 		remove_idea = sr1943_latewar
+				# 		add_idea = sr1944_latewar
+				# 	}
+				# }
 				MEX = {
 					swap_ideas = { 
 						remove_idea = sr1943_latewar
@@ -453,12 +453,12 @@ country_event = {
 						add_idea = sr1945_latewar
 					}
 				}
-				BRA = {
-					swap_ideas = { 
-						remove_idea = sr1944_latewar
-						add_idea = sr1945_latewar
-					}
-				}
+				# BRA = {
+				# 	swap_ideas = { 
+				# 		remove_idea = sr1944_latewar
+				# 		add_idea = sr1945_latewar
+				# 	}
+				# }
 				MEX = {
 					swap_ideas = { 
 						remove_idea = sr1944_latewar

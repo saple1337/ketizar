@@ -1699,7 +1699,8 @@
 		available = {
 		}
 		# prerequisite = {focus = FRA_wagie_cuck}
-		prerequisite = {focus = Full_recovery focus = FRA_education_reform focus = Snowman_focus focus = FRA_wagie_cuck}
+		prerequisite = { focus = Full_recovery}
+		prerequisite = { focus = FRA_education_reform focus = Snowman_focus focus = FRA_wagie_cuck}
 		# prerequisite = {focus = FRA_Rights_to_strike}
 		# prerequisite = {focus = The_north}
 		# prerequisite = {focus = Fra_combat_the_unemployment}

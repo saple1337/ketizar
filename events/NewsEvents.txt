@@ -5129,3 +5129,18 @@ news_event = {
 		}
 	}
 }
+news_event = {
+	id = news.815
+	title = "Liberation of Kiev"
+	desc = "Soviet troops expelled German forces after a prolonged occupation. This event marks a significant victory in the broader context of World War II"
+	picture = GFX_report_event_NOR_Nasjonal_samling_rally
+
+	is_triggered_only = yes
+	major = yes
+
+	fire_only_once = no
+
+	option = {
+		name = "Okay..."
+	}
+}

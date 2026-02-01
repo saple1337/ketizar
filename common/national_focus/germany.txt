@@ -2342,6 +2342,7 @@ focus_tree = {
 							has_completed_focus = ROM_codreanus_iron_guard
 						}
 					}
+				}
 						every_country = {
 							limit = {
 								controls_state = 43
@@ -2354,9 +2355,7 @@ focus_tree = {
 						46 = {
 							add_manpower = 1523069
 						}
-				}
-			}
-			
+				}			
 			GER = { 
 				transfer_state = 9
 				transfer_state = 75
@@ -2543,7 +2542,7 @@ focus_tree = {
 			762 = { add_claim_by = GER }
 			GER = { 	add_state_core = 188 transfer_state = 188 }
 			add_named_threat = { threat = 3 name = GER_demand_memel_threat }
-			LAT = {	country_event = { id = baltic.4 }	}	
+			# LAT = {	country_event = { id = baltic.4 }	}	
 			hidden_effect = {
 				if = { limit = { GER = { is_ai = no } } POL = { load_oob = "POL_spawn" } }
 				if = { limit = { GER = { is_ai = no } } POL = { load_oob = "POL_1939_naval_mtg" } }
@@ -2651,7 +2650,7 @@ focus_tree = {
 
 				ENG = { add_war_support = 0.1 }
 				FRA = { add_war_support = 0.1 }
-				SAF = {	country_event = tfv_south_africa.133 }
+				# SAF = {	country_event = tfv_south_africa.133 }
 				ENG = { country_event = britain.24
 					125 = {
 					add_extra_state_shared_building_slots = 2

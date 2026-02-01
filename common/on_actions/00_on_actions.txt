@@ -3,10 +3,10 @@ on_actions = {
 
 		effect = {
 			set_global_flag = first_nuke_dropped
-			if = {
-				limit = { NOT = { has_global_flag = first_nuke_dropped } }
-				country_event = { id = generic.8 }
-			}
+			# if = {
+			# 	limit = { NOT = { has_global_flag = first_nuke_dropped } }
+			# 	country_event = { id = generic.8 }
+			# }
 			if = {
 				limit = { has_idea = race_for_the_bomb_outclassed }
 				remove_ideas = race_for_the_bomb_outclassed
@@ -72,17 +72,17 @@ on_actions = {
 				}
 				set_global_flag = JAP_nuke_1
 			}
-			if = {
-				limit = {
-					FROM = {
-						state = 953
-					}
-					NOT = {
-						has_global_flag = land_of_fire_flag
-					}
-				}
-				set_global_flag = land_of_fire_flag
-			}
+			# if = {
+			# 	limit = {
+			# 		FROM = {
+			# 			state = 953
+			# 		}
+			# 		NOT = {
+			# 			has_global_flag = land_of_fire_flag
+			# 		}
+			# 	}
+			# 	set_global_flag = land_of_fire_flag
+			# }
 
 			news_event = { id = nuke_dropped.2 days = 1}
 			news_event = { id = nuke_dropped.3 days = 1}
@@ -97,9 +97,9 @@ on_actions = {
 			news_event = { id = nuke_dropped.12 days = 1}
 			news_event = { id = nuke_dropped.13 days = 1}
 		}
-		random_events = {
-			100 = nuke_dropped.0
-		}
+		# random_events = {
+		# 	100 = nuke_dropped.0
+		# }
 	}
 	on_new_term_election = {
 		random_events = {
@@ -353,14 +353,14 @@ on_actions = {
 		
 		if = {
 			limit = { FROM = { original_tag = POL } }
-			FRA = { activate_mission = FRA_battle_start }
+			# FRA = { activate_mission = FRA_battle_start }
 			FRA = { set_technology = { french_anti_battleplan = 1 popup = no } }
 			ENG = { add_to_faction = POL }
 			GER = {
-				if = { limit = { IRE = { NOT = { is_ai = yes } } } 
-				declare_war_on = { target = IRE type = annex_everything }
-				ENG = { add_to_faction = IRE } 
-				IRE = { add_ideas = phoney_war } } 
+				# if = { limit = { IRE = { NOT = { is_ai = yes } } } 
+				# declare_war_on = { target = IRE type = annex_everything }
+				# ENG = { add_to_faction = IRE } 
+				# IRE = { add_id/eas = phoney_war } } 
 				declare_war_on = { target = ENG type = annex_everything } 
 				declare_war_on = { target = FRA type = annex_everything } 
 				declare_war_on = { target = CAN type = annex_everything } 
@@ -443,19 +443,19 @@ on_actions = {
 		}
 			
 			## Soviet war after purge
-			if = {
-				limit = {
-					OR = {
-						FROM = { tag = SOV }
-						ROOT = { tag = SOV }
-					}
-					SOV = {
-						NOT = { has_country_flag = SOV_war_since_purge }
-						has_completed_focus = SOV_great_purge
-					}
-				}
-				SOV = { set_country_flag = SOV_war_since_purge }
-			}
+			# if = {
+			# 	limit = {
+			# 		OR = {
+			# 			FROM = { tag = SOV }
+			# 			ROOT = { tag = SOV }
+			# 		}
+			# 		SOV = {
+			# 			NOT = { has_country_flag = SOV_war_since_purge }
+			# 			# has_completed_focus = SOV_great_purge
+			# 		}
+			# 	}
+			# 	SOV = { set_country_flag = SOV_war_since_purge }
+			# }
 
 			#Remove MEFO bills if Germany goes to war
 			if = {
@@ -465,7 +465,7 @@ on_actions = {
 					NOT = { FROM = { original_tag = GER } } # Don't remove it from Fascist Germany if they start the civil war
 				}
 				
-					DDR = { news_event = { id = news.52 days = 15 } }
+					# DDR = { news_event = { id = news.52 days = 15 } }
 
 				
 				ROOT = {
@@ -508,17 +508,17 @@ on_actions = {
 				news_event = news.134
 			}
 
-			if = {
-				limit = {
-					OR = {
-						TAG = SOV
-						TAG = GER
-					}
-					FROM = { original_tag = GER }
-					FROM.FROM = { state = 202 }
-				}
-				news_event = news.134
-			} 	
+			# if = {
+			# 	limit = {
+			# 		OR = {
+			# 			TAG = SOV
+			# 			TAG = GER
+			# 		}
+			# 		FROM = { original_tag = GER }
+			# 		FROM.FROM = { state = GDU_armored_operation_idea }
+			# 	}
+			# 	news_event = news.815
+			# } 	
 				
 			if = {
 				limit = {
@@ -529,7 +529,7 @@ on_actions = {
 					FROM = { original_tag = GER }
 					FROM.FROM = { state = 126 }
 				}
-				news_event = news.137
+				# news_event = news.137
 			}
 			if = {
 				limit = {
@@ -541,7 +541,7 @@ on_actions = {
 					FROM = { original_tag = GER }
 					FROM.FROM = { state = 10 }
 				}
-				news_event = news.139
+				# news_event = news.139
 			}
 
 			
