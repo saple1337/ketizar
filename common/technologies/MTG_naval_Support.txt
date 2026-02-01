@@ -72,9 +72,9 @@ technologies = {
 			naval_artillery
 			naval_equipment
 			ship_modules_tech
-			# cat_ship_light_battery
-			# cat_ship_medium_battery
-			# cat_ship_heavy_battery
+			cat_ship_light_battery
+			cat_ship_medium_battery
+			cat_ship_heavy_battery
 			mio_cat_tech_all_capital_ship_and_modules
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_carrier_and_modules
@@ -118,7 +118,7 @@ technologies = {
 			naval_artillery
 			naval_equipment
 			ship_modules_tech
-			# cat_ship_light_battery
+			cat_ship_light_battery
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 			mio_cat_tech_all_destroyer_and_modules
@@ -217,7 +217,7 @@ technologies = {
 			naval_artillery
 			naval_equipment
 			ship_modules_tech
-			# cat_ship_light_battery
+			cat_ship_light_battery
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 			mio_cat_tech_all_destroyer_and_modules
@@ -311,7 +311,7 @@ technologies = {
 			naval_artillery
 			naval_equipment
 			ship_modules_tech
-			# cat_ship_light_battery
+			cat_ship_light_battery
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 			mio_cat_tech_all_destroyer_and_modules
@@ -582,7 +582,7 @@ technologies = {
 			naval_artillery
 			naval_equipment
 			ship_modules_tech
-			# cat_ship_heavy_battery
+			cat_ship_heavy_battery
 			mio_cat_tech_all_capital_ship_and_modules
 		}
 		special_project_specialization = { specialization_naval }
@@ -626,7 +626,7 @@ technologies = {
 			naval_artillery
 			naval_equipment
 			ship_modules_tech
-			# cat_ship_heavy_battery
+			cat_ship_heavy_battery
 			mio_cat_tech_all_capital_ship_and_modules
 		}
 		special_project_specialization = { specialization_naval }
@@ -670,7 +670,7 @@ technologies = {
 			naval_artillery
 			naval_equipment
 			ship_modules_tech
-			# cat_ship_heavy_battery
+			cat_ship_heavy_battery
 			mio_cat_tech_all_capital_ship_and_modules
 		}
 		special_project_specialization = { specialization_naval }
@@ -983,7 +983,7 @@ technologies = {
 		categories = {
 			naval_equipment
 			ship_modules_tech
-			# cat_torpedoes
+			cat_torpedoes
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 			mio_cat_tech_all_destroyer_and_modules
@@ -1039,7 +1039,7 @@ technologies = {
 		categories = {
 			naval_equipment
 			ship_modules_tech
-			# cat_torpedoes
+			cat_torpedoes
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 			mio_cat_tech_all_destroyer_and_modules
@@ -1080,7 +1080,7 @@ technologies = {
 		categories = {
 			naval_equipment
 			ship_modules_tech
-			# cat_torpedoes
+			cat_torpedoes
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 			mio_cat_tech_all_destroyer_and_modules
@@ -1162,7 +1162,7 @@ technologies = {
 		categories = {
 			naval_equipment
 			ship_modules_tech
-			# cat_torpedoes
+			cat_torpedoes
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 			mio_cat_tech_all_destroyer_and_modules
@@ -1216,7 +1216,7 @@ technologies = {
 		categories = {
 			naval_equipment
 			ship_modules_tech
-			# cat_torpedoes
+			cat_torpedoes
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 			mio_cat_tech_all_destroyer_and_modules
@@ -1264,7 +1264,7 @@ technologies = {
 		categories = {
 			naval_equipment
 			ship_modules_tech
-			# cat_torpedoes
+			cat_torpedoes
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 			mio_cat_tech_all_destroyer_and_modules
@@ -1289,9 +1289,9 @@ technologies = {
 		carrier = {
 			reliability = 0.03
 		}
-		# escort_carrier = {
-		# 	reliability = 0.03
-		# }
+		escort_carrier = {
+			reliability = 0.03
+		}
 		battleship = {
 			reliability = 0.03
 		}
@@ -1357,9 +1357,9 @@ technologies = {
 		carrier = {
 			reliability = 0.03
 		}
-		# escort_carrier = {
-		# 	reliability = 0.03
-		# }
+		escort_carrier = {
+			reliability = 0.03
+		}
 		battleship = {
 			reliability = 0.03
 		}
@@ -1416,9 +1416,9 @@ technologies = {
 		carrier = {
 			reliability = 0.03
 		}
-		# escort_carrier = {
-		# 	reliability = 0.03
-		# }
+		escort_carrier = {
+			reliability = 0.03
+		}
 		battleship = {
 			reliability = 0.03
 		}
@@ -2420,9 +2420,9 @@ technologies = {
 			}
 		}
 
-		# enable_equipments = {
-		# 	support_ship_2
-		# }
+		enable_equipments = {
+			support_ship_2
+		}
 
 		is_special_project_tech = yes
 		xp_research_type = navy
@@ -2454,9 +2454,9 @@ technologies = {
 			}
 		}
 
-		# enable_equipments = {
-		# 	repair_ship_2
-		# }
+		enable_equipments = {
+			repair_ship_2
+		}
 
 		is_special_project_tech = yes
 		xp_research_type = navy
