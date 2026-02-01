@@ -78,7 +78,7 @@ characters={
 				small="gfx/interface/ideas/idea_MAN_zhang_haipeng.dds"
 			}
 			army={
-				large="gfx/leaders/MIN/portrait_man_zhang_haipeng.dds"
+				large="gfx/leaders/MAN/portrait_man_zhang_haipeng.dds"
 			}
 		}
 		
@@ -836,7 +836,7 @@ characters={
 				small="gfx/interface/ideas/idea_MAN_yoshiko_kawashima.dds"
 			}
 			army={
-				large="gfx/leaders/MIN/portrait_man_yoshiko_kawashima.dds"
+				large="gfx/leaders/MAN/portrait_man_yoshiko_kawashima.dds"
 			}
 		}
 		corps_commander={
@@ -853,7 +853,7 @@ characters={
 		name="Aisin Gioro Puyi"
 		portraits={
 			civilian={
-				large="gfx/leaders/MIN/Portrait_Manchuria_Henry_Pu_Yi.dds"
+				large="gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
 			}
 		}
 		country_leader={
@@ -884,7 +884,7 @@ characters={
 		}
 		country_leader={
 			ideology=stalinism
-			traits={ smooth_talking_charmer2 }
+			# traits={ smooth_talking_charmer2 }
 			expire="1946.1.1.12"
 			id=-1
 		}

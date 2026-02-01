@@ -3385,7 +3385,7 @@ focus = {
 		y = 1
 		prerequisite = { focus = USA_two_ocean_navy_act }
 		relative_position_id = USA_two_ocean_navy_act
-		mutually_exclusive = { focus = USA_fire_king }
+		# mutually_exclusive = { focus = USA_fire_king }
 		cost = 4
 
 		cancel_if_invalid = yes
@@ -3590,12 +3590,12 @@ focus = {
 				uses = 2
 				category = ss_tech
 			}
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				set_technology = { cruiser_submarines = 1 }
-			}
+			# if = {
+			# 	limit = {
+			# 		has_dlc = "Man the Guns"
+			# 	}
+			# 	set_technology = { #cruiser_submarines = 1 }
+			# }
 		}
 	}
 

@@ -88,6 +88,8 @@ add_ideas = {
 	low_economic_mobilisation
 	COOM_volunteers_minors
 	trade_japan_min
+	autarky_generic
+
 } 
 add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 8000 }
 

@@ -113,7 +113,7 @@ CHI_spawn_inf_a_little = {
 						militia = { x = 2 y = 2 }
 						militia = { x = 2 y = 3 }
 						anti_air_brigade = { x = 2 y = 4 }
-anti_air_brigade = { x = 2 y = 5 }
+anti_air_brigade = { x = 2 y = 5z }
 
 						artillery_brigade = { x = 3 y = 0}
 						anti_tank_brigade = { x = 3 y = 1}

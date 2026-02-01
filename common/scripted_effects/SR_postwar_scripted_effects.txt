@@ -9,16 +9,16 @@ set_global_flag = axis_lost
 			white_peace = {
 				tag = ROOT
 			}
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = reset_cross_faction_trade
-			}
-			ROOT = {
-				add_opinion_modifier = {
-					target = PREV
-					modifier = reset_cross_faction_trade
-				}
-			}
+			# add_opinion_modifier = {
+			# 	target = ROOT
+			# 	modifier = reset_cross_faction_trade
+			# }
+			# ROOT = {
+			# 	add_opinion_modifier = {
+			# 		target = PREV
+			# 		modifier = reset_cross_faction_trade
+			# 	}
+			# }
 		}
 		set_equipment_fraction = 0.0
 
@@ -172,16 +172,16 @@ axis_defeat = {
 			white_peace = {
 				tag = ROOT
 			}
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = reset_cross_faction_trade
-			}
-			ROOT = {
-				add_opinion_modifier = {
-					target = PREV
-					modifier = reset_cross_faction_trade
-				}
-			}
+			# add_opinion_modifier = {
+			# 	target = ROOT
+			# 	modifier = reset_cross_faction_trade
+			# }
+			# ROOT = {
+			# 	add_opinion_modifier = {
+			# 		target = PREV
+			# 		modifier = reset_cross_faction_trade
+			# 	}
+			# }
 		}
 		set_equipment_fraction = 0.0
 	}
@@ -362,7 +362,9 @@ axis_defeat = {
 		}
 		transfer_state_to = SOV
 	}
-	every_country = {limit = {is_ai = no} add_ideas_timed = {idea = france_production_regrowth days = 30 }}
+	every_country = {limit = {is_ai = no} 
+	add_timed_idea = {
+	idea = france_production_regrowth days = 30 }}
 	188 = {transfer_state_to = SOV}
 	64 = {transfer_state_to = SOV}
 	61 = {transfer_state_to = SOV}

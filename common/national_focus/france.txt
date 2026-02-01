@@ -1083,7 +1083,7 @@
 		available_if_capitulated = yes
 
 		available = {
-			date>1939.2.1
+			date > 1938.8.1
 		}
 		completion_reward = {
 			army_experience = 50
@@ -1420,7 +1420,7 @@
 	}
 	focus = {
 		id = Full_recovery
-		text = "Stable Economy"
+		text = "Expansion of Public Works"
 		icon = GFX_focus_NORDIC_com_selector_army
 		x = 0
 		y = 2
@@ -1433,7 +1433,9 @@
 				}
 			}
 		}
-		prerequisite = {focus = Public_works}
+		prerequisite = {focus = The_north}
+		prerequisite = {focus = The_south}
+
 		relative_position_id = Public_works
 
 		cost = 5
@@ -1696,12 +1698,12 @@
 		y = 4
 		available = {
 		}
-		prerequisite = {focus = FRA_wagie_cuck}
-		prerequisite = {focus = Full_recovery}
-		prerequisite = {focus = FRA_Rights_to_strike}
-		prerequisite = {focus = The_north}
-		prerequisite = {focus = Fra_combat_the_unemployment}
-		prerequisite = {focus = The_south}
+		# prerequisite = {focus = FRA_wagie_cuck}
+		prerequisite = {focus = Full_recovery focus = FRA_education_reform focus = Snowman_focus focus = FRA_wagie_cuck}
+		# prerequisite = {focus = FRA_Rights_to_strike}
+		# prerequisite = {focus = The_north}
+		# prerequisite = {focus = Fra_combat_the_unemployment}
+		# prerequisite = {focus = The_south}
 		relative_position_id = Fra_left_wing
 
 		cost = 10
@@ -1755,9 +1757,9 @@
 			hidden_effect = {
 			add_power_balance_value = {
 				id = FRA_violence
-				value = 0.2
+				value = 0.3
 			}}	
-			custom_effect_tooltip = "Significantly reduces chances of strikes"
+			custom_effect_tooltip = "Shifts BOP by 30%"
 			custom_effect_tooltip = FRA_decrease_instability_BIG
 		}
 	}
@@ -1799,7 +1801,7 @@
 	
 	focus = {
 		id = FRA_economic_devolution
-		text = "Individual Freedoms"
+		text = "Promote Individual Freedoms"
 		icon = GFX_focus_generic_workers
 		x = 4
 		y = 1
@@ -2052,8 +2054,8 @@
 		y = 1
 		available = {
 			OR = {
-				has_completed_focus = FRA_military_investments
-				date>1937.6.1
+				# has_completed_focus = FRA_military_investments
+				date > 1937.6.1
 				GER = {
 					has_completed_focus = GER_anschluss
 				}

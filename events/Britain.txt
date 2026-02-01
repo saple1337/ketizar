@@ -116,7 +116,7 @@ country_event = {
 	
 	option = {
 		name = britain.13.a
-		FROM = { country_event = { id = france.29} }
+		# FROM = { country_event = { id = france.29} }
 		hidden_effect = {
 			news_event = { id = news.175 }
 		}
@@ -191,7 +191,7 @@ country_event = {
 	
 	option = {
 		name = britain.21.a
-		add_to_tech_sharing_group = tizard_mission
+		# add_to_tech_sharing_group = tizard_mission
 		USA = {
 			add_opinion_modifier = { target = ENG modifier = tizard_relations }
 		}

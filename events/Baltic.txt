@@ -86,6 +86,6 @@ country_event = {
 
 	immediate = {
 		news_event = { id = news.69 }
-		news_event = { id = news.71 hours = 1 }
+		# news_event = { id = news.71 hours = 1 }
 	}
 }

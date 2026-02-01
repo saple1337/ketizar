@@ -27,105 +27,6 @@ fra_cg_upgrade_effect = {
 		add_to_variable = { FRA_cg = -0.08 }
 	}
 }
-remove_occupation_cost_effect = {
-	if = {
-		limit = { has_idea = FRA_occupation_costs_1 }
-		remove_ideas = FRA_occupation_costs_1
-	}
-	else_if = {
-		limit = {
-			has_idea = FRA_occupation_costs_2
-		}
-		remove_ideas = FRA_occupation_costs_2
-	}
-	else_if = {
-		limit = {
-			has_idea = FRA_occupation_costs_3
-		}
-		remove_ideas = FRA_occupation_costs_3
-	}
-	else_if = {
-		limit = {
-			has_idea = FRA_occupation_costs_4
-		}
-		remove_ideas = FRA_occupation_costs_4
-	}
-}
-
-reduce_occupation_cost_effect = {
-	if = {
-		limit = { has_idea = FRA_occupation_costs_1 }
-		remove_ideas = FRA_occupation_costs_1
-	}
-	else_if = {
-		limit = {
-			has_idea = FRA_occupation_costs_2
-		}
-		swap_ideas = {
-			remove_idea = FRA_occupation_costs_2
-			add_idea = FRA_occupation_costs_1
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = FRA_occupation_costs_3
-		}
-		swap_ideas = {
-			remove_idea = FRA_occupation_costs_3
-			add_idea = FRA_occupation_costs_2
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = FRA_occupation_costs_4
-		}
-		swap_ideas = {
-			remove_idea = FRA_occupation_costs_4
-			add_idea = FRA_occupation_costs_3
-		}
-	}
-}
-
-increase_occupation_cost_effect = {
-	if = {
-		limit = {
-			has_idea = FRA_occupation_costs_3
-		}
-		swap_ideas = {
-			remove_idea = FRA_occupation_costs_3
-			add_idea = FRA_occupation_costs_4
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = FRA_occupation_costs_2
-		}
-		swap_ideas = {
-			remove_idea = FRA_occupation_costs_2
-			add_idea = FRA_occupation_costs_3
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = FRA_occupation_costs_1
-		}
-		swap_ideas = {
-			remove_idea = FRA_occupation_costs_1
-			add_idea = FRA_occupation_costs_2
-		}
-	}
-	else_if = {
-		limit = { 
-			NOT = { 
-				has_idea = FRA_occupation_costs_1
-				has_idea = FRA_occupation_costs_2
-				has_idea = FRA_occupation_costs_3
-				has_idea = FRA_occupation_costs_4 
-			}
-		}
-		add_ideas = FRA_occupation_costs_1
-	}
-}
 
 FRA_right_wing_riot_effect = {
 		country_event = lar_france_political_violence.1
@@ -161,7 +62,7 @@ if = { limit = { GER = { controls_state = 781  } } FRA = { set_state_controller 
 if = { limit = { GER = { controls_state = 776  } } FRA = { set_state_controller = 776  } }
 if = { limit = { GER = { controls_state = 777  } } FRA = { set_state_controller = 777  } }
 if = { limit = { GER = { controls_state = 515  } } FRA = { set_state_controller = 515  } }
-if = { limit = { GER = { controls_state = 775  } } FRA = { set_state_controller = 775  } }
+# if = { limit = { GER = { controls_state = 775  } } FRA = { set_state_controller = 775  } }
 
 if = { limit = { GER = { controls_state = 772  } } FRA = { set_state_controller = 772  } }
 if = { limit = { GER = { controls_state = 539  } } FRA = { set_state_controller = 539  } }

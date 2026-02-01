@@ -337,173 +337,6 @@ procure_guns = {
 }
 
 foreign_politics = {
-
-	#USA_game_balance_axis = { 
-		
-
-		icon = GFX_decision_usa_congress
-
-		allowed = {
-			original_tag = USA
-		}
-
-	
-
-		cost = 0
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 200
-		}
-
-		visible = {
-			ships_in_area = { area = 112 size > 300 }
-		}
-
-		complete_effect = {
-		67 = {
-					add_extra_state_shared_building_slots = 50
-				add_building_construction = {
-					type = arms_factory
-					level = 50
-					instant_build = yes
-				}
-	
-				}
-		}
-	}
-	
-	#USA_game_balance_allies = { 
-		
-
-		icon = GFX_decision_usa_congress
-
-		allowed = {
-			original_tag = USA
-		}
-
-	
-
-		cost = 0
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 200
-		}
-
-		visible = {
-			ships_in_area = { area = 112 size > 300 }
-		}
-
-		complete_effect = {
-		126 = {
-					add_extra_state_shared_building_slots = 50
-				add_building_construction = {
-					type = arms_factory
-					level = 50
-					instant_build = yes
-				}
-	
-				}
-		}
-	}
-	
-	#USA_game_balance_soviets = { 
-		
-
-		icon = GFX_decision_usa_congress
-
-		allowed = {
-			original_tag = USA
-		}
-
-	
-
-		cost = 0
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 200
-		}
-
-		visible = {
-			ships_in_area = { area = 112 size > 300 }
-		}
-
-		complete_effect = {
-		403 = {
-					add_extra_state_shared_building_slots = 50
-				add_building_construction = {
-					type = arms_factory
-					level = 50
-					instant_build = yes
-				}
-	
-				}
-		}
-	}
-	
-	#USA_game_balance_Japan = { 
-		
-
-		icon = GFX_decision_usa_congress
-
-		allowed = {
-			original_tag = USA
-		}
-
-	
-
-		cost = 0
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 200
-		}
-
-		visible = {
-			ships_in_area = { area = 112 size > 300 }
-		}
-
-		complete_effect = {
-		282 = {
-					add_extra_state_shared_building_slots = 50
-				add_building_construction = {
-					type = arms_factory
-					level = 50
-					instant_build = yes
-				}
-	
-				}
-		}
-	}
-	
-	#USA_game_balance_fuck_it_raffi_germany= { 
-		
-
-		icon = GFX_decision_usa_congress
-
-		allowed = {
-			original_tag = USA
-		}
-
-	
-
-		cost = 0
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 200
-		}
-
-		visible = {
-			ships_in_area = { area = 112 size > 300 }
-		}
-
-		complete_effect = {
-		add_tech_bonus = {
-				name = USA_manhattan_project
-				bonus = 999
-				uses = 3
-				category = nuclear
-			}
-		}
-	}
 	
 	
 	ENG_Operation_Compass = {
@@ -641,35 +474,6 @@ foreign_politics = {
 		#}
 	#}
 
-	ENG_DDay_Marines = {
-		
-		icon = GFX_decision_category_border_war
-		
-		ai_will_do = { factor = 0 }
-		
-		cost = 0
-		fire_only_once = yes				
-		available = { 	
-			# FRA = { has_capitulated = yes }
-			country_exists = FRF
-			surrender_progress < 0.01
-			has_manpower > 410400
-			#date > 1938.1.1
-			#date < 1939.7.1 
-		}				
-		
-		visible = { 
-			tag = ENG
-		}
-		
-		complete_effect = {
-			add_manpower = -410400
-			ENG = {		
-				load_oob = "ENG_DDay_Marines"
-			}
-		}
-	}
-	
 
     mers_el_kebir = {
 		icon = GFX_decision_generic_naval
@@ -1062,7 +866,7 @@ foreign_politics = {
 			OR = {
 			# FRA = { has_capitulated = yes }
 			country_exists = FRF
-			date>1940.7.1
+			date > 1940.7.1
 			}
 			}
 	complete_effect = { 

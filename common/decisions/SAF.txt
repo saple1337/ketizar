@@ -94,7 +94,7 @@ operations = {
 
 			every_state = {
 				limit = { AND = { NOT = { is_core_of = FRA } is_owned_and_controlled_by = FRA } }
-				ROOT = {
+				THIS = {
 					set_compliance = 100
 				}
 				# transfer_state = SAF
