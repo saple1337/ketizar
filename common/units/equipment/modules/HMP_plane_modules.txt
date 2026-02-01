@@ -892,7 +892,7 @@ equipment_modules = {
 				port_strike
 			}
 			add_stats = {
-			naval_strike_attack = 18			
+			naval_strike_attack = 13			
 				air_agility = -15
 			}
 			add_average_stats = {
@@ -1430,7 +1430,7 @@ equipment_modules = {
 				air_bombing = 6
 				night_penalty = -0.4
 				naval_strike_targetting = 1
-				surface_detection = 20
+				surface_detection = 12
 				sub_detection = 10
 			}
 		}

@@ -1,4 +1,3 @@
-
 strategic_region={
 	id=133
 	name="STRATEGICREGION_133"
@@ -13,7 +12,7 @@ strategic_region={
 			rain_light=0.050
 			rain_heavy=0.000
 			snow=0.600
-			blizzard=0.100
+			blizzard=0.250
 			arctic_water=0.000
 			mud=1.600
 			sandstorm=0.000
@@ -156,7 +155,7 @@ strategic_region={
 			rain_light=0.050
 			rain_heavy=0.000
 			snow=0.600
-			blizzard=0.100
+			blizzard=0.250
 			arctic_water=0.000
 			mud=1.600
 			sandstorm=0.000

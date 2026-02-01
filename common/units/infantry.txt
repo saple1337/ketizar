@@ -658,11 +658,6 @@ marine_commando  = {
 			defence = 0.1
 			movement = 0.35
 		}
-		deep_desert = {
-			attack = -0.75
-			movement = -0.75
-			defence = -0.75
-		}
 		amphibious = {
 			attack = 0.20
 		}
