@@ -6,7 +6,7 @@
 		
 # 		modifier = {
 # 			add = 10
-# 			tag = BRA
+# 			#tag = BRA
 # 		}
 # 	}
 # 	continuous_focus_position = { x = 50 y = 1600 }
