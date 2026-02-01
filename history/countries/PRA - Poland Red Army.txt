@@ -20,4 +20,4 @@ set_technology = {
 	basic_train = 1
 }
 
-oob = "POLREDARMY_cum"
+# oob = "POLREDARMY_cum"

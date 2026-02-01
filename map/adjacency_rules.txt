@@ -12,230 +12,233 @@
 # The 'name' property is how you refer to the rule in adjacencies.csv
 adjacency_rule = {
 	name = "OTRANTO_STRAIT"
-
-	contested =
-	{
+	contested = {
 		army = no
 		navy = yes
 		submarine = yes
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = yes
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = no
 		submarine = yes
 		trade = yes
 	}
-	
-	required_provinces = { 11767 6979 }
-	
+	required_provinces = {
+		11767
+		6979
+	}
 	icon = 5864
-	offset = { 5.0 10.0 0.0 }
+	offset = {
+		5
+		10
+		0
+	}
 }
+
 adjacency_rule = {
 	name = "MED_STRAIT"
-
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = no
 		submarine = no
 		trade = yes
 	}
-	
-	required_provinces = { 11969 11773 }
-	
+	required_provinces = {
+		11969
+		11773
+	}
 	icon = 5605
-	offset = { -1.0 0.0 0.0 }
+	offset = {
+		-1
+		0
+		0
+	}
 }
+
 adjacency_rule = {
 	name = "MED_STRAIT2"
-
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = no
 		submarine = no
 		trade = yes
 	}
-	
-	required_provinces = { 6891 11751 }
-	
+	required_provinces = {
+		6891
+		11751
+	}
 	icon = 5656
-	offset = { -1.0 0.0 0.0 }
+	offset = {
+		-1
+		0
+		0
+	}
 }
+
 adjacency_rule = {
 	name = "YEMEN_STRAIT"
-
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = yes
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = no
 		submarine = no
 		trade = yes
 	}
-	
-	required_provinces = { 4985 5074 }
-	
+	required_provinces = {
+		4985
+		5074
+	}
 	icon = 4985
-	offset = { -1.0 0.0 0.0 }
+	offset = {
+		-1
+		0
+		0
+	}
 }
-adjacency_rule =
-{
+
+adjacency_rule = {
 	name = "Berlin-Madrid"
-
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = yes
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = yes
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	
-	required_provinces = { 3761 }
+	required_provinces = {
+		3761
+	}
 	is_disabled = {
+		tooltip = "Sex"
 		NOT = {
-			tag=SPR
-		
+			tag = SPR
 		}
-		
+	}
+	icon = 3761
+	offset = {
+		-1
+		0
+		0
 	}
 }
+
 #Suez Canal
-adjacency_rule =
-{
+adjacency_rule = {
 	name = "SUEZ_CANAL"
-
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	
-	required_provinces = { 12049 1155 12883 4981 9947 }
-
+	required_provinces = {
+		12049
+		1155
+		12883
+		4981
+		9947
+	}
 	is_disabled = {
 		OR = {
 			has_global_flag = SUEZ_CANAL_BLOCKED
@@ -244,127 +247,126 @@ adjacency_rule =
 		}
 		tooltip = suez_blocked_tt
 	}
-	
 	icon = 12049
-	offset = { 1 0 -6 }
+	offset = {
+		1
+		0
+		-6
+	}
 }
 
 #Gibraltar Strait
-adjacency_rule =
-{
+adjacency_rule = {
 	name = "GIBRALTAR_STRAIT"
-
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = yes
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = yes
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	
-	required_provinces = { 4135 9945 }
-	
-	icon = 5407	
-	offset = { -31.0 0.0 -2.0 }
+	required_provinces = {
+		4135
+		9945
+	}
+	icon = 5407
+	offset = {
+		-31
+		0
+		-2
+	}
 }
 
 #Øresund - (Østersøen <-> Kattegat/Skagerak/Nordsøen)
-adjacency_rule =
-{
+adjacency_rule = {
 	name = "DANISH_BELTS_STRAIT"
-
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = yes
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	
-	required_provinces = { 6287 3277 3325 3260 394 }
-	
+	required_provinces = {
+		6287
+		3277
+		3325
+		3260
+		394
+	}
 	icon = 2455
-	offset = { -26 0 -13 }
+	offset = {
+		-26
+		0
+		-13
+	}
 }
 
 #Panama Canal
-adjacency_rule =
-{
+adjacency_rule = {
 	name = "PANAMA_CANAL"
-
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = no
 		navy = no
 		submarine = no
 		trade = yes
 	}
-	
-	required_provinces = { 4624 7617 }
-
+	required_provinces = {
+		4624
+		7617
+	}
 	is_disabled = {
 		OR = {
 			has_global_flag = PANAMA_CANAL_BLOCKED
@@ -372,362 +374,352 @@ adjacency_rule =
 		}
 		tooltip = disable_canal_tt
 	}
-		
 	icon = 7617
-	offset = { -3 0 -2 }
+	offset = {
+		-3
+		0
+		-2
+	}
 }
 
 #Marmara Strait
-adjacency_rule =
-{
+adjacency_rule = {
 	name = "BOSPHORUS_STRAIT"
-
 	is_friend = {
 		TUR_is_friend_for_bosphorus = yes
 	}
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = no
 		navy = no
 		submarine = no
 		trade = yes
 	}
-	
-	required_provinces = { 9833 11829 }
-
+	required_provinces = {
+		9833
+		11829
+	}
 	is_disabled = {
 		has_country_flag = BOSPHORUS_STRAIT_BLOCKED_FOR_COUNTRY
 		tooltip = bosporus_strait_blocked_tt
 	}
-	
 	icon = 9833
-	offset = { -2 0 -9 }
+	offset = {
+		-2
+		0
+		-9
+	}
 }
 
 #The Dardanelles
-adjacency_rule =
-{
+adjacency_rule = {
 	name = "DARDANELLES_STRAIT"
-
 	is_friend = {
 		TUR_is_friend_for_dardanelles = yes
 	}
-
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = no
 		navy = no
 		submarine = no
 		trade = yes
 	}
-	
-	required_provinces = { 849 6864 }
-
+	required_provinces = {
+		849
+		6864
+	}
 	is_disabled = {
 		has_country_flag = DARDANELLES_STRAIT_BLOCKED_FOR_COUNTRY
 		tooltip = dardanelles_strait_blocked_tt
 	}
-	
 	icon = 849
-	offset = { 3 0 -5 } 
+	offset = {
+		3
+		0
+		-5
+	}
 }
 
 #Kiel Canal
-adjacency_rule =
-{
+adjacency_rule = {
 	name = "KIEL_CANAL"
-
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = no
 		navy = no
 		submarine = no
 		trade = yes
 	}
-	
-	required_provinces = { 11366 317 3231 }
-		
+	required_provinces = {
+		11366
+		317
+		3231
+	}
 	icon = 11366
-	offset = { 5 0 -6 }
+	offset = {
+		5
+		0
+		-6
+	}
 }
+
 #Strait of Hormuz
-adjacency_rule =
-{
+adjacency_rule = {
 	name = "HORMUZ_STRAIT"
-
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	
-	required_provinces = { 10904 7982 4959 }
-		
+	required_provinces = {
+		10904
+		7982
+		4959
+	}
 	icon = 10904
-	offset = { 2 0 12 }
+	offset = {
+		2
+		0
+		12
+	}
 }
-adjacency_rule =
-{
+
+adjacency_rule = {
 	name = "Sofia-Tokyo"
-
-	
-
-	contested =
-	{
+	contested = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	enemy =
-	{
+	enemy = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	
-	required_provinces = { 949 9998 }
-
+	required_provinces = {
+		949
+		9998
+	}
 	is_disabled = {
-		has_war =  yes
+		tooltip = "Sex, again"
+		has_war = yes
 	}
-	
 	icon = 13204
-	offset = { 3 0 -5 } 
+	offset = {
+		3
+		0
+		-5
+	}
 }
-adjacency_rule =
-{
+
+adjacency_rule = {
 	name = "Bucharest-Tokyo"
-
-	
-
-	contested =
-	{
+	contested = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	enemy =
-	{
+	enemy = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	
-	required_provinces = { 9617 9998 }
-
+	required_provinces = {
+		9617
+		9998
+	}
 	is_disabled = {
-		has_war =  yes
+		tooltip = "Not sex"
+		has_war = yes
 	}
-	
 	icon = 13254
-	offset = { 3 0 -5 } 
+	offset = {
+		3
+		0
+		-5
+	}
 }
-adjacency_rule =
-{
+
+adjacency_rule = {
 	name = "Budapest-Tokyo"
-
-	
-
-	contested =
-	{
+	contested = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	enemy =
-	{
+	enemy = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	
-	required_provinces = { 9660 9998 }
-
+	required_provinces = {
+		9660
+		9998
+	}
 	is_disabled = {
-		has_war =  yes
+		tooltip = "Maybe sex"
+		has_war = yes
 	}
-	
 	icon = 13062
-	offset = { 3 0 -5 } 
+	offset = {
+		3
+		0
+		-5
+	}
 }
-adjacency_rule =
-{
+
+adjacency_rule = {
 	name = "Bratislava-Tokyo"
-
-	
-
-	contested =
-	{
+	contested = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	enemy =
-	{
+	enemy = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	
-	required_provinces = { 9692 9998 }
-
+	required_provinces = {
+		9692
+		9998
+	}
 	is_disabled = {
-		has_war =  yes
+		tooltip = "NOT SEX"
+		has_war = yes
 	}
-	
 	icon = 1819
-	offset = { 3 0 -5 } 
+	offset = {
+		3
+		0
+		-5
+	}
 }
-
 
 #Strait of Otranto #TODO_Manu: TEST THIS OUT AND REMOVE IF NOT SATISFACTORY

@@ -94,26 +94,6 @@ instant_effect = {
 	}
 
 
-	add_equipment_production = {
-		equipment = {
-			type = horse_equipment_0
-			creator = "MON" 
-		}
-		requested_factories = 1
-		progress = 0.1
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = squad_equipment_0
-			creator = "MON" 
-		}
-		requested_factories = 1
-		progress = 0.1
-		efficiency = 50
-	}
-	
 	# add_equipment_production = {
 	# 	equipment = {
 	# 		type = radio_equipment_0
@@ -138,16 +118,6 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
-			creator = "MON" 
-		}
-		requested_factories = 1
-		progress = 0.1
-		efficiency = 50
-	}
-	
-	add_equipment_production = {
-		equipment = {
-			type = sf_equipment_0
 			creator = "MON" 
 		}
 		requested_factories = 1

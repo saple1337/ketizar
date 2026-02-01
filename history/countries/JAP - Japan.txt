@@ -304,8 +304,8 @@ add_ideas = {
 	limited_conscription
 	war_economy
 	JAP_zaibatsus
-	trade_japan_min
-	JAP_duplicate_research_efforts
+	# trade_japan_min
+	# JAP_duplicate_research_efforts
 	JAP_militarism
 	JAP_island_hopping8
 	Jap_temp_chi
@@ -365,9 +365,9 @@ set_technology = { basic_train = 1
 	synth_oil_experiments = 1
 	tech_logistics_company = 1 
 	#air_superiority = 1
-	forward_interception = 1 
-	fighter_ace_initiative = 1 
-	dive_bombing = 1 
+	# forward_interception = 1 
+	# fighter_ace_initiative = 1 
+	# dive_bombing = 1 
 	armored_car1 = 1
 	# armored_car1 = 1
 	tech_mountaineers = 1
@@ -447,7 +447,7 @@ if = {
 		basic_cruiser_armor_scheme = 1
 		#cruiser_submarines = 1
 	}
-	set_naval_oob = "JAP_1936_naval"
+	# set_naval_oob = "JAP_1936_naval"
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -1340,7 +1340,7 @@ if = {
 				fixed_ship_engine_slot = heavy_ship_engine_2
 				fixed_ship_secondaries_slot = ship_secondaries_2
 				#fixed_ship_armor_slot = ship_armor_bb_1
-				front_1_custom_slot =   ship_heavy_battery_2
+				# front_1_custom_slot =   ship_heavy_battery_2
 				mid_1_custom_slot = ship_anti_air_2
 				mid_2_custom_slot = ship_airplane_launcher_1
 				#rear_1_custom_slot = ship_heavy_battery_2
@@ -1571,33 +1571,6 @@ if = {
 	}
 }
 
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "JAP_1936_air_bba"
-		set_technology = {
-			aa_lmg = 1
-			#engines_1 = 1
-			#engines_2 = 1
-			#early_bombs = 1
-			#aircraft_construction = 1
-			iw_small_airframe = 1
-			iw_medium_airframe = 1
-			basic_small_airframe = 1
-			#air_torpedoe_1 = 1
-		}
-	else = {
-		set_air_oob = "JAP_1936_air_legacy"
-		set_technology = {
-			cv_
-			cv_
-			cv_naval_bomber1 = 1
-			
-			naval_bomber1 = 1
-			
-			
-		}
-	}
-}
 
 }
 	

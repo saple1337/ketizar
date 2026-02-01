@@ -34,8 +34,8 @@ set_technology = {
 		radio_detection = 1
 
 	#air_superiority = 1
-	forward_interception = 1
-	dive_bombing = 1
+	# forward_interception = 1
+	# dive_bombing = 1
 	armored_car1 = 1
 	# armored_car1 = 1
 	basic_light_tank_chassis = 1

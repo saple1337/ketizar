@@ -393,3 +393,4 @@ units = {
 		force_equipment_variants = { infantry_equipment_2 = { owner = "JAP" } }
 	}
 	
+}

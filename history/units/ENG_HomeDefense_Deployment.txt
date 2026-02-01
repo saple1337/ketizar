@@ -239,10 +239,10 @@ units = {
 		division_template = "Home Countries Army"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
 	}	
-	division = {	
-		start_equipment_factor = 0.01 start_experience_factor = 0.3
-		location = 13279
-		division_template = "Home Countries Army"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
-	}	
+	# division = {	
+	# 	start_equipment_factor = 0.01 start_experience_factor = 0.3
+	# 	location = 13279
+	# 	division_template = "Home Countries Army"
+	# 	force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
+	# }	
 }
