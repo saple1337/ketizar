@@ -6,20 +6,19 @@ bookmarks = {
 		picture = "GFX_select_date_1936"
 		default_country = "GER"
 		default = yes
-		
-		"FRA"={
+		"FRA" = {
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				FRA_victors_of_wwi
-				FRA_disjointed_government
-				FRA_protected_by_the_maginot_line
+				# FRA_victors_of_wwi
+				# FRA_disjointed_government
+				# FRA_protected_by_the_maginot_line
 			}
 			focuses = {
 				FRA_devalue_the_franc
 			}
 		}
-		"USA"={
+		"USA" = {
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
@@ -33,38 +32,45 @@ bookmarks = {
 				USA_war_plan_silver
 			}
 		}
-		"ENG"={
+		"ENG" = {
 			history = "ENG_GATHERING_STORM_DESC"
 			ideology = democratic
-			available = { has_dlc = "Man the Guns" }
+			available = {
+				has_dlc = "Man the Guns"
+			}
 			ideas = {
 				stiff_upper_lip
 				ENG_the_war_to_end_all_wars
 				george_v
 			}
 			focuses = {
-					tizard_mission_focus
+				tizard_mission_focus
 				ENG_imperial_conference
 				general_rearmament_focus
 			}
 		}
-		"ENG"={
+		"ENG" = {
 			history = "ENG_GATHERING_STORM_DESC"
 			ideology = democratic
-			available = { NOT = { has_dlc = "Man the Guns" } }
+			available = {
+				NOT = {
+					has_dlc = "Man the Guns"
+				}
+			}
 			ideas = {
 				stiff_upper_lip
 				ENG_the_war_to_end_all_wars
 				george_v
 			}
 			focuses = {
-
 			}
 		}
-		"GER"={
+		"GER" = {
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
-			available = { has_dlc = "Waking the Tiger" }
+			available = {
+				has_dlc = "Waking the Tiger"
+			}
 			ideas = {
 				sour_loser
 				general_staff
@@ -73,10 +79,14 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"GER"={
+		"GER" = {
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
-			available = { NOT = { has_dlc = "Waking the Tiger" } }
+			available = {
+				NOT = {
+					has_dlc = "Waking the Tiger"
+				}
+			}
 			ideas = {
 				sour_loser
 				general_staff
@@ -85,56 +95,48 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"ITA"={
+		"ITA" = {
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
 				vittoria_mutilata
 				victor_emmanuel
-			}	
+			}
 			focuses = {
 				ITA_pact_of_steel
 				#ITA_greece_war_goal
-				ITA_italia_irredenta
-			}		
+				# ITA_italia_irredenta
+			}
 		}
-		"JAP"={
+		"JAP" = {
 			history = "JAP_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-				state_shintoism
+				# state_shintoism
 				JAP_zaibatsus
 				JAP_militarism
-			}	
+			}
 			focuses = {
-				JAP_the_zero
-				JAP_warrior_spirit
-				JAP_strike_on_the_southern_resource_area
-			}			
+				# JAP_the_zero
+				# JAP_warrior_spirit
+				# JAP_strike_on_the_southern_resource_area
+			}
 		}
-		"SOV"={
+		"SOV" = {
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
-				trotskyite_plot
-				home_of_revolution
 			}
 			focuses = {
-				SOV_great_purge
 				SOV_collectivist_propaganda
 				SOV_positive_heroism
-				
-			}	
+			}
 		}
-
-		"---"={
+		"---" = {
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
-
-
 		# minors from DLC ####
-
-		"CAN"={
+		"CAN" = {
 			minor = yes
 			history = "CAN_GATHERING_STORM_DESC"
 			ideology = democratic
@@ -146,11 +148,9 @@ bookmarks = {
 				CAN_if_day
 				CAN_national_steel_car
 				CAN_canada_wheat_board
-				
-				
 			}
 		}
-		"AST"={
+		"AST" = {
 			minor = yes
 			history = "AST_GATHERING_STORM_DESC"
 			ideology = democratic
@@ -162,12 +162,11 @@ bookmarks = {
 				AST_rats_of_tobruk
 			}
 		}
-		"NZL"={
+		"NZL" = {
 			minor = yes
 			history = "NZL_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				
 			}
 			focuses = {
 				NZL_bob_semple_tank
@@ -175,7 +174,7 @@ bookmarks = {
 				NZL_maori_conscription
 			}
 		}
-		"SAF"={
+		"SAF" = {
 			minor = yes
 			history = "SAF_GATHERING_STORM_DESC"
 			ideology = democratic
@@ -184,14 +183,9 @@ bookmarks = {
 				SAF_history_of_segregation
 			}
 			focuses = {
-						SAF_secure_interests_in_africa
-				SAF_armor_effort
-				SAF_desert_equipment
-				
-				
 			}
 		}
-		"RAJ"={
+		"RAJ" = {
 			minor = yes
 			history = "RAJ_GATHERING_STORM_DESC"
 			ideology = neutrality
@@ -205,8 +199,7 @@ bookmarks = {
 				RAJ_the_smiling_buddha
 			}
 		}
-
-		"HUN"={
+		"HUN" = {
 			minor = yes
 			history = "HUN_GATHERING_STORM_DESC"
 			ideology = neutrality
@@ -214,13 +207,9 @@ bookmarks = {
 				HUN_treaty_of_triannon
 			}
 			focuses = {
-				HUN_strengthen_fascists
-				HUN_demand_southern_slovakia
-				HUN_renounce_the_treaty_of_trianon
 			}
 		}
-
-		"ROM"={
+		"ROM" = {
 			minor = yes
 			history = "ROM_GATHERING_STORM_DESC"
 			ideology = neutrality
@@ -229,53 +218,47 @@ bookmarks = {
 			}
 			focuses = {
 				ROM_governate_transnistria
-				ROM_institute_royal_dictatorship
 				ROM_swamp_greater_romania
 			}
 		}
-
-		"SPR"={			
-			minor = yes			
-			history = "SPAIN_GATHERING_STORM_DESC"			
-			ideology = democratic			
-			ideas = {				
-			}			
-			focuses = {							
-			}		
+		"SPR" = {
+			minor = yes
+			history = "SPAIN_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
 		}
-		
-		"FIN"={			
-			minor = yes			
-			history = "SPAIN_GATHERING_STORM_DESC"			
-			ideology = neutrality			
-			ideas = {				
-			}			
-			focuses = {							
-			}		
+		"FIN" = {
+			minor = yes
+			history = "SPAIN_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
 		}
-		
-		"NOR"={			
-			minor = yes			
-			history = "SPAIN_GATHERING_STORM_DESC"			
-			ideology = democratic			
-			ideas = {				
-			}			
-			focuses = {							
-			}		
+		"NOR" = {
+			minor = yes
+			history = "SPAIN_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
 		}
-		
-		"CRO"={			
-			minor = yes			
-			history = "SPAIN_GATHERING_STORM_DESC"			
-			ideology = fascism			
-			ideas = {				
-			}			
-			focuses = {							
-			}		
+		"CRO" = {
+			minor = yes
+			history = "SPAIN_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+			}
+			focuses = {
+			}
 		}
-		
 		effect = {
-			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			randomize_weather = 22345			# <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
 		}
 	}

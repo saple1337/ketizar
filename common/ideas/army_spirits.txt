@@ -436,7 +436,7 @@ ideas = {
 				army_strength_factor = 0.03
 			}
 			research_bonus = {
-				infantry_equipment = 0.1
+				infantry_weapons = 0.1
 			}
 			cost = 30.0
 			ai_will_do = {
