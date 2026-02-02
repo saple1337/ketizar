@@ -347,27 +347,5 @@ ideas = {
 			}
 		}
 	}
-	theorist_production = { 
-		SAF_nicolaas_havenga={
-			picture = SAF_nicolaas_havenga
-			cost = 150
-
-			allowed = {
-				original_tag = SAF
-			}
-
-			traits = { captain_of_industry }
-		}
-		SAF_d_f_malan={
-			picture = SAF_d_f_malan
-			cost = 150
-
-			allowed = {
-				original_tag = SAF
-			}
-
-			traits = { war_industrialist }	
-		}
-	}
 }
 
