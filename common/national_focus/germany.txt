@@ -2205,6 +2205,7 @@ focus_tree = {
 		}
 		AUS = { set_equipment_fraction = 0.0 }
 		annex_country = { target = AUS transfer_troops = yes }
+		ENG = {annex_country = {target = ISR transfer_troops = yes}}
 		set_country_flag = AUS_annexed
 		custom_effect_tooltip = anschluss_mefo_bills_tt
 		hidden_effect = { 

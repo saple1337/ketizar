@@ -216,6 +216,7 @@ add_to_faction = ITA
 add_to_faction = FIN
 add_to_faction = YUG
 add_to_faction = CZE
+add_to_faction = ISR
 
 
 add_ideas = {

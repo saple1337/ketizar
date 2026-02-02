@@ -4807,10 +4807,7 @@ ideas = {
 			}
 			ai_will_do = {
 				base = 1
-				modifier = {
-					factor = 15
-					has_active_mission = JAP_zaibatsu_faction_demands_industrial_company_employment
-				}
+				
 			}
 			traits = {
 				# mining_zaibatsu
@@ -4828,10 +4825,7 @@ ideas = {
 			}
 			ai_will_do = {
 				base = 1
-				modifier = {
-					factor = 15
-					has_active_mission = JAP_zaibatsu_faction_demands_industrial_company_employment
-				}
+				
 			}
 			traits = {
 				# armament_zaibatsu
@@ -4853,10 +4847,7 @@ ideas = {
 			}
 			ai_will_do = {
 				base = 0.5
-				modifier = {
-					factor = 15
-					has_active_mission = JAP_zaibatsu_faction_demands_industrial_company_employment
-				}
+				
 			}
 			traits = {
 				# industrial_conglomerate
@@ -4878,10 +4869,7 @@ ideas = {
 			}
 			ai_will_do = {
 				base = 0.5
-				modifier = {
-					factor = 15
-					has_active_mission = JAP_zaibatsu_faction_demands_industrial_company_employment
-				}
+				
 			}
 			traits = {
 				# zaibatsu_bank

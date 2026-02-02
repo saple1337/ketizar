@@ -55,15 +55,6 @@ ai_manchukuo_effect = {
 		# }
 	}
 }
-ai_siam_effect = {
-	if = { limit = { SIA = { is_ai = yes } } 
-		SIA = { set_equipment_fraction = 0.0 }
-		JAP = { annex_country = { target = SIA transfer_troops = yes } }
-		every_state = { limit = { AND = { is_core_of = SIA NOT = { is_core_of = RAJ } } } set_compliance = 100 remove_core_of = SIA add_core_of = SWE }
-		289 = { remove_building = { type = industrial_complex level = 4 } }
-		289 = { remove_building = { type = arms_factory level = 1 } }
-	}
-}
 
 startup_events = {
 	#Annexation of AI SAF into Canada for SR No Asia
