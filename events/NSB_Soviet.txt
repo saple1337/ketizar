@@ -10084,41 +10084,6 @@ country_event = {
 	}
 }
 
-# Japan wants Vladivostok!
-country_event = {
-	id = NSB_soviet_civil_war_common.101
-	title = NSB_soviet_civil_war_common.101.t
-	desc = {
-		text = NSB_soviet_civil_war_common.101.desc  
-		trigger = {
-			NOT = { SOV_is_exiles = yes }
-		}
-	}
-	desc = {
-		text = NSB_soviet_civil_war_common.101.desc_exiles
-		trigger = {
-			SOV_is_exiles = yes
-		}
-	}
-	picture = "[GetJapaneseNegotiationsPicture]" 
-
-	is_triggered_only = yes
-
-	# Japan Agrees
-	option = {
-		name = NSB_soviet_civil_war_common.101.a
-		set_country_flag = SOV_CSW_transfer_vladivostok_flag
-		# If war is already raging
-		IF = {
-			limit = {
-				has_global_flag = SOV_soviet_civil_war
-				
-			}
-			hidden_effect = { SOV_set_up_japanese_troops = yes }
-		}
-	}
-}
-
 # Japan refuses Vladivostok!
 country_event = {
 	id = NSB_soviet_civil_war_common.102

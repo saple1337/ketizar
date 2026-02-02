@@ -2113,6 +2113,10 @@ ideas = {
 			}
 		}
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 		JAP_kempeitai_idea_lar = {
 			picture = generic_secret_police
 			removal_cost = -1
@@ -2633,7 +2637,11 @@ ideas = {
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
 				min_export = 0.15
+<<<<<<< Updated upstream
 				custom_modifier_tooltip = JAP_pacific_integrated_customs_union_member_tt
+=======
+				custom_modifier_tooltip	= JAP_pacific_integrated_customs_union_member_tt
+>>>>>>> Stashed changes
 			}
 		}
 
@@ -4961,9 +4969,15 @@ ideas = {
 			ai_will_do = {
 				base = 1
 			}
+<<<<<<< Updated upstream
 			traits = {
 				# civilian_airway_company
 			}
+=======
+		
+			traits = {  } 
+
+>>>>>>> Stashed changes
 			modifier = {
 			}
 		}
@@ -5005,9 +5019,15 @@ ideas = {
 			ai_will_do = {
 				base = 1
 			}
+<<<<<<< Updated upstream
 			traits = {
 				# colonial_investments_company
 			}
+=======
+		
+			traits = {  } 
+
+>>>>>>> Stashed changes
 			modifier = {
 				non_core_manpower = 0.01
 				local_resources_factor = 0.05
@@ -5032,9 +5052,15 @@ ideas = {
 			ai_will_do = {
 				base = 1
 			}
+<<<<<<< Updated upstream
 			traits = {
 				# colonial_investments_company
 			}
+=======
+		
+			traits = {  } 
+
+>>>>>>> Stashed changes
 			modifier = {
 				non_core_manpower = 0.02
 				local_resources_factor = 0.1
@@ -5109,9 +5135,14 @@ ideas = {
 			ai_will_do = {
 				base = 1
 			}
+<<<<<<< Updated upstream
 			traits = {
 				# national_news_agency
 			}
+=======
+			
+			traits = {  }
+>>>>>>> Stashed changes
 		}
 	}
 	materiel_manufacturer = {
@@ -5212,6 +5243,7 @@ ideas = {
 				medium_tank_manufacturer
 			}
 		}
+<<<<<<< Updated upstream
 		mitsubishi_heavy_industries = {
 			picture = JAP_mitsubishi_tanks
 			allowed = {
@@ -5245,3 +5277,11 @@ ideas = {
 		}
 	}
 }
+=======
+
+		
+		
+
+	}	
+}
+>>>>>>> Stashed changes

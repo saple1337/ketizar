@@ -7231,16 +7231,6 @@ SOV_set_up_right_opposition_militia = {
 
 SOV_set_up_extras_from_concessions = {
 	# Extra Troops from Japan?
-	IF = {
-		limit = {
-			has_country_flag = SOV_CSW_transfer_vladivostok_flag
-			any_country= {
-				original_tag = SOV
-				owns_state = 408
-			}
-		}
-		SOV_set_up_japanese_troops = yes
-	}
 	# Equipment from Japan in return for North Sakhalin
 	IF = {
 		limit = {
@@ -7474,50 +7464,6 @@ SOV_promote_to_country_leader_provisional = {
 		}
 		promote_character = yes
 	}
-}
-# japanese_expeditionary_leader_flag
-SOV_set_up_japanese_troops = {
-	division_template = {
-	    name = "Japanese Expeditionary Force"
-	    division_names_group = SOV_JAP_INF
-	    is_locked = yes
-	    priority = 1
-	    template_counter = 3
-	    regiments = {
-	        infantry = { x = 0 y = 0 }
-	        infantry = { x = 0 y = 1 }
-	        infantry = { x = 0 y = 2 }
-	        infantry = { x = 1 y = 0 }
-	        infantry = { x = 1 y = 1 }
-	        infantry = { x = 1 y = 2 }
-	        artillery_brigade = { x= 2 y = 0}
-	        artillery_brigade = { x= 2 y = 1}
-	    }
-	    is_locked = yes
-	}
-	JAP = {
-		var:SOV.SOV_japanese_general = {
-			unit_leader_event = {
-				id = NSB_soviet_civil_war_common.129
-				hours = 1
-			}
-		}
-	}
-
-	var:SOV_civil_war_start_state = {
-		create_unit = {
-			division = "division_template = \"Japanese Expeditionary Force\" start_experience_factor = 0.2 start_equipment_factor = 0.95" owner = ROOT count = 24
-		}
-		
-
-	}
-
-	# Add air support 
-
-	add_equipment_to_stockpile = { type = small_plane_airframe  amount = 100 producer = JAP }
-	add_equipment_to_stockpile = { type = medium_plane_airframe  amount = 50 producer = JAP }
-	
-	
 }
 
 # Start creating HQ for Civil war

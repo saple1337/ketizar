@@ -1464,16 +1464,6 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			set_faction_name = JAP_greater_east_asian_co_prosperity_sphere
 		}
-		country_event = {
-			id = SEA_japan_foreign_policy.40
-			days = 4
-		}
-		hidden_effect = {
-			news_event = {
-				id = SEA_japan_news_events.02
-				days = 4
-			}
-		}
 	}
 	focus = {
 		id = JAP_expand_japan_manchukuo_economic_bloc
@@ -7234,7 +7224,6 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_industrial_concern
-			show_ideas_tooltip = imperial_japanese_airways
 		}
 	}
 	focus = {
