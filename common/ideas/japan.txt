@@ -947,7 +947,7 @@ ideas = {
 				attack_bonus_against = -0.4
 				defense_bonus_against = -0.2
 			}
-			]		}
+			}
 		JAP_intervene_in_china_5 = {
 			name = JAP_intervene_in_china
 			allowed = {
@@ -2113,10 +2113,6 @@ ideas = {
 			}
 		}
 
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 		JAP_kempeitai_idea_lar = {
 			picture = generic_secret_police
 			removal_cost = -1
@@ -2226,14 +2222,6 @@ ideas = {
 				add_to_variable = {
 					JAP_industry_consumer_goods_factor = -0.1
 					tooltip = consumer_goods_factor_tt
-				}
-				add_to_variable = {
-					JAP_industry_factory_energy_consumption = -0.05
-					tooltip = factory_energy_consumption_tt
-				}
-				add_to_variable = {
-					JAP_industry_local_resources_coal_factor = 0.05
-					tooltip = local_resources_coal_factor_tt
 				}
 				add_to_variable = {
 					JAP_industry_industrial_capacity_factory = 0.05
@@ -2637,11 +2625,7 @@ ideas = {
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
 				min_export = 0.15
-<<<<<<< Updated upstream
-				custom_modifier_tooltip = JAP_pacific_integrated_customs_union_member_tt
-=======
 				custom_modifier_tooltip	= JAP_pacific_integrated_customs_union_member_tt
->>>>>>> Stashed changes
 			}
 		}
 
@@ -4969,15 +4953,9 @@ ideas = {
 			ai_will_do = {
 				base = 1
 			}
-<<<<<<< Updated upstream
-			traits = {
-				# civilian_airway_company
-			}
-=======
 		
 			traits = {  } 
 
->>>>>>> Stashed changes
 			modifier = {
 			}
 		}
@@ -5019,15 +4997,9 @@ ideas = {
 			ai_will_do = {
 				base = 1
 			}
-<<<<<<< Updated upstream
-			traits = {
-				# colonial_investments_company
-			}
-=======
 		
 			traits = {  } 
 
->>>>>>> Stashed changes
 			modifier = {
 				non_core_manpower = 0.01
 				local_resources_factor = 0.05
@@ -5052,15 +5024,9 @@ ideas = {
 			ai_will_do = {
 				base = 1
 			}
-<<<<<<< Updated upstream
-			traits = {
-				# colonial_investments_company
-			}
-=======
 		
 			traits = {  } 
 
->>>>>>> Stashed changes
 			modifier = {
 				non_core_manpower = 0.02
 				local_resources_factor = 0.1
@@ -5135,14 +5101,8 @@ ideas = {
 			ai_will_do = {
 				base = 1
 			}
-<<<<<<< Updated upstream
-			traits = {
-				# national_news_agency
-			}
-=======
 			
 			traits = {  }
->>>>>>> Stashed changes
 		}
 	}
 	materiel_manufacturer = {
@@ -5243,45 +5203,9 @@ ideas = {
 				medium_tank_manufacturer
 			}
 		}
-<<<<<<< Updated upstream
-		mitsubishi_heavy_industries = {
-			picture = JAP_mitsubishi_tanks
-			allowed = {
-				original_tag = JAP
-			}
-			research_bonus = {
-				armor = 0.15
-			}
-			traits = {
-				# infantry_tank_manufacturer
-			}
-			modifier = {
-			}
-		}
-		hitachi_arms_department = {
-			picture = JAP_hitachi_arms
-			available = {
-			}
-			ai_will_do = {
-				base = 1
-			}
-			allowed = {
-				original_tag = JAP
-			}
-			research_bonus = {
-				armor = 0.15
-			}
-			traits = {
-				# assault_gun_manufacturer
-			}
-		}
-	}
-}
-=======
 
 		
 		
 
 	}	
 }
->>>>>>> Stashed changes

@@ -32,9 +32,9 @@ technology_sharing_group = {
 
 technology_sharing_group = {
 
-	id = japanese_research
-	name = japanese_research_name
-	desc = japanese_research_desc
+	id = jap_geacps_research
+	name = jap_geacps_research_name
+	desc = jap_geacps_research_desc
 	picture = GFX_technology_sharing_default
     
 	research_sharing_per_country_bonus = 0.15

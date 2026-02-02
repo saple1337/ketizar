@@ -10,6 +10,7 @@ set_popularities = {
 capital = 328
 set_war_support = 0.6
 oob = "MAN_1936"
+add_to_tech_sharing_group = jap_geacps_research
 set_technology = { 
 	basic_train = 1
 	infantry_weapons = 1

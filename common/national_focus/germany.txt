@@ -2640,7 +2640,7 @@ focus_tree = {
 
 			custom_effect_tooltip = "   "
 			
-			
+			HOL = { add_ideas = HOL_no_defend_homeland }
 			POL = { country_event = { id = germany.86 } }
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
 

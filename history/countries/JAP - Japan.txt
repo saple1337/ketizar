@@ -6,7 +6,7 @@ army_experience = 10
 navy_experience = 10
 air_experience = 2
 
-add_to_tech_sharing_group = japanese_research
+add_to_tech_sharing_group = jap_geacps_research
 
 set_stability = 0.2 # Was one of the countries in roughest internal shape at this point in time, coup happens not even 2 months into the game
 set_war_support = 0.6 # Was 0.8, but will make you have to scale up with Militarism a bit
@@ -171,7 +171,6 @@ set_variable = { JAP_industry_factory_energy_consumption = 0 }
 set_variable = { JAP_industry_industrial_capacity_dockyard = 0 }
 set_variable = { JAP_industry_industrial_capacity_factory = 0 }
 set_variable = { JAP_industry_local_resources_factor = 0 }
-set_variable = { JAP_industry_local_resources_coal_factor = 0 }
 set_variable = { JAP_industry_convoy_retreat_speed = 0 }
 set_variable = { JAP_industry_production_factory_max_efficiency_factor = 0 }
 set_variable = { JAP_industry_production_factory_efficiency_gain_factor = 0 }
@@ -335,8 +334,8 @@ add_to_faction = MIN
 
 set_faction_spymaster = yes	
 
-set_technology = { basic_train = 1
-		#improved_airplane_launcher = 1
+set_technology = { 
+	basic_train = 1
 	interwar_antiair = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -344,39 +343,28 @@ set_technology = { basic_train = 1
 	tech_recon = 1
 	tech_engineers = 1
 	motorised_infantry = 1
-	#rubber_on_tech = 1
 	marines  = 1
 	gw_artillery = 1
 	gwtank_chassis = 1
 	basic_light_tank_chassis = 1
-
-	
-
 	iw_small_airframe = 1
 	basic_small_airframe = 1
-		basic_medium_airframe = 1
-					aa_lmg = 1
-	
+	basic_medium_airframe = 1
+	aa_lmg = 1
 	naval_bomber1 = 1
-
 	trench_warfare = 1
 	base_strike = 1
 	fuel_silos = 1
 	synth_oil_experiments = 1
-	tech_logistics_company = 1 
-	#air_superiority = 1
-	# forward_interception = 1 
-	# fighter_ace_initiative = 1 
-	# dive_bombing = 1 
+	tech_logistics_company = 1
 	armored_car1 = 1
-	# armored_car1 = 1
 	tech_mountaineers = 1
 }
 
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 5000
+	amount = 9000
 	producer = JAP
 }  
 add_equipment_to_stockpile = {
@@ -387,12 +375,12 @@ add_equipment_to_stockpile = {
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 80000
+	amount = 100000
 	producer = JAP
 } 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 20000
+	amount = 15000
 	producer = JAP
 } 
 add_equipment_to_stockpile = {
@@ -1184,260 +1172,6 @@ JAP_isoroku_yamamoto = {
 activate_mission = JAP_kwantung_army_impatience
 
 
-if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
-### VARIANTS ###
-	# 1936 Start #
-		### Carrier Variants
-		create_equipment_variant = {
-			name = "Kaga Class"
-			type = carrier_1
-			parent_version = 0
-			upgrades = {
-				ship_deckspace_upgrade = 5
-				carrier_armor_upgrade = 2
-				ship_engine_upgrade = 2
-				ship_reliability_upgrade = 3
-			}
-			obsolete = yes
-		}
-		### Battleship Variants	
-		create_equipment_variant = {
-			name = "Ise Class"
-			type = battleship_1
-			parent_version = 0
-			upgrades = {
-				ship_reliability_upgrade = 2
-				ship_engine_upgrade = 3
-				ship_armor_upgrade = 1
-				ship_gun_upgrade = 1
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "Nagato Class"
-			type = battleship_1
-			parent_version = 1
-			upgrades = {
-				ship_reliability_upgrade = 3
-				ship_engine_upgrade = 4
-				ship_armor_upgrade = 3
-				ship_gun_upgrade = 4
-			}
-			obsolete = yes
-		}
-		### Heavy Cruiser Variants	
-		create_equipment_variant = {
-			name = "Myoko Class"
-			type = heavy_cruiser_1
-			parent_version = 0
-			upgrades = {
-				ship_reliability_upgrade = 2
-				ship_engine_upgrade = 2
-				ship_armor_upgrade = 2
-				ship_gun_upgrade = 3
-			}
-			obsolete = yes
-		}
-		### Light Cruiser Variants	
-		create_equipment_variant = {
-			name = "Kuma Class"
-			type = light_cruiser_1
-			parent_version = 0
-			upgrades = {
-				ship_reliability_upgrade = 2
-				ship_engine_upgrade = 2
-				ship_gun_upgrade = 1
-				ship_anti_air_upgrade = 1
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "Sendai Class"
-			type = light_cruiser_1
-			parent_version = 1
-			upgrades = {
-				ship_reliability_upgrade = 2
-				ship_engine_upgrade = 3
-				ship_gun_upgrade = 1
-				ship_anti_air_upgrade = 2
-			}
-			obsolete = yes
-		}
-		### Destroyer Variants
-		create_equipment_variant = {
-			name = "Fubuki Class"
-			type = destroyer_1
-			parent_version = 0
-			upgrades = {
-				ship_torpedo_upgrade = 2
-				destroyer_engine_upgrade = 4
-				ship_ASW_upgrade = 2
-				ship_anti_air_upgrade = 2
-			}
-		}	
-		### Submarine Variants	
-		create_equipment_variant = {
-			name = "Kaidai III Class"
-			type = submarine_1
-			parent_version = 0
-			upgrades = {
-				ship_reliability_upgrade = 3
-				sub_engine_upgrade = 3
-				sub_stealth_upgrade = 1
-				sub_torpedo_upgrade = 2
-			}
-			obsolete = yes
-		}	
-}
-if = {
-	limit = { has_dlc = "Man the Guns"}
-	### VARIANTS ###
-	# 1936 Start #
-				create_equipment_variant = {
-			name = "Soryu Class"
-			type = ship_hull_carrier_1
-			name_group = JAP_CV_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_deck_slot_1 = ship_deck_space
-				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air_2
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = carrier_ship_engine_2
-				fixed_ship_secondaries_slot = empty
-				front_1_custom_slot = ship_deck_space
-			}
-		}
-		create_equipment_variant = {
-			name = "Zuiho Class"
-			type = ship_hull_carrier_conversion_ca
-			name_group = JAP_CVL_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_deck_slot_1 = ship_deck_space
-				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air_2
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = carrier_ship_engine_2
-				fixed_ship_secondaries_slot = empty
-			}
-		}
-
-		### Battleship Variants	
-		create_equipment_variant = {
-			name = "Kongo Class"
-			name_group = JAP_BB_HISTORICAL
-			type = ship_hull_heavy_1
-			parent_version = 0
-			modules = {
-				#fixed_ship_battery_slot = ship_heavy_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_2
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = heavy_ship_engine_2
-				fixed_ship_secondaries_slot = ship_secondaries_2
-				#fixed_ship_armor_slot = ship_armor_bb_1
-				# front_1_custom_slot =   ship_heavy_battery_2
-				mid_1_custom_slot = ship_anti_air_2
-				mid_2_custom_slot = ship_airplane_launcher_1
-				#rear_1_custom_slot = ship_heavy_battery_2
-			}
-		}
-
-		### Heavy Cruiser Variants			
-
-		create_equipment_variant = {
-			name = "Aoba Class"
-			type = ship_hull_cruiser_1
-			name_group = JAP_CA_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_medium_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_2
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = cruiser_ship_engine_2
-				fixed_ship_armor_slot = ship_armor_cruiser_2
-				fixed_ship_secondaries_slot = ship_secondaries_2
-				mid_1_custom_slot = ship_medium_battery_2
-				mid_2_custom_slot = ship_medium_battery_2
-				rear_1_custom_slot = ship_medium_battery_2
-			}
-			obsolete = yes
-		}
-
-		create_equipment_variant = {
-			name = "Mogami Class"
-			type = ship_hull_cruiser_2
-			name_group = JAP_CA_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_medium_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_2
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = cruiser_ship_engine_2
-				fixed_ship_armor_slot = ship_armor_cruiser_2
-				fixed_ship_secondaries_slot = ship_secondaries_2
-				front_1_custom_slot = ship_medium_battery_2
-				mid_1_custom_slot = ship_medium_battery_2
-				mid_2_custom_slot = ship_medium_battery_2
-				rear_1_custom_slot = ship_medium_battery_2
-			}
-		}
-
-		create_equipment_variant = {
-			name = "Kuma/Nagara Class"
-			type = ship_hull_cruiser_1
-			name_group = JAP_CL_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_light_medium_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_2
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = cruiser_ship_engine_2
-				fixed_ship_armor_slot = ship_armor_cruiser_2
-				fixed_ship_secondaries_slot = ship_secondaries_2 
-				mid_1_custom_slot = ship_light_medium_battery_2
-				mid_2_custom_slot = ship_light_medium_battery_2
-				rear_1_custom_slot = ship_light_medium_battery_2
-			}
-		}
-
-		### Destroyer Variants
-		create_equipment_variant = {
-			name = "Fubuki Class"
-			type = ship_hull_light_1
-			name_group = JAP_DD_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_light_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_2
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = light_ship_engine_1
-				fixed_ship_torpedo_slot = ship_torpedo_2
-				mid_1_custom_slot = ship_torpedo_2
-				rear_1_custom_slot = ship_depth_charge_1
-			}
-		}
-
-		### Submarine Variants	
-		create_equipment_variant = {
-			name = "Kaidai III Class"
-			type = ship_hull_submarine_1
-			name_group = JAP_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_1
-				fixed_ship_engine_slot = sub_ship_engine_1
-				rear_1_custom_slot = ship_torpedo_sub_1
-			}
-		}
 
 if = {
 	limit = {
@@ -1500,16 +1234,6 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Ki-2"
-		type = small_plane_cas_airframe_0
-		modules = {
-			fixed_main_weapon_slot = small_bomb_bay
-			engine_type_slot = engine_1_2x
-			special_type_slot_1 = lmg_defense_turret
-		}
-		icon = "GFX_JAP_CAS1_medium"
-	}
-	create_equipment_variant = {
 		name = "Ki-1"
 		type = medium_plane_airframe_0
 		modules = {
@@ -1570,7 +1294,3 @@ if = {
 		icon = "GFX_JAP_cv_naval_bomber1_medium"
 	}
 }
-
-
-}
-	

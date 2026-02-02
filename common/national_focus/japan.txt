@@ -1798,7 +1798,6 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = JAP_yamamotos_premiership
 			focus = JAP_the_crysanthemum_throne
-			focus = JAP_solidify_tohokai_rule
 		}
 		x = -2
 		y = 2
@@ -1873,7 +1872,6 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = JAP_tojos_premiership
 			focus = JAP_the_crysanthemum_throne
-			focus = JAP_solidify_tohokai_rule
 		}
 		x = 0
 		y = 2
@@ -1936,7 +1934,6 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = JAP_tojos_premiership
 			focus = JAP_yamamotos_premiership
-			focus = JAP_solidify_tohokai_rule
 		}
 		x = 2
 		y = 2
@@ -2050,7 +2047,6 @@ focus_tree = {
 			focus = JAP_tojos_premiership
 			focus = JAP_yamamotos_premiership
 			focus = JAP_the_crysanthemum_throne
-			focus = JAP_solidify_tohokai_rule
 		}
 		cost = 10
 		ai_will_do = {
@@ -2107,7 +2103,6 @@ focus_tree = {
 			focus = JAP_tojos_premiership
 			focus = JAP_yamamotos_premiership
 			focus = JAP_the_crysanthemum_throne
-			focus = JAP_solidify_tohokai_rule
 		}
 		cost = 5
 		ai_will_do = {
@@ -2229,7 +2224,6 @@ focus_tree = {
 			focus = JAP_tojos_premiership
 			focus = JAP_yamamotos_premiership
 			focus = JAP_the_crysanthemum_throne
-			focus = JAP_solidify_tohokai_rule
 		}
 		cost = 5
 		dynamic = yes
@@ -2273,7 +2267,6 @@ focus_tree = {
 			focus = JAP_tojos_premiership
 			focus = JAP_yamamotos_premiership
 			focus = JAP_the_crysanthemum_throne
-			focus = JAP_solidify_tohokai_rule
 		}
 		cost = 10
 		ai_will_do = {
@@ -2312,7 +2305,6 @@ focus_tree = {
 			focus = JAP_tojos_premiership
 			focus = JAP_yamamotos_premiership
 			focus = JAP_the_crysanthemum_throne
-			focus = JAP_solidify_tohokai_rule
 		}
 		cost = 10
 		ai_will_do = {
@@ -2352,7 +2344,6 @@ focus_tree = {
 			focus = JAP_tojos_premiership
 			focus = JAP_yamamotos_premiership
 			focus = JAP_the_crysanthemum_throne
-			focus = JAP_solidify_tohokai_rule
 		}
 		cost = 5
 		ai_will_do = {
@@ -2524,7 +2515,6 @@ focus_tree = {
 			focus = JAP_tojos_premiership
 			focus = JAP_yamamotos_premiership
 			focus = JAP_the_crysanthemum_throne
-			focus = JAP_solidify_tohokai_rule
 		}
 		cost = 10
 		ai_will_do = {
@@ -4666,8 +4656,8 @@ focus_tree = {
 		#	focus = 
 		#}
 		prerequisite = {
-			focus = JAP_establish_nippon_hassoden
 			focus = JAP_establish_synthetic_fuel_joint_venture
+			focus = JAP_build_the_nishotaki_and_miyanaka_dams
 		}
 		relative_position_id = JAP_establish_synthetic_fuel_joint_venture
 		x = -3

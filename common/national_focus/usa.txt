@@ -2294,7 +2294,8 @@ focus = {
 		text = "Develop the Philippine Economy"
 		completion_reward = {
 			
-			327 = {
+
+			629 = {
 				add_building_construction = {
 					type = arms_factory
 					level = 10
@@ -2307,6 +2308,8 @@ focus = {
 					level = 10
 					instant_build = yes
 				}
+			}
+			327 = {
 				add_resource = {
 					type = chromium
 					amount = 40

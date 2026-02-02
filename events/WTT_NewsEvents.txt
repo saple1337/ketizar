@@ -372,8 +372,6 @@ news_event = {
 		}
 	}
 }
-
-]
 # France goes to war upon return of the Kaiser
 news_event = {
 	id = wtt_news.14

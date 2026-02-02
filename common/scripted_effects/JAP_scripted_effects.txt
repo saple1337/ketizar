@@ -469,17 +469,6 @@ JAP_intervene_in_china_remove = {
 }
 
 # Operatives
-JAP_create_patrick_heenan_operative = {
-	create_operative_leader = {
-		name = JAP_patrick_vaughan_heenan
-		GFX = GFX_portrait_JAP_patrick_vaughan_heenan
-		gender = male
-		traits = { operative_tough }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		nationalities = { ENG NZL MAL RAJ }
-	}
-}
 
 JAP_create_john_farnsworth_operative = {
 	create_operative_leader = {
@@ -529,17 +518,6 @@ JAP_create_takeo_yoshikawa_operative = {
 	}
 }
 
-JAP_create_yoshio_kodama_operative = {
-	create_operative_leader = {
-		name = JAP_yoshio_kodama
-		GFX = GFX_portrait_JAP_yoshio_kodama_operative
-		gender = male
-		traits = { operative_master_interrogator operative_tough }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		nationalities = { JAP }
-	}
-}
 
 
 
