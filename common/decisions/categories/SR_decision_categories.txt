@@ -16,13 +16,14 @@ Battle_for_France = {
 		has_war = yes
 	}
 }
-nigger = {
+not_nice = {
 	priority = 1
 	
 	allowed = {
 	OR = {
 		original_tag = AST
 		original_tag = RAJ
+		original_tag = ENG
 		}
 	}
 
@@ -30,9 +31,8 @@ nigger = {
 	}
 
 	visible = {
-		OR = {
-		RAJ = {is_ai = yes}
-		AST = {is_ai = yes}
-		}
+		original_tag = AST
+		original_tag = NZL
+		original_tag = ENG
 	}
 }

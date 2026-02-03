@@ -1,4 +1,4 @@
-nigger = {
+not_nice = {
 	annex_nzl = {
 
 
@@ -18,7 +18,8 @@ nigger = {
 		cost = 0
 			
 		visible = {
-			NZL = {is_ai = yes}
+			original_tag = AST
+			original_tag = ENG
 		}
 
 		complete_effect = {

@@ -83,11 +83,12 @@ set_convoys = 5
 
 
 recruit_character = ISR_david_ben_gurion
+recruit_character = ISR_binnison
 
 create_country_leader = {
-	name = "Itzhak Gaster"
+	name = "Benyamin Ben Nison"
 	desc = ""
-	picture = GFX_portrait_Itzhak_Gaster
+	picture = GFX_portrait_ISR_binnison
 	ideology = fascism_ideology
 	traits = {
 		#

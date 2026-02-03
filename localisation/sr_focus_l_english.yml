@@ -1198,7 +1198,7 @@ SLO_Czech_mediums_tt:0 "§H2.00K§! units of Czech medium tanks will be added to
 SLO_unlock_ss_tt:0 "Unlocks §RSS§!"
 CZE_SLO_fascism:0 "Slovakia"
 EST_UNF_democratic:0 "British Far-East"
-nigger:0 "Proclaim Greater British Reich"
+not_nice:0 "Proclaim Greater British Reich"
 
 TZAR_SOV_third_five_year_plan_ns_tt:0 "Replace §Y$SOV_third_five_year_plan_dynamic_modifier$§! by §Y$SOV_third_five_year_plan_dynamic_modifier_alt$§!\n Effective change: \n£prod_eff Production Efficiency growth: §G+5.00%§! \nIndustrial Concern Cost: §G-15%§! \nConsumer Goods Factories: §Y+2.0%§! \n§YMilitary Factory§! construction speed: §G+10.00%§! \n\n"
 TZAR_SOV_shift_to_armaments_production_ns_tt:0 "$SOV_modify_fyp_ns_intro$ \n§YCivilian Factory§! construction speed: §R-5.00%§! \n\n"

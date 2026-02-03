@@ -3362,7 +3362,7 @@ technologies = {
 			industry = 2.0
 		}
 	}
-	#### kill all mass-mob niggers
+	#### kill all mass-mob 
 	human_wave_offensive = {
 
 		conscription = 0.01

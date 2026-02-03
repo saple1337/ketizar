@@ -466,6 +466,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/portrait_JAP_shun_akikusa_small.dds"
 	}
 	spriteType = {
+		name = "GFX_portrait_ISR_binnison"
+		texturefile = "gfx/leaders/ISR/portrait_ISR_binnison.dds"
+	}
+	spriteType = {
 		name = "GFX_portrait_JAP_taketora_ogata_small"
 		texturefile = "gfx/interface/ideas/portrait_JAP_taketora_ogata_small.dds"
 	}
