@@ -271,6 +271,11 @@ if = {
 		}
 	}
 	set_autonomy = {
+		target = RHS
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+	set_autonomy = {
 		target = RAJ
 		autonomous_state = autonomy_colony
 		freedom_level = 0.35
@@ -301,6 +306,7 @@ if = {
 		puppet = CAN
 		puppet = NZL
 		puppet = SAF
+		puppet = RHS
 	}
 }
 
@@ -333,6 +339,7 @@ add_to_faction = SAF
 add_to_faction = RAJ
 add_to_faction = NOR
 add_to_faction = HOL
+add_to_faction = RHS
 # Order matters - here Chamberlain becomes starting leader
 # create_country_leader = {
 # 	name = "Winston Churchill"

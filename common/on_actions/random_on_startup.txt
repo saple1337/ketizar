@@ -101,6 +101,23 @@ on_startup = {
 			}
 			add_ideas = trade_axis
 			}
+		
+			if = {
+				limit = {
+				RHS = {
+					is_ai = yes
+				}
+			}
+			ENG = {
+				annex_country = { target = RHS transfer_troops = no }
+			}
+			every_state = {
+				limit = {
+					is_core_of = RHS
+				}
+				add_compliance = 100
+			}
+		
 		}
 	}
 	}
