@@ -27,7 +27,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		available = {
-
+			is_ai = no
 		}
 		
 		ai_will_do = {

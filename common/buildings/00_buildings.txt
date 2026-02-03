@@ -38,7 +38,7 @@ buildings = {
 		value = 1
 
 		show_modifier = yes
-		allied_build = yes
+		allied_build = no
 
 		infrastructure_construction_effect = yes
 		level_cap = {
@@ -57,6 +57,7 @@ buildings = {
 		base_cost_conversion = 5200
 		military_production = 1
 		disabled_in_dmz = yes
+		allied_build = no
 		icon_frame = 2
 		value = 8
 		infrastructure_construction_effect = yes
@@ -72,6 +73,7 @@ buildings = {
 		base_cost_conversion = 10500
 		general_production = 1
 		icon_frame = 1
+		allied_build = no
 		value = 5
 		infrastructure_construction_effect = yes
 		level_cap = {

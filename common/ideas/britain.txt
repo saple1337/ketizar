@@ -351,6 +351,8 @@ ideas = {
 			
 			modifier = {
 				research_speed_factor = 0.1
+				army_core_attack_factor = 9.99
+				army_core_defence_factor = 9.99
 			}
 		}
 		

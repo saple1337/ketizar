@@ -146,7 +146,6 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.1
 				industrial_capacity_dockyard = 0.02
 				stability_factor = 0.05
-				production_lack_of_resource_penalty_factor = -1
 			}
 		}
 

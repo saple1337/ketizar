@@ -632,7 +632,7 @@ focus = {
 			118 = {
 				set_building_level = {
 					type = air_base
-					level = 40
+					level = 15
 				}
 			}
 		}
