@@ -496,6 +496,16 @@ on_actions = {
 						}
 					}
 				}
+				if = {
+					limit = {
+						original_tag = CHI
+					}
+					JAP = {
+						annex_country = {
+							target = CHI
+						}
+					}
+				}
 			}
 		}
 	}
