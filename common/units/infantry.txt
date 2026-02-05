@@ -670,6 +670,9 @@ marine_commando  = {
 		ai_priority = 200
 		active = no
 
+		type = {
+			motorized
+		}
 		
 		group = armor
 		

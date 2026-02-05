@@ -3811,13 +3811,7 @@ focus_tree = {
 			FOCUS_FILTER_IMPERIAL_INFLUENCE
 		}
 		completion_reward = {
-			hidden_effect = {
-				every_country = {
-					limit = {
-						is_in_faction_with = ENG
-					}
-					add_ideas = allies_nerf
-				}
+			hidden_effect = 
 				declare_war_on = {
 					target = ENG
 					type = annex_everything

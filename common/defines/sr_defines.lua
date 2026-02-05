@@ -561,17 +561,17 @@ NDefines.NNavy.DOMINANCE_CONTROLLED_THRESHOLD_RATIO = 0.55 -- Percentage of need
 NDefines.NNavy.NAVAL_HEADQUARTERS_FIRST_ADJACENT_FACTOR = 0.0						-- naval dominance from naval headquarters is multiplied by this value for the first adjacent region
 NDefines.NNavy.NAVAL_HEADQUARTERS_SECOND_ADJACENT_FACTOR = 0.0					-- naval dominance from naval headquarters is multiplied by this value for the second adjacent region
 
-NDefines.NNavy.MISSION_DOMINANCE_RATIOS = { -- dominance multipliers for different mission types
+NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { 						-- supremacy multipliers for different mission types   | Strikeforce/Naval Invasion Support now 0 supremacy to avoid free supremacy
 		0.0, -- HOLD
-		1.0, -- PATROL
-		1.0, -- STRIKE FORCE
-		0.5, -- CONVOY RAIDING
-		1.0, -- CONVOY ESCORT
-		0.0, -- MINES PLANTING
-		0.0, -- MINES SWEEPING
+		0.8, -- PATROL		
+		0.0, -- STRIKE FORCE 
+		0.2, -- CONVOY RAIDING
+		0.5, -- CONVOY ESCORT
+		0.0, -- MINES PLANTING	
+		0.0, -- MINES SWEEPING	
 		0.0, -- TRAIN
 		0.0, -- RESERVE_FLEET
-		1.0, -- NAVAL_INVASION_SUPPORT
+		0.2, -- NAVAL_INVASION_SUPPORT
 	}
 
 NDefines.NNavy.ORG_COST_WHILE_MOVING = { -- org cost while the ships are moving

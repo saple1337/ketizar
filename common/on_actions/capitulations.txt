@@ -251,18 +251,6 @@ on_actions = {
 					762 = {
 						set_compliance = 60
 					}
-					if = {
-						limit = {
-							JAP = {
-								exists = yes
-							}
-						}
-						JAP = {
-							transfer_state = 671
-							transfer_state = 286
-							transfer_state = 728
-						}
-					}
 					FRA = {
 						country_event = {
 							id = france.800

@@ -2263,7 +2263,7 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			date>1941.2.1
+			date>1941.1.1
 		}
 		
 		

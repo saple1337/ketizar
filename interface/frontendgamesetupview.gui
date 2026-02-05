@@ -1786,6 +1786,31 @@ guiTypes = {
 			clicksound = click_checkbox
 		}
 
+		checkboxType = {
+			name = "hard_cb"
+			position = { x=530 y =101}
+			quadTextureSprite ="GFX_generic_checkbox"
+			clicksound = click_checkbox
+		}
+		checkboxType = {
+			name = "very_easy_cb"
+			position = { x=530 y =101}
+			quadTextureSprite ="GFX_generic_checkbox"
+			clicksound = click_checkbox
+		}
+		checkboxType = {
+			name = "very_hard_cb"
+			position = { x=530 y =101}
+			quadTextureSprite ="GFX_generic_checkbox"
+			clicksound = click_checkbox
+		}
+		checkboxType = {
+			name = "easy_cb"
+			position = { x=530 y =101}
+			quadTextureSprite ="GFX_generic_checkbox"
+			clicksound = click_checkbox
+		}
+
 		instantTextBoxType={
 			position = {x = 30 y = 148 }
 			name = "historical_text"

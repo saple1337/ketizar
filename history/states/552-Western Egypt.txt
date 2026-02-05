@@ -2,7 +2,7 @@ state={
 	id=552
 	name="STATE_552"
 	provinces={
-		961 1206 4008 4124 6148 6925 7216 9830 10056 10097 11311 11810 12771 
+		6148 7216 11311
 	}
 	impassable = yes
 	history={

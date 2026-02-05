@@ -90,19 +90,19 @@ focus_tree = {
 				modules = {
 					main_armament_slot = tank_high_velocity_cannon_2
 					turret_type_slot = tank_medium_three_man_tank_turret
-					suspension_type_slot = tank_horstmann_suspension
+					suspension_type_slot = tank_rubber_scissor_suspension
 					armor_type_slot = tank_cast_armor
-					engine_type_slot = tank_gasoline_engine
+					engine_type_slot = tank_diesel_engine
 					special_type_slot_1 = tank_radio_2
 					special_type_slot_2 = secondary_turret_hmg
 					special_type_slot_3 = auto_loader
 					special_type_slot_4 = additional_machine_guns
 					special_type_slot_9 = apcr_ammo_2
-					special_type_slot_10 = smoke_launchers
+					special_type_slot_10 = squeezebore_adaptor
 				}
 				upgrades = {
-					tank_nsb_engine_upgrade = 3
-					tank_nsb_armor_upgrade = 0
+					tank_nsb_engine_upgrade = 9
+					tank_nsb_armor_upgrade = 9
 				}
 			}
 			create_equipment_variant = {
