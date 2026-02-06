@@ -39,10 +39,6 @@ TRK = {
 	color = rgb { 72 120 126 }
 	color_ui = rgb { 94 95 164 }
 }
-IRE = {
-	color = rgb { 80 159 90 }
-	color_ui = rgb { 104 207 117 }
-}
 WSR = {
 	color = rgb { 90 6 10 }
 	color_ui = rgb { 163 17 31 }
