@@ -2923,6 +2923,7 @@ SOV_arseniy_golovko={
 			available = {
 				OR = {
 					has_completed_focus = SOV_war_heroes
+					has_completed_focus = SOV_socialist_realm
 				}
 			}
 			traits = {

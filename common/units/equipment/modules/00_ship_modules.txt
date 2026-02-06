@@ -2521,7 +2521,6 @@ equipment_modules = {
  		}
  		add_stats = {
  			armor_value = 65
-			naval_torpedo_damage_reduction_factor = -0.33
  		}
  		dismantle_cost_ic = 5500
  	}
@@ -2540,7 +2539,6 @@ equipment_modules = {
  		}
  		add_stats = {
  			armor_value = 65
-			naval_torpedo_damage_reduction_factor = -0.17
  		}
 		can_convert_from = {
 			module = ship_scheme_mixed
@@ -2588,7 +2586,6 @@ equipment_modules = {
  		}
  		add_stats = {
  			armor_value = 65
-			naval_torpedo_damage_reduction_factor = 0.17
  		}
 		can_convert_from = {
 			module = ship_scheme_mixed
@@ -2618,7 +2615,6 @@ equipment_modules = {
  		}
  		add_stats = {
  			armor_value = 65
-			naval_torpedo_damage_reduction_factor = 0.33
  		}
 		can_convert_from = {
 			module = ship_scheme_mixed
@@ -2652,7 +2648,6 @@ equipment_modules = {
  		add_stats = {
  			armor_value = 65
 			naval_torpedo_enemy_critical_chance_factor = -0.5
-			naval_torpedo_damage_reduction_factor = 0.5
  		}
 		can_convert_from = {
  			module_category = ship_heavy_armor
@@ -2696,7 +2691,6 @@ equipment_modules = {
  		add_stats = {
  			armor_value = 100
  			surface_visibility = 5
-			naval_torpedo_damage_reduction_factor = -1.5
  		}
 		can_convert_from = {
  			module_category = ship_heavy_armor
@@ -2719,7 +2713,6 @@ equipment_modules = {
  		dismantle_cost_ic = 2500
  		add_stats = {
  			armor_value = 9
-			naval_torpedo_damage_reduction_factor = -0.33
  		}
  	}
  	ship_armor_cruiser_2 = {
@@ -2739,7 +2732,6 @@ equipment_modules = {
  		dismantle_cost_ic = 3000
  		add_stats = {
  			armor_value = 12
-			naval_torpedo_damage_reduction_factor = -0.17
  		}
  	}
  	ship_armor_cruiser_3 = {
@@ -2758,7 +2750,6 @@ equipment_modules = {
  		dismantle_cost_ic = 3500
  		add_stats = {
  			armor_value = 15
-			naval_torpedo_damage_reduction_factor = -0.09
  		}
  	}
  	ship_armor_cruiser_4 = {
@@ -2790,7 +2781,6 @@ equipment_modules = {
  		}
  		add_stats = {
  			armor_value = 28
-			naval_torpedo_damage_reduction_factor = -0.33
  		}
 		can_convert_from = {
  			module_category = ship_cruiser_armor
@@ -2810,7 +2800,6 @@ equipment_modules = {
  		}
  		add_stats = {
  			armor_value = 31
-			naval_torpedo_damage_reduction_factor = -0.17
  		}
 		can_convert_from = {
  			module_category = ship_cruiser_armor

@@ -3877,7 +3877,6 @@ focus_tree = {
 						}
 					}
 				}
-			}
 			custom_effect_tooltip = tooltip_jap_war
 			country_event = {
 				id = japan.144
