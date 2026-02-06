@@ -340,7 +340,6 @@ add_to_faction = RAJ
 add_to_faction = NOR
 add_to_faction = HOL
 add_to_faction = RHS
-add_to_faction = IRQ
 # Order matters - here Chamberlain becomes starting leader
 # create_country_leader = {
 # 	name = "Winston Churchill"
