@@ -576,79 +576,7 @@ joint_focus = {
 		}
 }
 
-joint_focus = {
-		id = AXIS_support_goldensquare
-		icon = GFX_focus_TUR_support_the_golden_square
-		prerequisite = { focus = AXIS_global_fascism }
-		mutually_exclusive = { focus =  }
-		dynamic = yes 
-		
-		x = -2
-		y = 1
-		
-		relative_position_id = AXIS_global_fascism
 
-		cost = 6
-
-		ai_will_do = {
-			factor = -100
-		}
-
-		joint_trigger = {
-  			
-		}
-
-		available = {
-			ROOT = { has_war_with = ENG	}
-			ITA = { has_war_with = ENG }
-			date<1940.7.10
-		}
-		
-		bypass = {
-
-		}
-		
-		select_effect = {
-			676 = { set_demilitarized_zone = yes }
-			291 = { set_demilitarized_zone = yes }
-		}
-		
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-				
-		}
-
-		completion_reward_joint_originator = {
-			676 = { set_demilitarized_zone = no }
-			291 = { set_demilitarized_zone = no }
-			IRQ = {
-				transfer_state = 676
-				transfer_state = 291
-				load_oob = ITA_anglo_iraq
-			}
-			ROOT = {
-				set_autonomy = {
-						target = IRQ
-						autonomy_state = autonomy_puppet
-				}
-				news_event = { id = news.1000 }
-			}
-			GER = {
-				add_to_faction = IRQ
-			}
-		}
-
-		completion_reward_joint_member = {
-			
-		}
-}
 
 joint_focus = {
 		id = AXIS_sword_islam
