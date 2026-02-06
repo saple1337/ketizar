@@ -463,54 +463,7 @@ country_event = {
 					puppet = GGV
 					set_autonomy = { target = GGV autonomy_state = autonomy_integrated_puppet }
 				}
-	every_country = {
-		limit = {
-		owns_state = 79
-		}
-		transfer_state = 78
-		transfer_state = 766
-		transfer_state = 80
-		transfer_state = 198
-		transfer_state = 834
-		transfer_state = 192
-	}
-	every_country = {
-		limit = {
-		AND = {
-		owns_state = 717
-		NOT = {
-		is_in_faction_with = ENG
-		}
-		}
-		}
-		transfer_state = 657
-		transfer_state = 560
-		transfer_state = 408
-		transfer_state = 409
-	}
-	every_country = {
-		limit = {
-		AND = {
-		owns_state = 537
-		NOT = {
-		is_in_faction_with = ENG
-		}
-		}
-		}
-		transfer_state = 655
-	}
-	every_country = {
-		limit = {
-		AND = {
-		owns_state = 612
-		NOT = {
-		is_in_faction_with = ENG
-		}
-		}
-		}
-		transfer_state =817
-		transfer_state =819
-	}
+
 	SWE = {
 		transfer_state = 146
 		transfer_state = 147
@@ -599,6 +552,12 @@ country_event = {
 		transfer_state = 574
 		transfer_state = 562
 		transfer_state = 561
+		transfer_state = 408
+		
+		transfer_state = 409
+		transfer_state = 560
+		transfer_state = 657
+		transfer_state = 655
 	}
 	CSR = {
 		create_country_leader = {
@@ -610,7 +569,7 @@ country_event = {
 						traits = {
 						}
 					}
-		# transfer_state = 878
+		transfer_state = 878
 		transfer_state = 567
 		transfer_state = 568
 		transfer_state = 569
@@ -621,9 +580,9 @@ country_event = {
 		transfer_state = 588
 		transfer_state = 882
 		transfer_state = 578
-		# transfer_state = 577
+		transfer_state = 577
 		transfer_state = 824
-		# transfer_state = 516
+		transfer_state = 516
 		transfer_state = 576
 		transfer_state = 329
 		transfer_state = 566
@@ -653,7 +612,52 @@ country_event = {
 	SOV = {
 		set_capital = {state = 214}
 	}
+		every_country = {
+		limit = {
+		owns_state = 79
+		}
+		transfer_state = 78
+		transfer_state = 766
+		transfer_state = 80
+		transfer_state = 198
+		transfer_state = 834
+		transfer_state = 192
 	}
+	every_country = {
+		limit = {
+		owns_state = 717
+		NOT = {
+		is_in_faction_with = ENG
+		}
+		
+		}
+		transfer_state = 657
+		transfer_state = 560
+		transfer_state = 408
+		transfer_state = 409
+	}
+	every_country = {
+		limit = {
+		owns_state = 537
+		NOT = {
+		is_in_faction_with = ENG
+		}
+
+		}
+		transfer_state = 655
+	}
+	every_country = {
+		limit = {
+		owns_state = 612
+		NOT = {
+		is_in_faction_with = ENG
+		}
+		}
+		transfer_state =817
+		transfer_state =819
+	}
+	}
+	
 }
 add_namespace = hidden_shit_lol1
 country_event = {
