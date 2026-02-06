@@ -161,12 +161,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-			retire_character = RHS_godfrey_huggins
-		}
-
 		completion_reward = {
 			retire_character = RHS_godfrey_huggins
+			add_war_support = 0.05
+			add_stability = 0.1
 		}
 	}
 
@@ -1038,7 +1036,7 @@ focus_tree = {
 		x = 24
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -1080,7 +1078,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = SAF_anglo_american_idea 
 			771 = {
 				add_resource = {
 					type = tungsten
@@ -1105,7 +1104,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 5
 		}
 		available = {
 			has_war = no
@@ -1152,7 +1151,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_offsite_building = { type = industrial_complex level = 6 }
+			add_offsite_building = { type = industrial_complex level = 1 }
+			545 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1733,7 +1739,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_timed_idea = { idea = RHS_nyasaland_recruits days = 720 }
-			unlock_decision_tooltip = BEA_recruit_from_nyasaland
+			
 		}
 	}
 
@@ -2196,7 +2202,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			army_experience = 30
+			add_manpower = 12000
 		}
 	}
 
