@@ -54,7 +54,6 @@ recruit_character = RHS_charles_meredith
 recruit_character = RHS_archibald_wavell
 recruit_character = RHS_claude_auchinleck
 recruit_character = RHS_bush_spirit
-recruit_character = RHS_orde_wingate
 ##############################################################
 ###	TECHNOLOGY and OOB SETUP ###
 ################################
@@ -108,5 +107,6 @@ set_technology = { basic_train = 1
 
 545 = { set_state_name = "Mashonaland" }
 
-add_offsite_building = { type = industrial_complex level = 7 }
-add_offsite_building = { type = arms_factory level = 2 }
+set_province_name = { id = 4851 name = "Bulawayo" }
+set_province_name = { id = 1874 name = "Wankie" }
+set_province_name = { id = 2151 name = "Victoria" }
