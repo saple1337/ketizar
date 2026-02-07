@@ -2466,6 +2466,9 @@ focus_tree = {
 				}
 			}
 		
+			RAJ = {
+				set_technology = {  elephantry = 1}
+			}
 			hidden_effect = {
 							USA = { set_rule = { can_join_factions = yes }}
 							ENG = { add_to_faction = USA
