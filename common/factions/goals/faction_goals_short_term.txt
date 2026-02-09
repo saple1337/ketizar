@@ -108,9 +108,7 @@ faction_goal_unlock_research = {
 		set_faction_research_unlocked = yes
 		add_faction_initiative = 1
 	}
-	ai_will_do = {
-		base = 1000 # They should always do this if they can
-	}
+	
 }
 
 faction_goal_unlock_military = {
@@ -184,9 +182,7 @@ faction_goal_unlock_military = {
 		set_faction_military_unlocked = yes
 		add_faction_initiative = 1
 	}
-	ai_will_do = {
-		base = 1000 # They should always do this if they can
-	}
+	
 }
 
  ###  ##  ###   ##  #  # 
@@ -296,13 +292,7 @@ faction_goal_spy_master = {
 			add_political_power = 100
 		}
 	}
-	ai_will_do = {
-		base = 1
-		modifier = {  
-			add = 2
-			has_intelligence_agency = yes
-		}
-	}
+	
 }
 
 
@@ -495,9 +485,7 @@ faction_goal_ensure_military_r_d = {
 			}
 		}
 	}
-	ai_will_do = {
-		base = 1
-	}
+	
 }
 
 
