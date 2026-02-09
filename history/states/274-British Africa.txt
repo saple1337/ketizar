@@ -1,9 +1,7 @@
 state={
 	id=274
 	name="STATE_274"
-	resources={
-		coal=20
-	}
+
 	history={
 		owner = ENG
 		add_core_of = SWE

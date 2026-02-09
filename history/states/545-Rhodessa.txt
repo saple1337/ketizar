@@ -4,9 +4,7 @@ state={
 	state_category = megalopolis
 	
 	name="STATE_545"
-	resources={
-		coal=20
-	}
+
 	history={
 		owner = RHS
 		buildings = {

@@ -10,7 +10,6 @@ state={
 		aluminium=16
 		steel=32
 		tungsten=32
-		coal=20
 	}
 	
 	history={

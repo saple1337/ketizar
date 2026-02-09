@@ -5,7 +5,6 @@ state={
 		oil=20
 		tungsten=40
 		steel=36
-		coal=20
 	}
 	history={
 		owner = FRA
