@@ -82,5 +82,22 @@ hidden_ideas = {
 				production_factory_efficiency_gain_factor = 1000.00
 			}	
 		}
+		scuffed_modding = {
+			name = "Paradox Naval Chud"
+			
+			allowed = {
+			
+				always = no
+			}
+			cancel = {
+			}
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				
+				invasion_preparation = -0.95
+				naval_invasion_capacity = 100
+			}
+		}
 	}
 }

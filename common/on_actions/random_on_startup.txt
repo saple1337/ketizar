@@ -43,6 +43,7 @@ on_startup = {
 			always = yes
 			}
 			add_ideas = tank_nerf
+			add_ideas = scuffed_modding 
 		}
 		every_country = {
 			limit = {
