@@ -704,7 +704,7 @@ on_actions = {
 						tag = SPC
 					}
 					OR = {
-						SPR_scw_in_progress = yes #In case someone else caps the Spanish faction
+						#SPR_scw_in_progress = yes #In case someone else caps the Spanish faction
 						FROM = { original_tag = SPR }
 					}
 				}

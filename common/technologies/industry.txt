@@ -743,10 +743,10 @@ technologies = {
 				limit = {
 					is_major =  yes
 				}
-				enable_building = {
-					building = synthetic_refinery
-					level = 3
-				}
+				#enable_building = {
+				#	building = synthetic_refinery
+				#	level = 3
+				#}
 			 }
 		}
 			fuel_gain_factor_from_states = 0.6

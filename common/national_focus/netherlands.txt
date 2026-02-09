@@ -299,18 +299,19 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					INS = {
-						is_subject_of = HOL
-						has_full_control_of_state = 335
-						has_full_control_of_state = 672
-					}
+					#INS = {
+					#	is_subject_of = HOL
+					#	has_full_control_of_state = 335
+					#	has_full_control_of_state = 672
+					#}
+				always = no
 				}
-				INS = {
-					add_autonomy_ratio = {
-						value = -0.025
-						localization = HOL_the_crown_jewel_colony
-					}
-				}
+				#INS = {
+				#	add_autonomy_ratio = {
+				#		value = -0.025
+				#		localization = HOL_the_crown_jewel_colony
+				#	}
+				#}
 			}
 		}
 	}
@@ -362,17 +363,18 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					INS = {
-						is_subject_of = HOL
-						has_full_control_of_state = 335
-					}
+					#INS = {
+					#	is_subject_of = HOL
+					#	has_full_control_of_state = 335
+					#}
+					always = no
 				}
-				INS = {
-					add_autonomy_ratio = {
-						value = -0.05
-						localization = HOL_java
-					}
-				}
+				#INS = {
+				#	add_autonomy_ratio = {
+				#		value = -0.05
+				#		localization = HOL_java
+				#	}
+				#}
 			}
 		}
 	}
@@ -1063,7 +1065,7 @@ focus_tree = {
 			    producer = HOL
 			}
 			add_ideas = HOL_liberation
-			HOL_de_crisisjaren_level_down = yes
+			#HOL_de_crisisjaren_level_down = yes
 		}
 	}
 

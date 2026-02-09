@@ -16,19 +16,20 @@ on_startup = {
 						}
 					}
 					}
-					remove_building = {
-				    type = arms_factory
-  					level = 200
-			}
-			remove_building = {
-				    type = industrial_complex
-  					level = 200
-			}
-			remove_building = {
-				    type = dockyard
-  					level = 200
-			}
-			}
+				# Commented out - remove_building errors (Building not found)
+				# remove_building = {
+			    # type = arms_factory
+  				# 		level = 200
+				# }
+				# remove_building = {
+			    # type = industrial_complex
+  				# 		level = 200
+				# }
+				# remove_building = {
+			    # type = dockyard
+  				# 		level = 200
+				# }
+				}
 		735 = {
 			add_province_modifier = {
  					static_modifiers = { france_hero_cities_buffed }
@@ -54,7 +55,6 @@ on_startup = {
 			always = yes
 			}
 			add_ideas = tank_nerf
-			set_technology = { 	new_tank_guns = 1 popup = no }
 		}
 		every_country = {
 			limit = {
