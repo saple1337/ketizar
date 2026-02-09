@@ -702,3 +702,7 @@ NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0
 NDefines.NDiplomacy.DIPLOMACY_SEND_MAX_FACTION = 0
 
 NDefines.NFactions.AI_DAYS_TO_SELECT_GOAL = 9999
+
+NDefines.NDoctrines.TRAINING_MASTERY_GAIN_FACTOR = 0.1
+NDefines.NDoctrines.MAX_MONTHLY_MASTERY_GAIN = 1000.0                        -- Monthly mastery gain will not exceed this value
+NDefines.NDoctrines.MIN_MASTERY_GAIN_PER_DAY = 0.2                         -- If we have any mastery gain, it will be boosted to be at least this much per day (lower cap)
