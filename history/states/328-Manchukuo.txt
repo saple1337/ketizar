@@ -9,7 +9,6 @@ state={
 	resources={
 		aluminium=23 # was: 10
 		tungsten=61 # moved from SUNKIANG to here cuz idk what the vanilla state is
-		coal=20
 	}
 
 	history={
