@@ -42,12 +42,12 @@ technologies = {
 		allow = {
 			AND = {
 				has_tech = tech_mountaineers
-				#can_unlock_new_special_forces_tree = yes
+				can_unlock_new_special_forces_tree = yes
 			}
 		}
 		
 		on_research_complete = {
-			#remove_potential_special_forces_tree = yes
+			remove_potential_special_forces_tree = yes
 		}
 		
 		categories = {
@@ -63,10 +63,10 @@ technologies = {
 				
 		ai_will_do = {
 			factor = 10
-			#modifier = {
-			#	factor = 0
-			#	NOT = { ai_has_completed_army_doctrine = yes }
-			#}
+			modifier = {
+				factor = 0
+				NOT = { ai_has_completed_army_doctrine = yes }
+			}
 		}
 		
 		ai_research_weights = {
@@ -443,12 +443,12 @@ technologies = {
 		allow = { 
 			AND = {
 				has_tech = marines
-				#can_unlock_new_special_forces_tree = yes
+				can_unlock_new_special_forces_tree = yes
 			}
 		}
 		
 		on_research_complete = {
-			#remove_potential_special_forces_tree = yes
+			remove_potential_special_forces_tree = yes
 		}
 		
 		path = {
@@ -990,7 +990,7 @@ technologies = {
 		}
 		
 		on_research_complete = {
-			#remove_potential_special_forces_tree = yes
+			remove_potential_special_forces_tree = yes
 		}
 		
 		path = {
@@ -1020,10 +1020,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-			#modifier = {
-			#	factor = 0
-			#	NOT = { ai_has_completed_air_doctrine = yes }
-			#}
+			modifier = {
+				factor = 0
+				NOT = { ai_has_completed_air_doctrine = yes }
+			}
 		}
 		
 		ai_research_weights = {

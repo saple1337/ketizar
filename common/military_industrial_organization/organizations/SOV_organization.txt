@@ -2705,7 +2705,7 @@ SOV_gaz_organization = {
 				tag = ETH 
 				has_dlc = "By Blood Alone"
 			}
-			#NOR_AAT = yes
+			NOR_AAT = yes
 		}
 	}
 

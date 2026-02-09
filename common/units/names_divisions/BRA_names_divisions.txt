@@ -55,7 +55,7 @@ BRA_INF_01 = {
 		6 = { "%da Divisão de Infantaria 'Voluntários da Pátria'" }
 		7 = { "%da Divisão de Infantaria 'Parayhbana'" }
 		8 = { "%da Divisão de Infantaria 'Potyguar'" }
-		9 = { "%da Divisão de Infantaria 'Ponta Porã'" }
+		9 = { "%da Divisão de Infantaria 'Ponta Porã" }
 		10 = { "%da Divisão de Infantaria 'Ávai'" }
 		11 = { "%da Divisão de Infantaria 'Antonina'" }
 		12 = { "%da Divisão de Infantaria 'Bandeirantes'" }
@@ -94,7 +94,7 @@ BRA_CAV_01 = {
 		5 = { "%da Divisão de Cavalaria 'Potyguara'" }
 		6 = { "%da Divisão de Cavalaria 'Parahybana'" }
 		7 = { "%da Divisão de Cavalaria 'Paulista'" }
-		8 = { "%da Divisão de Cavalaria 'Tapuia'" }
+		8 = { "%da Divisão de Cavalaria 'Tapuia" }
 		9 = { "%da Divisão de Cavalaria 'Lançeiros'" }
 		10 = { "%da Divisão de Cavalaria 'Caçadores Montados'" }
 	}
@@ -126,7 +126,7 @@ BRA_MOT_01 = {
 		7 = { "%da Div. de Infantaria Motorizada 'Felipe Camarão'" }
 		8 = { "%da Div. de Infantaria Motorizada 'Marques de Souza'" }
 		9 = { "%da Div. de Infantaria Motorizada 'Tiradentes'" }
-		10 = { "%da Div. de Infantaria Motorizada 'Dragões'" }
+		10 = { "%da Div. de Infantaria Motorizada 'Dragões" }
 	}
 }
 
@@ -209,8 +209,8 @@ BRA_PAR_01 = {
 	ordered = {
 		1 = { "%da Divisão de Pára-Quedistas 'Senta a Puá'" }
 		2 = { "%da Divisão de Pára-Quedistas 'Serrana'" }
-		3 = { "%da Divisão de Pára-Quedistas 'Agulhas Negras'" }
-		4 = { "%da Divisão de Pára-Quedistas 'Gávea'" }
+		3 = { "%da Divisão de Pára-Quedistas 'Agulhas Negras" }
+		4 = { "%da Divisão de Pára-Quedistas 'Gávea" }
 		5 = { "%da Divisão de Pára-Quedistas 'Corcovado'" }
 		6 = { "%da Divisão de Pára-Quedistas 'Roraima'" }
 		7 = { "%da Divisão de Pára-Quedistas 'Ituanos'" }
@@ -239,14 +239,14 @@ BRA_MAR_01 = {
 	ordered = {
 		1 = { "%da Divisão de Fuzileiros Navais 'A Cobra vai Fumar'" }
 		2 = { "%da Divisão de Fuzileiros Navais 'Osório'" }
-		3 = { "%da Divisão de Fuzileiros Navais 'Jacarés'" }
+		3 = { "%da Divisão de Fuzileiros Navais 'Jacarés" }
 		4 = { "%da Divisão de Fuzileiros Navais 'Xingu'" }
 		5 = { "%da Divisão de Fuzileiros Navais 'Uruguay'" }
 		6 = { "%da Divisão de Fuzileiros Navais 'Bonifácio'" }
 		7 = { "%da Divisão de Fuzileiros Navais 'Jacuí'" }
 		8 = { "%da Divisão de Fuzileiros Navais 'Tietê'" }
 		9 = { "%da Divisão de Fuzileiros Navais 'Chicão'" }
-		10 = { "%da Divisão de Fuzileiros Navais 'Ribeirnha'" }
+		10 = { "%da Divisão de Fuzileiros Navais 'Ribeirnha''" }
 	}
 }
 
@@ -269,7 +269,7 @@ BRA_MTN_01 = {
 	ordered = {
 		1 = { "%da Divisão de Inf. de Montanha 'Teresópolis'" }
 		2 = { "%da Divisão de Inf. de Montanha 'Colonos'" }
-		3 = { "%da Divisão de Inf. de Montanha 'Indios'" }
+		3 = { "%da Divisão de Inf. de Montanha 'Indios" }
 		4 = { "%da Divisão de Inf. de Montanha 'Onças'" }
 		5 = { "%da Divisão de Inf. de Montanha" }
 		6 = { "%da Divisão de Inf. de Montanha" }

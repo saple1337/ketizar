@@ -221,24 +221,23 @@ on_actions = {
 						instant_build = yes
 					}
 				}
-			# Commented out - remove_building errors (Building not found)
-			# every_state = {
-			# 	limit = {
-			# 		is_core_of = HUN
-			# 	}
-			# 	remove_building = {
-			#     type = arms_factory
-  			# 		level = 200
-			# }
-			# remove_building = {
-			#     type = industrial_complex
-  			# 		level = 200
-			# }
-			# remove_building = {
-			#     type = dockyard
-  			# 		level = 200
-			# }
-			# }
+				every_state = {
+					limit = {
+						is_core_of = HUN
+					}
+					remove_building = {
+				    type = arms_factory
+  					level = 200
+			}
+			remove_building = {
+				    type = industrial_complex
+  					level = 200
+			}
+			remove_building = {
+				    type = dockyard
+  					level = 200
+			}
+			}
 			}
 			if = {
 				limit = {
@@ -308,19 +307,18 @@ on_actions = {
 			}
 			}
 			
-			# Commented out - remove_building errors (Building not found)
-			# remove_building = {
-			#     type = arms_factory
-  			# 		level = 200
-			# }
-			# remove_building = {
-			#     type = industrial_complex
-  			# 		level = 200
-			# }
-			# remove_building = {
-			#     type = dockyard
-  			# 		level = 200
-			# }
+			remove_building = {
+				    type = arms_factory
+  					level = 200
+			}
+			remove_building = {
+				    type = industrial_complex
+  					level = 200
+			}
+			remove_building = {
+				    type = dockyard
+  					level = 200
+			}
 			}
 			every_state = {
 			limit = {
@@ -333,45 +331,24 @@ on_actions = {
 			}
 			}
 			
-			# Commented out - remove_building errors (Building not found)
-			# remove_building = {
-			#     type = arms_factory
-  			# 		level = 200
-			# }
-			# remove_building = {
-			#     type = industrial_complex
-  			# 		level = 200
-			# }
-			# remove_building = {
-			#     type = dockyard
-  			# 		level = 200
-			# }
+			remove_building = {
+				    type = arms_factory
+  					level = 200
 			}
-			# Commented out - Building not found for remove_building effect
-			# every_state = {
-			# 	limit = {
-			# 		AND = {
-			# 			is_owned_by = ROM
-			# 			OR = {
-			# 			is_core_of	= HUN
-			# 			is_core_of = BUL
-			# 			}
-			# 		}
-			# 	}
-			# 	
-			# 	remove_building = {
-			# 		type = arms_factory
-			# 		level = 200
-			# 	}
-			# 	remove_building = {
-			# 		type = industrial_complex
-			# 		level = 200
-			# 	}
-			# 	remove_building = {
-			# 		type = dockyard
-			# 		level = 200
-			# 	}
-			# }
+			remove_building = {
+				    type = industrial_complex
+  					level = 200
+			}
+			remove_building = {
+				    type = dockyard
+  					level = 200
+			}
+			}
+		}
+		
+	}
+	}
+	on_declare_war = {
 		effect = {
 		
 		if = {

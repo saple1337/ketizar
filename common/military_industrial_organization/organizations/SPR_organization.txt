@@ -78,7 +78,7 @@ SPR_casa_organization = {
 		OR = {
 			custom_trigger_tooltip = {
 				tooltip = SPR_scw_not_in_progress_tt
-				#NOT = { SPR_scw_in_progress = yes }
+				NOT = { SPR_scw_in_progress = yes }
 			}
 			FROM = { controls_state = 167 }
 		}
@@ -116,14 +116,14 @@ SPR_hispano_aviacion_organization = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = SPR_scw_not_in_progress_tt
-				#NOT = { SPR_scw_in_progress = yes }
+				NOT = { SPR_scw_in_progress = yes }
 			}	
 		}
 		else = {
 			FROM = { controls_state = 169 }
 			custom_trigger_tooltip = {
 				tooltip = SPR_scw_not_in_progress_tt
-				#NOT = { SPR_scw_in_progress = yes }
+				NOT = { SPR_scw_in_progress = yes }
 			}
 		}
 	}
@@ -153,7 +153,7 @@ SPR_star_bonifacio_echeverria_organization = {
 		OR = {
 			custom_trigger_tooltip = {
 				tooltip = SPR_scw_not_in_progress_tt
-				#NOT = { SPR_scw_in_progress = yes }
+				NOT = { SPR_scw_in_progress = yes }
 			}
 			FROM = { controls_state = 792 }
 		}
@@ -172,7 +172,7 @@ SPR_esperanza_y_cia_organization = {
 		OR = {
 			custom_trigger_tooltip = {
 				tooltip = SPR_scw_not_in_progress_tt
-				#NOT = { SPR_scw_in_progress = yes }
+				NOT = { SPR_scw_in_progress = yes }
 			}
 			FROM = { controls_state = 792 }
 		}
@@ -191,7 +191,7 @@ SPR_llama_gabilondo_y_cia_organization = {
 		OR = {
 			custom_trigger_tooltip = {
 				tooltip = SPR_scw_not_in_progress_tt
-				#NOT = { SPR_scw_in_progress = yes }
+				NOT = { SPR_scw_in_progress = yes }
 			}
 			FROM = { controls_state = 792 }
 		}
@@ -230,14 +230,14 @@ SPR_hispano_suiza_organization = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = SPR_scw_not_in_progress_tt
-				#NOT = { SPR_scw_in_progress = yes }
+				NOT = { SPR_scw_in_progress = yes }
 			}	
 		}
 		else = {
 			FROM = { controls_state = 169 }
 			custom_trigger_tooltip = {
 				tooltip = SPR_scw_not_in_progress_tt
-				#NOT = { SPR_scw_in_progress = yes }
+				NOT = { SPR_scw_in_progress = yes }
 			}
 		}
 	}

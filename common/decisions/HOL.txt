@@ -537,7 +537,7 @@ HOL_war_on_pacifism = {
 			    popularity = -0.05
 			}
 			add_stability = -0.03
-			#HOL_shell_shocked_spectator_level_down = yes
+			HOL_shell_shocked_spectator_level_down = yes
 			clr_country_flag = hol_war_on_pacifism_in_progress
 		}
 
@@ -597,7 +597,7 @@ HOL_war_on_pacifism = {
 			    ideology = communism
 			    popularity = 0.05
 			}
-			#HOL_shell_shocked_spectator_level_down = yes
+			HOL_shell_shocked_spectator_level_down = yes
 			clr_country_flag = hol_war_on_pacifism_in_progress
 		}
 
@@ -651,7 +651,8 @@ HOL_war_on_pacifism = {
 		}
 
 		remove_effect = {
-				#HOL_shell_shocked_spectator_level_down = yes
+			HOL_shell_shocked_spectator_level_down = yes
+			clr_country_flag = hol_war_on_pacifism_in_progress
 		}
 
 		complete_effect = {

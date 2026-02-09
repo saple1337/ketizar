@@ -842,8 +842,8 @@ characters={
 				modifier = {
 					factor = 0
 					OR = {
-						#ITA_is_communist_ai = yes
-						#ITA_is_socialist_ai = yes
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
 					}
 				}
 			}
@@ -875,14 +875,14 @@ characters={
 			on_add = {
 				owner = {
 					hidden_effect = {
-						#ITA_bop_medium_decrease_effect = yes
+						ITA_bop_medium_decrease_effect = yes
 					}
 				}
 			}
 			on_remove = {
 				owner = {
 					hidden_effect = {
-						#ITA_bop_medium_increase_effect = yes
+						ITA_bop_medium_increase_effect = yes
 					}
 				}
 			}
@@ -891,8 +891,8 @@ characters={
 				modifier = {
 					factor = 0
 					OR = {
-						#ITA_is_communist_ai = yes
-						#ITA_is_socialist_ai = yes
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
 					}
 				}
 			}
@@ -916,7 +916,7 @@ characters={
 				NOT = {
 					has_country_leader_with_trait = mussolini_minister_of_corporations
 				}
-				#ITA_government_is_really_fascist = yes
+				ITA_government_is_really_fascist = yes
 			}
 			cost = 75
 			traits = {
@@ -925,14 +925,14 @@ characters={
 			on_add = {
 				owner = {
 					hidden_effect = {
-						#ITA_bop_medium_decrease_effect = yes
+						ITA_bop_medium_decrease_effect = yes
 					}
 				}
 			}
 			on_remove = {
 				owner = {
 					hidden_effect = {
-						#ITA_bop_medium_increase_effect = yes
+						ITA_bop_medium_increase_effect = yes
 					}
 				}
 			}
@@ -941,8 +941,8 @@ characters={
 				modifier = {
 					factor = 0
 					OR = {
-						#ITA_is_communist_ai = yes
-						#ITA_is_socialist_ai = yes
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
 					}
 				}
 			}
@@ -970,8 +970,8 @@ characters={
 				modifier = {
 					factor = 0
 					OR = {
-						#ITA_is_communist_ai = yes
-						#ITA_is_socialist_ai = yes
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
 					}
 				}
 			}
@@ -999,10 +999,10 @@ characters={
 				modifier = {
 					factor = 0
 					OR = {
-						#ITA_is_communist_ai = yes
-						#ITA_is_socialist_ai = yes
-						#ITA_is_monarchist_ai = yes
-						#ITA_is_christian_democracy_ai = yes
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
+						ITA_is_monarchist_ai = yes
+						ITA_is_christian_democracy_ai = yes
 					}
 				}
 			}
@@ -1077,8 +1077,8 @@ characters={
 				modifier = {
 					factor = 0
 					OR = {
-						#ITA_is_communist_ai = yes
-						#ITA_is_socialist_ai = yes
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
 					}
 				}
 			}
@@ -1116,11 +1116,11 @@ characters={
 				modifier = {
 					factor = 0
 					OR = {
-						#ITA_is_historical_ai = yes
-						#ITA_is_communist_ai = yes
-						#ITA_is_socialist_ai = yes
-						#ITA_is_monarchist_ai = yes
-						#ITA_is_christian_democracy_ai = yes
+						ITA_is_historical_ai = yes
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
+						ITA_is_monarchist_ai = yes
+						ITA_is_christian_democracy_ai = yes
 					}
 				}
 			}
@@ -1149,10 +1149,10 @@ characters={
 				modifier = {
 					factor = 0
 					OR = {
-						#ITA_is_communist_ai = yes
-						#ITA_is_socialist_ai = yes
-						#ITA_is_monarchist_ai = yes
-						#ITA_is_christian_democracy_ai = yes
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
+						ITA_is_monarchist_ai = yes
+						ITA_is_christian_democracy_ai = yes
 					}
 				}
 			}
@@ -1195,9 +1195,9 @@ characters={
 				modifier = {
 					factor = 0
 					OR = {
-						#ITA_is_communist_ai = yes
-						#ITA_is_socialist_ai = yes
-						#ITA_is_monarchist_ai = yes
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
+						ITA_is_monarchist_ai = yes
 					}
 				}
 			}
@@ -1228,9 +1228,9 @@ characters={
 				modifier = {
 					factor = 0
 					OR = {
-						#ITA_is_communist_ai = yes
-						#ITA_is_socialist_ai = yes
-						#ITA_is_christian_democracy_ai = yes
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
+						ITA_is_christian_democracy_ai = yes
 					}
 				}
 			}
