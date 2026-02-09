@@ -45,9 +45,9 @@ NDefines.NMilitary.COMBAT_STACKING_PENALTY = -0.20                -- vanilla is 
 -- NDefines.NMilitary.RELIABILTY_RECOVERY = 0.1                     -- factor affecting how much equipment is returned "from the dead"
 -- NDefines.NMilitary.COMBAT_MOVEMENT_SPEED = 0.33	               -- speed reduction base modifier in combat
 NDefines.NMilitary.PREFERRED_TACTIC_CHARACTER_SKILL_LEVEL_REQUIRED = 5 -- Which level a field marhal or general has to be before they can pick their preferred tactic
-NDefines.NMilitary.COUNTRY_PREFERRED_TACTIC_WEIGHT_FACTOR = 0.2  -- extra weight multiplier for the country preferred tactic when doing weighted random
-NDefines.NMilitary.ARMY_GENERAL_PREFERRED_TACTIC_WEIGHT_FACTOR = 0.2  -- extra weight multiplier for the army general preferred tactic when doing weighted random
-NDefines.NMilitary.FIELD_MARSHAL_PREFERRED_TACTIC_WEIGHT_FACTOR = 0.2 -- extra weight multiplier for the field marhsal preferred tactic when doing weighted random
+NDefines.NMilitary.COUNTRY_PREFERRED_TACTIC_WEIGHT_FACTOR = 0.075  -- extra weight multiplier for the country preferred tactic when doing weighted random
+NDefines.NMilitary.ARMY_GENERAL_PREFERRED_TACTIC_WEIGHT_FACTOR = 0.15   -- extra weight multiplier for the army general preferred tactic when doing weighted random
+NDefines.NMilitary.FIELD_MARSHAL_PREFERRED_TACTIC_WEIGHT_FACTOR = 0.10 -- extra weight multiplier for the field marhsal preferred tactic when doing weighted random
 NDefines.NMilitary.PREFERRED_TACTIC_COMMAND_POWER_COST = 20	   -- command point cost for changing preferred tactic
 NDefines.NMilitary.INITIATIVE_PICK_COUNTER_ADVANTAGE_FACTOR  = 0.25 -- advantage per leader level for picking a counter
 -- End of Block ////////////////////////
@@ -476,7 +476,7 @@ NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 0.9	-- damage penalty at 
 NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.0   -- screening efficiency (screen to capital ratio) at 0% positioning
 NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING	= 0.5  -- AA penalty at 0% positioning
 
-NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_CHANCE = 0.3 -- chance for critical hit from torpedo.
+NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_CHANCE = 0.15 -- chance for critical hit from torpedo.
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0 -- cost to unassign/replace pride of the fleet
 NDefines.NNavy.COMBAT_BASE_CRITICAL_CHANCE = 0.1 -- Base chance for receiving a critical chance. It get's scaled down with ship reliability.
 NDefines.NNavy.COMBAT_CRITICAL_DAMAGE_MULT = 5.0 -- Multiplier for the critical damage. Scaled down with the ship reliability.
@@ -504,7 +504,7 @@ NDefines.NNavy.COMBAT_MIN_HIT_CHANCE = 0.03									-- never less hit chance the
 NDefines.NNavy.HIT_PROFILE_SPEED_FACTOR	= 1		-- factors speed value when determining it profile (Vis * HIT_PROFILE_MULT * Ship Hit Profile Mult) prev: vis/speed now: vis/(speed*HIT_PROFILE_SPEED_FACTOR+HIT_PROFILE_SPEED_BASE). wird immer noch gesquared
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
 		75.0,	-- big guns
-		70.0,	-- torpedos
+		110.0,	-- torpedos
 		45.0,	-- small guns
 	}
 NDefines.NNavy.CONVOY_HIT_PROFILE = 207 -- vanilla 120
