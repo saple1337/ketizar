@@ -1,12 +1,12 @@
 state={
 	id=545
 	
-	state_category = megalopolis
+	state_category = pastoral
 	
 	name="STATE_545"
 
 	history={
-		owner = RHS
+		owner = ENG
 		buildings = {
 			infrastructure = 2
 
@@ -14,7 +14,7 @@ state={
 		victory_points = {
 			10929 1 
 		}
-		add_core_of = RHS
+		add_core_of = SWE
 	}
 
 	provinces={
