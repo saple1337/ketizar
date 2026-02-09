@@ -329,7 +329,6 @@ ideas = {
 
 			available = {
 				country_exists = INS
-				INS = { is_subject_of = HOL }
 			}
 			
 			allowed = {

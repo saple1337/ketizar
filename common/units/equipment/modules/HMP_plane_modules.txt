@@ -2,12 +2,10 @@ equipment_modules = {
 	v_engine = { #these were often the "default" choice for fighter engines, but were used on other things too. To simplify macro we will assume all engine values are based around 'inline' engines
 		abbreviation = "e11"
 		category = plane_engine_design
-		sfx = sfx_ui_sd_module_engine
 	}
 	radial_engine = {  #might not add either of these modules
 		abbreviation = "e11"
 		category = plane_engine_design
-		sfx = sfx_ui_sd_module_engine
 		multiply_stats = {
 			maximum_speed = -0.10
 			air_agility =  -0.10
@@ -17,7 +15,6 @@ equipment_modules = {
 	i_engine = {  
 		abbreviation = "e11"
 		category = plane_engine_design
-		sfx = sfx_ui_sd_module_engine
 		multiply_stats = {
 			maximum_speed = -0.10
 			air_agility =  -0.10
@@ -28,7 +25,6 @@ equipment_modules = {
 	f_engine = {
 		abbreviation = "e11"
 		category = plane_engine_design
-		sfx = sfx_ui_sd_module_engine
 		multiply_stats = {
 			maximum_speed = -0.1
 			thrust = 0.05
@@ -39,7 +35,6 @@ equipment_modules = {
 	h_engine = {   #maintenance, manufacturing, weight issues, but engines were aerodynamic and fast
 		abbreviation = "e11"
 		category = plane_engine_design
-		sfx = sfx_ui_sd_module_engine
 		multiply_stats = {
 			maximum_speed = -0.1
 			thrust = 0.1
@@ -51,7 +46,6 @@ equipment_modules = {
 		w_engine = {  
 		abbreviation = "e11"
 		category = plane_engine_design
-		sfx = sfx_ui_sd_module_engine
 		multiply_stats = {
 			fuel_consumption = 0.2
 			thrust = 0.1
@@ -61,7 +55,6 @@ equipment_modules = {
 			x_engine = {  
 		abbreviation = "e11"
 		category = plane_engine_design
-		sfx = sfx_ui_sd_module_engine
 		multiply_stats = {
 			build_cost_ic = 0.1
 			fuel_consumption = 0.2
@@ -75,7 +68,6 @@ equipment_modules = {
 	engine_1_1x = {
 		abbreviation = "e11"
 		category = plane_engine_type
-		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
 			maximum_speed = 350
@@ -88,7 +80,6 @@ equipment_modules = {
 	engine_1_2x = {
 		abbreviation = "e12"
 		category = twin_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
 			maximum_speed = 300
@@ -101,7 +92,6 @@ equipment_modules = {
 	engine_1_4x = {
 		abbreviation = "e14"
 		category = quad_large_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
 			maximum_speed = 300
@@ -115,7 +105,6 @@ equipment_modules = {
 	engine_2_1x = {
 		abbreviation = "e21"
 		category = plane_engine_type
-		sfx = sfx_ui_sd_module_engine
 		parent = engine_1_1x
 
 		add_stats = {
@@ -134,7 +123,6 @@ equipment_modules = {
 	engine_2_2x = {
 		abbreviation = "e22"
 		category = twin_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
 		parent = engine_1_2x
 
 		add_stats = {
@@ -152,7 +140,6 @@ equipment_modules = {
 	engine_2_4x = {
 		abbreviation = "e24"
 		category = quad_large_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
 		parent = engine_1_4x
 
 		add_stats = {
@@ -171,7 +158,6 @@ equipment_modules = {
 	engine_3_1x = {
 		abbreviation = "e31"
 		category = plane_engine_type
-		sfx = sfx_ui_sd_module_engine
 		parent = engine_2_1x
 
 		add_stats = {
@@ -190,7 +176,6 @@ equipment_modules = {
 	engine_3_2x = {
 		abbreviation = "e32"
 		category = twin_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
 		parent = engine_2_2x
 
 		add_stats = {
@@ -208,7 +193,6 @@ equipment_modules = {
 	engine_3_4x = {
 		abbreviation = "e34"
 		category = quad_large_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
 		parent = engine_2_4x
 
 		add_stats = {
@@ -226,7 +210,6 @@ equipment_modules = {
 	engine_4_1x = {
 		abbreviation = "e41"
 		category = plane_engine_type
-		sfx = sfx_ui_sd_module_engine
 		parent = engine_3_1x
 
 		add_stats = {
@@ -245,7 +228,6 @@ equipment_modules = {
 	engine_4_2x = {
 		abbreviation = "e42"
 		category = twin_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
 		parent = engine_3_2x
 
 		add_stats = {
@@ -263,7 +245,6 @@ equipment_modules = {
 	engine_4_4x = {
 		abbreviation = "e44"
 		category = quad_large_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
 		parent = engine_3_4x
 
 		add_stats = {
@@ -281,7 +262,6 @@ equipment_modules = {
 	jet_engine_1x = {
 		abbreviation = "j1"
 		category = plane_jet_engine_type
-		sfx = sfx_ui_sd_module_engine
 		parent = engine_4_1x
 
 		add_stats = {
@@ -304,7 +284,6 @@ equipment_modules = {
 	jet_engine_2x = {
 		abbreviation = "j2"
 		category = twin_plane_jet_engine_type
-		sfx = sfx_ui_sd_module_engine
 		parent = engine_4_2x
 
 		add_stats = {
@@ -326,7 +305,6 @@ equipment_modules = {
 	jet_engine_4x = {
 		abbreviation = "j4"
 		category = quad_large_plane_jet_engine_type
-		sfx = sfx_ui_sd_module_engine
 		parent = engine_4_4x
 
 		add_stats = {
@@ -347,7 +325,6 @@ equipment_modules = {
 	rocket_engine_1 = { #rocket engines only come in sets of 1
 		abbreviation = "re1"
 		category = plane_rocket_engine_type
-		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
 			maximum_speed = 700
@@ -367,7 +344,6 @@ equipment_modules = {
 	rocket_engine_2 = { #rocket engines only come in sets of 1
 		abbreviation = "re2"
 		category = plane_rocket_engine_type
-		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
 			maximum_speed = 800
@@ -386,7 +362,6 @@ equipment_modules = {
 		rocket_engine_3 = { #rocket engines only come in sets of 1
 		abbreviation = "re3"
 		category = plane_rocket_engine_type
-		sfx = sfx_ui_sd_module_engine
 		add_stats = {
 			maximum_speed = 1000
 			thrust = 50
@@ -412,7 +387,6 @@ equipment_modules = {
 	light_mg_2x = {
 		abbreviation = "lmg2"
 		category = fighter_weapon
-		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = fighter
 
 		add_stats = {
@@ -430,7 +404,6 @@ equipment_modules = {
 	light_mg_4x = {
 		abbreviation = "lmg4"
 		category = fighter_weapon
-		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = fighter
 
 		add_stats = {
@@ -452,7 +425,6 @@ equipment_modules = {
 	heavy_mg_2x = {
 		abbreviation = "hmg2"
 		category = fighter_weapon
-		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = fighter
 
 		add_stats = {
@@ -470,7 +442,6 @@ equipment_modules = {
 	heavy_mg_4x = {
 		abbreviation = "hmg4"
 		category = fighter_weapon
-		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = fighter
 
 		add_stats = {
@@ -500,7 +471,6 @@ equipment_modules = {
 	aircraft_cannon_1_1x = {
 		abbreviation = "ac11"
 		category = fighter_weapon
-		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = fighter
 
 		add_stats = {
@@ -527,7 +497,6 @@ equipment_modules = {
 	aircraft_cannon_1_2x = {
 		abbreviation = "ac12"
 		category = fighter_weapon
-		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = fighter
 
 		add_stats = {
@@ -558,7 +527,6 @@ equipment_modules = {
 	aircraft_cannon_2_1x = {
 		abbreviation = "ac21"
 		category = fighter_weapon
-		sfx = sfx_ui_sd_module_turret
 		parent = aircraft_cannon_1_1x
 		add_equipment_type = fighter
 		add_stats = {
@@ -585,7 +553,6 @@ equipment_modules = {
 	aircraft_cannon_2_2x = {
 		abbreviation = "ac22"
 		category = fighter_weapon
-		sfx = sfx_ui_sd_module_turret
 		parent = aircraft_cannon_1_2x
 		add_equipment_type = fighter
 		add_stats = {
@@ -616,7 +583,6 @@ equipment_modules = {
 	bomb_locks = {
 		abbreviation = "bol"
 		category = cas_weapon
-		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = cas
 
 		allow_mission_type = {
@@ -662,7 +628,6 @@ equipment_modules = {
 	rocket_rails = {
 		abbreviation = "rrl"
 		category = cas_weapon
-		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = cas
 
 		add_stats = {
@@ -681,7 +646,6 @@ equipment_modules = {
 	small_bomb_bay = {
 		abbreviation = "sbb"
 		category = cas_weapon
-		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { cas tactical_bomber }
 
 		add_stats = {
@@ -714,7 +678,6 @@ equipment_modules = {
 	medium_bomb_bay = {
 		abbreviation = "mbb"
 		category = tac_weapon
-		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { cas tactical_bomber }
 
 		add_stats = {
@@ -752,7 +715,6 @@ equipment_modules = {
 	large_bomb_bay = {
 		abbreviation = "lbb"
 		category = strat_weapon
-		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = strategic_bomber
 
 		add_stats = {
@@ -787,7 +749,6 @@ equipment_modules = {
 	tank_buster_1 = {
 		abbreviation = "tb1"
 		category = cas_weapon
-		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = cas
 
 		add_stats = {
@@ -815,7 +776,6 @@ equipment_modules = {
 	tank_buster_2 = {
 		abbreviation = "tb2"
 		category = cas_weapon
-		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = cas
 
 		add_stats = {
@@ -843,7 +803,6 @@ equipment_modules = {
 	torpedo_mounting = {
 		abbreviation = "tpm"
 		category = nav_bomber_weapon
-		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { naval_bomber maritime_patrol_plane }
 
 		add_stats = {
@@ -874,7 +833,6 @@ equipment_modules = {
 	torpedo_mounting_2 = {
 		abbreviation = "tpm2"
 		category = nav_bomber_weapon
-		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { naval_bomber maritime_patrol_plane }
 
 		add_stats = {
@@ -906,7 +864,6 @@ equipment_modules = {
 	recon_camera = {
 		abbreviation = "rca"
 		category = recon_camera
-		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = scout_plane
 		forbid_equipment_type_exact_match_for_category = {
 			fighter_weapon = scout_plane
@@ -943,7 +900,6 @@ equipment_modules = {
 	high_octane_fuel_small = {
 		abbreviation = "aps"
 		category = plane_special_module_small
-		sfx = sfx_ui_sd_module_turret
 		add_stats = {
 			build_cost_ic = 1
 		}
@@ -956,7 +912,6 @@ equipment_modules = {
 	high_octane_fuel_medium = {
 		abbreviation = "aps"
 		category = plane_special_module_medium
-		sfx = sfx_ui_sd_module_turret
 		add_stats = {
 			build_cost_ic = 2
 		}
@@ -970,7 +925,6 @@ equipment_modules = {
 	high_octane_fuel_large = {
 		abbreviation = "aps"
 		category = plane_special_module_large
-		sfx = sfx_ui_sd_module_turret
 		add_stats = {
 			build_cost_ic = 3
 		}
@@ -985,7 +939,6 @@ equipment_modules = {
 	armor_plate_small = {
 		abbreviation = "aps"
 		category = plane_special_module_small
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			air_defence = 2
@@ -1001,7 +954,6 @@ equipment_modules = {
 	fuel_tanks_small = {
 		abbreviation = "fts"
 		category = plane_special_module_small
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			air_defence = -1
@@ -1016,7 +968,6 @@ equipment_modules = {
 	self_sealing_fuel_tanks_small = {
 		abbreviation = "ssf"
 		category = plane_special_module_small
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			air_defence = 2
@@ -1033,7 +984,6 @@ equipment_modules = {
 	non_strategic_materials_small = {
 		abbreviation = "nsms"
 		category = plane_special_module_small
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			air_defence = -3
@@ -1056,7 +1006,6 @@ equipment_modules = {
 	drop_tanks = {
 		abbreviation = "dpt"
 		category = plane_special_module_small
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			build_cost_ic = 4
@@ -1069,7 +1018,6 @@ equipment_modules = {
 	dive_brakes_small = {
 		abbreviation = "dbs"
 		category = plane_special_module_small
-		sfx = sfx_ui_sd_module_turret
 		forbid_module_categories = {
 			nav_bomber_weapon
 		}
@@ -1096,7 +1044,6 @@ equipment_modules = {
 	floats = { 
 		abbreviation = "flo"
 		category = plane_special_module_small
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			build_cost_ic = 2
@@ -1124,7 +1071,6 @@ equipment_modules = {
 	armor_plate_medium = {
 		abbreviation = "apm"
 		category = plane_special_module_medium
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			air_defence = 4
@@ -1139,7 +1085,6 @@ equipment_modules = {
 	fuel_tanks_medium = {
 		abbreviation = "ftm"
 		category = plane_special_module_medium
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			air_defence = -2
@@ -1154,7 +1099,6 @@ equipment_modules = {
 	self_sealing_fuel_tanks_medium = {
 		abbreviation = "ssm"
 		category = plane_special_module_medium
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			air_defence = 4
@@ -1171,7 +1115,6 @@ equipment_modules = {
 	non_strategic_materials_medium = {
 		abbreviation = "nsmm"
 		category = plane_special_module_medium
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			air_defence = -4
@@ -1193,7 +1136,6 @@ equipment_modules = {
 	flying_boat_medium = { 
 		abbreviation = "flbm"
 		category = plane_special_module_medium
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			build_cost_ic = 4
@@ -1219,7 +1161,6 @@ equipment_modules = {
 	armor_plate_large = {
 		abbreviation = "apl"
 		category = plane_special_module_large
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			air_defence = 6
@@ -1234,7 +1175,6 @@ equipment_modules = {
 	fuel_tanks_large = {
 		abbreviation = "ftl"
 		category = plane_special_module_large
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			air_defence = -4
@@ -1249,7 +1189,6 @@ equipment_modules = {
 	self_sealing_fuel_tanks_large = {
 		abbreviation = "ssl"
 		category = plane_special_module_large
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			air_defence = 6
@@ -1266,7 +1205,6 @@ equipment_modules = {
 	non_strategic_materials_large = {
 		abbreviation = "nsml"
 		category = plane_special_module_large
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			air_defence = -6
@@ -1287,7 +1225,6 @@ equipment_modules = {
 	flying_boat_large = { 
 		abbreviation = "flbl"
 		category = plane_special_module_large
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			build_cost_ic = 4
@@ -1314,7 +1251,6 @@ equipment_modules = {
 		abbreviation = "bs1"
 		category = plane_special_module_bomb_sights
 		gui_category = plane_special_module_electronics
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			air_bombing = 6
@@ -1332,7 +1268,6 @@ equipment_modules = {
 		abbreviation = "bs2"
 		category = plane_special_module_bomb_sights
 		gui_category = plane_special_module_electronics
-		sfx = sfx_ui_sd_module_turret
 		parent = bomb_sights_1
 
 		add_stats = {
@@ -1351,7 +1286,6 @@ equipment_modules = {
 		abbreviation = "rn1"
 		category = plane_special_module_radio_navigation
 		gui_category = plane_special_module_electronics
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			air_bombing = 4
@@ -1366,7 +1300,6 @@ equipment_modules = {
 		abbreviation = "rn2"
 		category = plane_special_module_radio_navigation
 		gui_category = plane_special_module_electronics
-		sfx = sfx_ui_sd_module_turret
 		parent = radio_navigation_1
 
 		add_stats = {
@@ -1382,7 +1315,6 @@ equipment_modules = {
 		abbreviation = "agr1"
 		category = plane_special_module_air_ground_radar
 		gui_category = plane_special_module_electronics
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 				build_cost_ic = 2
@@ -1411,7 +1343,6 @@ equipment_modules = {
 		abbreviation = "agr2"
 		category = plane_special_module_air_ground_radar
 		gui_category = plane_special_module_electronics
-		sfx = sfx_ui_sd_module_turret
 		parent = air_ground_radar_1
 
 		add_stats = {
@@ -1441,7 +1372,6 @@ equipment_modules = {
 		abbreviation = "aar1"
 		category = plane_special_module_air_air_radar
 		gui_category = plane_special_module_electronics
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			build_cost_ic = 4
@@ -1481,7 +1411,6 @@ equipment_modules = {
 		abbreviation = "aar2"
 		category = plane_special_module_air_air_radar
 		gui_category = plane_special_module_electronics
-		sfx = sfx_ui_sd_module_turret
 		parent = air_air_radar_1
 
 		add_stats = {
@@ -1530,7 +1459,6 @@ equipment_modules = {
 	lmg_defense_turret = {
 		abbreviation = "lmgt"
 		category = plane_special_module_defense_turret
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			air_attack = 2.75
@@ -1557,7 +1485,6 @@ equipment_modules = {
 	lmg_defense_turret_2x = {
 		abbreviation = "lmgt2"
 		category = plane_special_module_defense_turret
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			air_attack = 5.5
@@ -1584,7 +1511,6 @@ equipment_modules = {
 	hmg_defense_turret = {
 		abbreviation = "hmgt"
 		category = plane_special_module_defense_turret
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			air_attack = 6
@@ -1612,7 +1538,6 @@ equipment_modules = {
 	hmg_defense_turret_2x = {
 		abbreviation = "hmgt2"
 		category = plane_special_module_defense_turret
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			air_attack = 12
@@ -1640,7 +1565,6 @@ equipment_modules = {
 	cannon_defense_turret = {
 		abbreviation = "cat"
 		category = plane_special_module_defense_turret
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			air_attack = 8  
@@ -1664,7 +1588,6 @@ equipment_modules = {
 	cannon_defense_turret_2x = {
 		abbreviation = "cat2"
 		category = plane_special_module_defense_turret
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			air_attack = 16 
@@ -1689,7 +1612,6 @@ equipment_modules = {
 	airdropped_mines = {
 		abbreviation = "adm"
 		category = mine_warfare_offense
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			build_cost_ic = 2
@@ -1705,7 +1627,6 @@ equipment_modules = {
 	guided_anti_ship_missile = {
 		abbreviation = "asm"
 		category = nav_bomber_weapon
-		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { naval_bomber maritime_patrol_plane }
 
 		add_stats = {	
@@ -1737,7 +1658,6 @@ equipment_modules = {
 		abbreviation = "fec"
 		category = kamikaze_bomber_weapon
 		gui_category = nav_bomber_weapon
-		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = suicide
 
 		add_stats = {	
@@ -1766,7 +1686,6 @@ equipment_modules = {
 	earthshaker_bomb_release = {
 		abbreviation = "bbr"
 		category = strat_weapon
-		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { strategic_bomber }
 
 		add_stats = {
@@ -1807,7 +1726,6 @@ equipment_modules = {
 	rocket_propelled_bombs = {
 		abbreviation = "bol"
 		category = strat_weapon
-		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = strategic_bomber
 
 		add_stats = {
@@ -1844,7 +1762,6 @@ equipment_modules = {
 	improved_rocket_propelled_bombs = {
 		abbreviation = "bol"
 		category = strat_weapon
-		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = strategic_bomber
 
 		add_stats = {

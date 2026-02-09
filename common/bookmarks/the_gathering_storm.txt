@@ -193,11 +193,7 @@ bookmarks = {
 				RAJ_agrarian_society
 				RAJ_princely_states
 			}
-			focuses = {
-				RAJ_two_nation_theory
-				RAJ_indian_gurkhas
-				RAJ_the_smiling_buddha
-			}
+			focuses = { }
 		}
 		"HUN" = {
 			minor = yes
