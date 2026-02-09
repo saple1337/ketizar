@@ -5254,8 +5254,7 @@ focus_tree = {
 			custom_effect_tooltip = SOV_approach_tukhachevsky_tt
 			hidden_effect = {
 				SOV_mikhail_tukhachevsky = {
-					add_unit_leader_trait = trait_SOV_trotskyist
-					remove_unit_leader_trait = trait_SOV_stalinist
+										remove_unit_leader_trait = trait_SOV_stalinist
 					set_character_flag = SOV_aligned_left_opposition_flag
 				}
 				random_unit_leader = {
@@ -5265,8 +5264,7 @@ focus_tree = {
 						NOT = { has_trait = trait_SOV_bukharinist }
 						NOT = { has_trait = trait_SOV_monarchist_sympathizer }
 					}
-					add_unit_leader_trait = trait_SOV_trotskyist
-					set_character_flag = SOV_aligned_left_opposition_flag
+										set_character_flag = SOV_aligned_left_opposition_flag
 				}
 				random_unit_leader = {
 					limit = {
@@ -5275,8 +5273,7 @@ focus_tree = {
 						NOT = { has_trait = trait_SOV_bukharinist }
 						NOT = { has_trait = trait_SOV_monarchist_sympathizer }
 					}
-					add_unit_leader_trait = trait_SOV_trotskyist
-					set_character_flag = SOV_aligned_left_opposition_flag
+										set_character_flag = SOV_aligned_left_opposition_flag
 				}
 				random_unit_leader = {
 					limit = {
@@ -5285,8 +5282,7 @@ focus_tree = {
 						NOT = { has_trait = trait_SOV_bukharinist }
 						NOT = { has_trait = trait_SOV_monarchist_sympathizer }
 					}
-					add_unit_leader_trait = trait_SOV_trotskyist
-					set_character_flag = SOV_aligned_left_opposition_flag
+										set_character_flag = SOV_aligned_left_opposition_flag
 				}
 				# Add support in armed forces
 				add_to_variable = { SOV_left_opposition_army_support = 0.07 }
@@ -5343,8 +5339,7 @@ focus_tree = {
 			custom_effect_tooltip = SOV_approach_primakov_tt
 			hidden_effect = {
 				SOV_vitaly_primakov = {
-					add_unit_leader_trait = trait_SOV_trotskyist
-					remove_unit_leader_trait = trait_SOV_stalinist
+										remove_unit_leader_trait = trait_SOV_stalinist
 					set_character_flag = SOV_aligned_left_opposition_flag
 				}
 				random_unit_leader = {
@@ -5354,8 +5349,7 @@ focus_tree = {
 						NOT = { has_trait = trait_SOV_bukharinist }
 						NOT = { has_trait = trait_SOV_monarchist_sympathizer }
 					}
-					add_unit_leader_trait = trait_SOV_trotskyist
-					set_character_flag = SOV_aligned_left_opposition_flag
+										set_character_flag = SOV_aligned_left_opposition_flag
 				}
 				random_unit_leader = {
 					limit = {
@@ -5364,8 +5358,7 @@ focus_tree = {
 						NOT = { has_trait = trait_SOV_bukharinist }
 						NOT = { has_trait = trait_SOV_monarchist_sympathizer }
 					}
-					add_unit_leader_trait = trait_SOV_trotskyist
-					set_character_flag = SOV_aligned_left_opposition_flag
+										set_character_flag = SOV_aligned_left_opposition_flag
 				}
 				
 				# Add support in armed forces
@@ -5926,15 +5919,13 @@ focus_tree = {
 							limit = {
 								SOV_is_left_opposition = yes 
 							}
-							add_unit_leader_trait = trait_SOV_trotskyist
-							set_character_flag = SOV_aligned_left_opposition_flag
+														set_character_flag = SOV_aligned_left_opposition_flag
 						}
 						ELSE_IF = {
 							limit = {
 								SOV_is_right_opposition = yes
 							}
-							add_unit_leader_trait = trait_SOV_bukharinist
-							set_character_flag = SOV_aligned_right_opposition_flag
+														set_character_flag = SOV_aligned_right_opposition_flag
 						}
 					}
 				}
@@ -5953,15 +5944,13 @@ focus_tree = {
 							limit = {
 								SOV_is_left_opposition = yes 
 							}
-							add_unit_leader_trait = trait_SOV_trotskyist
-							set_character_flag = SOV_aligned_left_opposition_flag
+														set_character_flag = SOV_aligned_left_opposition_flag
 						}
 						ELSE_IF = {
 							limit = {
 								SOV_is_right_opposition = yes
 							}
-							add_unit_leader_trait = trait_SOV_bukharinist
-							set_character_flag = SOV_aligned_right_opposition_flag
+														set_character_flag = SOV_aligned_right_opposition_flag
 						}
 					}
 				}

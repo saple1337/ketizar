@@ -96,10 +96,10 @@ MEX_category_military_issues = {
 			controls_state = 304
 			OR = {
 				owns_state = 304
-				"PAN" = {
-					owns_state = 304
-					has_war_with = MEX
-				}
+				#"PAN" = {
+				#	owns_state = 304
+				#	has_war_with = MEX
+				#}
 			}
 			USA = {
 				owns_state = 685
@@ -458,18 +458,18 @@ MEX_category_territorial_integration = {
 				NOT = {
 					313 = { is_core_of = ROOT }
 				}
-				GUA = {
-					is_subject_of = ROOT
-				}
+				#GUA = {
+				#	is_subject_of = ROOT
+				#}
 			}
 		}
 		
 		available = {
 			OR = {
 				controls_state = 313
-				GUA = {
-					is_subject_of = ROOT
-				}
+				#GUA = {
+				#	is_subject_of = ROOT
+				#}
 			}
 			has_completed_focus = MEX_focus_integrate_the_south
 		}
@@ -509,18 +509,18 @@ MEX_category_territorial_integration = {
 				NOT = {
 					312 = { is_core_of = ROOT }
 				}
-				HON = {
-					is_subject_of = ROOT
-				}
+				#HON = {
+				#	is_subject_of = ROOT
+				#}
 			}
 		}
 		
 		available = {
 			OR = {
 				controls_state = 312
-				HON = {
-					is_subject_of = ROOT
-				}
+				#HON = {
+				#	is_subject_of = ROOT
+				#}
 			}
 			has_completed_focus = MEX_focus_integrate_the_south
 		}
@@ -560,18 +560,18 @@ MEX_category_territorial_integration = {
 				NOT = {
 					314 = { is_core_of = ROOT }
 				}
-				ELS = {
-					is_subject_of = ROOT
-				}
+				#ELS = {
+				#	is_subject_of = ROOT
+				#}
 			}
 		}
 		
 		available = {
 			OR = {
 				controls_state = 314
-				ELS = {
-					is_subject_of = ROOT
-				}
+				#ELS = {
+				#	is_subject_of = ROOT
+				#}
 			}
 			has_completed_focus = MEX_focus_integrate_the_south
 		}
@@ -662,18 +662,18 @@ MEX_category_territorial_integration = {
 				NOT = {
 					316 = { is_core_of = ROOT }
 				}
-				COS = {
-					is_subject_of = ROOT
-				}
+				#COS = {
+				#	is_subject_of = ROOT
+				#}
 			}
 		}
 		
 		available = {
 			OR = {
 				controls_state = 316
-				COS = {
-					is_subject_of = ROOT
-				}
+				#COS = {
+				#	is_subject_of = ROOT
+				#}
 			}
 			has_completed_focus = MEX_focus_integrate_the_south
 		}
@@ -713,18 +713,18 @@ MEX_category_territorial_integration = {
 				NOT = {
 					304 = { is_core_of = ROOT }
 				}
-				"PAN" = {
-					is_subject_of = ROOT
-				}
+				#"PAN" = {
+				#	is_subject_of = ROOT
+				#}
 			}
 		}
 		
 		available = {
 			OR = {
 				controls_state = 304
-				"PAN" = {
-					is_subject_of = ROOT
-				}
+				#"PAN" = {
+				#	is_subject_of = ROOT
+				#}
 			}
 			has_completed_focus = MEX_focus_integrate_the_south
 		}

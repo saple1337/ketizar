@@ -278,18 +278,7 @@ characters={
 				small="GFX_Portrait_generic_air_europe_3"
 			}
 		}
-			idea_token = adalbert_rogulja
-			allowed = {
-				original_tag = YUG
-			}
-			advisor={
-			cost = 150
-			slot = theorist
-			idea_token = manstein
-			ledger = army
-			allowed = {
-				original_tag = GER
-			}
+	}
 			traits = {
 				mobile_warfare_expert
 			}

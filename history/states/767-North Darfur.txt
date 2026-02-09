@@ -6,9 +6,9 @@ state={
 	}
 	impassable = yes
 	victory_points = {
-				7987 1 
-			}
-	history={
+		7987 1
+	}
+	history = {
 		owner = ENG
 		buildings = {
 			infrastructure = 0

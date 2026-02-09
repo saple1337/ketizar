@@ -315,10 +315,10 @@ technologies = {
 				factor = 2
 				has_war_with = GER
 			}
-			modifier = {
-				factor = 2
-				anti_submarine_strategy_required_trigger = yes
-			}
+			#modifier = {
+			#	factor = 2
+			#	anti_submarine_strategy_required_trigger = yes
+			#}
 		}
 
 		categories = {
@@ -360,10 +360,10 @@ technologies = {
 				factor = 2
 				has_war_with = GER
 			}
-			modifier = {
-				factor = 2
-				anti_submarine_strategy_required_trigger = yes
-			}
+			#modifier = {
+			#	factor = 2
+			#	anti_submarine_strategy_required_trigger = yes
+			#}
 		}
 
 		categories = {
@@ -405,10 +405,10 @@ technologies = {
 				factor = 4
 				has_war_with = GER
 			}
-			modifier = {
-				factor = 2
-				anti_submarine_strategy_required_trigger = yes
-			}
+			#modifier = {
+			#	factor = 2
+			#	anti_submarine_strategy_required_trigger = yes
+			#}
 		}
 
 		categories = {
@@ -446,10 +446,10 @@ technologies = {
 				factor = 4
 				has_war_with = GER
 			}
-			modifier = {
-				factor = 2
-				anti_submarine_strategy_required_trigger = yes
-			}
+			#modifier = {
+			#	factor = 2
+			#	anti_submarine_strategy_required_trigger = yes
+			#}
 		}
 
 		categories = {
@@ -489,10 +489,10 @@ technologies = {
 				factor = 4
 				has_war_with = GER
 			}
-			modifier = {
-				factor = 2
-				anti_submarine_strategy_required_trigger = yes
-			}
+			#modifier = {
+			#	factor = 2
+			#	anti_submarine_strategy_required_trigger = yes
+			#}
 		}
 
 		categories = {
@@ -535,10 +535,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 2
-				anti_submarine_strategy_required_trigger = yes
-			}
-		}
-
+			anti_submarine_strategy_required_trigger = yes
 		categories = {
 			naval_equipment
 			dd_tech
@@ -577,10 +574,10 @@ technologies = {
 				factor = 4
 				has_war_with = GER
 			}
-			modifier = {
-				factor = 2
-				anti_submarine_strategy_required_trigger = yes
-			}
+			#modifier = {
+			#	factor = 2
+			#	anti_submarine_strategy_required_trigger = yes
+			#}
 		}
 
 		categories = {
@@ -617,10 +614,10 @@ technologies = {
 				factor = 4
 				has_war_with = GER
 			}
-			modifier = {
-				factor = 2
-				anti_submarine_strategy_required_trigger = yes
-			}
+			#modifier = {
+			#	factor = 2
+			#	anti_submarine_strategy_required_trigger = yes
+			#}
 		}
 
 		categories = {
@@ -1768,8 +1765,8 @@ early_ship_hull_carrier = {
 		#HIDDEN EFFECT FOR REWARD CHOICE
 		research_cost = 1
 		start_year = 1940
-		naval_general_support_value_factor = 0.25
-		naval_general_support_factor = -0.1
+		#naval_general_support_value_factor = 0.25
+		#naval_general_support_factor = -0.1
 		allow = {
 			always = no
 		}
@@ -1778,7 +1775,7 @@ early_ship_hull_carrier = {
 		#HIDDEN EFFECT FOR REWARD CHOICE
 		research_cost = 1
 		start_year = 1940
-		naval_general_support_value_factor = 0.05
+		#naval_general_support_value_factor = 0.05
 		allow = {
 			always = no
 		}		
@@ -1787,8 +1784,8 @@ early_ship_hull_carrier = {
 		#HIDDEN EFFECT FOR REWARD CHOICE
 		research_cost = 1
 		start_year = 1940
-		naval_general_support_factor = 0.25
-		naval_general_support_value_factor = -0.15
+		#naval_general_support_factor = 0.25
+		#naval_general_support_value_factor = -0.15
 		allow = {
 			always = no
 		}
@@ -1797,8 +1794,8 @@ early_ship_hull_carrier = {
 		#HIDDEN EFFECT FOR REWARD CHOICE
 		research_cost = 1
 		start_year = 1940
-		naval_repair_support_value_factor = 0.25
-		naval_repair_support_factor = -0.1
+		#naval_repair_support_value_factor = 0.25
+		#naval_repair_support_factor = -0.1
 		allow = {
 			always = no
 		}
@@ -1807,7 +1804,7 @@ early_ship_hull_carrier = {
 		#HIDDEN EFFECT FOR REWARD CHOICE
 		research_cost = 1
 		start_year = 1940
-		naval_repair_support_value_factor = 0.05
+		#naval_repair_support_value_factor = 0.05
 		allow = {
 			always = no
 		}
@@ -1816,8 +1813,8 @@ early_ship_hull_carrier = {
 		#HIDDEN EFFECT FOR REWARD CHOICE
 		research_cost = 1
 		start_year = 1940
-		naval_repair_support_factor = 0.25
-		naval_repair_support_value_factor = -0.15
+		#naval_repair_support_factor = 0.25
+		#naval_repair_support_value_factor = -0.15
 		allow = {
 			always = no
 		}

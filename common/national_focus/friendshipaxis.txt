@@ -297,8 +297,6 @@ joint_focus = {
 					engine_type_slot = tank_gasoline_engine
 					special_type_slot_1 = tank_radio_2
 					special_type_slot_2 = smoke_launchers
-					special_type_slot_3 = auto_loader
-					special_type_slot_4 = stabilizer
 					special_type_slot_9 = empty
 				}
 				upgrades={

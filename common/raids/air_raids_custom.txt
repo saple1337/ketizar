@@ -1689,9 +1689,6 @@ JAP_pearl_harbor_strike = {
 
 		days_to_prepare = 1
 
-		range_factor = 14
-		unlimited_ai_range = yes
-
 		category = air_raids
 		custom_map_icon = GFX_raid_target_icon_carrier_raid
 

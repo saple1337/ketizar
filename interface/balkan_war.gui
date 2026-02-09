@@ -42,7 +42,7 @@ guiTypes = {
 			maxWidth = 450
 		}
 		instantTextBoxType = {
-			name =["serbia"]
+			name = "serbia"
 			position = { x = 50 y = 48 }
 			font = "hoi4_typewriter16"
 			text = [serbiaDesc]
