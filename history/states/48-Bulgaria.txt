@@ -8,6 +8,7 @@ state={
 		steel=32
 		tungsten=20
 		oil=8
+		coal=20
 	}
 	
 	
