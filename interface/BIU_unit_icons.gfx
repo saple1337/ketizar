@@ -1,0 +1,50 @@
+spriteTypes = {	
+
+########################## Custom Units - Large #####################################
+
+	spriteType = { name = "GFX_unit_BIU_light_tank_infantry_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_BIU_light_tank_infantry_icon.dds" noOfFrames = 2 }
+
+	spriteType = { name = "GFX_unit_BIU_heavy_tank_infantry_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_BIU_heavy_tank_infantry_icon.dds" noOfFrames = 2 }
+
+########################## custom Units - small ##########################
+	
+	spriteType = { name = "GFX_unit_BIU_light_tank_infantry_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_icon.dds" noOfFrames = 2 }
+
+	spriteType = { name = "GFX_unit_BIU_heavy_tank_infantry_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_icon.dds" noOfFrames = 2 }
+
+########################## text icons - NATO ##########################
+
+
+	spriteType = {
+		name = "GFX_nato_unit_BIU_light_tank_infantry_icon_small"
+		texturefile = "gfx/texticons/nato_unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_nato_unit_BIU_heavy_tank_infantry_icon_small"
+		texturefile = "gfx/texticons/nato_unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+	}
+
+
+########################## text icons - RTS ##########################
+
+	spriteType = {
+		name = "GFX_unit_BIU_light_tank_infantry_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+
+	spriteType = {
+		name = "GFX_unit_BIU_heavy_tank_infantry_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+
+
+}
