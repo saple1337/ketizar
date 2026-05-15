@@ -337,11 +337,12 @@ naval_gunfire_support = {
 
         }
 
-	        joint_operations= {
-	            modifier = {
-	        	    naval_invasion_planning_bonus_speed = 0.20
-	            }
-	        }
+        joint_operations= {
+        	naval_invasion_planning_bonus_speed = 0.20
+        	naval_repair_support_value_factor = 0.10
+    		naval_general_support_value_factor = 0.10
+
+        }
 
         floating_base={
             modifier = {

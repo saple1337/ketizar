@@ -185,9 +185,9 @@ submarine_coastal_defense = {
     xp_cost = 100
     xp_type = navy
 
-	    available = {
-	        always = yes
-	    }
+    available = {
+        is_special_project_completed = sp:sp_naval_midget_submarine
+    }
     visible = {
         has_dlc = "No Compromise, No Surrender"
     }
@@ -306,9 +306,13 @@ long_range_submarines = {
     xp_cost = 100
     xp_type = navy
 
-	    available = {
-	        always = yes
-	    }
+    available = {
+        OR = {
+            is_special_project_completed = sp:sp_naval_cruiser_submarine
+            is_special_project_completed = sp:sp_naval_submarine_carrier
+        }
+        
+    }
     visible = {
         has_dlc = "No Compromise, No Surrender"
     }
@@ -342,8 +346,13 @@ long_range_submarines = {
                     surface_visibility = -0.05
                     instant = yes
                 }
-	            }
-	        }
+                ship_hull_carrier_submarine = {
+                    surface_visibility = -0.1
+                    instant = yes
+
+                }
+            }
+        }
         support_the_surface = {
             equipment_bonus = {
                 ship_hull_fleet_submarine = {
@@ -356,8 +365,12 @@ long_range_submarines = {
                     torpedo_attack = 0.2
                     instant = yes
                 }
-	            }
-	        }
+                ship_hull_carrier_submarine = {
+                    naval_speed = 0.2
+                    instant = yes
+                }
+            }
+        }
         stowage_efficiency = {
             equipment_bonus = {
                 ship_hull_fleet_submarine = {
@@ -368,8 +381,12 @@ long_range_submarines = {
                     fuel_consumption = -0.2
                     instant = yes
                 }
-	            }
-	        }
+                ship_hull_carrier_submarine = {
+                    submarine_carrier_size = 2
+                    instant = yes
+                }
+            }
+        }
 
         deep_water_supremacy = {
             submarine = {
@@ -378,7 +395,7 @@ long_range_submarines = {
             }
         }   
 
-	    }
+    }
 
 
-}
+

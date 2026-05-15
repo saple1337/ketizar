@@ -17,7 +17,7 @@ combat_support = {
     icon = "GFX_doctrine_milestone_artillery_land"
      icon_frame = "GFX_doctrine_decor_land"
     mastery = {
-        multiplier = 10.0
+        multiplier = 8.0
         categories = {
 	        category_line_artillery
 	        category_artillery
@@ -32,7 +32,7 @@ armor = {
     icon = "GFX_doctrine_milestone_armored_land"
     icon_frame = "GFX_doctrine_decor_land"
     mastery = {
-        multiplier = 4.0
+        multiplier = 10.0
         categories = {
 	        category_tanks
 	        category_all_armor
@@ -57,6 +57,32 @@ operations = {
 	        category_artillery
 	        category_tanks
 	        category_all_armor
+        }
+    }
+}
+
+support = {
+    name = DOCTRINE_TRACK_SUPPORT
+    background = "GFX_sup_firepower_bg"
+    icon = "GFX_doctrine_milestone_artillery_land"
+     icon_frame = "GFX_doctrine_decor_land"
+    mastery = {
+        multiplier = 8.0
+        categories = {
+            category_support_battalions
+        }
+    }
+}
+
+aux = {
+    name = AUX_TRACK_SUPPORT
+    background = "GFX_sup_firepower_bg"
+    icon = "GFX_doctrine_milestone_artillery_land"
+     icon_frame = "GFX_doctrine_decor_land"
+    mastery = {
+        multiplier = 8.0
+        categories = {
+            category_all_infantry
         }
     }
 }
