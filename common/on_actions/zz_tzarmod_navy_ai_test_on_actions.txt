@@ -45,9 +45,9 @@ on_actions = {
 					}
 				}
 			}
-			HOL = {
-				country_event = { id = tzarmod_navy_ai_test.1 }
-			}
+			# HOL = {
+			# 	country_event = { id = tzarmod_navy_ai_test.1 }
+			# }
 		}
 	}
 }
