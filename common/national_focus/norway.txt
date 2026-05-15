@@ -274,7 +274,7 @@
 # 				technology = early_fighter
 # 				technology = fighter1
 # 				technology = improved_small_airframe
-# 				technology = improved_medium_airframe
+technology = improved_medium_airframe
 # 				technology = advanced_small_airframe
 # 				technology = heavy_fighter1
 # 				technology = heavy_fighter2

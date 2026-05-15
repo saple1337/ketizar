@@ -1,4 +1,4 @@
-
+﻿
 focus_tree = {
 	id = spanish_focus
 	
@@ -194,7 +194,7 @@ focus_tree = {
 		icon = GFX_focus_generic_fascist_troops
 		x = 3
 		y = 1
-		# removed invalid relative_position_id anchor
+		relative_position_id = SPA_the_national_and_popular_army_of_spain
 		cost = 5
 
 		available_if_capitulated = yes
@@ -544,7 +544,7 @@ focus_tree = {
 		icon = GFX_goal_generic_more_territorial_claims
 		x = -1
 		y = 1
-		# removed invalid relative_position_id anchor
+		relative_position_id = SPA_the_national_and_popular_army_of_spain
 		cost = 5
 
 		available_if_capitulated = yes
@@ -602,7 +602,7 @@ focus_tree = {
 		icon = GFX_goal_generic_small_arms
 		x = 1
 		y = 1
-		# removed invalid relative_position_id anchor
+		relative_position_id = SPA_the_national_and_popular_army_of_spain
 		cost = 10
 
 		available_if_capitulated = yes
@@ -977,7 +977,7 @@ focus_tree = {
 		icon = GFX_focus_generic_fascist_propaganda
 		x = 1
 		y = 1
-		# removed invalid relative_position_id anchor
+		relative_position_id = SPA_autarky
 		cost = 5
 
 		available_if_capitulated = yes
@@ -1094,7 +1094,7 @@ focus_tree = {
 		icon = GFX_focus_generic_energy
 		x = -1
 		y = 1
-		# removed invalid relative_position_id anchor
+		relative_position_id = SPA_autarky
 		cost = 10
 
 		available_if_capitulated = yes

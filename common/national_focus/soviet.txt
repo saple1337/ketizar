@@ -133,13 +133,13 @@ focus_tree = {
 						instant_build = yes						
 					}
 		}
-			214 = {
-				add_building_construction = {
-							type = infrastructure
-							level = 2
+		}
+		214 {
+			add_building_construction = {
+						type = infrastructure
+						level = 2
 						instant_build = yes						
 					}
-			}
 		}
 	}
 
@@ -1659,7 +1659,7 @@ focus_tree = {
 		available = {
 			OR = {
 				has_completed_focus = SOV_the_path_of_marxism_leninism
-				always = no
+				has_completed_focus = SOV_womens_fascist_movement
 			}
 		}
 		
@@ -1686,7 +1686,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_expand_aviation_institutes}
 		x = 0
 		y = 1
-		# removed invalid relative_position_id anchor
+		relative_position_id = SOV_expand_aviation_institutes
 		cost = 5
 
 		available = {
@@ -2233,7 +2233,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_lessons_of_war }
 		x = 0
 		y = 2
-		# removed invalid relative_position_id anchor
+		relative_position_id = SOV_lessons_of_war
 		cost = 2
 
 		available = {
@@ -2284,7 +2284,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_winter_offensive }
 		x = -3
 		y = 1
-		# removed invalid relative_position_id anchor
+		relative_position_id = SOV_winter_offensive
 		cost = 5
 
 		available = {
@@ -2874,7 +2874,7 @@ focus_tree = {
 		text = "Military Reorganization(BE CAREFUL YOU CAN'T CANCEL IT)"
 		x = -1
 		y = 1
-		# removed invalid relative_position_id anchor
+		relative_position_id = SOV_winter_offensive
 		cost = 5
 
 		select_effect = {
@@ -3392,17 +3392,23 @@ focus_tree = {
 				if = { limit = { has_idea = semyon_timoshenko } remove_ideas = semyon_timoshenko }
 				if = { limit = { has_idea = SOV_aleksandr_yegorov } remove_ideas = SOV_aleksandr_yegorov }
 				if = { limit = { has_idea = SOV_vasily_blyukher } remove_ideas = SOV_vasily_blyukher }
-				}
-				add_advisor_role = {
-					character = SOV_georgy_zhukov
-					advisor = {
+			}
+			add_advisor_role = {
+				Character = SOV_georgy_zhukov
+				advisor = {
 					cost = 0
-						slot = army_chief
-						idea_token = georgy_zhukov
-						ledger = army
-						traits = {
-							marshal_of_victory
-						}
+					slot = army_chief
+					idea_token = georgy_zhukov
+					ledger = army
+					allowed = {
+						original_tag = SOV
+					}
+					available = {
+						has_completed_focus = SOV_defense_of_moscow
+					}
+					traits = {
+						marshal_of_victory
+					}
 				}
 			  	activate = yes
 			}
@@ -3497,16 +3503,19 @@ focus_tree = {
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
 						infantry = { x = 0 y = 3 }
+						infantry = { x = 0 y = 4 }
 
 						infantry = { x = 1 y = 0 }
 						infantry = { x = 1 y = 1 }
 						infantry = { x = 1 y = 2 }
 						infantry = { x = 1 y = 3 }
+						infantry = { x = 1 y = 4 }
 
 						infantry = { x = 2 y = 0 }
 						infantry = { x = 2 y = 1 }
 						infantry = { x = 2 y = 2 }
 						infantry = { x = 2 y = 3 }
+						anti_air_brigade = { x = 2 y = 4 }
 
 						artillery_brigade = { x = 3 y = 0}
 						anti_tank_brigade = { x = 3 y = 1}
@@ -3514,7 +3523,7 @@ focus_tree = {
 						artillery_brigade = { x = 3 y = 3}
 					}
 					support = {
-						engineer = { x = 0 y = 0 }
+						engineer_company = { x = 0 y = 0 }
 						recon = { x = 0 y = 1 }
 						logistics_company  = { x = 0 y = 2 }
 					}
@@ -3673,7 +3682,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_lessons_of_war }
 		x = 1
 		y = 1
-		# removed invalid relative_position_id anchor
+		relative_position_id = SOV_lessons_of_war
 		cost = 2
 
 		available = {
@@ -3720,7 +3729,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_winter_offensive }
 		x = 3
 		y = 1
-		# removed invalid relative_position_id anchor
+		relative_position_id = SOV_winter_offensive
 		cost = 2
 
 		available = {
@@ -3780,7 +3789,7 @@ focus_tree = {
 			add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 800  } 
 			add_equipment_to_stockpile = { type = anti_tank_equipment_2 amount = 1500 }
 			add_equipment_to_stockpile = { type = artillery_equipment_2 amount = 3460  }  
-			add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 5000  }  
+			add_equipment_to_stockpile = { type = mech_equipment_1 amount = 5000  }  
 		}
 	}
 	focus = {
@@ -3860,7 +3869,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_winter_offensive }
 		x = 1
 		y = 1
-		# removed invalid relative_position_id anchor
+		relative_position_id = SOV_winter_offensive
 		cost = 5
 
 		available = {
@@ -3885,18 +3894,21 @@ focus_tree = {
 						penal_battalion = { x = 0 y = 1 }
 						penal_battalion = { x = 0 y = 2 }
 						penal_battalion = { x = 0 y = 3 }
+						penal_battalion = { x = 0 y = 4 }
 						penal_battalion = { x = 1 y = 0 }
 						penal_battalion = { x = 1 y = 1 }
 						penal_battalion = { x = 1 y = 2 }
 						penal_battalion = { x = 1 y = 3 }
+						penal_battalion = { x = 1 y = 4 }
 						penal_battalion = { x = 2 y = 0 }
 						penal_battalion = { x = 2 y = 1 }
 					
-						anti_air_brigade = { x = 2 y = 2 }
+						anti_air_brigade = { x = 2 y = 1 }
 						artillery_brigade = { x = 3 y = 0 }
 						artillery_brigade = { x = 3 y = 1 }
 						artillery_brigade = { x = 3 y = 2 }
 						artillery_brigade = { x = 3 y = 3 }
+						artillery_brigade = { x = 3 y = 4 }
 						anti_tank_brigade = { x = 4 y = 0 }
 						
 					}
@@ -4377,7 +4389,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_organization_centralization_discipline }
 		x = 1
 		y = 1
-		# removed invalid relative_position_id anchor
+		relative_position_id = SOV_organization_centralization_discipline
 		cost = 5
 
 		available = {
@@ -4737,7 +4749,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					always = no
+					has_completed_focus = SOV_leader_of_the_party_and_the_people
 				}
 				swap_ruler_traits = {
 					remove = stalin_inheritor_of_lenin_leader
@@ -4794,7 +4806,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					always = no
+					has_completed_focus = SOV_leader_of_the_party_and_the_people
 				}
 				swap_ruler_traits = {
 					remove = stalin_servant_of_lenin_leader
@@ -4816,7 +4828,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_organization_centralization_discipline }
 		x = -1
 		y = 1
-		# removed invalid relative_position_id anchor
+		relative_position_id = SOV_organization_centralization_discipline
 		cost = 5
 
 		
@@ -4835,7 +4847,7 @@ focus_tree = {
 				character = "SOV_iosif_stalin"
 				traits={ old_guard politically_connected media_personality harsh_leader }
 				skill=3
-				attack_skill=14
+				attack_skill=3
 				defense_skill=3
 				planning_skill=3
 				logistics_skill=3
@@ -5843,7 +5855,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_gain_support_from_party_members  } 
 		x = 1
 		y = 1
-		# removed invalid relative_position_id anchor
+		relative_position_id = SOV_gain_support_from_party_members
 		cost = 5
 		available = {
 			SOV_soviet_civil_war_not_started = yes 
@@ -5956,13 +5968,13 @@ focus_tree = {
 		relative_position_id = SOV_the_left_opposition
 		cost = 5
 		available = {
+			add_to_variable = { SOV_civil_war_points= 1 }
 			SOV_soviet_civil_war_not_started = yes 
 		}
 		                
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA FOCUS_FILTER_STABILITY}
 
 		completion_reward = {
-			add_to_variable = { SOV_civil_war_points = 1 }
 			SOV_paranoia_low_increase_effect = yes 
 			add_political_power = 150
 			custom_effect_tooltip = SOV_gain_support_from_party_members_tt
@@ -6017,7 +6029,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_gain_support_from_party_members }
 		x = -1
 		y = 1
-		# removed invalid relative_position_id anchor
+		relative_position_id = SOV_gain_support_from_party_members
 		cost = 5
 		available = {
 			SOV_soviet_civil_war_not_started = yes 

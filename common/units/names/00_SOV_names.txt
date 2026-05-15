@@ -1,4 +1,4 @@
-SOV = {
+﻿SOV = {
 	fleet_names_template = FLEET_NAME_SOV
 	submarine = {
 		prefix = ""

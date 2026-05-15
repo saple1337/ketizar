@@ -8,16 +8,20 @@ sub_units = {
 		need_equipment = { ship_hull_heavy = 1 }
 		need_equipment_modules = {
 			any = {
-				ship_armor_bb_1 = 1
-				ship_armor_bb_2 = 1
-				ship_armor_bb_3 = 1
+				ship_scheme_mixed = 1
+				ship_scheme_incremental = 1
+				ship_scheme_incremental_post_jutland = 1
+				ship_scheme_all_or_nothing = 1
+				ship_scheme_all_or_nothing_armor_citadel = 1
 				ship_armor_shbb = 1
+				ship_armor_shbb2 = 1
+				ship_anti_torpedo_bulge = 1
 			}
 		}
 		
-		max_organisation = 50
+		max_organisation = 40
 
-		supply_consumption = 0.8
+		supply_consumption = 0.2
 		
 		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire }
 		critical_part_damage_chance_mult = 1 

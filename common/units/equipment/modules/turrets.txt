@@ -317,6 +317,32 @@ equipment_modules = {
 		forbid_equipment_type = artillery
 	}
 
+
+	tank_super_heavy_three_man_tank_turret = {
+		abbreviation = "s3m"
+		category = tank_super_heavy_turret_type
+		forbid_equipment_type = anti_tank
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+				tank_heavy_main_armament
+				tank_super_heavy_main_armament
+			}
+		}
+		add_stats = {
+			build_cost_ic = 10
+			reliability = -0.1
+			maximum_speed = -0.2
+			breakthrough = 24
+		}
+		multiply_stats = {
+
+		}
+		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
+	}
+
 	tank_super_heavy_four_man_tank_turret = {
 		abbreviation = "s4m"
 		category = tank_super_heavy_turret_type

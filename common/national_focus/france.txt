@@ -1,4 +1,4 @@
-focus_tree = {
+﻿focus_tree = {
 	id = french_focus
 	
 	country = {
@@ -21,7 +21,7 @@ focus_tree = {
 		id = FRA_devalue_the_franc
 		icon = GFX_focus_fra_devalue_the_franc
 		prerequisite = {focus = FRA_election}
-		# removed invalid relative_position_id anchor
+		relative_position_id = FRA_election
 		x = 2	
 		y = 1
 			cost = 5
@@ -382,11 +382,11 @@ focus_tree = {
 			y = 0
 		}
 		cost = 5
-		# removed invalid relative_position_id anchor
+		relative_position_id = FRA_election
 		available = {
 			OR = {
 				OR = {
-					always = no
+					has_completed_focus = FRA_military_investments
 					has_completed_focus = FRA_defensive_strategems
 				}
 				has_completed_focus = FRA_review_foreign_policy
@@ -505,15 +505,21 @@ focus_tree = {
 			}
 
 
-				add_advisor_role = {
-					character = FRA_charles_de_gaulle
-					advisor={
-						slot = theorist
-						idea_token = charles_de_gaulle
-						ledger  = army 
-						cost = 0
-						traits  = {
-							blitzkrieg_theorist 
+			add_advisor_role = {
+				Character = FRA_charles_de_gaulle
+				advisor={
+					slot = theorist
+					idea_token = charles_de_gaulle
+					ledger  = army 
+					allowed  = {
+						original_tag  = FRA
+					}
+					available  = {
+						original_tag  = FRA
+					}
+					cost = 0
+					traits  = {
+						blitzkrieg_theorist 
 					}
 					ai_will_do  = {
 						factor  = 1.000
@@ -1149,7 +1155,8 @@ focus_tree = {
 
 		cost = 4
 		prerequisite = {focus = FRA_election}
-		# removed invalid relative_position_id anchor
+		relative_position_id =FRA_election
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -1191,7 +1198,8 @@ focus_tree = {
 		}
 		cost = 5
 		prerequisite = {focus = FRA_election}
-		# removed invalid relative_position_id anchor
+		relative_position_id =FRA_election
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -1234,7 +1242,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = {focus = FRA_election}
-		# removed invalid relative_position_id anchor
+		relative_position_id = FRA_election
 		offset = {
 			x = 0
 			y = 0
@@ -1279,7 +1287,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = {focus = FRA_election}
-		# removed invalid relative_position_id anchor
+		relative_position_id = FRA_election
 		offset = {
 			x = 0
 			y = 0
@@ -1739,7 +1747,7 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_stimulate_the_dynamic_market
 		}
-		# removed invalid relative_position_id anchor
+		relative_position_id = FRA_stimulate_the_dynamic_market
 		cost = 4
 
 		cancel_if_invalid = yes
@@ -2047,7 +2055,7 @@ focus_tree = {
 		y = 1
 		available = {
 			OR = {
-				# always = no
+				# has_completed_focus = FRA_military_investments
 				date > 1937.6.1
 				GER = {
 					has_completed_focus = GER_anschluss
@@ -2057,7 +2065,7 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_election
 		}
-		# removed invalid relative_position_id anchor
+		relative_position_id = FRA_election 
 		cost = 4
 
 		cancel_if_invalid = yes
@@ -2081,7 +2089,7 @@ focus_tree = {
 	 	}
 		x = -1
 		y = 1
-		# removed invalid relative_position_id anchor
+		relative_position_id = FRA_stimulate_the_dynamic_market
 		cost = 10
 
 		available_if_capitulated = yes

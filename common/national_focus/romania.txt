@@ -924,7 +924,8 @@ focus_tree = {
 		prerequisite = { focus = ROM_arms_purchases }
 		x = -1
 		y = 1
-		# removed invalid relative_position_id anchor
+		relative_position_id = ROM_arms_purchases
+
 		cost = 5
 
 		available = {
@@ -1228,7 +1229,8 @@ focus_tree = {
 		x = 1
 		y = 1
 		prerequisite = { focus = ROM_arms_purchases }
-		# removed invalid relative_position_id anchor
+		relative_position_id = ROM_arms_purchases
+		
 		cost = 10
 
 		cancel_if_invalid = yes

@@ -1,4 +1,4 @@
-# OVERRIDE - Removes nonexistent ICE tag from ship naming
+﻿# OVERRIDE - Removes nonexistent ICE tag from ship naming
 ICE_DD_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_COAST_GUARD
 	for_countries = { }

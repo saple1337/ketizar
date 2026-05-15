@@ -1,4 +1,4 @@
-ENG = {
+﻿ENG = {
 	submarine = {
 		prefix = "HMS"
 		generic = { "Submarine" }

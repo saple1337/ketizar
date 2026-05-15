@@ -325,7 +325,7 @@ FRA_DLC_01 =
 {
 	name = "Light Cavalry Division"
 
-	for_countries = { FRA EFR }
+	for_countries = { FRA EFR}
 
 	 
 
@@ -442,7 +442,7 @@ FRA_ARM_02 =
 {
 	name = "Tank Brigade"
 
-	for_countries = { FRA EFR }
+	for_countries = { FRA EFR  }
 
 	 
 
@@ -650,7 +650,7 @@ FRA_MNT_01 =
 {
 	name = "Mountain Division"
 
-	for_countries = { FRA EFR }
+	for_countries = { FRA EFR}
 
 	 
 

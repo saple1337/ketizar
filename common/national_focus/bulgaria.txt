@@ -102,7 +102,8 @@ focus_tree = {
 		prerequisite = { focus = BUL_found_dvf_sopot }
 		x = 0
 		y = 2
-		# removed invalid relative_position_id anchor
+		relative_position_id = BUL_found_dvf_sopot
+
 		cost = 10
 
 
@@ -579,7 +580,7 @@ focus_tree = {
 
 		prerequisite = { focus = BUL_national_military_academy }
 		icon = GFX_focus_research
-		# removed invalid relative_position_id anchor
+		relative_position_id = BUL_national_military_academy
 		x = 0
 		y = 1
 		cost = 10
@@ -651,7 +652,7 @@ focus_tree = {
 		id = BUL_power_to_the_tsar
 
 		icon = GFX_focus_BUL_power_to_the_tsar
-		# removed invalid relative_position_id anchor
+		relative_position_id = BUL_oppose_the_royal_dictatorship
 		x = 12
 		y = 0
 		cost = 5

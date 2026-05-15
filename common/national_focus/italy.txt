@@ -68,7 +68,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 6
 		y = 0
-		# removed invalid relative_position_id anchor
+		relative_position_id = ITA_ethiopian_war_logistics_bba
 		cost = 5
 		available = {
 			OR = {
@@ -273,7 +273,12 @@ focus_tree = {
 				}
 				add_resource = {
 				type = oil
-				amount = 8
+				amount = 70
+				state = 662
+			}
+			add_resource = {
+				type = rubber
+				amount = 40
 				state = 662
 			}
 			}	
@@ -426,13 +431,13 @@ focus_tree = {
 	completion_reward = {
 		add_resource = {
 			type = oil
-			amount = 27
+			amount = 65
 			state = 159
 		}
 
 		add_resource = {
 			type = oil
-			amount = -27
+			amount = -65
 			state = 662
 		}
 	}
@@ -532,13 +537,13 @@ focus = {
 	completion_reward = {
 		add_resource = {
 			type = rubber
-			amount = 20
+			amount = 40
 			state = 159
 		}
 
 		add_resource = {
 			type = rubber
-			amount = -20
+			amount = -40
 			state = 662
 		}
 	}
@@ -636,13 +641,13 @@ focus = {
 	completion_reward = {
 		add_resource = {
 			type = rubber
-			amount = 20
+			amount = 40
 			state = 159
 		}
 
 		add_resource = {
 			type = rubber
-			amount = -20
+			amount = -40
 			state = 662
 		}
 	}
@@ -2770,7 +2775,7 @@ focus = {
 					NOT = { has_war_with = GER }
 				}
 				add_equipment_to_stockpile = { 
-					type = CAS_equipment_1
+					type = small_plane_medium_air_airframe_1
 					amount = 100
 					producer = GER
 					variant_name = "Ju 87"
@@ -4158,7 +4163,7 @@ completion_reward = {
 
 			if = {
 				limit = {
-					NOT = { always = no }
+					NOT = { has_completed_focus = ITA_strengthen_ascari_corps }
 					NOT = { has_completed_focus = ITA_forza_navale_especiale }
 				}
 				custom_effect_tooltip = ITA_strengthen_ascari_corps_ibrahim_farag_mohammed_tt
@@ -5639,7 +5644,7 @@ completion_reward = {
 				}
 				if = {
 					limit = {
-						NOT = { always = no	}
+						NOT = { has_completed_focus = ITA_defy_the_duce	}
 					}
 					ITA_initiate_balance_of_power_effect = yes
 				}
@@ -5663,7 +5668,7 @@ completion_reward = {
 
 			if = {
 				limit = {
-					always = no
+					has_completed_focus = ITA_solid_progress
 				}
 				unlock_decision_tooltip = ITA_bop_slander_the_duce
 				unlock_decision_tooltip = ITA_bop_criticize_the_war
@@ -6146,7 +6151,7 @@ completion_reward = {
 			# if = { limit = { country_exists = HUN } HUN = {add_ideas = axis_victory_in_egypt } }
 			# if = { limit = { country_exists = BUL } BUL = {add_ideas = axis_victory_in_egypt } }
 			# if = { limit = { country_exists = CRO } CRO = {add_ideas = axis_victory_in_egypt } }
-			# if = { limit = { country_exists = CRO } }
+			# if = { limit = { country_exists = CRO } FIN = {add_ideas = axis_victory_in_egypt } }
 		}
 	}
 
@@ -6349,13 +6354,13 @@ completion_reward = {
 					allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 					modules = {
 						front_1_custom_slot = ship_anti_air_2
-						front_2_custom_slot = ship_460_battery
+						front_2_custom_slot = ship_super_heavy_battery_1
 						mid_1_custom_slot = ship_secondaries_2
 						mid_2_custom_slot = ship_secondaries_2
 						mid_3_custom_slot = ship_anti_air_2
-						rear_1_custom_slot = ship_460_battery
+						rear_1_custom_slot = ship_super_heavy_battery_1
 						rear_2_custom_slot = ship_airplane_launcher_2
-						fixed_ship_battery_slot = ship_460_battery
+						fixed_ship_battery_slot = ship_super_heavy_battery_1
 						fixed_ship_anti_air_slot = ship_anti_air_2
 						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 						fixed_ship_radar_slot = ship_radar_1
@@ -6426,7 +6431,7 @@ completion_reward = {
 		prerequisite = { focus = ITA_strengthen_the_papacy }
 		x = 0
 		y = 3
-		# removed invalid relative_position_id anchor
+		relative_position_id = ITA_strengthen_the_papacy
 		cost = 5
 
 		allow_branch = {
@@ -7001,7 +7006,7 @@ completion_reward = {
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = { always = no }
+					NOT = { has_completed_focus = ITA_regional_development }
 				}
 				custom_effect_tooltip = ITA_albanian_fascist_militia_occupation_law_full_tt
 				show_ideas_tooltip = ITA_fake_colonial_police_law

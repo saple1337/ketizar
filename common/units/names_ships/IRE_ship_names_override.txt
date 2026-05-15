@@ -1,4 +1,4 @@
-# OVERRIDE - Removes nonexistent IRE tag from ship naming
+﻿# OVERRIDE - Removes nonexistent IRE tag from ship naming
 IRE_DD_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_DESTROYERS
 	for_countries = { }

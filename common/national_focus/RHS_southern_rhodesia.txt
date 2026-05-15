@@ -844,6 +844,9 @@ focus_tree = {
 
 		completion_reward = {
 			add_timed_idea = { idea = RHS_anglophile_immigration_campaign days = 545 }
+			RHN = {
+				add_timed_idea = { idea = RHS_anglophile_immigration_campaign days = 365 }
+			}
 		}
 	}
 

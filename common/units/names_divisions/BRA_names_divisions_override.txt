@@ -31,7 +31,7 @@ BRA_ARM_01 = {
 	name = "Armored Division"
 	for_countries = { }
 	can_use = { always = no }
-	division_types = { "medium_armor" }
+	division_types = { "armor" }
 	fallback_name = "%da Divisão de Carros de Combate"
 }
 BRA_PAR_01 = {

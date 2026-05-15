@@ -227,7 +227,7 @@ joint_focus = {
 				name = ALLIED_mp
 				bonus = 2.00
 				uses = 1
-				technology = tech_military_police
+				technology = tech_military_police = 1
 			}
 		}
 
@@ -236,7 +236,7 @@ joint_focus = {
 				name = ALLIED_mp
 				bonus = 1.00
 				uses = 1
-				technology = tech_military_police
+				technology = tech_military_police = 1
 			}
 		}
 }
@@ -569,11 +569,11 @@ joint_focus = {
 		}
 
 		completion_reward_joint_originator = {
-			add_ideas = ALLIED_POL_polish_shock_battallions
+			add_ideas = POL_polish_shock_battallions
 		}
 
 		completion_reward_joint_member = {
-			add_ideas = ALLIED_POL_polish_shock_battallions
+			add_ideas = POL_polish_shock_battallions
 		}
 }
 
@@ -691,7 +691,7 @@ joint_focus = {
 				modules = {
 					main_armament_slot = tank_medium_cannon_2
 					turret_type_slot = tank_medium_two_man_tank_turret
-					suspension_type_slot = tank_bogie_suspension
+					suspension_type_slot = tank_leafsupring_bogie_suspension
 					armor_type_slot = tank_welded_armor
 					engine_type_slot = tank_gasoline_engine
 					special_type_slot_1 = tank_radio_2
@@ -718,7 +718,7 @@ joint_focus = {
 					special_type_slot_1 = tank_radio_2
 					special_type_slot_2 = smoke_launchers
 					special_type_slot_3 = auto_loader
-					special_type_slot_4 = smoke_launchers
+					special_type_slot_4 = smoke_launcher
 					special_type_slot_9 = empty
 				}
 				upgrades={
@@ -727,7 +727,46 @@ joint_focus = {
 				}
 			}
 			
-				
+				division_template = {
+					name = "Free Poland Tank Regiment" 		
+					division_names_group = POL_MEC_01
+
+					regiments = {
+						mechanized = { x = 0 y = 0 }
+						mechanized = { x = 0 y = 1 }
+						mechanized = { x = 0 y = 2 }
+						mechanized = { x = 0 y = 3 }
+						mechanized = { x = 1 y = 0 }
+						mechanized = { x = 1 y = 1 }
+						mechanized = { x = 1 y = 2 }
+						mechanized = { x = 1 y = 3 }
+						medium_sp_anti_air_brigade = { x = 1 y = 4 }
+
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						medium_armor = { x = 2 y = 3 }
+						medium_armor = { x = 3 y = 0 }
+						medium_armor = { x = 3 y = 1 }
+						medium_armor = { x = 3 y = 2 }
+						medium_armor = { x = 3 y = 3 }
+						medium_armor = { x = 4 y = 0 }
+						medium_armor = { x = 4 y = 1 }
+						medium_armor = { x = 4 y = 2 }
+					}
+					
+					support = {
+						engineer = { x = 0 y = 0 }
+						light_tank_recon = { x = 0 y = 1 }
+						signal_company = { x = 0 y = 2 }
+						logistics_company = { x = 0 y = 3 }
+						maintenance_company = { x = 0 y = 4 }
+						field_hospital = { x = 0 y = 5 }
+						anti_air = { x = 0 y = 6 }
+						light_flame_tank = { x = 0 y = 7 }
+					}
+					
+				}
 		
 				random_owned_controlled_state = {
 						create_unit = {
@@ -1106,7 +1145,7 @@ joint_focus = {
 					special_type_slot_1 = tank_radio_2
 					special_type_slot_2 = smoke_launchers
 					special_type_slot_3 = auto_loader
-					special_type_slot_4 = smoke_launchers
+					special_type_slot_4 = smoke_launcher
 					special_type_slot_9 = empty
 				}
 				upgrades={
@@ -1114,7 +1153,46 @@ joint_focus = {
 					tank_nsb_armor_upgrade=12
 				}
 			}
-			
+			division_template = {
+					name = "Free Belgium Armored Car Regiment" 		
+					division_names_group = BEL_MOT_01
+
+					regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 0 y = 3 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+						motorized = { x = 1 y = 3 }
+						medium_sp_anti_air_brigade = { x = 1 y = 4 }
+
+						armored_car = { x = 2 y = 0 }
+						armored_car = { x = 2 y = 1 }
+						armored_car = { x = 2 y = 2 }
+						armored_car = { x = 2 y = 3 }
+						armored_car = { x = 3 y = 0 }
+						armored_car = { x = 3 y = 1 }
+						armored_car = { x = 3 y = 2 }
+						armored_car = { x = 3 y = 3 }
+						armored_car = { x = 4 y = 0 }
+						armored_car = { x = 4 y = 1 }
+						armored_car = { x = 4 y = 2 }
+					}
+					
+					support = {
+						engineer = { x = 0 y = 0 }
+						light_tank_recon = { x = 0 y = 1 }
+						signal_company = { x = 0 y = 2 }
+						logistics_company = { x = 0 y = 3 }
+						maintenance_company = { x = 0 y = 4 }
+						field_hospital = { x = 0 y = 5 }
+						anti_air = { x = 0 y = 6 }
+						light_flame_tank = { x = 0 y = 7 }
+					}
+					
+			}
 			random_owned_controlled_state = {
 						create_unit = {
 							division = "name = \"Free Belgium Armored Car Regiment\" division_template = \"Free Belgium Armored Car Regiment\" start_experience_factor = 1.00" 
@@ -1408,18 +1486,18 @@ joint_focus = {
 			 create_corps_commander = {
 			 	name = "Fahrettin Altay"
 			 	gfx = "GFX_portrait_tur_fahrettin_altay"
-			 	traits={ brilliant_strategist cavalry_leader cavalry_expert war_hero hill_fighter trickster expert_improviser }
+			 	traits={ brilliant_strategist cavalry_leader cavalry_expert war_hero hill_fighter trickster improv_expert }
 				skill=4
 				attack_skill=6
 				defense_skill=3
 				planning_skill=4
 				logistics_skill=4
 			}
-			add_ideas = { ALLIED_TUR_kemalist_army_officers_powerful_loyal }
+			add_ideas = { TUR_kemalist_army_officers_powerful_loyal }
 		}
 
 		completion_reward_joint_member = {
-			add_ideas = { ALLIED_TUR_kemalist_army_officers_powerful_loyal }
+			add_ideas = { TUR_kemalist_army_officers_powerful_loyal }
 		}
 }
 
@@ -1641,7 +1719,7 @@ joint_focus = {
 					special_type_slot_1 = tank_radio_2
 					special_type_slot_2 = smoke_launchers
 					special_type_slot_3 = auto_loader
-					special_type_slot_4 = smoke_launchers
+					special_type_slot_4 = smoke_launcher
 					special_type_slot_9 = empty
 				}
 				upgrades={
@@ -1650,7 +1728,46 @@ joint_focus = {
 				}
 			}
 			
-			
+			division_template = {
+					name = "Guards Armored Car Diviziya" 		
+					division_names_group = SOV_MOT_01
+
+					regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 0 y = 3 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+						motorized = { x = 1 y = 3 }
+						medium_sp_anti_air_brigade = { x = 1 y = 4 }
+
+						armored_car = { x = 2 y = 0 }
+						armored_car = { x = 2 y = 1 }
+						armored_car = { x = 2 y = 2 }
+						armored_car = { x = 2 y = 3 }
+						armored_car = { x = 3 y = 0 }
+						armored_car = { x = 3 y = 1 }
+						armored_car = { x = 3 y = 2 }
+						armored_car = { x = 3 y = 3 }
+						armored_car = { x = 4 y = 0 }
+						armored_car = { x = 4 y = 1 }
+						armored_car = { x = 4 y = 2 }
+					}
+					
+					support = {
+						engineer = { x = 0 y = 0 }
+						light_tank_recon = { x = 0 y = 1 }
+						signal_company = { x = 0 y = 2 }
+						logistics_company = { x = 0 y = 3 }
+						maintenance_company = { x = 0 y = 4 }
+						field_hospital = { x = 0 y = 5 }
+						anti_air = { x = 0 y = 6 }
+						light_flame_tank = { x = 0 y = 7 }
+					}
+					
+			}
 			
 			random_owned_controlled_state = {
 						prioritize = { 214 }

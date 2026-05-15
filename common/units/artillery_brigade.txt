@@ -36,45 +36,54 @@ sub_units = {
 		deep_desert = {attack = -0.3 defence = -0.6	movement = -0.2  }
 	
 		forest = {
-			attack = -0.2
-			movement = -0.5
-		}
-
-		hills = {
-			movement = -0.05
-		}
-		urban = {
-			defence = -0.10 
-		}
-
-		mountain = {
+		    attack = -0.2
+			defence = -0.05
 			movement = -0.2
-			attack = -0.6
-			defence = -0.6
 		}
-
+		hills = {
+		    attack = -0.20
+			defence = -0.4 
+			movement = -0.2
+		}
+		mountain = 	{
+		    attack = -0.85
+			defence = -0.85
+			movement = -0.85
+		}
 		jungle = {
-			attack = -0.4
-			defence = -0.6
-			movement = -0.5
-		}
-
-		marsh = {
-			attack = -0.2
+		    attack = -0.3
+			defence = -0.35 
 			movement = -0.3
 		}
-
-		fort = {
-			attack = 0.1
-		}
-
-		river = {
-			attack = -0.2
+		marsh = {
+		    attack = -0.1 
+			defence = -0.35 	
 			movement = -0.2
 		}
-
-		amphibious = {
-			attack = -1.2
+		urban = {
+			attack = -0.45
+			defence = -0.55
+		}
+		village = {
+			attack = -0.15
+			defence = -0.2
+		}
+		river = { 
+			attack = -0.15
+			movement = -0.15	
+		}
+		amphibious = { 
+			attack = -0.8
+		}
+		desert = {
+			attack = -0.15
+			movement = -0.15
+			defence = -0.15
+		}
+		deep_desert = {
+			attack = -0.2
+			movement = -0.1
+			defence = -0.2
 		}
 	}
 	
@@ -188,44 +197,54 @@ sub_units = {
 		#breakthrough = 0.1
 		
 		forest = {
-			attack = -0.2
-			movement = -0.5
-		}
-
-		hills = {
-			movement = -0.05
-		}
-
-		mountain = {
+		    attack = -0.2
+			defence = -0.05
 			movement = -0.2
 		}
-
-		jungle = {
-			attack = -0.25
-			movement = -0.5
+		hills = {
+		    attack = -0.20
+			defence = -0.4 
+			movement = -0.2
 		}
-
-		marsh = {
-			attack = -0.2
+		mountain = 	{
+		    attack = -0.85
+			defence = -0.85
+			movement = -0.85
+		}
+		jungle = {
+		    attack = -0.3
+			defence = -0.35 
 			movement = -0.3
 		}
-
-		fort = {
-			attack = 0.1
-		}
-
-		river = {
-			attack = -0.2
+		marsh = {
+		    attack = -0.1 
+			defence = -0.35 	
 			movement = -0.2
 		}
-
-		amphibious = {
-			attack = -0.4
+		urban = {
+			attack = -0.45
+			defence = -0.55
 		}
-
+		village = {
+			attack = -0.15
+			defence = -0.2
+		}
+		river = { 
+			attack = -0.15
+			movement = -0.15	
+		}
+		amphibious = { 
+			attack = -0.8
+		}
+		desert = {
+			attack = -0.15
+			movement = -0.15
+			defence = -0.15
+		}
 		deep_desert = {
-			attack = -0.05
-			movement = -0.05
+			attack = -0.2
+			movement = -0.1
+			defence = -0.2
 		}
 	}
 	
@@ -339,45 +358,55 @@ mot_rocket_artillery_brigade = {
 	supply_consumption = 0.15
 	
 	forest = {
-		attack = -0.2
-		movement = -0.25
-	}
-
-	hills = {
-		movement = -0.05
-	}
-
-	mountain = {
-		movement = -0.3
-		attack = -0.3
-	}
-
-	jungle = {
-		attack = -0.25
-		movement = -0.5
-	}
-
-	marsh = {
-		attack = -0.2
-		movement = -0.3
-	}
-
-	fort = {
-		attack = 0.1
-	}
-
-	river = {
-		attack = -0.2
-		movement = -0.2
-	}
-
-	amphibious = {
-		attack = -0.4
-	}
-	deep_desert = {
-		attack = -0.05
-		movement = -0.05
-	}
+		    attack = -0.2
+			defence = -0.05
+			movement = -0.2
+		}
+		hills = {
+		    attack = -0.20
+			defence = -0.4 
+			movement = -0.2
+		}
+		mountain = 	{
+		    attack = -0.85
+			defence = -0.85
+			movement = -0.85
+		}
+		jungle = {
+		    attack = -0.3
+			defence = -0.35 
+			movement = -0.3
+		}
+		marsh = {
+		    attack = -0.1 
+			defence = -0.35 	
+			movement = -0.2
+		}
+		urban = {
+			attack = -0.45
+			defence = -0.55
+		}
+		village = {
+			attack = -0.15
+			defence = -0.2
+		}
+		river = { 
+			attack = -0.15
+			movement = -0.15	
+		}
+		amphibious = { 
+			attack = -0.8
+		}
+		desert = {
+			attack = -0.15
+			movement = -0.15
+			defence = -0.15
+		}
+		deep_desert = {
+			attack = -0.2
+			movement = -0.1
+			defence = -0.2
+		}
 }
 
 	mech_rarty = {
@@ -417,45 +446,54 @@ mot_rocket_artillery_brigade = {
 					deep_desert = {attack = -0.3 defence = -0.6	movement = -0.2  }
 	
 		forest = {
-			attack = -0.2
-			movement = -0.5
-		}
-
-		hills = {
-			movement = -0.05
-		}
-
-		mountain = {
+		    attack = -0.2
+			defence = -0.05
 			movement = -0.2
-			attack = -0.6 
-			defence = -0.6
 		}
-		urban = {
-			defence = -0.10 
+		hills = {
+		    attack = -0.20
+			defence = -0.4 
+			movement = -0.2
 		}
-
+		mountain = 	{
+		    attack = -0.85
+			defence = -0.85
+			movement = -0.85
+		}
 		jungle = {
-			attack = -0.4
-			defence = -0.9
-			movement = -0.5
-		}
-
-		marsh = {
-			attack = -0.2
+		    attack = -0.3
+			defence = -0.35 
 			movement = -0.3
 		}
-
-		fort = {
-			attack = 0.1
-		}
-
-		river = {
-			attack = -0.2
+		marsh = {
+		    attack = -0.1 
+			defence = -0.35 	
 			movement = -0.2
 		}
-
-		amphibious = {
-			attack = -1.2
+		urban = {
+			attack = -0.45
+			defence = -0.55
+		}
+		village = {
+			attack = -0.15
+			defence = -0.2
+		}
+		river = { 
+			attack = -0.15
+			movement = -0.15	
+		}
+		amphibious = { 
+			attack = -0.8
+		}
+		desert = {
+			attack = -0.15
+			movement = -0.15
+			defence = -0.15
+		}
+		deep_desert = {
+			attack = -0.2
+			movement = -0.1
+			defence = -0.2
 		}
 	}
 	
@@ -498,59 +536,54 @@ mot_rocket_artillery_brigade = {
 		supply_consumption = 0.17
 		
 		forest = {
-			attack = -0.35
+		    attack = -0.2
 			defence = -0.05
-			movement = -0.1
-		}
-
-		hills = {
-			attack = -0.3
-			defence = -0.05
-			movement = -0.05
-		}
-
-		mountain = {
-			attack = -0.3
-			defence = -0.10
 			movement = -0.2
 		}
-		
+		hills = {
+		    attack = -0.20
+			defence = -0.4 
+			movement = -0.2
+		}
+		mountain = 	{
+		    attack = -0.85
+			defence = -0.85
+			movement = -0.85
+		}
+		jungle = {
+		    attack = -0.3
+			defence = -0.35 
+			movement = -0.3
+		}
+		marsh = {
+		    attack = -0.1 
+			defence = -0.35 	
+			movement = -0.2
+		}
 		urban = {
-			attack = -0.3
-			defence = -0.15
+			attack = -0.45
+			defence = -0.55
 		}
 		village = {
 			attack = -0.15
-			defence = -0.1
+			defence = -0.2
 		}
-
-		jungle = {
+		river = { 
 			attack = -0.15
-			defence = -0.10
-			movement = -0.5
+			movement = -0.15	
 		}
-
-		marsh = {
-			attack = -0.2
-			defence = -0.10
-			movement = -0.5
-		}
-
-		fort = {
-			attack = 0.1
-		}
-
-		river = {
-			attack = -0.2
-			movement = -0.2
-		}
-
-		amphibious = {
+		amphibious = { 
 			attack = -0.8
 		}
+		desert = {
+			attack = -0.15
+			movement = -0.15
+			defence = -0.15
+		}
 		deep_desert = {
-			attack = -0.05
-			movement = -0.05
+			attack = -0.2
+			movement = -0.1
+			defence = -0.2
 		}
 	}
 }

@@ -161,7 +161,7 @@ focus_tree = {
 		icon = GFX_focus_research2
 		x = -1
 		y = 1
-		# removed invalid relative_position_id anchor
+		relative_position_id = SLO_german_advisors
 		prerequisite = {focus = SLO_german_advisors}
 		cost = 10
 
@@ -242,7 +242,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery
 		x = 1
 		y = 3
-		# removed invalid relative_position_id anchor
+		relative_position_id = SLO_prioritize_Czechia
 		prerequisite = {focus = Czech_tanks}
 		cost = 10
 		text = "Czech Howitzers"
@@ -301,7 +301,7 @@ focus_tree = {
 				set_technology = {
 				heavy_guns = 1
 				basic_medium_tank_chassis = 1
-				# new_tank_guns = 1
+				new_tank_guns = 1
 				radio_tech_1 = 1
 				shit_modules = 1
 				armor_tech_1 = 1
@@ -416,7 +416,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		prerequisite = {focus = SLO_give_up_carapthia}
-		# removed invalid relative_position_id anchor
+		relative_position_id = SLO_give_up_carapthia
 		text = "Military Propaganda"
 		cost = 10
 
@@ -577,7 +577,7 @@ focus_tree = {
 		id = SLO_german_investments
 		prerequisite = {focus = SLO_german_advisors focus = SLO_slovakian_goverment}
 		icon = GFX_focus_generic_tank_production
-		# removed invalid relative_position_id anchor
+		relative_position_id = SLO_german_advisors
 		x = 3
 		y = 1
 
@@ -633,7 +633,7 @@ focus_tree = {
 		prerequisite = {focus = SLO_german_investments}
 		prerequisite = {FOCUS = SLO_german_Porsche}
 		icon = GFX_focus_hun_assassinate_horthy
-		# removed invalid relative_position_id anchor
+		relative_position_id = SLO_german_advisors
 		x = 2
 		y = 2
 
@@ -673,7 +673,7 @@ focus_tree = {
 	focus = {
 		id = SLO_german_trade_agreement
 		icon = GFX_focus_hol_the_foundations_of_defense
-		# removed invalid relative_position_id anchor
+		relative_position_id = SLO_german_advisors
 		prerequisite = {focus = SLO_unity focus = SLO_more_german_investments}#focus = SLO_give_up_carapthia}
 		x = 4
 		y = 5
@@ -869,7 +869,7 @@ focus_tree = {
 	focus = {
 		id = SLO_more_german_investments
 		icon = GFX_focus_ETH_adopt_the_lira
-		# removed invalid relative_position_id anchor
+		relative_position_id = SLO_german_advisors
 		prerequisite = {focus = SLO_give_up_carapthia}
 		
 		x = 0
@@ -1078,7 +1078,7 @@ focus_tree = {
 		id = SLO_german_Porsche
 		icon = GFX_focus_generic_armored_air_support
 		prerequisite = {focus = SLO_german_advisors}
-		# removed invalid relative_position_id anchor
+		relative_position_id = SLO_german_advisors
 		x = 1
 		y = 1
 		text = "Investments From Porsche"
@@ -1566,7 +1566,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_tanks
 		x = -3
 		y = 1
-		# removed invalid relative_position_id anchor
+		relative_position_id = SLO_german_advisors
 		cost = 5
 		text = "Czech Tank Designs"
 		ai_will_do = {

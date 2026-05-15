@@ -317,7 +317,7 @@ joint_focus = {
 					special_type_slot_1 = tank_radio_2
 					special_type_slot_2 = smoke_launchers
 					special_type_slot_3 = auto_loader
-					special_type_slot_4 = smoke_launchers
+					special_type_slot_4 = smoke_launcher
 					special_type_slot_9 = empty
 				}
 				upgrades={
@@ -325,7 +325,46 @@ joint_focus = {
 					tank_nsb_armor_upgrade=12
 				}
 			}
-			
+			division_template = {
+					name = "Chetnik Armored Car Corps" 		
+					division_names_group = GER_MOT_01
+
+					regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 0 y = 3 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+						motorized = { x = 1 y = 3 }
+						medium_sp_anti_air_brigade = { x = 1 y = 4 }
+
+						armored_car = { x = 2 y = 0 }
+						armored_car = { x = 2 y = 1 }
+						armored_car = { x = 2 y = 2 }
+						armored_car = { x = 2 y = 3 }
+						armored_car = { x = 3 y = 0 }
+						armored_car = { x = 3 y = 1 }
+						armored_car = { x = 3 y = 2 }
+						armored_car = { x = 3 y = 3 }
+						armored_car = { x = 4 y = 0 }
+						armored_car = { x = 4 y = 1 }
+						armored_car = { x = 4 y = 2 }
+					}
+					
+					support = {
+						engineer = { x = 0 y = 0 }
+						light_tank_recon = { x = 0 y = 1 }
+						signal_company = { x = 0 y = 2 }
+						logistics_company = { x = 0 y = 3 }
+						maintenance_company = { x = 0 y = 4 }
+						field_hospital = { x = 0 y = 5 }
+						anti_air = { x = 0 y = 6 }
+						light_flame_tank = { x = 0 y = 7 }
+					}
+					
+			}
 			random_owned_controlled_state = {
 						create_unit = {
 							division = "name = \"Chetnik Armored Car Corps\" division_template = \"Chetnik Armored Car Corps\" start_experience_factor = 1.00" 
@@ -469,7 +508,43 @@ joint_focus = {
 					}
 				}
 				AFG = {
-					
+					division_template = {
+						name = "German Trained Royal Guard"
+
+						division_names_group = AFG_ARM_01
+
+							regiments = {
+								mountaineers = { x = 0 y = 0 }
+								mountaineers = { x = 0 y = 1 }
+								mountaineers = { x = 0 y = 2 }
+								mountaineers = { x = 0 y = 3 }
+								mountaineers = { x = 0 y = 4 }
+								mountaineers = { x = 1 y = 0 }
+								mountaineers = { x = 1 y = 1 }
+								mountaineers = { x = 1 y = 2 }
+								mountaineers = { x = 1 y = 3 }
+								mountaineers = { x = 1 y = 4 }
+								mountaineers = {x = 2 y = 0 }
+								mountaineers = { x = 2 y = 1 }
+								mountaineers = { x = 2 y = 2 }
+								artillery_brigade = { x = 3 y = 0 }
+								artillery_brigade = { x = 3 y = 1 }
+								anti_air_brigade = { x = 3 y = 2 }
+								artillery_brigade = { x = 4 y = 0 }
+								artillery_brigade = { x = 4 y = 1 }
+							}
+							support = {
+								recon = { x = 0 y = 0 }
+								engineer = { x = 0 y = 1 }
+								artillery = { x = 0 y = 2 }
+								anti_air = { x = 0 y = 3 }
+								anti_tank = { x = 0 y = 4 }
+								signal_company = { x = 0 y = 5}
+								logistics_company = { x = 0 y =6 }
+							}
+	
+								priority = 2
+						}
 						random_owned_controlled_state = {
 							prioritize = { 267 }
 							create_unit = {
@@ -787,7 +862,46 @@ joint_focus = {
 			111 = { set_demilitarized_zone = no }
 			149 = { set_demilitarized_zone = no }
 			150 = { set_demilitarized_zone = no }
-			
+			FIN = {
+			transfer_state = 148
+			transfer_state = 722
+				transfer_state = 111
+				transfer_state = 149 
+				transfer_state = 150		
+				add_ideas = fin_sisu
+				add_ideas = fin_continuation_war
+				hidden_effect = { 
+						set_technology = {  
+							basic_light_tank_chassis  = 1
+							infantry_weapons = 1
+							infantry_weapons1 = 1
+							infantry_weapons2 = 1
+							motorised_infantry = 1
+							armored_car1 = 1
+							bicycle_infantry = 1
+							gw_artillery = 1
+							interwar_artillery = 1
+							artillery1 = 1
+							interwar_antiair = 1
+							antiair1 = 1 
+							antiair2 = 1
+							tech_support = 1
+							tech_engineers = 1
+							tech_engineers2 = 1
+							tech_recon = 1
+							tech_flamethrower = 1
+							tech_logistics_company = 1
+							tech_signal_company = 1
+							basic_train = 1
+							interwar_antitank = 1
+							support_weapons = 1
+							support_weapons2 = 1
+							jaegers
+							tech_flamethrower
+						} 
+				}
+				load_oob = bzk_neva_lose
+			}
 			ROOT = {
 				set_autonomy = {
 						target = FIN
@@ -845,7 +959,46 @@ joint_focus = {
 		}
 
 		completion_reward_joint_originator = {
-			
+			FIN = {
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 800
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment 
+					amount = 10000
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 300
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 700
+				}
+				add_equipment_to_stockpile = {
+					type = anti_air_equipment
+					amount = 600
+				}
+				add_equipment_to_stockpile = {
+					type = anti_tank_equipment
+					amount = 300
+				}
+				111 = {	
+					create_unit = {
+						division = "name = \"Jalkaväkidivisioona\" division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.50" 
+						owner = FIN
+					}
+					create_unit = {
+						division = "name = \"Jalkaväkidivisioona\" division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.50" 
+							owner = FIN
+					}
+					create_unit = {
+						division = "name = \"Jalkaväkidivisioona\" division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.50" 
+						owner = FIN
+					}
+				}
+			}
 		}
 
 		completion_reward_joint_member = {
