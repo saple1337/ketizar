@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # Mexico Events
 # By Tristan 'Enjoy' Edge, aged 30 and 2 months
 ###########################
@@ -1247,8 +1247,8 @@ country_event = {
 		name = mexico.19.e
 		
 		trigger = {
-			has_completed_focus = MEX_focus_confederation_of_mexican_workers
-			NOT = {
+			always = no
+NOT = {
 				has_country_leader = {
 					character = MEX_vicente_lombardo
 				}
@@ -1420,8 +1420,8 @@ country_event = {
 		name = mexico.19.i
 		
 		trigger = {
-			has_completed_focus = MEX_focus_confederation_of_mexican_workers
-			NOT = {
+			always = no
+NOT = {
 				has_country_leader = {
 					character = MEX_vicente_lombardo
 				}
@@ -1479,8 +1479,7 @@ country_event = {
 
 			has_government = communism
 			NOT = {
-				has_completed_focus = MEX_focus_communist_revolution
-			}			
+				always = no}			
 			NOT = {
 				has_global_flag = flag_mexico_invited_trotsky_to_government
 			}
@@ -1611,8 +1610,8 @@ country_event = {
 		name = mexico.19.p
 		
 		trigger = {
-			has_completed_focus = MEX_focus_legion_of_christ
-			NOT = {
+			always = no
+NOT = {
 				has_country_leader = {
 					character = MEX_jesus_degollado_guizar
 				}

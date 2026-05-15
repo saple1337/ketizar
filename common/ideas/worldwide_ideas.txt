@@ -62,10 +62,9 @@ hidden_ideas = {
 
 			picture = generic_production_bonus
 
-			modifier = {
-				production_factory_start_efficiency_factor = 0.6
-				production_factory_start_efficiency_factor = 0.2
-				industrial_capacity_dockyard = 4.00
+				modifier = {
+					production_factory_start_efficiency_factor = 0.2
+					industrial_capacity_dockyard = 4.00
 			}
 			
 		}

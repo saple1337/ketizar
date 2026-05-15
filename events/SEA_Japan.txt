@@ -1,4 +1,4 @@
-﻿##############################
+##############################
 #### Japanese Country Events ####
 #################################
 
@@ -5403,8 +5403,8 @@ country_event = {
 		
 		# So that you are going down a branch that actually has the specified focus 
 		OR = {
-			has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-			has_completed_focus = JAP_sea_purge_the_kodoha_faction
+			always = no
+has_completed_focus = JAP_sea_purge_the_kodoha_faction
 		}
 
 		# So that said focus hasn't already been taken 
@@ -5870,9 +5870,7 @@ country_event = {
 		IF = {
 			limit = {
 				NOT = {
-					has_completed_focus = JAP_subdue_the_kwantung_army
-					has_completed_focus = JAP_revoke_the_peace_preservation_law
-				}
+					always = no}
 			}
 			custom_effect_tooltip = JAP_first_strike_blocked_due_to_kwantung_army_tt
 		}
@@ -5894,9 +5892,7 @@ country_event = {
 				IF = {
 					limit = {
 						NOT = {
-							has_completed_focus = JAP_subdue_the_kwantung_army
-							has_completed_focus = JAP_revoke_the_peace_preservation_law
-						}
+							always = no}
 					}
 					CHI = {
 						set_country_flag = JAP_first_strike_principle_blocked
@@ -5913,9 +5909,7 @@ country_event = {
 						is_subject_of = ROOT
 						NOT = {
 							OR = {
-								has_completed_focus = MAN_assertiveness
-								has_completed_focus = MAN_tsr_assertiveness
-							}
+								always = no}
 						}
 					}
 				}
@@ -5944,9 +5938,7 @@ country_event = {
 				IF = {
 					limit = {
 						NOT = {
-							has_completed_focus = JAP_subdue_the_kwantung_army
-							has_completed_focus = JAP_revoke_the_peace_preservation_law
-						}
+							always = no}
 					}
 					613 = {
 						OWNER = {
@@ -7363,9 +7355,8 @@ country_event = {
 		has_civil_war = no
 		has_war = yes
 
-		has_completed_focus = JAP_crush_the_internal_factions
-
-		any_core_state = {
+		always = no
+any_core_state = {
 			JAP_is_home_islands_state = yes
 			NOT = {
 				is_fully_controlled_by = ROOT
@@ -7482,9 +7473,8 @@ country_event = {
 
 		date < 1939.06.01
 		
-		has_completed_focus = JAP_crackdown_on_foreign_agents
-
-		NOT = {
+		always = no
+NOT = {
 			has_country_flag = JAP_tokko_arrests_cooldown_flag
 		}
 
@@ -7542,9 +7532,8 @@ country_event = {
 
 		date < 1942.07.27
 		
-		has_completed_focus = JAP_crackdown_on_foreign_agents
-
-		NOT = {
+		always = no
+NOT = {
 			has_country_flag = JAP_tokko_arrests_cooldown_flag
 		}
 
@@ -7658,9 +7647,8 @@ country_event = {
 
 		date < 1944.01.01
 		
-		has_completed_focus = JAP_crackdown_on_foreign_agents
-
-		NOT = {
+		always = no
+NOT = {
 			has_country_flag = JAP_tokko_arrests_cooldown_flag
 		}
 
@@ -7757,9 +7745,8 @@ country_event = {
 
 		date < 1943.01.01
 		
-		has_completed_focus = JAP_crackdown_on_foreign_agents
-
-		NOT = {
+		always = no
+NOT = {
 			has_country_flag = JAP_tokko_arrests_cooldown_flag
 		}
 
@@ -7880,9 +7867,8 @@ country_event = {
 
 		date < 1945.01.01
 		
-		has_completed_focus = JAP_crackdown_on_foreign_agents
-
-		NOT = {
+		always = no
+NOT = {
 			has_country_flag = JAP_tokko_arrests_cooldown_flag
 		}
 
@@ -7944,9 +7930,8 @@ country_event = {
 
 		date < 1946.01.01
 		
-		has_completed_focus = JAP_crackdown_on_foreign_agents
-
-		NOT = {
+		always = no
+NOT = {
 			has_country_flag = JAP_tokko_arrests_cooldown_flag
 		}
 
@@ -8004,9 +7989,8 @@ country_event = {
 
 		date < 1947.01.01
 		
-		has_completed_focus = JAP_crackdown_on_foreign_agents
-
-		NOT = {
+		always = no
+NOT = {
 			has_country_flag = JAP_tokko_arrests_cooldown_flag
 		}
 
@@ -8125,11 +8109,9 @@ country_event = {
 			base = 1
 			modifier = {
 				factor = 0
-				has_completed_focus = JAP_kantokuen
-				NOT = {
-					has_completed_focus = JAP_a_green_persimmon
-					has_completed_focus = JAP_the_persimmon_has_ripened
-				}
+				always = no
+NOT = {
+					always = no}
 			}
 		}
 		
@@ -9164,12 +9146,12 @@ country_event = {
 		}
 		
 		hidden_effect = {
-			JAP_isoroku_yamamoto = {
-				remove_advisor_role = {
-					character = isoroku_yamamoto
-					slot = theorist 
-				}	
-			}
+				JAP_isoroku_yamamoto = {
+					remove_advisor_role = {
+						character = JAP_isoroku_yamamoto
+						slot = theorist 
+					}	
+				}
 		}
 
 		add_country_leader_role = {
@@ -9578,4 +9560,3 @@ country_event = {
 
 	}
 }
-

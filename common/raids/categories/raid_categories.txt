@@ -14,6 +14,11 @@ categories = {
 		}
 	}
 
+	land_infiltration_raids = {
+	    intel_source = army
+	    visible = { has_dlc = "Gotterdammerung" }
+	}
+
 	nuclear_raids = {
 	    intel_source = air
 	    free_targeting = yes

@@ -86,7 +86,7 @@ focus = {
 	
 	x = 1
 	y = 1
-	relative_position_id = RAJ_expand_the_zamindari_system
+	# removed invalid relative_position_id anchor
 	cost = 5
 
 	
@@ -139,7 +139,7 @@ focus = {
 	
 	x = -1
 	y = 1
-	relative_position_id = RAJ_expand_the_zamindari_system 
+	# removed invalid relative_position_id anchor
 	cost = 10
 
 	search_filters = { FOCUS_FILTER_TFV_AUTONOMY FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
@@ -756,8 +756,7 @@ focus = {
         prerequisite = { focus = RAJ_national_planning_committee }
         x = 0
         y = 1
-        relative_position_id = RAJ_national_planning_committee
-       
+        # removed invalid relative_position_id anchor
         cost = 5
 
         ai_will_do = {
@@ -3885,43 +3884,7 @@ focus = {
 			custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
             add_to_variable = { RAJ_army_artillery_attack_factor = 0.05 tooltip = army_artillery_attack_factor_tt }
 			custom_effect_tooltip = "Raises ten 25% equipped divisions"
-			division_template = {
-					name = "Imperial Service Troops"
-					priority = 2
-					division_names_group = RAJ_INF_01
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 0 y = 3 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-						infantry = { x = 1 y = 3 }
-						infantry = { x = 2 y = 0 }
-						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
-						infantry = { x = 2 y = 3 }
-						infantry = { x = 2 y = 4 }
-						infantry = { x = 2 y = 5 }
-						artillery_brigade = { x = 3 y = 0 }
-						artillery_brigade = { x = 3 y = 1 }
-						artillery_brigade = { x = 3 y = 2 }
-						anti_tank_brigade = { x = 4 y = 0 }
-						anti_tank_brigade = { x = 4 y = 1 }
-						anti_tank_brigade = { x = 4 y = 2 }
-						anti_air_brigade = { x = 4 y = 3}
-					}
-					support = {
-						engineer = { x = 0 y = 0 }
-						recon = { x = 0 y = 1 }
-						artillery = { x = 0 y = 2 }
-						anti_air = { x = 0 y = 3 }
-						signal_company = { x = 0 y = 4 }
-						logistics_company = { x = 0 y = 5 }
-						anti_tank = { x = 0 y = 6 }
-					}
-				}
+			
 
 				random_owned_controlled_state = {
 					prioritize = { 441 }
@@ -4005,20 +3968,20 @@ focus = {
 						name_group = RAJ_SHBB_HISTORICAL
 						parent_version = 0
 						modules = {
-							fixed_ship_battery_slot = ship_super_heavy_battery_1
+							fixed_ship_battery_slot = ship_460_battery
 							fixed_ship_anti_air_slot = ship_anti_air_1
 							fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 							fixed_ship_radar_slot = empty
 							fixed_ship_engine_slot = heavy_ship_engine_2
 							fixed_ship_armor_slot = ship_armor_shbb
 							fixed_ship_secondaries_slot = ship_secondaries_2
-							front_1_custom_slot = ship_super_heavy_battery_1
+							front_1_custom_slot = ship_460_battery
 							front_2_custom_slot = ship_secondaries_2
-							mid_1_custom_slot = ship_super_heavy_battery_1
+							mid_1_custom_slot = ship_secondaries_2
 							mid_2_custom_slot = ship_airplane_launcher_1
 							mid_3_custom_slot = ship_airplane_launcher_1
-							rear_1_custom_slot = ship_super_heavy_battery_1
-							rear_2_custom_slot = ship_super_heavy_battery_1
+							rear_1_custom_slot = ship_460_battery
+							rear_2_custom_slot = ship_460_battery
 						}
 			}
 			add_equipment_production = {
@@ -4039,7 +4002,7 @@ focus = {
 		id = RAJ_bikaner_lightinf
 		icon = GFX_bikaner
 		prerequisite = { focus = RAJ_scindia_own focus = RAJ_Mysore_lancers }
-		relative_position_id = RAJ_patiala_imperialinf
+		# removed invalid relative_position_id anchor
 		x = 0
 		y = 2
 
@@ -4066,8 +4029,7 @@ focus = {
 	
 		x = -1
 		y = 1
-		relative_position_id = RAJ_patiala_imperialinf
-
+		# removed invalid relative_position_id anchor
 		cost = 5
 
 		available = { 
@@ -4098,13 +4060,11 @@ focus = {
 						cavalry = { x = 0 y = 1 } 
 						cavalry = { x = 0 y = 2 }
 						cavalry = { x = 0 y = 3 }
-						cavalry = { x = 0 y = 4 }
 	    	   		 	cavalry = { x = 1 y = 0 }
 						cavalry = { x = 1 y = 1 }
 						cavalry = { x = 1 y = 2 }
 						cavalry = { x = 1 y = 3 }
-						cavalry = { x = 1 y = 4 }
-						anti_air_brigade = { x = 2 y = 0 }
+						anti_air_brigade = { x = 2 y = 1 }
 						cavalry = { x = 4 y = 0 }
 						cavalry = { x = 4 y = 1 }
 						cavalry = { x = 4 y = 2 }
@@ -4151,121 +4111,6 @@ focus = {
 		}
 	
 	}
-	
-	focus = {
-		id = RAJ_patiala_imperialinf
-		icon = GFX_sikh_military_02
-		prerequisite = { focus = RAJ_maharajas }
-	
-		x = 0
-		y = 1
-		relative_position_id = RAJ_maharajas
-
-		cost = 5
-
-		available = { 
-		
-		}
-
-		bypass = {
-
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
-            add_to_variable = { RAJ_infantry_attack = 0.03 tooltip = army_infantry_attack_factor_tt }
-            custom_effect_tooltip = "Raises ten 25% equipped divisions"
-			division_template = {
-					name = "Imperial Service Troops"
-					priority = 2
-					division_names_group = RAJ_INF_01
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 0 y = 3 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-						infantry = { x = 1 y = 3 }
-						infantry = { x = 2 y = 0 }
-						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
-						infantry = { x = 2 y = 3 }
-						infantry = { x = 2 y = 4 }
-						infantry = { x = 2 y = 5 }
-						artillery_brigade = { x = 3 y = 0 }
-						artillery_brigade = { x = 3 y = 1 }
-						artillery_brigade = { x = 3 y = 2 }
-						anti_tank_brigade = { x = 4 y = 0 }
-						anti_tank_brigade = { x = 4 y = 1 }
-						anti_tank_brigade = { x = 4 y = 2 }
-						anti_air_brigade = { x = 4 y = 3}
-					}
-					support = {
-						engineer = { x = 0 y = 0 }
-						recon = { x = 0 y = 1 }
-						artillery = { x = 0 y = 2 }
-						anti_air = { x = 0 y = 3 }
-						signal_company = { x = 0 y = 4 }
-						logistics_company = { x = 0 y = 5 }
-						anti_tank = { x = 0 y = 6 }
-					}
-				}
-
-				random_owned_controlled_state = {
-					prioritize = { 440 }
-					create_unit = {
-						division = "name = \"Imperial Service Troop\" division_template = \"Imperial Service Troops\" start_experience_factor = 0.80 start_equipment_factor = 0.25" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"Imperial Service Troop\" division_template = \"Imperial Service Troops\" start_experience_factor = 0.80 start_equipment_factor = 0.25" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"Imperial Service Troop\" division_template = \"Imperial Service Troops\" start_experience_factor = 0.80 start_equipment_factor = 0.25" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"Imperial Service Troop\" division_template = \"Imperial Service Troops\" start_experience_factor = 0.80 start_equipment_factor = 0.25" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"Imperial Service Troop\" division_template = \"Imperial Service Troops\" start_experience_factor = 0.80 start_equipment_factor = 0.25" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"Imperial Service Troop\" division_template = \"Imperial Service Troops\" start_experience_factor = 0.80 start_equipment_factor = 0.25" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"Imperial Service Troop\" division_template = \"Imperial Service Troops\" start_experience_factor = 0.80 start_equipment_factor = 0.25" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"Imperial Service Troop\" division_template = \"Imperial Service Troops\" start_experience_factor = 0.80 start_equipment_factor = 0.25" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"Imperial Service Troop\" division_template = \"Imperial Service Troops\" start_experience_factor = 0.80 start_equipment_factor = 0.25" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"Imperial Service Troop\" division_template = \"Imperial Service Troops\" start_experience_factor = 0.80 start_equipment_factor = 0.25" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"Imperial Service Troop\" division_template = \"Imperial Service Troops\" start_experience_factor = 0.80 start_equipment_factor = 0.25" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"Imperial Service Troop\" division_template = \"Imperial Service Troops\" start_experience_factor = 0.80 start_equipment_factor = 0.25" 
-						owner = ROOT
-					}
-				}
-		}
-	}
 
 	focus = {
 		id = RAJ_scindia_own
@@ -4274,8 +4119,7 @@ focus = {
 	
 		x = 1
 		y = 1
-		relative_position_id = RAJ_patiala_imperialinf
-
+		# removed invalid relative_position_id anchor
 		cost = 5
 
 		available = { 
@@ -4458,43 +4302,7 @@ focus = {
 		
 		completion_reward = {
 			custom_effect_tooltip = "Raises ten 25% equipped divisions"
-			division_template = {
-					name = "Imperial Service Troops"
-					priority = 2
-					division_names_group = RAJ_INF_01
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 0 y = 3 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-						infantry = { x = 1 y = 3 }
-						infantry = { x = 2 y = 0 }
-						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
-						infantry = { x = 2 y = 3 }
-						infantry = { x = 2 y = 4 }
-						infantry = { x = 2 y = 5 }
-						artillery_brigade = { x = 3 y = 0 }
-						artillery_brigade = { x = 3 y = 1 }
-						artillery_brigade = { x = 3 y = 2 }
-						anti_tank_brigade = { x = 4 y = 0 }
-						anti_tank_brigade = { x = 4 y = 1 }
-						anti_tank_brigade = { x = 4 y = 2 }
-						anti_air_brigade = { x = 4 y = 3}
-					}
-					support = {
-						engineer = { x = 0 y = 0 }
-						recon = { x = 0 y = 1 }
-						artillery = { x = 0 y = 2 }
-						anti_air = { x = 0 y = 3 }
-						signal_company = { x = 0 y = 4 }
-						logistics_company = { x = 0 y = 5 }
-						anti_tank = { x = 0 y = 6 }
-					}
-				}
+			
 
 				random_owned_controlled_state = {
 					prioritize = { 437 }
@@ -5335,8 +5143,7 @@ focus = {
         prerequisite = { focus = RAJ_secure_imperial_shipping }
         x = -1
         y = 1
-        relative_position_id = RAJ_black_swan_sloops
-
+        # removed invalid relative_position_id anchor
         cost = 5
 
         available = {

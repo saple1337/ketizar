@@ -1267,7 +1267,7 @@ ITA_anti_colonialism_sentiment = {
 # 		ROOT = {
 # 			is_controlled_by = ITA
 # 			controller = {
-# 				has_completed_focus = ITA_cooperate_with_the_mafia
+# 				always = no
 # 			}
 # 		}
 # 	}
@@ -1285,7 +1285,7 @@ ITA_anti_colonialism_sentiment = {
 # 		ROOT = {
 # 			is_controlled_by = ITA
 # 			controller = {
-# 				has_completed_focus = ITA_cooperate_with_the_mafia
+# 				always = no
 # 			}
 # 		}
 # 	}

@@ -1,4 +1,4 @@
-﻿FRA_RG_HISTORICAL = {
+FRA_RG_HISTORICAL = {
 	for_countries = { FRA }
 
 	type = railway_gun

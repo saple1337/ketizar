@@ -1,4 +1,4 @@
-﻿USA_RG_HISTORICAL = {
+USA_RG_HISTORICAL = {
 	for_countries = { USA }
 
 	type = railway_gun

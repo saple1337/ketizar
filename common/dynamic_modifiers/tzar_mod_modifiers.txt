@@ -1,6 +1,5 @@
 FRA_economy = { #NATIONAL SPIRIT - Civilian
  	enable = { always = yes }
- 	name = "French Economy"
  	icon = GFX_idea_ARG_invest_in_railways	
  	political_power_gain = FRA_pp_eco
  	production_speed_buildings_factor = FRA_construction_speed
@@ -15,7 +14,6 @@ FRA_economy = { #NATIONAL SPIRIT - Civilian
  	industrial_capacity_factory = FRA_output #0.05 -> Steel Casting Industry / Shift to Armaments Production
 }
 FRA_violence = { #NATIONAL SPIRIT - Civilian
-	name = "French Politics"
  	enable = { always = yes }
  	icon = GFX_idea_ARG_maintain_neutrality
  	 stability_factor = FRA_stab
@@ -23,7 +21,6 @@ FRA_violence = { #NATIONAL SPIRIT - Civilian
  	political_power_gain = FRA_pp_diplo
 }
 FRA_Army = { #NATIONAL SPIRIT - Civilian
-	name = "French Army"
  	enable = { always = yes }
  	icon = GFX_idea_eng_imperial_conscription
  	# armor_attack_factor = FRA_tank 

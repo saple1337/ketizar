@@ -1,8 +1,28 @@
-﻿
+
 
 
 ##### OOB #####
 units = {
+	fleet = {
+		name = "Rengo Kantai"
+		naval_base = 9998
+		task_force = {
+			name = "Yokosuka Test Squadron"
+			location = 9998
+			ship = { name = "Fubuki" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Fubuki Class" } } }
+			ship = { name = "Shirayuki" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Fubuki Class" } } }
+		}
+	}
+	fleet = {
+		name = "Kure Test Squadron"
+		naval_base = 1092
+		task_force = {
+			name = "Kure Escorts"
+			location = 1092
+			ship = { name = "Akatsuki" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Fubuki Class" } } }
+			ship = { name = "Hibiki" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Fubuki Class" } } }
+		}
+	}
 }
 # ### IJN ###
 # 	#Yokosuka (Tokyo)
@@ -349,57 +369,4 @@ instant_effect =
 			progress = 0.3
 			amount = 1
 		}		
-		# SS (x4): "I-172" "I-73" "I-174" "I-175"
-		add_equipment_production = {				
-			equipment = {
-				type = ship_hull_submarine_1
-				creator = "JAP" 
-				version_name = "Kaidai III Class"
-			}
-			requested_factories = 1
-			progress = 0.7
-			amount = 2
-		}
-		add_equipment_production = {				
-			equipment = {
-				type = ship_hull_submarine_1
-				creator = "JAP" 
-				version_name = "Kaidai III Class"
-			}
-			requested_factories = 1
-			progress = 0.6
-			amount = 2
-		}
-		# SS (x2): "I-7" "I-8"
-		add_equipment_production = {				
-			equipment = {
-				type = ship_hull_submarine_1
-				creator = "JAP" 
-				version_name = "Kaidai III Class"
-			}
-			requested_factories = 1
-			progress = 0.7
-			amount = 1
-		}
-		add_equipment_production = {				
-			equipment = {
-				type = ship_hull_submarine_1
-				creator = "JAP" 
-				version_name = "Kaidai III Class"
-			}
-			requested_factories = 1
-			progress = 0.6
-			amount = 1
-		}
-		# SS (x1): "Ro-34"
-		add_equipment_production = {				
-			equipment = {
-				type = ship_hull_submarine_1
-				creator = "JAP" 
-				version_name = "Kaidai III Class"
-			}
-			requested_factories = 1
-			progress = 0.80
-			amount = 1
-		}
 }

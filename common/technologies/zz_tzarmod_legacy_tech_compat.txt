@@ -1,0 +1,318 @@
+technologies = {
+
+	masterful_blitz = {
+		research_cost = 999
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = -99 y = 0 }
+		}
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	french_anti_battleplan = {
+		research_cost = 999
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = -99 y = 1 }
+		}
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	battle_of_north_africa_tech = {
+		research_cost = 999
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = -99 y = 2 }
+		}
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	shit_guns = {
+		research_cost = 999
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = -99 y = 3 }
+		}
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	medium_guns2 = {
+		research_cost = 999
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = -99 y = 4 }
+		}
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	medium_guns3 = {
+		research_cost = 999
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = -99 y = 5 }
+		}
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	heavy_guns3 = {
+		research_cost = 999
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = -99 y = 6 }
+		}
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	heavy_guns2 = {
+		research_cost = 999
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = -99 y = 7 }
+		}
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	tech_flamethrower = {
+		research_cost = 999
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = -99 y = 8 }
+		}
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	tech_flamethrower2 = {
+		research_cost = 999
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = -99 y = 9 }
+		}
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	tech_flamethrower3 = {
+		research_cost = 999
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = -99 y = 10 }
+		}
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	tech_flamethrower4 = {
+		research_cost = 999
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = -99 y = 11 }
+		}
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	heavy_guns = {
+		research_cost = 999
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = -99 y = 12 }
+		}
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	medium_guns = {
+		research_cost = 999
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = -99 y = 13 }
+		}
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	unrestricted_submarine_warfare = {
+		research_cost = 999
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = -99 y = 14 }
+		}
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	basic_medium_battery = {
+		research_cost = 999
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = -99 y = 15 }
+		}
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	Soviet_Hero_City = {
+		research_cost = 999
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = -99 y = 16 }
+		}
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	jungletroops = {
+		research_cost = 999
+		start_year = 1936
+		folder = { name = infantry_folder position = { x = -99 y = 17 } }
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	jaegers = {
+		research_cost = 999
+		start_year = 1936
+		folder = { name = infantry_folder position = { x = -99 y = 18 } }
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	jaegers2 = {
+		research_cost = 999
+		start_year = 1936
+		folder = { name = infantry_folder position = { x = -99 y = 19 } }
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	advanced_light_tank_a = {
+		research_cost = 999
+		start_year = 1936
+		folder = { name = infantry_folder position = { x = -99 y = 20 } }
+		categories = { armor }
+		ai_will_do = { factor = 0 }
+	}
+
+	medium_air1 = {
+		research_cost = 999
+		start_year = 1936
+		folder = { name = air_techs_folder position = { x = -99 y = 21 } }
+		categories = { light_air }
+		ai_will_do = { factor = 0 }
+	}
+
+	medium_air = {
+		research_cost = 999
+		start_year = 1936
+		folder = { name = air_techs_folder position = { x = -99 y = 22 } }
+		categories = { light_air }
+		ai_will_do = { factor = 0 }
+	}
+
+	heavy_air = {
+		research_cost = 999
+		start_year = 1936
+		folder = { name = air_techs_folder position = { x = -99 y = 23 } }
+		categories = { light_air }
+		ai_will_do = { factor = 0 }
+	}
+
+	airfield_construction = {
+		research_cost = 999
+		start_year = 1936
+		folder = { name = air_techs_folder position = { x = -99 y = 24 } }
+		categories = { air_equipment }
+		ai_will_do = { factor = 0 }
+	}
+
+	radio_tech_1 = {
+		research_cost = 999
+		start_year = 1936
+		folder = { name = electronics_folder position = { x = -99 y = 25 } }
+		categories = { electronics }
+		ai_will_do = { factor = 0 }
+	}
+
+	radio_tech_2 = {
+		research_cost = 999
+		start_year = 1936
+		folder = { name = electronics_folder position = { x = -99 y = 26 } }
+		categories = { electronics }
+		ai_will_do = { factor = 0 }
+	}
+
+	irregular_inf = {
+		research_cost = 999
+		start_year = 1936
+		folder = { name = infantry_folder position = { x = -99 y = 27 } }
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	heavy_advanced_small_airframe = {
+		research_cost = 999
+		start_year = 1936
+		folder = { name = air_techs_folder position = { x = -99 y = 28 } }
+		categories = { air_equipment }
+		ai_will_do = { factor = 0 }
+	}
+
+	shit_modules = {
+		research_cost = 999
+		start_year = 1936
+		folder = { name = infantry_folder position = { x = -99 y = 29 } }
+		categories = { armor }
+		ai_will_do = { factor = 0 }
+	}
+
+	ss_inf_tech = {
+		research_cost = 999
+		start_year = 1936
+		folder = { name = infantry_folder position = { x = -99 y = 30 } }
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	urban_gun = {
+		research_cost = 999
+		start_year = 1936
+		folder = { name = infantry_folder position = { x = -99 y = 31 } }
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	FRF_get_tank_designer = {
+		research_cost = 999
+		start_year = 1936
+		folder = { name = infantry_folder position = { x = -99 y = 32 } }
+		categories = { armor }
+		ai_will_do = { factor = 0 }
+	}
+
+}

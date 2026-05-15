@@ -519,7 +519,7 @@ characters={
 					original_tag  = FRA
 				}
 				available  = {
-					has_completed_focus  = FRA_form_the_popular_front 
+					always = no 
 				}
 				cost  = 75.000
 				traits  = {

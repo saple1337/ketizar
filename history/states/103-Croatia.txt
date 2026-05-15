@@ -18,12 +18,9 @@ state={
 			owner = YUG
 
 		}
-		victory_points = {
-			6889 3 
-		}
-		victory_points = {
-			3924 3 
-		}
+			victory_points = {
+				3924 3 
+			}
 		buildings = {
 			infrastructure = 3
 			dockyard = 1
@@ -32,12 +29,7 @@ state={
 				naval_base = 3
 
 			}
-			6889 = {
-				naval_base = 1
-
 			}
-
-		}
 		add_core_of = YUG
 
 	}

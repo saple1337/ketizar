@@ -146,7 +146,7 @@ mio_cat_eq_only_light_fighter = { #Includes Small Fighter and CV Fighter (no CAS
 		small_plane_airframe_2
 		small_plane_airframe_3
 		small_plane_airframe_4
-		small_plane_airframe_5
+		small_plane_airframe_4
 		cv_small_plane_airframe_0
 		cv_small_plane_airframe_1
 		cv_small_plane_airframe_2
@@ -172,7 +172,7 @@ mio_cat_eq_only_light_fighter_no_cv = { #Includes only Small Fighter (No CV, no 
 		small_plane_airframe_2
 		small_plane_airframe_3
 		small_plane_airframe_4
-		small_plane_airframe_5
+		small_plane_airframe_4
 		fighter_equipment_0
 		fighter_equipment_1
 		fighter_equipment_2
@@ -190,7 +190,7 @@ mio_cat_eq_only_light_fighter_and_CAS_no_cv = { #Includes only Small Fighter and
 		small_plane_airframe_2
 		small_plane_airframe_3
 		small_plane_airframe_4
-		small_plane_airframe_5
+		small_plane_airframe_4
 		fighter_equipment_0
 		fighter_equipment_1
 		fighter_equipment_2

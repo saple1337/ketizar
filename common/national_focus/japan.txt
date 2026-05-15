@@ -1,4 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -1447,9 +1447,9 @@ focus_tree = {
 			FOCUS_FILTER_HISTORICAL
 			FOCUS_FILTER_POLITICAL
 			FOCUS_FILTER_MANPOWER
-		}
-		completion_reward = {
-			hidden_effect = {
+			}
+			completion_reward = {
+				hidden_effect = {
 				set_rule = {
 					can_create_factions = yes
 				}
@@ -3414,7 +3414,7 @@ focus_tree = {
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 1
-		relative_position_id = JAP_strike_the_southern_road
+		# removed invalid relative_position_id anchor
 		prerequisite = {
 			focus = JAP_strike_the_southern_road
 		}
@@ -3624,7 +3624,7 @@ focus_tree = {
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 2
 		y = 1
-		relative_position_id = JAP_strike_the_southern_road
+		# removed invalid relative_position_id anchor
 		prerequisite = {
 			focus = JAP_strike_the_southern_road
 		}
@@ -3810,8 +3810,8 @@ focus_tree = {
 			FOCUS_FILTER_ANNEXATION
 			FOCUS_FILTER_IMPERIAL_INFLUENCE
 		}
-		completion_reward = {
-			hidden_effect = 
+			completion_reward = {
+				hidden_effect = {
 				declare_war_on = {
 					target = ENG
 					type = annex_everything
@@ -3856,7 +3856,6 @@ focus_tree = {
 					target = MEX
 					type = annex_everything
 				}
-				hidden_effect = {
 					USA = {
 						add_to_war = {
 							targeted_alliance = ENG
@@ -3877,7 +3876,7 @@ focus_tree = {
 						}
 					}
 				}
-			custom_effect_tooltip = tooltip_jap_war
+				custom_effect_tooltip = tooltip_jap_war
 			country_event = {
 				id = japan.144
 			}

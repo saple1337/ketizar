@@ -411,7 +411,7 @@ CHI_MAR_01 =
 {
 	name = "Marine Unit"
 
-	for_countries = { CHI  }
+	for_countries = { CHI }
 
 	 
 

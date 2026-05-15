@@ -48,6 +48,7 @@ ideas = {
 				#generate_wargoal_tension = 1.00
 				join_faction_tension = 1.00
 				#lend_lease_tension = 0.50
+				send_volunteers_tension = 0.50
 				guarantee_tension = 1.0
 				ai_badass_factor = 0.01    # Will receive 1% of the threat from others
 				ai_get_ally_desire_factor = -100
@@ -185,7 +186,6 @@ ideas = {
 						
 			modifier = {
 				production_speed_buildings_factor = -0.50
-				production_factory_max_efficiency_factor = -0.10
 			}
 		}
 
@@ -207,7 +207,6 @@ ideas = {
 						
 			modifier = {
 				production_speed_buildings_factor = -0.40
-				production_factory_max_efficiency_factor = -0.08
 			}
 		}
 
@@ -229,7 +228,6 @@ ideas = {
 						
 			modifier = {
 				production_speed_buildings_factor = -0.30
-				production_factory_max_efficiency_factor = -0.06
 			}
 		}
 
@@ -251,7 +249,6 @@ ideas = {
 						
 			modifier = {
 				production_speed_buildings_factor = -0.20
-				production_factory_max_efficiency_factor = -0.04
 			}
 		}
 
@@ -273,7 +270,6 @@ ideas = {
 						
 			modifier = {
 				production_speed_buildings_factor = -0.10
-				production_factory_max_efficiency_factor = -0.02
 			}
 		}
 
@@ -329,6 +325,7 @@ ideas = {
 
 			available = {
 				country_exists = INS
+				INS = { is_subject_of = HOL }
 			}
 			
 			allowed = {
@@ -1126,7 +1123,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = neutrality
-					NOT = { has_completed_focus = HOL_the_only_man_in_the_dutch_government }
+					NOT = { always = no }
 				}
 			}
 
@@ -1155,7 +1152,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = neutrality
-					NOT = { has_completed_focus = HOL_the_only_man_in_the_dutch_government }
+					NOT = { always = no }
 				}
 			}
 
@@ -1873,23 +1870,6 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
 				production_speed_dockyard_factor = 0.1
-			}
-
-		}
-
-		HOL_no_defend_homeland = {
-
-			picture =  ger_revive_the_kaiserreich
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-						
-			modifier = {
-				army_attack_factor = -0.8
-				army_defence_factor = -0.8
 			}
 
 		}

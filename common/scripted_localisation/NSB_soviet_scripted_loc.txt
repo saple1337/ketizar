@@ -777,13 +777,13 @@ defined_text = {
 	name = GetPropagandaCampaignsRequirementTooltip
 	text = {
 		trigger = {
-			has_completed_focus = SOV_great_purge
+			always = no
 		}
 		localization_key = propaganda_campaign_requirement_met_tt
 	}
 	text = {
 		trigger = {
-			NOT = { has_completed_focus = SOV_great_purge }
+			NOT = { always = no }
 		}
 		localization_key = propaganda_campaign_requirement_not_met_tt
 	}

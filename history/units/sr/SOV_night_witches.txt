@@ -1,4 +1,4 @@
-﻿air_wings = {
+air_wings = {
 	
 	219 = {
 		tac_bomber_equipment_0 =  {		

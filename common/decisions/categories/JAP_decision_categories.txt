@@ -48,10 +48,7 @@ JAP_pacific_guardian = {
 	visible = {
 		is_subject = no
 		OR = {
-			has_completed_focus = JAP_pacific_guardian
-			has_completed_focus = JAP_free_colonized_asian_countries
-			has_completed_focus = JAP_create_greater_east_asian_treaty_organization
-		}
+			always = no}
 	}
 }
 
@@ -72,9 +69,7 @@ JAP_colonial_independence = {
 	visible = {
 		is_subject = no
 		OR = {
-			has_completed_focus = JAP_democratic_war_with_manchukuo
-			has_completed_focus = JAP_pacific_guardian
-		}
+			always = no}
 	}
 
 }
@@ -182,12 +177,11 @@ JAP_the_peoples_state_decisions = {
 
 	allowed = {
 		original_tag = JAP
-		 
+		has_dlc = "No Compromise, No Surrender"
 	}
 
 	visible = {
-		has_completed_focus = JAP_okadas_military_purge_speech
-	}
+		always = no}
 
 }
 
@@ -220,9 +214,7 @@ JAP_investing_in_foreign_industries_cat = {
 	visible = {
 		is_subject = no
 		OR = {
-			has_completed_focus = JAP_invest_in_foreign_industries
-			has_completed_focus = JAP_seek_foreign_investments
-		}
+			always = no}
 	}
 	
 }
@@ -241,9 +233,7 @@ JAP_west_pacific_treaty_org_economic_integration_cat = {
 
 	visible = {
 		OR = {
-			has_completed_focus = JAP_create_greater_east_asian_treaty_organization
-			has_completed_focus = JAP_greater_east_asian_federation
-		}
+			always = no}
 	}
 }
 
@@ -260,8 +250,7 @@ JAP_west_pacific_treaty_org_allied_trade_cat = {
 	priority = 4
 
 	visible = {
-		has_completed_focus = JAP_form_greater_east_asian_customs_union
-	}
+		always = no}
 }
 
 JAP_anti_colonialism_category = { 
@@ -275,9 +264,8 @@ JAP_anti_colonialism_category = {
 	priority = 45
 
 	visible = {
-		 
-		has_completed_focus = JAP_fund_resistance_groups_in_asia 
-	}
+		has_dlc = "No Compromise, No Surrender"
+		always = no}
 
 	on_map_area = {
 		target_array = JAP.asian_colonial_states_array
@@ -312,12 +300,11 @@ JAP_the_red_sun_over_asia_decisions = {
 
 	allowed = {
 		original_tag = JAP
-		 
+		has_dlc = "No Compromise, No Surrender"
 	}
 
 	visible = {
-		has_completed_focus = JAP_raise_the_red_flag_high
-	}
+		always = no}
 
 }
 

@@ -1,4 +1,4 @@
-﻿capital = 88#Krakow
+capital = 88#Krakow
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

@@ -373,7 +373,7 @@ political_actions = {
 				add = 10
 				tag = AUS
 				fascism > 0.45
-				# has_completed_focus = liberty_ethos
+				# always = no
 			}
 		}
     }

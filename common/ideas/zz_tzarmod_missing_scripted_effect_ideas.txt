@@ -1,0 +1,34 @@
+ideas = {
+	hidden_ideas = {
+		SOV_barb_debuff_0 = {}
+		SOV_barb_debuff_1 = {}
+		SOV_barb_debuff_2 = {}
+		SOV_barb_debuff_3 = {}
+		SOV_barb_debuff_4 = {}
+		SOV_barb_debuff_5 = {}
+		SOV_barb_debuff_6 = {}
+		SOV_barb_debuff_7 = {}
+		SOV_barb_debuff_8 = {}
+		SOV_barb_debuff_9 = {}
+		SOV_barb_debuff_10 = {}
+		SOV_barb_debuff_11 = {}
+		SOV_barb_debuff_12 = {}
+		SOV_barb_debuff_13 = {}
+		SOV_barb_debuff_14 = {}
+		SOV_barb_debuff_15 = {}
+		SOV_barb_debuff_16 = {}
+		SOV_barb_debuff_17 = {}
+		SOV_barb_debuff_18 = {}
+		SOV_barb_debuff_19 = {}
+		SOV_barb_debuff_20 = {}
+		SOV_barb_debuff_21 = {}
+		SOV_barb_debuff_22 = {}
+		SOV_barb_debuff_23 = {}
+		SOV_barb_debuff_24 = {}
+		SOV_barb_debuff_ended = {}
+		SOV_genrikh_yagoda = {}
+		SOV_lavrenty_beriya = {}
+		SOV_nikolay_yezhov = {}
+		great_depression_4 = {}
+	}
+}

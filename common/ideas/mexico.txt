@@ -70,6 +70,13 @@ ideas = {
 					has_government = fascism
 				}
 			}
+
+			cancel = {
+				has_country_leader = {
+					ruling_only = yes 
+					character = MEX_saturnino_cedillo
+				}	
+			}
 			
 			modifier = {
 				political_power_factor = 0.1
@@ -153,7 +160,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_expected_value = -0.02
+				consumer_goods_factor = -0.05
 			}
 		}
 		
@@ -173,9 +180,8 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.15
 				stability_factor = -0.05
-				production_lack_of_resource_penalty_factor = -1
 			}			
 		}
 
@@ -576,7 +582,7 @@ ideas = {
 			
 			modifier = {
 				democratic_drift = 0.1
-				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
 				production_speed_infrastructure_factor = 0.1
 			}
 		}
@@ -597,7 +603,7 @@ ideas = {
 			
 			modifier = {
 				democratic_drift = 0.2
-				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
 				production_speed_infrastructure_factor = 0.2
 			}
 		}

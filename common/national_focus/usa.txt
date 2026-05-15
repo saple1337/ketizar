@@ -2250,7 +2250,6 @@ focus = {
 						infantry = { x = 1 y = 1 }
 						infantry = { x = 1 y = 2 }
 						infantry = { x = 1 y = 3 }
-						infantry = { x = 1 y = 4 }
 		
 						infantry = { x = 2 y = 0 }
 						infantry = { x = 2 y = 1 }
@@ -2681,10 +2680,15 @@ focus = {
 		available = {
 			controls_state  = 327
 		}
-		completion_reward = {
-			custom_effect_tooltip = "We will hold Philippines at all cost " 
-			hidden_effect = {every_state = { limit = { Philippines = yes }}  add_dynamic_modifier = { scope = USA modifier = USA_hold_philippines days = 30 }  }
-		}
+			completion_reward = {
+				custom_effect_tooltip = "We will hold Philippines at all cost " 
+				hidden_effect = {
+					add_dynamic_modifier = {
+						modifier = USA_hold_philippines
+						days = 30
+					}
+				}
+			}
 	}
 	focus = {
 		id = USA_intervention_in_europe

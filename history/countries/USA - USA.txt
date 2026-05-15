@@ -1,4 +1,4 @@
-﻿capital = 361
+capital = 361
 army_experience = 10
 navy_experience = 10
 air_experience = 2
@@ -55,8 +55,8 @@ set_technology = { basic_train = 1
 		basic_medium_airframe = 1
 					aa_lmg = 1
 	basic_small_airframe = 1
-	superior_firepower = 1
-	base_strike = 1
+	# superior_firepower = 1
+	# base_strike = 1
 	motorised_infantry = 1
 	fuel_silos = 1
 	synth_oil_experiments = 1
@@ -608,8 +608,6 @@ recruit_character = USA_henry_stimson
 recruit_character = USA_claire_lee_chennault
 recruit_character = USA_harry_white
 
-recruit_character = USA_robert_oppenheimer
-recruit_character = USA_robert_goddard
 recruit_character = USA_leslie_skinner
 recruit_character = USA_edward_curtis_wells 
 recruit_character = USA_william_francis_gibbs 

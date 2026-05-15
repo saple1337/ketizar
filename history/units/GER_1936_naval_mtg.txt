@@ -1,5 +1,14 @@
-﻿
-units= {
+units = {
+	fleet = {
+		name = "Kriegsmarine"
+		naval_base = 241
+		task_force = {
+			name = "Nordsee Testflotte"
+			location = 241
+			ship = { name = "Z1 Leberecht Maass" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GER version_name = "Zerstörer 1934 Class" } } }
+			ship = { name = "Z2 Georg Thiele" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GER version_name = "Zerstörer 1934 Class" } } }
+		}
+	}
 }
 # 	fleet = {
 # 		name = "Kriegsmarine"			
@@ -31,46 +40,3 @@ units= {
 #########################
 ## STARTING PRODUCTION ##
 #########################
-
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_1
-			creator = "GER" 
-			version_name = "Type II Class"
-		}
-		requested_factories = 1
-		progress = 0.75
-		amount = 2
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_1
-			creator = "GER" 
-			version_name = "Type II Class"
-		}
-		requested_factories = 1
-		progress = 0.65
-		amount = 2
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_1
-			creator = "GER" 
-			version_name = "Type II Class"
-		}
-		requested_factories = 1
-		progress = 0.55
-		amount = 2
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_1
-			creator = "GER" 
-			version_name = "Type II Class"
-		}
-		requested_factories = 1
-		progress = 0.45
-		amount = 2
-	}
-}

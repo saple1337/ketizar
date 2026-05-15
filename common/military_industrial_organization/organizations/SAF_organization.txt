@@ -49,7 +49,7 @@ SAF_cape_town_shipyards = {
 		has_dlc = "Together for Victory"
 	}
 	available = {
-		#owner = { has_completed_focus = AST_kangaroo_point_shipyards}
+		#owner = { always = no}
 	}
 }
 

@@ -27,8 +27,7 @@ focus_tree = {
 		mutually_exclusive = { focus = wuw_HUN_end_the_regency focus = wuw_HUN_end_the_white_terror }
 		x = 4
 		y = 0
-		relative_position_id = wuw_HUN_end_the_regency
-
+		# removed invalid relative_position_id anchor
 		cost = 5
 
 		ai_will_do = {
@@ -1720,8 +1719,7 @@ focus_tree = {
 		#mutually_exclusive = { focus = wuw_HUN_avoid_interventionalist_destablilization }
 		x = 15
 		y = 0
-		relative_position_id = wuw_HUN_end_the_regency
-
+		# removed invalid relative_position_id anchor
 		cost = 10
 
 		ai_will_do = {
@@ -1756,8 +1754,7 @@ focus_tree = {
 		#mutually_exclusive = { focus = wuw_HUN_avoid_interventionalist_destablilization }
 		x = 30
 		y = 0
-		relative_position_id = wuw_HUN_end_the_regency
-
+		# removed invalid relative_position_id anchor
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL }
 
 		cost = 5
@@ -3331,8 +3328,7 @@ focus_tree = {
 		#mutually_exclusive = { focus = wuw_HUN_hungarian_tradition }
 		x = -1
 		y = 1
-		relative_position_id = wuw_HUN_repulo_muszaki_intezet
-
+		# removed invalid relative_position_id anchor
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		cost = 5
@@ -3460,8 +3456,7 @@ focus_tree = {
 		mutually_exclusive = { focus = wuw_HUN_the_mavag_heja }
 		x = 1
 		y = 1
-		relative_position_id = wuw_HUN_repulo_muszaki_intezet
-
+		# removed invalid relative_position_id anchor
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		cost = 5
@@ -3567,8 +3562,7 @@ focus_tree = {
 		#mutually_exclusive = { focus = wuw_HUN_repulö_muszaki_intezet }
 		x = 0
 		y = 1
-		relative_position_id = wuw_HUN_quantity_over_quality
-
+		# removed invalid relative_position_id anchor
 		search_filters = { FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
 
 		cost = 5
@@ -3806,8 +3800,7 @@ focus_tree = {
 		#mutually_exclusive = { focus = wuw_HUN_repulö_muszaki_intezet }
 		x = -2
 		y = 1
-		relative_position_id = wuw_HUN_expand_the_army
-
+		# removed invalid relative_position_id anchor
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL }
 
 		cost = 5
@@ -4045,8 +4038,7 @@ focus_tree = {
 		
 		x = -2
 		y = 1
-		relative_position_id = wuw_HUN_quantity_over_quality
-
+		# removed invalid relative_position_id anchor
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
 
 		cost = 10
@@ -4147,8 +4139,7 @@ focus_tree = {
 		#mutually_exclusive = { focus = wuw_HUN_assault_gun_focus }
 		x = 2
 		y = 1
-		relative_position_id = wuw_HUN_quantity_over_quality
-
+		# removed invalid relative_position_id anchor
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		cost = 10
@@ -4193,8 +4184,7 @@ focus_tree = {
 		#mutually_exclusive = { focus = wuw_HUN_assault_gun_focus }
 		x = 1
 		y = 1
-		relative_position_id = wuw_HUN_expand_the_army
-
+		# removed invalid relative_position_id anchor
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		cost = 10
@@ -4770,17 +4760,17 @@ focus_tree = {
 				parent_version = 0
 				allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 				modules = {
-					#fixed_ship_battery_slot = ship_heavy_battery_1
+					#fixed_ship_battery_slot = ship_330_battery
 					fixed_ship_anti_air_slot = ship_anti_air_2
 					fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 					fixed_ship_radar_slot = empty
 					fixed_ship_engine_slot = heavy_ship_engine_1
 					fixed_ship_secondaries_slot = dp_ship_secondaries_1
 					#fixed_ship_armor_slot = ship_armor_bb_1
-					#front_1_custom_slot = ship_heavy_battery_1
+					#front_1_custom_slot = ship_330_battery
 					mid_1_custom_slot = ship_anti_air_2
 					mid_2_custom_slot = dp_ship_secondaries_1
-					rear_1_custom_slot = ship_heavy_battery_1
+					rear_1_custom_slot = ship_330_battery
 				}
 				upgrades = {
 					ship_reliability_upgrade = 2

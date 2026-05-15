@@ -1,5 +1,5 @@
-﻿FIN_RG_HISTORICAL = {
-	for_countries = { FIN }
+FIN_RG_HISTORICAL = {
+	for_countries = { }
 
 	type = railway_gun
 	

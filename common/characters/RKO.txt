@@ -1,24 +1,25 @@
-characters={
-	RKO_friedrich_karl_vialon={
-		name=RKO_friedrich_karl_vialon
-		portraits={
-			army={
-				small="GFX_idea_friedrich_karl_vialon"
+characters = {
+
+
+	RKO_hinrich_lohse = {
+
+		name = RKO_hinrich_lohse
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_GER_hinrich_lohse
+				small = GFX_portrait_GER_hinrich_lohse_small
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = rko_friedrich_karl_vialon
-			available = {
-				is_subject_of = GER
-			}
-			allowed = {
-				original_tag = RKO
-			}
-			traits = {
-				economist 
-				financial_expert
-			}
-		}		
+
+		country_leader = {
+			ideology = nazism
+			traits = { GER_reichskommissar_trait }
+			expire = "1987.1.1.1"
+			id = -1
+		}
+
 	}
+	
+
 }

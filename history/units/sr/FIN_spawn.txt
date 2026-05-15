@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "Jalkaväkidivisioona"		
 	division_names_group = FIN_INF_01
 

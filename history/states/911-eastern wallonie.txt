@@ -10,12 +10,10 @@ state={
 			6537 5 
 		}
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 2
-			air_base = 1
-			# Gileppe Dam
-			3488 = { dam = 1 }
-		}
+				infrastructure = 3
+				industrial_complex = 2
+				air_base = 1
+			}
 		add_core_of = BEL
 	}
 	manpower=238130

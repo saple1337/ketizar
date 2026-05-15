@@ -1,4 +1,4 @@
-﻿### Starting Production ###
+### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

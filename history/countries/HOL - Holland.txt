@@ -1,4 +1,4 @@
-﻿capital = 7
+capital = 7
 army_experience = 10
 navy_experience = 10
 air_experience = 2
@@ -79,8 +79,8 @@ if = {
 		basic_naval_mines = 1
 		submarine_mine_laying = 1
 		early_ship_hull_light = 1
-		#early_ship_hull_submarine = 1
-		#basic_ship_hull_submarine = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
 		basic_battery = 1
@@ -222,11 +222,11 @@ if = {
 
 		#doctrines
 		#air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
+		# grand_battle_plan = 1
+		# trench_warfare = 1
+		# fleet_in_being = 1
+		# battlefleet_concentration = 1
+		# convoy_sailing = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -261,7 +261,7 @@ if = {
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 		set_technology = {
-			#improved_ship_hull_submarine = 1
+			improved_ship_hull_submarine = 1
 			basic_ship_hull_light = 1
 			basic_light_battery = 1
 			#basic_medium_battery = 1

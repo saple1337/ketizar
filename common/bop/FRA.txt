@@ -21,7 +21,6 @@ FRA_violence = {
 	### Social-Democrat - Communist Side 
 	side = {
 		id = FRA_bop_left_side
-		name = "Country is in chaos"
 		icon = GFX_bop_ETH_anarchist_side
 		range = {
 			id = FRA_max_instability

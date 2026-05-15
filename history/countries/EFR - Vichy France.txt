@@ -1,4 +1,4 @@
-﻿capital = 713
+capital = 713
 
 # Starting tech
 set_stability = 0.3
@@ -32,8 +32,8 @@ set_technology = {
 					aa_lmg = 1
 	
 
-	trench_warfare = 1
-	fleet_in_being = 1
+	# trench_warfare = 1
+	# fleet_in_being = 1
 	fuel_silos = 1
 	synth_oil_experiments = 1
 		early_ship_hull_light = 1

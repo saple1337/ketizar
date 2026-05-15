@@ -52,8 +52,7 @@ ITA_fiat_organization = {
 		IF = {
 			limit = { FROM = { original_tag = GRE } }
 			FROM = {
-				has_completed_focus = GRE_rapprochement_with_the_italians
-			}
+				always = no}
 		}
 	}
 	
@@ -996,7 +995,7 @@ ITA_officine_meccaniche_organization = {
 	
 	available = {
 		FROM = {
-			#has_completed_focus = ITA_new_ricostruzione_industriale
+			#always = no}
 		}
 	}
 

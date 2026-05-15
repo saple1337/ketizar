@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "Royal Guard"
 
 	division_names_group = AFG_ARM_01
@@ -8,12 +8,10 @@
 		mountaineers = { x = 0 y = 1 }
 		mountaineers = { x = 0 y = 2 }
 		mountaineers = { x = 0 y = 3 }
-		mountaineers = { x = 0 y = 4 }
 		mountaineers = { x = 1 y = 0 }
 		mountaineers = { x = 1 y = 1 }
 		mountaineers = { x = 1 y = 2 }
 		mountaineers = { x = 1 y = 3 }
-		mountaineers = { x = 1 y = 4 }
 		mountaineers = {x = 2 y = 0 }
 		mountaineers = { x = 2 y = 1 }
 		mountaineers = { x = 2 y = 2 }
@@ -30,8 +28,6 @@
 		artillery = { x = 0 y = 2 }
 		anti_air = { x = 0 y = 3 }
 		anti_tank = { x = 0 y = 4 }
-		signal_company = { x = 0 y = 5}
-		logistics_company = { x = 0 y =6 }
 	}
 	
 	priority = 2
@@ -46,17 +42,14 @@ division_template = {
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 0 y = 3 }
-		infantry = { x = 0 y = 4 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 1 y = 3 }
-		infantry = { x = 1 y = 4 }
 		infantry = {x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
 		infantry = {x = 2 y = 3 }
-		infantry = { x = 2 y = 4 }
 		infantry = { x = 3 y = 0 }
 		anti_air_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 4 y = 0 }

@@ -68,7 +68,7 @@ JAP_maizuru_naval_arsenal_organization = {
 			limit = {
 				FROM = { original_tag = ETH }
 			}
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			FROM = { always = no}
 		}
 	}
 	
@@ -134,7 +134,7 @@ JAP_mitsubishi_organization = {
 			limit = {
 				FROM = { original_tag = ETH }
 			}
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			FROM = { always = no}
 		}
 	}
 	
@@ -250,7 +250,7 @@ JAP_nissan_organization = {
 			limit = {
 				FROM = { original_tag = ETH }
 			}
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			FROM = { always = no}
 		}
 	}
 	

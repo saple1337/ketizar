@@ -1,4 +1,13 @@
-﻿division_template = {
+division_template = {
+	name = "Occupation Garrison"
+	role = garrison
+	template_counter = 1
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
 	name = "Pesadijska Divizija"	# Infantry Division	
 	# Note: infantry divisions were all at low reserve levels even just prior to Axis 
 	#	invasion of 1941
@@ -45,7 +54,7 @@ division_template = {
 	name = "Konjička Divizija" 			# Cavalry Division
 	# Note: regiments within the brigade were battalion-sized units
 	regiments = {
-		cavalry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
 		cavalry = { x = 1 y = 0 }

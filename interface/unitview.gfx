@@ -401,7 +401,7 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_unit_level"
 		texturefile = "gfx/interface/unit_level.dds"
-		noOfFrames = 21
+		noOfFrames = 5
 	}
 	
 	SpriteType = {
@@ -790,6 +790,36 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_trait_defense"
 		textureFile = "gfx/interface/unitcontrol/trait_defense.dds"
+	}
+
+	spriteType = {
+		name = "GFX_commander_sort_blue"
+		textureFile = "gfx/interface/unitcontrol/commander_sort_blue.dds"
+		noOfFrames = 3
+	}
+
+	spriteType = {
+		name = "GFX_commander_sort_green"
+		textureFile = "gfx/interface/unitcontrol/commander_sort_green.dds"
+		noOfFrames = 3
+	}
+
+	spriteType = {
+		name = "GFX_commander_filter_FM"
+		textureFile = "gfx/interface/unitcontrol/commander_filter_FM.dds"
+		noOfFrames = 3
+	}
+
+	spriteType = {
+		name = "GFX_commander_filter_admiral"
+		textureFile = "gfx/interface/unitcontrol/commander_filter_admiral.dds"
+		noOfFrames = 3
+	}
+
+	spriteType = {
+		name = "GFX_commander_filter_all"
+		textureFile = "gfx/interface/unitcontrol/commander_filter_all.dds"
+		noOfFrames = 3
 	}
 	
 	spriteType = {

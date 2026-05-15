@@ -1254,9 +1254,9 @@ foreign_politics = {
 			}
 			is_subject = no
 			OR = {
-				has_completed_focus = JAP_the_persimmon_has_ripened
-				has_completed_focus = JAP_a_green_persimmon
-				has_completed_focus = JAP_free_asians_from_soviet_opression
+				always = no
+				always = no
+				always = no
 			}
 		}
 
@@ -1475,7 +1475,7 @@ foreign_politics = {
 		}
 		
 		visible = {
-			has_completed_focus = JAP_integrate_the_great_empire_of_manchuria
+			always = no
 		}
 		
 		available = {
@@ -1635,7 +1635,7 @@ JAP_southern_expansion = {
 	#	}
 #
 	#	visible = {
-	#		has_completed_focus = JAP_strike_south_doctrine
+	#		always = no
 	#	}
 #
 	#	fire_only_once = yes
@@ -1721,7 +1721,7 @@ political_actions = {
 
 		visible = {
 			has_idea = JAP_the_london_naval_treaty
-			has_completed_focus = JAP_join_the_london_naval_treaty
+			always = no
 		}
 
 		fire_only_once = yes
@@ -1859,8 +1859,8 @@ operations = {
 		available = {
 			OR = {
 				has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				has_completed_focus = JAP_support_the_kodoha_faction
-				has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
+				always = no
+				always = no
 			}
 			NOT = {
 				has_war_with = SOV
@@ -2233,7 +2233,7 @@ operations = {
 				add = 50 
 				AND = {
 					tag = JAP 
-					has_completed_focus = JAP_support_the_kodoha_faction
+					always = no
 				}
 			}
 			modifier = {
@@ -2330,7 +2330,7 @@ operations = {
 				add = 50 
 				AND = {
 					tag = JAP 
-					has_completed_focus = JAP_support_the_kodoha_faction
+					always = no
 				}
 			}
 			modifier = {
@@ -2458,10 +2458,10 @@ operations = {
 
 		visible = {
 			is_in_faction_with = GER
-			GER = { has_completed_focus = GER_molotov_ribbentrop_pact }
+			GER = { always = no }
 			GER = { NOT = { has_war_with = SOV } }
 			NOT = { has_war_with = SOV }
-			has_completed_focus = JAP_preemptive_war
+			always = no
 		}
 
 		fire_only_once = yes
@@ -2516,9 +2516,9 @@ prospect_for_resources = {
 
 		visible = {
 			OR = {
-				has_completed_focus = JAP_establish_the_northern_resource_area
-				has_completed_focus = JAP_sea_establish_the_northern_resource_area
-				has_completed_focus = JAP_transformation_of_nature
+				always = no
+				always = no
+				always = no
 			}
 		}
 
@@ -2583,7 +2583,7 @@ prospect_for_resources = {
 
 		visible = {
 			OR = {
-				has_completed_focus = JAP_transformation_of_nature
+				always = no
 				has_completed_focus = JAP_sea_exploit_southern_resource_area
 			}
 			623 = {
@@ -2641,7 +2641,7 @@ prospect_for_resources = {
 
 		visible = {
 			OR = {
-				has_completed_focus = JAP_transformation_of_nature
+				always = no
 				has_completed_focus = JAP_sea_exploit_southern_resource_area
 			}
 			627 = {
@@ -2699,7 +2699,7 @@ prospect_for_resources = {
 
 		visible = {
 			OR = {
-				has_completed_focus = JAP_transformation_of_nature
+				always = no
 				has_completed_focus = JAP_sea_exploit_southern_resource_area
 			}
 			625 = {
@@ -2757,7 +2757,7 @@ prospect_for_resources = {
 
 		visible = {
 			OR = {
-				has_completed_focus = JAP_transformation_of_nature
+				always = no
 				has_completed_focus = JAP_sea_exploit_southern_resource_area
 			}
 			725 = {
@@ -2816,7 +2816,7 @@ prospect_for_resources = {
 	#	visible = {
 	#		OR = {
 	#			has_completed_focus = JAP_sea_exploit_southern_resource_area
-	#			has_completed_focus = JAP_exploit_the_southern_resource_area
+	#			always = no
 	#		}
 	#		671 = {
 	#			NOT = {
@@ -2873,7 +2873,7 @@ prospect_for_resources = {
 
 		visible = {
 			OR = {
-				has_completed_focus = JAP_transformation_of_nature
+				always = no
 				has_completed_focus = JAP_sea_exploit_southern_resource_area
 			}
 			1021 = {
@@ -2931,7 +2931,7 @@ prospect_for_resources = {
 
 		visible = {
 			OR = {
-				has_completed_focus = JAP_transformation_of_nature
+				always = no
 				has_completed_focus = JAP_sea_exploit_southern_resource_area
 			}
 			672 = {
@@ -2989,7 +2989,7 @@ prospect_for_resources = {
 
 		visible = {
 			OR = {
-				has_completed_focus = JAP_transformation_of_nature
+				always = no
 				has_completed_focus = JAP_sea_exploit_southern_resource_area
 			}
 			334 = {
@@ -3047,7 +3047,7 @@ prospect_for_resources = {
 
 		visible = {
 			OR = {
-				has_completed_focus = JAP_transformation_of_nature
+				always = no
 				has_completed_focus = JAP_sea_exploit_southern_resource_area
 			}
 			669 = {
@@ -3105,7 +3105,7 @@ prospect_for_resources = {
 
 		visible = {
 			OR = {
-				has_completed_focus = JAP_transformation_of_nature
+				always = no
 				has_completed_focus = JAP_sea_exploit_southern_resource_area
 			}
 			335 = {
@@ -3177,7 +3177,7 @@ prospect_for_resources = {
 
 		visible = {
 			OR = {
-				has_completed_focus = JAP_transformation_of_nature
+				always = no
 				has_completed_focus = JAP_develop_the_chinese_resources
 			}
 			
@@ -3237,7 +3237,7 @@ prospect_for_resources = {
 
 		visible = {
 			OR = {
-				has_completed_focus = JAP_transformation_of_nature
+				always = no
 				has_completed_focus = JAP_develop_the_chinese_resources
 			}
 			
@@ -3291,7 +3291,7 @@ prospect_for_resources = {
 
 		visible = {
 			OR = {
-				has_completed_focus = JAP_transformation_of_nature
+				always = no
 				has_completed_focus = JAP_develop_the_chinese_resources
 			}
 			
@@ -3345,7 +3345,7 @@ prospect_for_resources = {
 
 		visible = {
 			OR = {
-				has_completed_focus = JAP_transformation_of_nature
+				always = no
 				has_completed_focus = JAP_develop_the_chinese_resources
 			}
 			
@@ -3590,7 +3590,7 @@ JAP_kwantung_army_decisions = {
 			is_subject = no 
 			NOT = { has_war_with = CHI }
 			NOT = {
-				has_completed_focus = JAP_subdue_the_kwantung_army
+				always = no
 			}
 		}
 
@@ -3781,7 +3781,7 @@ JAP_spiritual_mobilization_decisions = {
 		visible = { 
 			OR = {
 				has_completed_focus = JAP_sea_national_spiritual_mobliization_movement
-				has_completed_focus = JAP_the_yamato_spirit
+				always = no
 			}
 			OR = {
 				has_government = neutrality
@@ -3852,7 +3852,7 @@ JAP_spiritual_mobilization_decisions = {
 		visible = { 
 			OR = {
 				has_completed_focus = JAP_sea_national_spiritual_mobliization_movement
-				has_completed_focus = JAP_the_yamato_spirit
+				always = no
 			}
 			OR = {
 				has_government = neutrality
@@ -3913,7 +3913,7 @@ JAP_spiritual_mobilization_decisions = {
 		visible = { 
 			OR = {
 				has_completed_focus = JAP_sea_national_spiritual_mobliization_movement
-				has_completed_focus = JAP_the_yamato_spirit
+				always = no
 			}
 			OR = {
 				has_government = neutrality
@@ -4322,7 +4322,7 @@ JAP_imperial_influence_decision_cat = {
 			}
 			NOT = {
 				has_completed_focus = JAP_the_harakiri_debate
-				has_completed_focus = JAP_reprimand_hamada_kunimatsu
+				always = no
 			}
 		}
 	
@@ -6219,7 +6219,7 @@ JAP_the_propaganda_department_decisions = {
 		}
 
 		visible = { 
-			has_completed_focus = JAP_an_expedition_to_tibet
+			always = no
 			OR = {
 				has_government = neutrality
 				has_government = fascism
@@ -6302,7 +6302,7 @@ JAP_the_propaganda_department_decisions = {
 		}
 
 		visible = { 
-			has_completed_focus = JAP_an_expedition_to_tibet
+			always = no
 			OR = {
 				has_government = neutrality
 				has_government = fascism
@@ -6387,7 +6387,7 @@ JAP_the_propaganda_department_decisions = {
 		}
 
 		visible = { 
-			has_completed_focus = JAP_an_expedition_to_tibet
+			always = no
 			OR = {
 				has_government = neutrality
 				has_government = fascism
@@ -6465,7 +6465,7 @@ JAP_the_propaganda_department_decisions = {
 		}
 
 		visible = { 
-			has_completed_focus = JAP_an_expedition_to_tibet
+			always = no
 			OR = {
 				has_government = neutrality
 				has_government = fascism
@@ -6692,7 +6692,7 @@ JAP_the_propaganda_department_decisions = {
 		}
 		
 		visible = {
-			has_completed_focus = JAP_east_asian_cooperative_society
+			always = no
 		}
 		available = {
 		}
@@ -6783,7 +6783,7 @@ JAP_the_propaganda_department_decisions = {
 		}
 		
 		visible = {
-			has_completed_focus = JAP_east_asian_cooperative_society
+			always = no
 		}
 
 		available = {
@@ -6909,7 +6909,7 @@ JAP_the_propaganda_department_decisions = {
 		}
 
 		visible = {
-			has_completed_focus = JAP_the_jeweled_spear_has_struck
+			always = no
 			FROM = {
 				any_owned_state = {
 					NOT = { is_claimed_by = ROOT }
@@ -7029,7 +7029,7 @@ JAP_the_propaganda_department_decisions = {
 		}
 		
 		visible = {
-			has_completed_focus = JAP_hakko_ichiu
+			always = no
 		}
 		
 		available = {
@@ -7151,7 +7151,7 @@ JAP_the_co_prosperity_sphere_decisions = {
 		}
 
 		visible = { 
-			has_completed_focus = JAP_mongol_autonomous_state
+			always = no
 			OR = {
 				has_government = neutrality
 				has_government = fascism
@@ -7203,7 +7203,7 @@ JAP_the_co_prosperity_sphere_decisions = {
 					state = 616
 				}
 			}
-			has_completed_focus = JAP_mongol_autonomous_state # To Show people why they have it
+			always = no # To Show people why they have it
 		}
 
 		#days_remove = 70
@@ -7643,8 +7643,8 @@ JAP_state_shintoism_decisions = {
 
 		visible = { 
 			OR = {
-				has_completed_focus = JAP_a_new_take_on_state_shintoism
-				has_completed_focus = JAP_the_spirit_of_the_imperial_nation
+				always = no
+				always = no
 				has_completed_focus = JAP_enact_religious_organizations_law
 			}
 			OR = {
@@ -7705,8 +7705,8 @@ JAP_state_shintoism_decisions = {
 
 		visible = { 
 			OR = {
-				has_completed_focus = JAP_a_new_take_on_state_shintoism
-				has_completed_focus = JAP_the_spirit_of_the_imperial_nation
+				always = no
+				always = no
 				has_completed_focus = JAP_enact_religious_organizations_law
 			}
 			#OR = {
@@ -7767,8 +7767,8 @@ JAP_state_shintoism_decisions = {
 
 		visible = { 
 			OR = {
-				has_completed_focus = JAP_a_new_take_on_state_shintoism
-				has_completed_focus = JAP_the_spirit_of_the_imperial_nation
+				always = no
+				always = no
 				has_completed_focus = JAP_enact_religious_organizations_law
 			}
 			OR = {
@@ -7829,8 +7829,8 @@ JAP_state_shintoism_decisions = {
 
 		visible = { 
 			OR = {
-				has_completed_focus = JAP_a_new_take_on_state_shintoism
-				has_completed_focus = JAP_the_spirit_of_the_imperial_nation
+				always = no
+				always = no
 				has_completed_focus = JAP_enact_religious_organizations_law
 			}
 			#OR = {
@@ -7889,8 +7889,8 @@ economy_decisions = {
 		
 		visible = {
 			OR = {
-				has_completed_focus = JAP_give_it_your_all_for_the_emperor
-				has_completed_focus = JAP_ganbarou
+				always = no
+				always = no
 			}
 		}
 		
@@ -7961,7 +7961,7 @@ economy_decisions = {
 		}
 		
 		visible = {
-			has_completed_focus = JAP_fukumotoism
+			always = no
 			check_variable = { JAP_economic_redistribtuion_level < JAP_economic_redistribtuion_max }
 		}
 		
@@ -8086,9 +8086,9 @@ JAP_the_peoples_state_decisions = {
 		}
 		
 		visible = {
-			has_completed_focus = JAP_okadas_military_purge_speech
+			always = no
 			NOT = {
-				has_completed_focus = JAP_revoke_the_peace_preservation_law
+				always = no
 			}
 			any_owned_state = {
 				has_dynamic_modifier = {
@@ -8206,9 +8206,9 @@ JAP_the_peoples_state_decisions = {
 		}
 
 		visible = {
-			has_completed_focus = JAP_bribe_generals
+			always = no
 			NOT = {
-				has_completed_focus = JAP_revoke_the_peace_preservation_law
+				always = no
 			}
 		}
 
@@ -8270,9 +8270,9 @@ JAP_the_peoples_state_decisions = {
 		}
 
 		visible = {
-			has_completed_focus = JAP_bribe_generals
+			always = no
 			NOT = {
-				has_completed_focus = JAP_revoke_the_peace_preservation_law
+				always = no
 			}
 		}
 
@@ -8327,7 +8327,7 @@ JAP_the_peoples_state_decisions = {
 			base = 100
 			modifier = {
 				add = -100
-				has_completed_focus = JAP_secretly_rebuild_the_party
+				always = no
 			}
 		}
 
@@ -8338,9 +8338,9 @@ JAP_the_peoples_state_decisions = {
 		}
 
 		visible = {
-			has_completed_focus = JAP_build_an_anti_army_coalition
+			always = no
 			NOT = {
-				has_completed_focus = JAP_revoke_the_peace_preservation_law
+				always = no
 			}
 		}
 
@@ -8387,9 +8387,9 @@ JAP_the_peoples_state_decisions = {
 		}
 
 		visible = {
-			has_completed_focus = JAP_secretly_rebuild_the_party
+			always = no
 			NOT = {
-				has_completed_focus = JAP_revoke_the_peace_preservation_law
+				always = no
 			}
 		}
 
@@ -8426,9 +8426,9 @@ JAP_the_peoples_state_decisions = {
 		}
 		
 		visible = {
-			has_completed_focus = JAP_secretly_rebuild_the_party
+			always = no
 			NOT = {
-				has_completed_focus = JAP_revoke_the_peace_preservation_law
+				always = no
 			}
 			any_owned_state = {
 				has_dynamic_modifier = {
@@ -8541,10 +8541,10 @@ JAP_the_peoples_state_decisions = {
 		}
 
 		visible = {
-			has_completed_focus = JAP_anti_militarist_speeches_in_the_diet
+			always = no
 			has_country_flag = JAP_jcp_distanced_themselves_from_the_soviets_flag
 			NOT = {
-				has_completed_focus = JAP_revoke_the_peace_preservation_law
+				always = no
 			}
 		}
 
@@ -8591,10 +8591,10 @@ JAP_the_peoples_state_decisions = {
 		}
 
 		visible = {
-			has_completed_focus = JAP_organize_the_student_movements
+			always = no
 			has_country_flag = JAP_jcp_distanced_themselves_from_the_soviets_flag
 			NOT = {
-				has_completed_focus = JAP_revoke_the_peace_preservation_law
+				always = no
 			}
 		}
 
@@ -8625,9 +8625,9 @@ JAP_the_peoples_state_decisions = {
 		}
 		
 		visible = {
-			has_completed_focus = JAP_mountain_village_operation_units
+			always = no
 			NOT = {
-				has_completed_focus = JAP_revoke_the_peace_preservation_law
+				always = no
 			}
 		}
 
@@ -8720,7 +8720,7 @@ JAP_the_peoples_state_decisions = {
 			282 = {
 				is_capital = no
 			}
-			has_completed_focus = JAP_revoke_the_peace_preservation_law
+			always = no
 		}
 
 		available = {
@@ -8755,9 +8755,9 @@ JAP_the_peoples_state_decisions = {
 		}
 		
 		visible = {
-			has_completed_focus = JAP_organize_underground_resistance
+			always = no
 			NOT = {
-				has_completed_focus = JAP_revoke_the_peace_preservation_law
+				always = no
 			}
 		}
 
@@ -8823,9 +8823,9 @@ JAP_the_peoples_state_decisions = {
 		}
 		
 		visible = {
-			has_completed_focus = JAP_organize_underground_resistance
+			always = no
 			NOT = {
-				has_completed_focus = JAP_revoke_the_peace_preservation_law
+				always = no
 			}
 		}
 
@@ -8891,9 +8891,9 @@ JAP_the_peoples_state_decisions = {
 		}
 		
 		visible = {
-			has_completed_focus = JAP_organize_underground_resistance
+			always = no
 			NOT = {
-				has_completed_focus = JAP_revoke_the_peace_preservation_law
+				always = no
 			}
 		}
 
@@ -8990,7 +8990,7 @@ JAP_the_peoples_state_decisions = {
 		}
 
 		visible = { 
-			has_completed_focus = JAP_revoke_the_peace_preservation_law
+			always = no
 			any_enemy_country = {
 				original_tag = JAP
 			}
@@ -9075,7 +9075,7 @@ JAP_the_peoples_state_decisions = {
 		priority = 5
 
 		target_root_trigger = {
-			has_completed_focus = JAP_organize_the_fifth_column
+			always = no
 		}
 
 		target_trigger = {
@@ -9188,7 +9188,7 @@ JAP_the_peoples_state_decisions = {
 		visible = {
 			tag = JAP
 			NOT = {
-				has_completed_focus = JAP_revoke_the_peace_preservation_law
+				always = no
 			}
 		}
 
@@ -9232,7 +9232,7 @@ JAP_the_peoples_state_decisions = {
 		visible = {
 			tag = JAP
 			NOT = {
-				has_completed_focus = JAP_revoke_the_peace_preservation_law
+				always = no
 			}
 		}
 
@@ -9291,7 +9291,7 @@ JAP_the_peoples_state_decisions = {
 		visible = {
 			tag = JAP
 			NOT = {
-				has_completed_focus = JAP_revoke_the_peace_preservation_law
+				always = no
 			}
 		}
 
@@ -9334,7 +9334,7 @@ JAP_the_peoples_state_decisions = {
 		visible = {
 			tag = JAP
 			NOT = {
-				has_completed_focus = JAP_revoke_the_peace_preservation_law
+				always = no
 			}
 		}
 
@@ -9384,7 +9384,7 @@ JAP_the_peoples_state_decisions = {
 		visible = {
 			tag = JAP
 			NOT = {
-				has_completed_focus = JAP_revoke_the_peace_preservation_law
+				always = no
 			}
 		}
 
@@ -9427,7 +9427,7 @@ JAP_the_peoples_state_decisions = {
 		visible = {
 			tag = JAP
 			NOT = {
-				has_completed_focus = JAP_revoke_the_peace_preservation_law
+				always = no
 			}
 		}
 
@@ -9494,7 +9494,7 @@ JAP_the_peoples_state_decisions = {
 		visible = {
 			tag = JAP
 			NOT = {
-				has_completed_focus = JAP_revoke_the_peace_preservation_law
+				always = no
 			}
 		}
 
@@ -9537,7 +9537,7 @@ JAP_the_peoples_state_decisions = {
 		visible = {
 			tag = JAP
 			NOT = {
-				has_completed_focus = JAP_revoke_the_peace_preservation_law
+				always = no
 			}
 		}
 
@@ -9580,7 +9580,7 @@ JAP_the_peoples_state_decisions = {
 		visible = {
 			tag = JAP
 			NOT = {
-				has_completed_focus = JAP_revoke_the_peace_preservation_law
+				always = no
 			}
 		}
 
@@ -9626,7 +9626,7 @@ JAP_the_peoples_state_decisions = {
 		visible = {
 			tag = JAP
 			NOT = {
-				has_completed_focus = JAP_revoke_the_peace_preservation_law
+				always = no
 			}
 		}
 
@@ -9663,7 +9663,7 @@ JAP_investing_in_foreign_industries_cat = {
 		}
 
 		visible = {
-			has_completed_focus = JAP_invest_in_foreign_industries
+			always = no
 		}
 
 		available = {
@@ -9739,7 +9739,7 @@ JAP_investing_in_foreign_industries_cat = {
 		}
 
 		visible = {
-			has_completed_focus = JAP_invest_in_foreign_industries
+			always = no
 		}
 
 		available = {
@@ -9816,7 +9816,7 @@ JAP_investing_in_foreign_industries_cat = {
 		}
 
 		visible = {
-			has_completed_focus = JAP_invest_in_foreign_industries
+			always = no
 		}
 
 		available = {
@@ -9893,7 +9893,7 @@ JAP_investing_in_foreign_industries_cat = {
 		}
 
 		visible = {
-			has_completed_focus = JAP_invest_in_foreign_industries
+			always = no
 		}
 
 		available = {
@@ -9991,7 +9991,7 @@ JAP_investing_in_foreign_industries_cat = {
 	    }
 
 	    visible = { 
-			has_completed_focus = JAP_seek_foreign_investments
+			always = no
 		}
 	
 		available = {

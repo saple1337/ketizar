@@ -1,4 +1,4 @@
-﻿units = {
+units = {
 	##### Special forces spawned from AST tree #####
 	division= {
 		name = "The Rats of Tobruk"

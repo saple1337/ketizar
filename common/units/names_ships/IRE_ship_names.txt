@@ -1,9 +1,9 @@
-﻿##### IRELAND NAME LISTS #####
+##### IRELAND NAME LISTS #####
 ### REGULAR DESTROYER NAMES###
 IRE_DD_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_DESTROYERS
 
-	for_countries = { IRE }
+	for_countries = { }
 
 	type = ship
 	ship_types = { ship_hull_light destroyer }			
@@ -22,7 +22,7 @@ IRE_DD_HISTORICAL = {
 IRE_CL_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CL
 
-	for_countries = { IRE }
+	for_countries = { }
 
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
@@ -39,7 +39,7 @@ IRE_CL_HISTORICAL = {
 IRE_CA_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CA
 
-	for_countries = { IRE }
+	for_countries = { }
 
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
@@ -57,7 +57,7 @@ IRE_CA_HISTORICAL = {
 IRE_BB_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_BB
 
-	for_countries = { IRE }
+	for_countries = { }
 
 	type = ship
 	ship_types = { ship_hull_heavy battleship }
@@ -74,7 +74,7 @@ IRE_BB_HISTORICAL = {
 IRE_BC_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_BC
 
-	for_countries = { IRE }
+	for_countries = { }
 
 	type = ship
 	ship_types = { ship_hull_heavy battle_cruiser }
@@ -91,7 +91,7 @@ IRE_BC_HISTORICAL = {
 IRE_CV_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CARRIERS
 
-	for_countries = { IRE }
+	for_countries = { }
 
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
@@ -109,7 +109,7 @@ IRE_CV_HISTORICAL = {
 IRE_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES
 
-	for_countries = { IRE }
+	for_countries = { }
 
 	type = ship
 	ship_types = { ship_hull_submarine submarine }

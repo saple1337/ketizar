@@ -28,7 +28,7 @@ FRA_renault_organization = {
 			limit = {
 				FROM = { original_tag = ETH }
 			}
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			FROM = { always = no}
 		}
 	}
 
@@ -225,7 +225,7 @@ FRA_bloch_organization = {
 			limit = {
 				FROM = { original_tag = ETH }
 			}
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			FROM = { always = no}
 		}
 	}
 	
@@ -329,7 +329,7 @@ FRA_somua_organization = {
 			}
 			FROM = {
 				has_country_flag = POL_somua_motors
-				NOT = { has_completed_focus = POL_adaptive_designs }
+				NOT = { always = no}
 			}
 		}
 	}
@@ -364,7 +364,7 @@ FRA_mas_organization = {
 			limit = {
 				FROM = { original_tag = ETH }
 			}
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			FROM = { always = no}
 		}
 	}
 

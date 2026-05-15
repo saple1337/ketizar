@@ -38,7 +38,7 @@ ability = {
 	# 	allowed = {
 	# 		is_leading_army_group = no
 	# 		is_border_war = no
-	# 		OWNER = { NOT = { has_completed_focus = JAP_warrior_spirit OR = { tag = EFR tag = POL tag = BEL tag = HOL tag = DEN  }   } }
+	# 		OWNER = { NOT = { always = no OR = { tag = EFR tag = POL tag = BEL tag = HOL tag = DEN  }   } }
 	# 	}
 		
 	# 	cost = 0.44
@@ -108,7 +108,6 @@ ability = {
 		}
 		
 		unit_modifiers = {
-			paratrooper_count_per_plane = 1.0
 			paradrop_organization_factor = 2.0
 			paratrooper_aa_defense = 0.5
 		}

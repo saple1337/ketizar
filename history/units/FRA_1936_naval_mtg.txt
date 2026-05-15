@@ -1,4 +1,4 @@
-﻿units= {
+units= {
 	fleet = {
 		name = "Amiral Nord" #Fleet moved to the UK file because of serious exploiting with fleet transfer decisions
 		naval_base = 575 # Dunkerque

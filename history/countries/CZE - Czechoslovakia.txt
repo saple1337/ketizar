@@ -1,4 +1,4 @@
-﻿capital = 9
+capital = 9
 add_to_tech_sharing_group = axis_research 
 oob = "slo_1936"
 army_experience = 10
@@ -61,7 +61,6 @@ recruit_character = CZE_ludvik_svoboda
 recruit_character = CZE_frantisek_havel
 recruit_character = CZE_stefan_osusky
 recruit_character = CZE_ferdinand_catlos
-recruit_character = CZE_jozef_tiso
 recruit_character = CZE_vojtech_tuka
 recruit_character = CZE_konrad_henlein
 recruit_character = CZE_gustav_husak

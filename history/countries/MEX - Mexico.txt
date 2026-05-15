@@ -1,4 +1,4 @@
-﻿capital = 277
+capital = 277
 army_experience = 10
 navy_experience = 10
 air_experience = 2

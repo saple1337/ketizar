@@ -639,8 +639,9 @@ axis_defeat = {
 			68 = {
 				transfer_state_to = SOV
 			}
-			722 = {
-				transfer_state_to = SOV
+				722 = {
+					transfer_state_to = SOV
+				}
 			}
 			news_event = {
 				hours = 24
@@ -653,7 +654,6 @@ axis_defeat = {
 				}
 			}
 		}
-	}
 	if = {
 		limit = {
 			has_global_flag = sov_cap_lol

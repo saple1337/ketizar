@@ -1,4 +1,4 @@
-﻿# OVERRIDE - Removes nonexistent ETH tag from ship naming
+# OVERRIDE - Removes nonexistent ETH tag from ship naming
 ETH_NAMES_01 = {
 	name = NAME_THEME_CITIES
 	for_countries = { }

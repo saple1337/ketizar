@@ -1,4 +1,4 @@
-﻿capital = 10
+capital = 10
 
 oob = "POL_1936"
 if = {
@@ -44,13 +44,13 @@ set_technology = {
 		basic_medium_airframe = 1
 					aa_lmg = 1
 
-	trench_warfare = 1
-	grand_battle_plan = 1
-	prepared_defense = 1
-	grand_assault = 1
-	infantry_offensive = 1
-	armored_operations = 1
-	infiltration_assault = 1
+	# trench_warfare = 1
+	# grand_battle_plan = 1
+	# prepared_defense = 1
+	# grand_assault = 1
+	# infantry_offensive = 1
+	# armored_operations = 1
+	# infiltration_assault = 1
 	radio = 1
 	#improved_light_spaa = 1
 	#improved_light_td = 1
@@ -66,11 +66,42 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
 		early_ship_hull_light = 1
-		#early_ship_hull_submarine = 1
-		#basic_ship_hull_submarine = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
 		basic_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
+	}
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	create_equipment_variant = {
+		name = "Wilk Class"
+		type = ship_hull_submarine_2
+		name_group = POL_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_mine_layer_sub
+		}
+	}
+	create_equipment_variant = {
+		name = "Wicher Class"
+		type = ship_hull_light_1
+		name_group = POL_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
 	}
 }
 

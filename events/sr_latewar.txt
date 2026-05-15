@@ -1,4 +1,4 @@
-﻿add_namespace = srlatewar
+add_namespace = srlatewar
 
 country_event = { 
 	id = srlatewar.1

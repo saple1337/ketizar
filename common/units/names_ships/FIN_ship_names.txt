@@ -1,9 +1,9 @@
-﻿##### FINLAND NAME LISTS #####
+##### FINLAND NAME LISTS #####
 ### REGULAR DESTROYER NAMES###
 FIN_DD_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_DESTROYERS
 
-	for_countries = { FIN }
+	for_countries = { }
 
 	type = ship
 	ship_types = { ship_hull_light destroyer }			
@@ -20,7 +20,7 @@ FIN_DD_HISTORICAL = {
 FIN_CL_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CL
 
-	for_countries = { FIN }
+	for_countries = { }
 
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
@@ -37,7 +37,7 @@ FIN_CL_HISTORICAL = {
 FIN_CA_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CA
 
-	for_countries = { FIN }
+	for_countries = { }
 
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
@@ -55,7 +55,7 @@ FIN_CA_HISTORICAL = {
 FIN_BB_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_BB
 
-	for_countries = { FIN }
+	for_countries = { }
 
 	type = ship
 	ship_types = { ship_hull_heavy battleship }
@@ -71,7 +71,7 @@ FIN_BB_HISTORICAL = {
 FIN_BC_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_BC
 
-	for_countries = { FIN }
+	for_countries = { }
 
 	type = ship
 	ship_types = { ship_hull_heavy battle_cruiser }
@@ -87,7 +87,7 @@ FIN_BC_HISTORICAL = {
 FIN_CV_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CARRIERS
 
-	for_countries = { FIN }
+	for_countries = { }
 
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
@@ -104,7 +104,7 @@ FIN_CV_HISTORICAL = {
 FIN_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES
 
-	for_countries = { FIN }
+	for_countries = { }
 
 	type = ship
 	ship_types = { ship_hull_submarine submarine }

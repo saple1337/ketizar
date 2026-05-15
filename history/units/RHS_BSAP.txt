@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "British South African Police" 			# Rhodesian, despite the name, Para Military Police force used for internal security
 
 	division_names_group = RHS_MOT_01

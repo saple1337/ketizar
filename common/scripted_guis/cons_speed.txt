@@ -5,9 +5,9 @@ scripted_gui = {
 		window_name = "cons_speed_opener_container"
 		parent_window_token = construction_tab
 
-		visible = {
-			ai = no
-		}
+			visible = {
+				is_ai = no
+			}
 		
 		ai_enabled = {
 			always = no
@@ -30,10 +30,10 @@ scripted_gui = {
 		window_name = "cons_speed_container"
 		parent_window_token = construction_tab
 
-		visible = {
-			NOT = { has_country_flag = cons_speed_on }
-			ai = no
-		}
+			visible = {
+				NOT = { has_country_flag = cons_speed_on }
+				is_ai = no
+			}
 		
 		ai_enabled = {
 			always = no

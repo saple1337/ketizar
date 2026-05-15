@@ -1,4 +1,4 @@
-﻿capital = 276
+capital = 276
 army_experience = 10
 navy_experience = 10
 air_experience = 2
@@ -66,14 +66,14 @@ set_technology = { basic_train = 1
 	naval_bomber1 = 1
 		basic_medium_airframe = 1
 					aa_lmg = 1
-	trench_warfare = 1
-	fleet_in_being = 1
+	# trench_warfare = 1
+	# fleet_in_being = 1
 	tech_field_hospital = 1
 	support_weapons = 1
 	tech_logistics_company = 1
 	fuel_silos = 1
 	##fuel_refining = 1
-	desertinfantry_at = 1
+	# desertinfantry_at = 1
 	interwar_antitank = 1	
 	tech_mountaineers = 1
 	synth_oil_experiments = 1

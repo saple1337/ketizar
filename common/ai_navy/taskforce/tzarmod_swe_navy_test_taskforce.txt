@@ -1,0 +1,20 @@
+tzarmod_swe_test_patrol = {
+	allowed = {
+		original_tag = SWE
+	}
+	ai_will_do = {
+		factor = 100
+	}
+	mission = { naval_patrol }
+	min_composition = {
+		destroyer = {
+			amount = 1
+		}
+	}
+	optimal_composition = {
+		destroyer = {
+			amount = 2
+		}
+	}
+}
+

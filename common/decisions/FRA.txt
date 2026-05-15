@@ -481,7 +481,7 @@ operations = {
 	# 			limit = {
 	# 				NOT = {
 	# 					SAF = {
-	# 						has_completed_focus = SAF_secure_interests_in_africa
+	# 						always = no
 	# 					}
 	# 				}
 	# 			}

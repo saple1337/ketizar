@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "División de Infanteria"
 
 	division_names_group = SPAN_INF_01
@@ -63,8 +63,6 @@ division_template = {
 		signal_company = { x = 0 y = 2 }
 		logistics_company = { x = 0 y = 3 }
 		maintenance_company = { x = 0 y = 4 }
-		field_hospital = { x = 0 y = 5 }
-		anti_air = { x = 0 y = 6 }
 	}
 }
 

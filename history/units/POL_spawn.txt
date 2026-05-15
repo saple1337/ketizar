@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "Dywizja Piechoty"
 	division_names_group = POL_INF_01
 	regiments = {
@@ -95,10 +95,6 @@
 		anti_tank = {
 			x = 0
 			y = 4
-		}
-		anti_air = {
-			x = 0
-			y = 5
 		}
 	}
 }
@@ -208,14 +204,6 @@ division_template = {
 		maintenance_company = {
 			x = 0
 			y = 4
-		}
-		field_hospital = {
-			x = 0
-			y = 5
-		}
-		anti_air = {
-			x = 0
-			y = 6
 		}
 	}
 }

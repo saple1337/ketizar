@@ -49,14 +49,14 @@ set_technology = {
 	infantry_weapons1 = 1
 	tech_support = 1
 	paratroopers = 1
-	shocktroops = 1
+	# shocktroops = 1
 	tech_engineers = 1
 	tech_recon = 1
 	motorised_infantry = 1
 	gw_artillery = 1
 	tech_mountaineers = 1
 	marines = 1
-	desertinfantry_at = 1
+	# desertinfantry_at = 1
 	interwar_antiair = 1
 	interwar_antitank = 1
 	gwtank_chassis = 1
@@ -74,8 +74,8 @@ set_technology = {
 	# aa_lmg = 1`
 	tech_field_hospital = 1
 	tech_mountaineers = 1
-	trench_warfare = 1
-	fleet_in_being = 1
+	# trench_warfare = 1
+	# fleet_in_being = 1
 	electronic_mechanical_engineering = 1
 	radio = 1
 	radio_detection = 1
@@ -321,6 +321,14 @@ set_politics = {
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = yes	##suspended through duration of war, which is handled via event
+}
+
+every_owned_state = {
+	limit = {
+		NOT = { is_core_of = ENG }
+	}
+	add_core_of = ENG
+	set_garrison_strength = 0
 }
 
 set_popularities = {

@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "Mountaineer-Division"
 
 	regiments = {
@@ -6,17 +6,14 @@
 	    mountaineers = { x = 0 y = 1 }
 		mountaineers = { x = 0 y = 2 }
 		mountaineers = { x = 0 y = 3 }
-		mountaineers = { x = 0 y = 4 }
 		mountaineers = { x = 1 y = 0 }
 		mountaineers = { x = 1 y = 1 }
 		mountaineers = { x = 1 y = 2 }
 		mountaineers = { x = 1 y = 3 }
-		mountaineers = { x = 1 y = 4 }
 		mountaineers = { x = 2 y = 0 }
 		mountaineers = { x = 2 y = 1 }
 		mountaineers = { x = 2 y = 2 }
 		anti_air_brigade = { x = 2 y = 3 }
-		artillery_brigade = { x = 2 y = 4 }
 		artillery_brigade = { x = 3 y = 0 }
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }

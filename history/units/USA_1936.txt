@@ -1,33 +1,10 @@
-﻿division_template = {
+division_template = {
 	name = "Supression Template"
+	role = garrison
+	template_counter = 1
 	regiments = {
-		cavalry = { x = 0 y = 0 }
-        cavalry = { x = 0 y = 1 }
-	    cavalry = { x = 0 y = 2 }
-		cavalry = { x = 0 y = 3 }
-		cavalry = { x = 0 y = 4 }
-        cavalry = { x = 1 y = 0 }
-        cavalry = { x = 1 y = 1 }
-	    cavalry = { x = 1 y = 2 }
-		cavalry = { x = 1 y = 3 }
-		cavalry = { x = 1 y = 4 }
-		cavalry = { x = 2 y = 0 }
-        cavalry = { x = 2 y = 1 }
-	    cavalry = { x = 2 y = 2 }
-		cavalry = { x = 2 y = 3 }
-		cavalry = { x = 2 y = 4 }
-		cavalry = { x = 3 y = 0 }
-        cavalry = { x = 3 y = 1 }
-	    cavalry = { x = 3 y = 2 }
-		cavalry = { x = 3 y = 3 }
-		cavalry = { x = 3 y = 4 }
-		cavalry = { x = 4 y = 0 }
-        cavalry = { x = 4 y = 1 }
-	    cavalry = { x = 4 y = 2 }
-		cavalry = { x = 4 y = 3 }
-		cavalry = { x = 4 y = 4 }
+		infantry = { x = 0 y = 0 }
 	}
-	support = { military_police = { x = 0 y = 0 } }
 }
 division_template = {
 	name = "Infantry Division"
@@ -94,12 +71,10 @@ division_template = {
 		marine = { x = 0 y = 1 }
 		marine = { x = 0 y = 2 }
 		marine = { x = 0 y = 3 }
-		marine = { x = 0 y = 4 }
 		marine = { x = 1 y = 0 }
 		marine = { x = 1 y = 1 }
 		marine = { x = 1 y = 2 }
 		marine = { x = 1 y = 3 }
-		marine = { x = 1 y = 4 }
 		marine = { x = 2 y = 0 }
 		marine = { x = 2 y = 1 }
 		marine = { x = 2 y = 2 }
@@ -150,8 +125,6 @@ division_template = {
 		signal_company = { x = 0 y = 2 }
 		logistics_company = { x = 0 y = 3 }
 		maintenance_company = { x = 0 y = 4 }
-		field_hospital = { x = 0 y = 5 }
-		anti_air = { x = 0 y = 6 }
 	}
 }
 

@@ -1,4 +1,4 @@
-﻿capital = 219 #Moscow
+capital = 219 #Moscow
 
 # Starting tech
 	set_technology = {

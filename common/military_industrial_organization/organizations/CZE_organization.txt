@@ -25,7 +25,7 @@ CZE_ckd_organization = {
 	visible = {
 		IF = {
 			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			FROM = { always = no}
 		}
 	}
 
@@ -77,7 +77,7 @@ CZE_skoda_armor_organization = {
 	visible = {
 		IF = {
 			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			FROM = { always = no}
 		}
 	}
 
@@ -200,7 +200,7 @@ CZE_skoda_artillery_organization = {
 	visible = {
 		IF = {
 			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			FROM = { always = no}
 		}
 	}
 

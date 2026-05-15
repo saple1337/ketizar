@@ -646,7 +646,7 @@ SOV_okmo_organization = {
 					is_subject_of = SOV
 				}
 				#is_in_faction_with = SOV
-				NOT = { has_completed_focus = BUL_nationalization }
+				NOT = { always = no}
 			}
 		}
 	}
@@ -772,7 +772,7 @@ SOV_mytishchy_machine_building_plant_organization = {
 	visible = {
 		IF = { 
 			limit = { FROM = { original_tag = ETH } } 
-			FROM = { has_completed_focus = ETH_mytishchi-ababa_plant }
+			FROM = { always = no}
 		}
 	}
 
@@ -1053,7 +1053,7 @@ SOV_nevskoye_design_bureau_organization = {
 					is_subject_of = SOV
 				}
 				#is_in_faction_with = SOV
-				NOT = { has_completed_focus = BUL_nationalization }
+				NOT = { always = no}
 			}
 		}
 	}
@@ -1076,7 +1076,7 @@ SOV_nevskoye_design_bureau_organization = {
 				SOV = {has_full_control_of_state = 195} #LENINGRAD
 			}
 			FROM = {
-				SOV = {has_completed_focus = SOV_merge_naval_plants}
+				SOV = {always = no}
 			}
 		}
 
@@ -1127,7 +1127,7 @@ SOV_nevskoye_design_bureau_organization = {
 				SOV = {has_full_control_of_state = 195} #LENINGRAD
 			}
 			FROM = {
-				SOV = {has_completed_focus = SOV_merge_naval_plants}
+				SOV = {always = no}
 			}
 		}
 
@@ -1178,7 +1178,7 @@ SOV_nevskoye_design_bureau_organization = {
 				SOV = {has_full_control_of_state = 195} #LENINGRAD
 			}
 			FROM = {
-				SOV = {has_completed_focus = SOV_merge_naval_plants}
+				SOV = {always = no}
 			}
 			#Only exists in this MIO
 		}
@@ -1209,7 +1209,7 @@ SOV_rubin_design_bureau_organization = {
 	visible = {
 		IF = { 
 			limit = { FROM = { original_tag = ETH } } 
-			FROM = { has_completed_focus = ETH_soviet-ethiopian_trade_agreement }
+			FROM = { always = no}
 		}
 	}
 
@@ -1226,7 +1226,7 @@ SOV_rubin_design_bureau_organization = {
 			limit = {
 				FROM = { original_tag = NOR }
 			}
-			FROM = { has_completed_focus = NOR_invite_soviet_designers }
+			FROM = { always = no}
 		}
 	}
 
@@ -1248,7 +1248,7 @@ SOV_rubin_design_bureau_organization = {
 				SOV = {has_full_control_of_state = 195} #LENINGRAD
 			}
 			FROM = {
-				SOV = {has_completed_focus = SOV_merge_naval_plants}
+				SOV = {always = no}
 			}
 		}
 
@@ -1299,7 +1299,7 @@ SOV_rubin_design_bureau_organization = {
 				SOV = {has_full_control_of_state = 195 }#LENINGRAD
 			}
 			FROM = {
-				SOV = {has_completed_focus = SOV_merge_naval_plants}
+				SOV = {always = no}
 			}
 		}
 
@@ -1352,8 +1352,8 @@ SOV_rubin_design_bureau_organization = {
 				SOV = {has_full_control_of_state = 195} #LENINGRAD
 			}
 			FROM = {
-			SOV = {	has_completed_focus = SOV_merge_naval_plants}
-				SOV = {has_completed_focus = SOV_surface_warfare}
+			SOV = {	always = no}
+				SOV = {always = no}
 			}
 			#Only exists in this MIO
 		}
@@ -1385,9 +1385,7 @@ SOV_rubin_design_bureau_organization = {
 				has_full_control_of_state = 195 #LENINGRAD
 			}
 			FROM = {
-				has_completed_focus = SOV_merge_naval_plants
-				has_completed_focus = SOV_submarine_warfare
-			}
+				always = no}
 			#Only exists in this MIO
 		}
 
@@ -1454,8 +1452,7 @@ SOV_black_sea_shipyard_organization = {
 				has_full_control_of_state = 227 #STALINO
 			}
 			FROM = {
-				has_completed_focus = SOV_merge_naval_plants
-			}
+				always = no}
 		}
 
 		on_complete = {
@@ -1505,8 +1502,7 @@ SOV_black_sea_shipyard_organization = {
 				has_full_control_of_state = 227 #STALINO
 			}
 			FROM = {
-				has_completed_focus = SOV_merge_naval_plants
-			}
+				always = no}
 		}
 
 		visible = {
@@ -1558,9 +1554,7 @@ SOV_black_sea_shipyard_organization = {
 				has_full_control_of_state = 202 #KIEV
 			}
 			FROM = {
-				has_completed_focus = SOV_merge_naval_plants
-				has_completed_focus = SOV_surface_warfare
-			}
+				always = no}
 			#Only exists in this MIO
 		}
 
@@ -1591,9 +1585,7 @@ SOV_black_sea_shipyard_organization = {
 				has_full_control_of_state = 227 #STALINO
 			}
 			FROM = {
-				has_completed_focus = SOV_merge_naval_plants
-				has_completed_focus = SOV_submarine_warfare
-			}
+				always = no}
 			#Only exists in this MIO
 		}
 
@@ -1655,8 +1647,7 @@ SOV_sevastopol_marine_plant_organization = {
 				has_full_control_of_state = 227 #STALINO
 			}
 			FROM = {
-				has_completed_focus = SOV_merge_naval_plants
-			}
+				always = no}
 		}
 
 		on_complete = {
@@ -1706,8 +1697,7 @@ SOV_sevastopol_marine_plant_organization = {
 				has_full_control_of_state = 227 #STALINO
 			}
 			FROM = {
-				has_completed_focus = SOV_merge_naval_plants
-			}
+				always = no}
 		}
 
 		visible = {
@@ -1757,8 +1747,7 @@ SOV_sevastopol_marine_plant_organization = {
 				has_full_control_of_state = 197 #MYKOLAIV
 			}
 			FROM = {
-				has_completed_focus = SOV_merge_naval_plants
-			}
+				always = no}
 			#Only exists in this MIO
 		}
 
@@ -1798,7 +1787,7 @@ SOV_mig_design_bureau_organization = {
 	visible = {
 		IF = { 
 			limit = { FROM = { original_tag = ETH } } 
-			FROM = { has_completed_focus = ETH_soviet-ethiopian_trade_agreement }
+			FROM = { always = no}
 		}
 	}
 
@@ -1965,7 +1954,7 @@ SOV_ilyushin_design_bureau_organization = {
 					is_subject_of = SOV
 				}
 				#is_in_faction_with = SOV
-				NOT = { has_completed_focus = BUL_nationalization }
+				NOT = { always = no}
 			}
 		}
 	}
@@ -2438,8 +2427,7 @@ SOV_grabin_design_bureau_organization = {
 		IF = {
 			limit = { FROM = { original_tag = GRE } }
 			FROM = {
-				has_completed_focus = GRE_appeal_to_the_soviet_union 
-			}
+				always = no}
 		}
 	}
 
@@ -2712,7 +2700,7 @@ SOV_gaz_organization = {
 	visible = {
 		IF = { 
 			limit = { FROM = { original_tag = ETH } } 
-			FROM = { has_completed_focus = ETH_soviet-ethiopian_trade_agreement }
+			FROM = { always = no}
 		}
 	}
 	
@@ -2729,7 +2717,7 @@ SOV_gaz_organization = {
 			limit = {
 				FROM = { original_tag = NOR }
 			}
-			FROM = { has_completed_focus = NOR_invite_soviet_designers }
+			FROM = { always = no}
 		}
 	}
 	add_trait = { 

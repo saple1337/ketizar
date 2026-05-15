@@ -1,4 +1,4 @@
-﻿units = {
+units = {
 	##### Nyasaland KAR force spawned from RHS tree #####
 	division= {
 		name = "27th 'Rhodesian' Brigade"

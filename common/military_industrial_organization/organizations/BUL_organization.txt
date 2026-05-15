@@ -99,7 +99,7 @@ BUL_dar_organization = {
 			limit = {
 				has_dlc = "Battle for the Bosporus"
 			}
-			FROM = { has_completed_focus = BUL_darzhavna_aeroplanna_rabotilnitsa }
+			FROM = { always = no}
 		}
 	}
 
@@ -137,7 +137,7 @@ BUL_kaproni_bulgarski_organization = {
 	}
 
 	available = {
-		FROM = { has_completed_focus = BUL_kaproni_bulgarski }
+		FROM = { always = no}
 	}
 
 	add_trait = { 
