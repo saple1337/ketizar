@@ -1,0 +1,11 @@
+﻿l_english:
+  BIU_light_infantry: "Light Infantry Battalion"
+  BIU_heavy_infantry: "Heavy Infantry Battalion"
+  BIU_reinforced_infantry: "Reinforced Infantry Battalion"
+  BIU_garrison_infantry: "Garrison Battalion"
+  BIU_home_guard_infantry: "Home Guard Battalion"
+
+  BIU_light_tank_infantry: "Light Tank Infantry"
+  BIU_medium_tank_infantry: "Medium Tank Infantry"
+  BIU_heavy_tank_infantry: "Heavy Tank Infantry"
+  BIU_modern_tank_infantry: "Modern Tank Infantry"

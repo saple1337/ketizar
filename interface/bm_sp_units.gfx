@@ -1,0 +1,15 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_unit_bm_tracked_mine_company_icon_medium"
+		textureFile = "gfx/bm_sp_units/large/bm_tracked_mine_company.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_bm_tracked_mine_company_icon_small"
+		textureFile = "gfx/bm_sp_units/texticon/bm_tracked_mine_company.png"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	
+}
