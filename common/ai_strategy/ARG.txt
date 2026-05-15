@@ -11,9 +11,4 @@ ARG_avoid_china = {
 		date > 1945.1.1
 	}
 
-	ai_strategy = {
-		type = alliance
-		id = "ARG"
-		value = -1000
-	}
 }

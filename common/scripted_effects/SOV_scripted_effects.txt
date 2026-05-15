@@ -2927,16 +2927,6 @@ SOV_foreign_politics_decision_cost_reduction_effect = { #Add more diplomacy vars
 }
 
 SOV_approach_sinkiang_diplomacy_effect = {
-	add_ai_strategy = {
-		type = befriend
-		id = SIK			
-		value = 15
-	}
-	add_ai_strategy = {
-		type = alliance
-		id = SIK		
-		value = 15
-	}
 	
 }
 

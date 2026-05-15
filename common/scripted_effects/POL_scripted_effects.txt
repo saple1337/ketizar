@@ -469,61 +469,6 @@ POL_monarchist_civil_war_effect = {
 	}
 	if = {
 		limit = {
-			tag = LIT
-		}
-		if = {
-			limit = {
-				POL = {
-					owns_state = 784
-				}
-			}
-			transfer_state = 784
-			start_civil_war = {
-				ideology = neutrality
-				size = civil_war_size_var
-				keep_political_leader = yes
-				states = { 784 }
-				keep_unit_leaders_trigger = {
-					NOT = { has_unit_leader_flag = POL_monarchy_sympathies_flag }
-				}
-			}
-		}
-		else = {
-			start_civil_war = {
-				ideology = neutrality
-				size = civil_war_size_var
-				keep_political_leader = yes
-				keep_unit_leaders_trigger = {
-					NOT = { has_unit_leader_flag = POL_monarchy_sympathies_flag }
-				}
-			}
-		}
-
-		random_other_country = {
-			limit = {
-				has_civil_war = yes
-				original_tag = LIT
-			}
-			set_cosmetic_tag = LIT_KINGDOM
-			set_country_flag = POL_lithuanian_personal_union_flag
-		}
-		if = {
-			limit = {
-				any_other_country = {
-					original_tag = POL
-					POL_is_valid_to_boost_monarchy = yes 
-				}
-			}
-			every_other_country = {
-				limit = {
-					original_tag = POL
-				}
-				set_country_flag = attempted_royal_takeover_in_LIT
-			}
-		}
-	}
-	if = {
-		limit = {
 			tag = ROM
 		}
 		ROM = {
@@ -590,41 +535,6 @@ POL_monarchist_civil_war_effect = {
 					original_tag = POL
 				}
 				set_country_flag = attempted_royal_takeover_in_CZE
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = POL
-		}
-		start_civil_war = {
-			ideology = neutrality
-			size = civil_war_size_var
-			keep_political_leader = yes
-			keep_unit_leaders_trigger = {
-				NOT = { has_unit_leader_flag = POL_monarchy_sympathies_flag }
-			}
-		}
-		random_other_country = {
-			limit = {
-				has_civil_war = yes
-				original_tag = POL
-			}
-			set_cosmetic_tag = POL_KINGDOM
-			set_country_flag = LIT_poland_personal_union_flag
-		}
-		if = {
-			limit = {
-				any_other_country = {
-						original_tag = LIT
-						POL_is_valid_to_boost_monarchy = yes 
-				}
-			}
-			every_other_country = {
-				limit = {
-					original_tag = LIT
-				}
-				set_country_flag = attempted_royal_takeover_in_POL
 			}
 		}
 	}
@@ -750,30 +660,12 @@ POL_become_german_puppet_effect = {
 }
 
 POL_divide_lithuania_effect = {
-	188 = { add_core_of = GER }
-	
-	POL = {
-		annex_country = {
-			target = LIT
-			transfer_troops = no
-		}
-	}
 }
 
+
 POL_lithuania_wargoal_claims_effect = {
-	188 = { add_core_of = GER }
-	189 = { add_claim_by = POL }
-	815 = { add_claim_by = POL }
-	11 = { add_claim_by = POL }
-	814 = { add_claim_by = POL }
-	GER = {
-		create_wargoal = {
-			type = take_core_state
-			generator = { 188 }
-			target = LIT
-		}
-	}
 }
+
 
 POL_set_attempted_royal_takeover_flag = {
 	hidden_effect = {
@@ -781,12 +673,6 @@ POL_set_attempted_royal_takeover_flag = {
 			limit = { original_tag = POL }
 			FROM = {
 				set_country_flag = attempted_royal_takeover_in_POL
-			}
-		}
-		else_if = {
-			limit = { original_tag = LIT }
-			FROM = {
-				set_country_flag = attempted_royal_takeover_in_LIT
 			}
 		}
 		else_if = {

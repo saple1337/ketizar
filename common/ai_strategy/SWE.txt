@@ -543,11 +543,6 @@ SWE_dont_guarantee_people_if_historical = {
 		value = -2000
 	 }
 
-  	 ai_strategy = {
-		type = protect
-		id = "BRA"
-		value = -2000
-	 }
 
 	 ai_strategy = {
 		type = protect

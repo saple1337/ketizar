@@ -496,12 +496,6 @@ BUL_we_dont_want_to_fight_sov = {
 	}
 	ai_strategy = {
 		type = dont_join_wars_with
-		id = SLO
-		target_country = SOV
-		value = 99999
-	}
-	ai_strategy = {
-		type = dont_join_wars_with
 		id = CZE
 		target_country = SOV
 		value = 99999

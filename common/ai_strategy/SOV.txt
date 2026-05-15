@@ -961,75 +961,7 @@ SOV_dont_mess_with_volunteers_for_european_democratic_nations = { # Reverse stra
 	}
 }
 
-SOV_dont_send_volunteers_that_early_to_china = {
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		JAP = { has_war_with = CHI }
-		country_exists = CHI
-		CHI = {
-			surrender_progress < 0.8
-		}
-	}
 
-	abort = {
-		CHI = {
-			surrender_progress > 0.8
-		}
-		OR = {
-			#Soviet focus plans are set so that they support a Chinese tag in 39-40
-			AND = {
-				always = no
-				country_exists = SIK
-				
-			}
-			AND = {
-				always = no
-				country_exists = PRC
-				
-			}
-			AND = {
-				always = no
-				country_exists = CHI
-				CHI = { has_war_with = JAP }
-			}
-		}
-	}
-
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "CHI"
-		value = -800
-	}
-		ai_strategy = {
-		type = send_volunteers_desire
-		id = "PRC"
-		value = -800
-	}
-}
-
-SOV_send_volunteers_to_sinkiang = {
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		
-		country_exists = SIK
-	}
-
-	abort = {
-		NOT = {
-			
-		}
-	}
-
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "SIK"
-		value = 999
-	}
-}
 
 SOV_dont_send_volunteers_to_japan = {
 	allowed = {
@@ -1055,21 +987,6 @@ SOV_dont_send_volunteers_to_japan = {
 	ai_strategy = {
 		type = send_volunteers_desire
 		id = "MAN"
-		value = -800
-	}
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "MEN"
-		value = -800
-	}
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "KOR"
-		value = -800
-	}
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "RNG"
 		value = -800
 	}
 }
@@ -1782,74 +1699,8 @@ SOV_litvinov_active_hostile_others = {
 #########################
 
 #Soviets
-SOV_khakimov_proposal_sov = {
-	allowed = {
-		original_tag = SOV
-	}
-
-	enable = {
-		has_idea = SOV_maksim_litvinov
-		always = no
-		
-		is_subject = no
-	}
-
-	abort = {
-		OR = {
-			NOT = { has_idea = SOV_maksim_litvinov }
-			is_in_faction_with = SAU
-			
-			
-			
-			is_subject = yes
-		}
-	}
-
-	ai_strategy = {
-		type = diplo_action_desire
-		id = SAU
-		target = befriend
-		value = 50
-	}
-	ai_strategy = {
-		type = diplo_action_desire
-		id = SAU
-		target = improve_relation
-		value = 50
-	}
-}
 
 #Soviets
-SOV_khakimov_proposal_sau = {
-	allowed = {
-		original_tag = SAU
-	}
-
-	enable = {
-		SOV = {
-			has_idea = SOV_maksim_litvinov
-			always = no
-			is_subject = no
-		}
-		is_subject = no
-	}
-
-	abort = {
-		OR = {
-			SOV = { NOT = { has_idea = SOV_maksim_litvinov } }
-			is_in_faction_with = SOV
-			SOV = { has_capitulated = yes }
-			is_subject = yes
-		}
-	}
-
-	ai_strategy = {
-		type = diplo_action_desire
-		id = SOV
-		target = befriend
-		value = 25
-	}
-}
 
 SOV_unit_buffer_for_asian_threat = {
 	allowed = {
@@ -2084,16 +1935,6 @@ SOV_ultimatum_LIT = {
 		}
 	}
 
-	ai_strategy = {
-		type = antagonize
-		id = LIT
-		value = -50
-	}
-	ai_strategy = {
-		type = conquer
-		id = LIT
-		value = -200
-	}
 }
 
 SOV_ultimatum_LAT = {
@@ -2111,16 +1952,6 @@ SOV_ultimatum_LAT = {
 		}
 	}
 
-	ai_strategy = {
-		type = antagonize
-		id = LAT
-		value = -50
-	}
-	ai_strategy = {
-		type = conquer
-		id = LAT
-		value = -200
-	}
 }
 
 SOV_ultimatum_EST = {
@@ -2138,16 +1969,6 @@ SOV_ultimatum_EST = {
 		}
 	}
 
-	ai_strategy = {
-		type = antagonize
-		id = EST
-		value = -50
-	}
-	ai_strategy = {
-		type = conquer
-		id = EST
-		value = -200
-	}
 }
 
 #No longer necessary

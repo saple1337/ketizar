@@ -493,35 +493,6 @@ CHI_aifc_incompetent_officers = {
 #SEA
 
 #The north needs to fall quickly
-CHI_dont_defend_HBC = {
-	allowed = {
-		has_dlc = "No Compromise, No Surrender"
-		is_literally_china = yes
-	}
-
-	enable = {
-		is_in_faction_with = HBC
-		OR = {	
-			1039 = {
-				is_controlled_by = HBC
-			}
-			608 = {
-				is_controlled_by = HBC
-			}
-		}
-		CHI = {
-			NOT = { always = no }
-		}
-	}
-
-	abort_when_not_enabled = yes 
-
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = HBC
-		value = 100
-	}
-}
 
 ##The north needs to fall quickly
 
@@ -538,16 +509,6 @@ CHI_dont_defend_northern_warlords = {
 
 	abort_when_not_enabled = yes 
 
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = HBC
-		value = 150
-	}
-		ai_strategy = {
-		type = dont_defend_ally_borders
-		id = SHX
-		value = 150
-	}
 }
 
 #The coast is a lost cause, so build inland instead
@@ -794,61 +755,6 @@ CHI_prioritize_coast_garrisons_low_effort = { # Specifically for fasc-chi
 
 # Make sure Sinkiang tries to push aggressively 
 
-HBC_do_everything_possible_to_allow_japan_to_invade = {
-	allowed = {
-		original_tag = HBC
-	}
-	enable = {	
-		has_war = no
-		date < 1938.1.1
-		CHI = {
-			NOT = { always = no }
-		}
-	}
-	abort_when_not_enabled = yes
-	
-	#We don't need to keep a watch over Japan, right?
-	ai_strategy = {
-		type = front_control
-		id = JAP
-		value = -50
-	}
-	#Who even cares about Mengchukuo?
-	ai_strategy = {
-		type = front_control
-		id = MEN
-		value = -50
-	}
-	#China sounds very sus, let's watch THEM
-	ai_strategy = {
-		type = front_control
-		id = CHI
-		value = 50
-	}
-	#We're watching you Shanxi!
-	ai_strategy = {
-		type = front_control
-		id = SHX
-		value = 50
-	}
-	#Who's dis then? Better keep a close eye on.... *looks in notes* Shandong
-		#Don't Garrison our Victory Points - they're too close to Japan!
-	ai_strategy = {
-		type = garrison
-		value = -25
-	}
-	#Put our troops literally anywhere but close to Japan
-	ai_strategy = {
-		type = put_unit_buffers
-		states = {
-			614 #Hebei
-		}
-		ratio = 2
-		area = asia
-		subtract_invasions_from_need = no
-		subtract_fronts_from_need = no
-	}
-}
 
 #Japan will be gunning for us from the south soon!
 
@@ -1040,9 +946,4 @@ CHI_stop_helping_HBC = {
 	}
 	abort_when_not_enabled = yes
 
-	ai_strategy = {
-		type = support
-		id = HBC
-		value = -100
-	}
 } 

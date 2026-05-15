@@ -58,11 +58,6 @@ RAJ_communist_pakistan_surrounded = {
 	}
 	abort_when_not_enabled = yes
 
-	ai_strategy = {
-		type = prepare_for_war
-		id = PAK
-		value = 10
-	}	
 }
 
 RAJ_communist_i_dont_want_a_navy = {

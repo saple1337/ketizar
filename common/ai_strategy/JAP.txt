@@ -305,67 +305,6 @@ JAP_glorious_nippon_steel_has_triumphed = {
 
 }
 
-southern_expansion = {
-	allowed = {
-		original_tag = JAP
-	}
-	enable = {
-		#always = no
-		has_completed_focus = JAP_strike_the_southern_road
-		OR = {
-			country_exists = HOL
-			country_exists = ENG
-			country_exists = BRM
-			country_exists = RAJ
-			country_exists = MAL
-			country_exists = INS
-		}
-	}
-	abort = {
-		NOT = {
-			country_exists = HOL
-			country_exists = ENG
-			country_exists = BRM
-			country_exists = RAJ
-			country_exists = MAL
-			country_exists = INS 
-		}
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = HOL
-		value = 200
-	}
-	ai_strategy = {
-		type = antagonize
-		id = ENG
-		value = 100
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = BRM
-		value = 200
-	}
-	ai_strategy = {
-		type = antagonize
-		id = RAJ
-		value = 100
-	}
-	ai_strategy = {
-		type = antagonize
-		id = MAL
-		value = 200
-	}
-	ai_strategy = {
-		type = antagonize
-		id = INS
-		value = 100
-	}
-
-
-}
 
 northern_expansion = {
 	allowed = {
@@ -423,57 +362,6 @@ chinese_war = {
 # Make sure Japan tries to take down SND aggressively 
 
 # Make sure Japan tries to take down HBC aggressively 
-JAP_push_hbc_hard_initially = {
-	allowed = {
-		original_tag = JAP
-	}
-	enable = {
-		OR = {
-			AND = {
-				is_historical_focus_on = yes
-				date > 1937.1.1
-			}
-			has_war_with = HBC
-		}
-		date < 1939.1.1
-	}
-
-	abort_when_not_enabled = yes
-
-	abort = {
-		1039 = {
-			state_is_fully_controlled_by_ROOT_or_subject = yes
-		}
-		608 = {
-			state_is_fully_controlled_by_ROOT_or_subject = yes
-		}
-	}
-
-	ai_strategy = {
-		type = conquer
-		id = HBC
-		value = 500
-	}
-
-	ai_strategy = {
-		type = front_control
-		state = 611
-		ratio = 0.3
-		priority = 1000
-		ordertype = front
-		execution_type = rush
-		execute_order = yes
-	}
-	ai_strategy = {
-		type = front_control
-		state = 608
-		ratio = 0.3
-		priority = 1000
-		ordertype = front
-		execution_type = rush
-		execute_order = yes
-	}
-}
 
 JAP_needs_some_supply_hubs = {
 	allowed = {
@@ -843,219 +731,18 @@ JAP_template_design = {
 }
 
 # hey dynamic targets would be swole as f*
-all_china_must_prosper_in_my_prosperity_sphere_SIK = {
-	allowed = {
-		original_tag = JAP
-	}
-	enable = {
-		OR = {
-			NOT = { country_exists = CHI }
-			CHI = {
-				is_in_faction_with = JAP
-				is_puppet_of = JAP
-			}
-		}
-		country_exists = SIK
-		NOT = {
-			
-			AND = {
-				OR = {
-					AND = {
-						has_global_flag = SOV_soviet_japanese_reconciliation_flag
-						NOT = { has_war_with = SOU }
-					}
-					has_non_aggression_pact_with = SOU
-					is_in_faction_with = SOU
-				}
-				
-			}
-		}
-	}
-
-	abort = {
-		OR = {
-			NOT = { country_exists = SIK }
-			
-			AND = {
-				OR = {
-					AND = {
-						has_global_flag = SOV_soviet_japanese_reconciliation_flag
-						NOT = { has_war_with = SOU }
-					}
-					has_non_aggression_pact_with = SOU
-					is_in_faction_with = SOU
-				}
-				
-			}
-		}
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = SIK
-		value = 5000
-	}
-}
-
-
-
-all_china_must_prosper_in_my_prosperity_sphere_SHX = {
-	allowed = {
-		original_tag = JAP
-	}
-	enable = {
-		OR = {
-			NOT = { country_exists = CHI }
-			CHI = {
-				is_in_faction_with = JAP
-				is_puppet_of = JAP
-			}
-		}
-		country_exists = SHX
-		NOT = {
-			
-		}
-	}
-
-	abort = {
-		NOT = { country_exists = SHX }
-		
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = SHX
-		value = 5000
-	}
-}
 
 
 
 
-all_china_must_prosper_in_my_prosperity_sphere_SIC = {
-	allowed = {
-		original_tag = JAP
-	}
-	enable = {
-		OR = {
-			NOT = { country_exists = CHI }
-			CHI = {
-				is_in_faction_with = JAP
-				is_puppet_of = JAP
-			}
-		}
-		country_exists = SIC
-		NOT = {
-			
-		}
-	}
-
-	abort = {
-		NOT = { country_exists = SIC }
-		
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = SIC
-		value = 5000
-	}
-
-}
-
-all_china_must_prosper_in_my_prosperity_sphere_XIC = {
-	allowed = {
-		original_tag = JAP
-	}
-	enable = {
-		OR = {
-			NOT = { country_exists = CHI }
-			CHI = {
-				is_in_faction_with = JAP
-				is_puppet_of = JAP
-			}
-		}
-		country_exists = XIC
-		NOT = {
-			
-		}
-	}
-
-	abort = {
-		NOT = { country_exists = XIC }
-		
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = XIC
-		value = 5000
-	}
-
-}
 
 
 
-all_china_must_prosper_in_my_prosperity_sphere_HBC = {
-	allowed = {
-		original_tag = JAP
-	}
-	enable = {
-		OR = {
-			NOT = { country_exists = CHI }
-			CHI = {
-				is_in_faction_with = JAP
-				is_puppet_of = JAP
-			}
-		}
-		country_exists = HBC
-		NOT = {
-			
-		}
-	}
 
-	abort = {
-		NOT = { country_exists = HBC }
-		
-	}
 
-	ai_strategy = {
-		type = antagonize
-		id = HBC
-		value = 5000
-	}
 
-}
 
-all_china_must_prosper_in_my_prosperity_sphere_PRC = {
-	allowed = {
-		original_tag = JAP
-	}
-	enable = {
-		OR = {
-			NOT = { country_exists = CHI }
-			CHI = {
-				is_in_faction_with = JAP
-				is_puppet_of = JAP
-			}
-		}
-		country_exists = PRC
-		NOT = {
-			
-		}
-	}
 
-	abort = {
-		NOT = { country_exists = PRC }
-		
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = PRC
-		value = 5000
-	}
-}
 
 jap_china_is_weak = {
 	allowed = {
@@ -1466,11 +1153,6 @@ jap_early_part_beware_allies = {
 	}
 	ai_strategy = {
 		type = prepare_for_war
-		id = BRM
-		value = 100
-	}
-	ai_strategy = {
-		type = prepare_for_war
 		id = MAL
 		value = 50
 	}
@@ -1775,11 +1457,6 @@ JAP_invade_burma = {
 		}
 	}
 
-	ai_strategy = {
-		type = invade
-		id = BRM
-		value = 500
-	}
 
 	ai_strategy = {
 	    type = invasion_unit_request

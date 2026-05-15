@@ -10,20 +10,5 @@ dont_justify_on_historical = {
 		is_historical_focus_on = no
 	}
 
-	ai_strategy = {
-		type = conquer
-		id = "CHL"
-		value = -600
-	}
-	ai_strategy = {
-		type = ignore_claim
-		id = "CHL"
-		value = 200
-	}
-	ai_strategy = {
-		type = antagonize
-		id = "CHL"
-		value = -200
-	}
 }
 

@@ -1413,21 +1413,6 @@ GER_play_nice_with_ribbentrop_pact = {
 	}
 
 	# leave britney alone!
-	ai_strategy = {
-		type = ignore
-		id = LIT
-		value = 100
-	}
-	ai_strategy = {
-		type = ignore
-		id = LAT
-		value = 100
-	}
-	ai_strategy = {
-		type = ignore
-		id = EST
-		value = 100
-	}
 }
 
 GER_tfv_protect_fascist_south_africa = {
@@ -2319,11 +2304,6 @@ AXIS_dont_mess_with_volunteers = {
 		value = -500
 	}
 
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = MEN
-		value = -500
-	}
 }
 
 GER_industry_we_are_the_baddies = {
@@ -2474,11 +2454,6 @@ GER_share_borders_with_ITA_against_SOV = {
 	ai_strategy = {
 		type = dont_defend_ally_borders
 		id = HUN
-		value = 100
-	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = SLO
 		value = 100
 	}
 	ai_strategy = {
@@ -2764,27 +2739,12 @@ GER_my_precisioussss = {
 
 	ai_strategy = {
 		type = send_lend_lease_desire
-		id = SLO
-		value = -999
-	}
-	ai_strategy = {
-		type = send_lend_lease_desire
 		id = MAN
 		value = -999
 	}
 	ai_strategy = {
 		type = send_lend_lease_desire
 		id = CHI
-		value = -999
-	}
-		ai_strategy = {
-		type = send_lend_lease_desire
-		id = SHX
-		value = -999
-	}
-		ai_strategy = {
-		type = send_lend_lease_desire
-		id = SIK
 		value = -999
 	}
 }
