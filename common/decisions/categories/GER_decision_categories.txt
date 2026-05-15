@@ -124,10 +124,6 @@ GER_reichskommissariats = {
 	visible = {
 		OR = {
 			always = no
-RKH = {
-				is_subject_of = ROOT
-				exists = yes
-			}
 		}
 		has_government = fascism
 	}

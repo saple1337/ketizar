@@ -140,12 +140,7 @@ DEN_avoid_allies = {
 		value = -1000
 	}
 
-	ai_strategy = {
-		type = alliance
-		id = "LUX"
-		value = -1000
-	}
-
+	
 	ai_strategy = {
 		type = alliance
 		id = "BEL"

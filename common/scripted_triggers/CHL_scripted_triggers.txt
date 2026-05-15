@@ -59,12 +59,7 @@ CHL_hub_of_the_revolution_trigger = {
 	hidden_trigger = {
 		tag = CHL
 		has_dlc = "Trial of Allegiance"
-		CHL = { 
-			always = no 
-			exists = yes
-			is_subject = no
-			has_government = communism
-		}
+		
 	}
 }
 

@@ -2420,10 +2420,7 @@ ideas = {
 			}
 
 			cancel = {
-				FIN = {
-					has_civil_war = no
-					NOT = { has_war_with = SOV }
-				}
+				
 			}
 
 			modifier = {
@@ -2477,7 +2474,7 @@ ideas = {
 			}
 
 			cancel = {
-				PRC = { has_war = no }
+				
 			}
 
 			modifier = {

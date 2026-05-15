@@ -41,7 +41,7 @@ POL_is_valid_to_boost_monarchy = {
 			always = no
 		}
 		NOT = { has_country_flag = attempted_royal_takeover_in_LIT }
-		LIT = { NOT = { always = no } }
+		
 		FROM = {
 			original_tag = LIT
 		}
@@ -91,10 +91,7 @@ POL_is_valid_to_reject_monarchy = {
 		limit = {
 			original_tag = POL
 		}
-		LIT = { 
-			always = no
-			NOT = { has_country_flag = attempted_royal_takeover_in_POL }
-		}
+		
 		NOT = { has_country_flag = achievement_POL_elected_monarch }
 		FROM = {
 			original_tag = LIT

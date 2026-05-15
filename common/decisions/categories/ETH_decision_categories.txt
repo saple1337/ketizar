@@ -64,23 +64,13 @@ ETH_italian_occupation_category = { # TODO_TA Update for BBA
 
 	visible = {
 		OR = {
-			ETH = {
-				is_government_in_exile = yes
-				any_owned_state = {
-					is_controlled_by = ITA
-				}
-			}
+			
 			AND = {
 				original_tag = ITA
 				any_controlled_state = {
 					has_state_flag = ITA_can_electrify_state_flag #This is the only decision available if ETH is gone.
 				}
-				ETH = {
-					OR = {
-						has_capitulated = yes
-						exists = no
-					}
-				}
+				
 			}
 		}
 		OR = { #ITA needs to complete focus Triumph in Africa for these decs to show up

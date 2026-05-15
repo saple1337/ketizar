@@ -186,10 +186,7 @@ FIN_finno_soviet_kinship_war = {
 	
 	visible = {
 		NOT = { has_country_flag = FIN_karelian_rebellion_crushed_flag }
-		FIN = {
-			OR = {
-				always = no}
-		}
+		
 		OR = {
 			215 = { #ONEGA
 				has_dynamic_modifier = {

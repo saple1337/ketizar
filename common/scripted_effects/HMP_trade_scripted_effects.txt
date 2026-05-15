@@ -102,15 +102,11 @@ anti_cross_faction_trade_all = {
 	USA = {
 		anti_cross_faction_trade_axis = yes
 	}
-	# BRA = {
-	# 	anti_cross_faction_trade_axis = yes
-	# }
+	# 
 	CAN = {
 		anti_cross_faction_trade_axis = yes
 	}
-	# IRE = {
-	# 	anti_cross_faction_trade_axis = yes
-	# }
+	# 
 	MEX = {
 		anti_cross_faction_trade_axis = yes
 	}
@@ -135,9 +131,7 @@ anti_cross_faction_trade_all = {
 	ITA = {
 		anti_cross_faction_trade_allies = yes
 	}
-	FIN = {
-		anti_cross_faction_trade_allies = yes
-	}
+	
 	HUN = {
 		anti_cross_faction_trade_allies = yes
 	}

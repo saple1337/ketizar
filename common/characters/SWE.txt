@@ -64,9 +64,7 @@ characters={
 					on_add = {
 						if = {
 							limit = {
-								FIN = {
-									NOT = { always = no }
-								}
+								
 							}
 							SWE = { add_ideas =  SWE_committee_against_the_finnish_white_terror_idea } 
 						}

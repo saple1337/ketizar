@@ -573,7 +573,7 @@ ideas = {
 				always = no
 			}
 			available = {
-				ETH = { is_subject_of = ITA }
+				
 			}
 
 			allowed_civil_war = {
@@ -594,7 +594,7 @@ ideas = {
 				always = no
 			}
 			available = {
-				ETH = { is_subject_of = ITA }
+				
 			}
 
 			allowed_civil_war = {
@@ -843,7 +843,7 @@ ideas = {
 			picture = chi_war_of_resistance3
 			allowed = {
 				original_tag = ITA
-				ETH = { is_subject_of = ITA }
+				
 			}
 
 			allowed_civil_war = {

@@ -1172,20 +1172,7 @@ BRA_setup_colonized_countries_to_liberate_array = {
 
 
 BRA_communist_cw_transfer_chars = {
-		BRA = {
-			BRA_eurico_gaspar_dutra = {
-				set_character_flag = BRA_loyal_to_gov_char
-			}
-			BRA_mascarenhas_de_morais = {
-				set_character_flag = BRA_loyal_to_gov_char
-			}
-			every_character = {
-				limit = {
-					has_character_flag = BRA_loyal_to_gov_char
-				}
-				set_nationality = PREV.PREV
-			}
-		}
+		
 }
 
 BRA_mio_military_factory = {
@@ -1267,26 +1254,7 @@ VEN_blockade_countries = {
 			
 		}
 		event_target:blockade_target = {
-			VEN = {
-				if = {
-					limit = { has_dlc = "By Blood Alone"}
-					send_embargo = PREV
-				}
-				add_opinion_modifier = {
-					target = PREV
-					modifier = VEN_embargoed
-				}
-				hidden_effect = {
-					add_opinion_modifier = {
-						target = PREV
-						modifier = VEN_embargoed_2
-					}
-				}
-				country_event = {
-					id = TOA_ven_blockade.1
-					hours = 1
-				}
-			}
+			
 			news_event = {
 				id = TOA_ven_blockade.2
 				hours = 1
@@ -1323,20 +1291,7 @@ VEN_blockade_countries = {
 						id = TOA_ven_blockade.2
 						hours = 1
 					}
-					VEN = { 
-						if = {
-							limit = { has_dlc = "By Blood Alone"}
-							send_embargo = PREV
-						}
-						add_opinion_modifier = {
-							target = PREV
-							modifier = VEN_embargoed
-						}
-						add_opinion_modifier = {
-							target = PREV
-							modifier = VEN_embargoed_2
-						}
-					}
+					
 				}
 			}
 		}

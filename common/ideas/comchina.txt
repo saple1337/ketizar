@@ -1915,9 +1915,7 @@ ideas = {
 
 			available = {
 				OR = {
-			 		PRC = {
-		 				controls_state = 608
-		 			}
+			 		
 		 			608 = {
 		 				has_dynamic_modifier = {
 		 					modifier = PRC_infiltrated_state_3
@@ -2110,9 +2108,7 @@ ideas = {
 
 			available = {
 				OR = {
-			 		PRC = {
-		 				controls_state = 615
-		 			}
+			 		
 		 			615 = {
 		 				has_dynamic_modifier = {
 		 					modifier = PRC_infiltrated_state_3
@@ -2192,9 +2188,7 @@ ideas = {
 
 			available = {
 		 		OR = {
-			 		PRC = {
-		 				controls_state = 621
-		 			}
+			 		
 		 			621 = {
 		 				has_dynamic_modifier = {
 		 					modifier = PRC_infiltrated_state_3
@@ -2225,9 +2219,7 @@ ideas = {
 
 
 			available = {
-		 		PRC = {
-		 			always = no 	
-		 		}
+		 		
 			}
 
 			cost = 150
@@ -2287,9 +2279,7 @@ ideas = {
 
 			available = {
 		 		OR = {
-			 		PRC = {
-		 				controls_state = 716
-		 			}
+			 		
 		 			716 = {
 		 				has_dynamic_modifier = {
 		 					modifier = PRC_infiltrated_state_3
@@ -2358,9 +2348,7 @@ ideas = {
 			removal_cost = 10
 
 		 	available = {
-		 		PRC = {
-		 			always = no 
-		 		}
+		 		
 		 	}
 
 	 		research_bonus = {
@@ -2389,9 +2377,7 @@ ideas = {
 
 		 	available = {
 		 		OR = {
-			 		PRC = {
-		 				controls_state = 716
-		 			}
+			 		
 		 			716 = {
 		 				has_dynamic_modifier = {
 		 					modifier = PRC_infiltrated_state_3

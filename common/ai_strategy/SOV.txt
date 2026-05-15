@@ -424,34 +424,6 @@ claims_on_poland = {
 	}
 }
 
-claims_on_finland = {
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		always = no
-		country_exists = FIN
-		NOT = { controls_state = 146 } #Karelija
-		date > 1940.8.1
-	}
-	abort = {
-		OR = {
-			NOT = {
-				country_exists = FIN
-			}
-			FIN = {
-				has_government = ROOT
-			}
-			controls_state = 146 #Karelija
-		}
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = "FIN"
-		value = 200
-	}
-}
 
 claims_on_sinkiang = {
 	allowed = {
@@ -1010,12 +982,12 @@ SOV_dont_send_volunteers_that_early_to_china = {
 			AND = {
 				always = no
 				country_exists = SIK
-				SIK = { has_war_with = JAP }
+				
 			}
 			AND = {
 				always = no
 				country_exists = PRC
-				PRC = { has_war_with = JAP }
+				
 			}
 			AND = {
 				always = no
@@ -1030,12 +1002,7 @@ SOV_dont_send_volunteers_that_early_to_china = {
 		id = "CHI"
 		value = -800
 	}
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "GXC"
-		value = -800
-	}
-	ai_strategy = {
+		ai_strategy = {
 		type = send_volunteers_desire
 		id = "PRC"
 		value = -800
@@ -1047,13 +1014,13 @@ SOV_send_volunteers_to_sinkiang = {
 		original_tag = SOV
 	}
 	enable = {
-		SIK = { has_war_with = KHM }
+		
 		country_exists = SIK
 	}
 
 	abort = {
 		NOT = {
-			SIK = { has_war_with = KHM }
+			
 		}
 	}
 
@@ -1624,12 +1591,7 @@ SOV_dont_do_so_many_naval_invasions_please = {
 		tag = GER
 		value = -50
 	}
-	ai_strategy = {
-		type = invasion_unit_request
-		tag = FIN
-		value = -50
 	}
-}
 
 ###########################
 ### MOLOTOV IN DA HOUSE ###
@@ -1664,12 +1626,7 @@ SOV_molotov_active_sov = {
 		value = 25
 	}
 
-	ai_strategy = {
-		type = antagonize
-		id = FIN
-		value = 25
-	}
-
+	
 	ai_strategy = {
 		type = antagonize
 		id = ENG
@@ -1718,36 +1675,6 @@ SOV_molotov_active_friendly_others = {
 }
 
 #Countries that dislike Molotov
-SOV_molotov_active_hostile_others = {
-	allowed = {
-		OR = {
-			original_tag = ENG
-			original_tag = FRA
-			original_tag = USA
-			original_tag = POL
-			original_tag = FIN
-			original_tag = SAU #Khakimov incident
-		}
-	}
-
-	enable = {
-		SOV = { has_idea = SOV_vyacheslav_molotov }
-	}
-
-	abort = {
-		OR = {
-			SOV = { NOT = { has_idea = SOV_vyacheslav_molotov } }
-			has_capitulated = yes
-			is_in_faction_with = SOV
-		}
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = SOV
-		value = 25
-	}
-}
 
 
 ############################
@@ -1819,38 +1746,6 @@ SOV_litvinov_active_sov = {
 }
 
 #Countries that like Litvinov
-SOV_litvinov_active_friendly_others = {
-	allowed = {
-		OR = {
-			original_tag = ENG
-			original_tag = FRA
-			original_tag = USA
-			original_tag = POL
-			original_tag = FIN
-			original_tag = SAU #Khakimov incident
-		}
-	}
-
-	enable = {
-		SOV = { has_idea = SOV_maksim_litvinov }
-		is_subject = no
-	}
-
-	abort = {
-		OR = {
-			SOV = { NOT = { has_idea = SOV_maksim_litvinov } }
-			has_capitulated = yes
-			is_in_faction_with = SOV
-			is_subject = yes
-		}
-	}
-
-	ai_strategy = {
-		type = befriend
-		id = SOV
-		value = 25
-	}
-}
 
 #Countries that dislike Litvinov
 SOV_litvinov_active_hostile_others = {
@@ -1895,13 +1790,7 @@ SOV_khakimov_proposal_sov = {
 	enable = {
 		has_idea = SOV_maksim_litvinov
 		always = no
-		SAU = {
-			has_opinion = {
-				target = SOV
-				value < 0
-			}
-			is_subject = no
-		}
+		
 		is_subject = no
 	}
 
@@ -1909,14 +1798,9 @@ SOV_khakimov_proposal_sov = {
 		OR = {
 			NOT = { has_idea = SOV_maksim_litvinov }
 			is_in_faction_with = SAU
-			SAU = { has_capitulated = yes }
-			SAU = { is_subject = no }
-			SAU = {
-				has_opinion = {
-					target = SOV
-					value > 75
-				}
-			}
+			
+			
+			
 			is_subject = yes
 		}
 	}
@@ -2191,15 +2075,11 @@ SOV_ultimatum_LIT = {
 	}
 	enable = {
 		is_historical_focus_on = yes
-		LIT = {
-			NOT = { has_country_flag = SOV_ultimatum_sent_flag }
-		}
+		
 	}
 	abort = {
 		OR = {
-			LIT = {
-				has_country_flag = { flag = SOV_ultimatum_sent_flag value = 1 days > 15 }
-			}
+			
 			date > 1941.12.31 #If it's late then it's fine
 		}
 	}
@@ -2222,15 +2102,11 @@ SOV_ultimatum_LAT = {
 	}
 	enable = {
 		is_historical_focus_on = yes
-		LAT = {
-			NOT = { has_country_flag = SOV_ultimatum_sent_flag }
-		}
+		
 	}
 	abort = {
 		OR = {
-			LAT = {
-				has_country_flag = { flag = SOV_ultimatum_sent_flag value = 1 days > 15 }
-			}
+			
 			date > 1941.12.31 #If it's late then it's fine
 		}
 	}
@@ -2253,15 +2129,11 @@ SOV_ultimatum_EST = {
 	}
 	enable = {
 		is_historical_focus_on = yes
-		EST = {
-			NOT = { has_country_flag = SOV_ultimatum_sent_flag }
-		}
+		
 	}
 	abort = {
 		OR = {
-			EST = {
-				has_country_flag = { flag = SOV_ultimatum_sent_flag value = 1 days > 15 }
-			}
+			
 			date > 1941.12.31 #If it's late then it's fine
 		}
 	}
@@ -2448,9 +2320,7 @@ SOV_ultimatum_FIN = {
 	}
 	enable = {
 		is_historical_focus_on = yes
-		FIN = {
-			NOT = { has_country_flag = SOV_ultimatum_sent_flag } #Added via focus Secure Leningrad
-		}
+		
 		OR = {
 			NOT = { owns_state = 146 } #Karjala
 			146 = {
@@ -2460,9 +2330,7 @@ SOV_ultimatum_FIN = {
 	}
 	abort = {
 		OR = {
-			FIN = {
-				has_country_flag = { flag = SOV_ultimatum_sent_flag value = 1 days > 15 }
-			}
+			
 			date > 1941.12.31 #If it's late then it's fine
 			OR = {
 				owns_state = 146 #Karjala
@@ -2473,17 +2341,7 @@ SOV_ultimatum_FIN = {
 		}
 	}
 
-	ai_strategy = {
-		type = antagonize
-		id = FIN
-		value = -30
-	}
-	ai_strategy = {
-		type = conquer
-		id = FIN
-		value = -200
-	}
-}
+		}
 
 ###### Don't start ww3 until Japan is defeated
 
@@ -2517,74 +2375,6 @@ ALLIES_avoid_enemies_for_a_while_ww3 = {
 	}
 }
 
-SOV_defend_leningrad_if_at_war_with_fin = {
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		NOT = { 
-			has_war_with = JAP
-			has_war_with = GER
-		}
-		
-		OR = {
-			has_war_with = FIN
-			has_wargoal_against = { target = FIN }
-			SOV = {
-				focus_progress = {
-					focus = SOV_secure_leningrad
-					progress > 0
-				}
-			}
-		}
-	}
-
-	ai_strategy = {
-		type = area_priority
-		id = winter_war_front
-		value = 200
-	}
-
-	ai_strategy = {
-		type = put_unit_buffers
-		ratio = 0.1
-		states = {
-			195
-		}
-		subtract_fronts_from_need = yes
-	}
-
-	ai_strategy = {
-    	type = front_armor_score
-    	id = FIN
-    	value = 200
-	}
-
-	ai_strategy = {
-		type = front_control
-		state_trigger = {
-			OR = {
-				state = 195
-				state = 146
-				state = 928
-				state = 111
-				state = 927
-				state = 926
-			}
-		}
-		tag = FIN
-
-		ratio = 0.15
-
-		priority = 100
-		ordertype = front
-		execution_type = rush
-		execute_order = yes
-		manual_attack = yes
-	}
-
-	abort_when_not_enabled = yes
-}
 
 SOV_dont_send_all_convoys_on_holiday_to_vladivostok = {
 	allowed = { original_tag = SOV }

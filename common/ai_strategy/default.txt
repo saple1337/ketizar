@@ -1259,35 +1259,6 @@ save_admiral_pp_for_later = {
 	}
 }
 
-do_not_waste_pp_if_saving_for_manpower_laws = {
-
-	enable = {
-		manpower_per_military_factory < 500
-		has_war = yes
-	}
-	abort = {
-		OR = {
-			manpower_per_military_factory > 500
-			has_war = no
-			AND = {
-				original_tag = ETH
-				is_government_in_exile = yes
-			}
-		}
-	}
-
-	ai_strategy = {
-		type = pp_spend_priority
-		id = relation
-		value = -9999
-	}
-
-	ai_strategy = {
-		type = pp_spend_priority
-		id = guarantee
-		value = -9999
-	}
-}
 
 build_intelligence_agency_as_major = {
 	enable = {
@@ -1900,12 +1871,7 @@ comintern_avoid_starting_wars_during_endgame = { #Sov should avoid attacking all
 		id = JAP
 		value = 400 #These values offset each other. Basically we won't start wars with anyone except for japan while this strategy is active
 	}
-	ai_strategy = {
-		type = conquer
-		id = FIN
-		value = 400 #These values offset each other. Basically we won't start wars with anyone except for finland while this strategy is active
-	}
-	ai_strategy = {
+		ai_strategy = {
 		type = conquer
 		id = PER
 		value = 400 #These values offset each other. Basically we won't start wars with anyone except for iran while this strategy is active

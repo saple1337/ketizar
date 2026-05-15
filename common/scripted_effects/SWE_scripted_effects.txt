@@ -964,7 +964,7 @@ SWE_is_norway_mostly_occupied = {
 SWE_is_finland_mostly_occupied = {
 	if = {
 		limit = {
-			FIN = { NOT = { has_country_flag = SWE_already_capped_once }}
+			
 		}
 		set_temp_variable = { occupation_counter = 0 }
 		if = {
@@ -1075,7 +1075,7 @@ SWE_is_finland_mostly_occupied = {
 				}
 			}
 
-			FIN = { SWE_increase_the_cross_we_bear = yes }
+			
 		}
 	}
 }

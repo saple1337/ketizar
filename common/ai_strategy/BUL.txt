@@ -530,13 +530,7 @@ BUL_we_dont_want_to_fight_sov = {
 		target_country = SOV
 		value = 99999
 	}
-	ai_strategy = {
-		type = dont_join_wars_with
-		id = FIN
-		target_country = SOV
-		value = 99999
-	}
-	ai_strategy = {
+		ai_strategy = {
 		type = declare_war
 		id = SOV			
 		value = -2000 

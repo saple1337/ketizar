@@ -174,7 +174,7 @@ ITA_missiolini_progress_in_ethiopia_success_effect = {
 			has_dlc = "By Blood Alone"
 		}
 		effect_tooltip = { #With BBA this is handled in Ethiopian decisions
-			ETH = { add_war_support = -0.1 }
+			
 		}
 	}
 
@@ -6644,11 +6644,7 @@ ITA_forced_italo_ethiopian_peace_deal = {
 		limit = {
 			OR = {
 				AND = {
-					ETH = {
-						any_core_state = {
-							is_controlled_by = ITA
-						}
-					}
+					
 					ITA = {
 						any_owned_state = {
 							is_controlled_by = ETH
@@ -6657,21 +6653,15 @@ ITA_forced_italo_ethiopian_peace_deal = {
 				}
 				AND = {
 					ITA = { surrender_progress < 0.01 }
-					ETH = { surrender_progress < 0.01 }
+					
 				}
 			}
 		}
-		ETH = {
-			white_peace = ITA
-		}
+		
 	}
 	else_if = {
 		limit = {
-			ETH = {
-				all_core_state = {
-					is_controlled_by = ITA
-				}
-			}
+			
 		}
 		ITA = {
 			start_peace_conference = {
@@ -6682,7 +6672,7 @@ ITA_forced_italo_ethiopian_peace_deal = {
 	}
 	else_if = {
 		limit = {
-			ETH = { surrender_progress > 0.74 }
+			
 		}
 		ITA = {
 			start_peace_conference = {
@@ -6693,7 +6683,7 @@ ITA_forced_italo_ethiopian_peace_deal = {
 	}
 	else_if = {
 		limit = {
-			ETH = { surrender_progress > 0.49 }
+			
 		}
 		ITA = {
 			start_peace_conference = {
@@ -6704,7 +6694,7 @@ ITA_forced_italo_ethiopian_peace_deal = {
 	}
 	else_if = {
 		limit = {
-			ETH = { surrender_progress > 0.19 }
+			
 		}
 		ITA = {
 			start_peace_conference = {
@@ -6715,7 +6705,7 @@ ITA_forced_italo_ethiopian_peace_deal = {
 	}
 	else_if = {
 		limit = {
-			ETH = { surrender_progress > 0 }
+			
 		}
 		ITA = {
 			start_peace_conference = {
@@ -6728,55 +6718,30 @@ ITA_forced_italo_ethiopian_peace_deal = {
 		limit = {
 			ITA = { surrender_progress > 0.74 }
 		}
-		ETH = {
-			start_peace_conference = {
-				tag = ITA
-				score_factor = 0.125
-			}
-		}
+		
 	}
 	else_if = {
 		limit = {
 			ITA = { surrender_progress > 0.49 }
 		}
-		ETH = {
-			start_peace_conference = {
-				tag = ITA
-				score_factor = 0.1
-			}
-		}
+		
 	}
 	else_if = {
 		limit = {
 			ITA = { surrender_progress > 0.19 }
 		}
-		ETH = {
-			start_peace_conference = {
-				tag = ITA
-				score_factor = 0.075
-			}
-		}
+		
 	}
 	else_if = {
 		limit = {
 			ITA = { surrender_progress > 0 }
 		}
-		ETH = {
-			start_peace_conference = {
-				tag = ITA
-				score_factor = 0.05
-			}
-		}
+		
 	}
 	else_if = {
 		limit = {
 			ITA = { surrender_progress < 0.01 }
 		}
-		ETH = {
-			start_peace_conference = {
-				tag = ITA
-				score_factor = 0.025
-			}
-		}
+		
 	}
 }

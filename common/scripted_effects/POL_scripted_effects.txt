@@ -751,20 +751,7 @@ POL_become_german_puppet_effect = {
 
 POL_divide_lithuania_effect = {
 	188 = { add_core_of = GER }
-	LIT = {
-		every_owned_state = {
-			limit = {
-				OR = {
-					is_core_of = GER
-					is_claimed_by = GER
-					state = 188
-				}
-			}
-			GER = {
-				transfer_state = PREV
-			}
-		}
-	}
+	
 	POL = {
 		annex_country = {
 			target = LIT

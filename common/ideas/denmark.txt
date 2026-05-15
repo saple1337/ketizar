@@ -627,7 +627,7 @@ ideas = {
 				always = no
 			}
 			available = {
-				FIN = { exists = yes }
+				
 			}
 
 			targeted_modifier = { 

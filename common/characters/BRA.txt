@@ -830,7 +830,7 @@ characters={
 				}
 
 				on_add = {
-					BRA = { set_rule = { can_send_volunteers = yes } }
+					
 				}
 			}	
 			name=BRA_afranio_de_mello_franco

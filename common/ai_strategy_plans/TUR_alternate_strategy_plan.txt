@@ -24,7 +24,7 @@ TUR_ottoman_plan = {
 	}
 	abort = {
 		OR = {	
-			KUR = { exists = yes }
+			
 			has_idea = TUR_kemalist_army_officers_powerful_disloyal
 		}
 	}

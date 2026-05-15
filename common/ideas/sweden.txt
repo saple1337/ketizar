@@ -1492,11 +1492,7 @@ ideas = {
 				always = yes
 			}
 			cancel = {
-				FIN = {
-					any_enemy_country = {
-						is_major = yes
-					}
-				}
+				
 			}
 			on_remove = {
 				add_ideas = SWE_volunteers_upgraded

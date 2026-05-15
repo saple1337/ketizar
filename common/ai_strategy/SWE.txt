@@ -258,12 +258,7 @@ SWE_avoid_allies = {
 		value = -1000
 	}
 
-	ai_strategy = {
-		type = alliance
-		id = "LUX"
-		value = -1000
-	}
-
+	
 	ai_strategy = {
 		type = alliance
 		id = "BEL"
@@ -330,54 +325,7 @@ make_SWE_unpopular = {
 	}
 }
 
-SWE_war_with_ITA = {
-	allowed = {
-		original_tag = SWE
-		has_dlc = "By Blood Alone"
-	}
-	enable = {
-		check_variable = { ETH.host_nation = SWE }
-		has_wargoal_against = ITA
-	}
-	abort = {
-		NOT = { country_exists = ETH }
-		NOT = { country_exists = ITA }
-		NOT = { ETH = { is_government_in_exile = yes } }
-	}
 
-	ai_strategy = {
-		type = antagonize
-		id = "SWE"
-		value = 200
-	}
-}
-
-SWE_join_allies = {
-	allowed = {
-		original_tag = SWE
-		has_dlc = "By Blood Alone"
-	}
-	enable = {
-		check_variable = { ETH.host_nation = SWE }
-		has_wargoal_against = ITA
-	}
-	abort = {
-		NOT = { country_exists = ETH }
-		NOT = { country_exists = ITA }
-		NOT = { ETH = { is_government_in_exile = yes } }
-	}
-
-	ai_strategy = {
-		type = alliance
-		id = "ENG"
-		value = 400
-	}
-	ai_strategy = {
-		type = alliance
-		id = "USA"
-		value = 400
-	}
-}
 
 SWE_NOR_nordic_defense_homeland_prio = {
 	allowed = {
@@ -398,23 +346,6 @@ SWE_NOR_nordic_defense_homeland_prio = {
 }
 
 
-SWE_FIN_nordic_defense_homeland_prio = {
-	allowed = {
-		original_tag = FIN
-	}
-	enable = {
-		has_war = yes
-		has_autonomy_state = autonomy_aat_defense_council_member
-		SWE = { always = no }
-	}
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = area_priority
-		id = just_finland
-		value = 200
-	}
-}
 
 
 SWE_ICE_nordic_defense_homeland_prio = {
@@ -525,12 +456,7 @@ SWE_dont_guarantee_people_if_historical = {
 		id = "NOR"
 		value = -2000
 	 }
- 	 ai_strategy = {
-		type = protect
-		id = "FIN"
-		value = -2000
-	 }
- 	 ai_strategy = {
+ 	  	 ai_strategy = {
 		type = protect
 		id = "DEN"
 		value = -2000

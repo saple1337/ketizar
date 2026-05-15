@@ -2856,9 +2856,7 @@ ideas = {
 			}
 
 			cancel = {
-				ETH = {
-					exists = no
-				}
+				
 			}
 
 			modifier = {

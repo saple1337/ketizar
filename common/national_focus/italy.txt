@@ -6146,7 +6146,7 @@ completion_reward = {
 			# if = { limit = { country_exists = HUN } HUN = {add_ideas = axis_victory_in_egypt } }
 			# if = { limit = { country_exists = BUL } BUL = {add_ideas = axis_victory_in_egypt } }
 			# if = { limit = { country_exists = CRO } CRO = {add_ideas = axis_victory_in_egypt } }
-			# if = { limit = { country_exists = CRO } FIN = {add_ideas = axis_victory_in_egypt } }
+			# if = { limit = { country_exists = CRO } }
 		}
 	}
 

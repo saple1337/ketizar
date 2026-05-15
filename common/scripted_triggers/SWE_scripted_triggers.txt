@@ -46,7 +46,7 @@ is_eligible_for_train_the_sheltered = {
 			AND = {
 				has_war_with = DEN
 				OR = {
-					FIN = { has_capitulated = yes }
+					
 					NOR = { has_capitulated = yes }
 				}
 			}
@@ -71,8 +71,8 @@ is_eligible_for_train_the_sheltered = {
 			AND = {
 				NOT = { has_war_with = FIN }
 				OR = {
-					FIN = { has_capitulated = yes }
-					FIN = { is_subject = yes }
+					
+					
 				}
 			}
 		}
@@ -82,7 +82,7 @@ is_eligible_for_train_the_sheltered = {
 				has_war_with = NOR
 				OR = {
 					DEN = { has_capitulated = yes }
-					FIN = { has_capitulated = yes }
+					
 				}
 			}
 			AND = {

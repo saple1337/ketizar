@@ -924,12 +924,7 @@ ENG_trying_to_save_benelux_is_deathtrap = {
 		id = BEL
 		value = 50
 	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = LUX
-		value = 50
-	}
-	ai_strategy = {
+		ai_strategy = {
 		type = put_unit_buffers
 		# french states bordering benelux
 		states = {
@@ -1647,12 +1642,7 @@ ENG_time_to_ditch_FRA = {
 		id = HOL
 		value = 100
 	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = LUX
-		value = 100
 	}
-}
 
 ENG_gang_up_GER_with_USA = {
 	allowed = { original_tag = ENG }
@@ -2730,7 +2720,7 @@ ENG_ethiopian_continuation_war = {
 	enable = {
 		is_historical_focus_on = yes  # Don't like locking it behind a checkbox...
 		date < 1941.5.1  # Historically, the main Italian forces in Ethiopia surrendered in November 1941. (After that, there were remnants fighting a guerilla war until September 1943.)
-		ETH = { is_exiled_in = ENG }
+		
 		has_war = yes
 	}
 	abort_when_not_enabled = yes

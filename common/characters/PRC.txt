@@ -1679,14 +1679,14 @@ PRC_zhang_wentian = {
 		advisor={
 			slot = political_advisor
 			visible = {
-				PRC = { has_country_flag = PRC_pavel_mif_alive }
+				
 				OR = {
 					always = no
 					always = no
 				}
 			}
 			available  = {
-				PRC = { has_country_flag = PRC_pavel_mif_alive }
+				
 				OR = {
 					always = no
 					always = no

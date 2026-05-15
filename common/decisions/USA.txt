@@ -537,9 +537,7 @@ USA_puppet_brazil = {
 	}
 
 	available = {
-	BRA = { has_war_with = GER
-			is_ai = yes 
-			}
+	
 	date > 1941.1.1
 
 	}

@@ -19,10 +19,7 @@ RUT_we_do_not_guarantee_or_befriend_you = {
 			exists = yes
 			has_government = democratic
 		}
-		RUT = {
-			exists = yes
-			is_subject = no
-		}
+		
 	}
 
 	abort_when_not_enabled = yes
@@ -74,9 +71,7 @@ RUT_i_am_a_push_over = { #Pfot
 	}
 
 	enable = {
-		RUT = {
-			exists = yes
-		}
+		
 		exists = yes
 		has_war_with = RUT
 		has_country_flag = CZE_pfot_rut_war_news_event_flag #The is set with more sanity checks in the event

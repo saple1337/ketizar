@@ -176,11 +176,7 @@ POL_support_monarchy_in_LIT_cat = {
 		always = yes
 		#OR = {
 		#	AND = {
-		#		always = no#		LIT = {
-		#			NOT = { has_country_flag = POL_banned_monarchy_flag }
-		#			exists = yes
-		#			is_subject = no
-		#		}
+		#		always = no#		
 		#		NOT = { has_war_with = LIT }
 		#	}
 		#	AND = {
@@ -255,10 +251,7 @@ NOT = { has_country_flag = attempted_royal_takeover_in_CZE }
 			}
 			AND = {
 				original_tag = POL
-				LIT = {
-					always = no
-NOT = { has_country_flag = attempted_royal_takeover_in_POL }
-				}
+				
 				NOT = { 
 					has_country_flag = achievement_POL_elected_monarch
 					has_country_flag = POL_banned_monarchy_flag 

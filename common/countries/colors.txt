@@ -7,9 +7,6 @@ IRQ = {
 	color = rgb { 178  114  99 }
 }
 
-FIN = {
-	color = rgb { 205  212  228 }
-}
 
 AFG = {
 	color = rgb { 64  160  167 }
@@ -52,10 +49,6 @@ CSR = {
 	color_ui = rgb { 74 147 255}
 }
 URK = {
-	color = rgb { 50 50 50 }
-	color_ui = rgb { 122 145 93 }
-}
-AMR = {
 	color = rgb { 50 50 50 }
 	color_ui = rgb { 122 145 93 }
 }
@@ -206,8 +199,4 @@ FRF = {
 EFR = {
 	color = rgb { 126  76  120  }
 	color_ui = rgb { 126  76  120  }
-}
-SLO = {
-	color = rgb { 54  167  156 }
-	color_ui = rgb { 54  167  156 }
 }

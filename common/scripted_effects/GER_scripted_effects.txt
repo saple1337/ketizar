@@ -480,15 +480,12 @@ MR_pact_transfer_state_effect = {
 			limit = {
 				OR = {
 					has_global_flag = LIT_gets_vilnius
-					LIT = { is_in_faction_with = SOU }
-					LIT = { controls_state = 784 }
+					
+					
 				}
-				LIT = {
-					exists = yes
-					has_capitulated = no
-				}
+				
 			}
-			LIT = { transfer_state = 784 }
+			
 		}
 		else_if = {
 			limit = {
@@ -633,14 +630,11 @@ MR_pact_transfer_faction_state_effect = {
 			limit = {
 				OR = {
 					has_global_flag = LIT_gets_vilnius
-					LIT = { controls_state = 784 }
+					
 				}
-				LIT = {
-					exists = yes
-					has_capitulated = no
-				}
+				
 			}
-			LIT = { transfer_state = 784 }
+			
 		}
 		else = {
 			SOU = { transfer_state = 784 }

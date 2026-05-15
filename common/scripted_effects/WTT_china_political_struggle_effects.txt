@@ -66,11 +66,11 @@ WTT_setup_political_struggle = {
 
 
 
-		GXC = { set_variable = { warlord_political_support_value = @WARLORD_SUPPORT_VALUE } }
-		YUN = { set_variable = { warlord_political_support_value = @WARLORD_SUPPORT_VALUE } }
-		SHX = { set_variable = { warlord_political_support_value = @WARLORD_SUPPORT_VALUE } }
-		XSM = { set_variable = { warlord_political_support_value = @WARLORD_SUPPORT_VALUE } }
-		SIK = { set_variable = { warlord_political_support_value = @WARLORD_SUPPORT_VALUE } }
+		
+		
+		
+		
+		
 		
 		event_target:WTT_current_china_leader = {
 			WTT_save_country_as_event_target = yes

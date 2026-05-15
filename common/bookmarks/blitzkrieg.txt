@@ -255,15 +255,7 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"FIN" = {
-			minor = yes
-			history = "SPAIN_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
-			}
-		}
+		
 		"NOR" = {
 			minor = yes
 			history = "SPAIN_GATHERING_STORM_DESC"

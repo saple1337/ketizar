@@ -551,12 +551,7 @@ characters = {
 				available = {
 					OR = {
 						CZE_SLO_is_not_its_own_thing = yes
-						SLO = {
-							is_subject_of = ROOT
-							NOT = {
-								has_government = fascism
-							}
-						}
+						
 					}
 				}
 				traits = {
@@ -594,15 +589,7 @@ characters = {
 					has_character_flag = CZE_released_from_prison
 					OR = {
 						CZE_SLO_is_not_its_own_thing = yes
-						SLO = {
-							is_subject_of = ROOT
-							SLO_vojtech_tuka = {
-								is_country_leader = no
-							}
-							NOT = {
-								has_government = fascism
-							}
-						}
+						
 					}
 				}
 				traits = {
@@ -720,15 +707,7 @@ characters = {
 			available = {
 				OR = {
 					CZE_SLO_is_not_its_own_thing = yes
-					SLO = {
-						is_subject_of = ROOT
-						SLO_jozef_tiso = {
-							is_country_leader = no
-						}
-						NOT = {
-							has_government = fascism
-						}
-					}
+					
 				}
 				NOT = {
 					has_government = communism
@@ -736,14 +715,7 @@ characters = {
 			}
 			visible = {
 				#CZE_SLO_is_not_its_own_thing = yes
-				SLO = {
-					OR = {
-						exists = no
-						SLO_jozef_tiso = {
-							is_country_leader = no
-						}
-					}
-				}
+				
 				NOT = {
 					has_government = communism
 				}
@@ -3019,13 +2991,7 @@ characters = {
 				legacy_id=-1
 				visible = {
 					always = no
-					SLO = {
-						OR = {
-							exists = no
-							is_subject_of = ROOT
-							has_government = fascism
-						}
-					}
+					
 				}
 			}
 			advisor={
@@ -3035,13 +3001,7 @@ characters = {
 					original_tag = CZE
 				}
 				available = {
-					SLO = {
-						OR = {
-							exists = no
-							is_subject_of = ROOT
-							has_government = fascism
-						}
-					}
+					
 				}
 				traits = {
 					army_chief_offensive_2
@@ -3125,12 +3085,7 @@ characters = {
 			legacy_id=-1
 			visible = {
 				always = no
-				SLO = {
-					OR = {
-						exists = no
-						is_subject_of = CZE
-					}
-				}
+				
 			}
 		}
 	}

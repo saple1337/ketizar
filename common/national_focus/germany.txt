@@ -2539,7 +2539,7 @@ focus_tree = {
 			762 = { add_claim_by = GER }
 			GER = { 	add_state_core = 188 transfer_state = 188 }
 			add_named_threat = { threat = 3 name = GER_demand_memel_threat }
-			# LAT = {	country_event = { id = baltic.4 }	}	
+			# 
 			hidden_effect = {
 				if = { limit = { GER = { is_ai = no } } POL = { load_oob = "POL_spawn" } }
 				if = { limit = { GER = { is_ai = no } } POL = { load_oob = "POL_1939_naval_mtg" } }
@@ -4092,7 +4092,7 @@ focus_tree = {
 						if = { limit = {country_exists = ROM } ROM = { add_timed_idea = { idea = GER_fall_gelb days = 120 } } }
 						if = { limit = {country_exists = HUN } HUN = { add_timed_idea = { idea = GER_fall_gelb days = 120 } } }
 						if = { limit = {country_exists = BUL } BUL = { add_timed_idea = { idea = GER_fall_gelb days = 120 } } }
-						#FIN = { add_timed_idea = { idea = GER_fall_gelb days = 60 } }
+						#
 						ITA = { add_timed_idea = { idea = GER_fall_gelb days = 120 } }
 						if = { limit = {country_exists = SPR } SPR = { add_timed_idea = { idea = GER_fall_gelb days = 120 } } }
 						if = { limit = { country_exists = YUG } YUG = { add_timed_idea = { idea = GER_fall_gelb days = 120 } } }
@@ -4424,7 +4424,7 @@ focus_tree = {
 								if = { limit = {country_exists = ROM } ROM = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } } }
 								if = { limit = {country_exists = HUN } HUN = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } } }
 								if = { limit = {country_exists = BUL } BUL = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } } }
-								#FIN = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } }
+								#
 								ITA = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } }
 								if = { limit = {country_exists = SPR } SPR = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } } }
 								if = { limit = { country_exists = YUG } YUG = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } } }
@@ -5389,7 +5389,7 @@ focus_tree = {
 							if = {limit = {country_exists = ROM } ROM = {add_timed_idea = { idea = GER_fall_blau days = 60 }}}
 							if = {limit = {country_exists = HUN } HUN = {add_timed_idea = { idea = GER_fall_blau days = 60 }}}
 							if = {limit = {country_exists = BUL } BUL = {add_timed_idea = { idea = GER_fall_blau days = 60 }}}
-							#FIN = {add_timed_idea = { idea = GER_fall_blau days = 60 }}
+							#
 							ITA = {add_timed_idea = { idea = GER_fall_blau days = 60 }}
 							if = {limit = {country_exists = SPR } SPR = {add_timed_idea = { idea = GER_fall_blau days = 60 }}}
 							if = {limit = {country_exists = YUG } YUG = {add_timed_idea = { idea = GER_fall_blau days = 60 }}}
@@ -5439,7 +5439,7 @@ focus_tree = {
 							if = {limit = {country_exists = ROM } ROM = {add_timed_idea = { idea = GER_operation_citadel days = 55 }}}
 							if = {limit = {country_exists = HUN } HUN = {add_timed_idea = { idea = GER_operation_citadel days = 55 }}}
 							if = {limit = {country_exists = BUL } BUL = {add_timed_idea = { idea = GER_operation_citadel days = 55 }}}
-							#FIN = {add_timed_idea = { idea = GER_fall_blau days = 55 }}
+							#
 							ITA = {add_timed_idea = { idea = GER_operation_citadel days = 55 }}
 							if = {limit = {country_exists = SPR } SPR = {add_timed_idea = { idea = GER_operation_citadel days = 55 }}}
 							if = {limit = {country_exists = YUG } YUG = {add_timed_idea = { idea = GER_operation_citadel days = 55 }}}
@@ -5479,7 +5479,7 @@ focus_tree = {
 							if = {limit = {country_exists = ROM } ROM = {add_timed_idea = { idea = GER_operation_solstice days = 50 }}}
 							if = {limit = {country_exists = HUN } HUN = {add_timed_idea = { idea = GER_operation_solstice days = 50 }}}
 							if = {limit = {country_exists = BUL } BUL = {add_timed_idea = { idea = GER_operation_solstice days = 50 }}}
-							#FIN = {add_timed_idea = { idea = GER_operation_solstice days = 50 }}
+							#
 							ITA = {add_timed_idea = { idea = GER_operation_solstice days = 50 }}
 							if = {limit = {country_exists = SPR } SPR = {add_timed_idea = { idea = GER_operation_solstice days = 50 }}}
 							if = {limit = {country_exists = YUG } YUG = {add_timed_idea = { idea = GER_operation_solstice days = 50 }}}

@@ -524,30 +524,6 @@ CHI_dont_defend_HBC = {
 }
 
 ##The north needs to fall quickly
-CHI_dont_defend_SND = {
-	allowed = {
-		has_dlc = "No Compromise, No Surrender"
-		is_literally_china = yes
-	}
-
-	enable = {
-		is_in_faction_with = SND
-		597 = {
-			is_controlled_by = SND
-		}
-		1038 = {
-			is_controlled_by = SND
-		}
-	}
-
-	abort_when_not_enabled = yes 
-
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = SND
-		value = 100
-	}
-}
 
 #We don't want to die of attrition up in the mountains
 CHI_dont_defend_northern_warlords = {
@@ -567,12 +543,7 @@ CHI_dont_defend_northern_warlords = {
 		id = HBC
 		value = 150
 	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = SND
-		value = 150
-	}
-	ai_strategy = {
+		ai_strategy = {
 		type = dont_defend_ally_borders
 		id = SHX
 		value = 150
@@ -822,61 +793,6 @@ CHI_prioritize_coast_garrisons_low_effort = { # Specifically for fasc-chi
 #}
 
 # Make sure Sinkiang tries to push aggressively 
-SIK_push_khotan = {
-	allowed = {
-		original_tag = SIK
-	}
-	enable = {
-		#is_historical_focus_on = yes
-		OR = {
-			focus_progress = {
-				focus = SIK_march_into_khotan
-				progress > 0.01
-			}
-			has_war_with = KHM
-		}
-	}
-	abort = {
-		KHM = {
-			OR = {
-				has_capitulated = yes
-				exists = no
-			}
-		}
-	}
-
-	ai_strategy = {
-		type = front_unit_request
-		tag = KHM
-		value = 75
-	}
-
-	ai_strategy = {
-		type = conquer
-		id = KHM
-		value = 200
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = KHM
-		value = 200
-	}
-
-	ai_strategy = {
-		type = front_control
-
-		tag = KHM
-
-		ratio = 0.7
-
-		priority = 100
-		ordertype = front
-		execution_type = rush
-		execute_order = yes
-	}
-
-}
 
 HBC_do_everything_possible_to_allow_japan_to_invade = {
 	allowed = {
@@ -916,12 +832,7 @@ HBC_do_everything_possible_to_allow_japan_to_invade = {
 		value = 50
 	}
 	#Who's dis then? Better keep a close eye on.... *looks in notes* Shandong
-	ai_strategy = {
-		type = front_control
-		id = SND
-		value = 50
-	}
-	#Don't Garrison our Victory Points - they're too close to Japan!
+		#Don't Garrison our Victory Points - they're too close to Japan!
 	ai_strategy = {
 		type = garrison
 		value = -25
@@ -940,39 +851,6 @@ HBC_do_everything_possible_to_allow_japan_to_invade = {
 }
 
 #Japan will be gunning for us from the south soon!
-CHI_southern_warlords_should_prioritize_southern_borders = {
-	allowed = {
-		has_dlc = "No Compromise, No Surrender"
-		OR = {
-			original_tag = YUN 
-			original_tag = GXC
-			original_tag = GDC
-		}
-	}
-	enable = {
-		date < 1942.1.1
-		is_in_faction_with = CHI
-	}
-	abort_when_not_enabled = yes
-	
-	ai_strategy = {
-		type = garrison_reinforcement_priority
-		value = 100
-	}
-
-	ai_strategy = {
-		type = put_unit_buffers
-		states = {
-			1033
-			594
-			325
-		}
-		ratio = 0.5
-		area = asia
-		subtract_invasions_from_need = no
-		subtract_fronts_from_need = no
-	}
-}
 
 #PRC wants to preserve its manpower because of... reasons - muahahaha
 PRC_let_everyone_else_do_the_fighting = {
@@ -1157,9 +1035,7 @@ CHI_stop_helping_HBC = {
 	}
 	enable = {
 		NOT = {
-			HBC = {
-				is_subject_of = CHI
-			}
+			
 		}
 	}
 	abort_when_not_enabled = yes

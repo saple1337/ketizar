@@ -178,7 +178,7 @@ fascism_on_the_rise = {
 			AND = {
 				original_tag = FIN
 				is_ai = yes
-				EST = { always = no}
+				
 			}
 		}
 		NOT = {

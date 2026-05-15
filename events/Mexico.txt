@@ -59,7 +59,6 @@ country_event = {
 				hidden_effect = {
 					division_template = {
 						name = "Brigada de Infantería"
-						division_names_group = SPAN_INFB_01
 						regiments = {
 							infantry = { x = 0 y = 0 }
 							infantry = { x = 0 y = 1 }
@@ -2283,7 +2282,6 @@ country_event = {
 				}
 				division_template = {
 					name = "Guardia Cristera"
-					division_names_group = MEX_INF_01
 					regiments = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
@@ -2588,7 +2586,6 @@ country_event = {
 				}
 				division_template = {
 					name = "Brigada Roja"
-					division_names_group = MEX_INF_01
 					regiments = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
@@ -4092,13 +4089,7 @@ country_event = {
 				has_full_control_of_state = 686
 			}
 			release = PUE
-			PUE = {
-				add_timed_idea = {
-					idea = MEX_bolivarian_agitation
-					days = 720
-				}			
-				set_country_flag = received_MEX_bolivarian_agitation
-			}
+			
 		}
 		if = {
 			limit = {
@@ -4107,13 +4098,7 @@ country_event = {
 				has_full_control_of_state = 695
 			}
 			release = CRC
-			CRC = {
-				add_timed_idea = {
-					idea = MEX_bolivarian_agitation
-					days = 720
-				}
-				set_country_flag = received_MEX_bolivarian_agitation
-			}
+			
 		}
 		if = {
 			limit = {
@@ -4122,13 +4107,7 @@ country_event = {
 				has_full_control_of_state = 309
 			}
 			release = SUR
-			SUR = {
-				add_timed_idea = {
-					idea = MEX_bolivarian_agitation
-					days = 720
-				}			
-				set_country_flag = received_MEX_bolivarian_agitation
-			}
+			
 		}
 		if = {
 			limit = {
@@ -4137,13 +4116,7 @@ country_event = {
 				has_full_control_of_state = 694
 			}
 			release = GDL
-			GDL = {
-				add_timed_idea = {
-					idea = MEX_bolivarian_agitation
-					days = 720
-				}
-				set_country_flag = received_MEX_bolivarian_agitation
-			}
+			
 		}
 		if = {
 			limit = {
@@ -4152,13 +4125,7 @@ country_event = {
 				has_full_control_of_state = 310
 			}
 			release = CAY
-			CAY = {
-				add_timed_idea = {
-					idea = MEX_bolivarian_agitation
-					days = 720
-				}
-				set_country_flag = received_MEX_bolivarian_agitation
-			}
+			
 		}
 		if = {
 			limit = {
@@ -4167,13 +4134,7 @@ country_event = {
 				has_full_control_of_state = 687
 			}
 			release = GYA
-			GYA = {
-				add_timed_idea = {
-					idea = MEX_bolivarian_agitation
-					days = 720
-				}			
-				set_country_flag = received_MEX_bolivarian_agitation
-			}
+			
 		}
 		if = {
 			limit = {
@@ -4182,13 +4143,7 @@ country_event = {
 				has_full_control_of_state = 689
 			}
 			release = JAM
-			JAM = {
-				add_timed_idea = {
-					idea = MEX_bolivarian_agitation
-					days = 720
-				}			
-				set_country_flag = received_MEX_bolivarian_agitation
-			}
+			
 		}		
 		if = {
 			limit = {
@@ -4197,13 +4152,7 @@ country_event = {
 				has_full_control_of_state = 691
 			}
 			release = TRI
-			TRI = {
-				add_timed_idea = {
-					idea = MEX_bolivarian_agitation
-					days = 720
-				}			
-				set_country_flag = received_MEX_bolivarian_agitation
-			}
+			
 		}
 		if = {
 			limit = {
@@ -4214,13 +4163,7 @@ country_event = {
 				has_full_control_of_state = 308				
 			}
 			release = BAS
-			BAS = {
-				add_timed_idea = {
-					idea = MEX_bolivarian_agitation
-					days = 720
-				}			
-				set_country_flag = received_MEX_bolivarian_agitation
-			}
+			
 		}
 		if = {
 			limit = {
@@ -4231,13 +4174,7 @@ country_event = {
 				has_full_control_of_state = 693				
 			}
 			release = BAH
-			BAH = {
-				add_timed_idea = {
-					idea = MEX_bolivarian_agitation
-					days = 720
-				}			
-				set_country_flag = received_MEX_bolivarian_agitation
-			}
+			
 		}								
 		FROM = { country_event = { id = mexico.55 hours = 6 } }
 	}

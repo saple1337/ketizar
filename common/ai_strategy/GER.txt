@@ -979,39 +979,6 @@ GER_save_pp_vic = {
 }
 
 #Don't spend pp trying to get friends - Germany don't need no stinking friends!
-GER_save_pp_fin = {
-	allowed = {
-		original_tag = GER
-	}
-	enable = {
-		country_exists = FIN
-		OR = {
-			has_war_with = SOV
-			has_war_with = USA
-			has_opinion = {
-			    target = FIN
-			    value > 70
-			}
-		}
-	}
-	abort = {
-		NOT = { 
-			country_exists = FIN
-			has_war_with = SOV
-			has_war_with = USA
-		}
-		has_opinion = {
-		    target = FIN
-		    value < 20
-		}
-	}
-
-	ai_strategy = {
-		type = befriend
-		id = FIN
-		value = -200
-	}
-}
 
 GER_dont_join_gie_wars_early = {
 	allowed = {
@@ -1438,9 +1405,9 @@ GER_play_nice_with_ribbentrop_pact = {
 			GER = { has_war_with = SOV }
 			date > 1941.5.1
 			AND = {
-				LIT = { is_in_faction_with = SOV }
-				LAT = { is_in_faction_with = SOV }
-				EST = { is_in_faction_with = SOV }
+				
+				
+				
 			}
 		}
 	}
@@ -2185,12 +2152,7 @@ GER_make_sure_poland_is_ganked_before_we_move = {
 		id = BEL
 		value = -2000
 	}
-	ai_strategy = {
-		type = declare_war
-		id = LUX
-		value = -2000
 	}
-}
 
 #make_sure_poland_is_ganked_before_we_move_bel = {
 #	allowed = {
@@ -2815,22 +2777,12 @@ GER_my_precisioussss = {
 		id = CHI
 		value = -999
 	}
-	ai_strategy = {
-		type = send_lend_lease_desire
-		id = YUN
-		value = -999
-	}
-	ai_strategy = {
+		ai_strategy = {
 		type = send_lend_lease_desire
 		id = SHX
 		value = -999
 	}
-	ai_strategy = {
-		type = send_lend_lease_desire
-		id = XSM
-		value = -999
-	}
-	ai_strategy = {
+		ai_strategy = {
 		type = send_lend_lease_desire
 		id = SIK
 		value = -999
@@ -2998,126 +2950,6 @@ GER_no_no_definitely_not_planning_to_invade_norway = {
 }
 
 # focus armor units on HOL and LUX
-GER_around_the_maginot = {
-	allowed = {
-		original_tag = GER
-		is_historical_focus_on = yes
-	}
-
-	enable = {
-		date < 1941.4.1
-		FRA = {
-			is_ai = yes
-		}
-
-		#uh oh, they are pushing
-		42 = {
-			is_controlled_by = GER
-		}
-		50 = {
-			is_controlled_by = GER
-		}
-
-		# both low countries fell
-		OR = {
-			HOL = {
-				has_capitulated = no
-			}
-			LUX = {
-				has_capitulated = no
-			}
-		}
-
-		# lux somehow joined the fun
-		#NOT = { has_war_with = LUX }
-		#LUX = {
-		#	has_capitulated = no
-		#	NOT = { is_in_faction_with = FRA }
-		#}
-
-		# we are ready to declare war on low countries
-		OR = {
-			focus_progress = {
-				focus = GER_around_maginot
-				progress > 0
-			}
-			AND = {
-				is_in_array = { potential_and_current_enemies = HOL }
-				is_in_array = { potential_and_current_enemies = LUX }
-			}
-		}
-		is_in_array = { potential_and_current_enemies = FRA }
-	}
-
-	abort_when_not_enabled = yes
-
-	# leave LUX for later
-	#ai_strategy = {
-	#	type = declare_war
-	#	id = LUX
-	#	value = -2000
-	#}
-	#ai_strategy = {
-	#	type = diplo_action_desire
-	#	id = LUX
-	#	target = declare_war
-	#	value = -50000
-	#}
-
-	ai_strategy = {
-		type = front_armor_score
-		id = FRA
-		value = -100
-	}
-
-	ai_strategy = {
-		type = front_armor_score
-		id = HOL
-		value = 250
-	}
-	ai_strategy = {
-		type = prepare_for_war
-		id = HOL
-		value = 1000
-	}
-	ai_strategy = {
-		type = force_concentration_front_factor
-		tag = HOL
-		value = 200
-	}
-
-	#ai_strategy = {
-	#	type = front_armor_score
-	#	id = BEL
-	#	value = 100
-	#}
-	#ai_strategy = {
-	#	type = prepare_for_war
-	#	id = BEL
-	#	value = 1000
-	#}
-	#ai_strategy = {
-	#	type = force_concentration_front_factor
-	#	tag = BEL
-	#	value = 200
-	#}
-
-	ai_strategy = {
-		type = front_armor_score
-		id = LUX
-		value = 100
-	}
-	ai_strategy = {
-		type = prepare_for_war
-		id = LUX
-		value = 1000
-	}
-	ai_strategy = {
-		type = force_concentration_front_factor
-		tag = LUX
-		value = 200
-	}
-}
 
 #Pounce on BEL once the rest of the Low Countries are secured
 GER_tanks_against_belgium = {
@@ -3128,7 +2960,7 @@ GER_tanks_against_belgium = {
 	enable = {
 		is_historical_focus_on = yes
 		HOL = { has_capitulated = yes }
-		#LUX = { has_capitulated = yes }
+		#
 	}
 
 	abort = {
@@ -3316,115 +3148,6 @@ GER_dont_upgrade_to_weapons_3_too_early = {
 	}
 }
 
-GER_blitzkrieg_benelux  = {
-	allowed = {
-		original_tag = GER
-	}
-
-	enable = {
-		date < 1940.9.15 #Don't keep pushing wildly if we haven't capitulated benelux in 4 months - we lost anyway
-		OR = {
-			AND = {
-				focus_progress = {
-					focus = GER_around_maginot
-					progress > 0.01
-				}
-				NOT = { has_war_with = HOL  }
-			}
-			AND = {
-				focus_progress = {
-					focus = GER_around_maginot
-					progress > 0.01
-				}
-				NOT = { has_war_with = BEL  }
-			}
-			AND = {
-				focus_progress = {
-					focus = GER_around_maginot
-					progress > 0.01
-				}
-				NOT = { has_war_with = LUX  }
-			}
-			AND = {
-				has_war_with = HOL
-				HOL = { has_capitulated = no }
-			}
-			AND = {
-				has_war_with = BEL
-				BEL = { has_capitulated = no }
-			}
-			AND = {
-				has_war_with = LUX
-				LUX = { has_capitulated = no }
-			}
-		}
-	}
-
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = front_control
-
-		tag = HOL
-
-		ratio = 0.25
-
-		priority = 100
-		ordertype = front
-		execution_type = rush
-		execute_order = yes
-	}
-
-	ai_strategy = {
-		type = front_control
-
-		tag = BEL
-
-		ratio = 0.25
-
-		priority = 100
-		ordertype = front
-		execution_type = rush
-		execute_order = yes
-	}
-
-	ai_strategy = {
-		type = front_control
-
-		tag = LUX
-
-		ratio = 0.25
-
-		priority = 100
-		ordertype = front
-		execution_type = rush
-		execute_order = yes
-	}
-
-	ai_strategy = {
-		type = front_unit_request
-
-		tag = BEL
-
-		value = 50 # lets put more units, should be safe
-	}
-
-	ai_strategy = {
-		type = front_unit_request
-
-		tag = HOL
-
-		value = 60 # lets put more units, should be safe
-	}
-
-	ai_strategy = {
-		type = front_unit_request
-
-		tag = LUX
-
-		value = 50 # lets put more units, should be safe
-	}
-}
 
 GER_blitz_france = {
 
@@ -3538,7 +3261,7 @@ GER_tanks_against_france = {
 		is_historical_focus_on = yes
 		HOL = { has_capitulated = yes }
 		BEL = { has_capitulated = yes }
-		LUX = { has_capitulated = yes }
+		
 	}
 
 	abort = {
@@ -4470,56 +4193,6 @@ GER_dont_act_on_danzig_if_things_went_south = {
 	}
 }
 
-GER_dont_send_half_the_army_to_finland_if_not_in_our_faction = {
-	allowed = {
-		original_tag = GER
-	}
-	enable = {
-		FIN = { has_war_with = SOV }
-		has_war_with = SOV
-		NOT = { is_in_faction_with = FIN }
-		has_military_access_to = FIN
-		925 = { is_controlled_by = ROOT }  # Germany still controls Finnmark in Northern Norway
-
-		# Safety measures, if Soviets have lost Leningrad or Novgorod the Finnish and German frontlines are probably close to becoming one, and then we need to disable the strategy
-		195 = { is_controlled_by = SOV }  # Leningrad
-		263 = { is_controlled_by = SOV }  # Novgorod
-	}
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = put_unit_buffers
-
-		# ratio of total armies in country to be buffered
-		ratio = 0.05
-
-		# states to put garrison orders (if no state is friendly, strat is invalid)
-		states = {
-			925  # Finnmark
-		}
-
-		# ai areas that the orders will use these buffers in
-		area = scandinavia
-	}
-
-	ai_strategy = {
-		type = front_unit_request
-
-		# As long as the front touches any of these regions. I hope this doesn't mess up the bigger Eastern Front if the Finnish and German frontlines merge...
-		strategic_region = 13  # Eastern Finland
-		strategic_region = 277  # Northern Finland
-		strategic_region = 265  # East Karelia
-		strategic_region = 12  # Kola
-
-		value = -90
-	}
-
-	ai_strategy = {
-		type = send_lend_lease_desire
-		id = FIN
-		value = 200
-	}
-}
 
 GER_protect_swedish_ore = {
 	allowed = {
@@ -4668,40 +4341,6 @@ GER_sweden_joined_our_pact_so_we_are_kinda_happy = {
 	}
 }
 
-GER_dont_DOW_benelux = { #Don't try to bypass Around the Maginot!
-	allowed = {
-		original_tag = GER
-	}
-	enable = {
-		is_historical_focus_on = yes
-	}
-
-	abort = {
-		OR = {
-			always = no
-			always = no
-			has_war_with = HOL
-			has_war_with = BEL
-			has_war_with = LUX
-		}
-	}
-
-	ai_strategy = {
-		type = declare_war
-		id = HOL
-		value = -300
-	}
-	ai_strategy = {
-		type = declare_war
-		id = BEL
-		value = -300
-	}
-	ai_strategy = {
-		type = declare_war
-		id = LUX
-		value = -300
-	}
-}
 
 # FACTION RELATED STRATEGIES
 

@@ -458,18 +458,14 @@ MEX_category_territorial_integration = {
 				NOT = {
 					313 = { is_core_of = ROOT }
 				}
-				#GUA = {
-				#	is_subject_of = ROOT
-				#}
+				#
 			}
 		}
 		
 		available = {
 			OR = {
 				controls_state = 313
-				#GUA = {
-				#	is_subject_of = ROOT
-				#}
+				#
 			}
 			always = no
 		}
@@ -509,18 +505,14 @@ MEX_category_territorial_integration = {
 				NOT = {
 					312 = { is_core_of = ROOT }
 				}
-				#HON = {
-				#	is_subject_of = ROOT
-				#}
+				#
 			}
 		}
 		
 		available = {
 			OR = {
 				controls_state = 312
-				#HON = {
-				#	is_subject_of = ROOT
-				#}
+				#
 			}
 			always = no
 		}
@@ -560,18 +552,14 @@ MEX_category_territorial_integration = {
 				NOT = {
 					314 = { is_core_of = ROOT }
 				}
-				#ELS = {
-				#	is_subject_of = ROOT
-				#}
+				#
 			}
 		}
 		
 		available = {
 			OR = {
 				controls_state = 314
-				#ELS = {
-				#	is_subject_of = ROOT
-				#}
+				#
 			}
 			always = no
 		}
@@ -611,18 +599,14 @@ MEX_category_territorial_integration = {
 				NOT = {
 					317 = { is_core_of = ROOT }
 				}
-				NIC = {
-					is_subject_of = ROOT
-				}
+				
 			}
 		}
 		
 		available = {
 			OR = {
 				controls_state = 317
-				NIC = {
-					is_subject_of = ROOT
-				}
+				
 			}
 			always = no
 		}
@@ -662,18 +646,14 @@ MEX_category_territorial_integration = {
 				NOT = {
 					316 = { is_core_of = ROOT }
 				}
-				#COS = {
-				#	is_subject_of = ROOT
-				#}
+				#
 			}
 		}
 		
 		available = {
 			OR = {
 				controls_state = 316
-				#COS = {
-				#	is_subject_of = ROOT
-				#}
+				#
 			}
 			always = no
 		}
@@ -801,18 +781,14 @@ MEX_category_territorial_integration = {
 				NOT = {
 					311 = { is_core_of = ROOT }
 				}
-				BLZ = {
-					is_subject_of = ROOT
-				}
+				
 			}
 		}
 		
 		available = {
 			OR = {
 				controls_state = 311
-				BLZ = {
-					is_subject_of = ROOT
-				}
+				
 			}
 			always = no
 		}

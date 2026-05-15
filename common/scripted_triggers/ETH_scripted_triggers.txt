@@ -125,7 +125,7 @@ league_of_nations_is_active = {
 	custom_trigger_tooltip = {
 		tooltip = league_of_nations_is_active_tt
 		NOT = { has_global_flag = LoN_disbanded_flag }
-		ETH = { NOT = { always = no}}
+		
 	}
 }
 

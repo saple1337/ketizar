@@ -174,29 +174,7 @@ FIN_seize_weapon_caches = { #Used on the state scope
 ### CONTINUATION WAR
 
 FIN_pact_for_continuation_war_start = { #To be used on FIN's scope - Used immediately upon signing agreement
-	FIN = {
-		if = {
-			limit = {
-				NOT = { gives_military_access_to = GER }
-			}
-			give_military_access = GER
-		}
-		diplomatic_relation = { 
-			country = GER
-			relation = docking_rights 
-			active = yes
-		}
-		if = {
-			limit = {
-				NOT = { has_non_aggression_pact_with = GER }
-			}
-			diplomatic_relation = { 
-				country = GER
-				relation = non_aggression_pact 
-				active = yes
-			}
-		}
-	}
+	
 	if = {
 		limit = {
 			GER = { NOT = { has_guaranteed = FIN } }
