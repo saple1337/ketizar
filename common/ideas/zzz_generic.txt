@@ -17,7 +17,24 @@ ideas = {
 			}
 		}
 
-		
+		scuffed_modding = {
+			name = "PARADOX IS"
+			
+			allowed = {
+			
+				always = no
+			}
+			cancel = {
+			}
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				
+				invasion_preparation = -0.9
+				naval_invasion_capacity = 50
+				country_resource_coal = 999
+			}
+		}
 
 		continuous_naval_production = {
 			allowed = {
