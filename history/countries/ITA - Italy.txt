@@ -878,7 +878,7 @@ if = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
-	# set_naval_oob = "ITA_1936_naval_mtg"
+	set_naval_oob = "ITA_1936_naval_mtg"
 	set_technology = {
 		early_ship_hull_light = 1
 		basic_ship_hull_light = 1
