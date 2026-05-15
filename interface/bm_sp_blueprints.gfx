@@ -1,7 +1,0 @@
-spriteTypes = {
-	spriteType = {
-		name = "GFX_sp_goliath_tracked_mine"
-		texturefile = "gfx/interface/bm_special_projects/goliath_tracked_mine.dds"
-	}
-	
-}
