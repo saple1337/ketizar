@@ -759,9 +759,7 @@ ideas = {
 				always = yes
 			}
 
-			modifier = {
-				
-			}
+
 			on_add = {
 				custom_effect_tooltip = MEX_oil_concessions_tt
 			}
@@ -967,8 +965,7 @@ ideas = {
 			
 			traits = { atlantic_fleet_naval_manufacturer }
 			
-			modifier = {
-			}
+
 		}
 		
 		MEX_astimar_pacific = {
@@ -988,8 +985,7 @@ ideas = {
 			
 			traits = { pacific_fleet_naval_manufacturer }
 			
-			modifier = {
-			}
+
 		}
 	}
 	
@@ -1131,7 +1127,6 @@ ideas = {
 			modifier = {
 				tank_manufacturer_cost_factor = -0.25
 				naval_manufacturer_cost_factor = -0.25
-				aircraft_manufacturer_cost_factor = -0.25
 				materiel_manufacturer_cost_factor = -0.25
 			}
 			
@@ -1162,8 +1157,7 @@ ideas = {
 			
 			traits = { infantry_equipment_manufacturer }
 			
-			modifier = {
-			}
+
 		}
 	
 		comesa = {
@@ -1185,8 +1179,7 @@ ideas = {
 			
 			traits = { artillery_manufacturer }
 			
-			modifier = {
-			}
+
 		}
 		
 		mexican_ford = {
@@ -1203,8 +1196,7 @@ ideas = {
 			
 			traits = { motorized_equipment_manufacturer }
 			
-			modifier = {
-			}
+
 		}
 	}
 }

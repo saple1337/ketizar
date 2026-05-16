@@ -1657,8 +1657,7 @@ ideas = {
 			
 			traits = { atlantic_fleet_naval_manufacturer }
 			
-			modifier = {
-			}
+
 		}
 		
 		john_brown_company = {
@@ -1694,9 +1693,7 @@ ideas = {
 				original_TAG = ENG
 			}
 			cost = 75
-			modifier = {
-			aircraft_manufacturer_cost_factor = -1
-			}
+
 			
 			research_bonus = {
 				air_equipment = 0.15
@@ -1704,8 +1701,7 @@ ideas = {
 			
 			traits = { light_aircraft_manufacturer }
 			
-			modifier = {
-			}
+
 		}
 		
 		hawker = {
@@ -1714,9 +1710,7 @@ ideas = {
 				original_TAG = ENG
 			}
 			cost = 75
-			modifier = {
-			aircraft_manufacturer_cost_factor = -1
-			}
+
 
 			
 			research_bonus = {
@@ -1725,8 +1719,7 @@ ideas = {
 			
 			traits = { CAS_manufacturer } 
 			
-			modifier = {
-			}
+
 		}	
 		de_havilland = {
 			
@@ -1734,9 +1727,7 @@ ideas = {
 				original_TAG = ENG
 			}
 			cost = 75
-			modifier = {
-			aircraft_manufacturer_cost_factor = -1
-			}
+
 
 			
 			research_bonus = {
@@ -1745,8 +1736,7 @@ ideas = {
 			
 			traits = { medium_aircraft_manufacturer }
 			
-			modifier = {
-			}
+
 		}
 		
 		avro = {
@@ -1756,9 +1746,7 @@ ideas = {
 			}
 			cost = 75
 			
-			modifier = {
-			aircraft_manufacturer_cost_factor = -1
-			}
+
 			
 			research_bonus = {
 				air_equipment = 0.15
@@ -1766,8 +1754,7 @@ ideas = {
 			
 			traits = { heavy_aircraft_manufacturer }
 			
-			modifier = {
-			}
+
 		}
 		
 		fairey_aviation = {
@@ -1777,9 +1764,7 @@ ideas = {
 			}
 			cost = 75
 			
-			modifier = {
-			aircraft_manufacturer_cost_factor = -1
-			}
+
 			
 			research_bonus = {
 				air_equipment = 0.15
@@ -1787,8 +1772,7 @@ ideas = {
 			
 			traits = { naval_aircraft_manufacturer }
 			
-			modifier = {
-			}
+
 		}			
 	}
 	
@@ -1811,8 +1795,7 @@ ideas = {
 			
 			traits = { infantry_equipment_manufacturer }
 			
-			modifier = {
-			}
+
 		}
 		
 		vauxhall = {
@@ -1829,8 +1812,7 @@ ideas = {
 			
 			traits = { motorized_equipment_manufacturer }
 			
-			modifier = {
-			}
+
 		}
 		
 		royal_arsenal = {
@@ -1847,8 +1829,7 @@ ideas = {
 			
 			traits = { artillery_manufacturer }
 			
-			modifier = {
-			}
+
 		}
 	}
 	industrial_concern = {
@@ -1867,8 +1848,7 @@ ideas = {
 			
 			traits = { industrial_concern }
 			
-			modifier = {
-			}
+
 
 			ai_will_do = {
 				factor = 2
@@ -1893,8 +1873,7 @@ ideas = {
 			
 			traits = { electronics_concern }
 			
-			modifier = {
-			}
+
 		}
 		
 	}	
@@ -1919,8 +1898,7 @@ ideas = {
 			}
 			traits = { commonwealth_tank_manufactuer }
 			
-			modifier = {
-			}
+
 		}
 		
 		vauxhall2 = {
@@ -1950,8 +1928,7 @@ ideas = {
 			
 			traits = { }
 			
-			modifier = {
-			}
+
 		}
 		
 	
@@ -1980,8 +1957,7 @@ ideas = {
 			
 			traits = { medium_tank_manufacturer }
 			
-			modifier = {
-			}
+
 		}
 	}
 	
