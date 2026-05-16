@@ -696,13 +696,13 @@ leader_traits = {
 			modifier = { #ITALY
 				factor = 2
 				FROM = {
-					always = no
+					has_completed_focus = ITA_comandante_diavolo
 				}
 			}
 			modifier = { #ITALY
 				factor = 2
 				FROM = {
-					always = no
+					has_completed_focus = ITA_proclaim_the_italian_empire
 				}
 			}
 		}
@@ -759,13 +759,13 @@ leader_traits = {
 			modifier = { #ITALY
 				factor = 2
 				FROM = {
-					always = no
+					has_completed_focus = ITA_strengthen_ascari_corps
 				}
 			}
 			modifier = { #ITALY
 				factor = 2
 				FROM = {
-					always = no
+					has_completed_focus = ITA_novus_ordo
 				}
 			}
 		}
@@ -829,7 +829,7 @@ leader_traits = {
 				factor = 2
 				FROM = {
 					OR = {
-						always = no
+						has_completed_focus = ITA_strengthen_the_blackshirts
 						#TODO_Manu: Alt-hist focuses
 					}
 				}
@@ -838,8 +838,8 @@ leader_traits = {
 				factor = 2
 				FROM = {
 					OR = {
-						always = no
-						always = no
+						has_completed_focus = ITA_divino_duce
+						has_completed_focus = ITA_a_greater_purpose
 					}
 				}
 			}
@@ -1867,6 +1867,8 @@ leader_traits = {
 		ai_will_do = {
 			factor = 1
 		}
+		
+		enable_ability = makeshift_bridges
 		
 		trait_type = assignable_trait
 		any_parent = { trickster }
@@ -3211,12 +3213,12 @@ leader_traits = {
 				FROM = {
 					OR = {
 						neutrality < 0.05
-						always = no
-						always = no
-						always = no
+						has_completed_focus = BUL_overthrow_the_tsar
+						has_completed_focus = BUL_abolish_the_monarchy
+						has_completed_focus = BUL_depose_the_tsar
 						AND = {
-							always = no
-							NOT = { always = no }
+							has_completed_focus = BUL_plot_against_boris
+							NOT = { has_completed_focus = BUL_the_return_of_ferdinand_i }
 						}
 					}
 				}
@@ -3239,7 +3241,7 @@ leader_traits = {
 				factor = 0
 				OR = {
 					FROM = { communism < 0.05 }
-					FROM = { always = no }
+					FROM = { has_completed_focus = BUL_crush_the_communists }
 				}
 			}
 		}
@@ -3313,76 +3315,6 @@ leader_traits = {
 		new_commander_weight = {
 			factor = 0
 		}
-	}
-
-	operative_commando = {
-		type = operative
-		trait_type = basic_trait
-	}
-
-	operative_seducer = {
-		type = operative
-		trait_type = personality_trait
-	}
-
-	operative_infiltrator = {
-		type = operative
-		trait_type = basic_trait
-	}
-
-	operative_master_interrogator = {
-		type = operative
-		trait_type = basic_trait
-	}
-
-	operative_linguist = {
-		type = operative
-		trait_type = basic_trait
-	}
-
-	operative_double_agent = {
-		type = operative
-		trait_type = personality_trait
-	}
-
-	operative_tough = {
-		type = operative
-		trait_type = personality_trait
-	}
-
-	operative_safe_cracker = {
-		type = operative
-		trait_type = personality_trait
-	}
-
-	operative_well_groomed = {
-		type = operative
-		trait_type = basic_trait
-	}
-
-	operative_natural_orator = {
-		type = operative
-		trait_type = basic_trait
-	}
-
-	operative_escape_artist = {
-		type = operative
-		trait_type = basic_trait
-	}
-
-	operative_demolition_expert = {
-		type = operative
-		trait_type = basic_trait
-	}
-
-	trait_SOV_stalinist = {
-		type = corps_commander
-		trait_type = personality_trait
-	}
-
-	trait_SOV_foreign_military_advisor = {
-		type = corps_commander
-		trait_type = personality_trait
 	}
 
 }
