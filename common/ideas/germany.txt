@@ -2189,7 +2189,8 @@ ideas = {
 
 			picture = ger_mefo_bills_payment
 
-
+			modifier = {
+			}
 		}
 
 		GER_ss_factory_rerouted = {
@@ -2573,7 +2574,9 @@ ideas = {
 			allowed = {
 				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
 			}
-
+			modifier = {
+			aircraft_manufacturer_cost_factor = -1
+			}
 			research_bonus = {
 				air_equipment = 0.15
 			}
@@ -2592,7 +2595,9 @@ ideas = {
 			equipment_bonus = {
 				
 			}
-
+			modifier = {
+			aircraft_manufacturer_cost_factor = -1
+			}
 			ai_will_do = {
 				factor = 1
 			}
@@ -2603,7 +2608,9 @@ ideas = {
 			allowed = {
 				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
 			}
-			
+			modifier = {
+			aircraft_manufacturer_cost_factor = -1
+			}			
 			research_bonus = {
 				air_equipment = 0.15
 			}
@@ -2633,7 +2640,9 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.15
 			}
-
+			modifier = {
+			aircraft_manufacturer_cost_factor = -1
+			}
 			traits = { medium_aircraft_manufacturer }
 			
 			ai_will_do = {
@@ -2648,7 +2657,9 @@ ideas = {
 				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
 			}
 			
-
+			modifier = {
+			aircraft_manufacturer_cost_factor = -1
+			}
 			research_bonus = {
 				air_equipment = 0.15
 			}
@@ -2666,7 +2677,9 @@ ideas = {
 				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
 			}
 			
-		
+				modifier = {
+			aircraft_manufacturer_cost_factor = -1
+			}		
 			research_bonus = {
 				air_equipment = 0.15
 			}
