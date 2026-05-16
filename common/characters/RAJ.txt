@@ -563,7 +563,7 @@ RAJ_GOE_j_r_d_tata= {
 			defense_skill=5
 			planning_skill=2
 			logistics_skill=9
-			legacy_id=9980
+			legacy_id=998
 		}
 		advisor={
 			slot = high_command

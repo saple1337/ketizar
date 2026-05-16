@@ -1131,7 +1131,7 @@ ideas = {
 			modifier = {
 				tank_manufacturer_cost_factor = -0.25
 				naval_manufacturer_cost_factor = -0.25
-				air_manufacturer_cost_factor = -0.25
+				aircraft_manufacturer_cost_factor = -0.25
 				materiel_manufacturer_cost_factor = -0.25
 			}
 			

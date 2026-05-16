@@ -6745,7 +6745,7 @@ ideas = {
 			picture = ilyushin_design_bureau
 			cost = 75
 			modifier = {
-			    air_manufacturer_cost_factor = -1
+			    aircraft_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -6780,7 +6780,7 @@ ideas = {
 			picture = ilyushin_design_bureau
 			cost = 75
 			modifier = {
-			    air_manufacturer_cost_factor = -1
+			    aircraft_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -6821,7 +6821,7 @@ ideas = {
 			picture = ilyushin_design_bureau
 			cost = 75
 			modifier = {
-			    air_manufacturer_cost_factor = -1
+			    aircraft_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -6857,7 +6857,7 @@ ideas = {
 			picture = ilyushin_design_bureau
 			cost = 75
 			modifier = {
-			    air_manufacturer_cost_factor = -1
+			    aircraft_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -6894,7 +6894,7 @@ ideas = {
 			picture = ilyushin_design_bureau
 			cost = 75
 			modifier = {
-			    air_manufacturer_cost_factor = -1
+			    aircraft_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -6936,7 +6936,7 @@ ideas = {
 			picture = ilyushin_design_bureau
 			cost = 75
 			modifier = {
-			    air_manufacturer_cost_factor = -1
+			    aircraft_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -6979,7 +6979,7 @@ ideas = {
 			picture = ilyushin_design_bureau
 			cost = 75
 			modifier = {
-			    air_manufacturer_cost_factor = -1
+			    aircraft_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -7017,7 +7017,7 @@ ideas = {
 			picture = ilyushin_design_bureau
 			cost = 75
 			modifier = {
-			    air_manufacturer_cost_factor = -1
+			    aircraft_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -7072,7 +7072,7 @@ ideas = {
 			picture = tupolev_design_bureau
 			cost = 75
 			modifier = {
-			    air_manufacturer_cost_factor = -1
+			    aircraft_manufacturer_cost_factor = -1
 			}
 			allowed = {
 				original_tag = SOV
@@ -7106,7 +7106,7 @@ ideas = {
 			picture = tupolev_design_bureau
 			cost = 75
 			modifier = {
-			    air_manufacturer_cost_factor = -1
+			    aircraft_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -7147,7 +7147,7 @@ ideas = {
 			picture = tupolev_design_bureau
 			cost = 75
 			modifier = {
-			    air_manufacturer_cost_factor = -1
+			    aircraft_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -7183,7 +7183,7 @@ ideas = {
 			picture = tupolev_design_bureau
 			cost = 75
 			modifier = {
-			    air_manufacturer_cost_factor = -1
+			    aircraft_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -7220,7 +7220,7 @@ ideas = {
 			picture = tupolev_design_bureau
 			cost = 75
 			modifier = {
-			    air_manufacturer_cost_factor = -1
+			    aircraft_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -7262,7 +7262,7 @@ ideas = {
 			picture = tupolev_design_bureau
 			cost = 75
 			modifier = {
-			    air_manufacturer_cost_factor = -1
+			    aircraft_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -7305,7 +7305,7 @@ ideas = {
 			picture = tupolev_design_bureau
 			cost = 75
 			modifier = {
-			    air_manufacturer_cost_factor = -1
+			    aircraft_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -7343,7 +7343,7 @@ ideas = {
 			picture = tupolev_design_bureau
 			cost = 75
 			modifier = {
-			    air_manufacturer_cost_factor = -1
+			    aircraft_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -7397,7 +7397,7 @@ ideas = {
 			picture = yakovlev_design_bureau
 			cost = 75
 			modifier = {
-			    air_manufacturer_cost_factor = -1
+			    aircraft_manufacturer_cost_factor = -1
 			}
 			allowed = {
 				original_tag = SOV
@@ -7431,7 +7431,7 @@ ideas = {
 			picture = yakovlev_design_bureau
 			cost = 75
 			modifier = {
-			    air_manufacturer_cost_factor = -1
+			    aircraft_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -7472,7 +7472,7 @@ ideas = {
 			picture = yakovlev_design_bureau
 			cost = 75
 			modifier = {
-			    air_manufacturer_cost_factor = -1
+			    aircraft_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -7508,7 +7508,7 @@ ideas = {
 			picture = yakovlev_design_bureau
 			cost = 75
 			modifier = {
-			    air_manufacturer_cost_factor = -1
+			    aircraft_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -7545,7 +7545,7 @@ ideas = {
 			picture = yakovlev_design_bureau
 			cost = 75
 			modifier = {
-			    air_manufacturer_cost_factor = -1
+			    aircraft_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -7587,7 +7587,7 @@ ideas = {
 			picture = yakovlev_design_bureau
 			cost = 75
 			modifier = {
-			    air_manufacturer_cost_factor = -1
+			    aircraft_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -7630,7 +7630,7 @@ ideas = {
 			picture = yakovlev_design_bureau
 			cost = 75
 			modifier = {
-			    air_manufacturer_cost_factor = -1
+			    aircraft_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -7668,7 +7668,7 @@ ideas = {
 			picture = yakovlev_design_bureau
 			cost = 75
 			modifier = {
-			    air_manufacturer_cost_factor = -1
+			    aircraft_manufacturer_cost_factor = -1
 			}
 
 			allowed = {

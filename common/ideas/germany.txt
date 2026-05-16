@@ -2575,7 +2575,7 @@ ideas = {
 				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
 			}
 			modifier = {
-			air_manufacturer_cost_factor = -1
+			aircraft_manufacturer_cost_factor = -1
 			}
 			research_bonus = {
 				air_equipment = 0.15
@@ -2596,7 +2596,7 @@ ideas = {
 				
 			}
 			modifier = {
-			air_manufacturer_cost_factor = -1
+			aircraft_manufacturer_cost_factor = -1
 			}
 			ai_will_do = {
 				factor = 1
@@ -2609,7 +2609,7 @@ ideas = {
 				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
 			}
 			modifier = {
-			air_manufacturer_cost_factor = -1
+			aircraft_manufacturer_cost_factor = -1
 			}			
 			research_bonus = {
 				air_equipment = 0.15
@@ -2641,7 +2641,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			modifier = {
-			air_manufacturer_cost_factor = -1
+			aircraft_manufacturer_cost_factor = -1
 			}
 			traits = { medium_aircraft_manufacturer }
 			
@@ -2658,7 +2658,7 @@ ideas = {
 			}
 			
 			modifier = {
-			air_manufacturer_cost_factor = -1
+			aircraft_manufacturer_cost_factor = -1
 			}
 			research_bonus = {
 				air_equipment = 0.15
@@ -2678,7 +2678,7 @@ ideas = {
 			}
 			
 				modifier = {
-			air_manufacturer_cost_factor = -1
+			aircraft_manufacturer_cost_factor = -1
 			}		
 			research_bonus = {
 				air_equipment = 0.15
