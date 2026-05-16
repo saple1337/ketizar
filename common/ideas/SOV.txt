@@ -4128,8 +4128,7 @@ ideas = {
 
 			traits = { sov_fast_tank_manufacturer }
 
-			modifier = {
-			}
+
 		}
 
 		SOV_morozov_design_bureau_1 = {
@@ -4190,8 +4189,7 @@ ideas = {
 
 			traits = { sov_fast_tank_manufacturer }
 
-			modifier = {
-			}
+
 
 			equipment_bonus = {
 				armor = {
@@ -4405,8 +4403,7 @@ ideas = {
 
 			traits = { sov_medium_manufacturer }
 
-			modifier = {
-			}
+
 		}
 
 		SOV_astrov_design_bureau_1 = {
@@ -4470,8 +4467,7 @@ ideas = {
 
 			traits = { sov_medium_manufacturer }
 
-			modifier = {
-			}
+
 
 			equipment_bonus = {
 				armor = {
@@ -4692,8 +4688,7 @@ ideas = {
 
 			traits = { sov_heavy_manufacturer }
 
-			modifier = {
-			}
+
 		}
 
 		SOV_okmo_1 = {
@@ -4759,8 +4754,7 @@ ideas = {
 
 			traits = { sov_heavy_manufacturer }
 
-			modifier = {
-			}
+
 
 			equipment_bonus = {
 				armor = {
@@ -4992,8 +4986,7 @@ ideas = {
 
 			traits = { battlefleet_designer }
 
-			modifier = {
-			}
+
 		}
 
 		SOV_nevskoye_design_bureau_1 = {
@@ -5021,8 +5014,7 @@ ideas = {
 
 			traits = { battlefleet_designer }
 
-			modifier = {
-			}
+
 
 			equipment_bonus = {
 				ship_hull_cruiser_coastal_defense_ship = {
@@ -5056,8 +5048,7 @@ ideas = {
 
 			traits = { battlefleet_designer }
 
-			modifier = {
-			}
+
 
 			equipment_bonus = {
 				destroyer = {
@@ -5091,8 +5082,7 @@ ideas = {
 
 			traits = { battlefleet_designer }
 
-			modifier = {
-			}
+
 
 			equipment_bonus = {
 				submarine = {
@@ -5157,8 +5147,7 @@ ideas = {
 
 			traits = { battlefleet_designer }
 
-			modifier = {
-			}
+
 
 			equipment_bonus = {
 				ship_hull_cruiser_coastal_defense_ship = {
@@ -5195,8 +5184,7 @@ ideas = {
 
 			traits = { battlefleet_designer }
 
-			modifier = {
-			}
+
 
 			equipment_bonus = {
 				ship_hull_cruiser_coastal_defense_ship = {
@@ -5432,8 +5420,7 @@ ideas = {
 
 			traits = { raiding_fleet_naval_manufacturer }
 
-			modifier = {
-			}
+
 		}
 
 		SOV_rubin_design_bureau_1 = {
@@ -5460,8 +5447,7 @@ ideas = {
 
 			traits = { raiding_fleet_naval_manufacturer }
 
-			modifier = {
-			}
+
 
 			equipment_bonus = {
 				ship_hull_cruiser_coastal_defense_ship = {
@@ -5494,8 +5480,7 @@ ideas = {
 
 			traits = { raiding_fleet_naval_manufacturer }
 
-			modifier = {
-			}
+
 
 			equipment_bonus = {
 				destroyer = {
@@ -5528,8 +5513,7 @@ ideas = {
 
 			traits = { raiding_fleet_naval_manufacturer }
 
-			modifier = {
-			}
+
 
 			equipment_bonus = {
 				submarine = {
@@ -5592,8 +5576,7 @@ ideas = {
 
 			traits = { raiding_fleet_naval_manufacturer }
 
-			modifier = {
-			}
+
 
 			equipment_bonus = {
 				ship_hull_cruiser_coastal_defense_ship = {
@@ -5629,8 +5612,7 @@ ideas = {
 
 			traits = { raiding_fleet_naval_manufacturer }
 
-			modifier = {
-			}
+
 
 			equipment_bonus = {
 				ship_hull_cruiser_coastal_defense_ship = {
@@ -5861,8 +5843,7 @@ ideas = {
 
 			traits = { black_sea_naval_manufacturer }
 
-			modifier = {
-			}
+
 		}
 
 		SOV_black_sea_shipyard_1 = {
@@ -5889,8 +5870,7 @@ ideas = {
 
 			traits = { black_sea_naval_manufacturer }
 
-			modifier = {
-			}
+
 
 			equipment_bonus = {
 				ship_hull_cruiser_coastal_defense_ship = {
@@ -5923,8 +5903,7 @@ ideas = {
 
 			traits = { black_sea_naval_manufacturer }
 
-			modifier = {
-			}
+
 
 			equipment_bonus = {
 				destroyer = {
@@ -5957,8 +5936,7 @@ ideas = {
 
 			traits = { black_sea_naval_manufacturer }
 
-			modifier = {
-			}
+
 
 			equipment_bonus = {
 				submarine = {
@@ -6021,8 +5999,7 @@ ideas = {
 
 			traits = { black_sea_naval_manufacturer }
 
-			modifier = {
-			}
+
 
 			equipment_bonus = {
 				ship_hull_cruiser_coastal_defense_ship = {
@@ -6744,9 +6721,7 @@ ideas = {
 
 			picture = ilyushin_design_bureau
 			cost = 75
-			modifier = {
-			    aircraft_manufacturer_cost_factor = -1
-			}
+
 
 			allowed = {
 				original_tag = SOV
@@ -6770,8 +6745,7 @@ ideas = {
 
 			traits = { medium_aircraft_manufacturer }
 
-			modifier = {
-			}
+
 		}
 
 		SOV_ilyushin_design_bureau_1 = {
@@ -6779,9 +6753,7 @@ ideas = {
 
 			picture = ilyushin_design_bureau
 			cost = 75
-			modifier = {
-			    aircraft_manufacturer_cost_factor = -1
-			}
+
 
 			allowed = {
 				original_tag = SOV
@@ -6805,8 +6777,7 @@ ideas = {
 
 			traits = { medium_aircraft_manufacturer }
 
-			modifier = {
-			}
+
 
 			equipment_bonus = {
 				small_plane_cas_airframe = {
@@ -6820,9 +6791,7 @@ ideas = {
 
 			picture = ilyushin_design_bureau
 			cost = 75
-			modifier = {
-			    aircraft_manufacturer_cost_factor = -1
-			}
+
 
 			allowed = {
 				original_tag = SOV
@@ -6856,9 +6825,7 @@ ideas = {
 
 			picture = ilyushin_design_bureau
 			cost = 75
-			modifier = {
-			    aircraft_manufacturer_cost_factor = -1
-			}
+
 
 			allowed = {
 				original_tag = SOV
@@ -6893,9 +6860,7 @@ ideas = {
 
 			picture = ilyushin_design_bureau
 			cost = 75
-			modifier = {
-			    aircraft_manufacturer_cost_factor = -1
-			}
+
 
 			allowed = {
 				original_tag = SOV
@@ -6935,9 +6900,7 @@ ideas = {
 
 			picture = ilyushin_design_bureau
 			cost = 75
-			modifier = {
-			    aircraft_manufacturer_cost_factor = -1
-			}
+
 
 			allowed = {
 				original_tag = SOV
@@ -6978,9 +6941,7 @@ ideas = {
 
 			picture = ilyushin_design_bureau
 			cost = 75
-			modifier = {
-			    aircraft_manufacturer_cost_factor = -1
-			}
+
 
 			allowed = {
 				original_tag = SOV
@@ -7016,9 +6977,7 @@ ideas = {
 
 			picture = ilyushin_design_bureau
 			cost = 75
-			modifier = {
-			    aircraft_manufacturer_cost_factor = -1
-			}
+
 
 			allowed = {
 				original_tag = SOV
@@ -7071,9 +7030,7 @@ ideas = {
 
 			picture = tupolev_design_bureau
 			cost = 75
-			modifier = {
-			    aircraft_manufacturer_cost_factor = -1
-			}
+
 			allowed = {
 				original_tag = SOV
 			}
@@ -7096,8 +7053,7 @@ ideas = {
 
 			traits = { heavy_aircraft_manufacturer }
 
-			modifier = {
-			}
+
 		}
 
 		SOV_tupolev_design_bureau_1 = {
@@ -7105,9 +7061,7 @@ ideas = {
 
 			picture = tupolev_design_bureau
 			cost = 75
-			modifier = {
-			    aircraft_manufacturer_cost_factor = -1
-			}
+
 
 			allowed = {
 				original_tag = SOV
@@ -7131,8 +7085,7 @@ ideas = {
 
 			traits = { heavy_aircraft_manufacturer }
 
-			modifier = {
-			}
+
 
 			equipment_bonus = {
 				small_plane_cas_airframe = {
@@ -7146,9 +7099,7 @@ ideas = {
 
 			picture = tupolev_design_bureau
 			cost = 75
-			modifier = {
-			    aircraft_manufacturer_cost_factor = -1
-			}
+
 
 			allowed = {
 				original_tag = SOV
@@ -7182,9 +7133,7 @@ ideas = {
 
 			picture = tupolev_design_bureau
 			cost = 75
-			modifier = {
-			    aircraft_manufacturer_cost_factor = -1
-			}
+
 
 			allowed = {
 				original_tag = SOV
@@ -7219,9 +7168,7 @@ ideas = {
 
 			picture = tupolev_design_bureau
 			cost = 75
-			modifier = {
-			    aircraft_manufacturer_cost_factor = -1
-			}
+
 
 			allowed = {
 				original_tag = SOV
@@ -7261,9 +7208,7 @@ ideas = {
 
 			picture = tupolev_design_bureau
 			cost = 75
-			modifier = {
-			    aircraft_manufacturer_cost_factor = -1
-			}
+
 
 			allowed = {
 				original_tag = SOV
@@ -7304,9 +7249,7 @@ ideas = {
 
 			picture = tupolev_design_bureau
 			cost = 75
-			modifier = {
-			    aircraft_manufacturer_cost_factor = -1
-			}
+
 
 			allowed = {
 				original_tag = SOV
@@ -7342,9 +7285,7 @@ ideas = {
 
 			picture = tupolev_design_bureau
 			cost = 75
-			modifier = {
-			    aircraft_manufacturer_cost_factor = -1
-			}
+
 
 			allowed = {
 				original_tag = SOV
@@ -7396,9 +7337,7 @@ ideas = {
 
 			picture = yakovlev_design_bureau
 			cost = 75
-			modifier = {
-			    aircraft_manufacturer_cost_factor = -1
-			}
+
 			allowed = {
 				original_tag = SOV
 			}
@@ -7421,8 +7360,7 @@ ideas = {
 
 			traits = { naval_aircraft_manufacturer }
 
-			modifier = {
-			}
+
 		}
 
 		SOV_yakovlev_design_bureau_1 = {
@@ -7430,9 +7368,7 @@ ideas = {
 
 			picture = yakovlev_design_bureau
 			cost = 75
-			modifier = {
-			    aircraft_manufacturer_cost_factor = -1
-			}
+
 
 			allowed = {
 				original_tag = SOV
@@ -7456,8 +7392,7 @@ ideas = {
 
 			traits = { naval_aircraft_manufacturer }
 
-			modifier = {
-			}
+
 
 			equipment_bonus = {
 				small_plane_cas_airframe = {
@@ -7471,9 +7406,7 @@ ideas = {
 
 			picture = yakovlev_design_bureau
 			cost = 75
-			modifier = {
-			    aircraft_manufacturer_cost_factor = -1
-			}
+
 
 			allowed = {
 				original_tag = SOV
@@ -7507,9 +7440,7 @@ ideas = {
 
 			picture = yakovlev_design_bureau
 			cost = 75
-			modifier = {
-			    aircraft_manufacturer_cost_factor = -1
-			}
+
 
 			allowed = {
 				original_tag = SOV
@@ -7544,9 +7475,7 @@ ideas = {
 
 			picture = yakovlev_design_bureau
 			cost = 75
-			modifier = {
-			    aircraft_manufacturer_cost_factor = -1
-			}
+
 
 			allowed = {
 				original_tag = SOV
@@ -7586,9 +7515,7 @@ ideas = {
 
 			picture = yakovlev_design_bureau
 			cost = 75
-			modifier = {
-			    aircraft_manufacturer_cost_factor = -1
-			}
+
 
 			allowed = {
 				original_tag = SOV
@@ -7629,9 +7556,7 @@ ideas = {
 
 			picture = yakovlev_design_bureau
 			cost = 75
-			modifier = {
-			    aircraft_manufacturer_cost_factor = -1
-			}
+
 
 			allowed = {
 				original_tag = SOV
@@ -7667,9 +7592,7 @@ ideas = {
 
 			picture = yakovlev_design_bureau
 			cost = 75
-			modifier = {
-			    aircraft_manufacturer_cost_factor = -1
-			}
+
 
 			allowed = {
 				original_tag = SOV
@@ -7745,8 +7668,7 @@ ideas = {
 
 			traits = { artillery_manufacturer }
 
-			modifier = {
-			}
+
 		}
 
 		SOV_grabin_design_bureau_1 = {
@@ -7772,8 +7694,7 @@ ideas = {
 
 			traits = { artillery_manufacturer }
 
-			modifier = {
-			}
+
 
 			equipment_bonus = {
 				artillery_equipment = {
@@ -8003,8 +7924,7 @@ ideas = {
 
 			traits = { infantry_equipment_manufacturer }
 
-			modifier = {
-			}
+
 		}
 
 		SOV_tula_arms_plant_1 = {
@@ -8030,8 +7950,7 @@ ideas = {
 
 			traits = { infantry_equipment_manufacturer }
 
-			modifier = {
-			}
+
 
 			equipment_bonus = {
 				infantry_equipment = {
@@ -8268,8 +8187,7 @@ ideas = {
 
 			traits = { motorized_equipment_manufacturer }
 
-			modifier = {
-			}
+
 		}
 
 		SOV_gaz_1 = {
@@ -8304,8 +8222,7 @@ ideas = {
 
 			traits = { motorized_equipment_manufacturer }
 
-			modifier = {
-			}
+
 
 			equipment_bonus = {
 				motorized_equipment = {
