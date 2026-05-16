@@ -1695,7 +1695,7 @@ ideas = {
 			}
 			cost = 75
 			modifier = {
-			aircraft_manufacturer_cost_factor = -1
+			air_manufacturer_cost_factor = -1
 			}
 			
 			research_bonus = {
@@ -1715,7 +1715,7 @@ ideas = {
 			}
 			cost = 75
 			modifier = {
-			aircraft_manufacturer_cost_factor = -1
+			air_manufacturer_cost_factor = -1
 			}
 
 			
@@ -1735,7 +1735,7 @@ ideas = {
 			}
 			cost = 75
 			modifier = {
-			aircraft_manufacturer_cost_factor = -1
+			air_manufacturer_cost_factor = -1
 			}
 
 			
@@ -1757,7 +1757,7 @@ ideas = {
 			cost = 75
 			
 			modifier = {
-			aircraft_manufacturer_cost_factor = -1
+			air_manufacturer_cost_factor = -1
 			}
 			
 			research_bonus = {
@@ -1778,7 +1778,7 @@ ideas = {
 			cost = 75
 			
 			modifier = {
-			aircraft_manufacturer_cost_factor = -1
+			air_manufacturer_cost_factor = -1
 			}
 			
 			research_bonus = {

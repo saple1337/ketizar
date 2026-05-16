@@ -141,7 +141,7 @@ characters = {
 			defense_skill=5
 			planning_skill=2
 			logistics_skill=9
-			legacy_id=998
+			legacy_id=9981
 		}
 		advisor={
 			slot = high_command
