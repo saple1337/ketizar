@@ -1,13 +1,36 @@
 characters={
-	SAF_j_b_m_hertzog={
+	SAF_jan_smuts = {
+		name=SAF_jan_smuts
+		portraits={
+			civilian={
+				large=GFX_portrait_SAF_jan_smuts
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	SAF_j_b_m_hertzog={ 
 		name=SAF_j_b_m_hertzog
 		portraits={
 			civilian={
 				large="GFX_SAF_james_hertzog"
 			}
 		}
+	}
+
+	SAF_pixley_ka_isaka_seme={
+		name=SAF_pixley_ka_isaka_seme
+		portraits={
+			civilian={
+				large=GFX_portrait_SAF_pixley_ka_isaka_seme
+			}
+		}
 		country_leader={
-			ideology=conservatism
+			ideology=nazism
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -23,22 +46,9 @@ characters={
 				small=GFX_portrait_SAF_d_f_malan_small
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = SAF_d_f_malan
-			allowed = {
-				original_tag = SAF
-			}
-			traits = {
-				backroom_backstabber 
-			}
-			ai_will_do = {
-				factor = 0.000
-			}
-		}
 		
 		country_leader={
-			ideology=fascism_ideology
+			ideology=centrism
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -58,50 +68,41 @@ characters={
 		}
 	}
 
-	SAF_pixley_ka_isaka_seme={
-		name=SAF_pixley_ka_isaka_seme
-		portraits={
-			civilian={
-				large=GFX_portrait_SAF_pixley_ka_isaka_seme
-			}
-		}
-		country_leader={
-			ideology=centrism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	SAF_jan_smuts = {
-		name=SAF_jan_smuts
-		portraits={
-			civilian={
-				large=GFX_portrait_SAF_jan_smuts
-			}
-		}
-		country_leader={
-			ideology=conservatism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
 	SAF_george_edwin_brink={
 		name=SAF_george_edwin_brink
 		portraits={
 			army={
 				large="GFX_SAF_george_edwin_brink"
-				small=GFX_portrait_SAF_george_edwin_brink_small
+				small="GFX_SAF_george_edwin_brink_small"
 			}
 		}
 		corps_commander={
-			traits={ desert_fox }
+			traits={ desert_fox panzer_leader trickster trait_engineer infantry_leader cavalry_leader naval_invader }
 			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=1
+			attack_skill=6
+			defense_skill=6
+			planning_skill=6
+			logistics_skill=4
 			legacy_id=-1
+		}
+	}
+	
+	SAF_dan_pienaar = {
+		name="Dan Pienaar"
+		portraits={
+			army={
+				large="gfx/leaders/Portrait_Europe_Generic_land_2.dds"
+				small="gfx/leaders/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander = {
+		traits = { desert_fox panzer_leader organizer infantry_leader cavalry_leader}
+		skill = 5
+		attack_skill = 6
+		defense_skill = 6
+		planning_skill = 6
+		logistics_skill = 3
+		legacy_id=-1
 		}
 	}
 
@@ -110,7 +111,7 @@ characters={
 		portraits={
 			army={
 				large="GFX_SAF_guy_halifax"
-				small=GFX_portrait_SAF_guy_hallifax_small
+				small="GFX_SAF_guy_halifax_small"
 			}
 		}
 		navy_leader={
@@ -138,7 +139,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = SAF_j_f_van_rensburg
 			ledger = army
@@ -147,41 +148,6 @@ characters={
 			}
 			traits = {
 				military_theorist
-			}
-		}
-
-		advisor={
-			slot = political_advisor
-			idea_token = SAF_j_f_van_rensburg_fascist
-			allowed = {
-				original_tag = SAF
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-					always = no 
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-			}
-			traits = {
-				fascist_demagogue 
-			}
-			do_effect = {
-				NOT = {
-					has_government = fascism 
-				}
-			}
-			ai_will_do = {
-				factor = 0.000
 			}
 		}
 	}
@@ -194,17 +160,19 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = SAF_s_p_le_roux
-			ledger = air
+			slot = political_advisor
+			idea_token = SAF_s_p_le_roux_advisor
 			allowed = {
 				original_tag = SAF
 			}
-			traits = {
-				air_warfare_theorist
+			available = {
+				has_completed_focus = SAF_dominion_first_policy
 			}
-		}		
+			traits = {
+				captain_of_industry
+			}
+			cost = 150
+		}
 	}
 
 
@@ -224,7 +192,7 @@ characters={
 				original_tag = SAF
 			}
 			traits = {
-				army_chief_maneuver_2
+				army_chief_offensive_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -420,7 +388,7 @@ characters={
 				original_tag = SAF
 			}
 			traits = {
-				air_naval_strike_2
+				army_infantry_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -444,7 +412,7 @@ characters={
 				original_tag = SAF
 			}
 			traits = {
-				navy_screen_2
+				army_commando_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -473,29 +441,8 @@ characters={
 			allowed = {
 				original_tag = SAF
 			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-					always = no 
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-			}
 			traits = {
-				democratic_reformer 
-			}
-			do_effect = {
-				NOT = {
-					has_government = democratic 
-				}
+				popular_figurehead 
 			}
 			ai_will_do = {
 				factor = 0.000
@@ -521,7 +468,6 @@ characters={
 					limit = {
 						has_dlc = "Together for Victory"
 					}
-					always = no 
 				}
 				if = {
 					limit = {
@@ -546,25 +492,6 @@ characters={
 		}		
 	}
 
-	SAF_nicolaas_havenga={
-		name=SAF_nicolaas_havenga
-		portraits={
-			army={
-				small="GFX_idea_SAF_nicolaas_havenga" #small="GFX_idea_generic_political_advisor_europe_2"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = SAF_nicolaas_havenga
-			allowed = {
-				original_tag = SAF
-			}
-			traits = {
-				captain_of_industry 
-			}
-		}		
-	}
-
 	SAF_e_g_jansen={
 		name=SAF_e_g_jansen
 		portraits={
@@ -583,7 +510,5 @@ characters={
 			}
 		}		
 	}
-	
-
 	#Illusive Gentleman auto-generated
 }

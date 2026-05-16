@@ -3,7 +3,7 @@ characters={
 		name=YUG_prince_paul
 		portraits={
 			civilian={
-				large=GFX_portrait_YUG_prince_paul
+				large="gfx/leaders/YUG/Portrait_Yugoslavia_Prince_Paul.dds"
 			}
 		}
 		country_leader={
@@ -12,50 +12,448 @@ characters={
 			id=-1
 		}
 	}
-	YUG_milan_stojadinovic={
-		name=YUG_milan_stojadinovic
+	CRO_vladimir_laxa={
+		name="Vladimir Laxa"
 		portraits={
-			civilian={
-				large=GFX_portrait_YUG_milan_stojadinovic
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 			}
 		}
+		corps_commander={
+			traits={ old_guard inflexible_strategist infantry_officer trait_engineer commando naval_invader }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=1
+			legacy_id=-1
+		}
+		advisor={
+			slot = high_command
+			idea_token = vladiir_laxa
+			ledger = army
+			allowed = {
+				original_tag = YUG
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	CRO_fedor_dragojlov={
+		name="Fedor Dragojlov"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_11.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/portrait_europe_generic_land_11.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless cavalry_officer cavalry_leader trickster trait_engineer panzer_leader desert_fox }
+			skill=6
+			attack_skill=7
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
+		}
+		advisor={
+			slot = high_command
+			idea_token = fedor_dragojlov
+			ledger = army
+			allowed = {
+				original_tag = YUG
+			}
+			traits = {
+				army_armored_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	CRO_nikola_steinfl={
+		name="Nikola Steinfl"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_navy_5.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_5.dds"
+			}
+		}
+		navy_leader={
+			traits={ blockade_runner spotter green_water_expert concealment_expert }
+			skill=4
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = manstein
+			ledger = army
+			allowed = {
+				original_tag = YUG
+			}
+			traits = {
+				mobile_warfare_expert
+			}}
+	}
+	CRO_ante_pavelic={
+		name="Ante Pavelic"
+		portraits={
+			civilian={
+				large="gfx/leaders/CRO/Portrait_Croatia_Ante_Pavelic.ddss"
+			}
+			army = {
+				large="gfx/leaders/CRO/Portrait_Croatia_Ante_Pavelic.dds"
+			}
+			army = {
+				small = "GFX_Portrait_generic_army_europe_3"
+			}
+		}
+		field_marshal={
+			traits={ old_guard inflexible_strategist politically_connected organizer ranger panzer_leader defensive_doctrine organizer }
+			skill=5
+			attack_skill=8
+			defense_skill=6
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
 		country_leader={
+			desc="ANTE_PAVELIC_DESC"
 			ideology=fascism_ideology
 			expire="1965.1.1.1"
 			id=-1
 		}
+		advisor={
+			slot = army_chief
+			idea_token = ante_pavelic
+			allowed = {
+				original_tag = YUG
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 	}
-	YUG_milan_grol={
-		name=YUG_milan_grol
+	CRO_ferenc_feketehalmyczeydner={
+		name="Ferenc Feketehalmy-Czeydner"
+		portraits={
+			army={
+				small="GFX_Portrait_hungary_ferenc_feketehalmy_czeydner_small"
+			}
+			army={
+				large="GFX_Portrait_hungary_ferenc_feketehalmy_czeydner"
+			}
+		}
+		field_marshal={
+			traits={ old_guard inflexible_strategist career_officer politically_connected organizer skilled_staffer defensive_doctrine infantry_leader organizer }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=7
+			legacy_id=-1
+		}
+		advisor={
+			slot = army_chief
+			idea_token = ferenc_feketehalmyczeydner
+			allowed = {
+				original_tag = YUG
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	CRO_ante_vokic={
+		name="Ante Vokić"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_5.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist career_officer trait_reckless harsh_leader infantry_officer infantry_leader swamp_fox infantry_expert }
+			skill=4
+			attack_skill=6
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+		advisor={
+			slot = high_command
+			idea_token = ante_vokic
+			ledger = army
+			allowed = {
+				original_tag = YUG
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	CRO_peter_williams={
+		name="Peter Williams"
 		portraits={
 			civilian={
-				large=GFX_portrait_YUG_milan_grol
+				large="GFX_Portrait_europe_generic_7"
 			}
 		}
 		country_leader={
-			ideology=liberalism
-			expire="1965.1.1.1"
+			ideology=socialism
+			traits={ }
+			expire="1947.1.1.12"
 			id=-1
 		}
 	}
-	YUG_peter_ii={
-		name=YUG_peter_ii
+	CRO_john_wilson={
+		name="John Wilson"
 		portraits={
 			civilian={
-				large="GFX_portrait_yugoslavia_peter_ii_young"
+				large="GFX_Portrait_europe_generic_7"
 			}
 		}
 		country_leader={
-			ideology=despotism
-			traits={ underage_monarch }
-			expire="1965.1.1.1"
+			ideology=leninism
+			expire="1944.1.1.12"
 			id=-1
 		}
+	}
+	CRO_peter_walker={
+		name="Peter Walker"
+		portraits={
+			civilian={
+				large="GFX_Portrait_europe_generic_7"
+			}
+		}
 		country_leader={
-			ideology=conservatism
-			traits={ underage_monarch }
-			expire="1965.1.1.1"
+			ideology=moderatism
+			traits={ }
+			expire="1956.1.1.12"
 			id=-1
+		}
+	}
+
+
+
+
+
+	CRO_adalbert_rogulja={
+		name="Adalbert Rogulja"
+		portraits={
+			army={
+				small="GFX_Portrait_generic_air_europe_3"
+			}
+		}
+			traits = {
+				mobile_warfare_expert
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	CRO_djuro_jakcin={
+		name="Djuro Jakcin"
+		portraits={
+			army={
+				small="GFX_Portrait_generic_navy_europe_3"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = djuro_jakcin
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	CRO_sismundo_pejacevic={
+		name="Sismundo Pejacevic"
+		portraits={
+			army={
+				small="GFX_Portrait_generic_army_europe_3"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = sismundo_pejacevic
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+			}
+			traits = {
+				military_theorist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+
+	CRO_vladimir_kren={
+		name="Vladimir Kren"
+		portraits={
+			army={
+				small="GFX_Portrait_generic_air_europe_1"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = vladimir_kren
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+			}
+			traits = {
+				army_commando_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+
+	CRO_vladimir_pavlec={
+		name="Vladimir Pavlec"
+		portraits={
+			army={
+				small="GFX_Portrait_generic_political_advisor_europe_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = cro_fascist_guy
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+			}
+			traits = {
+				fascist_demagogue popular_figurehead
+			}
+			cost = 150.0
+			ai_will_do = {
+				factor = 0.500
+			}
+		}
+	}
+	CRO_ivan_subasic={
+		name="Ivan Subasic"
+		portraits={
+			army={
+				small="GFX_Portrait_generic_political_advisor_europe_1"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ivan_subasic
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+			}
+			traits = {
+				backroom_backstabber
+			}
+			cost = 150.0
+			ai_will_do = {
+				factor = 0.500
+			}
+		}
+	}
+	CRO_alojzije_stepinac={
+		name="Alojzije Stepinac"
+		portraits={
+			army={
+				small="GFX_Portrait_generic_political_advisor_europe_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = alojzije_stepinac
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+			}
+			traits = {
+				ideological_crusader
+			}
+			cost = 150.0
+			ai_will_do = {
+				factor = 0.500
+			}
+		}
+	}
+	CRO_gaspar_njegovan={
+		name="Gaspac Njegovan"
+		portraits={
+			army={
+				small="GFX_Portrait_generic_political_advisor_europe_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = gaspar_njegovan
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+			}
+			traits = {
+				captain_of_industry
+			}
+			cost = 150.0
+			ai_will_do = {
+				factor = 0.500
+			}
 		}
 	}
 	YUG_josip_broz_tito={
@@ -64,32 +462,25 @@ characters={
 			slot = army_chief
 			idea_token = YUG_josip_broz_tito
 			allowed = {
-					OR = {
-						original_tag = YUG
-						original_tag = SWE
-						original_tag = CHL
+			and = {
+				not = {
+						fascism > 0.5
 					}
+					original_tag = YUG
+			}
 				}
 				available = {
-					OR = {
-						AND = {
-							custom_trigger_tooltip = {
-								tooltip = tito_is_not_dead_tt
-								not = {
-									has_global_flag = Tito_killed
-								}
-							}
+					custom_trigger_tooltip = {
+						tooltip = tito_is_not_dead_tt
+						not = {
+							has_global_flag = Tito_killed
 						}
-
-						SWE_refuge_for_revolutionaries_trigger = yes
-
-						CHL_hub_of_the_revolution_trigger = yes
 					}
 				}
 				traits = {
 					army_chief_morale_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -104,553 +495,9 @@ characters={
 				small="GFX_idea_YUG_josip_broz_tito"
 			}
 			civilian={
-				large=GFX_portrait_YUG_josip_broz_tito
-			}
-		}
-	}
-	YUG_vladimir_Cukavac={
-		name=YUG_vladimir_Cukavac
-		portraits={
-			army={
-				large="GFX_Portrait_yugoslavia_vladimir_cukavac"
-				small=GFX_portrait_YUG_vladimir_Cukavac_small
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=3
-			attack_skill=2
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=-1
-		}
-	}
-	YUG_ivan_gosnjak={
-		name=YUG_ivan_gosnjak
-		portraits={
-			army={
-				large="GFX_Portrait_yugoslavia_ivan_gosnjak"
-				small=GFX_portrait_YUG_ivan_gosnjak_small
-			}
-		}
-		corps_commander={
-			traits={ urban_assault_specialist }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=-1
-		}
-	}
-	YUG_danilo_kalafatovic={
-		name=YUG_danilo_kalafatovic
-		portraits={
-			army={
-				large="GFX_Portrait_yugoslavia_danilo_kalafatovic"
-				small=GFX_portrait_YUG_danilo_kalafatovic_small
-			}
-		}
-		field_marshal={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=1
-			legacy_id=-1
-		}
-		advisor={
-			slot = high_command
-			idea_token = YUG_danilo_kalafatovic
-			ledger = army
-			
-			allowed = {
-				original_tag = YUG
-			}
-			traits = {
-				army_regrouping_3
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-	YUG_milutin_nedic={
-		name=YUG_milutin_nedic
-		portraits={
-			army={
-				large="GFX_Portrait_yugoslavia_milutin_nedic"
-				small=GFX_portrait_YUG_milutin_nedic_small
-			}
-		}
-		field_marshal={
-			traits={ thorough_planner }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=-1
-		}
-		advisor={
-			slot = army_chief
-			idea_token = YUG_milutin_nedic
-			allowed = {
-					original_tag = YUG
-				}
-				traits = {
-					army_chief_offensive_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-	}
-	YUG_petar_kosic={
-		name=YUG_petar_kosic
-		portraits={
-			army={
-				large="GFX_Portrait_yugoslavia_petar_kosic"
-				small=GFX_portrait_YUG_petar_kosic_small
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-1
-		}
-		advisor={
-			slot = navy_chief
-			idea_token = YUG_petar_kosic
-			allowed = {
-					original_tag = YUG
-				}
-				traits = {
-					navy_chief_decisive_battle_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-	}
-	YUG_josef_depre={
-		name=YUG_josef_depre
-		portraits={
-			army={
-				large="GFX_portrait_yugoslavia_josef_depre"
-				small=GFX_portrait_YUG_josef_depre_small
-			}
-		}
-		corps_commander={
-			traits={ cavalry_officer }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-1
-		}
-	}
-	YUG_marijan_polic={
-		name=YUG_marijan_polic
-		portraits={
-			army={
-				large="GFX_Portrait_yugoslavia_marijan_polic"
-				small=GFX_portrait_YUG_marijan_polic_small
-			}
-		}
-		navy_leader={
-			traits={ old_guard_navy navy_career_officer }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=2
-			legacy_id=-1
-		}
-		advisor={
-			cost = 100		
-			slot = theorist
-			idea_token = YUG_marijan_polic
-			ledger = navy
-				allowed = {
-					original_tag = YUG
-				}
-				
-				traits = {
-					naval_theorist
-				}
-		}
-	}
-
-	# White Rusian Emigres - located in this file because though they are Russian and can go there they should start in YUG
-
-	SOV_vasily_flug = {
-		name = SOV_vasily_flug
-		portraits = {
-			army = {
-				large = GFX_portrait_SOV_vasily_flug
-				small = GFX_portrait_SOV_vasily_flug_small
-			}
-		}
-		corps_commander = {
-			traits = { old_guard infantry_leader }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 1
-			logistics_skill = 2
-			visible = {
-				has_country_flag = SOV_flug_and_shteifon_are_ready_to_serve_flag
+				large="gfx/leaders/YUG/Portrait_Yugoslavia_Josip_Broz_Tito.dds"
 			}
 		}
 	}
 
-	SOV_boris_shteifon = {
-		name = SOV_boris_shteifon
-		portraits = {
-			army = {
-				large = GFX_portrait_SOV_boris_shteifon
-				small = GFX_portrait_SOV_boris_shteifon_small
-			}
-		}
-		corps_commander = {
-			traits = { inflexible_strategist guerilla_fighter }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			visible = {
-				has_country_flag = SOV_flug_and_shteifon_are_ready_to_serve_flag
-			}
-		}
-	}
-
-
-	YUG_borivoje_mirkovic={
-		advisor={			
-			slot = high_command
-			idea_token = YUG_borivoje_mirkovic
-			ledger = air
-				allowed = {
-					original_tag = YUG
-				}
-				traits = {
-					air_bomber_interception_1
-				}
-				cost =  50
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name=YUG_borivoje_mirkovic
-		portraits={
-			army={
-				small="GFX_idea_YUG_borivoje_mirkovic"
-			}
-		}
-	}
-	YUG_dusan_simovic={
-		advisor={
-			slot = air_chief
-			idea_token = YUG_dusan_simovic
-			allowed = {
-					original_tag = YUG
-				}
-				traits = {
-					air_chief_safety_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name=YUG_dusan_simovic
-		portraits={
-			army={
-				small="GFX_idea_YUG_dusan_simovic"
-			}
-		}
-	}
-	YUG_draza_mihailovic={
-		advisor={
-			slot = army_chief
-			idea_token = YUG_draza_mihailovic
-			allowed = {
-					original_tag = YUG
-				}
-				traits = {
-					army_chief_defensive_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name=YUG_draza_mihailovic
-		portraits={
-			army={
-				small="GFX_idea_YUG_draza_mihailovic"
-			}
-		}
-	}
-	YUG_mihajlo_lukic={
-		advisor={
-			slot = high_command
-			idea_token = YUG_mihajlo_lukic
-			ledger = army
-				allowed = {
-					original_tag = YUG
-				}
-				traits = {
-					army_logistics_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name=YUG_mihajlo_lukic
-		portraits={
-			army={
-				small="GFX_idea_YUG_mihajlo_lukic"
-			}
-		}
-	}
-	YUG_bogoljub_ilic={
-		advisor={
-			slot = navy_chief
-			idea_token = YUG_bogoljub_ilic
-			allowed = {
-					original_tag = YUG
-				}
-				traits = {
-					navy_chief_commerce_raiding_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name=YUG_bogoljub_ilic
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_europe_2"
-			}
-		}
-	}
-	YUG_petar_vukcevic={
-		advisor={
-			slot = air_chief
-			idea_token = YUG_petar_vukcevic
-			allowed = {
-					original_tag = YUG
-				}
-				traits = {
-					air_chief_ground_support_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name=YUG_petar_vukcevic
-		portraits={
-			army={
-				small="GFX_idea_YUG_petar_vukcevic"
-			}
-		}
-	}
-	YUG_ljubomir_maric={
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = YUG_ljubomir_maric
-			ledger = army
-				allowed = {
-					original_tag = YUG
-				}
-				
-				traits = {
-					military_theorist
-				}
-		}
-		name=YUG_ljubomir_maric
-		portraits={
-			army={
-				small="GFX_idea_YUG_ljubomir_maric"
-			}
-		}
-	}
-	YUG_arso_jovanovic={
-		advisor={
-			slot = high_command
-			idea_token = YUG_arso_jovanovic
-			ledger = army
-				allowed = {
-					original_tag = YUG
-				}
-				traits = {
-					army_entrenchment_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name=YUG_arso_jovanovic
-		portraits={
-			army={
-				small="GFX_idea_YUG_arso_jovanovic"
-			}
-		}
-	}
-	YUG_slobodan_jovanovic={
-		advisor={
-			slot = political_advisor
-			idea_token = YUG_slobodan_jovanovic
-			allowed  = {
-					original_tag  = YUG
-				}
-				traits  = {
-					constitutional_philosopher 
-				}
-		}
-		name=YUG_slobodan_jovanovic
-		portraits={
-			army={
-				small="GFX_idea_YUG_slobodan_jovanovic"
-			}
-		}
-	}
-	YUG_milovan_djilas={
-		advisor={
-			slot = political_advisor
-			idea_token = YUG_milovan_djilas
-			available  = {
-					if  = {
-						limit  = {
-							has_dlc = "Man the Guns"
-						}
-						not  = {
-							has_autonomy_state  = autonomy_supervised_state
-						}
-					}
-				}
-				allowed  = {
-					original_tag  = YUG
-				}
-				traits  = {
-					democratic_firebrand 
-				}
-		}
-		name=YUG_milovan_djilas
-		portraits={
-			army={
-				small="GFX_idea_YUG_milovan_djilas"
-			}
-		}
-	}
-	YUG_milan_nedic={
-		advisor={
-			slot = political_advisor
-			idea_token = YUG_milan_nedic
-			allowed  = {
-					original_tag  = YUG
-				}
-				traits  = {
-					prince_of_terror 
-				}
-		}
-		name=YUG_milan_nedic
-		portraits={
-			army={
-				small="GFX_idea_YUG_milan_nedic"
-			}
-		}
-	}
-	YUG_ivan_ribar={
-		advisor={
-			slot = political_advisor
-			idea_token = YUG_ivan_ribar
-			allowed  = {
-					original_tag  = YUG
-				}
-				traits  = {
-					captain_of_industry 
-				}
-		}
-		name=YUG_ivan_ribar
-		portraits={
-			army={
-				small="GFX_idea_YUG_ivan_ribar"
-			}
-		}
-	}
-	YUG_dimitrije_ljotic={
-		advisor={
-			slot = political_advisor
-			idea_token = YUG_dimitrije_ljotic
-			available  = {
-					if  = {
-						limit  = {
-							has_dlc = "Man the Guns"
-						}
-						not  = {
-							has_autonomy_state  = autonomy_supervised_state
-						}
-					}
-				}
-				allowed  = {
-					original_tag  = YUG
-				}
-				traits  = {
-					harsh_propagandist 
-				}
-		}
-		name=YUG_dimitrije_ljotic
-		portraits={
-			army={
-				small="GFX_idea_YUG_dimitrije_ljotic"
-			}
-		}
-	}
-	YUG_ivo_lola_ribar={
-		advisor={
-			slot = political_advisor
-			idea_token = YUG_ivo_lola_ribar
-			allowed  = {
-					original_tag  = YUG
-				}
-				available  = {
-					if  = {
-						limit  = {
-							has_dlc = "Man the Guns"
-						}
-						not  = {
-							has_autonomy_state  = autonomy_supervised_state
-						}
-					}
-				}
-				traits  = {
-					communist_orator 
-				}
-		}
-		name=YUG_ivo_lola_ribar
-		portraits={
-			army={
-				small="GFX_idea_YUG_ivo_lola_ribar"
-			}
-		}
-	}
-	
 }
-

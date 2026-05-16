@@ -1,26 +1,55 @@
 ideas = {
 
-	hidden_ideas = { # Used to prevent AI to hold outside of the Iberian Peninsula during the SCW
-		SPA_death_before_surrender_capitulation = {
+	country = {
+	
+	SPR_no_navy = {
 
-			name = SPR_death_before_surrender
-
-			allowed = {
-				original_tag = SPR
+	allowed = {
+				always = yes
 			}
 
 			allowed_civil_war = {
 				always = yes
 			}
+			
+			removal_cost = -1
+
+			picture = generic_navy_bonus
 
 			modifier = {
-				surrender_limit = 1
-				max_surrender_limit_offset = 1
+			trade_cost_for_target_factor = -0.6	
+			
 			}
-		}
-	}
 
-	country = {
+}
+
+SPR_no_navy2 = {
+
+	allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = { has_war = no }
+			
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+
+				modifier = {
+			industrial_capacity_dockyard = -10
+			production_speed_dockyard_factor = -1
+			production_speed_naval_base_factor  = -1
+			production_speed_air_base_factor = -1
+			air_range_factor = -10
+			}
+
+}
+			
+
 
 		SPA_death_before_surrender = {
 
@@ -42,62 +71,25 @@ ideas = {
 			}
 		}
 
-		SPA_anti_republican_offensive = {
 
+		attritionn = {
 			picture = SPR_nationalist_remnants
 
 			allowed = {
-				original_tag = SPR
+				always = yes
 			}
 
 			allowed_civil_war = {
 				always = yes
 			}
-
-			targeted_modifier = {
-				tag = SPD
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.05
+			
+			modifier = {
+			attrition = 1000
+			supply_consumption_factor = 1000
 			}
+		
 		}
 
-		SPA_anti_anarchist_offensive = {
-
-			picture = SPR_nationalist_remnants
-
-			allowed = {
-				original_tag = SPR
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			targeted_modifier = {
-				tag = SPC
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.05
-			}
-		}
-
-		SPA_anti_carlist_offensive = {
-
-			picture = SPR_nationalist_remnants
-
-			allowed = {
-				original_tag = SPR
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			targeted_modifier = {
-				tag = SPB
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.05
-			}
-		}
 
 		SPA_recovering_from_civil_war = {
 
@@ -118,13 +110,10 @@ ideas = {
 			}
 
 			modifier = {
-				ai_get_ally_desire_factor = -300
-				ai_join_ally_desire_factor = -300
-				join_faction_tension = 0.5
 				industrial_capacity_factory = -0.2
 				industrial_capacity_dockyard = -0.2
 				production_speed_buildings_factor = -0.1
-				consumer_goods_factor = 0.2
+				consumer_goods_expected_value = 0.1
 			}
 
 			rule = { can_decline_call_to_war = yes }
@@ -150,13 +139,10 @@ ideas = {
 			}
 
 			modifier = {
-				ai_get_ally_desire_factor = -200
-				ai_join_ally_desire_factor = -200
-				join_faction_tension = 0.5
-				industrial_capacity_factory = -0.14
-				industrial_capacity_dockyard = -0.14
-				production_speed_buildings_factor = -0.07
-				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.16
+				industrial_capacity_dockyard = -0.16
+				production_speed_buildings_factor = -0.08
+				consumer_goods_expected_value = 0.08
 			}
 
 			rule = { can_decline_call_to_war = yes }
@@ -182,13 +168,63 @@ ideas = {
 			}
 
 			modifier = {
-				industrial_capacity_factory = -0.07
-				industrial_capacity_dockyard = -0.07
-				production_speed_buildings_factor = -0.04
-				consumer_goods_factor = 0.10
+				industrial_capacity_factory = -0.12
+				industrial_capacity_dockyard = -0.12
+				production_speed_buildings_factor = -0.06
+				consumer_goods_expected_value = 0.06
+			}
+		}
+		
+				SPA_recovering_from_civil_war_4 = {
+
+			name = SPA_recovering_from_civil_war
+
+			picture = FRA_matignon_agreements
+
+			allowed = {
+				original_tag = SPR
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
 			}
 
-			rule = { can_decline_call_to_war = yes }
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.08
+				industrial_capacity_dockyard = -0.08
+				production_speed_buildings_factor = -0.04
+				consumer_goods_expected_value = 0.04
+			}
+		}
+		
+				SPA_recovering_from_civil_war_5 = {
+
+			name = SPA_recovering_from_civil_war
+
+			picture = FRA_matignon_agreements
+
+			allowed = {
+				original_tag = SPR
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.04
+				industrial_capacity_dockyard = -0.04
+				production_speed_buildings_factor = -0.02
+				consumer_goods_expected_value = 0.02
+			}
 		}
 
 		SPA_awaiting_the_rebellion = {
@@ -355,30 +391,6 @@ ideas = {
 			}
 		}
 
-		SPA_spanish_civil_war_commitments = {
-
-			picture = generic_manpower_bonus
-
-			allowed = {
-				OR = {
-					original_tag = ITA
-					original_tag = GER
-					original_tag = SOV
-					original_tag = FRA
-				}
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				send_volunteer_size = 3
-				send_volunteer_divisions_required = -1
-				lend_lease_tension = -0.30
-			}
-		}
-
 		SPA_foreign_training_staff = {
 
 			picture = german_advisors
@@ -464,7 +476,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.05
 			}
 		}
 
@@ -482,7 +494,7 @@ ideas = {
 
 			modifier = {
 				mobilization_speed = 0.2
-				army_attack_factor = 0.05
+				offence = 0.05
 			}
 		}
 
@@ -577,6 +589,23 @@ ideas = {
 				industrial_capacity_factory = 0.1
 			}
 		}
+		
+				SPR_exploit = {
+
+			picture = SPA_duty_to_work
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_expected_value = 0.1
+			}
+		}
 
 		SPA_national_recovery_1 = {
 
@@ -594,7 +623,7 @@ ideas = {
 
 			modifier = {
 				stability_weekly = 0.002
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.05
 			}
 		}
 
@@ -614,7 +643,7 @@ ideas = {
 
 			modifier = {
 				stability_weekly = 0.002
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.05
 				production_speed_infrastructure_factor = 0.1
 			}
 		}
@@ -634,7 +663,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.25
+				consumer_goods_expected_value = -0.1
 				production_speed_infrastructure_factor = 0.1
 			}
 		}
@@ -654,7 +683,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.25
+				consumer_goods_expected_value = -0.1
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 			}
@@ -675,7 +704,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.05
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 			}
@@ -696,7 +725,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.25
+				consumer_goods_expected_value = -0.1
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 				industrial_capacity_factory = 0.05
@@ -719,7 +748,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.05
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 				industrial_capacity_factory = 0.05
@@ -757,7 +786,24 @@ ideas = {
 			}
 
 			modifier = {
-				max_planning = 0.1
+				planning_speed = 0.25
+			}
+		}
+		
+		BUL_Geological_Knowledge = {
+
+			picture = CZE_planning_bonus
+
+			allowed = {
+				original_tag = BUL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				max_planning = 0.075
 			}
 		}
 
@@ -833,8 +879,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_defence_factor = 0.05
-				army_attack_factor = 0.05
+				defence = 0.05
+				offence = 0.05
 				army_org_factor = 0.05
 			}
 		}
@@ -854,8 +900,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_defence_factor = 0.05
-				army_attack_factor = 0.05
+				defence = 0.05
+				offence = 0.05
 				army_org_factor = 0.1
 				conscription = 0.03
 			}
@@ -876,8 +922,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_defence_factor = 0.05
-				army_attack_factor = 0.05
+				defence = 0.05
+				offence = 0.05
 				army_org_factor = 0.1
 				training_time_factor = -0.2
 				conscription = 0.05
@@ -899,8 +945,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_defence_factor = 0.05
-				army_attack_factor = 0.05
+				defence = 0.05
+				offence = 0.05
 				army_org_factor = 0.05
 				army_morale_factor = 0.1
 				political_power_factor = 0.1
@@ -922,13 +968,15 @@ ideas = {
 			}
 
 			modifier = {
-				army_defence_factor = 0.1
-				army_attack_factor = 0.1
+				defence = 0.1
+				offence = 0.1
 				army_org_factor = 0.05
 				army_morale_factor = 0.15
 				political_power_factor = 0.1
 			}
 		}
+
+
 
 		SPA_crusade_against_democracy_6 = {
 
@@ -945,8 +993,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_defence_factor = 0.05
-				army_attack_factor = 0.05
+				defence = 0.05
+				offence = 0.05
 				army_org_factor = 0.1
 				conscription = 0.03
 				army_morale_factor = 0.1
@@ -969,8 +1017,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_defence_factor = 0.05
-				army_attack_factor = 0.05
+				defence = 0.05
+				offence = 0.05
 				army_org_factor = 0.1
 				training_time_factor = -0.2
 				conscription = 0.05
@@ -994,8 +1042,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_defence_factor = 0.1
-				army_attack_factor = 0.1
+				defence = 0.1
+				offence = 0.1
 				army_org_factor = 0.1
 				conscription = 0.03
 				army_morale_factor = 0.15
@@ -1018,8 +1066,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_defence_factor = 0.1
-				army_attack_factor = 0.1
+				defence = 0.1
+				offence = 0.1
 				army_org_factor = 0.1
 				training_time_factor = -0.2
 				conscription = 0.05
@@ -1043,8 +1091,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_defence_factor = 0.1
-				army_attack_factor = 0.15
+				defence = 0.1
+				offence = 0.15
 				army_org_factor = 0.1
 				army_speed_factor = 0.05
 				training_time_factor = -0.2
@@ -1076,5 +1124,450 @@ ideas = {
 				}
 			}
 		}
+
+		SPA_joined_sov_42 = {
+			name = SPA_joined_sov_42
+
+			picture = SPA_crusade_against_democracy
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			modifier = {
+				consumer_goods_expected_value = 0.15
+					industrial_capacity_factory = -0.25
+					production_factory_max_efficiency_factor = -0.1
+			}
+		}
 	}
+
+	# political_advisor = {
+
+	# 	### Vanilla ###
+
+	# 	### La Resistance ###
+
+	# 	SPA_jose_antonio_giron = {
+
+	# 		picture = SPA_jose_antonio_giron
+
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
+
+	# 		visible = {
+			
+	# 		}
+	# available = {
+	# 		date > 1936.7.18
+	# 		}
+			
+	# 		traits = { falangist_industrialist }
+	# 	}
+
+	# 	SPA_raimundo_fernandez_cuesta = {
+
+	# 		picture = SPA_raimundo_fernandez_cuesta
+
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
+
+	# 		visible = {
+				
+	# 		}
+
+	# 			available = {
+	# 		date > 1936.7.18
+	# 		}
+			
+	# 		traits = { loyal_falangist }
+	# 	}
+
+	# 	SPA_tomas_dominguez_arevalo = {
+
+	# 		picture = SPA_tomas_dominguez_arevalo
+
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
+
+	# 		visible = {
+			
+	# 		}
+
+	# 			available = {
+	# 		date > 1936.7.18
+	# 		}
+			
+	# 		traits = { lifelong_carlist }
+	# 	}
+
+	# 	SPA_diego_hidalgo_y_duran = {
+
+	# 		picture = SPA_diego_hidalgo_y_duran
+
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
+
+	# 		visible = {
+			
+	# 		}
+
+	# 			available = {
+	# 		date > 1936.7.18
+	# 		}
+			
+	# 		traits = { war_industrialist }
+	# 	}
+
+	# 	SPA_ramon_serrano_suner = {
+
+	# 		picture = SPA_ramon_serrano_suner
+
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
+
+	# 		visible = {
+			
+	# 		}
+
+	# 			available = {
+	# 		date > 1936.7.18
+	# 		}
+			
+	# 		traits = { silent_workhorse }
+	# 	}
+
+	# 	SPA_luis_hernando_de_larramendi = {
+
+	# 		picture = SPA_luis_hernando_de_larramendi
+
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
+
+	# 		visible = {
+				
+	# 		}
+	# available = {
+	# 		date > 1936.7.18
+	# 		}
+			
+	# 		traits = { traditionalist_theorist }
+	# 	}
+
+	# 	SPA_jose_antonio_primo_de_rivera = {
+
+	# 		picture = SPA_jose_antonio_primo_de_rivera
+
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
+
+	# 		visible = {
+			
+	# 		}
+
+	# 			available = {
+	# 		date > 1936.7.18
+	# 		}
+			
+	# 		traits = { falangist_figurehead }
+	# 	}
+	# }
+
+	# theorist = {
+
+	# 	### Vanilla ###
+
+
+	# 	### La Resistance ###
+
+	# 	SPA_jose_enrique_varela = { # Carlist
+	# 		ledger = army
+				
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
+	
+	# 		visible = {
+				
+	# 		}
+	
+	# 		available = {
+		
+	# 		}
+			
+	# 		picture = SPA_jose_enrique_varela
+			
+	# 		research_bonus = {
+	# 			land_doctrine = 0.10
+	# 		}
+			
+	# 		traits = { military_theorist }
+	# 	}
+	# }
+
+	# # MILITARY
+	# army_chief = {
+
+	# 	### Vanilla ###
+
+	# 	### La Resistance ###
+		
+	# 	SPA_juan_yague = { # Falangist
+			
+	# 		picture = SPA_juan_yague
+			
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
+
+	# 		visible = {
+	# 			NOT = {
+	# 				tag = SPD
+	# 				tag = SPC
+	# 			}
+	# 		}
+
+	# 		available = {
+				
+	# 		}
+			
+	# 		traits = { army_chief_offensive_2 }
+			
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+
+	# 	# SPA_rafael_garcia_valino = { # Francoist/Carlist
+			
+	# 	# 	picture = SPA_rafael_garcia_valino
+			
+	# 	# 	allowed = {
+	# 	# 		original_tag = SPR
+	# 	# 	}
+
+	# 	# 	visible = {
+				
+	# 	# 	}
+
+	# 	# 	available = {
+				
+				
+	# 	# 		custom_trigger_tooltip = {
+	# 	# 			tooltip = SPA_not_republican_spain_tt
+	# 	# 		}
+	# 	# 	}
+			
+	# 	# 	traits = { army_chief_organizational_2 }
+			
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }
+
+	# 	# SPA_heli_rolando_de_tella = { # Francoist/Carlist
+			
+	# 	# 	picture = SPA_heli_rolando_de_tella
+			
+	# 	# 	allowed = {
+	# 	# 		original_tag = SPR
+	# 	# 	}
+
+	# 	# 	visible = {
+				
+	# 	# 	}
+
+	# 	# 	available = {
+	# 	# 	custom_trigger_tooltip = {
+	# 	# 			tooltip = SPA_not_republican_spain_tt
+	# 	# 		}
+	# 	# 	}
+			
+	# 	# 	traits = { army_chief_defensive_2 }
+			
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }
+
+	# 	# SPA_miguel_ponte = { # Francoist
+			
+	# 	# 	picture = SPA_miguel_ponte
+			
+	# 	# 	allowed = {
+	# 	# 		original_tag = SPR
+	# 	# 	}
+
+	# 	# 	visible = {
+			
+	# 	# 	}
+
+	# 	# 	available = {
+				
+	# 	# 		custom_trigger_tooltip = {
+	# 	# 			tooltip = SPA_not_republican_spain_tt
+	# 	# 		}
+	# 	# 	}
+			
+	# 	# 	traits = { army_chief_drill_2 }
+			
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }
+
+	# }
+	# air_chief = {
+
+	# 	### Vanilla ###
+
+
+	# 	### La Resistance ###
+
+	# 	SPA_joaquin_garcia_morato = { # Francoist
+			
+	# 		picture = SPA_joaquin_garcia_morato
+			
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
+
+	# 		visible = {
+			
+	# 		}
+
+	# 		available = {
+				
+	# 		}
+			
+	# 		traits = { air_chief_ground_support_2 }
+			
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
+
+	# navy_chief = {
+
+	# 	### Vanilla ###
+
+
+	# 	### La Resistance ###
+
+	# 	SPA_luis_carrero_blanco = { # Francoist
+			
+	# 		picture = SPA_luis_carrero_blanco
+			
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
+
+	# 		visible = {
+				
+	# 		}
+
+	# 		available = {
+			
+	# 		}
+			
+	# 		traits = { navy_chief_decisive_battle_2 }
+			
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
+
+	
+	# high_command = {
+
+	# 	### Vanilla ###
+
+
+	# 	### La Resistance ###
+
+
+
+	# 	SPA_wilhelm_ritter_von_thoma = { # Falangist/Francoist
+	# 		ledger = army
+			
+	# 		picture = SPA_wilhelm_ritter_von_thoma
+			
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
+
+	# 		visible = {
+		
+	# 		}
+
+	# 		available = {
+	# 			has_completed_focus = SPA_the_condor_legion
+	# 		}
+			
+	# 		traits = { army_armored_3 }
+			
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+
+	# 	SPA_enrique_canovas_lacruz = { # Francoist
+	# 		ledger = army
+			
+	# 		picture = SPA_enrique_canovas_lacruz
+			
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
+
+	# 		visible = {
+	# 			NOT = {
+	# 				tag = SPD
+	# 				tag = SPC
+	# 			}
+	# 		}
+
+	# 		available = {
+	# 		}
+			
+	# 		traits = { army_logistics_2 }
+			
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+
+	# 	SPA_miguel_cabanellas = { # Carlist
+	# 		ledger = army
+			
+	# 		picture = SPA_miguel_cabanellas
+			
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
+
+	# 		visible = {
+			
+	# 		}
+
+	# 		available = {
+
+	# 		}
+			
+	# 		traits = { army_regrouping_2 }
+			
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
 }

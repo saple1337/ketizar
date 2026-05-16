@@ -1,26 +1,16 @@
-characters = {
-
-
-	ISR_david_ben_gurion = {
-
-		name = ISR_david_ben_gurion
-
-		portraits = {
-			civilian = {
-				large = GFX_portrait_ISR_david_ben_gurion
-				small = GFX_portrait_ISR_david_ben_gurion_small
+characters={
+    ISR_binnison={
+		name="Benyamin Ben Nison"
+		portraits={
+			civilian={
+				large="gfx/leaders/ISR/portrait_ISR_binnison.dds"
 			}
 		}
-
-		country_leader = {
-			ideology = conservatism
-			traits = {  }
-			expire = "1951.1.1.1"
-			id = -1
+		country_leader={
+			desc="POLITICS_JOHN_CURTIN_DESC"
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
 		}
-
 	}
-
-	
-
 }
