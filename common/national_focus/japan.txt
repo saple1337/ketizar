@@ -1104,16 +1104,16 @@ focus_tree = {
 			}
 			add_popularity = {
 				ideology = fascism
-				popularity = 0.2
+				popularity = 0.8
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			JAP_add_or_modify_showa_statism = yes
 			add_to_variable = {
-				JAP_showa_statism_fascism_drift = 0.05
+				JAP_showa_statism_fascism_drift = 0.1
 				tooltip = fascism_drift_tt
 			}
 			add_to_variable = {
-				JAP_showa_statism_stability_factor = 0.05
+				JAP_showa_statism_stability_factor = 0.1
 				tooltip = stability_factor_tt
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
